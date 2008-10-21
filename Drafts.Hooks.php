@@ -2,28 +2,13 @@
 
 /* Hooks */
 
-// Localize the page name
-function efDraftsLocalizedPageNames( &$specialPageArray, $code ) {
-	// Internationalization
-	wfLoadExtensionMessages( 'Drafts' );
-
-	// Convert from title in text form to DBKey
-	$title = Title::newFromText( wfMsg( 'drafts' ) );
-
-	// Put it into the alias array
-	$specialPageArray['Drafts'][] = $title->getDBKey();
-
-	// Continue
-	return true;
-}
-
 function efArticleSaved( &$article, &$user, &$text, &$summary, &$minoredit, &$watchthis,
 	&$sectionanchor, &$flags, $revision ) {
 	global $wgRequest;
 
 	// Check if the save occured from a draft
 	$draftID = $wgRequest->getIntOrNull( 'wpDraftID' );
-	if( $draftID !== null )
+	if ( $draftID !== null )
 	{
 		// Get the draft
 		$draft = new Draft( $draftID );
@@ -36,16 +21,15 @@ function efArticleSaved( &$article, &$user, &$text, &$summary, &$minoredit, &$wa
 	return true;
 }
 
-
 // Load draft
 function efDraftsLoad( &$editpage ) {
 	global $wgUser, $wgRequest, $wgOut;
 
 	// Check permissions
-	if( $wgUser->isAllowed( 'edit' ) && $wgUser->isLoggedIn() ) {
+	if ( $wgUser->isAllowed( 'edit' ) && $wgUser->isLoggedIn() ) {
 		// Load draft if asked to
 		$draftID = $wgRequest->getIntOrNull( 'draft' );
-		if( $draftID !== null )
+		if ( $draftID !== null )
 		{
 			// Create Draft
 			$draft = new Draft( $draftID );
@@ -58,10 +42,10 @@ function efDraftsLoad( &$editpage ) {
 		}
 
 		// Handle preview or non-javascript draft saving
-		if( $wgRequest->getText( 'action' ) == 'submit' )
+		if ( $wgRequest->getText( 'action' ) == 'submit' )
 		{
 			// If the draft wasn't specified in the url, try using a form-submitted one
-			if( $draftID == null )
+			if ( $draftID == null )
 			{
 				$draftID = $wgRequest->getIntOrNull( 'wpDraftID' );
 			}
@@ -90,7 +74,6 @@ function efDraftsLoad( &$editpage ) {
 		}
 	}
 
-
 	// Get a connection
 	$db = wfGetDB( DB_MASTER );
 
@@ -106,7 +89,7 @@ function efDraftsLoad( &$editpage ) {
 		)
 	);
 
-	if( $result )
+	if ( $result )
 	{
 		// Begin existing drafts table
 		$htmlDraftList = <<<END
@@ -123,7 +106,7 @@ END;
 
 		// Add existing drafts for this page and user
 		$count = 0;
-		while( $row = $db->fetchRow( $result ) )
+		while ( $row = $db->fetchRow( $result ) )
 		{
 			// Article
 			$title = Title::newFromDBKey( $row['draft_title'] );
@@ -158,7 +141,7 @@ END;
 END;
 
 		// If there were any drafts for this page and user
-		if( $count > 0 )
+		if ( $count > 0 )
 		{
 			// Show list of drafts
 			$wgOut->addHTML( $htmlDraftList );
@@ -175,7 +158,7 @@ function efDraftsInterceptSave( $editor, $text, $section, &$error ) {
 	global $wgRequest;
 
 	// Don't save if the save draft button caused the submit
-	if( $wgRequest->getText( 'wpDraftSave' ) !== '' ) {
+	if ( $wgRequest->getText( 'wpDraftSave' ) !== '' ) {
 		// Modify the error so it's clear we want to remain in edit mode
 		$error = ' ' . $wgRequest->getText( 'wpDraftSave' );
 	}
@@ -189,7 +172,7 @@ function efDraftsControls( &$editpage, &$buttons ) {
 	global $wgUser, $wgTitle, $wgRequest, $wgDraftsAutoSaveWait;
 
 	// Check permissions
-	if( $wgUser->isAllowed( 'edit' ) && $wgUser->isLoggedIn() ) {
+	if ( $wgUser->isAllowed( 'edit' ) && $wgUser->isLoggedIn() ) {
 		// Internationalization
 		wfLoadExtensionMessages( 'Drafts' );
 

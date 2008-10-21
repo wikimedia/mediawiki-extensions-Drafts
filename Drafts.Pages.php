@@ -21,7 +21,7 @@ class DraftsPage extends SpecialPage {
 		// Begin output
 		$this->setHeaders();
 
-		if( !$wgUser->isLoggedIn() ) {
+		if ( !$wgUser->isLoggedIn() ) {
 			// Login Link
 			$titleUserLogin = SpecialPage::getTitleFor( 'UserLogin' );
 			$urlLogin = $titleUserLogin->getFullURL() . "?returnto=Special:Drafts";
@@ -41,7 +41,7 @@ class DraftsPage extends SpecialPage {
 
 		// Handle discarding
 		$discard = $wgRequest->getIntOrNull( 'discard' );
-		if( $discard !== null )
+		if ( $discard !== null )
 		{
 			$draft = new Draft( $discard );
 			$draft->discard();
@@ -73,13 +73,13 @@ class DraftsPage extends SpecialPage {
 			)
 		);
 
-		if( $result )
+		if ( $result )
 		{
 			// Internationalization
-			$msgArticle = wfMsgHTML('drafts-view-article');
-			$msgSaved = wfMsgHTML('drafts-view-saved');
-			$msgStarted = wfMsgHTML('drafts-view-started');
-			$msgEdited = wfMsgHTML('drafts-view-edited');
+			$msgArticle = wfMsgHTML( 'drafts-view-article' );
+			$msgSaved = wfMsgHTML( 'drafts-view-saved' );
+			$msgStarted = wfMsgHTML( 'drafts-view-started' );
+			$msgEdited = wfMsgHTML( 'drafts-view-edited' );
 
 			$htmlDraftList = <<<END
 				<h3>Existing Drafts</h3>
@@ -95,7 +95,7 @@ END;
 
 			// Show list of drafts
 			$count = 0;
-			while( $row = $db->fetchRow( $result ) )
+			while ( $row = $db->fetchRow( $result ) )
 			{
 				// Article
 				$title = Title::newFromDBKey( $row['draft_title'] );
@@ -111,7 +111,7 @@ END;
 				$htmlEdited = gmdate( 'F jS g:ia', wfTimestamp( TS_UNIX, $row['draft_edittime'] ) );
 
 				// Internationalization
-				$msgDiscard = wfMsgHTML('drafts-view-discard');
+				$msgDiscard = wfMsgHTML( 'drafts-view-discard' );
 
 				$htmlDraftList .= <<<END
 					<tr>

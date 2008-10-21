@@ -21,9 +21,9 @@ create table drafts (
 
 
 // Check environment
-if( !defined( 'MEDIAWIKI' ) ) {
+if ( !defined( 'MEDIAWIKI' ) ) {
     echo( "This is an extension to the MediaWiki package and cannot be run standalone.\n" );
-    die( -1 );
+    die( - 1 );
 }
 
 // Credits
@@ -33,9 +33,10 @@ $wgExtensionCredits['other'][] = array(
    'url' => 'http://www.mediawiki.org/wiki/Extension:Trevor_Parscal',
    'description' => 'Allow users to save drafts'
 );
+
 $wgExtensionCredits['specialpage'][] = array(
    'name' => 'View Drafts',
-   'author' =>'Trevor Parscal',
+   'author' => 'Trevor Parscal',
    'url' => 'http://www.mediawiki.org/wiki/Extension:Trevor_Parscal',
    'description' => 'Drafts extension page'
 );
@@ -49,8 +50,7 @@ $dir = dirname( __FILE__ ) . '/';
 // Use the value 0 to disable autosave
 $wgDraftsAutoSaveWait = 120;
 
-if( true )
-{
+if ( true ) {
 	/* Includes */
 
 	// Save and View components
@@ -61,15 +61,13 @@ if( true )
 
 	// Internationalization
 	$wgExtensionMessagesFiles['Drafts'] = $dir . 'Drafts.i18n.php';
+	$wgExtensionAliasesFiles['Drafts'] = $dir . 'Drafts.alias.php';
 
 	// Register the Drafts special page
 	$wgSpecialPages['Drafts'] = 'DraftsPage';
 
 	// Autoload SpecialDrafts from Drafts.Classes.php
 	$wgAutoloadClasses['DraftsPage'] = $dir . 'Drafts.Pages.php';
-
-	// Register page name localization
-	$wgHooks['LanguageGetSpecialPageAliases'][] = 'efDraftsLocalizedPageNames';
 
 	// Register save interception to detect non-javascript draft saving
 	$wgHooks['EditFilter'][] = 'efDraftsInterceptSave';

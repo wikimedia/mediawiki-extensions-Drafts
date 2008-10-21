@@ -37,12 +37,12 @@ class Draft
 		global $wgUser;
 
 		// Verify the ID has been set
-		if( $this->_id === false ) {
+		if ( $this->_id === false ) {
 			return;
 		}
 
 		// Get a connection if we don't have one already
-		if( $this->_db === false ) {
+		if ( $this->_db === false ) {
 			$this->_db = wfGetDB( DB_MASTER );
 		}
 
@@ -53,13 +53,13 @@ class Draft
 				'draft_user' => (int) $wgUser->getID()
 			)
 		);
-		if( $result === false ) {
+		if ( $result === false ) {
 			return;
 		}
 
 		// Get the row
 		$row = $this->_db->fetchRow( $result );
-		if( !is_array( $row ) || count( $row ) == 0 ) {
+		if ( !is_array( $row ) || count( $row ) == 0 ) {
 			return;
 		}
 
@@ -85,7 +85,7 @@ class Draft
 		global $wgUser;
 
 		// Get a connection if we don't have one already
-		if( $this->_db === false ) {
+		if ( $this->_db === false ) {
 			$this->_db = wfGetDB( DB_MASTER );
 		}
 
@@ -108,7 +108,7 @@ class Draft
 		);
 
 		// Save data
-		if( $this->_exists === true ) {
+		if ( $this->_exists === true ) {
 			$this->_db->update( 'drafts', $data,
 				array(
 					'draft_id' => (int) $this->_id,
