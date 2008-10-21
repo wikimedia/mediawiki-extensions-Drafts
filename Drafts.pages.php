@@ -82,7 +82,6 @@ class DraftsPage extends SpecialPage {
 			$msgEdited = wfMsgHTML( 'drafts-view-edited' );
 
 			$htmlDraftList = <<<END
-				<h3>Existing Drafts</h3>
 				<table cellpadding="3" cellspacing="0" width="100%" border="0">
 					<tr>
 						<th width="17%" align="left">{$msgArticle}</th>
@@ -128,8 +127,12 @@ END;
 				</table>
 				<br />
 END;
-
-			$wgOut->addHTML( $htmlDraftList );
+			if ( $count > 0 ) {
+				$wgOut->addHTML( $htmlDraftList );
+			}
+			else {
+				$wgOut->addHTML( wfMsgHTML( 'drafts-view-nonesaved' ) );
+			}
 		}
 	}
 }

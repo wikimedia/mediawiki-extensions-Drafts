@@ -91,15 +91,23 @@ function efDraftsLoad( &$editpage ) {
 
 	if ( $result )
 	{
+		
+		// Internationalization
+		wfLoadExtensionMessages( 'Drafts' );
+		$msgExisting = wfMsgHTML( 'drafts-view-existing' );
+		$msgSaved = wfMsgHTML( 'drafts-view-saved' );
+		$msgStarted = wfMsgHTML( 'drafts-view-started' );
+		$msgEdited = wfMsgHTML( 'drafts-view-edited' );
+		
 		// Begin existing drafts table
 		$htmlDraftList = <<<END
 			<div style="margin-bottom:10px;padding-left:10px;padding-right:10px;border:red solid 1px">
-			<h3>Existing Drafts</h3>
-			<table cellpadding="3" cellspacing="0" width="100%" border="0">
+			<h3>{$msgExisting}</h3>
+			<table cellpadding="3" cellspacing="0" width="100%" border="0" style="margin-left:-3px;margin-right:-3px">
 				<tr>
-					<th width="25%" align="left">Last Saved</th>
-					<th width="25%" align="left">Started</th>
-					<th width="25%" align="left">Edited</th>
+					<th width="25%" align="left">{$msgSaved}</th>
+					<th width="25%" align="left">{$msgStarted}</th>
+					<th width="25%" align="left">{$msgEdited}</th>
 					<th width="25%"></th>
 				</tr>
 END;
