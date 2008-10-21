@@ -30,14 +30,14 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['other'][] = array(
 	'name' => 'Save Drafts',
 	'author' => 'Trevor Parscal',
-   'url' => 'http://www.mediawiki.org/wiki/Extension:Trevor_Parscal',
+   'url' => 'http://www.mediawiki.org/wiki/Extension:Drafts',
    'description' => 'Allow users to save drafts'
 );
 
 $wgExtensionCredits['specialpage'][] = array(
    'name' => 'View Drafts',
    'author' => 'Trevor Parscal',
-   'url' => 'http://www.mediawiki.org/wiki/Extension:Trevor_Parscal',
+   'url' => 'http://www.mediawiki.org/wiki/Extension:Drafts',
    'description' => 'Drafts extension page'
 );
 
