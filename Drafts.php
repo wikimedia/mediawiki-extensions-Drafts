@@ -54,8 +54,8 @@ if ( true ) {
 	/* Includes */
 
 	// Save and View components
-	require_once $dir . 'Drafts.Classes.php';
-	require_once $dir . 'Drafts.Hooks.php';
+	require_once $dir . 'Drafts.classes.php';
+	require_once $dir . 'Drafts.hooks.php';
 
 	/* MediaWiki Connections */
 
@@ -67,7 +67,7 @@ if ( true ) {
 	$wgSpecialPages['Drafts'] = 'DraftsPage';
 
 	// Autoload SpecialDrafts from Drafts.Classes.php
-	$wgAutoloadClasses['DraftsPage'] = $dir . 'Drafts.Pages.php';
+	$wgAutoloadClasses['DraftsPage'] = $dir . 'Drafts.pages.php';
 
 	// Register save interception to detect non-javascript draft saving
 	$wgHooks['EditFilter'][] = 'efDraftsInterceptSave';
