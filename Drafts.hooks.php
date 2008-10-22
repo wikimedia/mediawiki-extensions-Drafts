@@ -6,7 +6,7 @@ function efDraftsDiscard( &$article, &$user, &$text, &$summary, &$minoredit, &$w
 	&$sectionanchor, &$flags, $revision ) {
 	global $wgRequest, $wgUser;
 
-	if ( $wgUser->editToken() == $wgRequest->getText( 'token' ) ) {
+	if ( $wgUser->editToken() == $wgRequest->getText( 'wpEditToken' ) ) {
 		// Check if the save occured from a draft
 		$draft = new Draft( $wgRequest->getIntOrNull( 'wpDraftID' ) );
 		if ( $draft->exists() ) {
