@@ -4,7 +4,7 @@
 
 function efDraftsDiscard( &$article, &$user, &$text, &$summary, &$minoredit, &$watchthis,
 	&$sectionanchor, &$flags, $revision ) {
-	global $wgRequest;
+	global $wgRequest, $wgUser;
 
 	if ( $wgUser->editToken() == $wgRequest->getText( 'token' ) ) {
 		// Check if the save occured from a draft
