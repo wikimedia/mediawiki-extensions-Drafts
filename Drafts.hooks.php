@@ -23,7 +23,7 @@ function efArticleSaved( &$article, &$user, &$text, &$summary, &$minoredit, &$wa
 
 // Load draft
 function efDraftsLoad( &$editpage ) {
-	global $wgUser, $wgRequest, $wgOut;
+	global $wgUser, $wgRequest, $wgOut, $wgTitle;
 
 	// Check permissions
 	if ( $wgUser->isAllowed( 'edit' ) && $wgUser->isLoggedIn() ) {
@@ -82,9 +82,13 @@ function efDraftsLoad( &$editpage ) {
 		array(
 			'draft_id',
 			'draft_title',
-			'draft_savetime'
+			'draft_section',
+			'draft_savetime',
+			'draft_text',
 		),
 		array(
+			'draft_namespace' => $wgTitle->getNamespace(),
+			'draft_title' => $wgTitle->getDBKey(),
 			'draft_user' => $wgUser->getID()
 		)
 	);
@@ -94,21 +98,20 @@ function efDraftsLoad( &$editpage ) {
 		
 		// Internationalization
 		wfLoadExtensionMessages( 'Drafts' );
+		$msgArticle = wfMsgHTML( 'drafts-view-article' );
 		$msgExisting = wfMsgHTML( 'drafts-view-existing' );
 		$msgSaved = wfMsgHTML( 'drafts-view-saved' );
-		$msgStarted = wfMsgHTML( 'drafts-view-started' );
-		$msgEdited = wfMsgHTML( 'drafts-view-edited' );
+		$msgDiscard = wfMsgHTML( 'drafts-view-discard' );
 		
 		// Begin existing drafts table
 		$htmlDraftList = <<<END
 			<div style="margin-bottom:10px;padding-left:10px;padding-right:10px;border:red solid 1px">
 			<h3>{$msgExisting}</h3>
-			<table cellpadding="3" cellspacing="0" width="100%" border="0" style="margin-left:-3px;margin-right:-3px">
+			<table cellpadding="5" cellspacing="0" width="100%" border="0" style="margin-left:-5px;margin-right:-5px">
 				<tr>
-					<th width="25%" align="left">{$msgSaved}</th>
-					<th width="25%" align="left">{$msgStarted}</th>
-					<th width="25%" align="left">{$msgEdited}</th>
-					<th width="25%"></th>
+					<th align="left"  width="75%" nowrap="nowrap">{$msgArticle}</th>
+					<th align="left" nowrap="nowrap">{$msgSaved}</th>
+					<th></th>
 				</tr>
 END;
 
@@ -117,26 +120,37 @@ END;
 		while ( $row = $db->fetchRow( $result ) )
 		{
 			// Article
-			$title = Title::newFromDBKey( $row['draft_title'] );
+			$title = Title::newFromDBKey( $row['draft_title'] ) ;
 			$urlLoad = wfExpandURL( $title->getEditURL() ) . "&draft={$row['draft_id']}";
+			$htmlTitle = $title->getEscapedText();
 			$htmlState = (integer) $draftID == (integer) $row['draft_id'] ? 'bold' : 'normal';
-
-			// Drafts Page
+			
+			// Drafts
 			$draftsTitle = SpecialPage::getTitleFor( 'Drafts' );
-			$urlDiscard = $draftsTitle->getFullUrl() . "?discard={$row['draft_id']}&returnto=edit";
-
+			$urlDiscard = $draftsTitle->getFullUrl() . "?discard={$row['draft_id']}";
+			
+			// Section
+			if ( $row['draft_section'] > 0 )
+			{
+				// Detect section name
+				$lines = explode( "\n", $row['draft_text'] );
+				$sectionName = count($lines) > 0 ? $lines[0] : 'Untitled Section';
+				
+				// Modify article link and title
+				$htmlTitle .= '#' . trim( str_replace( '=', '', $sectionName ) );
+				$urlLoad .= "&section={$row['draft_section']}";
+				$urlDiscard .= "&section={$row['draft_section']}";
+			}
+			
 			// Times
 			$htmlSaved = gmdate( 'F jS g:ia', wfTimestamp( TS_UNIX, $row['draft_savetime'] ) );
-			$htmlStarted = gmdate( 'F jS g:ia', wfTimestamp( TS_UNIX, $row['draft_starttime'] ) );
-			$htmlEdited = gmdate( 'F jS g:ia', wfTimestamp( TS_UNIX, $row['draft_edittime'] ) );
 
 			// Build HTML
 			$htmlDraftList .= <<<END
 				<tr>
-					<td width="25%"><a href="{$urlLoad}" style="font-weight:{$htmlState}">{$htmlSaved}</a></td>
-					<td width="25%">{$htmlStarted}</td>
-					<td width="25%">{$htmlEdited}</td>
-					<td width="25%" align="right"><a href="{$urlDiscard}">Discard</a></td>
+					<td align="left" nowrap="nowrap"><a href="{$urlLoad}" style="font-weight:{$htmlState}">{$htmlTitle}</a></td>
+					<td align-"left" nowrap="nowrap">{$htmlSaved}</td>
+					<td align="right" nowrap="nowrap"><a href="{$urlDiscard}">{$msgDiscard}</a></td>
 				</tr>
 END;
 			$count++;
@@ -253,4 +267,32 @@ function efDraftsSave( $id, $namespace, $title, $section, $starttime, $edittime,
 
 	// Return draft id to client (used for next save)
 	return (string) $draft->getID();
+}
+
+function efCheckSchema() {
+	// Get a connection
+	$db = wfGetDB( DB_MASTER );
+	
+	// Build create table statement
+	$statement = <<<END
+		create table drafts (
+			draft_id INTEGER AUTO_INCREMENT PRIMARY KEY,
+			draft_user INTEGER,
+			draft_namespace INTEGER,
+			draft_title VARBINARY(255),
+			draft_section INTEGER,
+			draft_starttime BINARY(14),
+			draft_edittime BINARY(14),
+			draft_savetime BINARY(14),
+			draft_scrolltop INTEGER,
+			draft_text BLOB,
+			draft_summary TINYBLOB,
+			draft_minoredit BOOL
+		);
+END;
+
+	// Create table if it doesn't exist
+	if ( !$db->tableExists( 'drafts' ) ) {
+		$db->query( $statement, __METHOD__);
+	}
 }

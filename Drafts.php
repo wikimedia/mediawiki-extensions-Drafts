@@ -1,25 +1,5 @@
 <?php
 
-/*
- * This SQL statement must be executed before using the drafts extension.
- *
-create table drafts (
-	draft_id INTEGER AUTO_INCREMENT PRIMARY KEY,
-	draft_user INTEGER,
-	draft_namespace INTEGER,
-	draft_title VARBINARY(255),
-	draft_section INTEGER,
-	draft_starttime BINARY(14),
-	draft_edittime BINARY(14),
-	draft_savetime BINARY(14),
-	draft_scrolltop INTEGER,
-	draft_text BLOB,
-	draft_summary TINYBLOB,
-	draft_minoredit BOOL
-);
- */
-
-
 // Check environment
 if ( !defined( 'MEDIAWIKI' ) ) {
     echo( "This is an extension to the MediaWiki package and cannot be run standalone.\n" );
@@ -86,4 +66,7 @@ if ( true ) {
 
 	// Register ajax add script hook
 	$wgHooks['AjaxAddScript'][] = 'efDraftsAddJS';
+	
+	// Register database operations
+	$wgHooks['LoadExtensionSchemaUpdates'][] = 'efCheckSchema';
 }

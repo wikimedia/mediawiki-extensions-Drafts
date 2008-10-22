@@ -45,15 +45,16 @@ class DraftsPage extends SpecialPage {
 		{
 			$draft = new Draft( $discard );
 			$draft->discard();
+			$urlSection = $wgRequest->getInt( 'section', '' );
 			switch( $wgRequest->getText( 'returnto' ) )
 			{
 				case 'edit':
 					$title = Title::newFromDBKey( $draft->getTitle() );
-					$wgOut->redirect( wfExpandURL( $title->getEditURL() ) );
+					$wgOut->redirect( wfExpandURL( $title->getEditURL() . $urlSection ) );
 					break;
 				case 'view':
 					$title = Title::newFromDBKey( $draft->getTitle() );
-					$wgOut->redirect( wfExpandURL( $title->getFullURL() ) );
+					$wgOut->redirect( wfExpandURL( $title->getFullURL() . $urlSection ) );
 					break;
 			}
 		}
@@ -66,7 +67,9 @@ class DraftsPage extends SpecialPage {
 			array(
 				'draft_id',
 				'draft_title',
-				'draft_savetime'
+				'draft_section',
+				'draft_savetime',
+				'draft_text'
 			),
 			array(
 				'draft_user' => $wgUser->getID()
@@ -78,17 +81,14 @@ class DraftsPage extends SpecialPage {
 			// Internationalization
 			$msgArticle = wfMsgHTML( 'drafts-view-article' );
 			$msgSaved = wfMsgHTML( 'drafts-view-saved' );
-			$msgStarted = wfMsgHTML( 'drafts-view-started' );
-			$msgEdited = wfMsgHTML( 'drafts-view-edited' );
+			$msgDiscard = wfMsgHTML( 'drafts-view-discard' );
 
 			$htmlDraftList = <<<END
-				<table cellpadding="3" cellspacing="0" width="100%" border="0">
+				<table cellpadding="5" cellspacing="0" width="100%" border="0">
 					<tr>
-						<th width="17%" align="left">{$msgArticle}</th>
-						<th width="17%" align="left">{$msgSaved}</th>
-						<th width="17%" align="left">{$msgStarted}</th>
-						<th width="17%" align="left">{$msgEdited}</th>
-						<th width="17%"></th>
+						<th align="left" width="75%" nowrap="nowrap">{$msgArticle}</th>
+						<th align="left" nowrap="nowrap">{$msgSaved}</th>
+						<th></th>
 					</tr>
 END;
 
@@ -97,28 +97,35 @@ END;
 			while ( $row = $db->fetchRow( $result ) )
 			{
 				// Article
-				$title = Title::newFromDBKey( $row['draft_title'] );
-				$urlLoad = wfExpandURL( $title->getEditURL() ) . '&draft=' . $row['draft_id'];
+				$title = Title::newFromDBKey( $row['draft_title'] ) ;
+				$urlLoad = wfExpandURL( $title->getEditURL() ) . "&draft={$row['draft_id']}";
 				$htmlTitle = $title->getEscapedText();
-
+				
 				// Drafts
 				$urlDiscard = $wgTitle->getFullUrl() . "?discard={$row['draft_id']}";
-
+				
+				// Section
+				if ( $row['draft_section'] > 0 )
+				{
+					// Detect section name
+					$lines = explode( "\n", $row['draft_text'] );
+					$sectionName = count($lines) > 0 ? $lines[0] : 'Untitled Section';
+					
+					// Modify article link and title
+					$htmlTitle .= '#' . trim( str_replace( '=', '', $sectionName ) );
+					$urlLoad .= "&section={$row['draft_section']}";
+					$urlDiscard .= "&section={$row['draft_section']}";
+				}
+				
 				// Times
 				$htmlSaved = gmdate( 'F jS g:ia', wfTimestamp( TS_UNIX, $row['draft_savetime'] ) );
-				$htmlStarted = gmdate( 'F jS g:ia', wfTimestamp( TS_UNIX, $row['draft_starttime'] ) );
-				$htmlEdited = gmdate( 'F jS g:ia', wfTimestamp( TS_UNIX, $row['draft_edittime'] ) );
 
-				// Internationalization
-				$msgDiscard = wfMsgHTML( 'drafts-view-discard' );
-
+				// Build HTML
 				$htmlDraftList .= <<<END
 					<tr>
-						<td width="17%"><a href="{$urlLoad}">{$htmlTitle}</a></td>
-						<td width="17%">{$htmlSaved}</td>
-						<td width="17%">{$htmlStarted}</td>
-						<td width="17%">{$htmlEdited}</td>
-						<td width="17%" align="right"><a href="{$urlDiscard}">{$msgDiscard}</a></td>
+						<td align="left" nowrap="nowrap"><a href="{$urlLoad}">{$htmlTitle}</a></td>
+						<td align="left" nowrap="nowrap">{$htmlSaved}</td>
+						<td align="right"><a href="{$urlDiscard}">{$msgDiscard}</a></td>
 					</tr>
 END;
 				$count++;
