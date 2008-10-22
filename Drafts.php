@@ -53,7 +53,7 @@ if ( true ) {
 	$wgHooks['EditFilter'][] = 'efDraftsInterceptSave';
 
 	// Register article save hook
-	$wgHooks['ArticleSaveComplete'][] = 'efArticleSaved';
+	$wgHooks['ArticleSaveComplete'][] = 'efDraftsDiscard';
 
 	// Register controls hook
 	$wgHooks['EditPageBeforeEditButtons'][] = 'efDraftsControls';

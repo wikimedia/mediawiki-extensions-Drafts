@@ -2,19 +2,17 @@
 
 /* Hooks */
 
-function efArticleSaved( &$article, &$user, &$text, &$summary, &$minoredit, &$watchthis,
+function efDraftsDiscard( &$article, &$user, &$text, &$summary, &$minoredit, &$watchthis,
 	&$sectionanchor, &$flags, $revision ) {
 	global $wgRequest;
 
-	// Check if the save occured from a draft
-	$draftID = $wgRequest->getIntOrNull( 'wpDraftID' );
-	if ( $draftID !== null )
-	{
-		// Get the draft
-		$draft = new Draft( $draftID );
-
-		// Discard the draft
-		$draft->discard();
+	if ( $wgUser->editToken() == $wgRequest->getText( 'token' ) ) {
+		// Check if the save occured from a draft
+		$draft = new Draft( $wgRequest->getIntOrNull( 'wpDraftID' ) );
+		if ( $draft->exists() ) {
+			// Discard the draft
+			$draft->discard();
+		}
 	}
 
 	// Continue
@@ -27,13 +25,12 @@ function efDraftsLoad( &$editpage ) {
 
 	// Check permissions
 	if ( $wgUser->isAllowed( 'edit' ) && $wgUser->isLoggedIn() ) {
-		// Load draft if asked to
-		$draftID = $wgRequest->getIntOrNull( 'draft' );
-		if ( $draftID !== null )
+		// Get draft
+		$draft = new Draft( $wgRequest->getIntOrNull( 'draft' ) );
+		
+		// Load form values
+		if ( $draft->exists() )
 		{
-			// Create Draft
-			$draft = new Draft( $draftID );
-
 			// Override initial values in the form with draft data
 			$editpage->textbox1 = $draft->getText();
 			$editpage->summary = $draft->getSummary();
@@ -41,20 +38,17 @@ function efDraftsLoad( &$editpage ) {
 			$editpage->minoredit = $draft->getMinorEdit() ? true : false;
 		}
 
-		// Handle preview or non-javascript draft saving
-		if ( $wgRequest->getText( 'action' ) == 'submit' )
+		// Save draft on non-save submission
+		if ( $wgRequest->getText( 'action' ) == 'submit' &&
+			$wgUser->editToken() == $wgRequest->getText( 'wpEditToken' ) )
 		{
 			// If the draft wasn't specified in the url, try using a form-submitted one
-			if ( $draftID == null )
+			if ( !$draft->exists() )
 			{
-				$draftID = $wgRequest->getIntOrNull( 'wpDraftID' );
+				$draft = new Draft( $wgRequest->getIntOrNull( 'wpDraftID' ) );
 			}
 
-			// Create Draft
-			$draft = new Draft( $draftID ? $draftID : '' );
-
 			// Load draft with info
-			$draft->setNamespace( $wgRequest->getInt( 'wpDraftNamespace' ) );
 			$draft->setTitle( $wgRequest->getText( 'wpDraftTitle' ) );
 			$draft->setSection( $wgRequest->getInt( 'wpSection' ) );
 			$draft->setStartTime( $wgRequest->getText( 'wpStarttime' ) );
@@ -69,107 +63,21 @@ function efDraftsLoad( &$editpage ) {
 			$draft->save();
 
 			// Use the new draft id
-			$draftID = $draft->getID();
-			$wgRequest->setVal( 'draft', $draftID );
+			$wgRequest->setVal( 'draft', $draft->getID() );
 		}
 	}
 
-	// Get a connection
-	$db = wfGetDB( DB_MASTER );
-
-	// Get all drafts for this user and article
-	$result = $db->select( 'drafts',
-		array(
-			'draft_id',
-			'draft_title',
-			'draft_section',
-			'draft_savetime',
-			'draft_text',
-		),
-		array(
-			'draft_namespace' => $wgTitle->getNamespace(),
-			'draft_title' => $wgTitle->getDBKey(),
-			'draft_user' => $wgUser->getID()
-		)
-	);
-
-	if ( $result )
-	{
-		
-		// Internationalization
-		wfLoadExtensionMessages( 'Drafts' );
-		$msgArticle = wfMsgHTML( 'drafts-view-article' );
-		$msgExisting = wfMsgHTML( 'drafts-view-existing' );
-		$msgSaved = wfMsgHTML( 'drafts-view-saved' );
-		$msgDiscard = wfMsgHTML( 'drafts-view-discard' );
-		
-		// Begin existing drafts table
-		$htmlDraftList = <<<END
-			<div style="margin-bottom:10px;padding-left:10px;padding-right:10px;border:red solid 1px">
-			<h3>{$msgExisting}</h3>
-			<table cellpadding="5" cellspacing="0" width="100%" border="0" style="margin-left:-5px;margin-right:-5px">
-				<tr>
-					<th align="left"  width="75%" nowrap="nowrap">{$msgArticle}</th>
-					<th align="left" nowrap="nowrap">{$msgSaved}</th>
-					<th></th>
-				</tr>
-END;
-
-		// Add existing drafts for this page and user
-		$count = 0;
-		while ( $row = $db->fetchRow( $result ) )
-		{
-			// Article
-			$title = Title::newFromDBKey( $row['draft_title'] ) ;
-			$urlLoad = wfExpandURL( $title->getEditURL() ) . "&draft={$row['draft_id']}";
-			$htmlTitle = $title->getEscapedText();
-			$htmlState = (integer) $draftID == (integer) $row['draft_id'] ? 'bold' : 'normal';
-			
-			// Drafts
-			$draftsTitle = SpecialPage::getTitleFor( 'Drafts' );
-			$urlDiscard = $draftsTitle->getFullUrl() . "?discard={$row['draft_id']}";
-			
-			// Section
-			if ( $row['draft_section'] > 0 )
-			{
-				// Detect section name
-				$lines = explode( "\n", $row['draft_text'] );
-				$sectionName = count($lines) > 0 ? $lines[0] : 'Untitled Section';
-				
-				// Modify article link and title
-				$htmlTitle .= '#' . trim( str_replace( '=', '', $sectionName ) );
-				$urlLoad .= "&section={$row['draft_section']}";
-				$urlDiscard .= "&section={$row['draft_section']}";
-			}
-			
-			// Times
-			$htmlSaved = gmdate( 'F jS g:ia', wfTimestamp( TS_UNIX, $row['draft_savetime'] ) );
-
-			// Build HTML
-			$htmlDraftList .= <<<END
-				<tr>
-					<td align="left" nowrap="nowrap"><a href="{$urlLoad}" style="font-weight:{$htmlState}">{$htmlTitle}</a></td>
-					<td align-"left" nowrap="nowrap">{$htmlSaved}</td>
-					<td align="right" nowrap="nowrap"><a href="{$urlDiscard}">{$msgDiscard}</a></td>
-				</tr>
-END;
-			$count++;
-		}
-
-		// End existing drafts table
-		$htmlDraftList .= <<<END
-			</table>
-			</div>
-END;
-
-		// If there were any drafts for this page and user
-		if ( $count > 0 )
-		{
-			// Show list of drafts
-			$wgOut->addHTML( $htmlDraftList );
-		}
+	wfLoadExtensionMessages( 'Drafts' );
+	$msgExisting = wfMsgHTML( 'drafts-view-existing' );
+	
+	// Show list of drafts
+	if ( Draft::countDrafts( $wgTitle->getDBKey() ) > 0 ) {
+		$wgOut->addHTML( '<div style="margin-bottom:10px;padding-left:10px;padding-right:10px;border:red solid 1px">' );
+		$wgOut->addHTML( "<h3>{$msgExisting}</h3>" );
+		Draft::ListDrafts( $wgTitle->getDBKey() );	
+		$wgOut->addHTML( '</div>' );
 	}
-
+	
 	// Continue
 	return true;
 }
@@ -182,7 +90,7 @@ function efDraftsInterceptSave( $editor, $text, $section, &$error ) {
 	// Don't save if the save draft button caused the submit
 	if ( $wgRequest->getText( 'wpDraftSave' ) !== '' ) {
 		// Modify the error so it's clear we want to remain in edit mode
-		$error = ' ' . $wgRequest->getText( 'wpDraftSave' );
+		$error = ' ';
 	}
 
 	// Continue
@@ -198,14 +106,13 @@ function efDraftsControls( &$editpage, &$buttons ) {
 		// Internationalization
 		wfLoadExtensionMessages( 'Drafts' );
 
-		// Use internationalized text in controls
+		// Internationalization
 		$msgSaveDraft = wfMsgHTML( 'drafts-save-save' );
 		$msgSaveDraftTitle = wfMsgHTML( 'drafts-save-savetitle' );
 		$msgSaved = wfMsgHTML( 'drafts-save-saved' );
 		$msgError = wfMsgHTML( 'drafts-save-error' );
 
 		// Get the namespace, title and draft id
-		$namespace = $wgTitle->getNamespace();
 		$title = $wgTitle->getPrefixedText();
 		$draftID = $wgRequest->getInt( 'draft', '' );
 
@@ -218,7 +125,6 @@ function efDraftsControls( &$editpage, &$buttons ) {
 				<input type="submit" id="wpDraftSave" name="wpDraftSave" value="{$msgSaveDraft}" tabindex="8" accesskey="d" title="{$msgSaveDraftTitle}" />
 			</noscript>
 			<input type="hidden" name="wpDraftID" value="{$draftID}" />
-			<input type="hidden" name="wpDraftNamespace" value="{$namespace}" />
 			<input type="hidden" name="wpDraftTitle" value="{$title}" />
 			<input type="hidden" name="wpMsgSaved" value="{$msgSaved}" />
 			<input type="hidden" name="wpMsgSaveDraft" value="{$msgSaveDraft}" />
@@ -233,40 +139,46 @@ END;
 
 // Add ajax support script
 function efDraftsAddJS( $out ) {
-	global $wgJsMimeType, $wgScriptPath;
+	global $wgScriptPath;
 
 	// Add javascript to support ajax draft saving
-	$out->addScript(
-		sprintf( '<script type="%s" src="%s/extensions/Drafts/Drafts.js"></script>' . "\n",
-			$wgJsMimeType, $wgScriptPath )
-	);
+	$out->addScriptFile( $wgScriptPath . '/extensions/Drafts/Drafts.js' );
 
 	// Continue
 	return true;
 }
 
 // Respond to ajax queries
-function efDraftsSave( $id, $namespace, $title, $section, $starttime, $edittime, $scrolltop, $text, $summary, $minoredit ) {
-	// Create Draft
-	$draft = new Draft( $id );
-
-	// Load draft with info
-	$draft->setNamespace( $namespace );
-	$draft->setTitle( $title );
-	$draft->setSection( $section );
-	$draft->setStartTime( $starttime );
-	$draft->setEditTime( $edittime );
-	$draft->setSaveTime( wfTimestampNow() );
-	$draft->setScrollTop( $scrolltop );
-	$draft->setText( $text );
-	$draft->setSummary( $summary );
-	$draft->setMinorEdit( $minoredit );
-
-	// Save draft
-	$draft->save();
-
-	// Return draft id to client (used for next save)
-	return (string) $draft->getID();
+function efDraftsSave( $token, $id, $title, $section, $starttime, $edittime, $scrolltop, $text, $summary, $minoredit ) {
+	global $wgUser;
+	
+	// Verify token
+	if ( $wgUser->editToken() == $token ) {
+		// Create Draft
+		$draft = new Draft( $id );
+	
+		// Load draft with info
+		$draft->setTitle( $title );
+		$draft->setSection( $section == '' ? null : $section );
+		$draft->setStartTime( $starttime );
+		$draft->setEditTime( $edittime );
+		$draft->setSaveTime( wfTimestampNow() );
+		$draft->setScrollTop( $scrolltop );
+		$draft->setText( $text );
+		$draft->setSummary( $summary );
+		$draft->setMinorEdit( $minoredit );
+	
+		// Save draft
+		$draft->save();
+	
+		// Return draft id to client (used for next save)
+		return (string) $draft->getID();
+	}
+	else {
+		// Return failure
+		return '-1';
+	}
+	
 }
 
 function efCheckSchema() {

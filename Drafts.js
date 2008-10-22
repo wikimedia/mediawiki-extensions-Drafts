@@ -15,8 +15,8 @@ wgAjaxSaveDraft.autosavewait = null;
 
 wgAjaxSaveDraft.save = function() {
 	wgAjaxSaveDraft.call(
+		document.editform.wpEditToken.value,
 		document.editform.wpDraftID.value,
-		document.editform.wpDraftNamespace.value,
 		document.editform.wpDraftTitle.value,
 		document.editform.wpSection.value,
 		document.editform.wpStarttime.value,
@@ -65,23 +65,26 @@ wgAjaxSaveDraft.setControlsError = function() {
 // Events
 
 wgAjaxSaveDraft.onLoad = function() {
-	// Handle saving
-	document.editform.wpDraftSave.onclick = wgAjaxSaveDraft.save;
-
-	// Detect changes
-	document.editform.wpTextbox1.onkeypress = wgAjaxSaveDraft.change;
-	document.editform.wpTextbox1.onpaste = wgAjaxSaveDraft.change;
-	document.editform.wpTextbox1.oncut = wgAjaxSaveDraft.change;
-	document.editform.wpSummary.onkeypress = wgAjaxSaveDraft.change;
-	document.editform.wpSummary.onpaste = wgAjaxSaveDraft.change;
-	document.editform.wpSummary.oncut = wgAjaxSaveDraft.change;
-	document.editform.wpMinoredit.onchange = wgAjaxSaveDraft.change;
-
-	// Use the configured autosave wait time
-	wgAjaxSaveDraft.autosavewait = document.editform.wpDraftAutoSaveWait.value;
+	// Check to see that the form and controls exist
+	if ( document.editform && document.editform.wpDraftSave ) {
+		// Handle saving
+		document.editform.wpDraftSave.onclick = wgAjaxSaveDraft.save;
+	
+		// Detect changes
+		document.editform.wpTextbox1.onkeypress = wgAjaxSaveDraft.change;
+		document.editform.wpTextbox1.onpaste = wgAjaxSaveDraft.change;
+		document.editform.wpTextbox1.oncut = wgAjaxSaveDraft.change;
+		document.editform.wpSummary.onkeypress = wgAjaxSaveDraft.change;
+		document.editform.wpSummary.onpaste = wgAjaxSaveDraft.change;
+		document.editform.wpSummary.oncut = wgAjaxSaveDraft.change;
+		document.editform.wpMinoredit.onchange = wgAjaxSaveDraft.change;
+	
+		// Use the configured autosave wait time
+		wgAjaxSaveDraft.autosavewait = document.editform.wpDraftAutoSaveWait.value;
+	}
 }
 
-wgAjaxSaveDraft.call = function( id, namespace, title, section, starttime, edittime, scrolltop, text, summary, minoredit ) {
+wgAjaxSaveDraft.call = function( token, id, title, section, starttime, edittime, scrolltop, text, summary, minoredit ) {
 	// If in progress, exit now
 	if( wgAjaxSaveDraft.inprogress )
 		return;
@@ -92,7 +95,7 @@ wgAjaxSaveDraft.call = function( id, namespace, title, section, starttime, editt
 	// Perform Ajax call
 	sajax_do_call(
 		"efDraftsSave",
-		[ id, namespace, title, section, starttime, edittime, scrolltop, text, summary, minoredit ],
+		[ token, id, title, section, starttime, edittime, scrolltop, text, summary, minoredit ],
 		wgAjaxSaveDraft.processResult
 	);
 
