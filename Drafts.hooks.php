@@ -107,7 +107,7 @@ function efDraftsControls( &$editpage, &$buttons ) {
 		wfLoadExtensionMessages( 'Drafts' );
 
 		// Build XML
-		$buttons['savedraft'] .= Xml::openElement( 'script',
+		$buttons['savedraft'] = Xml::openElement( 'script',
 			array(
 				'type' => 'text/javascript',
 				'lanuguage' => 'javascript'
