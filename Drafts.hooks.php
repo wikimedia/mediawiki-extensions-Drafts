@@ -70,12 +70,25 @@ function efDraftsLoad( &$editpage ) {
 	// Internationalization
 	wfLoadExtensionMessages( 'Drafts' );
 	
+	$numDrafts = Draft::countDrafts( $wgTitle );
+	
 	// Show list of drafts
-	if ( Draft::countDrafts( $wgTitle ) > 0 && $wgRequest->getText( 'action' ) !== 'submit' ) {
-		$wgOut->addHTML( Xml::openElement( 'div', array( 'style' => 'margin-bottom:10px;padding-left:10px;padding-right:10px;border:red solid 1px' ) ) );
-		$wgOut->addHTML( Xml::element( 'h3', null, wfMsg( 'drafts-view-existing' ) ) );
-		Draft::ListDrafts( $wgTitle );
-		$wgOut->addHTML( Xml::closeElement( 'div' ) );
+	if ( $numDrafts  > 0 ) {
+		if( $wgRequest->getText( 'action' ) !== 'submit' ) {
+			$wgOut->addHTML( Xml::openElement( 'div', array( 'style' => 'margin-bottom:10px;padding-left:10px;padding-right:10px;border:red solid 1px' ) ) );
+			$wgOut->addHTML( Xml::element( 'h3', null, wfMsg( 'drafts-view-existing' ) ) );
+			Draft::ListDrafts( $wgTitle );
+			$wgOut->addHTML( Xml::closeElement( 'div' ) );
+		} else {
+			$link = Xml::element( 'a',
+				array(
+					'href' => $wgTitle->getFullURL( 'action=edit' ),
+					'onclick' => htmlspecialchars( "return confirm('" . Xml::escapeJsString( wfMsgHTML( 'drafts-view-warn' ) ) . "')" )
+				),
+				$numDrafts > 1 ? wfMsg( 'drafts-view-notice-plural', $numDrafts ) : wfMsg( 'drafts-view-notice-single', $numDrafts )
+			);
+			$wgOut->addHTML( wfMsgHTML( 'drafts-view-notice', $link ) );
+		}
 	}
 	
 	// Continue

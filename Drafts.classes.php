@@ -338,7 +338,8 @@ class Draft
 				$wgOut->addHTML(
 					Xml::element( 'a',
 						array(
-							'href' => $urlDiscard
+							'href' => $urlDiscard,
+							'onclick' => htmlspecialchars( "return confirm('" . Xml::escapeJsString( wfMsgHTML( 'drafts-view-warn' ) ) . "')" )
 						),
 						wfMsg( 'drafts-view-discard' )
 					)
