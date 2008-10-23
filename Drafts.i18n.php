@@ -21,8 +21,7 @@ $messages['en'] = array(
 	'drafts-view-mustlogin' => 'You must $1 to see your drafts.',
 	'drafts-view-nonesaved' => 'You do not have any drafts saved at this time.',
 	'drafts-view-notice' => 'You have $1 for this page.',
-	'drafts-view-notice-single' => '$1 draft',
-	'drafts-view-notice-plural' => '$1 drafts',
+    'drafts-view-notice-link' => '$1 {{PLURAL:$1|draft|drafts}}',
 	'drafts-view-warn' => 'By navigating away from this page you will loose all unsaved changes to this page.
 Do you want to continue?',
 	'drafts-save' => 'Save this as a draft [d]',
