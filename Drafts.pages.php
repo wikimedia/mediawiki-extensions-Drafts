@@ -7,7 +7,7 @@ class DraftsPage extends SpecialPage {
 
 	/* Functions */
 
-	function DraftsPage() {
+	function __construct() {
 		// Initialize special page
 		SpecialPage::SpecialPage( 'Drafts' );
 
@@ -31,7 +31,7 @@ class DraftsPage extends SpecialPage {
 		}
 
 		// Handle discarding
-		$draft = new Draft( $wgRequest->getIntOrNull( 'discard' ) );
+		$draft = Draft::newFromID( $wgRequest->getIntOrNull( 'discard' ) );
 		if ( $draft->exists() )
 		{
 			// Discard draft

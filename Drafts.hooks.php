@@ -8,7 +8,7 @@ function efDraftsDiscard( &$article, &$user, &$text, &$summary, &$minoredit, &$w
 
 	if ( $wgUser->editToken() == $wgRequest->getText( 'wpEditToken' ) ) {
 		// Check if the save occured from a draft
-		$draft = new Draft( $wgRequest->getIntOrNull( 'wpDraftID' ) );
+		$draft = Draft::newFromID( $wgRequest->getIntOrNull( 'wpDraftID' ) );
 		if ( $draft->exists() ) {
 			// Discard the draft
 			$draft->discard();
@@ -26,7 +26,7 @@ function efDraftsLoad( &$editpage ) {
 	// Check permissions
 	if ( $wgUser->isAllowed( 'edit' ) && $wgUser->isLoggedIn() ) {
 		// Get draft
-		$draft = new Draft( $wgRequest->getIntOrNull( 'draft' ) );
+		$draft = Draft::newFromID( $wgRequest->getIntOrNull( 'draft' ) );
 		
 		// Load form values
 		if ( $draft->exists() )
@@ -45,11 +45,11 @@ function efDraftsLoad( &$editpage ) {
 			// If the draft wasn't specified in the url, try using a form-submitted one
 			if ( !$draft->exists() )
 			{
-				$draft = new Draft( $wgRequest->getIntOrNull( 'wpDraftID' ) );
+				$draft = Draft::newFromID( $wgRequest->getIntOrNull( 'wpDraftID' ) );
 			}
 
 			// Load draft with info
-			$draft->setTitle( $wgRequest->getText( 'wpDraftTitle' ) );
+			$draft->setTitle( Title::newFromText( $wgRequest->getText( 'wpDraftTitle' ) ) );
 			$draft->setSection( $wgRequest->getInt( 'wpSection' ) );
 			$draft->setStartTime( $wgRequest->getText( 'wpStarttime' ) );
 			$draft->setEditTime( $wgRequest->getText( 'wpEdittime' ) );
@@ -71,10 +71,10 @@ function efDraftsLoad( &$editpage ) {
 	$msgExisting = wfMsgHTML( 'drafts-view-existing' );
 	
 	// Show list of drafts
-	if ( Draft::countDrafts( $wgTitle->getDBKey() ) > 0 ) {
+	if ( Draft::countDrafts( $wgTitle ) > 0 ) {
 		$wgOut->addHTML( '<div style="margin-bottom:10px;padding-left:10px;padding-right:10px;border:red solid 1px">' );
 		$wgOut->addHTML( "<h3>{$msgExisting}</h3>" );
-		Draft::ListDrafts( $wgTitle->getDBKey() );	
+		Draft::ListDrafts( $wgTitle );	
 		$wgOut->addHTML( '</div>' );
 	}
 	
@@ -155,10 +155,10 @@ function efDraftsSave( $token, $id, $title, $section, $starttime, $edittime, $sc
 	// Verify token
 	if ( $wgUser->editToken() == $token ) {
 		// Create Draft
-		$draft = new Draft( $id );
+		$draft = Draft::newFromID( $id );
 	
 		// Load draft with info
-		$draft->setTitle( $title );
+		$draft->setTitle( Title::newFromText( $title ) );
 		$draft->setSection( $section == '' ? null : $section );
 		$draft->setStartTime( $starttime );
 		$draft->setEditTime( $edittime );

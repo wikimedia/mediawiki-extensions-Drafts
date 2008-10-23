@@ -7,23 +7,23 @@ class Draft
 {
 	/* Fields */
 
-	private $_db = null;
+	private $_db;
 	private $_exists = false;
-	private $_id = null;
-	private $_user = null;
-	private $_title = null;
-	private $_section = null;
-	private $_starttime = null;
-	private $_edittime = null;
-	private $_savetime = null;
-	private $_scrolltop = null;
-	private $_text = null;
-	private $_summary = null;
-	private $_minoredit = null;
+	private $_id;
+	private $_userID;
+	private $_title;
+	private $_section;
+	private $_starttime;
+	private $_edittime;
+	private $_savetime;
+	private $_scrolltop ;
+	private $_text;
+	private $_summary;
+	private $_minoredit;
 
 	/* Functions */
 
-	public function Draft( $id = null, $autoload = true ) {
+	public function __construct( $id = null, $autoload = true ) {
 		// If an ID is a number the existence is actually checked on load
 		// If an ID is false the existance is always false durring load
 		$this->_id = $id;
@@ -65,8 +65,7 @@ class Draft
 		}
 
 		// Synchronize data
-		$title = Title::makeTitle( $row['draft_namespace'], $row['draft_title'] );
-		$this->_title = $title->getPrefixedText();
+		$this->_title = Title::makeTitle( $row['draft_namespace'], $row['draft_title'] );
 		$this->_section = $row['draft_section'];
 		$this->_starttime = $row['draft_starttime'];
 		$this->_edittime = $row['draft_edittime'];
@@ -88,14 +87,11 @@ class Draft
 		// Get db connection
 		$this->getDB();
 		
-		// Get title object from text
-		$title = Title::newFromText( $this->_title );
-
 		// Build data
 		$data = array(
 			'draft_user' => (int) $wgUser->getID(),
-			'draft_namespace' => (int) $title->getNamespace(),
-			'draft_title' => (string) $title->getDBKey(),
+			'draft_namespace' => (int) $this->_title->getNamespace(),
+			'draft_title' => (string) $this->_title->getDBKey(),
 			'draft_section' => $this->_section == '' ? null : (int) $this->_section,
 			'draft_starttime' => $this->_db->timestamp( $this->_starttime ),
 			'draft_edittime' => $this->_db->timestamp( $this->_edittime ),
@@ -146,33 +142,33 @@ class Draft
 		$this->_exists = false;
 	}
 	
-	public static function countDrafts( $title = null, $user = null ) {
+	public static function newFromID( $id, $autoload = true ) {
+		return new Draft( $id, $autoload );
+	}
+	
+	public static function countDrafts( &$title = null, $userID = null ) {
 		global $wgUser;
 		
 		// Get db connection
-		$db = wfGetDB( DB_MASTER );
+		$db = wfGetDB( DB_SLAVE );
 		
 		// Build where clause
 		$where = array();
 		if ( $title !== null ) {
-			$title = Title::newFromText( $title );
 			$where['draft_namespace'] = $title->getNamespace();
 			$where['draft_title'] = $title->getDBKey();
 		}
-		if ( $user !== null ) {
-			$where['draft_user'] = $user;
+		if ( $userID !== null ) {
+			$where['draft_user'] = $userID;
 		} else {
 			$where['draft_user'] = $wgUser->getID();
 		}
 		
 		// Get a list of matching drafts
-		$result = $db->select( 'drafts', array( 'draft_id' ), $where, __METHOD__ );
-		
-		// Return number of results
-		return $db->numRows( $result );
+		return $db->selectField( 'drafts', 'count(*)', $where, __METHOD__ );
 	}
 	
-	public static function getDrafts( $title = null, $user = null ) {
+	public static function getDrafts( &$title = null, $userID = null ) {
 		global $wgUser;
 		
 		// Get db connection
@@ -181,12 +177,11 @@ class Draft
 		// Build where clause
 		$where = array();
 		if ( $title !== null ) {
-			$title = Title::newFromText( $title );
 			$where['draft_namespace'] = $title->getNamespace();
 			$where['draft_title'] = $title->getDBKey();
 		}
-		if ( $user !== null ) {
-			$where['draft_user'] = $user;
+		if ( $userID !== null ) {
+			$where['draft_user'] = $userID;
 		} else {
 			$where['draft_user'] = $wgUser->getID();
 		}
@@ -196,8 +191,8 @@ class Draft
 		$result = $db->select( 'drafts', array( 'draft_id' ), $where, __METHOD__ );
 		if ( $result ) {
 			while ( $row = $db->fetchRow( $result ) ) {
-				// Add a new draft class, but don't autoload
-				$drafts[] = new Draft( $row['draft_id'], false );
+				// Add a new draft to the list from the row
+				$drafts[] = Draft::newFromID( $row['draft_id'] );
 			}
 		}
 		
@@ -205,11 +200,11 @@ class Draft
 		return count( $drafts ) ? $drafts : null;
 	}
 	
-	public static function listDrafts( $title = null, $user = null ) {
+	public static function listDrafts( &$title = null, $user = null ) {
 		global $wgOut, $wgRequest, $wgUser, $wgLang;
 		
 		// Get draftID
-		$currentDraft = new Draft( $wgRequest->getIntOrNull( 'draft' ) );
+		$currentDraft = Draft::newFromID( $wgRequest->getIntOrNull( 'draft' ) );
 		
 		// Output HTML for list of drafts
 		$drafts = Draft::getDrafts( $title, $user );
@@ -239,13 +234,12 @@ END;
 				$draft->load();
 				
 				// Article
-				$articleTitle = Title::newFromText( $draft->getTitle() ) ;
 				$draftsTitle = SpecialPage::getTitleFor( 'Drafts' );
 				
 				// Build URLs and HTML components
-				$htmlTitle = $articleTitle->getEscapedText();
+				$htmlTitle = $draft->getTitle()->getEscapedText();
 				$htmlState = $currentDraft->getID() == $draft->getID() ? 'bold' : 'normal';
-				$urlLoad = wfExpandURL( $articleTitle->getEditURL() ) . '&draft=' . $draft->getID();
+				$urlLoad = wfExpandURL( $draft->getTitle()->getEditURL() ) . '&draft=' . $draft->getID();
 				$urlDiscard = $draftsTitle->getFullUrl() . '?discard=' . $draft->getID() . '&token=' . $wgUser->editToken();
 				
 				// If in edit mode, return to editor
@@ -318,11 +312,11 @@ END;
 		return $this->_id;
 	}
 
-	public function getUser( $user ) {
-		$this->_user = $user;
+	public function getUserID( $userID ) {
+		$this->_userID = $userID;
 	}
-	public function setUser() {
-		return $this->_user;
+	public function setUserID() {
+		return $this->_userID;
 	}
 
 	public function getTitle() {

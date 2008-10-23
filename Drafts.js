@@ -68,16 +68,16 @@ wgAjaxSaveDraft.onLoad = function() {
 	// Check to see that the form and controls exist
 	if ( document.editform && document.editform.wpDraftSave ) {
 		// Handle saving
-		document.editform.wpDraftSave.onclick = wgAjaxSaveDraft.save;
-	
+		addHandler(document.editform.wpDraftSave, 'click', wgAjaxSaveDraft.save);
+		
 		// Detect changes
-		document.editform.wpTextbox1.onkeypress = wgAjaxSaveDraft.change;
-		document.editform.wpTextbox1.onpaste = wgAjaxSaveDraft.change;
-		document.editform.wpTextbox1.oncut = wgAjaxSaveDraft.change;
-		document.editform.wpSummary.onkeypress = wgAjaxSaveDraft.change;
-		document.editform.wpSummary.onpaste = wgAjaxSaveDraft.change;
-		document.editform.wpSummary.oncut = wgAjaxSaveDraft.change;
-		document.editform.wpMinoredit.onchange = wgAjaxSaveDraft.change;
+		addHandler(document.editform.wpTextbox1, 'keypress', wgAjaxSaveDraft.change);
+		addHandler(document.editform.wpTextbox1, 'paste', wgAjaxSaveDraft.change);
+		addHandler(document.editform.wpTextbox1, 'cut', wgAjaxSaveDraft.change);
+		addHandler(document.editform.wpSummary, 'keypress', wgAjaxSaveDraft.change);
+		addHandler(document.editform.wpSummary, 'paste', wgAjaxSaveDraft.change);
+		addHandler(document.editform.wpSummary, 'cut', wgAjaxSaveDraft.change);
+		addHandler(document.editform.wpMinoredit, 'change', wgAjaxSaveDraft.change);
 	
 		// Use the configured autosave wait time
 		wgAjaxSaveDraft.autosavewait = document.editform.wpDraftAutoSaveWait.value;
