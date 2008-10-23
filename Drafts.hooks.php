@@ -238,26 +238,14 @@ function efCheckSchema() {
 	// Get a connection
 	$db = wfGetDB( DB_MASTER );
 	
-	// Build create table statement
-	$statement = <<<END
-		create table drafts (
-			draft_id INTEGER AUTO_INCREMENT PRIMARY KEY,
-			draft_user INTEGER,
-			draft_namespace INTEGER,
-			draft_title VARBINARY(255),
-			draft_section INTEGER,
-			draft_starttime BINARY(14),
-			draft_edittime BINARY(14),
-			draft_savetime BINARY(14),
-			draft_scrolltop INTEGER,
-			draft_text BLOB,
-			draft_summary TINYBLOB,
-			draft_minoredit BOOL
-		);
-END;
-
+	// Get statements from file
+	$statement = file_get_contents( dirname( __FILE__  ) . '/Drafts.sql' );
+	
 	// Create table if it doesn't exist
 	if ( !$db->tableExists( 'drafts' ) ) {
 		$db->query( $statement, __METHOD__);
 	}
+	
+	// Continue
+	return true;
 }
