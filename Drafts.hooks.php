@@ -128,19 +128,19 @@ function efDraftsControls( &$editpage, &$buttons ) {
 		);
 		$buttons['savedraft'] .= "document.write( '{$ajaxButton}' );";
 		$buttons['savedraft'] .= Xml::closeElement( 'script' );
-		$buttons['savedraft'] .= Xml::element( 'noscript', null,
-			Xml::element( 'input',
-				array(
-					'type' => 'submit',
-					'id' => 'wpDraftSave',
-					'name' => 'wpDraftSave',
-					'tabindex' => 8,
-					'accesskey' => 'd',
-					'value' => wfMsg( 'drafts-save-save' ),
-					'title' => wfMsg( 'drafts-save-title' )
-				)
+		$buttons['savedraft'] .= Xml::openElement( 'noscript' );
+		$buttons['savedraft'] .= Xml::element( 'input',
+			array(
+				'type' => 'submit',
+				'id' => 'wpDraftSave',
+				'name' => 'wpDraftSave',
+				'tabindex' => 8,
+				'accesskey' => 'd',
+				'value' => wfMsg( 'drafts-save-save' ),
+				'title' => wfMsg( 'drafts-save-title' )
 			)
 		);
+		$buttons['savedraft'] .= Xml::closeElement( 'noscript' );
 		$buttons['savedraft'] .= Xml::element( 'input',
 			array(
 				'type' => 'hidden',
