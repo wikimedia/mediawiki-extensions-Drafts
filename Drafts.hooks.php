@@ -73,7 +73,7 @@ function efDraftsLoad( &$editpage ) {
 	// Show list of drafts
 	if ( Draft::countDrafts( $wgTitle ) > 0 ) {
 		$wgOut->addHTML( Xml::openElement( 'div', array( 'style' => 'margin-bottom:10px;padding-left:10px;padding-right:10px;border:red solid 1px' ) ) );
-		$wgOut->addHTML( Xml::element( 'h3', null, wfMsgHTML( 'drafts-view-existing' ) ) );
+		$wgOut->addHTML( Xml::element( 'h3', null, wfMsg( 'drafts-view-existing' ) ) );
 		Draft::ListDrafts( $wgTitle );
 		$wgOut->addHTML( Xml::closeElement( 'div' ) );
 	}
@@ -122,8 +122,8 @@ function efDraftsControls( &$editpage, &$buttons ) {
 					'disabled' => 'disabled',
 					'tabindex' => 8,
 					'accesskey' => 'd',
-					'value' => wfMsgHTML( 'drafts-save-save' ),
-					'title' => wfMsgHTML( 'drafts-save-title' )
+					'value' => wfMsg( 'drafts-save-save' ),
+					'title' => wfMsg( 'drafts-save-title' )
 				)
 			)
 		);
@@ -137,8 +137,8 @@ function efDraftsControls( &$editpage, &$buttons ) {
 					'name' => 'wpDraftSave',
 					'tabindex' => 8,
 					'accesskey' => 'd',
-					'value' => wfMsgHTML( 'drafts-save-save' ),
-					'title' => wfMsgHTML( 'drafts-save-title' )
+					'value' => wfMsg( 'drafts-save-save' ),
+					'title' => wfMsg( 'drafts-save-title' )
 				)
 			)
 		);
@@ -167,21 +167,21 @@ function efDraftsControls( &$editpage, &$buttons ) {
 			array(
 				'type' => 'hidden',
 				'name' => 'wpMsgSaved',
-				'value' => wfMsgHTML( 'drafts-save-saved' )
+				'value' => wfMsg( 'drafts-save-saved' )
 			)
 		);
 		$buttons['savedraft'] .= Xml::element( 'input',
 			array(
 				'type' => 'hidden',
 				'name' => 'wpMsgSaveDraft',
-				'value' => wfMsgHTML( 'drafts-save-save' )
+				'value' => wfMsg( 'drafts-save-save' )
 			)
 		);
 		$buttons['savedraft'] .= Xml::element( 'input',
 			array(
 				'type' => 'hidden',
 				'name' => 'wpMsgError',
-				'value' => wfMsgHTML( 'drafts-save-error' )
+				'value' => wfMsg( 'drafts-save-error' )
 			)
 		);
 	}

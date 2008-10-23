@@ -146,6 +146,20 @@ class Draft
 		return new Draft( $id, $autoload );
 	}
 	
+	public static function newFromRow( $row ) {
+		$draft = new Draft( $row['draft_id'], false);
+		$draft->setTitle( Title::makeTitle( $row['draft_namespace'], $row['draft_title'] ) );
+		$draft->setSection( $row['draft_section'] );
+		$draft->setStartTime( $row['draft_starttime'] );
+		$draft->setEditTime( $row['draft_edittime'] );
+		$draft->setSaveTime( $row['draft_savetime'] );
+		$draft->setScrollTop( $row['draft_scrolltop'] );
+		$draft->setText( $row['draft_text'] );
+		$draft->setSummary( $row['draft_summary'] );
+		$draft->setMinorEdit( $row['draft_minoredit'] );
+		return $draft;
+	}
+	
 	public static function countDrafts( &$title = null, $userID = null ) {
 		global $wgUser;
 		
@@ -168,7 +182,7 @@ class Draft
 		return $db->selectField( 'drafts', 'count(*)', $where, __METHOD__ );
 	}
 	
-	public static function getDrafts( &$title = null, $userID = null ) {
+	public static function getDrafts( $title = null, $userID = null ) {
 		global $wgUser;
 		
 		// Get db connection
@@ -188,11 +202,11 @@ class Draft
 		
 		// Create an array of matching drafts
 		$drafts = array();
-		$result = $db->select( 'drafts', array( 'draft_id' ), $where, __METHOD__ );
+		$result = $db->select( 'drafts', '*', $where, __METHOD__ );
 		if ( $result ) {
 			while ( $row = $db->fetchRow( $result ) ) {
 				// Add a new draft to the list from the row
-				$drafts[] = Draft::newFromID( $row['draft_id'] );
+				$drafts[] = Draft::newFromRow( $row );
 			}
 		}
 		
@@ -233,7 +247,7 @@ class Draft
 						'width' => '75%',
 						'nowrap' => 'nowrap'
 					),
-					wfMsgHTML( 'drafts-view-article' )
+					wfMsg( 'drafts-view-article' )
 				)
 			);
 			$wgOut->addHTML(
@@ -242,7 +256,7 @@ class Draft
 						'align' => 'left',
 						'nowrap' => 'nowrap'
 					),
-					wfMsgHTML( 'drafts-view-saved' )
+					wfMsg( 'drafts-view-saved' )
 				)
 			);
 			$wgOut->addHTML( Xml::element( 'th' ) );
@@ -250,17 +264,11 @@ class Draft
 			
 			// Add existing drafts for this page and user
 			foreach( $drafts as $draft ) {
-				// Load draft information from database
-				$draft->load();
-				
 				// Get article title text
 				$htmlTitle = $draft->getTitle()->getEscapedText();
 				
 				// Build Article Load link
-				$urlLoad = sprintf( '%s&draft=%s',
-					wfExpandURL( $draft->getTitle()->getEditURL() ),
-					urlencode( $draft->getID() )
-				);
+				$urlLoad = $draft->getTitle()->getFullUrl( 'action=edit&draft=' . urlencode( $draft->getID() ) );
 				
 				// Build discard link
 				$urlDiscard = sprintf( '%s?discard=%s&token=%s',
@@ -316,7 +324,7 @@ class Draft
 							'align' => 'left',
 							'nowrap' => 'nowrap'
 						),
-						$wgLang->timeanddate( wfTimestamp( TS_UNIX, $draft->getSaveTime() ) )
+						$wgLang->timeanddate( $draft->getSaveTime() )
 					)
 				);
 				$wgOut->addHTML(
@@ -332,7 +340,7 @@ class Draft
 						array(
 							'href' => $urlDiscard
 						),
-						wfMsgHTML( 'drafts-view-discard' )
+						wfMsg( 'drafts-view-discard' )
 					)
 				);
 				$wgOut->addHTML( Xml::closeElement( 'td' ) );

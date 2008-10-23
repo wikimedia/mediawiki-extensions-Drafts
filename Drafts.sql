@@ -1,4 +1,4 @@
-create table drafts (
+create table /*$wgDBPrefix*/drafts (
     draft_id INTEGER AUTO_INCREMENT PRIMARY KEY,
     draft_user INTEGER,
     draft_namespace INTEGER,
@@ -11,4 +11,4 @@ create table drafts (
     draft_text BLOB,
     draft_summary TINYBLOB,
     draft_minoredit BOOL
-);
+) /*$wgDBTableOptions*/;
