@@ -339,7 +339,7 @@ class Draft
 					Xml::element( 'a',
 						array(
 							'href' => $urlDiscard,
-							'onclick' => htmlspecialchars( "return confirm('" . Xml::escapeJsString( wfMsgHTML( 'drafts-view-warn' ) ) . "')" )
+							'onclick' => htmlspecialchars( "if( !wgAjaxSaveDraft.insync ) return confirm('" . Xml::escapeJsString( wfMsgHTML( 'drafts-view-warn' ) ) . "')" )
 						),
 						wfMsg( 'drafts-view-discard' )
 					)

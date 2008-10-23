@@ -83,7 +83,7 @@ function efDraftsLoad( &$editpage ) {
 			$link = Xml::element( 'a',
 				array(
 					'href' => $wgTitle->getFullURL( 'action=edit' ),
-					'onclick' => htmlspecialchars( "return confirm('" . Xml::escapeJsString( wfMsgHTML( 'drafts-view-warn' ) ) . "')" )
+					'onclick' => htmlspecialchars( "if( !wgAjaxSaveDraft.insync ) return confirm('" . Xml::escapeJsString( wfMsgHTML( 'drafts-view-warn' ) ) . "')" )
 				),
 				$numDrafts > 1 ? wfMsg( 'drafts-view-notice-plural', $numDrafts ) : wfMsg( 'drafts-view-notice-single', $numDrafts )
 			);
