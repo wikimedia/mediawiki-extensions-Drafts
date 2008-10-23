@@ -312,7 +312,7 @@ class Draft
 					Xml::element( 'a',
 						array(
 							'href' => $urlLoad,
-							'style' => 'font-weight:' . $currentDraft->getID() == $draft->getID() ? 'bold' : 'normal'
+							'style' => 'font-weight:' . ( $currentDraft->getID() == $draft->getID() ? 'bold' : 'normal' )
 						),
 						$htmlTitle
 					)

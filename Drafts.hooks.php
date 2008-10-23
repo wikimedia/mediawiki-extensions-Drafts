@@ -71,7 +71,7 @@ function efDraftsLoad( &$editpage ) {
 	wfLoadExtensionMessages( 'Drafts' );
 	
 	// Show list of drafts
-	if ( Draft::countDrafts( $wgTitle ) > 0 ) {
+	if ( Draft::countDrafts( $wgTitle ) > 0 && $wgRequest->getText( 'action' ) !== 'submit' ) {
 		$wgOut->addHTML( Xml::openElement( 'div', array( 'style' => 'margin-bottom:10px;padding-left:10px;padding-right:10px;border:red solid 1px' ) ) );
 		$wgOut->addHTML( Xml::element( 'h3', null, wfMsg( 'drafts-view-existing' ) ) );
 		Draft::ListDrafts( $wgTitle );
@@ -119,12 +119,11 @@ function efDraftsControls( &$editpage, &$buttons ) {
 					'type' => 'button',
 					'id' => 'wpDraftSave',
 					'name' => 'wpDraftSave',
-					'disabled' => 'disabled',
 					'tabindex' => 8,
 					'accesskey' => 'd',
 					'value' => wfMsg( 'drafts-save-save' ),
 					'title' => wfMsg( 'drafts-save-title' )
-				)
+				) + ( $wgRequest->getText( 'action' ) !== 'submit' ? array ( 'disabled' => 'disabled' ) : array() )
 			)
 		);
 		$buttons['savedraft'] .= "document.write( '{$ajaxButton}' );";
