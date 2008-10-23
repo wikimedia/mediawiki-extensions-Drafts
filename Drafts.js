@@ -15,6 +15,7 @@ wgAjaxSaveDraft.autosavewait = null;
 
 wgAjaxSaveDraft.save = function() {
 	wgAjaxSaveDraft.call(
+		document.editform.wpDraftToken.value,
 		document.editform.wpEditToken.value,
 		document.editform.wpDraftID.value,
 		document.editform.wpDraftTitle.value,
@@ -84,7 +85,7 @@ wgAjaxSaveDraft.onLoad = function() {
 	}
 }
 
-wgAjaxSaveDraft.call = function( token, id, title, section, starttime, edittime, scrolltop, text, summary, minoredit ) {
+wgAjaxSaveDraft.call = function( dtoken, etoken, id, title, section, starttime, edittime, scrolltop, text, summary, minoredit ) {
 	// If in progress, exit now
 	if( wgAjaxSaveDraft.inprogress )
 		return;
@@ -95,7 +96,7 @@ wgAjaxSaveDraft.call = function( token, id, title, section, starttime, edittime,
 	// Perform Ajax call
 	sajax_do_call(
 		"efDraftsSave",
-		[ token, id, title, section, starttime, edittime, scrolltop, text, summary, minoredit ],
+		[ dtoken, etoken, id, title, section, starttime, edittime, scrolltop, text, summary, minoredit ],
 		wgAjaxSaveDraft.processResult
 	);
 

@@ -221,11 +221,13 @@ function efDraftsAddJS( $out ) {
 }
 
 // Respond to ajax queries
-function efDraftsSave( $token, $id, $title, $section, $starttime, $edittime, $scrolltop, $text, $summary, $minoredit ) {
-	global $wgUser;
+function efDraftsSave( $dtoken, $etoken, $id, $title, $section, $starttime, $edittime, $scrolltop, $text, $summary, $minoredit ) {
+	global $wgUser, $wgRequest;
+	
+	$wgRequest->setVal( 'wpDraftToken', $dtoken );
 	
 	// Verify token
-	if ( $wgUser->editToken() == $token ) {
+	if ( $wgUser->editToken() == $etoken ) {
 		// Create Draft
 		$draft = Draft::newFromID( $id );
 	
