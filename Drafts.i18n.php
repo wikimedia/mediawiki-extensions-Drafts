@@ -22,7 +22,7 @@ $messages['en'] = array(
     'drafts-view-nonesaved' => 'You do not have any drafts saved at this time.',
     'drafts-save' => 'Save this as a draft [d]',
     'drafts-save-save' => 'Save draft',
-    'drafts-save-save' => 'Save draft',
     'drafts-save-saved' => 'Saved',
-    'drafts-save-error' => 'Error saving draft'
+    'drafts-save-error' => 'Error saving draft',
+    'drafts-save-title' => 'Save as a draft [d]'
 );

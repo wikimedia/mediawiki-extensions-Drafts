@@ -67,15 +67,15 @@ function efDraftsLoad( &$editpage ) {
 		}
 	}
 
+	// Internationalization
 	wfLoadExtensionMessages( 'Drafts' );
-	$msgExisting = wfMsgHTML( 'drafts-view-existing' );
 	
 	// Show list of drafts
 	if ( Draft::countDrafts( $wgTitle ) > 0 ) {
-		$wgOut->addHTML( '<div style="margin-bottom:10px;padding-left:10px;padding-right:10px;border:red solid 1px">' );
-		$wgOut->addHTML( "<h3>{$msgExisting}</h3>" );
-		Draft::ListDrafts( $wgTitle );	
-		$wgOut->addHTML( '</div>' );
+		$wgOut->addHTML( Xml::openElement( 'div', array( 'style' => 'margin-bottom:10px;padding-left:10px;padding-right:10px;border:red solid 1px' ) ) );
+		$wgOut->addHTML( Xml::element( 'h3', null, wfMsgHTML( 'drafts-view-existing' ) ) );
+		Draft::ListDrafts( $wgTitle );
+		$wgOut->addHTML( Xml::closeElement( 'div' ) );
 	}
 	
 	// Continue
@@ -106,31 +106,84 @@ function efDraftsControls( &$editpage, &$buttons ) {
 		// Internationalization
 		wfLoadExtensionMessages( 'Drafts' );
 
-		// Internationalization
-		$msgSaveDraft = wfMsgHTML( 'drafts-save-save' );
-		$msgSaveDraftTitle = wfMsgHTML( 'drafts-save-savetitle' );
-		$msgSaved = wfMsgHTML( 'drafts-save-saved' );
-		$msgError = wfMsgHTML( 'drafts-save-error' );
-
-		// Get the namespace, title and draft id
-		$title = $wgTitle->getPrefixedText();
-		$draftID = $wgRequest->getInt( 'draft', '' );
-
-		// Build HTML
-		$buttons['savedraft'] = <<<END
-			<script lanuguage="javascript" type="text/javascript">
-				document.write( '<input type="button" id="wpDraftSave" name="wpDraftSave" disabled="disabled" value="{$msgSaveDraft}" tabindex="8" accesskey="d" title="{$msgSaveDraftTitle}" />' );
-			</script>
-			<noscript>
-				<input type="submit" id="wpDraftSave" name="wpDraftSave" value="{$msgSaveDraft}" tabindex="8" accesskey="d" title="{$msgSaveDraftTitle}" />
-			</noscript>
-			<input type="hidden" name="wpDraftID" value="{$draftID}" />
-			<input type="hidden" name="wpDraftTitle" value="{$title}" />
-			<input type="hidden" name="wpMsgSaved" value="{$msgSaved}" />
-			<input type="hidden" name="wpMsgSaveDraft" value="{$msgSaveDraft}" />
-			<input type="hidden" name="wpMsgError" value="{$msgError}" />
-			<input type="hidden" name="wpDraftAutoSaveWait" value="{$wgDraftsAutoSaveWait}" />
-END;
+		// Build XML
+		$buttons['savedraft'] .= Xml::openElement( 'script',
+			array(
+				'type' => 'text/javascript',
+				'lanuguage' => 'javascript'
+			)
+		);
+		$ajaxButton = Xml::escapeJsString(
+			Xml::element( 'input',
+				array(
+					'type' => 'button',
+					'id' => 'wpDraftSave',
+					'name' => 'wpDraftSave',
+					'disabled' => 'disabled',
+					'tabindex' => 8,
+					'accesskey' => 'd',
+					'value' => wfMsgHTML( 'drafts-save-save' ),
+					'title' => wfMsgHTML( 'drafts-save-title' )
+				)
+			)
+		);
+		$buttons['savedraft'] .= "document.write( '{$ajaxButton}' );";
+		$buttons['savedraft'] .= Xml::closeElement( 'script' );
+		$buttons['savedraft'] .= Xml::element( 'noscript', null,
+			Xml::element( 'input',
+				array(
+					'type' => 'submit',
+					'id' => 'wpDraftSave',
+					'name' => 'wpDraftSave',
+					'tabindex' => 8,
+					'accesskey' => 'd',
+					'value' => wfMsgHTML( 'drafts-save-save' ),
+					'title' => wfMsgHTML( 'drafts-save-title' )
+				)
+			)
+		);
+		$buttons['savedraft'] .= Xml::element( 'input',
+			array(
+				'type' => 'hidden',
+				'name' => 'wpDraftAutoSaveWait',
+				'value' => $wgDraftsAutoSaveWait
+			)
+		);
+		$buttons['savedraft'] .= Xml::element( 'input',
+			array(
+				'type' => 'hidden',
+				'name' => 'wpDraftID',
+				'value' => $wgRequest->getInt( 'draft', '' )
+			)
+		);
+		$buttons['savedraft'] .= Xml::element( 'input',
+			array(
+				'type' => 'hidden',
+				'name' => 'wpDraftTitle',
+				'value' => $wgTitle->getPrefixedText()
+			)
+		);
+		$buttons['savedraft'] .= Xml::element( 'input',
+			array(
+				'type' => 'hidden',
+				'name' => 'wpMsgSaved',
+				'value' => wfMsgHTML( 'drafts-save-saved' )
+			)
+		);
+		$buttons['savedraft'] .= Xml::element( 'input',
+			array(
+				'type' => 'hidden',
+				'name' => 'wpMsgSaveDraft',
+				'value' => wfMsgHTML( 'drafts-save-save' )
+			)
+		);
+		$buttons['savedraft'] .= Xml::element( 'input',
+			array(
+				'type' => 'hidden',
+				'name' => 'wpMsgError',
+				'value' => wfMsgHTML( 'drafts-save-error' )
+			)
+		);
 	}
 
 	// Continue

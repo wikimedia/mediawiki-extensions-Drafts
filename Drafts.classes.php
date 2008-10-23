@@ -212,80 +212,134 @@ class Draft
 		{
 			// Internationalization
 			wfLoadExtensionMessages( 'Drafts' );
-			$msgArticle = wfMsgHTML( 'drafts-view-article' );
-			$msgExisting = wfMsgHTML( 'drafts-view-existing' );
-			$msgSaved = wfMsgHTML( 'drafts-view-saved' );
-			$msgDiscard = wfMsgHTML( 'drafts-view-discard' );
 			
-			// Begin existing drafts table
-			$htmlDraftList = <<<END
-				<table cellpadding="5" cellspacing="0" width="100%" border="0" style="margin-left:-5px;margin-right:-5px">
-					<tr>
-						<th align="left"  width="75%" nowrap="nowrap">{$msgArticle}</th>
-						<th align="left" nowrap="nowrap">{$msgSaved}</th>
-						<th></th>
-					</tr>
-END;
-	
+			// Build XML
+			$wgOut->addHTML(
+				Xml::openElement( 'table',
+					array(
+						'cellpadding' => 5,
+						'cellspacing' => 0,
+						'width' => '100%',
+						'border' => 0,
+						'style' => 'margin-left:-5px;margin-right:-5px'
+					)
+				)
+			);
+			$wgOut->addHTML( Xml::openElement( 'tr' ) );
+			$wgOut->addHTML(
+				Xml::element( 'th',
+					array(
+						'align' => 'left',
+						'width' => '75%',
+						'nowrap' => 'nowrap'
+					),
+					wfMsgHTML( 'drafts-view-article' )
+				)
+			);
+			$wgOut->addHTML(
+				Xml::element( 'th',
+					array(
+						'align' => 'left',
+						'nowrap' => 'nowrap'
+					),
+					wfMsgHTML( 'drafts-view-saved' )
+				)
+			);
+			$wgOut->addHTML( Xml::element( 'th' ) );
+			$wgOut->addHTML( Xml::closeElement( 'tr' ) );
+			
 			// Add existing drafts for this page and user
-			foreach( $drafts as $draft )
-			{
+			foreach( $drafts as $draft ) {
 				// Load draft information from database
 				$draft->load();
 				
-				// Article
-				$draftsTitle = SpecialPage::getTitleFor( 'Drafts' );
-				
-				// Build URLs and HTML components
+				// Get article title text
 				$htmlTitle = $draft->getTitle()->getEscapedText();
-				$htmlState = $currentDraft->getID() == $draft->getID() ? 'bold' : 'normal';
-				$urlLoad = wfExpandURL( $draft->getTitle()->getEditURL() ) . '&draft=' . $draft->getID();
-				$urlDiscard = $draftsTitle->getFullUrl() . '?discard=' . $draft->getID() . '&token=' . $wgUser->editToken();
 				
+				// Build Article Load link
+				$urlLoad = sprintf( '%s&draft=%s',
+					wfExpandURL( $draft->getTitle()->getEditURL() ),
+					urlencode( $draft->getID() )
+				);
+				
+				// Build discard link
+				$urlDiscard = sprintf( '%s?discard=%s&token=%s',
+					SpecialPage::getTitleFor( 'Drafts' )->getFullUrl(),
+					urlencode( $draft->getID() ),
+					urlencode( $wgUser->editToken() )
+				);
 				// If in edit mode, return to editor
-				if ( $wgRequest->getText( 'action' ) == 'edit' || $wgRequest->getText( 'action' ) == 'submit' )
-				$urlDiscard .= '&returnto=edit';
+				if ( $wgRequest->getText( 'action' ) == 'edit' || $wgRequest->getText( 'action' ) == 'submit' ) {
+					$urlDiscard .= '&returnto=' . urlencode( 'edit' );
+				}
 				
-				// Section
+				// Append section to titles and links
 				if ( $draft->getSection() !== null ) {
 					// Detect section name
 					$lines = explode( "\n", $draft->getText() );
 					
 					// If there is any content in the section
 					if ( count( $lines ) > 0 ) {
-						$htmlTitle .= '#' . trim( trim( substr( $lines[0], 0, 255 ), '=' ) );
+						$htmlTitle .= '#' . htmlspecialchars(
+							trim( trim( substr( $lines[0], 0, 255 ), '=' ) )
+						);
 					}
 					
 					// Modify article link and title
-					$urlLoad .= '&section=' . $draft->getSection();
-					$urlDiscard .= '&section=' . $draft->getSection();
+					$urlLoad .= '&section=' . urlencode( $draft->getSection() );
+					$urlDiscard .= '&section=' . urlencode( $draft->getSection() );
 				}
 				
-				// Format save time
-				$htmlSaveTime = $wgLang->timeanddate(
-					wfTimestamp( TS_UNIX, $draft->getSaveTime() )
+				// Build XML
+				$wgOut->addHTML( Xml::openElement( 'tr' ) );
+				$wgOut->addHTML(
+					Xml::openElement( 'td',
+						array(
+							'align' => 'left',
+							'nowrap' => 'nowrap'
+						)
+					)
 				);
-	
-				// Build HTML
-				$htmlDraftList .= <<<END
-					<tr>
-						<td align="left" nowrap="nowrap"><a href="{$urlLoad}" style="font-weight:{$htmlState}">{$htmlTitle}</a></td>
-						<td align-"left" nowrap="nowrap">{$htmlSaveTime}</td>
-						<td align="right" nowrap="nowrap"><a href="{$urlDiscard}">{$msgDiscard}</a></td>
-					</tr>
-END;
+				$wgOut->addHTML(
+					Xml::element( 'a',
+						array(
+							'href' => $urlLoad,
+							'style' => 'font-weight:' . $currentDraft->getID() == $draft->getID() ? 'bold' : 'normal'
+						),
+						$htmlTitle
+					)
+				);
+				$wgOut->addHTML( Xml::closeElement( 'td' ) );
+				$wgOut->addHTML(
+					Xml::element( 'td',
+						array(
+							'align' => 'left',
+							'nowrap' => 'nowrap'
+						),
+						$wgLang->timeanddate( wfTimestamp( TS_UNIX, $draft->getSaveTime() ) )
+					)
+				);
+				$wgOut->addHTML(
+					Xml::openElement( 'td',
+						array(
+							'align' => 'left',
+							'nowrap' => 'nowrap'
+						)
+					)
+				);
+				$wgOut->addHTML(
+					Xml::element( 'a',
+						array(
+							'href' => $urlDiscard
+						),
+						wfMsgHTML( 'drafts-view-discard' )
+					)
+				);
+				$wgOut->addHTML( Xml::closeElement( 'td' ) );
+				$wgOut->addHTML( Xml::closeElement( 'tr' ) );
 			}
-	
-			// End existing drafts table
-			$htmlDraftList .= '</table>';
+			$wgOut->addHTML( Xml::closeElement( 'table' ) );
 
-			// If there were any drafts for this page and user
-			if ( count( $drafts ) > 0 )
-			{
-				// Show list of drafts
-				$wgOut->addHTML( $htmlDraftList );
-			}
-			
 			// Return number of drafts
 			return count( $drafts );
 		}
