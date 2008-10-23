@@ -1,5 +1,6 @@
 create table /*$wgDBPrefix*/drafts (
     draft_id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    draft_token INTEGER,
     draft_user INTEGER,
     draft_namespace INTEGER,
     draft_title VARBINARY(255),

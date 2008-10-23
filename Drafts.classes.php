@@ -10,6 +10,7 @@ class Draft
 	private $_db;
 	private $_exists = false;
 	private $_id;
+	private $_token;
 	private $_userID;
 	private $_title;
 	private $_section;
@@ -65,6 +66,7 @@ class Draft
 		}
 
 		// Synchronize data
+		$this->_token = $row['draft_token'];
 		$this->_title = Title::makeTitle( $row['draft_namespace'], $row['draft_title'] );
 		$this->_section = $row['draft_section'];
 		$this->_starttime = $row['draft_starttime'];
@@ -82,13 +84,14 @@ class Draft
 	}
 
 	public function save() {
-		global $wgUser;
+		global $wgUser, $wgRequest;
 	
 		// Get db connection
 		$this->getDB();
 		
 		// Build data
 		$data = array(
+			'draft_token' => (int) $this->getToken(),
 			'draft_user' => (int) $wgUser->getID(),
 			'draft_namespace' => (int) $this->_title->getNamespace(),
 			'draft_title' => (string) $this->_title->getDBKey(),
@@ -112,12 +115,25 @@ class Draft
 				),
 				__METHOD__
 			);
-		}
-		else {
-			$this->_db->insert( 'drafts', $data, __METHOD__ );
-			$this->_id = $this->_db->insertId();
-			// Update state
-			$this->_exists = true;
+		} else {
+			// Before creating a new draft record, lets check if we have already
+			$token = $wgRequest->getIntOrNull( 'wpDraftToken' );
+			if( $token !== null) {
+				// Check if token has been used already for this article
+				if( $this->_db->selectField( 'drafts', 'draft_token',
+					array(
+						'draft_namespace' => $data['draft_namespace'],
+						'draft_title' => $data['draft_title'],
+						'draft_user' => $data['draft_user'],
+					),
+					__METHOD__
+				) === false ) {
+					$this->_db->insert( 'drafts', $data, __METHOD__ );
+					$this->_id = $this->_db->insertId();
+					// Update state
+					$this->_exists = true;
+				}
+			}
 		}
 		
 		// Return success
@@ -148,6 +164,7 @@ class Draft
 	
 	public static function newFromRow( $row ) {
 		$draft = new Draft( $row['draft_id'], false);
+		$draft->setToken( $row['draft_token'] );
 		$draft->setTitle( Title::makeTitle( $row['draft_namespace'], $row['draft_title'] ) );
 		$draft->setSection( $row['draft_section'] );
 		$draft->setStartTime( $row['draft_starttime'] );
@@ -339,7 +356,7 @@ class Draft
 					Xml::element( 'a',
 						array(
 							'href' => $urlDiscard,
-							'onclick' => htmlspecialchars( "if( !wgAjaxSaveDraft.insync ) return confirm('" . Xml::escapeJsString( wfMsgHTML( 'drafts-view-warn' ) ) . "')" )
+							'onclick' => "if( !wgAjaxSaveDraft.insync ) return confirm('" . Xml::escapeJsString( wfMsgHTML( 'drafts-view-warn' ) ) . "')"
 						),
 						wfMsg( 'drafts-view-discard' )
 					)
@@ -353,6 +370,10 @@ class Draft
 			return count( $drafts );
 		}
 		return 0;
+	}
+	
+	public static function newToken() {
+		return time();
 	}
 	
 	private function getDB() {
@@ -373,6 +394,13 @@ class Draft
 
 	public function getID() {
 		return $this->_id;
+	}
+
+	public function setToken( $token ) {
+		$this->_token = $token;
+	}
+	public function getToken() {
+		return $this->_token;
 	}
 
 	public function getUserID( $userID ) {

@@ -164,6 +164,13 @@ function efDraftsControls( &$editpage, &$buttons ) {
 		$buttons['savedraft'] .= Xml::element( 'input',
 			array(
 				'type' => 'hidden',
+				'name' => 'wpDraftToken',
+				'value' => Draft::newToken()
+			)
+		);
+		$buttons['savedraft'] .= Xml::element( 'input',
+			array(
+				'type' => 'hidden',
 				'name' => 'wpDraftID',
 				'value' => $wgRequest->getInt( 'draft', '' )
 			)
