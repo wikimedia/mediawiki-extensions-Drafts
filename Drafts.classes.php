@@ -88,6 +88,7 @@ class Draft
 	
 		// Get db connection
 		$this->getDB();
+		$this->_db->begin();
 		
 		// Build data
 		$data = array(
@@ -135,6 +136,8 @@ class Draft
 				}
 			}
 		}
+		
+		$this->_db->commit();
 		
 		// Return success
 		return true;
