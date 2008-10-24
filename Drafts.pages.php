@@ -16,7 +16,7 @@ class DraftsPage extends SpecialPage {
 	}
 
 	function execute( $par ) {
-		global $wgRequest, $wgOut, $wgUser, $wgTitle;
+		global $wgRequest, $wgOut, $wgUser;
 
 		// Begin output
 		$this->setHeaders();
