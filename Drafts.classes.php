@@ -6,27 +6,27 @@
 class Draft {
 	/* Fields */
 
-	private $_db;
-	private $_exists = false;
-	private $_id;
-	private $_token;
-	private $_userID;
-	private $_title;
-	private $_section;
-	private $_starttime;
-	private $_edittime;
-	private $_savetime;
-	private $_scrolltop ;
-	private $_text;
-	private $_summary;
-	private $_minoredit;
+	private $mDb;
+	private $mExists = false;
+	private $mId;
+	private $mToken;
+	private $mUserId;
+	private $mTitle;
+	private $mSection;
+	private $mStartTime;
+	private $mEditTime;
+	private $mSaveTime;
+	private $mScrollTop ;
+	private $mText;
+	private $mSummary;
+	private $mMinorEdit;
 
 	/* Functions */
 
 	public function __construct( $id = null, $autoload = true ) {
 		// If an ID is a number the existence is actually checked on load
 		// If an ID is false the existance is always false durring load
-		$this->_id = $id;
+		$this->mId = $id;
 
 		# Load automatically
 		if ( $autoload ) {
@@ -38,7 +38,7 @@ class Draft {
 		global $wgUser;
 		
 		// Verify the ID has been set
-		if ( $this->_id === null ) {
+		if ( $this->mId === null ) {
 			return;
 		}
 		
@@ -46,10 +46,10 @@ class Draft {
 		$this->getDB();
 
 		// Select drafts from the database matching ID - can be 0 or 1 results
-		$result = $this->_db->select( 'drafts',
+		$result = $this->mDb->select( 'drafts',
 			array( '*' ),
 			array(
-				'draft_id' => (int) $this->_id,
+				'draftmId' => (int) $this->_id,
 				'draft_user' => (int) $wgUser->getID()
 			),
 			__METHOD__
@@ -59,25 +59,25 @@ class Draft {
 		}
 
 		// Get the row
-		$row = $this->_db->fetchRow( $result );
+		$row = $this->mDb->fetchRow( $result );
 		if ( !is_array( $row ) || count( $row ) == 0 ) {
 			return;
 		}
 
 		// Synchronize data
-		$this->_token = $row['draft_token'];
-		$this->_title = Title::makeTitle( $row['draft_namespace'], $row['draft_title'] );
-		$this->_section = $row['draft_section'];
-		$this->_starttime = $row['draft_starttime'];
-		$this->_edittime = $row['draft_edittime'];
-		$this->_savetime = $row['draft_savetime'];
-		$this->_scrolltop = $row['draft_scrolltop'];
-		$this->_text = $row['draft_text'];
-		$this->_summary = $row['draft_summary'];
-		$this->_minoredit = $row['draft_minoredit'];
+		$this->mToken = $row['draft_token'];
+		$this->mTitle = Title::makeTitle( $row['draft_namespace'], $row['draft_title'] );
+		$this->mSection = $row['draft_section'];
+		$this->mStartTime = $row['draft_starttime'];
+		$this->mEditTime = $row['draft_edittime'];
+		$this->mSaveTime = $row['draft_savetime'];
+		$this->mScrollTop = $row['draft_scrolltop'];
+		$this->mText = $row['draft_text'];
+		$this->mSummary = $row['draft_summary'];
+		$this->mMinorEdit = $row['draft_minoredit'];
 
 		// Update state
-		$this->_exists = true;
+		$this->mExists = true;
 
 		return;
 	}
@@ -87,31 +87,31 @@ class Draft {
 	
 		// Get db connection
 		$this->getDB();
-		$this->_db->begin();
+		$this->mDb->begin();
 		
 		// Build data
 		$data = array(
-			'draft_token' => (int) $this->getToken(),
+			'draftmToken' => (int) $this->getToken(),
 			'draft_user' => (int) $wgUser->getID(),
-			'draft_namespace' => (int) $this->_title->getNamespace(),
-			'draft_title' => (string) $this->_title->getDBKey(),
-			'draft_page' => (int) $this->_title->getArticleId(),
-			'draft_section' => $this->_section == '' ? null : (int) $this->_section,
-			'draft_starttime' => $this->_db->timestamp( $this->_starttime ),
-			'draft_edittime' => $this->_db->timestamp( $this->_edittime ),
-			'draft_savetime' => $this->_db->timestamp( $this->_savetime ),
-			'draft_scrolltop' => (int) $this->_scrolltop,
-			'draft_text' => (string) $this->_text,
-			'draft_summary' => (string) $this->_summary,
-			'draft_minoredit' => (int) $this->_minoredit
+			'draft_namespace' => (int) $this->mTitle->getNamespace(),
+			'draftmTitle' => (string) $this->_title->getDBKey(),
+			'draft_page' => (int) $this->mTitle->getArticleId(),
+			'draftmSection' => $this->_section == '' ? null : (int) $this->_section,
+			'draftmStartTime' => $this->mDb->timestamp( $this->_starttime ),
+			'draftmEditTime' => $this->mDb->timestamp( $this->_edittime ),
+			'draftmSaveTime' => $this->mDb->timestamp( $this->_savetime ),
+			'draftmScrollTop' => (int) $this->_scrolltop,
+			'draftmText' => (string) $this->_text,
+			'draftmSummary' => (string) $this->_summary,
+			'draftmMinorEdit' => (int) $this->_minoredit
 		);
 
 		// Save data
-		if ( $this->_exists === true ) {
-			$this->_db->update( 'drafts',
+		if ( $this->mExists === true ) {
+			$this->mDb->update( 'drafts',
 				$data,
 				array(
-					'draft_id' => (int) $this->_id,
+					'draftmId' => (int) $this->_id,
 					'draft_user' => (int) $wgUser->getID()
 				),
 				__METHOD__
@@ -122,24 +122,24 @@ class Draft {
 			if ( $token !== null ) {
 				// FIXME: clean up this code style :)
 				// Check if token has been used already for this article
-				if ( $this->_db->selectField( 'drafts', 'draft_token',
+				if ( $this->mDb->selectField( 'drafts', 'draftmToken',
 					array(
 						'draft_namespace' => $data['draft_namespace'],
-						'draft_title' => $data['draft_title'],
+						'draftmTitle' => $data['draft_title'],
 						'draft_user' => $data['draft_user'],
-						'draft_token' => $data['draft_token']
+						'draftmToken' => $data['draft_token']
 					),
 					__METHOD__
 				) === false ) {
-					$this->_db->insert( 'drafts', $data, __METHOD__ );
-					$this->_id = $this->_db->insertId();
+					$this->mDb->insert( 'drafts', $data, __METHOD__ );
+					$this->mId = $this->mDb->insertId();
 					// Update state
-					$this->_exists = true;
+					$this->mExists = true;
 				}
 			}
 		}
 		
-		$this->_db->commit();
+		$this->mDb->commit();
 		
 		// Return success
 		return true;
@@ -152,16 +152,16 @@ class Draft {
 		$this->getDB();
 
 		// Delete data
-		$this->_db->delete( 'drafts',
+		$this->mDb->delete( 'drafts',
 			array(
-				'draft_id' => $this->_id,
+				'draftmId' => $this->_id,
 				// FIXME: ID is already a primary key
 				'draft_user' =>  $wgUser->getID()
 			),
 			__METHOD__
 		);
 
-		$this->_exists = false;
+		$this->mExists = false;
 	}
 	
 	public static function newFromID( $id, $autoload = true ) {
@@ -169,17 +169,17 @@ class Draft {
 	}
 	
 	public static function newFromRow( $row ) {
-		$draft = new Draft( $row['draft_id'], false );
-		$draft->setToken( $row['draft_token'] );
-		$draft->setTitle( Title::makeTitle( $row['draft_namespace'], $row['draft_title'] ) );
-		$draft->setSection( $row['draft_section'] );
-		$draft->setStartTime( $row['draft_starttime'] );
-		$draft->setEditTime( $row['draft_edittime'] );
-		$draft->setSaveTime( $row['draft_savetime'] );
-		$draft->setScrollTop( $row['draft_scrolltop'] );
-		$draft->setText( $row['draft_text'] );
-		$draft->setSummary( $row['draft_summary'] );
-		$draft->setMinorEdit( $row['draft_minoredit'] );
+		$draft = new Draft( $row['draftmId'], false );
+		$draft->setToken( $row['draftmToken'] );
+		$draft->setTitle( Title::makeTitle( $row['draft_namespace'], $row['draftmTitle'] ) );
+		$draft->setSection( $row['draftmSection'] );
+		$draft->setStartTime( $row['draftmStartTime'] );
+		$draft->setEditTime( $row['draftmEditTime'] );
+		$draft->setSaveTime( $row['draftmSaveTime'] );
+		$draft->setScrollTop( $row['draftmScrollTop'] );
+		$draft->setText( $row['draftmText'] );
+		$draft->setSummary( $row['draftmSummary'] );
+		$draft->setMinorEdit( $row['draftmMinorEdit'] );
 		return $draft;
 	}
 	
@@ -195,7 +195,7 @@ class Draft {
 		$where = array();
 		if ( $title !== null ) {
 			$where['draft_namespace'] = $title->getNamespace();
-			$where['draft_title'] = $title->getDBKey();
+			$where['draftmTitle'] = $title->getDBKey();
 		}
 		if ( $userID !== null ) {
 			$where['draft_user'] = $userID;
@@ -217,7 +217,7 @@ class Draft {
 		$cutoff = wfTimestamp( TS_UNIX ) - ( $wgDraftsLifeSpan * 60 * 60 * 24 );
 		$db->delete( 'drafts',
 			array(
-				'draft_savetime < ' . $db->addQuotes( $db->timestamp( $cutoff ) )
+				'draftmSaveTime < ' . $db->addQuotes( $db->timestamp( $cutoff ) )
 			),
 			__METHOD__
 		);
@@ -240,7 +240,7 @@ class Draft {
 			} else {
 				$where['draft_page'] = 0; // page not created yet
 				$where['draft_namespace'] = $title->getNamespace();
-				$where['draft_title'] = $title->getDBKey();
+				$where['draftmTitle'] = $title->getDBKey();
 			}
 		}
 		if ( $userID !== null ) {
@@ -410,96 +410,96 @@ class Draft {
 	// FIXME: load balancer knows how to not re-fetch connections
 	private function getDB() {
 		// Get database connection if we don't already have one
-		if ( $this->_db === null ) {
-			$this->_db = wfGetDB( DB_MASTER );
+		if ( $this->mDb === null ) {
+			$this->mDb = wfGetDB( DB_MASTER );
 		}
 	}
 
 	/* States */
 	public function exists() {
-		return $this->_exists;
+		return $this->mExists;
 	}
 
 	/* Properties */
 
 	public function getID() {
-		return $this->_id;
+		return $this->mId;
 	}
 
 	public function setToken( $token ) {
-		$this->_token = $token;
+		$this->mToken = $token;
 	}
 	public function getToken() {
-		return $this->_token;
+		return $this->mToken;
 	}
 
 	public function getUserID( $userID ) {
-		$this->_userID = $userID;
+		$this->mUserId = $userID;
 	}
 	public function setUserID() {
-		return $this->_userID;
+		return $this->mUserId;
 	}
 
 	public function getTitle() {
-		return $this->_title;
+		return $this->mTitle;
 	}
 	public function setTitle( $title ) {
-		$this->_title = $title;
+		$this->mTitle = $title;
 	}
 
 	public function getSection() {
-		return $this->_section;
+		return $this->mSection;
 	}
 	public function setSection( $section ) {
-		$this->_section = $section;
+		$this->mSection = $section;
 	}
 
 	public function getStartTime() {
-		return $this->_starttime;
+		return $this->mStartTime;
 	}
 	public function setStartTime( $starttime ) {
-		$this->_starttime = $starttime;
+		$this->mStartTime = $starttime;
 	}
 
 	public function getEditTime() {
-		return $this->_edittime;
+		return $this->mEditTime;
 	}
 	public function setEditTime( $edittime ) {
-		$this->_edittime = $edittime;
+		$this->mEditTime = $edittime;
 	}
 
 	public function getSaveTime() {
-		return $this->_savetime;
+		return $this->mSaveTime;
 	}
 	public function setSaveTime( $savetime ) {
-		$this->_savetime = $savetime;
+		$this->mSaveTime = $savetime;
 	}
 
 	public function getScrollTop() {
-		return $this->_scrolltop;
+		return $this->mScrollTop;
 	}
 	public function setScrollTop( $scrolltop ) {
-		$this->_scrolltop = $scrolltop;
+		$this->mScrollTop = $scrolltop;
 	}
 
 	public function getText() {
-		return $this->_text;
+		return $this->mText;
 	}
 	public function setText( $text ) {
-		$this->_text = $text;
+		$this->mText = $text;
 	}
 
 	public function getSummary() {
-		return $this->_summary;
+		return $this->mSummary;
 	}
 	public function setSummary( $summary ) {
-		$this->_summary = $summary;
+		$this->mSummary = $summary;
 	}
 
 	public function getMinorEdit() {
-		return $this->_minoredit;
+		return $this->mMinorEdit;
 	}
 	public function setMinorEdit( $minoredit ) {
-		$this->_minoredit = $minoredit;
+		$this->mMinorEdit = $minoredit;
 	}
 }
