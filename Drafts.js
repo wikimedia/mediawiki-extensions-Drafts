@@ -1,4 +1,4 @@
-/* Javascript Document */
+/* JavaScript for Drafts extension */
 
 /* Classes */
 

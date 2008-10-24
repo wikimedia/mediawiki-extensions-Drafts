@@ -1,8 +1,9 @@
 <?php
 /**
- * Internationalisation file for Drafts extension
+ * Internationalisation for Drafts extension
  *
- * @addtogroup Extensions
+ * @file
+ * @ingroup Extensions
  */
 
 $messages = array();

@@ -1,4 +1,10 @@
 <?php
+/**
+ * Drafts extension
+ *
+ * @file
+ * @ingroup Extensions
+ */
 
 // Check environment
 if ( !defined( 'MEDIAWIKI' ) ) {

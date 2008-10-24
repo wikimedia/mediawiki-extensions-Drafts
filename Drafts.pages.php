@@ -1,6 +1,10 @@
 <?php
-
-/* Pages */
+/**
+ * Special Pages for Drafts extension
+ *
+ * @file
+ * @ingroup Extensions
+ */
 
 // Drafts Special Page
 class DraftsPage extends SpecialPage {

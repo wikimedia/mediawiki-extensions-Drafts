@@ -1,9 +1,14 @@
 <?php
-
-/* Classes */
-
+/**
+ * Classes for Drafts extension
+ *
+ * @file
+ * @ingroup Extensions
+ */
+ 
 // Draft Class
 class Draft {
+	
 	/* Fields */
 
 	private $_db;

@@ -1,6 +1,12 @@
 <?php
-
-/* Hooks */
+/**
+ * Hooks for Drafts extension
+ *
+ * @file
+ * @ingroup Extensions
+ */
+ 
+// Drafts hooks
 class DraftHooks {
 	static function discard( &$article, &$user, &$text, &$summary, &$minoredit, &$watchthis,
 		&$sectionanchor, &$flags, $revision )
