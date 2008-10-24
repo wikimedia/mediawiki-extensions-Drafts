@@ -11,20 +11,14 @@ class DraftHooks {
 	/**
 	 * ArticleSaveComplete hook
 	 */
-	static function discard( &$article, &$user, &$text, &$summary, &$minoredit, &$watchthis,
-		&$sectionanchor, &$flags, $revision )
-	{
+	static function discard( &$article, &$user, &$text, &$summary, &$m, &$watchthis, &$section, &$flags, $rev ) {
 		global $wgRequest;
-	
-		if ( $user->editToken() == $wgRequest->getText( 'wpEditToken' ) ) {
-			// Check if the save occured from a draft
-			$draft = Draft::newFromID( $wgRequest->getIntOrNull( 'wpDraftID' ) );
-			if ( $draft->exists() ) {
-				// Discard the draft
-				$draft->discard( $user );
-			}
+		// Check if the save occured from a draft
+		$draft = Draft::newFromID( $wgRequest->getIntOrNull( 'wpDraftID' ) );
+		if ( $draft->exists() ) {
+			// Discard the draft
+			$draft->discard( $user );
 		}
-	
 		// Continue
 		return true;
 	}
