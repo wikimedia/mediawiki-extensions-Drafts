@@ -12,6 +12,8 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	die( - 1 );
 }
 
+/* Configuration */
+
 // Credits
 $wgExtensionCredits['other'][] = array(
 	'name' => 'Drafts',
@@ -22,8 +24,6 @@ $wgExtensionCredits['other'][] = array(
 	'svn-revision' => '$LastChangedRevision$',
 	'description-msg' => 'drafts-desc',
 );
-
-/* Configuration */
 
 // Shortcut to this extension directory
 $dir = dirname( __FILE__ ) . '/';

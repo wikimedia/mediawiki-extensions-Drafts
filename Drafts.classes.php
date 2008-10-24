@@ -171,11 +171,11 @@ class Draft {
 		$this->_exists = false;
 	}
 	
-	public static function newFromID( $id, $autoload = true ) {
+	static function newFromID( $id, $autoload = true ) {
 		return new Draft( $id, $autoload );
 	}
 	
-	public static function newFromRow( $row ) {
+	static function newFromRow( $row ) {
 		$draft = new Draft( $row['draft_id'], false );
 		$draft->setToken( $row['draft_token'] );
 		$draft->setTitle( Title::makeTitle( $row['draft_namespace'], $row['draft_title'] ) );
@@ -190,7 +190,7 @@ class Draft {
 		return $draft;
 	}
 	
-	public static function countDrafts( &$title = null, $userID = null ) {
+	static function countDrafts( &$title = null, $userID = null ) {
 		global $wgUser;
 		
 		Draft::cleanDrafts();
@@ -214,7 +214,7 @@ class Draft {
 		return $dbr->selectField( 'drafts', 'count(*)', $where, __METHOD__ );
 	}
 	
-	public static function cleanDrafts() {
+	static function cleanDrafts() {
 		global $egDraftsLifeSpan;
 		
 		// Get db connection
@@ -230,7 +230,7 @@ class Draft {
 		);
 	}
 	
-	public static function getDrafts( $title = null, $userID = null ) {
+	static function getDrafts( $title = null, $userID = null ) {
 		global $wgUser;
 		
 		Draft::cleanDrafts();
@@ -270,7 +270,7 @@ class Draft {
 		return count( $drafts ) ? $drafts : null;
 	}
 	
-	public static function listDrafts( &$title = null, $user = null ) {
+	static function listDrafts( &$title = null, $user = null ) {
 		global $wgOut, $wgRequest, $wgUser, $wgLang;
 		
 		// Get draftID
@@ -410,8 +410,8 @@ class Draft {
 		return 0;
 	}
 	
-	public static function newToken() {
-		return time();
+	static function newToken() {
+		return wfGenerateToken();
 	}
 	
 	/* States */
