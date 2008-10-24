@@ -22,7 +22,7 @@ class DraftHooks {
 	
 	// Load draft
 	static function loadForm( &$editpage ) {
-		global $wgUser, $wgRequest, $wgOut, $wgTitle;
+		global $wgUser, $wgRequest, $wgOut, $wgTitle, $wgLang;
 	
 		// Check permissions
 		if ( $wgUser->isAllowed( 'edit' ) && $wgUser->isLoggedIn() ) {
@@ -83,9 +83,9 @@ class DraftHooks {
 				$link = Xml::element( 'a',
 					array(
 						'href' => $wgTitle->getFullURL( 'action=edit' ),
-						'onclick' => htmlspecialchars( "if( !wgAjaxSaveDraft.insync ) return confirm('" . Xml::escapeJsString( wfMsgHTML( 'drafts-view-warn' ) ) . "')" )
+						'onclick' => "if( !wgAjaxSaveDraft.insync ) return confirm('" . Xml::escapeJsString( wfMsgHTML( 'drafts-view-warn' ) ) . "')"
 					),
-					wfMsgExt( 'drafts-view-notice-link', array( 'parsemag' ), $numDrafts )
+					wfMsgExt( 'drafts-view-notice-link', array( 'parsemag' ), $wgLang->formatNum( $numDrafts ) )
 				);
 				$wgOut->addHTML( wfMsgHTML( 'drafts-view-notice', $link ) );
 			}
