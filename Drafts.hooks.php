@@ -130,7 +130,7 @@ class DraftHooks {
 	 * Add draft saving controls
 	 */
 	static function controls( &$editpage, &$buttons ) {
-		global $wgUser, $wgTitle, $wgRequest, $wgDraftsAutoSaveWait;
+		global $wgUser, $wgTitle, $wgRequest, $egDraftsAutoSaveWait;
 	
 		// Check permissions
 		if ( $wgUser->isAllowed( 'edit' ) && $wgUser->isLoggedIn() ) {

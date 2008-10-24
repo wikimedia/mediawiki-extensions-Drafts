@@ -11,7 +11,6 @@ class Draft {
 	
 	/* Fields */
 
-	private $_db;
 	private $_exists = false;
 	private $_id;
 	private $_token;
@@ -48,10 +47,10 @@ class Draft {
 		}
 		
 		// Get db connection
-		$this->getDB();
+		$dbw = wfGetDB( DB_MASTER );
 
 		// Select drafts from the database matching ID - can be 0 or 1 results
-		$result = $this->_db->select( 'drafts',
+		$result = $dbw->select( 'drafts',
 			array( '*' ),
 			array(
 				'draft_id' => (int) $this->_id,
@@ -64,7 +63,7 @@ class Draft {
 		}
 
 		// Get the row
-		$row = $this->_db->fetchRow( $result );
+		$row = $dbw->fetchRow( $result );
 		if ( !is_array( $row ) || count( $row ) == 0 ) {
 			return;
 		}
@@ -91,8 +90,8 @@ class Draft {
 		global $wgUser, $wgRequest;
 	
 		// Get db connection
-		$this->getDB();
-		$this->_db->begin();
+		$dbw = wfGetDB( DB_MASTER );
+		$dbw->begin();
 		
 		// Build data
 		$data = array(
@@ -102,9 +101,9 @@ class Draft {
 			'draft_title' => (string) $this->_title->getDBKey(),
 			'draft_page' => (int) $this->_title->getArticleId(),
 			'draft_section' => $this->_section == '' ? null : (int) $this->_section,
-			'draft_starttime' => $this->_db->timestamp( $this->_starttime ),
-			'draft_edittime' => $this->_db->timestamp( $this->_edittime ),
-			'draft_savetime' => $this->_db->timestamp( $this->_savetime ),
+			'draft_starttime' => $dbw->timestamp( $this->_starttime ),
+			'draft_edittime' => $dbw->timestamp( $this->_edittime ),
+			'draft_savetime' => $dbw->timestamp( $this->_savetime ),
 			'draft_scrolltop' => (int) $this->_scrolltop,
 			'draft_text' => (string) $this->_text,
 			'draft_summary' => (string) $this->_summary,
@@ -113,7 +112,7 @@ class Draft {
 
 		// Save data
 		if ( $this->_exists === true ) {
-			$this->_db->update( 'drafts',
+			$dbw->update( 'drafts',
 				$data,
 				array(
 					'draft_id' => (int) $this->_id,
@@ -127,7 +126,7 @@ class Draft {
 			if ( $token !== null ) {
 				// FIXME: clean up this code style :)
 				// Check if token has been used already for this article
-				if ( $this->_db->selectField( 'drafts', 'draft_token',
+				if ( $dbw->selectField( 'drafts', 'draft_token',
 					array(
 						'draft_namespace' => $data['draft_namespace'],
 						'draft_title' => $data['draft_title'],
@@ -136,15 +135,15 @@ class Draft {
 					),
 					__METHOD__
 				) === false ) {
-					$this->_db->insert( 'drafts', $data, __METHOD__ );
-					$this->_id = $this->_db->insertId();
+					$dbw->insert( 'drafts', $data, __METHOD__ );
+					$this->_id = $dbw->insertId();
 					// Update state
 					$this->_exists = true;
 				}
 			}
 		}
 		
-		$this->_db->commit();
+		$dbw->commit();
 		
 		// Return success
 		return true;
@@ -157,10 +156,10 @@ class Draft {
 		$user = $user === null ? $wgUser : $user;
 		
 		// Get db connection
-		$this->getDB();
+		$dbw = wfGetDB( DB_MASTER );
 
 		// Delete data
-		$this->_db->delete( 'drafts',
+		$dbw->delete( 'drafts',
 			array(
 				'draft_id' => $this->_id,
 				// FIXME: ID is already a primary key
@@ -197,7 +196,7 @@ class Draft {
 		Draft::cleanDrafts();
 		
 		// Get db connection
-		$db = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_SLAVE );
 		
 		// Build where clause
 		$where = array();
@@ -212,20 +211,20 @@ class Draft {
 		}
 		
 		// Get a list of matching drafts
-		return $db->selectField( 'drafts', 'count(*)', $where, __METHOD__ );
+		return $dbr->selectField( 'drafts', 'count(*)', $where, __METHOD__ );
 	}
 	
 	public static function cleanDrafts() {
-		global $wgDraftsLifeSpan;
+		global $egDraftsLifeSpan;
 		
 		// Get db connection
-		$db = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_MASTER );
 		
 		// Remove drafts that are more than $wgDraftsLifeSpan days old
 		$cutoff = wfTimestamp( TS_UNIX ) - ( $egDraftsLifeSpan * 60 * 60 * 24 );
-		$db->delete( 'drafts',
+		$dbw->delete( 'drafts',
 			array(
-				'draft_savetime < ' . $db->addQuotes( $db->timestamp( $cutoff ) )
+				'draft_savetime < ' . $dbw->addQuotes( $dbw->timestamp( $cutoff ) )
 			),
 			__METHOD__
 		);
@@ -237,7 +236,7 @@ class Draft {
 		Draft::cleanDrafts();
 		
 		// Get db connection
-		$db = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_MASTER );
 		
 		// Build where clause
 		$where = array();
@@ -259,9 +258,9 @@ class Draft {
 		
 		// Create an array of matching drafts
 		$drafts = array();
-		$result = $db->select( 'drafts', '*', $where, __METHOD__ );
+		$result = $dbw->select( 'drafts', '*', $where, __METHOD__ );
 		if ( $result ) {
-			while ( $row = $db->fetchRow( $result ) ) {
+			while ( $row = $dbw->fetchRow( $result ) ) {
 				// Add a new draft to the list from the row
 				$drafts[] = Draft::newFromRow( $row );
 			}
@@ -415,14 +414,6 @@ class Draft {
 		return time();
 	}
 	
-	// FIXME: load balancer knows how to not re-fetch connections
-	private function getDB() {
-		// Get database connection if we don't already have one
-		if ( $this->_db === null ) {
-			$this->_db = wfGetDB( DB_MASTER );
-		}
-	}
-
 	/* States */
 	public function exists() {
 		return $this->_exists;
