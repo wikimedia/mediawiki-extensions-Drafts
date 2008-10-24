@@ -216,6 +216,7 @@ class DraftHooks {
 	static function addJS( $out ) {
 		global $wgScriptPath;
 	
+		// FIXME: assumes standard dir structure
 		// Add javascript to support ajax draft saving
 		$out->addScriptFile( $wgScriptPath . '/extensions/Drafts/Drafts.js' );
 	
