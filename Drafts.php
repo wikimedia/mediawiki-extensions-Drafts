@@ -2,23 +2,19 @@
 
 // Check environment
 if ( !defined( 'MEDIAWIKI' ) ) {
-    echo( "This is an extension to the MediaWiki package and cannot be run standalone.\n" );
-    die( - 1 );
+	echo( "This is an extension to the MediaWiki package and cannot be run standalone.\n" );
+	die( - 1 );
 }
 
 // Credits
 $wgExtensionCredits['other'][] = array(
-	'name' => 'Save Drafts',
+	'name' => 'Drafts',
 	'author' => 'Trevor Parscal',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:Drafts',
-	'description' => 'Allow users to save drafts'
-);
-
-$wgExtensionCredits['specialpage'][] = array(
-   'name' => 'View Drafts',
-   'author' => 'Trevor Parscal',
-   'url' => 'http://www.mediawiki.org/wiki/Extension:Drafts',
-   'description' => 'Drafts extension page'
+	'description' => 'Save and view draft versions of pages',
+	'svn-date' => '$LastChangedDate$',
+	'svn-revision' => '$LastChangedRevision$',
+	'description-msg' => 'drafts-desc',
 );
 
 /* Configuration */
@@ -47,7 +43,7 @@ $wgAutoloadClasses['DraftsPage'] = $dir . 'Drafts.pages.php';
 
 // Register save interception to detect non-javascript draft saving
 $wgHooks['EditFilter'][] = 'DraftHooks::interceptSave';
-	
+
 // Register article save hook
 $wgHooks['ArticleSaveComplete'][] = 'DraftHooks::discard';
 
@@ -62,7 +58,7 @@ $wgAjaxExportList[] = 'DraftHooks::AjaxSave';
 
 // Register ajax add script hook
 $wgHooks['AjaxAddScript'][] = 'DraftHooks::addJS';
-	
+
 // Register database operations
 $wgHooks['LoadExtensionSchemaUpdates'][] = 'efCheckSchema';
 
