@@ -126,6 +126,7 @@ class Draft
 						'draft_namespace' => $data['draft_namespace'],
 						'draft_title' => $data['draft_title'],
 						'draft_user' => $data['draft_user'],
+						'draft_token' => $data['draft_token']
 					),
 					__METHOD__
 				) === false ) {
