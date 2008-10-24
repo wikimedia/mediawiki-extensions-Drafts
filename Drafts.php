@@ -30,6 +30,9 @@ $dir = dirname( __FILE__ ) . '/';
 // Use the value 0 to disable autosave
 $wgDraftsAutoSaveWait = 120;
 
+// Days to keep drafts around before automatic deletion
+$wgDraftsLifeSpan = 30;
+
 if ( true ) {
 	/* Includes */
 

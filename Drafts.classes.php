@@ -184,6 +184,8 @@ class Draft
 	public static function countDrafts( &$title = null, $userID = null ) {
 		global $wgUser;
 		
+		Draft::cleanDrafts();
+		
 		// Get db connection
 		$db = wfGetDB( DB_SLAVE );
 		
@@ -203,8 +205,25 @@ class Draft
 		return $db->selectField( 'drafts', 'count(*)', $where, __METHOD__ );
 	}
 	
+	public static function cleanDrafts() {
+		global $wgDraftsLifeSpan;
+		
+		// Get db connection
+		$db = wfGetDB( DB_MASTER );
+		
+		// Remove drafts that are more than $wgDraftsLifeSpan days old
+		$db->delete( 'drafts',
+			array(
+				'draft_savetime < ' . wfTimestamp( TS_MW, wfTimestamp( TS_UNIX ) - ( $wgDraftsLifeSpan * 60 * 60 * 24 ) )
+			),
+			__METHOD__
+		);
+	}
+	
 	public static function getDrafts( $title = null, $userID = null ) {
 		global $wgUser;
+		
+		Draft::cleanDrafts();
 		
 		// Get db connection
 		$db = wfGetDB( DB_MASTER );
