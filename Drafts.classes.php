@@ -121,25 +121,22 @@ class Draft {
 				__METHOD__
 			);
 		} else {
-			// Before creating a new draft record, lets check if we have already
-			$token = $wgRequest->getIntOrNull( 'wpDraftToken' );
-			if ( $token !== null ) {
-				// FIXME: clean up this code style :)
-				// Check if token has been used already for this article
-				if ( $dbw->selectField( 'drafts', 'draft_token',
-					array(
-						'draft_namespace' => $data['draft_namespace'],
-						'draft_title' => $data['draft_title'],
-						'draft_user' => $data['draft_user'],
-						'draft_token' => $data['draft_token']
-					),
-					__METHOD__
-				) === false ) {
-					$dbw->insert( 'drafts', $data, __METHOD__ );
-					$this->_id = $dbw->insertId();
-					// Update state
-					$this->_exists = true;
-				}
+			$existingRow = $dbw->selectField( 'drafts', 'draft_token',
+				array(
+					'draft_namespace' => $data['draft_namespace'],
+					'draft_title' => $data['draft_title'],
+					'draft_user' => $data['draft_user'],
+					'draft_token' => $data['draft_token']
+				),
+				__METHOD__
+			);
+			
+			// Check if token has been used already for this article
+			if ( $existingRow === false ) {
+				$dbw->insert( 'drafts', $data, __METHOD__ );
+				$this->_id = $dbw->insertId();
+				// Update state
+				$this->_exists = true;
 			}
 		}
 		
@@ -171,11 +168,11 @@ class Draft {
 		$this->_exists = false;
 	}
 	
-	static function newFromID( $id, $autoload = true ) {
+	public static function newFromID( $id, $autoload = true ) {
 		return new Draft( $id, $autoload );
 	}
 	
-	static function newFromRow( $row ) {
+	public static function newFromRow( $row ) {
 		$draft = new Draft( $row['draft_id'], false );
 		$draft->setToken( $row['draft_token'] );
 		$draft->setTitle( Title::makeTitle( $row['draft_namespace'], $row['draft_title'] ) );
@@ -190,7 +187,7 @@ class Draft {
 		return $draft;
 	}
 	
-	static function countDrafts( &$title = null, $userID = null ) {
+	public static function countDrafts( &$title = null, $userID = null ) {
 		global $wgUser;
 		
 		Draft::cleanDrafts();
@@ -214,7 +211,7 @@ class Draft {
 		return $dbr->selectField( 'drafts', 'count(*)', $where, __METHOD__ );
 	}
 	
-	static function cleanDrafts() {
+	public static function cleanDrafts() {
 		global $egDraftsLifeSpan;
 		
 		// Get db connection
@@ -230,7 +227,7 @@ class Draft {
 		);
 	}
 	
-	static function getDrafts( $title = null, $userID = null ) {
+	public static function getDrafts( $title = null, $userID = null ) {
 		global $wgUser;
 		
 		Draft::cleanDrafts();
@@ -270,7 +267,7 @@ class Draft {
 		return count( $drafts ) ? $drafts : null;
 	}
 	
-	static function listDrafts( &$title = null, $user = null ) {
+	public static function listDrafts( &$title = null, $user = null ) {
 		global $wgOut, $wgRequest, $wgUser, $wgLang;
 		
 		// Get draftID
@@ -410,7 +407,7 @@ class Draft {
 		return 0;
 	}
 	
-	static function newToken() {
+	public static function newToken() {
 		return wfGenerateToken();
 	}
 	

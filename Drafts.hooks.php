@@ -11,7 +11,7 @@ class DraftHooks {
 	/**
 	 * ArticleSaveComplete hook
 	 */
-	static function discard( &$article, &$user, &$text, &$summary, &$m, &$watchthis, &$section, &$flags, $rev ) {
+	public static function discard( &$article, &$user, &$text, &$summary, &$m, &$watchthis, &$section, &$flags, $rev ) {
 		global $wgRequest;
 		// Check if the save occured from a draft
 		$draft = Draft::newFromID( $wgRequest->getIntOrNull( 'wpDraftID' ) );
@@ -27,7 +27,7 @@ class DraftHooks {
 	 * EditPage::showEditForm:initial hook
 	 * Load draft...
 	 */
-	static function loadForm( &$editpage ) {
+	public static function loadForm( &$editpage ) {
 		global $wgUser, $wgRequest, $wgOut, $wgTitle, $wgLang;
 	
 		// Check permissions
@@ -80,7 +80,6 @@ class DraftHooks {
 		// Show list of drafts
 		if ( $numDrafts  > 0 ) {
 			if ( $wgRequest->getText( 'action' ) !== 'submit' ) {
-				// FIXME: use CSS!
 				$wgOut->addHTML( Xml::openElement( 'div', array( 'id' => 'drafts-list-box' ) ) );
 				$wgOut->addHTML( Xml::element( 'h3', null, wfMsg( 'drafts-view-existing' ) ) );
 				Draft::ListDrafts( $wgTitle );
@@ -106,7 +105,7 @@ class DraftHooks {
 	 * Intercept the saving of an article to detect if the submission was from the non-javascript
 	 * save draft button
 	 */
-	static function interceptSave( $editor, $text, $section, &$error ) {
+	public static function interceptSave( $editor, $text, $section, &$error ) {
 		global $wgRequest;
 	
 		// Don't save if the save draft button caused the submit
@@ -123,7 +122,7 @@ class DraftHooks {
 	 * EditPageBeforeEditButtons hook
 	 * Add draft saving controls
 	 */
-	static function controls( &$editpage, &$buttons ) {
+	public static function controls( &$editpage, &$buttons ) {
 		global $wgUser, $wgTitle, $wgRequest, $egDraftsAutoSaveWait;
 	
 		// Check permissions
@@ -225,7 +224,7 @@ class DraftHooks {
 	 * AjaxAddScript hook
 	 * Add ajax support script
 	 */
-	static function addJS( $out ) {
+	public static function addJS( $out ) {
 		global $wgScriptPath;
 	
 		// FIXME: assumes standard dir structure
@@ -240,7 +239,7 @@ class DraftHooks {
 	 * BeforePageDisplay hook
 	 * Add ajax support script
 	 */
-	static function addCSS( $out ) {
+	public static function addCSS( $out ) {
 		global $wgScriptPath;
 		
 		// FIXME: assumes standard dir structure
@@ -261,12 +260,10 @@ class DraftHooks {
 	 * AJAX function export DraftHooks::AjaxSave
 	 * Respond to ajax queries
 	 */
-	static function AjaxSave( $dtoken, $etoken, $id, $title, $section, $starttime, $edittime,
+	public static function AjaxSave( $dtoken, $etoken, $id, $title, $section, $starttime, $edittime,
 		$scrolltop, $text, $summary, $minoredit )
 	{
 		global $wgUser, $wgRequest;
-		
-		$wgRequest->setVal( 'wpDraftToken', $dtoken );
 		
 		// Verify token
 		if ( $wgUser->editToken() == $etoken ) {

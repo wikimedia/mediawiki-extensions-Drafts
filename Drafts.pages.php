@@ -11,7 +11,7 @@ class DraftsPage extends SpecialPage {
 
 	/* Functions */
 
-	function __construct() {
+	public function __construct() {
 		// Initialize special page
 		SpecialPage::SpecialPage( 'Drafts' );
 
@@ -19,7 +19,7 @@ class DraftsPage extends SpecialPage {
 		wfLoadExtensionMessages( 'Drafts' );
 	}
 
-	function execute( $par ) {
+	public function execute( $par ) {
 		global $wgRequest, $wgOut, $wgUser;
 
 		// Begin output
