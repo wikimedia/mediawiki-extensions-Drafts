@@ -271,7 +271,7 @@ class Draft {
 		
 		// Output HTML for list of drafts
 		$drafts = Draft::getDrafts( $title, $user );
-		if ( count( $drafts ) > 0 )	{
+		if ( count( $drafts ) > 0 ) {
 			// Internationalization
 			wfLoadExtensionMessages( 'Drafts' );
 			
