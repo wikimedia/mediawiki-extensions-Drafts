@@ -176,7 +176,7 @@ class DraftHooks {
 				array(
 					'type' => 'hidden',
 					'name' => 'wpDraftAutoSaveWait',
-					'value' => $wgDraftsAutoSaveWait
+					'value' => $egDraftsAutoSaveWait
 				)
 			);
 			$buttons['savedraft'] .= Xml::element( 'input',

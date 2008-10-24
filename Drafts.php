@@ -30,10 +30,10 @@ $dir = dirname( __FILE__ ) . '/';
 
 // Seconds of inactivity after change before autosaving
 // Use the value 0 to disable autosave
-$wgDraftsAutoSaveWait = 120;
+$egDraftsAutoSaveWait = 120;
 
 // Days to keep drafts around before automatic deletion
-$wgDraftsLifeSpan = 30;
+$egDraftsLifeSpan = 30;
 
 // Save and View components
 $wgAutoloadClasses['Draft'] = $dir . 'Drafts.classes.php';
