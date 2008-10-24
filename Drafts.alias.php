@@ -12,3 +12,9 @@ $aliases = array();
 $aliases['en'] = array(
 	'Drafts' => array( 'Drafts' ),
 );
+
+/** Dutch (Nederlands) */
+$aliases['nl'] = array(
+	'Drafts' => array( 'Werkversies' ),
+);
+

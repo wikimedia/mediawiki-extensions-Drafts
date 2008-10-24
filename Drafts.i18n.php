@@ -31,3 +31,36 @@ Do you want to continue?',
 	'drafts-save-error' => 'Error saving draft',
 	'drafts-save-title' => 'Save as a draft [d]',
 );
+
+/** Message documentation (Message documentation)
+ * @author Siebrand
+ */
+$messages['qqq'] = array(
+	'drafts-view-mustlogin' => '* $1 is a link to [[Special:UserLogin]] with {{msg|drafts-view-login}} as description.',
+);
+
+/** Dutch (Nederlands)
+ * @author Siebrand
+ */
+$messages['nl'] = array(
+	'drafts' => 'Werkversies',
+	'drafts-desc' => 'Voegt functionaliteit toe om [[Special:Drafts|werkversies]] van een pagina op de server op te slaan',
+	'drafts-view' => 'WerkversieBekijken',
+	'drafts-view-article' => 'Pagina',
+	'drafts-view-existing' => 'Bestaande werkversies',
+	'drafts-view-saved' => 'Opgeslagen',
+	'drafts-view-discard' => 'Verwijderen',
+	'drafts-view-login' => 'Link description for a link to [[Special:UserLogin]] in {{msg|drafts-view-mustlogin}}.',
+	'drafts-view-mustlogin' => 'U moet $1 om uw werkversies te kunnen bekijken.',
+	'drafts-view-nonesaved' => 'U hebt geen opgeslagen werkversies.',
+	'drafts-view-notice' => 'U moet $1 voor deze pagina.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|werkversie|werkversies}}',
+	'drafts-view-warn' => 'Door van deze pagina weg te navigeren verliest u alle wijzigingen die u nog niet hebt opgeslagen.
+Wilt u doorgaan?',
+	'drafts-save' => 'Opslaan als werkversie',
+	'drafts-save-save' => 'Werkversie opslaan',
+	'drafts-save-saved' => 'Opgeslagen',
+	'drafts-save-error' => 'Fout bij het opslaan van de werkversie',
+	'drafts-save-title' => 'Als werkversie opslaan',
+);
+
