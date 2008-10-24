@@ -232,6 +232,7 @@ function efDraftsSave( $dtoken, $etoken, $id, $title, $section, $starttime, $edi
 		$draft = Draft::newFromID( $id );
 	
 		// Load draft with info
+		$draft->setToken( $dtoken );
 		$draft->setTitle( Title::newFromText( $title ) );
 		$draft->setSection( $section == '' ? null : $section );
 		$draft->setStartTime( $starttime );
