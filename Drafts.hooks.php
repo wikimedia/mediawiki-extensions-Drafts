@@ -8,6 +8,9 @@
  
 // Drafts hooks
 class DraftHooks {
+	/**
+	 * ArticleSaveComplete hook
+	 */
 	static function discard( &$article, &$user, &$text, &$summary, &$minoredit, &$watchthis,
 		&$sectionanchor, &$flags, $revision )
 	{
@@ -26,7 +29,10 @@ class DraftHooks {
 		return true;
 	}
 	
-	// Load draft
+	/**
+	 * EditPage::showEditForm:initial hook
+	 * Load draft...
+	 */
 	static function loadForm( &$editpage ) {
 		global $wgUser, $wgRequest, $wgOut, $wgTitle, $wgLang;
 	
@@ -101,8 +107,11 @@ class DraftHooks {
 		return true;
 	}
 	
-	// Intercept the saving of an article to detect if the submission was from the non-javascript
-	// save draft button
+	/**
+	 * EditFilter hook
+	 * Intercept the saving of an article to detect if the submission was from the non-javascript
+	 * save draft button
+	 */
 	static function interceptSave( $editor, $text, $section, &$error ) {
 		global $wgRequest;
 	
@@ -116,7 +125,10 @@ class DraftHooks {
 		return true;
 	}
 	
-	// Add draft saving controls
+	/**
+	 * EditPageBeforeEditButtons hook
+	 * Add draft saving controls
+	 */
 	static function controls( &$editpage, &$buttons ) {
 		global $wgUser, $wgTitle, $wgRequest, $wgDraftsAutoSaveWait;
 	
@@ -215,7 +227,10 @@ class DraftHooks {
 		return true;
 	}
 	
-	// Add ajax support script
+	/**
+	 * AjaxAddScript hook
+	 * Add ajax support script
+	 */
 	static function addJS( $out ) {
 		global $wgScriptPath;
 	
@@ -227,7 +242,10 @@ class DraftHooks {
 		return true;
 	}
 	
-	// Add ajax support script
+	/**
+	 * BeforePageDisplay hook
+	 * Add ajax support script
+	 */
 	static function addCSS( $out ) {
 		global $wgScriptPath;
 		
@@ -245,7 +263,10 @@ class DraftHooks {
 		return true;
 	}
 	
-	// Respond to ajax queries
+	/**
+	 * AJAX function export DraftHooks::AjaxSave
+	 * Respond to ajax queries
+	 */
 	static function AjaxSave( $dtoken, $etoken, $id, $title, $section, $starttime, $edittime,
 		$scrolltop, $text, $summary, $minoredit )
 	{
