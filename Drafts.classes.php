@@ -283,7 +283,7 @@ class Draft {
 						'cellspacing' => 0,
 						'width' => '100%',
 						'border' => 0,
-						'style' => 'margin-left:-5px;margin-right:-5px'
+						'id' => 'drafts-list-table'
 					)
 				)
 			);

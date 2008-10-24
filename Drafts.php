@@ -59,6 +59,9 @@ $wgAjaxExportList[] = 'DraftHooks::AjaxSave';
 // Register ajax add script hook
 $wgHooks['AjaxAddScript'][] = 'DraftHooks::addJS';
 
+// Register css add script hook
+$wgHooks['BeforePageDisplay'][] = 'DraftHooks::addCSS';
+
 // Register database operations
 $wgHooks['LoadExtensionSchemaUpdates'][] = 'efCheckSchema';
 

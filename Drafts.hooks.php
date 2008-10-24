@@ -75,7 +75,7 @@ class DraftHooks {
 		if ( $numDrafts  > 0 ) {
 			if ( $wgRequest->getText( 'action' ) !== 'submit' ) {
 				// FIXME: use CSS!
-				$wgOut->addHTML( Xml::openElement( 'div', array( 'style' => 'margin-bottom:10px;padding-left:10px;padding-right:10px;border:red solid 1px' ) ) );
+				$wgOut->addHTML( Xml::openElement( 'div', array( 'id' => 'drafts-list-box' ) ) );
 				$wgOut->addHTML( Xml::element( 'h3', null, wfMsg( 'drafts-view-existing' ) ) );
 				Draft::ListDrafts( $wgTitle );
 				$wgOut->addHTML( Xml::closeElement( 'div' ) );
@@ -216,6 +216,24 @@ class DraftHooks {
 		// FIXME: assumes standard dir structure
 		// Add javascript to support ajax draft saving
 		$out->addScriptFile( $wgScriptPath . '/extensions/Drafts/Drafts.js' );
+	
+		// Continue
+		return true;
+	}
+	
+	// Add ajax support script
+	static function addCSS( $out ) {
+		global $wgScriptPath;
+		
+		// FIXME: assumes standard dir structure
+		// Add css for various styles
+		$out->addLink(
+			array(
+				'rel' => 'stylesheet',
+				'type' => 'text/css',
+				'href' => $wgScriptPath . '/extensions/Drafts/Drafts.css',
+			)
+		);
 	
 		// Continue
 		return true;
