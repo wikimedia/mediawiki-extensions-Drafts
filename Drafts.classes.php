@@ -212,9 +212,10 @@ class Draft
 		$db = wfGetDB( DB_MASTER );
 		
 		// Remove drafts that are more than $wgDraftsLifeSpan days old
+		$cutoff = wfTimestamp( TS_UNIX ) - ( $wgDraftsLifeSpan * 60 * 60 * 24 );
 		$db->delete( 'drafts',
 			array(
-				'draft_savetime < ' . wfTimestamp( TS_MW, wfTimestamp( TS_UNIX ) - ( $wgDraftsLifeSpan * 60 * 60 * 24 ) )
+				'draft_savetime < ' . $db->addQuotes( $db->timestamp( $cutoff ) )
 			),
 			__METHOD__
 		);
