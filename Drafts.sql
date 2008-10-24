@@ -6,6 +6,7 @@
 CREATE TABLE /*$wgDBPrefix*/drafts (
     -- Unique ID for drafts
     draft_id INTEGER AUTO_INCREMENT,
+    -- Unique value generated at edit time to prevent duplicate submissions
     draft_token INTEGER,
     -- User who made the draft, 0 for anons
     draft_user INTEGER NOT NULL default 0,
@@ -20,9 +21,11 @@ CREATE TABLE /*$wgDBPrefix*/drafts (
     -- Standard edit conflict checking params...
     draft_starttime BINARY(14),
     draft_edittime BINARY(14),
+    -- Timestamp when draft was saved...
     draft_savetime BINARY(14),
-    -- Scrolltop ?
+    -- Textarea scroll position saved from editor
     draft_scrolltop INTEGER,
+    -- And of course the page and summary text come in handy
     draft_text mediumblob NOT NULL,
     draft_summary TINYBLOB,
     -- Is this a minor edit?
