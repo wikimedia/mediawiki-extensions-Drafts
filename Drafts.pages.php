@@ -32,16 +32,14 @@ class DraftsPage extends SpecialPage {
 
 		// Handle discarding
 		$draft = Draft::newFromID( $wgRequest->getIntOrNull( 'discard' ) );
-		if ( $draft->exists() )
-		{
+		if ( $draft->exists() ) {
 			// Discard draft
 			$draft->discard();
 			
 			// Redirect to the article editor or view if returnto was set
 			$section = $wgRequest->getIntOrNull( 'section' );
 			$urlSection = $section !== null ? "&section={$section}" : '';
-			switch( $wgRequest->getText( 'returnto' ) )
-			{
+			switch( $wgRequest->getText( 'returnto' ) ) {
 				case 'edit':
 					$title = Title::newFromDBKey( $draft->getTitle() );
 					$wgOut->redirect( wfExpandURL( $title->getEditURL() . $urlSection ) );
@@ -54,7 +52,7 @@ class DraftsPage extends SpecialPage {
 		}
 
 		// Show list of drafts, or a message that there are none
-		if( Draft::listDrafts() == 0 ) {
+		if ( Draft::listDrafts() == 0 ) {
 			$wgOut->addHTML( wfMsgHTML( 'drafts-view-nonesaved' ) );
 		}
 	}

@@ -2,9 +2,8 @@
 
 /* Hooks */
 class DraftHooks {
-	
 	static function discard( &$article, &$user, &$text, &$summary, &$minoredit, &$watchthis,
-		&$sectionanchor, &$flags, $revision ) 
+		&$sectionanchor, &$flags, $revision )
 	{
 		global $wgRequest;
 	
@@ -31,8 +30,7 @@ class DraftHooks {
 			$draft = Draft::newFromID( $wgRequest->getIntOrNull( 'draft' ) );
 			
 			// Load form values
-			if ( $draft->exists() )
-			{
+			if ( $draft->exists() ) {
 				// Override initial values in the form with draft data
 				$editpage->textbox1 = $draft->getText();
 				$editpage->summary = $draft->getSummary();
@@ -45,8 +43,7 @@ class DraftHooks {
 				$wgUser->editToken() == $wgRequest->getText( 'wpEditToken' ) )
 			{
 				// If the draft wasn't specified in the url, try using a form-submitted one
-				if ( !$draft->exists() )
-				{
+				if ( !$draft->exists() ) {
 					$draft = Draft::newFromID( $wgRequest->getIntOrNull( 'wpDraftID' ) );
 				}
 	
@@ -76,7 +73,7 @@ class DraftHooks {
 		
 		// Show list of drafts
 		if ( $numDrafts  > 0 ) {
-			if( $wgRequest->getText( 'action' ) !== 'submit' ) {
+			if ( $wgRequest->getText( 'action' ) !== 'submit' ) {
 				// FIXME: use CSS!
 				$wgOut->addHTML( Xml::openElement( 'div', array( 'style' => 'margin-bottom:10px;padding-left:10px;padding-right:10px;border:red solid 1px' ) ) );
 				$wgOut->addHTML( Xml::element( 'h3', null, wfMsg( 'drafts-view-existing' ) ) );
@@ -225,8 +222,8 @@ class DraftHooks {
 	}
 	
 	// Respond to ajax queries
-	static function AjaxSave( $dtoken, $etoken, $id, $title, $section, $starttime, $edittime, 
-		$scrolltop, $text, $summary, $minoredit ) 
+	static function AjaxSave( $dtoken, $etoken, $id, $title, $section, $starttime, $edittime,
+		$scrolltop, $text, $summary, $minoredit )
 	{
 		global $wgUser, $wgRequest;
 		
@@ -257,6 +254,6 @@ class DraftHooks {
 		} else {
 			// Return failure
 			return '-1';
-		}	
+		}
 	}
 }

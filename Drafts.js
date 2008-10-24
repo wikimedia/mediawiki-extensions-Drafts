@@ -41,8 +41,7 @@ wgAjaxSaveDraft.change = function() {
 		clearTimeout( wgAjaxSaveDraft.autosavetimer );
 	}
 	// Set timer to save automatically
-	if( wgAjaxSaveDraft.autosavewait && wgAjaxSaveDraft.autosavewait > 0)
-	{
+	if( wgAjaxSaveDraft.autosavewait && wgAjaxSaveDraft.autosavewait > 0 ) {
 		wgAjaxSaveDraft.autosavetimer = setTimeout(
 			"wgAjaxSaveDraft.save()",
 			wgAjaxSaveDraft.autosavewait * 1000

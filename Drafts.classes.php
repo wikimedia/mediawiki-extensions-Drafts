@@ -3,8 +3,7 @@
 /* Classes */
 
 // Draft Class
-class Draft
-{
+class Draft {
 	/* Fields */
 
 	private $_db;
@@ -120,10 +119,10 @@ class Draft
 		} else {
 			// Before creating a new draft record, lets check if we have already
 			$token = $wgRequest->getIntOrNull( 'wpDraftToken' );
-			if( $token !== null) {
+			if ( $token !== null ) {
 				// FIXME: clean up this code style :)
 				// Check if token has been used already for this article
-				if( $this->_db->selectField( 'drafts', 'draft_token',
+				if ( $this->_db->selectField( 'drafts', 'draft_token',
 					array(
 						'draft_namespace' => $data['draft_namespace'],
 						'draft_title' => $data['draft_title'],
@@ -170,7 +169,7 @@ class Draft
 	}
 	
 	public static function newFromRow( $row ) {
-		$draft = new Draft( $row['draft_id'], false);
+		$draft = new Draft( $row['draft_id'], false );
 		$draft->setToken( $row['draft_token'] );
 		$draft->setTitle( Title::makeTitle( $row['draft_namespace'], $row['draft_title'] ) );
 		$draft->setSection( $row['draft_section'] );
@@ -272,8 +271,7 @@ class Draft
 		
 		// Output HTML for list of drafts
 		$drafts = Draft::getDrafts( $title, $user );
-		if( count( $drafts ) > 0 )
-		{
+		if ( count( $drafts ) > 0 )	{
 			// Internationalization
 			wfLoadExtensionMessages( 'Drafts' );
 			
@@ -313,7 +311,7 @@ class Draft
 			$wgOut->addHTML( Xml::closeElement( 'tr' ) );
 			
 			// Add existing drafts for this page and user
-			foreach( $drafts as $draft ) {
+			foreach ( $drafts as $draft ) {
 				// Get article title text
 				$htmlTitle = $draft->getTitle()->getEscapedText();
 				
@@ -418,9 +416,7 @@ class Draft
 	}
 
 	/* States */
-
-	public function exists()
-	{
+	public function exists() {
 		return $this->_exists;
 	}
 
