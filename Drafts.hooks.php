@@ -4,10 +4,11 @@
 class DraftHooks {
 	
 	static function discard( &$article, &$user, &$text, &$summary, &$minoredit, &$watchthis,
-		&$sectionanchor, &$flags, $revision ) {
-		global $wgRequest, $wgUser;
+		&$sectionanchor, &$flags, $revision ) 
+	{
+		global $wgRequest;
 	
-		if ( $wgUser->editToken() == $wgRequest->getText( 'wpEditToken' ) ) {
+		if ( $user->editToken() == $wgRequest->getText( 'wpEditToken' ) ) {
 			// Check if the save occured from a draft
 			$draft = Draft::newFromID( $wgRequest->getIntOrNull( 'wpDraftID' ) );
 			if ( $draft->exists() ) {
@@ -21,7 +22,7 @@ class DraftHooks {
 	}
 	
 	// Load draft
-	static function load( &$editpage ) {
+	static function loadForm( &$editpage ) {
 		global $wgUser, $wgRequest, $wgOut, $wgTitle;
 	
 		// Check permissions

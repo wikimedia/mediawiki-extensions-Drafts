@@ -55,7 +55,7 @@ $wgHooks['ArticleSaveComplete'][] = 'DraftHooks::discard';
 $wgHooks['EditPageBeforeEditButtons'][] = 'DraftHooks::controls';
 
 // Register load hook
-$wgHooks['EditPage::showEditForm:initial'][] = 'DraftHooks::load';
+$wgHooks['EditPage::showEditForm:initial'][] = 'DraftHooks::loadForm';
 
 // Register ajax response hook
 $wgAjaxExportList[] = 'DraftHooks::AjaxSave';
