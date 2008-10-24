@@ -21,7 +21,7 @@ class DraftHooks {
 			$draft = Draft::newFromID( $wgRequest->getIntOrNull( 'wpDraftID' ) );
 			if ( $draft->exists() ) {
 				// Discard the draft
-				$draft->discard();
+				$draft->discard( $user );
 			}
 		}
 	

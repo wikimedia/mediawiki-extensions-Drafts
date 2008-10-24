@@ -150,8 +150,11 @@ class Draft {
 		return true;
 	}
 
-	public function discard() {
+	public function discard( $user = null ) {
 		global $wgUser;
+		
+		// Use $wgUser as a fallback
+		$user = $user === null ? $wgUser : $user;
 		
 		// Get db connection
 		$this->getDB();
@@ -161,7 +164,7 @@ class Draft {
 			array(
 				'draft_id' => $this->_id,
 				// FIXME: ID is already a primary key
-				'draft_user' =>  $wgUser->getID()
+				'draft_user' =>  $user->getID()
 			),
 			__METHOD__
 		);
