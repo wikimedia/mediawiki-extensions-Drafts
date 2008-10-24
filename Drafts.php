@@ -10,8 +10,8 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['other'][] = array(
 	'name' => 'Save Drafts',
 	'author' => 'Trevor Parscal',
-   'url' => 'http://www.mediawiki.org/wiki/Extension:Drafts',
-   'description' => 'Allow users to save drafts'
+	'url' => 'http://www.mediawiki.org/wiki/Extension:Drafts',
+	'description' => 'Allow users to save drafts'
 );
 
 $wgExtensionCredits['specialpage'][] = array(
@@ -33,43 +33,48 @@ $wgDraftsAutoSaveWait = 120;
 // Days to keep drafts around before automatic deletion
 $wgDraftsLifeSpan = 30;
 
-if ( true ) {
-	/* Includes */
+// Save and View components
+$wgAutoloadClasses['Draft'] = $dir . 'Drafts.classes.php';
+$wgAutoloadClasses['DraftHooks'] = $dir . 'Drafts.hooks.php';
 
-	// Save and View components
-	require_once $dir . 'Drafts.classes.php';
-	require_once $dir . 'Drafts.hooks.php';
+// Internationalization
+$wgExtensionMessagesFiles['Drafts'] = $dir . 'Drafts.i18n.php';
+$wgExtensionAliasesFiles['Drafts'] = $dir . 'Drafts.alias.php';
 
-	/* MediaWiki Connections */
+// Register the Drafts special page
+$wgSpecialPages['Drafts'] = 'DraftsPage';
+$wgAutoloadClasses['DraftsPage'] = $dir . 'Drafts.pages.php';
 
-	// Internationalization
-	$wgExtensionMessagesFiles['Drafts'] = $dir . 'Drafts.i18n.php';
-	$wgExtensionAliasesFiles['Drafts'] = $dir . 'Drafts.alias.php';
-
-	// Register the Drafts special page
-	$wgSpecialPages['Drafts'] = 'DraftsPage';
-
-	// Autoload SpecialDrafts from Drafts.Classes.php
-	$wgAutoloadClasses['DraftsPage'] = $dir . 'Drafts.pages.php';
-
-	// Register save interception to detect non-javascript draft saving
-	$wgHooks['EditFilter'][] = 'efDraftsInterceptSave';
-
-	// Register article save hook
-	$wgHooks['ArticleSaveComplete'][] = 'efDraftsDiscard';
-
-	// Register controls hook
-	$wgHooks['EditPageBeforeEditButtons'][] = 'efDraftsControls';
-
-	// Register load hook
-	$wgHooks['EditPage::showEditForm:initial'][] = 'efDraftsLoad';
-
-	// Register ajax response hook
-	$wgAjaxExportList[] = "efDraftsSave";
-
-	// Register ajax add script hook
-	$wgHooks['AjaxAddScript'][] = 'efDraftsAddJS';
+// Register save interception to detect non-javascript draft saving
+$wgHooks['EditFilter'][] = 'DraftHooks::interceptSave';
 	
-	// Register database operations
-	$wgHooks['LoadExtensionSchemaUpdates'][] = 'efCheckSchema';
+// Register article save hook
+$wgHooks['ArticleSaveComplete'][] = 'DraftHooks::discard';
+
+// Register controls hook
+$wgHooks['EditPageBeforeEditButtons'][] = 'DraftHooks::controls';
+
+// Register load hook
+$wgHooks['EditPage::showEditForm:initial'][] = 'DraftHooks::load';
+
+// Register ajax response hook
+$wgAjaxExportList[] = 'DraftHooks::AjaxSave';
+
+// Register ajax add script hook
+$wgHooks['AjaxAddScript'][] = 'DraftHooks::addJS';
+	
+// Register database operations
+$wgHooks['LoadExtensionSchemaUpdates'][] = 'efCheckSchema';
+
+function efCheckSchema() {
+	// Get a connection
+	$db = wfGetDB( DB_MASTER );
+	// Get statements from file
+	$statement = file_get_contents( dirname( __FILE__  ) . '/Drafts.sql' );
+	// Create table if it doesn't exist
+	if ( !$db->tableExists( 'drafts' ) ) {
+		$db->query( $statement, __METHOD__);
+	}
+	// Continue
+	return true;
 }

@@ -96,6 +96,7 @@ class Draft
 			'draft_user' => (int) $wgUser->getID(),
 			'draft_namespace' => (int) $this->_title->getNamespace(),
 			'draft_title' => (string) $this->_title->getDBKey(),
+			'draft_page' => (int) $this->_title->getArticleId(),
 			'draft_section' => $this->_section == '' ? null : (int) $this->_section,
 			'draft_starttime' => $this->_db->timestamp( $this->_starttime ),
 			'draft_edittime' => $this->_db->timestamp( $this->_edittime ),
@@ -120,6 +121,7 @@ class Draft
 			// Before creating a new draft record, lets check if we have already
 			$token = $wgRequest->getIntOrNull( 'wpDraftToken' );
 			if( $token !== null) {
+				// FIXME: clean up this code style :)
 				// Check if token has been used already for this article
 				if( $this->_db->selectField( 'drafts', 'draft_token',
 					array(
@@ -154,6 +156,7 @@ class Draft
 		$this->_db->delete( 'drafts',
 			array(
 				'draft_id' => $this->_id,
+				// FIXME: ID is already a primary key
 				'draft_user' =>  $wgUser->getID()
 			),
 			__METHOD__
@@ -232,8 +235,14 @@ class Draft
 		// Build where clause
 		$where = array();
 		if ( $title !== null ) {
-			$where['draft_namespace'] = $title->getNamespace();
-			$where['draft_title'] = $title->getDBKey();
+			$pageId = $title->getArticleId();
+			if ( $pageId ) {
+				$where['draft_page'] = $pageId;
+			} else {
+				$where['draft_page'] = 0; // page not created yet
+				$where['draft_namespace'] = $title->getNamespace();
+				$where['draft_title'] = $title->getDBKey();
+			}
 		}
 		if ( $userID !== null ) {
 			$where['draft_user'] = $userID;
@@ -400,6 +409,7 @@ class Draft
 		return time();
 	}
 	
+	// FIXME: load balancer knows how to not re-fetch connections
 	private function getDB() {
 		// Get database connection if we don't already have one
 		if ( $this->_db === null ) {

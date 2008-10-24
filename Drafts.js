@@ -95,7 +95,7 @@ wgAjaxSaveDraft.call = function( dtoken, etoken, id, title, section, starttime, 
 
 	// Perform Ajax call
 	sajax_do_call(
-		"efDraftsSave",
+		"DraftHooks::AjaxSave",
 		[ dtoken, etoken, id, title, section, starttime, edittime, scrolltop, text, summary, minoredit ],
 		wgAjaxSaveDraft.processResult
 	);
