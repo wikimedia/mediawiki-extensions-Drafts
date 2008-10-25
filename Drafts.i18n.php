@@ -19,7 +19,6 @@ $messages['en'] = array(
 	'drafts-view-existing' => 'Existing drafts',
 	'drafts-view-saved' => 'Saved',
 	'drafts-view-discard' => 'Discard',
-	'drafts-view-login' => 'login',
 	'drafts-view-nonesaved' => 'You do not have any drafts saved at this time.',
 	'drafts-view-notice' => 'You have $1 for this page.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|draft|drafts}}',
@@ -30,13 +29,6 @@ Do you want to continue?',
 	'drafts-save-saved' => 'Saved',
 	'drafts-save-error' => 'Error saving draft',
 	'drafts-save-title' => 'Save as a draft [d]',
-);
-
-/** Message documentation (Message documentation)
- * @author Siebrand
- */
-$messages['qqq'] = array(
-	'drafts-view-login' => 'Link description for {{msg|drafts-view-mustlogin}}',
 );
 
 /** Arabic (العربية)
@@ -50,7 +42,6 @@ $messages['ar'] = array(
 	'drafts-view-existing' => 'المسودات الموجودة',
 	'drafts-view-saved' => 'محفوظة',
 	'drafts-view-discard' => 'تجاهل',
-	'drafts-view-login' => 'تسجيل الدخول',
 	'drafts-view-nonesaved' => 'أنت ليس لديك أي مسودات محفوظة في هذا الوقت.',
 	'drafts-view-notice' => 'أنت لديك $1 لهذه الصفحة.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|مسودة|مسودة}}',
@@ -74,7 +65,6 @@ $messages['arz'] = array(
 	'drafts-view-existing' => 'المسودات الموجودة',
 	'drafts-view-saved' => 'محفوظة',
 	'drafts-view-discard' => 'تجاهل',
-	'drafts-view-login' => 'تسجيل الدخول',
 	'drafts-view-nonesaved' => 'أنت ليس لديك أى مسودات محفوظة فى هذا الوقت.',
 	'drafts-view-notice' => 'أنت لديك $1 لهذه الصفحة.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|مسودة|مسودة}}',
@@ -98,7 +88,6 @@ $messages['gl'] = array(
 	'drafts-view-existing' => 'Borradores existentes',
 	'drafts-view-saved' => 'Gardado',
 	'drafts-view-discard' => 'Desbotar',
-	'drafts-view-login' => 'acceder ao sistema',
 	'drafts-view-nonesaved' => 'Nestes intres non ten gardado ningún borrador.',
 	'drafts-view-notice' => 'Ten $1 para esta páxina.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|borrador|borradores}}',
@@ -122,7 +111,6 @@ $messages['lb'] = array(
 	'drafts-view-existing' => 'Brouillonen déi et gëtt',
 	'drafts-view-saved' => 'Gespäichert',
 	'drafts-view-discard' => 'Verwerfen',
-	'drafts-view-login' => 'aloggen',
 	'drafts-view-nonesaved' => 'Dir hutt elo keng Brouillone gespäichert.',
 	'drafts-view-notice' => 'Dir hutt $1 fir dës Säit.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|Brouillon|Brouillone}}',
@@ -145,7 +133,6 @@ $messages['nl'] = array(
 	'drafts-view-existing' => 'Bestaande werkversies',
 	'drafts-view-saved' => 'Opgeslagen',
 	'drafts-view-discard' => 'Verwijderen',
-	'drafts-view-login' => 'Link description for a link to [[Special:UserLogin]] in {{msg|drafts-view-mustlogin}}.',
 	'drafts-view-nonesaved' => 'U hebt geen opgeslagen werkversies.',
 	'drafts-view-notice' => 'U moet $1 voor deze pagina.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|werkversie|werkversies}}',
