@@ -93,11 +93,14 @@ wgAjaxSaveDraft.call = function( dtoken, etoken, id, title, section, starttime, 
 	wgAjaxSaveDraft.inprogress = true;
 
 	// Perform Ajax call
+	var old = sajax_request_type;
+	sajax_request_type = "POST";
 	sajax_do_call(
 		"DraftHooks::AjaxSave",
 		[ dtoken, etoken, id, title, section, starttime, edittime, scrolltop, text, summary, minoredit ],
 		wgAjaxSaveDraft.processResult
 	);
+	sajax_request_type = old;
 
 	// Reallow request if it is not done in 2 seconds
 	wgAjaxSaveDraft.timeoutID = window.setTimeout( function() {
@@ -110,8 +113,7 @@ wgAjaxSaveDraft.processResult = function( request ) {
 	if( request.responseText > -1 ) {
 		wgAjaxSaveDraft.setControlsSaved();
 		document.editform.wpDraftID.value = request.responseText;
-	}
-	else {
+	} else {
 		wgAjaxSaveDraft.setControlsError();
 	}
 
