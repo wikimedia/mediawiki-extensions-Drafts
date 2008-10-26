@@ -23,6 +23,11 @@ $aliases['arz'] = array(
 	'Drafts' => array( 'مسودات' ),
 );
 
+/** Luxembourgish (Lëtzebuergesch) */
+$aliases['lb'] = array(
+	'Drafts' => array( 'Brouillonen' ),
+);
+
 /** Dutch (Nederlands) */
 $aliases['nl'] = array(
 	'Drafts' => array( 'Werkversies' ),

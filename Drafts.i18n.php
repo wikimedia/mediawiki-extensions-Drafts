@@ -31,6 +31,25 @@ Do you want to continue?',
 	'drafts-save-title' => 'Save as a draft [d]',
 );
 
+/** Message documentation (Message documentation)
+ * @author Darth Kule
+ */
+$messages['qqq'] = array(
+	'drafts' => 'Title of Special:Drafts',
+	'drafts-desc' => 'Short description of the Drafts extension, shown in [[Special:Version]]. Do not translate or change links.',
+	'drafts-view-article' => 'Name of column in Special:Drafts, when there are draft versions saved.
+
+{{Identical|Page}}',
+	'drafts-view-existing' => 'Shown at the top while editing a page with draft versions saved',
+	'drafts-view-saved' => 'Name of column in Special:Drafts, when there are draft versions saved',
+	'drafts-view-discard' => 'Name of button to delete draft version of a page',
+	'drafts-view-nonesaved' => 'Displayed in Special:Drafts when there are no draft versions saved',
+	'drafts-view-notice' => "Shown at the top while previewing a page with draft versions saved. ''$1'' is {{msg-mw|Drafts-view-notice-link}} message",
+	'drafts-view-notice-link' => "Used in {{msg-mw|Drafts-view-notice}}. ''$1'' is the number of draft versions saved for the page",
+	'drafts-save' => 'Tooltip of {{msg-mw|Drafts-save-save}} button',
+	'drafts-save-save' => 'Button shown near "Show changes" under editing form of a page',
+);
+
 /** Arabic (العربية)
  * @author Meno25
  */
@@ -77,6 +96,37 @@ $messages['arz'] = array(
 	'drafts-save-title' => 'حفظ كمسودة [d]',
 );
 
+/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+ * @author EugeneZelenko
+ */
+$messages['be-tarask'] = array(
+	'drafts' => 'Чарнавікі',
+	'drafts-view-article' => 'Старонка',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|чарнавік|чарнавікі|чарнавікоў}}',
+);
+
+/** French (Français)
+ * @author Grondin
+ */
+$messages['fr'] = array(
+	'drafts' => 'Brouillons',
+	'drafts-desc' => 'Ajoute la possibilité de sauvegarder les versions « [[Special:Drafts|brouillon]] » d’une page sur le serveur',
+	'drafts-view' => 'Voir le brouillon',
+	'drafts-view-article' => 'Page',
+	'drafts-view-existing' => 'Brouillons existants',
+	'drafts-view-saved' => 'Sauvegarder',
+	'drafts-view-discard' => 'Abandonner',
+	'drafts-view-nonesaved' => 'Vous n’avez pas de brouillon sauvegardé actuellement.',
+	'drafts-view-notice' => 'Vous avez $1 pour cette page.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|brouillon|brouillons}}',
+	'drafts-view-warn' => 'En navigant en dehors de cette page vous y perdrez toutes les modifications non sauvegardées.',
+	'drafts-save' => 'Sauvez ceci comme brouillon [d]',
+	'drafts-save-save' => 'Sauvegarder le brouillon',
+	'drafts-save-saved' => 'Sauvegardé',
+	'drafts-save-error' => 'Erreur de sauvegarde du brouillon',
+	'drafts-save-title' => 'Sauvegarder comme brouillon [d]',
+);
+
 /** Galician (Galego)
  * @author Toliño
  */
@@ -98,6 +148,26 @@ Quere continuar?',
 	'drafts-save-saved' => 'Gardado',
 	'drafts-save-error' => 'Produciuse un erro ao gardar o borrador',
 	'drafts-save-title' => 'Gardar como un borrador [d]',
+);
+
+/** Italian (Italiano)
+ * @author Darth Kule
+ */
+$messages['it'] = array(
+	'drafts' => 'Bozze',
+	'drafts-desc' => 'Aggiunge la possibilità di salvare versioni di [[Special:Drafts|bozza]] di una pagina sul server',
+	'drafts-view-article' => 'Pagina',
+	'drafts-view-existing' => 'Bozze esistenti',
+	'drafts-view-saved' => 'Salvata',
+	'drafts-view-discard' => 'Cancella',
+	'drafts-view-nonesaved' => 'Non hai alcuna bozza salvata al momento.',
+	'drafts-view-notice' => 'Hai $1 per questa pagina.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|bozza|bozze}}',
+	'drafts-save' => 'Salva come bozza [d]',
+	'drafts-save-save' => 'Salva bozza',
+	'drafts-save-saved' => 'Salvata',
+	'drafts-save-error' => 'Errore nel salvataggio della bozza',
+	'drafts-save-title' => 'Salva come bozza [d]',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -143,6 +213,64 @@ Wilt u doorgaan?',
 	'drafts-save-saved' => 'Opgeslagen',
 	'drafts-save-error' => 'Fout bij het opslaan van de werkversie',
 	'drafts-save-title' => 'Als werkversie opslaan',
+);
+
+/** Portuguese (Português)
+ * @author Malafaya
+ */
+$messages['pt'] = array(
+	'drafts' => 'Rascunhos',
+	'drafts-desc' => 'Adiciona a possibilidade de gravar versões [[Special:Drafts|rascunho]] de uma página no servidor',
+	'drafts-view' => 'Ver Rascunho',
+	'drafts-view-article' => 'Página',
+	'drafts-view-existing' => 'Rascunhos existentes',
+	'drafts-view-saved' => 'Gravado',
+	'drafts-view-discard' => 'Descartar',
+	'drafts-view-nonesaved' => 'Não tem neste momento quaisquer rascunhos gravados.',
+	'drafts-view-notice' => 'Você tem $1 para esta página.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|rascunho|rascunhos}}',
+	'drafts-view-warn' => 'Se navegar para fora desta página, perderá todas as alterações por gravar desta página.
+Pretende continuar?',
+	'drafts-save' => 'Gravar isto como rascunho [d]',
+	'drafts-save-save' => 'Gravar rascunho',
+	'drafts-save-saved' => 'Gravado',
+	'drafts-save-error' => 'Erro a gravar rascunho',
+	'drafts-save-title' => 'Gravar como rascunho [d]',
+);
+
+/** Slovak (Slovenčina)
+ * @author Helix84
+ */
+$messages['sk'] = array(
+	'drafts' => 'Návrhy',
+	'drafts-desc' => 'Pridáva možnosť uložiť na server verzie stránky ako [[Special:Drafts|návrhy]]',
+	'drafts-view' => 'ZobraziťNávrh',
+	'drafts-view-article' => 'Stránka',
+	'drafts-view-existing' => 'Existujúce návrhy',
+	'drafts-view-saved' => 'Uložené',
+	'drafts-view-discard' => 'Zmazať',
+	'drafts-view-nonesaved' => 'Momentálne nemáte uložené žiadne návrhy.',
+	'drafts-view-notice' => 'Máte $1 tejto stránky.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|návrh|návrhy|návrhov}}',
+	'drafts-view-warn' => 'Ak odídete z tejto stránky, stratíte všetky neuložené zmeny tejto stránky. Chcete pokračovať?',
+	'drafts-save' => 'Uložiť túto verziu ako návrh [d]',
+	'drafts-save-save' => 'Uložiť návrh',
+	'drafts-save-saved' => 'Uložené',
+	'drafts-save-error' => 'Chyba pri ukladaní návrhu',
+	'drafts-save-title' => 'Uložiť ako návrh [d]',
+);
+
+/** Swedish (Svenska)
+ * @author Najami
+ */
+$messages['sv'] = array(
+	'drafts' => 'Utkast',
+	'drafts-desc' => 'Möjliggör att kunna spara [[Special:Drafts|utkastsversioner]] av en sida på servern',
+	'drafts-view' => 'Visa utkast',
+	'drafts-view-article' => 'Sida',
+	'drafts-view-existing' => 'Existerande utkast',
+	'drafts-view-saved' => 'Sparad',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|utkast|utkast}}',
 );
 
 /** Telugu (తెలుగు)
