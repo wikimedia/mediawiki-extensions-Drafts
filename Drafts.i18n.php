@@ -22,7 +22,7 @@ $messages['en'] = array(
 	'drafts-view-nonesaved' => 'You do not have any drafts saved at this time.',
 	'drafts-view-notice' => 'You have $1 for this page.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|draft|drafts}}',
-	'drafts-view-warn' => 'By navigating away from this page you will loose all unsaved changes to this page.
+	'drafts-view-warn' => 'By navigating away from this page you will lose all unsaved changes to this page.
 Do you want to continue?',
 	'drafts-save' => 'Save this as a draft [d]',
 	'drafts-save-save' => 'Save draft',
