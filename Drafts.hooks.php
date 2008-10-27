@@ -159,7 +159,7 @@ class DraftHooks {
 					'id' => 'wpDraftSave',
 					'name' => 'wpDraftSave',
 					'tabindex' => 8,
-					'accesskey' => $egDraftsAutoSaveWait,
+					'accesskey' => $egDraftsAccessKey,
 					'value' => wfMsg( 'drafts-save-save' ),
 					'title' => wfMsg( 'drafts-save-title' )
 				)
