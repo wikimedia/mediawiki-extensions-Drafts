@@ -215,6 +215,28 @@ Wilt u doorgaan?',
 	'drafts-save-title' => 'Als werkversie opslaan',
 );
 
+/** Occitan (Occitan)
+ * @author Cedric31
+ */
+$messages['oc'] = array(
+	'drafts' => 'Borrolhons',
+	'drafts-desc' => 'Apond la possibilitat de salvar las versions « [[Special:Drafts|borrolhon]] » d’una pagina sul servidor',
+	'drafts-view' => 'Veire lo borrolhon',
+	'drafts-view-article' => 'Pagina',
+	'drafts-view-existing' => 'Borrolhons existents',
+	'drafts-view-saved' => 'Salvar',
+	'drafts-view-discard' => 'Abandonar',
+	'drafts-view-nonesaved' => 'Avètz pas de borrolhon salvat actualament.',
+	'drafts-view-notice' => 'Avètz $1 per aquesta pagina.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|borrolhon|borrolhons}}',
+	'drafts-view-warn' => "En navigant en defòra d'aquesta pagina i perdretz totes los cambiaments pas salvats.",
+	'drafts-save' => 'Salvatz aquò coma borrolhon [d]',
+	'drafts-save-save' => 'Salvar lo borrolhon',
+	'drafts-save-saved' => 'Salvat',
+	'drafts-save-error' => 'Error de salvament del borrolhon',
+	'drafts-save-title' => 'Salvar coma borrolhon [d]',
+);
+
 /** Portuguese (Português)
  * @author Malafaya
  */
