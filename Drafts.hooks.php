@@ -123,7 +123,7 @@ class DraftHooks {
 	 * Add draft saving controls
 	 */
 	public static function controls( &$editpage, &$buttons ) {
-		global $wgUser, $wgTitle, $wgRequest, $egDraftsAutoSaveWait;
+		global $wgUser, $wgTitle, $wgRequest, $egDraftsAutoSaveWait, $egDraftsAccessKey;
 	
 		// Check permissions
 		if ( $wgUser->isAllowed( 'edit' ) && $wgUser->isLoggedIn() ) {
@@ -144,7 +144,7 @@ class DraftHooks {
 						'id' => 'wpDraftSave',
 						'name' => 'wpDraftSave',
 						'tabindex' => 8,
-						'accesskey' => 'd',
+						'accesskey' => $egDraftsAccessKey,
 						'value' => wfMsg( 'drafts-save-save' ),
 						'title' => wfMsg( 'drafts-save-title' )
 					) + ( $wgRequest->getText( 'action' ) !== 'submit' ? array ( 'disabled' => 'disabled' ) : array() )
@@ -159,7 +159,7 @@ class DraftHooks {
 					'id' => 'wpDraftSave',
 					'name' => 'wpDraftSave',
 					'tabindex' => 8,
-					'accesskey' => 'd',
+					'accesskey' => $egDraftsAutoSaveWait,
 					'value' => wfMsg( 'drafts-save-save' ),
 					'title' => wfMsg( 'drafts-save-title' )
 				)
