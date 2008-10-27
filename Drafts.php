@@ -77,11 +77,9 @@ $wgHooks['LoadExtensionSchemaUpdates'][] = 'efCheckSchema';
 function efCheckSchema() {
 	// Get a connection
 	$db = wfGetDB( DB_MASTER );
-	// Get statements from file
-	$statement = file_get_contents( dirname( __FILE__  ) . '/Drafts.sql' );
 	// Create table if it doesn't exist
 	if ( !$db->tableExists( 'drafts' ) ) {
-		$db->query( $statement, __METHOD__);
+		$db->sourceFile( dirname( __FILE__  ) . '/Drafts.sql' );
 	}
 	// Continue
 	return true;
