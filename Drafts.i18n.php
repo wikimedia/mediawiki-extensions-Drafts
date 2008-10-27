@@ -24,11 +24,11 @@ $messages['en'] = array(
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|draft|drafts}}',
 	'drafts-view-warn' => 'By navigating away from this page you will lose all unsaved changes to this page.
 Do you want to continue?',
-	'drafts-save' => 'Save this as a draft [d]',
+	'drafts-save' => 'Save this as a draft',
 	'drafts-save-save' => 'Save draft',
 	'drafts-save-saved' => 'Saved',
 	'drafts-save-error' => 'Error saving draft',
-	'drafts-save-title' => 'Save as a draft [d]',
+	'drafts-save-title' => 'Save as a draft',
 );
 
 /** Message documentation (Message documentation)
@@ -66,11 +66,11 @@ $messages['ar'] = array(
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|مسودة|مسودة}}',
 	'drafts-view-warn' => 'بواسطة الإبحار عن هذه الصفحة ستفقد كل التغييرات غير المحفوظة لهذه الصفحة.
 هل تريد الاستمرار؟',
-	'drafts-save' => 'حفظ هذه كمسودة [d]',
+	'drafts-save' => 'حفظ هذه كمسودة',
 	'drafts-save-save' => 'حفظ المسودة',
 	'drafts-save-saved' => 'محفوظة',
 	'drafts-save-error' => 'خطأ أثناء حفظ المسودة',
-	'drafts-save-title' => 'حفظ كمسودة [d]',
+	'drafts-save-title' => 'حفظ كمسودة',
 );
 
 /** Egyptian Spoken Arabic (مصرى)
@@ -89,11 +89,11 @@ $messages['arz'] = array(
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|مسودة|مسودة}}',
 	'drafts-view-warn' => 'بواسطة الإبحار عن هذه الصفحة ستفقد كل التغييرات غير المحفوظة لهذه الصفحة.
 هل تريد الاستمرار؟',
-	'drafts-save' => 'حفظ هذه كمسودة [d]',
+	'drafts-save' => 'حفظ هذه كمسودة',
 	'drafts-save-save' => 'حفظ المسودة',
 	'drafts-save-saved' => 'محفوظة',
 	'drafts-save-error' => 'خطأ أثناء حفظ المسودة',
-	'drafts-save-title' => 'حفظ كمسودة [d]',
+	'drafts-save-title' => 'حفظ كمسودة',
 );
 
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
@@ -120,11 +120,11 @@ $messages['fr'] = array(
 	'drafts-view-notice' => 'Vous avez $1 pour cette page.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|brouillon|brouillons}}',
 	'drafts-view-warn' => 'En navigant en dehors de cette page vous y perdrez toutes les modifications non sauvegardées.',
-	'drafts-save' => 'Sauvez ceci comme brouillon [d]',
+	'drafts-save' => 'Sauvez ceci comme brouillon',
 	'drafts-save-save' => 'Sauvegarder le brouillon',
 	'drafts-save-saved' => 'Sauvegardé',
 	'drafts-save-error' => 'Erreur de sauvegarde du brouillon',
-	'drafts-save-title' => 'Sauvegarder comme brouillon [d]',
+	'drafts-save-title' => 'Sauvegarder comme brouillon',
 );
 
 /** Galician (Galego)
@@ -143,11 +143,11 @@ $messages['gl'] = array(
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|borrador|borradores}}',
 	'drafts-view-warn' => 'Se deixa esta páxina perderá todos os cambios que non foron gardados.
 Quere continuar?',
-	'drafts-save' => 'Gardar isto como un borrador [d]',
+	'drafts-save' => 'Gardar isto como un borrador',
 	'drafts-save-save' => 'Gardar o borrador',
 	'drafts-save-saved' => 'Gardado',
 	'drafts-save-error' => 'Produciuse un erro ao gardar o borrador',
-	'drafts-save-title' => 'Gardar como un borrador [d]',
+	'drafts-save-title' => 'Gardar como un borrador',
 );
 
 /** Italian (Italiano)
@@ -163,11 +163,11 @@ $messages['it'] = array(
 	'drafts-view-nonesaved' => 'Non hai alcuna bozza salvata al momento.',
 	'drafts-view-notice' => 'Hai $1 per questa pagina.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|bozza|bozze}}',
-	'drafts-save' => 'Salva come bozza [d]',
+	'drafts-save' => 'Salva come bozza',
 	'drafts-save-save' => 'Salva bozza',
 	'drafts-save-saved' => 'Salvata',
 	'drafts-save-error' => 'Errore nel salvataggio della bozza',
-	'drafts-save-title' => 'Salva come bozza [d]',
+	'drafts-save-title' => 'Salva come bozza',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -185,11 +185,11 @@ $messages['lb'] = array(
 	'drafts-view-notice' => 'Dir hutt $1 fir dës Säit.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|Brouillon|Brouillone}}',
 	'drafts-view-warn' => 'Wann Dir vun dëser Säit weidersurft da verléiert Dir all netgespäichert ännerungen vun dëser Säit.',
-	'drafts-save' => 'Dës als Brouillon späicheren [d]',
+	'drafts-save' => 'Dës als Brouillon späicheren',
 	'drafts-save-save' => 'Brouillon späicheren',
 	'drafts-save-saved' => 'Gespäichert',
 	'drafts-save-error' => 'Feller beim späicher vum Brouillon',
-	'drafts-save-title' => 'Als Brouillon späicheren [d]',
+	'drafts-save-title' => 'Als Brouillon späicheren',
 );
 
 /** Dutch (Nederlands)
@@ -230,11 +230,11 @@ $messages['oc'] = array(
 	'drafts-view-notice' => 'Avètz $1 per aquesta pagina.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|borrolhon|borrolhons}}',
 	'drafts-view-warn' => "En navigant en defòra d'aquesta pagina i perdretz totes los cambiaments pas salvats.",
-	'drafts-save' => 'Salvatz aquò coma borrolhon [d]',
+	'drafts-save' => 'Salvatz aquò coma borrolhon',
 	'drafts-save-save' => 'Salvar lo borrolhon',
 	'drafts-save-saved' => 'Salvat',
 	'drafts-save-error' => 'Error de salvament del borrolhon',
-	'drafts-save-title' => 'Salvar coma borrolhon [d]',
+	'drafts-save-title' => 'Salvar coma borrolhon',
 );
 
 /** Portuguese (Português)
@@ -253,11 +253,11 @@ $messages['pt'] = array(
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|rascunho|rascunhos}}',
 	'drafts-view-warn' => 'Se navegar para fora desta página, perderá todas as alterações por gravar desta página.
 Pretende continuar?',
-	'drafts-save' => 'Gravar isto como rascunho [d]',
+	'drafts-save' => 'Gravar isto como rascunho',
 	'drafts-save-save' => 'Gravar rascunho',
 	'drafts-save-saved' => 'Gravado',
 	'drafts-save-error' => 'Erro a gravar rascunho',
-	'drafts-save-title' => 'Gravar como rascunho [d]',
+	'drafts-save-title' => 'Gravar como rascunho',
 );
 
 /** Slovak (Slovenčina)
@@ -275,11 +275,11 @@ $messages['sk'] = array(
 	'drafts-view-notice' => 'Máte $1 tejto stránky.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|návrh|návrhy|návrhov}}',
 	'drafts-view-warn' => 'Ak odídete z tejto stránky, stratíte všetky neuložené zmeny tejto stránky. Chcete pokračovať?',
-	'drafts-save' => 'Uložiť túto verziu ako návrh [d]',
+	'drafts-save' => 'Uložiť túto verziu ako návrh',
 	'drafts-save-save' => 'Uložiť návrh',
 	'drafts-save-saved' => 'Uložené',
 	'drafts-save-error' => 'Chyba pri ukladaní návrhu',
-	'drafts-save-title' => 'Uložiť ako návrh [d]',
+	'drafts-save-title' => 'Uložiť ako návrh',
 );
 
 /** Swedish (Svenska)
