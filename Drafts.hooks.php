@@ -134,7 +134,7 @@ class DraftHooks {
 			$buttons['savedraft'] = Xml::openElement( 'script',
 				array(
 					'type' => 'text/javascript',
-					'lanuguage' => 'javascript'
+					'language' => 'javascript'
 				)
 			);
 			$ajaxButton = Xml::escapeJsString(
