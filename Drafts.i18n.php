@@ -105,6 +105,23 @@ $messages['be-tarask'] = array(
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|чарнавік|чарнавікі|чарнавікоў}}',
 );
 
+/** Bulgarian (Български)
+ * @author DCLXVI
+ */
+$messages['bg'] = array(
+	'drafts' => 'Чернови',
+	'drafts-desc' => 'Добавя възможност за съхраняване на [[Special:Drafts|чернови]] на страниците',
+	'drafts-view-article' => 'Страница',
+	'drafts-view-existing' => 'Налични чернови',
+	'drafts-view-nonesaved' => 'Все още нямате съхранени чернови.',
+	'drafts-view-notice' => 'Имате $1 за тази страница.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|чернова|чернови}}',
+	'drafts-save' => 'Съхраняване на съдържанието като чернова',
+	'drafts-save-save' => 'Съхраняване като чернова',
+	'drafts-save-error' => 'Възникна грешка при съхраняване на черновата',
+	'drafts-save-title' => 'Съхраняване като чернова',
+);
+
 /** French (Français)
  * @author Grondin
  */
@@ -258,6 +275,24 @@ Pretende continuar?',
 	'drafts-save-saved' => 'Gravado',
 	'drafts-save-error' => 'Erro a gravar rascunho',
 	'drafts-save-title' => 'Gravar como rascunho',
+);
+
+/** Russian (Русский)
+ * @author Ferrer
+ */
+$messages['ru'] = array(
+	'drafts' => 'Черновики',
+	'drafts-view' => 'ПросмотрЧерновика',
+	'drafts-view-article' => 'Страница',
+	'drafts-view-saved' => 'Сохранено',
+	'drafts-view-discard' => 'Отменено',
+	'drafts-view-notice' => 'Вы можете $1 для этой страницы',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|черновик|черновики}}',
+	'drafts-save' => 'Сохранить это как черновик',
+	'drafts-save-save' => 'Сохранить черновик',
+	'drafts-save-saved' => 'Сохранено',
+	'drafts-save-error' => 'Ошибка сохранения черновика',
+	'drafts-save-title' => 'Сохранить как черновик',
 );
 
 /** Slovak (Slovenčina)
