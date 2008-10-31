@@ -123,13 +123,15 @@ class DraftHooks {
 	 * Add draft saving controls
 	 */
 	public static function controls( &$editpage, &$buttons ) {
-		global $wgUser, $wgTitle, $wgRequest, $egDraftsAutoSaveWait, $egDraftsAccessKey;
-	
+		global $wgUser, $wgTitle, $wgRequest, $egDraftsAutoSaveWait;
+
 		// Check permissions
 		if ( $wgUser->isAllowed( 'edit' ) && $wgUser->isLoggedIn() ) {
 			// Internationalization
 			wfLoadExtensionMessages( 'Drafts' );
-	
+			$accessKey = Linker::accesskey( 'drafts-save' );
+			$titleAttrib = Linker::titleAttrib( 'drafts-save', 'withaccess' );
+
 			// Build XML
 			$buttons['savedraft'] = Xml::openElement( 'script',
 				array(
@@ -144,9 +146,9 @@ class DraftHooks {
 						'id' => 'wpDraftSave',
 						'name' => 'wpDraftSave',
 						'tabindex' => 8,
-						'accesskey' => $egDraftsAccessKey,
+						'accesskey' => $accessKey,
 						'value' => wfMsg( 'drafts-save-save' ),
-						'title' => wfMsg( 'drafts-save-title' )
+						'title' => $titleAttrib,
 					) + ( $wgRequest->getText( 'action' ) !== 'submit' ? array ( 'disabled' => 'disabled' ) : array() )
 				)
 			);
@@ -159,9 +161,9 @@ class DraftHooks {
 					'id' => 'wpDraftSave',
 					'name' => 'wpDraftSave',
 					'tabindex' => 8,
-					'accesskey' => $egDraftsAccessKey,
+					'accesskey' => $accessKey,
 					'value' => wfMsg( 'drafts-save-save' ),
-					'title' => wfMsg( 'drafts-save-title' )
+					'title' => $titleAttrib,
 				)
 			);
 			$buttons['savedraft'] .= Xml::closeElement( 'noscript' );

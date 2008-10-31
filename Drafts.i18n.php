@@ -28,7 +28,8 @@ Do you want to continue?',
 	'drafts-save-save' => 'Save draft',
 	'drafts-save-saved' => 'Saved',
 	'drafts-save-error' => 'Error saving draft',
-	'drafts-save-title' => 'Save as a draft',
+	'tooltip-drafts-save' => 'Save as a draft',
+	'accesskey-drafts-save' => 'd', # do not translate or duplicate this message to other languages
 );
 
 /** Message documentation (Message documentation)
@@ -70,7 +71,7 @@ $messages['ar'] = array(
 	'drafts-save-save' => 'حفظ المسودة',
 	'drafts-save-saved' => 'محفوظة',
 	'drafts-save-error' => 'خطأ أثناء حفظ المسودة',
-	'drafts-save-title' => 'حفظ كمسودة',
+	'tooltip-drafts-save' => 'حفظ كمسودة',
 );
 
 /** Egyptian Spoken Arabic (مصرى)
@@ -93,7 +94,7 @@ $messages['arz'] = array(
 	'drafts-save-save' => 'حفظ المسودة',
 	'drafts-save-saved' => 'محفوظة',
 	'drafts-save-error' => 'خطأ أثناء حفظ المسودة',
-	'drafts-save-title' => 'حفظ كمسودة',
+	'tooltip-drafts-save' => 'حفظ كمسودة',
 );
 
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
@@ -119,7 +120,7 @@ $messages['bg'] = array(
 	'drafts-save' => 'Съхраняване на съдържанието като чернова',
 	'drafts-save-save' => 'Съхраняване като чернова',
 	'drafts-save-error' => 'Възникна грешка при съхраняване на черновата',
-	'drafts-save-title' => 'Съхраняване като чернова',
+	'tooltip-drafts-save' => 'Съхраняване като чернова',
 );
 
 /** French (Français)
@@ -141,7 +142,7 @@ $messages['fr'] = array(
 	'drafts-save-save' => 'Sauvegarder le brouillon',
 	'drafts-save-saved' => 'Sauvegardé',
 	'drafts-save-error' => 'Erreur de sauvegarde du brouillon',
-	'drafts-save-title' => 'Sauvegarder comme brouillon',
+	'tooltip-drafts-save' => 'Sauvegarder comme brouillon',
 );
 
 /** Galician (Galego)
@@ -164,7 +165,7 @@ Quere continuar?',
 	'drafts-save-save' => 'Gardar o borrador',
 	'drafts-save-saved' => 'Gardado',
 	'drafts-save-error' => 'Produciuse un erro ao gardar o borrador',
-	'drafts-save-title' => 'Gardar como un borrador',
+	'tooltip-drafts-save' => 'Gardar como un borrador',
 );
 
 /** Italian (Italiano)
@@ -184,7 +185,7 @@ $messages['it'] = array(
 	'drafts-save-save' => 'Salva bozza',
 	'drafts-save-saved' => 'Salvata',
 	'drafts-save-error' => 'Errore nel salvataggio della bozza',
-	'drafts-save-title' => 'Salva come bozza',
+	'tooltip-drafts-save' => 'Salva come bozza',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -206,7 +207,7 @@ $messages['lb'] = array(
 	'drafts-save-save' => 'Brouillon späicheren',
 	'drafts-save-saved' => 'Gespäichert',
 	'drafts-save-error' => 'Feller beim späicher vum Brouillon',
-	'drafts-save-title' => 'Als Brouillon späicheren',
+	'tooltip-drafts-save' => 'Als Brouillon späicheren',
 );
 
 /** Dutch (Nederlands)
@@ -229,7 +230,7 @@ Wilt u doorgaan?',
 	'drafts-save-save' => 'Werkversie opslaan',
 	'drafts-save-saved' => 'Opgeslagen',
 	'drafts-save-error' => 'Fout bij het opslaan van de werkversie',
-	'drafts-save-title' => 'Als werkversie opslaan',
+	'tooltip-drafts-save' => 'Als werkversie opslaan',
 );
 
 /** Occitan (Occitan)
@@ -251,7 +252,7 @@ $messages['oc'] = array(
 	'drafts-save-save' => 'Salvar lo borrolhon',
 	'drafts-save-saved' => 'Salvat',
 	'drafts-save-error' => 'Error de salvament del borrolhon',
-	'drafts-save-title' => 'Salvar coma borrolhon',
+	'tooltip-drafts-save' => 'Salvar coma borrolhon',
 );
 
 /** Portuguese (Português)
@@ -274,7 +275,7 @@ Pretende continuar?',
 	'drafts-save-save' => 'Gravar rascunho',
 	'drafts-save-saved' => 'Gravado',
 	'drafts-save-error' => 'Erro a gravar rascunho',
-	'drafts-save-title' => 'Gravar como rascunho',
+	'tooltip-drafts-save' => 'Gravar como rascunho',
 );
 
 /** Russian (Русский)
@@ -292,7 +293,7 @@ $messages['ru'] = array(
 	'drafts-save-save' => 'Сохранить черновик',
 	'drafts-save-saved' => 'Сохранено',
 	'drafts-save-error' => 'Ошибка сохранения черновика',
-	'drafts-save-title' => 'Сохранить как черновик',
+	'tooltip-drafts-save' => 'Сохранить как черновик',
 );
 
 /** Slovak (Slovenčina)
@@ -314,7 +315,7 @@ $messages['sk'] = array(
 	'drafts-save-save' => 'Uložiť návrh',
 	'drafts-save-saved' => 'Uložené',
 	'drafts-save-error' => 'Chyba pri ukladaní návrhu',
-	'drafts-save-title' => 'Uložiť ako návrh',
+	'tooltip-drafts-save' => 'Uložiť ako návrh',
 );
 
 /** Swedish (Svenska)

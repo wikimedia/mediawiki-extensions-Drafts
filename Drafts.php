@@ -45,9 +45,6 @@ $egDraftsAutoSaveWait = 120;
 // Days to keep drafts around before automatic deletion
 $egDraftsLifeSpan = 30;
 
-// Access Key for the Save Draft button
-$egDraftsAccessKey = 'd';
-
 // Save and View components
 $wgAutoloadClasses['Draft'] = $dir . 'Drafts.classes.php';
 $wgAutoloadClasses['DraftHooks'] = $dir . 'Drafts.hooks.php';
