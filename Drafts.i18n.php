@@ -280,15 +280,18 @@ Pretende continuar?',
 
 /** Russian (Русский)
  * @author Ferrer
+ * @author Александр Сигачёв
  */
 $messages['ru'] = array(
 	'drafts' => 'Черновики',
 	'drafts-view' => 'ПросмотрЧерновика',
 	'drafts-view-article' => 'Страница',
+	'drafts-view-existing' => 'Действующие черновики',
 	'drafts-view-saved' => 'Сохранено',
 	'drafts-view-discard' => 'Отменено',
-	'drafts-view-notice' => 'Вы можете $1 для этой страницы',
-	'drafts-view-notice-link' => '$1 {{PLURAL:$1|черновик|черновики}}',
+	'drafts-view-nonesaved' => 'В настоящее время у вас нет сохранённых черновиков.',
+	'drafts-view-notice' => 'У вас $1 этой страницы.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|черновик|черновика|черновиков}}',
 	'drafts-save' => 'Сохранить это как черновик',
 	'drafts-save-save' => 'Сохранить черновик',
 	'drafts-save-saved' => 'Сохранено',
