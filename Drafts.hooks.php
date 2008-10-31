@@ -129,9 +129,7 @@ class DraftHooks {
 		if ( $wgUser->isAllowed( 'edit' ) && $wgUser->isLoggedIn() ) {
 			// Internationalization
 			wfLoadExtensionMessages( 'Drafts' );
-			$accessKey = Linker::accesskey( 'drafts-save' );
-			$titleAttrib = Linker::titleAttrib( 'drafts-save', 'withaccess' );
-
+	
 			// Build XML
 			$buttons['savedraft'] = Xml::openElement( 'script',
 				array(
@@ -139,32 +137,37 @@ class DraftHooks {
 					'language' => 'javascript'
 				)
 			);
+
+			$buttonAttribs = array(
+				'id' => 'wpDraftSave',
+				'name' => 'wpDraftSave',
+				'tabindex' => 8,
+				'value' => wfMsg( 'drafts-save-save' ),
+			);
+
+			$accesskey = $wgUser->getSkin()->accesskey( 'drafts-save' );
+			if ( $accesskey !== false ) {
+				$buttonAttribs['accesskey'] = $accesskey;
+			}
+			$tooltip = $wgUser->getSkin()->titleAttrib( 'drafts-save', 'withaccess' );
+			if ( $tooltip !== false ) {
+				$buttonAttribs['title'] = $tooltip;
+			}
+
 			$ajaxButton = Xml::escapeJsString(
 				Xml::element( 'input',
-					array(
-						'type' => 'button',
-						'id' => 'wpDraftSave',
-						'name' => 'wpDraftSave',
-						'tabindex' => 8,
-						'accesskey' => $accessKey,
-						'value' => wfMsg( 'drafts-save-save' ),
-						'title' => $titleAttrib,
-					) + ( $wgRequest->getText( 'action' ) !== 'submit' ? array ( 'disabled' => 'disabled' ) : array() )
+					array( 'type' => 'button' ) + $buttonAttribs
+					+ ( $wgRequest->getText( 'action' ) !== 'submit' ?
+						array ( 'disabled' => 'disabled' )
+						: array()
+					)
 				)
 			);
 			$buttons['savedraft'] .= "document.write( '{$ajaxButton}' );";
 			$buttons['savedraft'] .= Xml::closeElement( 'script' );
 			$buttons['savedraft'] .= Xml::openElement( 'noscript' );
 			$buttons['savedraft'] .= Xml::element( 'input',
-				array(
-					'type' => 'submit',
-					'id' => 'wpDraftSave',
-					'name' => 'wpDraftSave',
-					'tabindex' => 8,
-					'accesskey' => $accessKey,
-					'value' => wfMsg( 'drafts-save-save' ),
-					'title' => $titleAttrib,
-				)
+				array( 'type' => 'submit' ) + $buttonAttribs
 			);
 			$buttons['savedraft'] .= Xml::closeElement( 'noscript' );
 			$buttons['savedraft'] .= Xml::element( 'input',
