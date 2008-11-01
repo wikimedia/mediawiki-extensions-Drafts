@@ -168,12 +168,35 @@ Quere continuar?',
 	'tooltip-drafts-save' => 'Gardar como un borrador',
 );
 
+/** Hebrew (עברית)
+ * @author Rotemliss
+ * @author YaronSh
+ */
+$messages['he'] = array(
+	'drafts' => 'טיוטות',
+	'drafts-desc' => 'הוספת האפשרות לשמירת גרסאות [[Special:Drafts|טיוטה]] של הדף בשרת',
+	'drafts-view' => 'הצגת טיוטה',
+	'drafts-view-article' => 'דף',
+	'drafts-view-existing' => 'טיוטות קיימות',
+	'drafts-view-saved' => 'שמורה',
+	'drafts-view-discard' => 'מחיקה',
+	'drafts-view-nonesaved' => 'אין לכם טיוטות שמורות לעת עתה.',
+	'drafts-view-notice' => 'יש לכם $1 לדף זה.',
+	'drafts-view-notice-link' => '{{PLURAL:$1|טיוטה אחת|$1 טיוטות}}',
+	'drafts-view-warn' => 'אם תנווטו אל מחוץ לדף, תאבדו את כל השינויים שלא נשמרו לדף זה.
+האם ברצונכם להמשיך?',
+	'drafts-save' => 'שמירת דף זה כטיוטה',
+	'drafts-save-save' => 'שמירת טיוטה',
+	'drafts-save-saved' => 'נשמרה',
+);
+
 /** Italian (Italiano)
  * @author Darth Kule
  */
 $messages['it'] = array(
 	'drafts' => 'Bozze',
 	'drafts-desc' => 'Aggiunge la possibilità di salvare versioni di [[Special:Drafts|bozza]] di una pagina sul server',
+	'drafts-view' => 'VisualizzaBozza',
 	'drafts-view-article' => 'Pagina',
 	'drafts-view-existing' => 'Bozze esistenti',
 	'drafts-view-saved' => 'Salvata',
@@ -181,6 +204,7 @@ $messages['it'] = array(
 	'drafts-view-nonesaved' => 'Non hai alcuna bozza salvata al momento.',
 	'drafts-view-notice' => 'Hai $1 per questa pagina.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|bozza|bozze}}',
+	'drafts-view-warn' => 'Uscendo da questa pagina tutte le modifiche apportate non salvate saranno perse. Si desidera continuare?',
 	'drafts-save' => 'Salva come bozza',
 	'drafts-save-save' => 'Salva bozza',
 	'drafts-save-saved' => 'Salvata',
