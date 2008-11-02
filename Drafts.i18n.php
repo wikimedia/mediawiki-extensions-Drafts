@@ -188,6 +188,8 @@ $messages['he'] = array(
 	'drafts-save' => 'שמירת דף זה כטיוטה',
 	'drafts-save-save' => 'שמירת טיוטה',
 	'drafts-save-saved' => 'נשמרה',
+	'drafts-save-error' => 'שגיאה בשמירת הטיוטה',
+	'tooltip-drafts-save' => 'שמירה כטיוטה',
 );
 
 /** Italian (Italiano)

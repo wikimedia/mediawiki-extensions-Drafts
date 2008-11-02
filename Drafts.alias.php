@@ -23,6 +23,11 @@ $aliases['arz'] = array(
 	'Drafts' => array( 'مسودات' ),
 );
 
+/** Breton (Brezhoneg) */
+$aliases['br'] = array(
+	'Drafts' => array( 'Brouilhedoù' ),
+);
+
 /** Luxembourgish (Lëtzebuergesch) */
 $aliases['lb'] = array(
 	'Drafts' => array( 'Brouillonen' ),
