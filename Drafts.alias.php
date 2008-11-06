@@ -28,6 +28,11 @@ $aliases['br'] = array(
 	'Drafts' => array( 'Brouilhedoù' ),
 );
 
+/** Bosnian (Bosanski) */
+$aliases['bs'] = array(
+	'Drafts' => array( 'Skiciranje' ),
+);
+
 /** Luxembourgish (Lëtzebuergesch) */
 $aliases['lb'] = array(
 	'Drafts' => array( 'Brouillonen' ),
