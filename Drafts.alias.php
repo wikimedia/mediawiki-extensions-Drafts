@@ -33,6 +33,16 @@ $aliases['bs'] = array(
 	'Drafts' => array( 'Skiciranje' ),
 );
 
+/** French (Français) */
+$aliases['fr'] = array(
+	'Drafts' => array( 'Brouillons' ),
+);
+
+/** Galician (Galego) */
+$aliases['gl'] = array(
+	'Drafts' => array( 'Bosquexo' ),
+);
+
 /** Luxembourgish (Lëtzebuergesch) */
 $aliases['lb'] = array(
 	'Drafts' => array( 'Brouillonen' ),
@@ -41,5 +51,15 @@ $aliases['lb'] = array(
 /** Dutch (Nederlands) */
 $aliases['nl'] = array(
 	'Drafts' => array( 'Werkversies' ),
+);
+
+/** Portuguese (Português) */
+$aliases['pt'] = array(
+	'Drafts' => array( 'Rascunhos' ),
+);
+
+/** Brazilian Portuguese (Português do Brasil) */
+$aliases['pt-br'] = array(
+	'Drafts' => array( 'Rascunhos' ),
 );
 
