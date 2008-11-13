@@ -43,6 +43,11 @@ $aliases['gl'] = array(
 	'Drafts' => array( 'Bosquexo' ),
 );
 
+/** Hungarian (Magyar) */
+$aliases['hu'] = array(
+	'Drafts' => array( 'Vázlatok' ),
+);
+
 /** Luxembourgish (Lëtzebuergesch) */
 $aliases['lb'] = array(
 	'Drafts' => array( 'Brouillonen' ),
