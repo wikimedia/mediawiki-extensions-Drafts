@@ -123,6 +123,13 @@ $messages['bg'] = array(
 	'tooltip-drafts-save' => 'Съхраняване като чернова',
 );
 
+/** Bosnian (Bosanski)
+ * @author CERminator
+ */
+$messages['bs'] = array(
+	'drafts-view-article' => 'Stranica',
+);
+
 /** French (Français)
  * @author Grondin
  */
