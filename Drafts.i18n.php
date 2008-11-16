@@ -130,6 +130,39 @@ $messages['bs'] = array(
 	'drafts-view-article' => 'Stranica',
 );
 
+/** German (Deutsch)
+ * @author Pill
+ */
+$messages['de'] = array(
+	'drafts' => 'Entwürfe',
+	'drafts-desc' => 'Ermöglicht, [[Special:Drafts|Entwurfsversionen]] einer Seite auf dem Server zu speichern',
+	'drafts-view-article' => 'Seite',
+	'drafts-view-existing' => 'Bestehende Entwürfe',
+	'drafts-view-saved' => 'Gespeichert',
+	'drafts-view-discard' => 'Verwerfen',
+	'drafts-view-nonesaved' => 'Du hast bisher noch keine Entwürfe gespeichert.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|Entwurf|Entwürfe}}',
+	'drafts-view-warn' => 'Wenn du diese Seite verlässt, gehen alle nichtgespeicherten Änderungen verloren.
+Möchtest du dennoch fortfahren?',
+	'drafts-save' => 'Diese Version als Entwurf speichern',
+	'drafts-save-save' => 'Entwurf speichern',
+	'drafts-save-saved' => 'Gespeichert',
+	'drafts-save-error' => 'Fehler beim Speichern des Entwurfs',
+	'tooltip-drafts-save' => 'Als Entwurf speichern',
+);
+
+/** Esperanto (Esperanto)
+ * @author Yekrats
+ */
+$messages['eo'] = array(
+	'drafts' => 'Malnetoj',
+	'drafts-view' => 'VidiMalneton',
+	'drafts-view-article' => 'Paĝo',
+	'drafts-view-saved' => 'Konservita',
+	'drafts-save-save' => 'Konservi malneton',
+	'drafts-save-saved' => 'Konservita',
+);
+
 /** French (Français)
  * @author Grondin
  */
