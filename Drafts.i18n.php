@@ -127,7 +127,19 @@ $messages['bg'] = array(
  * @author CERminator
  */
 $messages['bs'] = array(
+	'drafts' => 'Skice',
+	'drafts-view' => 'Pogledaj skicu',
 	'drafts-view-article' => 'Stranica',
+	'drafts-view-existing' => 'Postojeće skice',
+	'drafts-view-saved' => 'Spremljeno',
+	'drafts-view-discard' => 'Odustani',
+	'drafts-view-notice' => 'Imate $1 za ovu stranicu.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|skicu|skice|skica}}',
+	'drafts-save' => 'Spremi ovo kao skicu',
+	'drafts-save-save' => 'Sačuvaj skicu',
+	'drafts-save-saved' => 'Spremljeno',
+	'drafts-save-error' => 'Greška pri spremanju skice',
+	'tooltip-drafts-save' => 'Spremi kao skicu',
 );
 
 /** German (Deutsch)
@@ -158,9 +170,14 @@ $messages['eo'] = array(
 	'drafts' => 'Malnetoj',
 	'drafts-view' => 'VidiMalneton',
 	'drafts-view-article' => 'Paĝo',
+	'drafts-view-existing' => 'Ekzistante malnetojn',
 	'drafts-view-saved' => 'Konservita',
+	'drafts-view-notice' => 'Vi havas $1n por ĉi tiun paĝon.',
+	'drafts-save' => 'Konservi ĉi tiun kiel malneton',
 	'drafts-save-save' => 'Konservi malneton',
 	'drafts-save-saved' => 'Konservita',
+	'drafts-save-error' => 'Eraro konservante malneton',
+	'tooltip-drafts-save' => 'Konservi kiel malneton',
 );
 
 /** French (Français)
