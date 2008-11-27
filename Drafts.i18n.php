@@ -293,6 +293,13 @@ $messages['lb'] = array(
 	'tooltip-drafts-save' => 'Als Brouillon späicheren',
 );
 
+/** Limburgish (Limburgs)
+ * @author Remember the dot
+ */
+$messages['li'] = array(
+	'drafts-view-article' => 'Pazjena',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
