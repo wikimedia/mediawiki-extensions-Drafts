@@ -53,6 +53,11 @@ $aliases['lb'] = array(
 	'Drafts' => array( 'Brouillonen' ),
 );
 
+/** Nedersaksisch (Nedersaksisch) */
+$aliases['nds-nl'] = array(
+	'Drafts' => array( 'Warkversies' ),
+);
+
 /** Dutch (Nederlands) */
 $aliases['nl'] = array(
 	'Drafts' => array( 'Werkversies' ),
