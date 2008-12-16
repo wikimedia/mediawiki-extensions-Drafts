@@ -163,6 +163,29 @@ Möchtest du dennoch fortfahren?',
 	'tooltip-drafts-save' => 'Als Entwurf speichern',
 );
 
+/** Lower Sorbian (Dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'drafts' => 'Nacerjenja',
+	'drafts-desc' => 'Zmóžna składowanje [[Special:Drafts|nacerjeńskich wersijow]] boka na serwerje',
+	'drafts-view' => 'Nacerjenje se woglědaś',
+	'drafts-view-article' => 'Bok',
+	'drafts-view-existing' => 'Eksistujuce nacerjenja',
+	'drafts-view-saved' => 'Skłaźony',
+	'drafts-view-discard' => 'Zachyśiś',
+	'drafts-view-nonesaved' => 'Dotychměst njejsy składł nacerjenja.',
+	'drafts-view-notice' => 'Maš $1 za toś ten bok.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|nacerjenje|nacerjeni|nacerjenja|nacerjenjow}}',
+	'drafts-view-warn' => 'Gaž spušćaš toś ten bok, zgubijoš wše njeskłaźone změny na toś tom boku.
+Coš weto pókšacowaś?',
+	'drafts-save' => 'To ako nacerjenje składowaś',
+	'drafts-save-save' => 'Nacerjenje składowaś',
+	'drafts-save-saved' => 'Skłaźony',
+	'drafts-save-error' => 'Zmólka pśi składowanju nacerjenja',
+	'tooltip-drafts-save' => 'Ako nacerjenje składowaś',
+);
+
 /** Esperanto (Esperanto)
  * @author Yekrats
  */
