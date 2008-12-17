@@ -272,6 +272,28 @@ $messages['he'] = array(
 	'tooltip-drafts-save' => 'שמירה כטיוטה',
 );
 
+/** Upper Sorbian (Hornjoserbsce)
+ * @author Michawiki
+ */
+$messages['hsb'] = array(
+	'drafts' => 'Naćiski',
+	'drafts-desc' => 'Zmóžnja składowanje [[Special:Drafts|naćiskich wersijow]] strony na serwerje',
+	'drafts-view' => 'ViewDraft',
+	'drafts-view-article' => 'Strona',
+	'drafts-view-existing' => 'Eksistowace naćiski',
+	'drafts-view-saved' => 'Składowany',
+	'drafts-view-discard' => 'Zaćisnyć',
+	'drafts-view-nonesaved' => 'Njejsy dotal žane naćiski składował.',
+	'drafts-view-notice' => 'Maš $1 za tutu stronu.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|naćisk|naćiskaj|naćiski|naćiskow}}',
+	'drafts-view-warn' => 'Hdyž stronu wopušćiš, zhubiš wšě njeskładowane změny tuteje strony. Chceš najebać toho pokročować?',
+	'drafts-save' => 'To jako naćisk składować',
+	'drafts-save-save' => 'Naćisk składować',
+	'drafts-save-saved' => 'Składowany',
+	'drafts-save-error' => 'Zmylk při składowanju naćiska',
+	'tooltip-drafts-save' => 'Jako naćisk składować',
+);
+
 /** Italian (Italiano)
  * @author Darth Kule
  */
