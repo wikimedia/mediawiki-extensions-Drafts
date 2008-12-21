@@ -48,6 +48,11 @@ $aliases['hu'] = array(
 	'Drafts' => array( 'Vázlatok' ),
 );
 
+/** Khmer (ភាសាខ្មែរ) */
+$aliases['km'] = array(
+	'Drafts' => array( 'ពង្រាង' ),
+);
+
 /** Luxembourgish (Lëtzebuergesch) */
 $aliases['lb'] = array(
 	'Drafts' => array( 'Brouillonen' ),

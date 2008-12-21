@@ -143,16 +143,19 @@ $messages['bs'] = array(
 );
 
 /** German (Deutsch)
+ * @author ChrisiPK
  * @author Pill
  */
 $messages['de'] = array(
 	'drafts' => 'Entwürfe',
 	'drafts-desc' => 'Ermöglicht, [[Special:Drafts|Entwurfsversionen]] einer Seite auf dem Server zu speichern',
+	'drafts-view' => 'Entwurf anzeigen',
 	'drafts-view-article' => 'Seite',
 	'drafts-view-existing' => 'Bestehende Entwürfe',
 	'drafts-view-saved' => 'Gespeichert',
 	'drafts-view-discard' => 'Verwerfen',
 	'drafts-view-nonesaved' => 'Du hast bisher noch keine Entwürfe gespeichert.',
+	'drafts-view-notice' => 'Du hast $1 für diese Seite.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|Entwurf|Entwürfe}}',
 	'drafts-view-warn' => 'Wenn du diese Seite verlässt, gehen alle nichtgespeicherten Änderungen verloren.
 Möchtest du dennoch fortfahren?',
@@ -163,6 +166,13 @@ Möchtest du dennoch fortfahren?',
 	'tooltip-drafts-save' => 'Als Entwurf speichern',
 );
 
+/** German (formal address) (Deutsch (Sie-Form))
+ * @author ChrisiPK
+ */
+$messages['de-formal'] = array(
+	'drafts-view-notice' => 'Sie haben $1 für diese Seite.',
+);
+
 /** Lower Sorbian (Dolnoserbski)
  * @author Michawiki
  */
@@ -171,7 +181,7 @@ $messages['dsb'] = array(
 	'drafts-desc' => 'Zmóžna składowanje [[Special:Drafts|nacerjeńskich wersijow]] boka na serwerje',
 	'drafts-view' => 'Nacerjenje se woglědaś',
 	'drafts-view-article' => 'Bok',
-	'drafts-view-existing' => 'Eksistujuce nacerjenja',
+	'drafts-view-existing' => 'Eksistěrujuce nacerjenja',
 	'drafts-view-saved' => 'Skłaźony',
 	'drafts-view-discard' => 'Zachyśiś',
 	'drafts-view-nonesaved' => 'Dotychměst njejsy składł nacerjenja.',
