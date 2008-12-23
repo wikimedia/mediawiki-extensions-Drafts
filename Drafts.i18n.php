@@ -326,6 +326,13 @@ $messages['it'] = array(
 	'tooltip-drafts-save' => 'Salva come bozza',
 );
 
+/** Ripoarisch (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'drafts-desc' => 'Deit de Müjjeleschkeit dobei, en [[Special:Drafts|Entworf]] fun en Sigg om Server affzelääje.',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
