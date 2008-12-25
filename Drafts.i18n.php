@@ -385,6 +385,29 @@ Wilt u doorgaan?',
 	'tooltip-drafts-save' => 'Als werkversie opslaan',
 );
 
+/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+ * @author Harald Khan
+ */
+$messages['nn'] = array(
+	'drafts' => 'Utkast',
+	'drafts-desc' => 'Gjer det mogleg å lagra [[Special:Drafts|utkastsversjonar]] av ei sida på tenaren',
+	'drafts-view' => 'Syna utkast',
+	'drafts-view-article' => 'Sida',
+	'drafts-view-existing' => 'Eksisterande utkast',
+	'drafts-view-saved' => 'Lagra',
+	'drafts-view-discard' => 'Vrak',
+	'drafts-view-nonesaved' => 'Du har ingen lagra  utkast på noverande tidspunkt.',
+	'drafts-view-notice' => 'Du har $1 for denne sida.',
+	'drafts-view-notice-link' => '{{PLURAL:$1|eitt utkast|$1 utkast}}',
+	'drafts-view-warn' => 'Ved å navigera vekk frå denne sida vil du missa alle endringar på sida som ikkje er lagra.
+Vil du halda fram?',
+	'drafts-save' => 'Lagra dette som eit utkast',
+	'drafts-save-save' => 'Lagra utkast',
+	'drafts-save-saved' => 'Lagra',
+	'drafts-save-error' => 'Det oppstod ein feil under lagring av utkast',
+	'tooltip-drafts-save' => 'Lagra som utkast',
+);
+
 /** Occitan (Occitan)
  * @author Cedric31
  */
