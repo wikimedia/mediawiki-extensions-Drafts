@@ -142,6 +142,28 @@ $messages['bs'] = array(
 	'tooltip-drafts-save' => 'Spremi kao skicu',
 );
 
+/** Czech (Česky)
+ * @author Matěj Grabovský
+ */
+$messages['cs'] = array(
+	'drafts' => 'Návrhy',
+	'drafts-desc' => 'Přidává možnost uložit na server verzi stránky jako [[Special:Drafts|návrh]]',
+	'drafts-view' => 'Zobrazit návrh',
+	'drafts-view-article' => 'Stránka',
+	'drafts-view-existing' => 'Existující návrhy',
+	'drafts-view-saved' => 'Uložené',
+	'drafts-view-discard' => 'Smazat',
+	'drafts-view-nonesaved' => 'Momentálně nemáte uloženy žádné návrhy.',
+	'drafts-view-notice' => 'Máte $1 této stránky',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|návrh|návrhy|návrhů}}',
+	'drafts-view-warn' => 'Pokud odejdete z této stránky, ztratíte všechny neuložené změny této stránky. Chcete pokračovat?',
+	'drafts-save' => 'Uložit tuto verzi jako návrh',
+	'drafts-save-save' => 'Uložit návrh',
+	'drafts-save-saved' => 'Uložené',
+	'drafts-save-error' => 'Chyba při ukládání návrhu',
+	'tooltip-drafts-save' => 'Uložit jako návrh',
+);
+
 /** German (Deutsch)
  * @author ChrisiPK
  * @author Pill
@@ -213,6 +235,31 @@ $messages['eo'] = array(
 	'drafts-save-saved' => 'Konservita',
 	'drafts-save-error' => 'Eraro konservante malneton',
 	'tooltip-drafts-save' => 'Konservi kiel malneton',
+);
+
+/** Finnish (Suomi)
+ * @author Crt
+ * @author Nike
+ * @author Vililikku
+ */
+$messages['fi'] = array(
+	'drafts' => 'Luonnokset',
+	'drafts-desc' => 'Lisää mahdollisuuden tallentaa [[Special:Drafts|luonnosversioita]] sivusta palvelimelle.',
+	'drafts-view' => 'Katso luonnosta',
+	'drafts-view-article' => 'Sivu',
+	'drafts-view-existing' => 'Olemassa olevat luonnokset',
+	'drafts-view-saved' => 'Tallennettu',
+	'drafts-view-discard' => 'Hylkää',
+	'drafts-view-nonesaved' => 'Sinulla ei ole yhtään tallennettua luonnosta tällä hetkellä.',
+	'drafts-view-notice' => 'Sinulla on $1 tälle sivulle.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|luonnos|luonnosta}}',
+	'drafts-view-warn' => 'Jos siirryt pois tältä sivulta, kadotat kaikki tallentamattomat muutokset.
+Haluatko jatkaa?',
+	'drafts-save' => 'Tallenna nykyinen teksti luonnoksena',
+	'drafts-save-save' => 'Tallenna luonnos',
+	'drafts-save-saved' => 'Tallennettu',
+	'drafts-save-error' => 'Luonnoksen tallentaminen epäonnistui',
+	'tooltip-drafts-save' => 'Tallenna luonnoksena',
 );
 
 /** French (Français)
@@ -332,7 +379,23 @@ $messages['it'] = array(
  * @author Purodha
  */
 $messages['ksh'] = array(
+	'drafts' => 'Äntwörf',
 	'drafts-desc' => 'Deit de Müjjeleschkeit dobei, en [[Special:Drafts|Entworf]] fun en Sigg om Server affzelääje.',
+	'drafts-view' => 'Äntworf zeije',
+	'drafts-view-article' => 'Sigg',
+	'drafts-view-existing' => 'Jespeicherte Äntwörf',
+	'drafts-view-saved' => 'Jespeichert',
+	'drafts-view-discard' => 'Schmiiß fott!',
+	'drafts-view-nonesaved' => 'Do häß jrad kein Äntwörf jespeichert.',
+	'drafts-view-notice' => 'Do häß $1 för heh di Sigg.',
+	'drafts-view-notice-link' => '{{PLURAL:$1|eine Entworf|$1 Äntwörf|keine Entworf}}',
+	'drafts-view-warn' => 'Wann De heh vun dä Sigg fott jeihß, dann sen all Ding Ennjabe fott, di De noch nit avjespeicht häß.
+Wellß De wigger maaache?',
+	'drafts-save' => 'Wat mer heh süht als_ennen Entworf avspeichere',
+	'drafts-save-save' => 'Entworf avspeichere',
+	'drafts-save-saved' => 'Avjespeichert',
+	'drafts-save-error' => 'Bemm Entworf Speichere es jet donevve jejange, dat hät nit jeflupp.',
+	'tooltip-drafts-save' => 'Als ene Entworf avspeichere',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
