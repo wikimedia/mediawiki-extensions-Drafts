@@ -197,6 +197,7 @@ Coš weto pókšacowaś?',
 );
 
 /** Esperanto (Esperanto)
+ * @author Melancholie
  * @author Yekrats
  */
 $messages['eo'] = array(
@@ -205,6 +206,7 @@ $messages['eo'] = array(
 	'drafts-view-article' => 'Paĝo',
 	'drafts-view-existing' => 'Ekzistante malnetojn',
 	'drafts-view-saved' => 'Konservita',
+	'drafts-view-discard' => 'Forĵeti',
 	'drafts-view-notice' => 'Vi havas $1n por ĉi tiun paĝon.',
 	'drafts-save' => 'Konservi ĉi tiun kiel malneton',
 	'drafts-save-save' => 'Konservi malneton',
@@ -514,5 +516,21 @@ $messages['sv'] = array(
  */
 $messages['te'] = array(
 	'drafts-view-article' => 'పేజీ',
+);
+
+/** Traditional Chinese (‪中文(繁體)‬)
+ * @author Wrightbus
+ */
+$messages['zh-hant'] = array(
+	'drafts' => '草稿',
+	'drafts-view-article' => '頁面',
+	'drafts-view-existing' => '現有草稿',
+	'drafts-view-saved' => '已儲存',
+	'drafts-view-discard' => '捨棄',
+	'drafts-save' => '把此頁面以草稿影式儲存',
+	'drafts-save-save' => '儲存草稿',
+	'drafts-save-saved' => '已儲存',
+	'drafts-save-error' => '儲存草稿時發生錯誤',
+	'tooltip-drafts-save' => '以草稿影式儲存',
 );
 
