@@ -237,6 +237,13 @@ $messages['eo'] = array(
 	'tooltip-drafts-save' => 'Konservi kiel malneton',
 );
 
+/** Spanish (Español)
+ * @author Imre
+ */
+$messages['es'] = array(
+	'drafts-view-article' => 'Página',
+);
+
 /** Finnish (Suomi)
  * @author Crt
  * @author Nike
@@ -373,6 +380,13 @@ $messages['it'] = array(
 	'drafts-save-saved' => 'Salvata',
 	'drafts-save-error' => 'Errore nel salvataggio della bozza',
 	'tooltip-drafts-save' => 'Salva come bozza',
+);
+
+/** Japanese (日本語)
+ * @author Hosiryuhosi
+ */
+$messages['ja'] = array(
+	'drafts-view-article' => 'ページ',
 );
 
 /** Ripoarisch (Ripoarisch)
@@ -518,6 +532,13 @@ Pretende continuar?',
 	'tooltip-drafts-save' => 'Gravar como rascunho',
 );
 
+/** Romanian (Română)
+ * @author KlaudiuMihaila
+ */
+$messages['ro'] = array(
+	'drafts-view-article' => 'Pagină',
+);
+
 /** Russian (Русский)
  * @author Ferrer
  * @author Александр Сигачёв
@@ -579,6 +600,29 @@ $messages['sv'] = array(
  */
 $messages['te'] = array(
 	'drafts-view-article' => 'పేజీ',
+);
+
+/** Tagalog (Tagalog)
+ * @author AnakngAraw
+ */
+$messages['tl'] = array(
+	'drafts' => 'Mga balangkas',
+	'drafts-desc' => 'Nagdaragdag ng kakayahang makapagsagip ng mga bersyon [[Special:Drafts|ng balangkas]] ng isang pahina sa loob ng serbidor',
+	'drafts-view' => 'TingnanBalangkas',
+	'drafts-view-article' => 'Pahina',
+	'drafts-view-existing' => 'Umiiral na mga balangkas',
+	'drafts-view-saved' => 'Nasagip na',
+	'drafts-view-discard' => 'Itapon (ibasura)',
+	'drafts-view-nonesaved' => 'Wala kang nakasagip na kahit na anong mga balangkas sa ngayon.',
+	'drafts-view-notice' => 'Mayroon kang $1 para sa pahinang ito.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|balangkas|mga balangkas}}',
+	'drafts-view-warn' => 'Sa pamamagitan ng paglalayag papalayo mula sa pahinang ito, mawawala ang lahat ng hindi nakasagip na mga pagbabago mo para sa pahinang ito.
+Nais mo bang magpatuloy?',
+	'drafts-save' => 'Sagipin ito bilang isang balangkas',
+	'drafts-save-save' => 'Sagipin ang balangkas',
+	'drafts-save-saved' => 'Nasagip na',
+	'drafts-save-error' => 'May kamalian sa pagsasagip ng balangkas',
+	'tooltip-drafts-save' => 'Sinagip bilang isang balangkas',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
