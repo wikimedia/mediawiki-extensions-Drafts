@@ -224,6 +224,7 @@ Coš weto pókšacowaś?',
  */
 $messages['eo'] = array(
 	'drafts' => 'Malnetoj',
+	'drafts-desc' => 'Permesas la kapablon konservi [[Special:Drafts|malnetajn]] versiojn de paĝo de la servilo',
 	'drafts-view' => 'VidiMalneton',
 	'drafts-view-article' => 'Paĝo',
 	'drafts-view-existing' => 'Ekzistante malnetojn',
@@ -232,6 +233,8 @@ $messages['eo'] = array(
 	'drafts-view-nonesaved' => 'Vi ne havas iujn malnetojn konservitajn ĉi-momente.',
 	'drafts-view-notice' => 'Vi havas $1n por ĉi tiun paĝon.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|malneto|malnetoj}}',
+	'drafts-view-warn' => 'Se vi navigus for de ĉi tiu paĝo, vi perdus ĉiun nekonservitajn ŝanĝojn al ĉi tiu paĝo.
+Ĉu vi volas fari tiel?',
 	'drafts-save' => 'Konservi ĉi tiun kiel malneton',
 	'drafts-save-save' => 'Konservi malneton',
 	'drafts-save-saved' => 'Konservita',
@@ -391,6 +394,27 @@ $messages['ja'] = array(
 	'drafts-view-article' => 'ページ',
 );
 
+/** Khmer (ភាសាខ្មែរ)
+ * @author Thearith
+ */
+$messages['km'] = array(
+	'drafts' => 'ពង្រាង',
+	'drafts-desc' => 'បន្ថែម​លទ្ធភាព ដើម្បី​រក្សាទុក​កំណែ [[Special:ពង្រាង|ពង្រាង]] នៃ​ទំព័រ​មួយ​លើ​ម៉ាស៊ីនបម្រើ',
+	'drafts-view' => 'មើល​ពង្រាង',
+	'drafts-view-article' => 'ទំព័រ',
+	'drafts-view-existing' => 'ពង្រាង​ដែល​មាន​ស្រេច',
+	'drafts-view-saved' => 'បាន​រក្សាទុក',
+	'drafts-view-discard' => 'បោះចោល',
+	'drafts-view-nonesaved' => 'អ្នក​មិន​មាន​ពង្រាង​ណាមួយ​ត្រូវ​បាន​រក្សាទុក​នាពេលនេះ​ទេ​។',
+	'drafts-view-notice' => 'អ្នក​មាន $1 សម្រាប់​ទំព័រ​នេះ​។',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|ពង្រាង|ពង្រាង}}',
+	'drafts-save' => 'រក្សាទុក​ជា​ពង្រាង',
+	'drafts-save-save' => 'រក្សាទុក​ពង្រាង',
+	'drafts-save-saved' => 'បាន​រក្សាទុក',
+	'drafts-save-error' => 'កំហុស​រក្សាទុក​ពង្រាង',
+	'tooltip-drafts-save' => 'រក្សាទុក​ជា​ពង្រាង',
+);
+
 /** Ripoarisch (Ripoarisch)
  * @author Purodha
  */
@@ -509,6 +533,30 @@ $messages['oc'] = array(
 	'drafts-save-saved' => 'Salvat',
 	'drafts-save-error' => 'Error de salvament del borrolhon',
 	'tooltip-drafts-save' => 'Salvar coma borrolhon',
+);
+
+/** Polish (Polski)
+ * @author Derbeth
+ * @author Leinad
+ */
+$messages['pl'] = array(
+	'drafts' => 'Szkice',
+	'drafts-desc' => 'Dodaje możliwość zapisywania [[Special:Drafts|szkicu]] strony na serwerze',
+	'drafts-view' => 'Zobacz szkic',
+	'drafts-view-article' => 'Strona',
+	'drafts-view-existing' => 'Istniejące szkice',
+	'drafts-view-saved' => 'Zapisane',
+	'drafts-view-discard' => 'Usuń',
+	'drafts-view-nonesaved' => 'W tej chwili nie masz zapisanych żadnych projektów.',
+	'drafts-view-notice' => 'Posiadasz $1 dla tej strony.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|szkic|szkice|szkiców}}',
+	'drafts-view-warn' => 'Opuszczenie tej strony spowoduje utratę wszystkich niezapisanych zmian na tej stronie. 
+Czy chcesz kontynuować?',
+	'drafts-save' => 'Zapisz to jako szkic',
+	'drafts-save-save' => 'Zapisz szkic',
+	'drafts-save-saved' => 'Zapisany',
+	'drafts-save-error' => 'Błąd zapisywania szkicu',
+	'tooltip-drafts-save' => 'Zapisz jako szkic',
 );
 
 /** Portuguese (Português)
