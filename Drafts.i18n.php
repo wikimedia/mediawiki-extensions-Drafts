@@ -675,7 +675,24 @@ Nais mo bang magpatuloy?',
 	'tooltip-drafts-save' => 'Sinagip bilang isang balangkas',
 );
 
+/** Simplified Chinese (‪中文(简体)‬)
+ * @author Gzdavidwong
+ */
+$messages['zh-hans'] = array(
+	'drafts' => '草稿',
+	'drafts-view-article' => '页面',
+	'drafts-view-existing' => '现有草稿',
+	'drafts-view-saved' => '已保存',
+	'drafts-view-discard' => '舍弃',
+	'drafts-save' => '把此页面以草稿形式保存',
+	'drafts-save-save' => '保存草稿',
+	'drafts-save-saved' => '已保存',
+	'drafts-save-error' => '保存草稿时发生错误',
+	'tooltip-drafts-save' => '以草稿形式保存',
+);
+
 /** Traditional Chinese (‪中文(繁體)‬)
+ * @author Gzdavidwong
  * @author Wrightbus
  */
 $messages['zh-hant'] = array(
@@ -684,10 +701,10 @@ $messages['zh-hant'] = array(
 	'drafts-view-existing' => '現有草稿',
 	'drafts-view-saved' => '已儲存',
 	'drafts-view-discard' => '捨棄',
-	'drafts-save' => '把此頁面以草稿影式儲存',
+	'drafts-save' => '把此頁面以草稿形式儲存',
 	'drafts-save-save' => '儲存草稿',
 	'drafts-save-saved' => '已儲存',
 	'drafts-save-error' => '儲存草稿時發生錯誤',
-	'tooltip-drafts-save' => '以草稿影式儲存',
+	'tooltip-drafts-save' => '以草稿形式儲存',
 );
 
