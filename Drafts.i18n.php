@@ -249,6 +249,21 @@ $messages['es'] = array(
 	'drafts-view-article' => 'Página',
 );
 
+/** Basque (Euskara)
+ * @author Kobazulo
+ */
+$messages['eu'] = array(
+	'drafts' => 'Zirriborroak',
+	'drafts-view-article' => 'Orrialdea',
+	'drafts-view-existing' => 'Dauden zirriborroak',
+	'drafts-view-saved' => 'Gordeta',
+	'drafts-view-discard' => 'Baztertu',
+	'drafts-view-notice' => 'Orrialde honetarako $1 duzu.',
+	'drafts-view-notice-link' => '{{PLURAL:$1|Zirriborro $1|$1 zirriborro}}',
+	'drafts-save-save' => 'Zirriborroa gorde',
+	'drafts-save-saved' => 'Gordeta',
+);
+
 /** Finnish (Suomi)
  * @author Crt
  * @author Nike
