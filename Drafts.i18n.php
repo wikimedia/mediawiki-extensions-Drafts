@@ -51,6 +51,16 @@ $messages['qqq'] = array(
 	'drafts-save-save' => 'Button shown near "Show changes" under editing form of a page',
 );
 
+/** Magyar (magázó) (Magyar (magázó))
+ * @author Dani
+ */
+$messages['hu-formal'] = array(
+	'drafts-view-nonesaved' => 'Jelenleg nincs egyetlen elmentett piszkozata sem.',
+	'drafts-view-notice-link' => '{{PLURAL:$1|egy|$1}} piszkozata',
+	'drafts-view-warn' => 'Ha elmegy az oldalról, az összes mentetlen változtatás elvész.
+Biztosan folytatja?',
+);
+
 /** Arabic (العربية)
  * @author Meno25
  */
@@ -167,25 +177,26 @@ $messages['cs'] = array(
 /** German (Deutsch)
  * @author ChrisiPK
  * @author Pill
+ * @author W (aka Wuzur)
  */
 $messages['de'] = array(
-	'drafts' => 'Entwürfe',
-	'drafts-desc' => 'Ermöglicht, [[Special:Drafts|Entwurfsversionen]] einer Seite auf dem Server zu speichern',
-	'drafts-view' => 'Entwurf anzeigen',
+	'drafts' => 'Zwischengespeicherte Versionen',
+	'drafts-desc' => 'Ermöglicht, [[Special:Drafts|Zwischengespeicherte Versionen]] auf dem Server zu erstellen',
+	'drafts-view' => 'Zwischengespeicherte Version anzeigen',
 	'drafts-view-article' => 'Seite',
-	'drafts-view-existing' => 'Bestehende Entwürfe',
+	'drafts-view-existing' => 'Bestehende zwischengespeicherte Versionen',
 	'drafts-view-saved' => 'Gespeichert',
 	'drafts-view-discard' => 'Verwerfen',
-	'drafts-view-nonesaved' => 'Du hast bisher noch keine Entwürfe gespeichert.',
+	'drafts-view-nonesaved' => 'Du hast bisher noch keine zwischengespeicherten Versionen erstellt.',
 	'drafts-view-notice' => 'Du hast $1 für diese Seite.',
-	'drafts-view-notice-link' => '$1 {{PLURAL:$1|Entwurf|Entwürfe}}',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|zwischengespeicherte Version|zwischengespeicherte Versionen}}',
 	'drafts-view-warn' => 'Wenn du diese Seite verlässt, gehen alle nichtgespeicherten Änderungen verloren.
 Möchtest du dennoch fortfahren?',
-	'drafts-save' => 'Diese Version als Entwurf speichern',
-	'drafts-save-save' => 'Entwurf speichern',
+	'drafts-save' => 'Diese Version zwischenspeichern',
+	'drafts-save-save' => 'Zwischenspeichern',
 	'drafts-save-saved' => 'Gespeichert',
-	'drafts-save-error' => 'Fehler beim Speichern des Entwurfs',
-	'tooltip-drafts-save' => 'Als Entwurf speichern',
+	'drafts-save-error' => 'Fehler beim Erstellen der zwischengespeicherten Version',
+	'tooltip-drafts-save' => 'Eine zwischengespeicherte Version erstellen',
 );
 
 /** German (formal address) (Deutsch (Sie-Form))
@@ -380,6 +391,30 @@ $messages['hsb'] = array(
 	'tooltip-drafts-save' => 'Jako naćisk składować',
 );
 
+/** Hungarian (Magyar)
+ * @author Bdamokos
+ * @author Dani
+ */
+$messages['hu'] = array(
+	'drafts' => 'Piszkozatok',
+	'drafts-desc' => 'Lehetővé teszi lapok [[Special:Drafts|piszkozatainak]] elmentését a szerverre',
+	'drafts-view' => 'Piszkozatok megtekintése',
+	'drafts-view-article' => 'Lap',
+	'drafts-view-existing' => 'Elmentett piszkozatok',
+	'drafts-view-saved' => 'Elmentve',
+	'drafts-view-discard' => 'Elvetés',
+	'drafts-view-nonesaved' => 'Jelenleg nincs egyetlen elmentett piszkozatod sem.',
+	'drafts-view-notice' => 'Jelenleg $1 van ehhez a laphoz.',
+	'drafts-view-notice-link' => '{{PLURAL:$1|egy|$1}} piszkozatod',
+	'drafts-view-warn' => 'Ha elmész az oldalról, az összes nem mentett változtatás elvész.
+Biztosan folytatod?',
+	'drafts-save' => 'Mentés piszkozatként',
+	'drafts-save-save' => 'Mentés piszkozatként',
+	'drafts-save-saved' => 'Elmentve',
+	'drafts-save-error' => 'Hiba történt a piszkozat elmentése közben',
+	'tooltip-drafts-save' => 'Mentés piszkozatként',
+);
+
 /** Italian (Italiano)
  * @author Darth Kule
  */
@@ -403,10 +438,26 @@ $messages['it'] = array(
 );
 
 /** Japanese (日本語)
+ * @author Fryed-peach
  * @author Hosiryuhosi
  */
 $messages['ja'] = array(
+	'drafts' => '草稿',
+	'drafts-desc' => 'ページの[[Special:Drafts|草稿]]版をサーバーに保存できるようにする',
+	'drafts-view' => '草稿の閲覧',
 	'drafts-view-article' => 'ページ',
+	'drafts-view-existing' => '既存の草稿',
+	'drafts-view-saved' => '保存済',
+	'drafts-view-discard' => '破棄',
+	'drafts-view-nonesaved' => 'あなたが現時点で保存している草稿はありません。',
+	'drafts-view-notice' => 'あなたはこのページの$1があります。',
+	'drafts-view-notice-link' => '$1件の草稿',
+	'drafts-view-warn' => 'このページから抜けると、あなたがこのページに加えた未保存の変更がすべて失われてしまいます。続けますか？',
+	'drafts-save' => 'これを草稿として保存する',
+	'drafts-save-save' => '草稿を保存',
+	'drafts-save-saved' => '保存しました',
+	'drafts-save-error' => '草稿の保存に失敗',
+	'tooltip-drafts-save' => '草稿として保存する',
 );
 
 /** Khmer (ភាសាខ្មែរ)
@@ -428,6 +479,24 @@ $messages['km'] = array(
 	'drafts-save-saved' => 'បាន​រក្សាទុក',
 	'drafts-save-error' => 'កំហុស​រក្សាទុក​ពង្រាង',
 	'tooltip-drafts-save' => 'រក្សាទុក​ជា​ពង្រាង',
+);
+
+/** Korean (한국어)
+ * @author Klutzy
+ * @author Kwj2772
+ */
+$messages['ko'] = array(
+	'drafts' => '임시 저장된 문서 목록',
+	'drafts-desc' => '작업중인 문서를 [[Special:Drafts|임시적으로 저장]]하는 기능입니다.',
+	'drafts-view-article' => '문서',
+	'drafts-view-existing' => '임시 저장된 문서 목록',
+	'drafts-view-saved' => '저장된 시간',
+	'drafts-view-discard' => '삭제',
+	'drafts-view-nonesaved' => '임시 저장한 문서가 없습니다.',
+	'drafts-save-save' => '임시 저장',
+	'drafts-save-saved' => '저장됨',
+	'drafts-save-error' => '임시 저장 중 오류 발생',
+	'tooltip-drafts-save' => '초안으로 저장하기',
 );
 
 /** Ripoarisch (Ripoarisch)
@@ -562,7 +631,7 @@ $messages['pl'] = array(
 	'drafts-view-existing' => 'Istniejące szkice',
 	'drafts-view-saved' => 'Zapisane',
 	'drafts-view-discard' => 'Usuń',
-	'drafts-view-nonesaved' => 'W tej chwili nie masz zapisanych żadnych projektów.',
+	'drafts-view-nonesaved' => 'W tej chwili nie masz zapisanych żadnych szkiców.',
 	'drafts-view-notice' => 'Posiadasz $1 dla tej strony.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|szkic|szkice|szkiców}}',
 	'drafts-view-warn' => 'Opuszczenie tej strony spowoduje utratę wszystkich niezapisanych zmian na tej stronie. 
@@ -692,13 +761,16 @@ Nais mo bang magpatuloy?',
 
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Gzdavidwong
+ * @author Wmr89502270
  */
 $messages['zh-hans'] = array(
 	'drafts' => '草稿',
+	'drafts-view' => '查看草稿',
 	'drafts-view-article' => '页面',
 	'drafts-view-existing' => '现有草稿',
 	'drafts-view-saved' => '已保存',
 	'drafts-view-discard' => '舍弃',
+	'drafts-view-nonesaved' => '您还没有任何已保存的草稿。',
 	'drafts-save' => '把此页面以草稿形式保存',
 	'drafts-save-save' => '保存草稿',
 	'drafts-save-saved' => '已保存',
