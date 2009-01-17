@@ -230,12 +230,13 @@ class DraftHooks {
 	 * Add ajax support script
 	 */
 	public static function addJS( $out ) {
-		global $wgScriptPath;
-	
+		global $wgScriptPath, $wgJsMimeType, $wgDraftsStyleVersion;
+
 		// FIXME: assumes standard dir structure
 		// Add javascript to support ajax draft saving
-		$out->addScriptFile( $wgScriptPath . '/extensions/Drafts/Drafts.js' );
-	
+		$out->addInlineScript( "var wgDraftsStyleVersion = \"$wgDraftsStyleVersion\";\n" );		
+		$out->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Drafts/Drafts.js?$wgDraftsStyleVersion\"></script>\n" );
+
 		// Continue
 		return true;
 	}
@@ -245,18 +246,18 @@ class DraftHooks {
 	 * Add ajax support script
 	 */
 	public static function addCSS( $out ) {
-		global $wgScriptPath;
-		
+		global $wgScriptPath, $wgDraftsStyleVersion;
+
 		// FIXME: assumes standard dir structure
 		// Add css for various styles
 		$out->addLink(
 			array(
 				'rel' => 'stylesheet',
 				'type' => 'text/css',
-				'href' => $wgScriptPath . '/extensions/Drafts/Drafts.css',
+				'href' => "$wgScriptPath/extensions/Drafts/Drafts.css?$wgDraftsStyleVersion",
 			)
 		);
-	
+
 		// Continue
 		return true;
 	}
