@@ -29,7 +29,7 @@ Do you want to continue?',
 	'drafts-save-saved' => 'Saved',
 	'drafts-save-error' => 'Error saving draft',
 	'tooltip-drafts-save' => 'Save as a draft',
-	'accesskey-drafts-save' => 'd', # do not translate or duplicate this message to other languages
+	'accesskey-drafts-save' => 'g', # do not translate or duplicate this message to other languages
 );
 
 /** Message documentation (Message documentation)
