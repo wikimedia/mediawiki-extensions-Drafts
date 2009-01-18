@@ -109,11 +109,26 @@ $messages['arz'] = array(
 
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
  * @author EugeneZelenko
+ * @author Jim-by
  */
 $messages['be-tarask'] = array(
 	'drafts' => 'Чарнавікі',
+	'drafts-desc' => 'Дадае магчымасьць запісу [[Special:Drafts|чарнавіка]] старонкі на сэрвэры',
+	'drafts-view' => 'Прагляд чарнавіка',
 	'drafts-view-article' => 'Старонка',
+	'drafts-view-existing' => 'Існуючыя чарнавікі',
+	'drafts-view-saved' => 'Захаваны',
+	'drafts-view-discard' => 'Выдаліць',
+	'drafts-view-nonesaved' => 'Зараз у Вас няма захаваных чарнавікоў.',
+	'drafts-view-notice' => 'Вы маеце $1 для гэтай старонкі.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|чарнавік|чарнавікі|чарнавікоў}}',
+	'drafts-view-warn' => 'Закрыцьцё гэтай старонкі прывядзе да страты ўсіх незахаваных зьменаў.
+Вы жадаеце працягваць?',
+	'drafts-save' => 'Захаваць гэта як чарнавік',
+	'drafts-save-save' => 'Захаваць чарнавік',
+	'drafts-save-saved' => 'Захаваны',
+	'drafts-save-error' => 'Памылка захаваньня чарнавіка',
+	'tooltip-drafts-save' => 'Захаваць як чарнавік',
 );
 
 /** Bulgarian (Български)
@@ -415,6 +430,29 @@ Biztosan folytatod?',
 	'tooltip-drafts-save' => 'Mentés piszkozatként',
 );
 
+/** Interlingua (Interlingua)
+ * @author McDutchie
+ */
+$messages['ia'] = array(
+	'drafts' => 'Versiones provisori',
+	'drafts-desc' => 'Adde le possibilitate de immagazinar versiones [[Special:Drafts|provisori]] de un pagina in le servitor',
+	'drafts-view' => 'ViderVersionProvisori',
+	'drafts-view-article' => 'Pagina',
+	'drafts-view-existing' => 'Versiones provisori existente',
+	'drafts-view-saved' => 'Immagazinate',
+	'drafts-view-discard' => 'Abandonar',
+	'drafts-view-nonesaved' => 'Tu non ha alcun version provisori immagazinate al momento.',
+	'drafts-view-notice' => 'Tu ha $1 pro iste pagina.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|version|versiones}} provisori',
+	'drafts-view-warn' => 'Si tu quita iste pagina, tu perdera tote le modificationes non immagazinate de iste pagina.
+Continuar?',
+	'drafts-save' => 'Immagazinar isto como version provisori',
+	'drafts-save-save' => 'Immagazinar version provisori',
+	'drafts-save-saved' => 'Immagazinate',
+	'drafts-save-error' => 'Error immagazinante le version provisori',
+	'tooltip-drafts-save' => 'Immagazinar como version provisori',
+);
+
 /** Italian (Italiano)
  * @author Darth Kule
  */
@@ -597,6 +635,29 @@ Vil du halda fram?',
 	'tooltip-drafts-save' => 'Lagra som utkast',
 );
 
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Laaknor
+ */
+$messages['no'] = array(
+	'drafts' => 'Kladder',
+	'drafts-desc' => 'Legger til muligheten til å lagre [[Special:Drafts|utkast]]versjoner av en side på serveren',
+	'drafts-view' => 'Vis utkast',
+	'drafts-view-article' => 'Side',
+	'drafts-view-existing' => 'Eksisterende utkast',
+	'drafts-view-saved' => 'Lagret',
+	'drafts-view-discard' => 'Forkast',
+	'drafts-view-nonesaved' => 'Du har ingen utkast lagret på nåværende tidspunkt',
+	'drafts-view-notice' => 'Du har $1 for denne siden.',
+	'drafts-view-notice-link' => '{{PLURAL:$1|ett utkast|$1 utkast}}',
+	'drafts-view-warn' => 'Ved å navigere vekk fra denne siden vil du miste alle ulagrede endringer til denne siden.
+Vil du fortsette?',
+	'drafts-save' => 'Lagre dette som et utkast',
+	'drafts-save-save' => 'Lagre utkast',
+	'drafts-save-saved' => 'Lagret',
+	'drafts-save-error' => 'Feil ved lagring av utkast',
+	'tooltip-drafts-save' => 'Lagre som et utkast',
+);
+
 /** Occitan (Occitan)
  * @author Cedric31
  */
@@ -622,6 +683,7 @@ $messages['oc'] = array(
 /** Polish (Polski)
  * @author Derbeth
  * @author Leinad
+ * @author Sp5uhe
  */
 $messages['pl'] = array(
 	'drafts' => 'Szkice',
@@ -631,7 +693,7 @@ $messages['pl'] = array(
 	'drafts-view-existing' => 'Istniejące szkice',
 	'drafts-view-saved' => 'Zapisane',
 	'drafts-view-discard' => 'Usuń',
-	'drafts-view-nonesaved' => 'W tej chwili nie masz zapisanych żadnych szkiców.',
+	'drafts-view-nonesaved' => 'Nie masz obecnie zapisanych żadnych szkiców.',
 	'drafts-view-notice' => 'Posiadasz $1 dla tej strony.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|szkic|szkice|szkiców}}',
 	'drafts-view-warn' => 'Opuszczenie tej strony spowoduje utratę wszystkich niezapisanych zmian na tej stronie. 
