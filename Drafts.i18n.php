@@ -181,7 +181,7 @@ $messages['cs'] = array(
  */
 $messages['de'] = array(
 	'drafts' => 'Zwischengespeicherte Versionen',
-	'drafts-desc' => 'Ermöglicht, [[Special:Drafts|Zwischengespeicherte Versionen]] auf dem Server zu erstellen',
+	'drafts-desc' => 'Ermöglicht, [[Special:Drafts|zwischengespeicherte Versionen]] auf dem Server zu erstellen',
 	'drafts-view' => 'Zwischengespeicherte Version anzeigen',
 	'drafts-view-article' => 'Seite',
 	'drafts-view-existing' => 'Bestehende zwischengespeicherte Versionen',
@@ -442,22 +442,22 @@ $messages['it'] = array(
  * @author Hosiryuhosi
  */
 $messages['ja'] = array(
-	'drafts' => '草稿',
-	'drafts-desc' => 'ページの[[Special:Drafts|草稿]]版をサーバーに保存できるようにする',
-	'drafts-view' => '草稿の閲覧',
+	'drafts' => '下書き',
+	'drafts-desc' => 'ページの[[Special:Drafts|下書き]]をサーバーに保存できるようにする',
+	'drafts-view' => '下書きの閲覧',
 	'drafts-view-article' => 'ページ',
-	'drafts-view-existing' => '既存の草稿',
+	'drafts-view-existing' => '既存の下書き',
 	'drafts-view-saved' => '保存済',
 	'drafts-view-discard' => '破棄',
-	'drafts-view-nonesaved' => 'あなたが現時点で保存している草稿はありません。',
-	'drafts-view-notice' => 'あなたはこのページの$1があります。',
-	'drafts-view-notice-link' => '$1件の草稿',
+	'drafts-view-nonesaved' => 'あなたが現時点で保存している下書きはありません。',
+	'drafts-view-notice' => 'あなたはこのページの$1をもっています。',
+	'drafts-view-notice-link' => '$1件の下書き',
 	'drafts-view-warn' => 'このページから抜けると、あなたがこのページに加えた未保存の変更がすべて失われてしまいます。続けますか？',
-	'drafts-save' => 'これを草稿として保存する',
-	'drafts-save-save' => '草稿を保存',
-	'drafts-save-saved' => '保存しました',
-	'drafts-save-error' => '草稿の保存に失敗',
-	'tooltip-drafts-save' => '草稿として保存する',
+	'drafts-save' => 'これを下書きとして保存する',
+	'drafts-save-save' => '下書きを保存',
+	'drafts-save-saved' => '保存完了',
+	'drafts-save-error' => '下書きの保存に失敗',
+	'tooltip-drafts-save' => '下書きとして保存する',
 );
 
 /** Khmer (ភាសាខ្មែរ)
@@ -757,6 +757,29 @@ Nais mo bang magpatuloy?',
 	'drafts-save-saved' => 'Nasagip na',
 	'drafts-save-error' => 'May kamalian sa pagsasagip ng balangkas',
 	'tooltip-drafts-save' => 'Sinagip bilang isang balangkas',
+);
+
+/** Turkish (Türkçe)
+ * @author Joseph
+ */
+$messages['tr'] = array(
+	'drafts' => 'Taslaklar',
+	'drafts-desc' => 'Bir sayfanın [[Special:Drafts|taslak]] sürümünü sunucuya kaydetme özelliğini ekler',
+	'drafts-view' => 'TaslağıGör',
+	'drafts-view-article' => 'Sayfa',
+	'drafts-view-existing' => 'Mevcut taslaklar',
+	'drafts-view-saved' => 'Kaydedildi',
+	'drafts-view-discard' => 'Sil',
+	'drafts-view-nonesaved' => 'Şu anda kayıtlı hiçbir taslağınız yok.',
+	'drafts-view-notice' => 'Bu sayfa için $1 var.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|taslağınız|taslağınız}}',
+	'drafts-view-warn' => 'Bu sayfadan ayrılarak, sayfadaki tüm kaydedilmemiş değişiklikleri kaybedeceksiniz.
+Devam etmek istiyor musunuz?',
+	'drafts-save' => 'Bunu taslak olarak kaydet',
+	'drafts-save-save' => 'Taslağı kaydet',
+	'drafts-save-saved' => 'Kaydedildi',
+	'drafts-save-error' => 'Taslağı kaydederken hata',
+	'tooltip-drafts-save' => 'Taslak olarak kaydet',
 );
 
 /** Simplified Chinese (‪中文(简体)‬)

@@ -33,6 +33,11 @@ $aliases['bs'] = array(
 	'Drafts' => array( 'Skiciranje' ),
 );
 
+/** German (Deutsch) */
+$aliases['de'] = array(
+	'Drafts' => array( 'Zwischengespeicherte Versionen' ),
+);
+
 /** French (Français) */
 $aliases['fr'] = array(
 	'Drafts' => array( 'Brouillons' ),
@@ -45,7 +50,12 @@ $aliases['gl'] = array(
 
 /** Hungarian (Magyar) */
 $aliases['hu'] = array(
-	'Drafts' => array( 'Vázlatok' ),
+	'Drafts' => array( 'Piszkozatok', 'Vázlatok' ),
+);
+
+/** Japanese (日本語) */
+$aliases['ja'] = array(
+	'Drafts' => array( '下書き' ),
 );
 
 /** Khmer (ភាសាខ្មែរ) */
@@ -76,5 +86,10 @@ $aliases['pt'] = array(
 /** Brazilian Portuguese (Português do Brasil) */
 $aliases['pt-br'] = array(
 	'Drafts' => array( 'Rascunhos' ),
+);
+
+/** Sanskrit (संस्कृत) */
+$aliases['sa'] = array(
+	'Drafts' => array( 'प्रारूप' ),
 );
 
