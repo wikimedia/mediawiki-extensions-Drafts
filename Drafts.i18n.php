@@ -360,6 +360,29 @@ Quere continuar?',
 	'tooltip-drafts-save' => 'Gardar como un borrador',
 );
 
+/** Swiss German (Alemannisch)
+ * @author Als-Holder
+ */
+$messages['gsw'] = array(
+	'drafts' => 'Versione im Zwischespycher',
+	'drafts-desc' => 'Macht s megli, [[Special:Drafts|zwischegspychereti Versione]] uf em Server aazlege',
+	'drafts-view' => 'Version im Zwischespycher aazeige',
+	'drafts-view-article' => 'Syte',
+	'drafts-view-existing' => 'Versione, wu s im Zwischespycher git',
+	'drafts-view-saved' => 'Gspycheret',
+	'drafts-view-discard' => 'Furt gheije',
+	'drafts-view-nonesaved' => 'Du hesch no kei Versione im Zwischespychere aagleit.',
+	'drafts-view-notice' => 'Du hesch $1 fir die Syte.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|Version im Zwischespycher|Versione im Zwischespycher}}',
+	'drafts-view-warn' => 'Wänn Du die Syte verlosch, no gehn alli Änderige verlore, wu nit gspycheret sin.
+Mechtsch einewäg wytergoh?',
+	'drafts-save' => 'Die Version zwischespychere',
+	'drafts-save-save' => 'Zwischespychere',
+	'drafts-save-saved' => 'Gspycheret',
+	'drafts-save-error' => 'Fähler bim Aalege vu dr zwischegspycherete Version',
+	'tooltip-drafts-save' => 'E zwischegspychereti Version aalege',
+);
+
 /** Hebrew (עברית)
  * @author Rotemliss
  * @author YaronSh
@@ -741,6 +764,7 @@ $messages['ro'] = array(
  */
 $messages['ru'] = array(
 	'drafts' => 'Черновики',
+	'drafts-desc' => 'Добавляет возможность сохранять [[Special:Drafts|черновики]] страниц на сервере',
 	'drafts-view' => 'ПросмотрЧерновика',
 	'drafts-view-article' => 'Страница',
 	'drafts-view-existing' => 'Действующие черновики',
@@ -749,6 +773,8 @@ $messages['ru'] = array(
 	'drafts-view-nonesaved' => 'В настоящее время у вас нет сохранённых черновиков.',
 	'drafts-view-notice' => 'У вас $1 этой страницы.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|черновик|черновика|черновиков}}',
+	'drafts-view-warn' => 'Уходя с этой страницы вы потеряете все несохранённые изменения.
+Вы желаете продолжить?',
 	'drafts-save' => 'Сохранить это как черновик',
 	'drafts-save-save' => 'Сохранить черновик',
 	'drafts-save-saved' => 'Сохранено',
