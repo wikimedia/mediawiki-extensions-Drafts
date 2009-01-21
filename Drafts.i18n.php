@@ -153,13 +153,17 @@ $messages['bg'] = array(
  */
 $messages['bs'] = array(
 	'drafts' => 'Skice',
+	'drafts-desc' => 'Dodaje mogućnost spremanja [[Special:Drafts|draft]] verzija stranice na server',
 	'drafts-view' => 'Pogledaj skicu',
 	'drafts-view-article' => 'Stranica',
 	'drafts-view-existing' => 'Postojeće skice',
 	'drafts-view-saved' => 'Spremljeno',
 	'drafts-view-discard' => 'Odustani',
+	'drafts-view-nonesaved' => 'Trenutno nemate spremljen nijedan draft.',
 	'drafts-view-notice' => 'Imate $1 za ovu stranicu.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|skicu|skice|skica}}',
+	'drafts-view-warn' => 'Ako napustite ovu stranicu izgubit ćete sve nespremljene izmjene na stranici.
+Da li želite da nastavite?',
 	'drafts-save' => 'Spremi ovo kao skicu',
 	'drafts-save-save' => 'Sačuvaj skicu',
 	'drafts-save-saved' => 'Spremljeno',
@@ -521,6 +525,13 @@ $messages['ja'] = array(
 	'tooltip-drafts-save' => '下書きとして保存する',
 );
 
+/** Georgian (ქართული)
+ * @author Sopho
+ */
+$messages['ka'] = array(
+	'drafts-view-article' => 'გვერდი',
+);
+
 /** Khmer (ភាសាខ្មែរ)
  * @author Thearith
  */
@@ -549,11 +560,17 @@ $messages['km'] = array(
 $messages['ko'] = array(
 	'drafts' => '임시 저장된 문서 목록',
 	'drafts-desc' => '작업중인 문서를 [[Special:Drafts|임시적으로 저장]]하는 기능입니다.',
+	'drafts-view' => '초고 보기',
 	'drafts-view-article' => '문서',
 	'drafts-view-existing' => '임시 저장된 문서 목록',
 	'drafts-view-saved' => '저장된 시간',
 	'drafts-view-discard' => '삭제',
 	'drafts-view-nonesaved' => '임시 저장한 문서가 없습니다.',
+	'drafts-view-notice' => '당신은 이 문서에 $1를 갖고 있습니다.',
+	'drafts-view-notice-link' => '$1개의 초고',
+	'drafts-view-warn' => '다른 문서를 둘러보면, 당신은 저장하지 않은 모든 편집이 사라질 것입니다.
+계속하시곘습니까?',
+	'drafts-save' => '이 편집을 초안으로 저장',
 	'drafts-save-save' => '임시 저장',
 	'drafts-save-saved' => '저장됨',
 	'drafts-save-error' => '임시 저장 중 오류 발생',
@@ -805,6 +822,7 @@ $messages['sk'] = array(
 );
 
 /** Swedish (Svenska)
+ * @author Boivie
  * @author Najami
  */
 $messages['sv'] = array(
@@ -814,7 +832,17 @@ $messages['sv'] = array(
 	'drafts-view-article' => 'Sida',
 	'drafts-view-existing' => 'Existerande utkast',
 	'drafts-view-saved' => 'Sparad',
+	'drafts-view-discard' => 'Förkasta',
+	'drafts-view-nonesaved' => 'Du har inga utkast sparade just nu.',
+	'drafts-view-notice' => 'Du har $1 för denna sida.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|utkast|utkast}}',
+	'drafts-view-warn' => 'Genom att navigera bort från denna sida kommer du förlora alla osparade ändringar för denna sida.
+Vill du fortsätta?',
+	'drafts-save' => 'Spara detta som ett utkast',
+	'drafts-save-save' => 'Spara utkast',
+	'drafts-save-saved' => 'Sparad',
+	'drafts-save-error' => 'Fel vid sparande av utkast',
+	'tooltip-drafts-save' => 'Spara som ett utkast',
 );
 
 /** Telugu (తెలుగు)
