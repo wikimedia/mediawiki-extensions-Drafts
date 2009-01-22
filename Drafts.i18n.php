@@ -397,6 +397,8 @@ $messages['he'] = array(
 	'drafts' => 'טיוטות',
 	'drafts-desc' => 'הוספת האפשרות לשמירת גרסאות [[Special:Drafts|טיוטה]] של הדף בשרת',
 	'drafts-view' => 'הצגת טיוטה',
+	'drafts-view-summary' => 'דף מיוחד זה מציג רשימה של כל הטיוטות הקיימות.
+טיוטות שאינן בשימוש יימחקו אוטומטית כעבור {{PLURAL:$1|יום אחד|$1 ימים|יומיים}}.',
 	'drafts-view-article' => 'דף',
 	'drafts-view-existing' => 'טיוטות קיימות',
 	'drafts-view-saved' => 'שמורה',
