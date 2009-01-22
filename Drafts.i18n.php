@@ -15,6 +15,8 @@ $messages['en'] = array(
 	'drafts' => 'Drafts',
 	'drafts-desc' => 'Adds the ability to save [[Special:Drafts|draft]] versions of a page on the server',
 	'drafts-view' => 'ViewDraft',
+	'drafts-view-summary' => 'This special page shows a list of all existing drafts.
+Unused drafts will be discarded after {{PLURAL:$1|$1 day|$1 days}} automatically.',
 	'drafts-view-article' => 'Page',
 	'drafts-view-existing' => 'Existing drafts',
 	'drafts-view-saved' => 'Saved',

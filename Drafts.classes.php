@@ -276,9 +276,14 @@ class Draft {
 		// Output HTML for list of drafts
 		$drafts = Draft::getDrafts( $title, $user );
 		if ( count( $drafts ) > 0 ) {
+			global $egDraftsLifeSpan;
+
 			// Internationalization
 			wfLoadExtensionMessages( 'Drafts' );
-			
+
+			// Add a special page summary
+			$wgOut->wrapWikiMsg( '<div class="mw-drafts-summary">$1</div>',  array( 'drafts-view-summary', $wgLang->formatNum( $egDraftsLifeSpan ) ) );
+
 			// Build XML
 			$wgOut->addHTML(
 				Xml::openElement( 'table',

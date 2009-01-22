@@ -58,6 +58,7 @@ $wgExtensionAliasesFiles['Drafts'] = $dir . 'Drafts.alias.php';
 
 // Register the Drafts special page
 $wgSpecialPages['Drafts'] = 'DraftsPage';
+$wgSpecialPageGroups['Drafts'] = 'pagetools';
 $wgAutoloadClasses['DraftsPage'] = $dir . 'Drafts.pages.php';
 
 // Register save interception to detect non-javascript draft saving
