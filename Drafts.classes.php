@@ -281,8 +281,10 @@ class Draft {
 			// Internationalization
 			wfLoadExtensionMessages( 'Drafts' );
 
-			// Add a special page summary
-			$wgOut->wrapWikiMsg( '<div class="mw-drafts-summary">$1</div>',  array( 'drafts-view-summary', $wgLang->formatNum( $egDraftsLifeSpan ) ) );
+			// Add a summary, on Special:Drafts only
+			if( !$title || $title->getNamespace() == NS_SPECIAL ) {
+				$wgOut->wrapWikiMsg( '<div class="mw-drafts-summary">$1</div>',  array( 'drafts-view-summary', $wgLang->formatNum( $egDraftsLifeSpan ) ) );
+			}
 
 			// Build XML
 			$wgOut->addHTML(
