@@ -70,6 +70,8 @@ $messages['ar'] = array(
 	'drafts' => 'مسودات',
 	'drafts-desc' => 'يضيف القدرة على حفظ نسخ [[Special:Drafts|مسودة]] لصفحة على الخادم',
 	'drafts-view' => 'عرض المسودة',
+	'drafts-view-summary' => 'هذه الصفحة الخاصة تعرض قائمة بكل المسودات الموجودة.
+المسودات غير المستخدمة سيتم التغاضي عنها بعد {{PLURAL:$1|$1 يوم|$1 يوم}} تلقائيا.',
 	'drafts-view-article' => 'الصفحة',
 	'drafts-view-existing' => 'المسودات الموجودة',
 	'drafts-view-saved' => 'محفوظة',
@@ -112,6 +114,7 @@ $messages['arz'] = array(
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
  * @author EugeneZelenko
  * @author Jim-by
+ * @author Red Winged Duck
  */
 $messages['be-tarask'] = array(
 	'drafts' => 'Чарнавікі',
@@ -121,7 +124,7 @@ $messages['be-tarask'] = array(
 	'drafts-view-existing' => 'Існуючыя чарнавікі',
 	'drafts-view-saved' => 'Захаваны',
 	'drafts-view-discard' => 'Выдаліць',
-	'drafts-view-nonesaved' => 'Зараз у Вас няма захаваных чарнавікоў.',
+	'drafts-view-nonesaved' => 'Цяпер у Вас няма захаваных чарнавікоў.',
 	'drafts-view-notice' => 'Вы маеце $1 для гэтай старонкі.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|чарнавік|чарнавікі|чарнавікоў}}',
 	'drafts-view-warn' => 'Закрыцьцё гэтай старонкі прывядзе да страты ўсіх незахаваных зьменаў.
@@ -157,6 +160,8 @@ $messages['bs'] = array(
 	'drafts' => 'Skice',
 	'drafts-desc' => 'Dodaje mogućnost spremanja [[Special:Drafts|draft]] verzija stranice na server',
 	'drafts-view' => 'Pogledaj skicu',
+	'drafts-view-summary' => 'Ova posebna stranica prikazuje spisak svih postojećih nacrta.
+Nekorišteni nacrti će biti uklonjeni odavde automatski nakon {{PLURAL:$1|$1 dan|$1 dana|$1 dana}}.',
 	'drafts-view-article' => 'Stranica',
 	'drafts-view-existing' => 'Postojeće skice',
 	'drafts-view-saved' => 'Spremljeno',
@@ -174,12 +179,15 @@ Da li želite da nastavite?',
 );
 
 /** Czech (Česky)
+ * @author Danny B.
  * @author Matěj Grabovský
  */
 $messages['cs'] = array(
 	'drafts' => 'Návrhy',
 	'drafts-desc' => 'Přidává možnost uložit na server verzi stránky jako [[Special:Drafts|návrh]]',
 	'drafts-view' => 'Zobrazit návrh',
+	'drafts-view-summary' => 'Tato speciální stránka zobrazuje seznam všech existujících konceptů.
+Nepoužité koncepty budou po {{plural:$1|$1 dni|$1 dnech}} automaticky smazány.',
 	'drafts-view-article' => 'Stránka',
 	'drafts-view-existing' => 'Existující návrhy',
 	'drafts-view-saved' => 'Uložené',
@@ -197,6 +205,7 @@ $messages['cs'] = array(
 
 /** German (Deutsch)
  * @author ChrisiPK
+ * @author Metalhead64
  * @author Pill
  * @author W (aka Wuzur)
  */
@@ -204,6 +213,8 @@ $messages['de'] = array(
 	'drafts' => 'Zwischengespeicherte Versionen',
 	'drafts-desc' => 'Ermöglicht, [[Special:Drafts|zwischengespeicherte Versionen]] auf dem Server zu erstellen',
 	'drafts-view' => 'Zwischengespeicherte Version anzeigen',
+	'drafts-view-summary' => 'Diese Spezialseite listet alle bestehenden zwischengespeicherten Versionen auf.
+Nicht verwendete zwischengespeicherte Versionen werden nach {{PLURAL:$1|$1 Tag|$1 Tagen}} automatisch verworfen.',
 	'drafts-view-article' => 'Seite',
 	'drafts-view-existing' => 'Bestehende zwischengespeicherte Versionen',
 	'drafts-view-saved' => 'Gespeichert',
@@ -234,6 +245,8 @@ $messages['dsb'] = array(
 	'drafts' => 'Nacerjenja',
 	'drafts-desc' => 'Zmóžna składowanje [[Special:Drafts|nacerjeńskich wersijow]] boka na serwerje',
 	'drafts-view' => 'Nacerjenje se woglědaś',
+	'drafts-view-summary' => 'Toś ten specialny bok pokazujo lisćinu wšych eksistujucych nacerjenjow.
+Njewužywane naćerjenja zachyśiju se awtomatiski pó {{PLURAL:$1|$ dnju|$1 dnjoma|$1 dnjach|$1 dnjach}}.',
 	'drafts-view-article' => 'Bok',
 	'drafts-view-existing' => 'Eksistěrujuce nacerjenja',
 	'drafts-view-saved' => 'Skłaźony',
@@ -296,6 +309,31 @@ $messages['eu'] = array(
 	'drafts-save-saved' => 'Gordeta',
 );
 
+/** Persian (فارسی)
+ * @author Huji
+ */
+$messages['fa'] = array(
+	'drafts' => 'پیش‌نویس‌ها',
+	'drafts-desc' => 'امکان نمایش نسخه‌های [[Special:Drafts|پیش‌نویس]] یک صفحه را می‌افزاید',
+	'drafts-view' => 'نمایش پیش‌نویس',
+	'drafts-view-summary' => 'این صفحهٔ ویژه فهرستی از تمام پیش‌نویس‌های موجود را نمایش می‌دهد.
+پیش‌نویس‌های استفاده نشده پس از {{PLURAL:$1|$1 روز|$1 روز}} به طور خودکار دور انداخته می‌شوند.',
+	'drafts-view-article' => 'صفحه',
+	'drafts-view-existing' => 'پیش‌نویس‌های موجود',
+	'drafts-view-saved' => 'ذخیره شد',
+	'drafts-view-discard' => 'دور انداختن',
+	'drafts-view-nonesaved' => 'شما همینک هیچ پیش‌نویسی ذخیره ندارید.',
+	'drafts-view-notice' => 'شما $1 برای این صفحه دارید.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|پیش‌نویس|پیش‌نویس}}',
+	'drafts-view-warn' => 'با خارج شدن از این صفحه شما تمام تغییرات ذخیره نشده در این صفحه را ازدست می‌دهید.
+آیا می‌خواهید ادامه دهید؟ْ',
+	'drafts-save' => 'ذخیره کردن این متن به عنوان پیش‌نویس',
+	'drafts-save-save' => 'ذخیره کردن پیش‌نویس',
+	'drafts-save-saved' => 'ذخیره شد',
+	'drafts-save-error' => 'خطا در ذخیره کردن پیش‌نویس',
+	'tooltip-drafts-save' => 'ذخیره به عنوان پیش‌نویس',
+);
+
 /** Finnish (Suomi)
  * @author Crt
  * @author Nike
@@ -323,11 +361,14 @@ Haluatko jatkaa?',
 
 /** French (Français)
  * @author Grondin
+ * @author IAlex
  */
 $messages['fr'] = array(
 	'drafts' => 'Brouillons',
 	'drafts-desc' => 'Ajoute la possibilité de sauvegarder les versions « [[Special:Drafts|brouillon]] » d’une page sur le serveur',
 	'drafts-view' => 'Voir le brouillon',
+	'drafts-view-summary' => 'Cette page spéciale liste tous les brouillons existant.
+Les brouillons inutilisés seront automatiquement supprimés après $1 {{PLURAL:$1|jour|jours}}.',
 	'drafts-view-article' => 'Page',
 	'drafts-view-existing' => 'Brouillons existants',
 	'drafts-view-saved' => 'Sauvegarder',
@@ -373,6 +414,8 @@ $messages['gsw'] = array(
 	'drafts' => 'Versione im Zwischespycher',
 	'drafts-desc' => 'Macht s megli, [[Special:Drafts|zwischegspychereti Versione]] uf em Server aazlege',
 	'drafts-view' => 'Version im Zwischespycher aazeige',
+	'drafts-view-summary' => 'Die Spezialsyte zeigt alli Entwirf, wu s git.
+Entwirf, wu nit verwändet wäre, wäre automatisch no {{PLURAL:$1|$1 Tag|$1 Täg}} useghejt.',
 	'drafts-view-article' => 'Syte',
 	'drafts-view-existing' => 'Versione, wu s im Zwischespycher git',
 	'drafts-view-saved' => 'Gspycheret',
@@ -422,6 +465,8 @@ $messages['hsb'] = array(
 	'drafts' => 'Naćiski',
 	'drafts-desc' => 'Zmóžnja składowanje [[Special:Drafts|naćiskich wersijow]] strony na serwerje',
 	'drafts-view' => 'ViewDraft',
+	'drafts-view-summary' => 'Tuta specialna strona pokazuje lisćinu wšěch eksistowacych naćiskow.
+Njewužiwane naćiski so po {{PLURAL:$1|$1 dnju|$1 dnjomaj|$1 dnjach|$1 dnjach}} awtomatisce zaćiskaja.',
 	'drafts-view-article' => 'Strona',
 	'drafts-view-existing' => 'Eksistowace naćiski',
 	'drafts-view-saved' => 'Składowany',
@@ -468,6 +513,8 @@ $messages['ia'] = array(
 	'drafts' => 'Versiones provisori',
 	'drafts-desc' => 'Adde le possibilitate de immagazinar versiones [[Special:Drafts|provisori]] de un pagina in le servitor',
 	'drafts-view' => 'ViderVersionProvisori',
+	'drafts-view-summary' => 'Iste pagina special monstra un lista de tote le versiones provisori existente.
+Le versiones provisori non usate essera automaticamente abandonate post {{PLURAL:$1|$1 die|$1 dies}}.',
 	'drafts-view-article' => 'Pagina',
 	'drafts-view-existing' => 'Versiones provisori existente',
 	'drafts-view-saved' => 'Immagazinate',
@@ -514,6 +561,7 @@ $messages['ja'] = array(
 	'drafts' => '下書き',
 	'drafts-desc' => 'ページの[[Special:Drafts|下書き]]をサーバーに保存できるようにする',
 	'drafts-view' => '下書きの閲覧',
+	'drafts-view-summary' => 'この特別ページは既存のすべての下書きを一覧表示します。使用されない下書きは $1日後に自動的に破棄されます。',
 	'drafts-view-article' => 'ページ',
 	'drafts-view-existing' => '既存の下書き',
 	'drafts-view-saved' => '保存済',
@@ -588,6 +636,9 @@ $messages['ksh'] = array(
 	'drafts' => 'Äntwörf',
 	'drafts-desc' => 'Deit de Müjjeleschkeit dobei, en [[Special:Drafts|Entworf]] fun en Sigg om Server affzelääje.',
 	'drafts-view' => 'Äntworf zeije',
+	'drafts-view-summary' => 'Hee die Söndersigg hät en Leß met alle Entwörf, die mer han.
+Noh {{PLURAL:$1|einem Daach|$1 Dääsch|nullkommanix}} wäde de
+unjenotz Enwörf automattesch fott jeschmesse.',
 	'drafts-view-article' => 'Sigg',
 	'drafts-view-existing' => 'Jespeicherte Äntwörf',
 	'drafts-view-saved' => 'Jespeichert',
@@ -635,11 +686,14 @@ $messages['li'] = array(
 
 /** Dutch (Nederlands)
  * @author Siebrand
+ * @author Tvdm
  */
 $messages['nl'] = array(
 	'drafts' => 'Werkversies',
 	'drafts-desc' => 'Voegt functionaliteit toe om [[Special:Drafts|werkversies]] van een pagina op de server op te slaan',
 	'drafts-view' => 'WerkversieBekijken',
+	'drafts-view-summary' => 'Deze speciale pagina toont een lijst van alle bestaande werkversies.
+Ongebruikte werkversies zullen automatisch worden verwijderd na {{PLURAL:$1|$1 dag|$1 dagen}}.',
 	'drafts-view-article' => 'Pagina',
 	'drafts-view-existing' => 'Bestaande werkversies',
 	'drafts-view-saved' => 'Opgeslagen',
@@ -663,14 +717,16 @@ $messages['nn'] = array(
 	'drafts' => 'Utkast',
 	'drafts-desc' => 'Gjer det mogleg å lagra [[Special:Drafts|utkastsversjonar]] av ei sida på tenaren',
 	'drafts-view' => 'Syna utkast',
+	'drafts-view-summary' => 'Denne spesialsida syner ei lista over alle utkasta som finst frå før.
+Unytta utkast vil verta vraka av seg sjølv etter {{PLURAL:$1|éin dag|$1 dagar}}.',
 	'drafts-view-article' => 'Sida',
 	'drafts-view-existing' => 'Eksisterande utkast',
 	'drafts-view-saved' => 'Lagra',
 	'drafts-view-discard' => 'Vrak',
-	'drafts-view-nonesaved' => 'Du har ingen lagra  utkast på noverande tidspunkt.',
+	'drafts-view-nonesaved' => 'Du har ingen lagra utkast på noverande tidspunkt.',
 	'drafts-view-notice' => 'Du har $1 for denne sida.',
 	'drafts-view-notice-link' => '{{PLURAL:$1|eitt utkast|$1 utkast}}',
-	'drafts-view-warn' => 'Ved å navigera vekk frå denne sida vil du missa alle endringar på sida som ikkje er lagra.
+	'drafts-view-warn' => 'Ved å navigera vekk frå denne sida vil du missa alle endringane på sida som ikkje er lagra.
 Vil du halda fram?',
 	'drafts-save' => 'Lagra dette som eit utkast',
 	'drafts-save-save' => 'Lagra utkast',
@@ -756,6 +812,8 @@ $messages['pt'] = array(
 	'drafts' => 'Rascunhos',
 	'drafts-desc' => 'Adiciona a possibilidade de gravar versões [[Special:Drafts|rascunho]] de uma página no servidor',
 	'drafts-view' => 'Ver Rascunho',
+	'drafts-view-summary' => 'Esta página especial mostra uma lista de todos os rascunhos existentes.
+Rascunhos não usados serão descartados automaticamente após {{PLURAL:$1|$1 dia|$1 dias}}.',
 	'drafts-view-article' => 'Página',
 	'drafts-view-existing' => 'Rascunhos existentes',
 	'drafts-view-saved' => 'Gravado',
@@ -787,6 +845,8 @@ $messages['ru'] = array(
 	'drafts' => 'Черновики',
 	'drafts-desc' => 'Добавляет возможность сохранять [[Special:Drafts|черновики]] страниц на сервере',
 	'drafts-view' => 'ПросмотрЧерновика',
+	'drafts-view-summary' => 'На этой служебной странице приведён список всех черновиков.
+Неиспользуемые черновики автоматически удаляются через $1 {{PLURAL:$1|день|дня|дней}}.',
 	'drafts-view-article' => 'Страница',
 	'drafts-view-existing' => 'Действующие черновики',
 	'drafts-view-saved' => 'Сохранено',
@@ -810,6 +870,8 @@ $messages['sk'] = array(
 	'drafts' => 'Návrhy',
 	'drafts-desc' => 'Pridáva možnosť uložiť na server verzie stránky ako [[Special:Drafts|návrhy]]',
 	'drafts-view' => 'ZobraziťNávrh',
+	'drafts-view-summary' => 'Táto špeciálna stránka zobrazuje zoznam všetkých existujúcich návrhov.
+Nepoužité návrhy sa po {{PLURAL:$1|$1 dni|$1 dňoch}} automaticky zahodia.',
 	'drafts-view-article' => 'Stránka',
 	'drafts-view-existing' => 'Existujúce návrhy',
 	'drafts-view-saved' => 'Uložené',
@@ -833,6 +895,8 @@ $messages['sv'] = array(
 	'drafts' => 'Utkast',
 	'drafts-desc' => 'Möjliggör att kunna spara [[Special:Drafts|utkastsversioner]] av en sida på servern',
 	'drafts-view' => 'Visa utkast',
+	'drafts-view-summary' => 'Denna specialsida visar en lista över alla utkast som finns.
+Oanvända utkast kommer automatiskt att försvinna efter {{PLURAL:$1|$1 dag|$1 dagar}}.',
 	'drafts-view-article' => 'Sida',
 	'drafts-view-existing' => 'Existerande utkast',
 	'drafts-view-saved' => 'Sparad',
@@ -863,6 +927,8 @@ $messages['tl'] = array(
 	'drafts' => 'Mga balangkas',
 	'drafts-desc' => 'Nagdaragdag ng kakayahang makapagsagip ng mga bersyon [[Special:Drafts|ng balangkas]] ng isang pahina sa loob ng serbidor',
 	'drafts-view' => 'TingnanBalangkas',
+	'drafts-view-summary' => 'Nagpapakita ang natatanging pahinang ito ng isang talaan ng lahat ng umiiral na mga balangkas.
+Kusang itatapon na ang hindi nagagamit na mga balangkas pagkaraan ng {{PLURAL:$1|$1 araw|$1 mga araw}}.',
 	'drafts-view-article' => 'Pahina',
 	'drafts-view-existing' => 'Umiiral na mga balangkas',
 	'drafts-view-saved' => 'Nasagip na',
