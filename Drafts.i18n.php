@@ -288,10 +288,23 @@ $messages['eo'] = array(
 );
 
 /** Spanish (Español)
+ * @author Crazymadlover
  * @author Imre
  */
 $messages['es'] = array(
+	'drafts' => 'Borradores',
+	'drafts-desc' => 'Agregar la habilidad de grabar versiones [[Special:Drafts|borrador]] de esta página en el servidor',
 	'drafts-view-article' => 'Página',
+	'drafts-view-existing' => 'Borradores existentes',
+	'drafts-view-saved' => 'Grabar',
+	'drafts-view-discard' => 'Descartar',
+	'drafts-view-nonesaved' => 'No tiene ningún borrador grabado en este momento.',
+	'drafts-view-notice' => 'usted tiene $1 para esta página.',
+	'drafts-save' => 'Guardar esto como un borrador',
+	'drafts-save-save' => 'Grabar borrador',
+	'drafts-save-saved' => 'Grabado',
+	'drafts-save-error' => 'Error grabando borrador',
+	'tooltip-drafts-save' => 'Guardar como un borrador',
 );
 
 /** Basque (Euskara)
@@ -391,6 +404,8 @@ $messages['gl'] = array(
 	'drafts' => 'Borrador',
 	'drafts-desc' => 'Engade a habilidade de gardar, no servidor, versións [[Special:Drafts|borrador]] dunha páxina',
 	'drafts-view' => 'Ver o borrador',
+	'drafts-view-summary' => 'Esta páxina especial amosa unha lista de todos os borradores existentes.
+Os borradores non usuados serán descartados automaticamente tras {{PLURAL:$1|un día|$1 días}}.',
 	'drafts-view-article' => 'Páxina',
 	'drafts-view-existing' => 'Borradores existentes',
 	'drafts-view-saved' => 'Gardado',
@@ -662,6 +677,8 @@ $messages['lb'] = array(
 	'drafts' => 'Brouillonen',
 	'drafts-desc' => 'Erlaabt et Versioune vun enger Säit als [[Special:Drafts|Brouillon]] op dem Server ze späicheren',
 	'drafts-view' => 'Brouillon weisen',
+	'drafts-view-summary' => 'Dës Spezialsäit weist eng Lëscht mat alle Brouillonen, déi et gëtt.
+Bruillonen déi net benotzt ginn, ginn no {PLURAL:$1|engem Dag|$1 Deeg}} automatesch geläscht.',
 	'drafts-view-article' => 'Säit',
 	'drafts-view-existing' => 'Brouillonen déi et gëtt',
 	'drafts-view-saved' => 'Gespäichert',
@@ -789,6 +806,8 @@ $messages['pl'] = array(
 	'drafts' => 'Szkice',
 	'drafts-desc' => 'Dodaje możliwość zapisywania [[Special:Drafts|szkicu]] strony na serwerze',
 	'drafts-view' => 'Zobacz szkic',
+	'drafts-view-summary' => 'To jest strona specjalna pokazująca listę wszystkich istniejących szkiców.
+Nieużywane szkice będą automatycznie usuwane po $1 {{PLURAL:$1|dniu|dniach}}.',
 	'drafts-view-article' => 'Strona',
 	'drafts-view-existing' => 'Istniejące szkice',
 	'drafts-view-saved' => 'Zapisane',
@@ -952,6 +971,8 @@ $messages['tr'] = array(
 	'drafts' => 'Taslaklar',
 	'drafts-desc' => 'Bir sayfanın [[Special:Drafts|taslak]] sürümünü sunucuya kaydetme özelliğini ekler',
 	'drafts-view' => 'TaslağıGör',
+	'drafts-view-summary' => 'Bu özel sayfa tüm mevcut taslakların bir listesini gösterir.
+Kullanılmayan taslaklar $1 {{PLURAL:$1|gün|gün}} sonra otomatik olarak silinir.',
 	'drafts-view-article' => 'Sayfa',
 	'drafts-view-existing' => 'Mevcut taslaklar',
 	'drafts-view-saved' => 'Kaydedildi',
@@ -966,6 +987,31 @@ Devam etmek istiyor musunuz?',
 	'drafts-save-saved' => 'Kaydedildi',
 	'drafts-save-error' => 'Taslağı kaydederken hata',
 	'tooltip-drafts-save' => 'Taslak olarak kaydet',
+);
+
+/** Vèneto (Vèneto)
+ * @author Candalua
+ */
+$messages['vec'] = array(
+	'drafts' => 'Bozze',
+	'drafts-desc' => 'Zonta la possibilità de salvar sul server na version de [[Special:Drafts|bozza]] de na pàxena',
+	'drafts-view' => 'VardaBozza',
+	'drafts-view-summary' => 'Sta pàxena speciale la mostra na lista de tute le bozze esistenti.
+Le bozze mia doparà le vegnarà scancelà automaticamente dopo {{PLURAL:$1|$1 zòrno|$1 zòrni}}.',
+	'drafts-view-article' => 'Pàxena',
+	'drafts-view-existing' => 'Bozze esistenti',
+	'drafts-view-saved' => 'Salvà',
+	'drafts-view-discard' => 'Scancela',
+	'drafts-view-nonesaved' => 'No ti gà nissuna bozza salvà in sto momento.',
+	'drafts-view-notice' => 'Ti gà $1 de sta pàxena',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|bozza|bozze}}',
+	'drafts-view-warn' => "'Ndando fora de sta pàxena te perdarè tute quante le modìfeghe che no ti gà salvà.
+Vuto continuar?",
+	'drafts-save' => 'Salva come bozza',
+	'drafts-save-save' => 'Salva bozza',
+	'drafts-save-saved' => 'Salvà',
+	'drafts-save-error' => 'Eròr in tel salvatajo de la bozza',
+	'tooltip-drafts-save' => 'Salva come bozza',
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
