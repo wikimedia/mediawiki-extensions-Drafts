@@ -753,12 +753,15 @@ Vil du halda fram?',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Jon Harald Søby
  * @author Laaknor
  */
 $messages['no'] = array(
 	'drafts' => 'Kladder',
 	'drafts-desc' => 'Legger til muligheten til å lagre [[Special:Drafts|utkast]]versjoner av en side på serveren',
 	'drafts-view' => 'Vis utkast',
+	'drafts-view-summary' => 'Denne spesialsiden viser en liste over nåværende utkast.
+Ubrukte utkast vil slettes automatisk etter {{PLURAL:$1|én dag|$1 dager}}.',
 	'drafts-view-article' => 'Side',
 	'drafts-view-existing' => 'Eksisterende utkast',
 	'drafts-view-saved' => 'Lagret',
@@ -782,6 +785,8 @@ $messages['oc'] = array(
 	'drafts' => 'Borrolhons',
 	'drafts-desc' => 'Apond la possibilitat de salvar las versions « [[Special:Drafts|borrolhon]] » d’una pagina sul servidor',
 	'drafts-view' => 'Veire lo borrolhon',
+	'drafts-view-summary' => "Aquesta pagina especiala fa la lista de totes los borrolhons qu'existisson.
+Los borrolhons inutilizats seràn suprimits automaticament aprèp $1 {{PLURAL:$1|jorn|jorns}}.",
 	'drafts-view-article' => 'Pagina',
 	'drafts-view-existing' => 'Borrolhons existents',
 	'drafts-view-saved' => 'Salvar',
@@ -806,8 +811,8 @@ $messages['pl'] = array(
 	'drafts' => 'Szkice',
 	'drafts-desc' => 'Dodaje możliwość zapisywania [[Special:Drafts|szkicu]] strony na serwerze',
 	'drafts-view' => 'Zobacz szkic',
-	'drafts-view-summary' => 'To jest strona specjalna pokazująca listę wszystkich istniejących szkiców.
-Nieużywane szkice będą automatycznie usuwane po $1 {{PLURAL:$1|dniu|dniach}}.',
+	'drafts-view-summary' => 'Ta strona specjalna prezentuje listę wszystkich istniejących szkiców.
+Nieużywane szkice zostaną automatycznie usunięte po $1 {{PLURAL:$1|dniu|dniach}}.',
 	'drafts-view-article' => 'Strona',
 	'drafts-view-existing' => 'Istniejące szkice',
 	'drafts-view-saved' => 'Zapisane',
