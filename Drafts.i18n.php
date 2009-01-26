@@ -308,6 +308,7 @@ $messages['es'] = array(
 );
 
 /** Basque (Euskara)
+ * @author An13sa
  * @author Kobazulo
  */
 $messages['eu'] = array(
@@ -316,10 +317,14 @@ $messages['eu'] = array(
 	'drafts-view-existing' => 'Dauden zirriborroak',
 	'drafts-view-saved' => 'Gordeta',
 	'drafts-view-discard' => 'Baztertu',
+	'drafts-view-nonesaved' => 'Une honetan ez duzu gordetako zirriborrorik.',
 	'drafts-view-notice' => 'Orrialde honetarako $1 duzu.',
 	'drafts-view-notice-link' => '{{PLURAL:$1|Zirriborro $1|$1 zirriborro}}',
+	'drafts-save' => 'Gorde hau zirriborro bezala',
 	'drafts-save-save' => 'Zirriborroa gorde',
 	'drafts-save-saved' => 'Gordeta',
+	'drafts-save-error' => 'Akatsa zirriborroa gordetzean',
+	'tooltip-drafts-save' => 'Zirriborroa bezala gorde',
 );
 
 /** Persian (فارسی)
@@ -808,25 +813,25 @@ Los borrolhons inutilizats seràn suprimits automaticament aprèp $1 {{PLURAL:$1
  * @author Sp5uhe
  */
 $messages['pl'] = array(
-	'drafts' => 'Szkice',
-	'drafts-desc' => 'Dodaje możliwość zapisywania [[Special:Drafts|szkicu]] strony na serwerze',
-	'drafts-view' => 'Zobacz szkic',
-	'drafts-view-summary' => 'Ta strona specjalna prezentuje listę wszystkich istniejących szkiców.
-Nieużywane szkice zostaną automatycznie usunięte po $1 {{PLURAL:$1|dniu|dniach}}.',
+	'drafts' => 'Wersje robocze',
+	'drafts-desc' => 'Dodaje możliwość zapisywania [[Special:Drafts|wersji roboczych]] stron na serwerze',
+	'drafts-view' => 'Zobacz wersję roboczą',
+	'drafts-view-summary' => 'Ta strona specjalna prezentuje listę wszystkich wersji roboczych.
+Nieużywane wersje robocze zostaną automatycznie usunięte po $1 {{PLURAL:$1|dniu|dniach}}.',
 	'drafts-view-article' => 'Strona',
-	'drafts-view-existing' => 'Istniejące szkice',
+	'drafts-view-existing' => 'Wersje robocze',
 	'drafts-view-saved' => 'Zapisane',
 	'drafts-view-discard' => 'Usuń',
-	'drafts-view-nonesaved' => 'Nie masz obecnie zapisanych żadnych szkiców.',
+	'drafts-view-nonesaved' => 'Nie masz obecnie zapisanych żadnych wersji roboczych.',
 	'drafts-view-notice' => 'Posiadasz $1 dla tej strony.',
-	'drafts-view-notice-link' => '$1 {{PLURAL:$1|szkic|szkice|szkiców}}',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|wersja robocza|wersje robocze|wersji roboczych}}',
 	'drafts-view-warn' => 'Opuszczenie tej strony spowoduje utratę wszystkich niezapisanych zmian na tej stronie. 
 Czy chcesz kontynuować?',
-	'drafts-save' => 'Zapisz to jako szkic',
-	'drafts-save-save' => 'Zapisz szkic',
+	'drafts-save' => 'Zapisz jako wersję roboczą',
+	'drafts-save-save' => 'Zapisz wersję roboczą',
 	'drafts-save-saved' => 'Zapisany',
-	'drafts-save-error' => 'Błąd zapisywania szkicu',
-	'tooltip-drafts-save' => 'Zapisz jako szkic',
+	'drafts-save-error' => 'Błąd zapisywania wersji roboczej',
+	'tooltip-drafts-save' => 'Zapisz jako wersję roboczą',
 );
 
 /** Portuguese (Português)
