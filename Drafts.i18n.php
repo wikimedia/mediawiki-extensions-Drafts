@@ -887,6 +887,17 @@ $messages['ru'] = array(
 	'tooltip-drafts-save' => 'Сохранить как черновик',
 );
 
+/** Yakut (Саха тыла)
+ * @author HalanTul
+ */
+$messages['sah'] = array(
+	'drafts' => 'Черновиктар',
+	'drafts-desc' => 'Сирэй [[Special:Drafts|черновиктарын]] сиэрбэргэ уурары сатанар гынар',
+	'drafts-view' => 'ЧерновиигыКөрүү',
+	'drafts-view-summary' => 'Бу анал сирэйгэ черновиктар тиһиктэрэ көстөр.
+Туттуллубат черновиктар {{PLURAL:$1|1 күн|$1 күн}} буола-буола сотуллан иһэллэр.',
+);
+
 /** Slovak (Slovenčina)
  * @author Helix84
  */
