@@ -633,6 +633,8 @@ $messages['ko'] = array(
 	'drafts' => '임시 저장된 문서 목록',
 	'drafts-desc' => '작업중인 문서를 [[Special:Drafts|임시적으로 저장]]하는 기능입니다.',
 	'drafts-view' => '초고 보기',
+	'drafts-view-summary' => '이 특수 문서는 모든 존재하는 초고를 보여 주고 있습니다.
+사용되지 않는 초고는 $1일 후에 자동적으로 폐기될 것입니다.',
 	'drafts-view-article' => '문서',
 	'drafts-view-existing' => '임시 저장된 문서 목록',
 	'drafts-view-saved' => '저장된 시간',
@@ -877,9 +879,9 @@ $messages['ru'] = array(
 	'drafts-view-summary' => 'На этой служебной странице приведён список всех черновиков.
 Неиспользуемые черновики автоматически удаляются через $1 {{PLURAL:$1|день|дня|дней}}.',
 	'drafts-view-article' => 'Страница',
-	'drafts-view-existing' => 'Действующие черновики',
+	'drafts-view-existing' => 'Существующие черновики',
 	'drafts-view-saved' => 'Сохранено',
-	'drafts-view-discard' => 'Отменено',
+	'drafts-view-discard' => 'Сбросить',
 	'drafts-view-nonesaved' => 'В настоящее время у вас нет сохранённых черновиков.',
 	'drafts-view-notice' => 'У вас $1 этой страницы.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|черновик|черновика|черновиков}}',
