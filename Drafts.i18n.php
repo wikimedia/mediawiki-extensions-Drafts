@@ -40,6 +40,7 @@ Do you want to continue?',
 $messages['qqq'] = array(
 	'drafts' => 'Title of Special:Drafts',
 	'drafts-desc' => 'Short description of the Drafts extension, shown in [[Special:Version]]. Do not translate or change links.',
+	'drafts-view-summary' => 'Used in [[Special:Drafts]] when there is at least one draft saved.',
 	'drafts-view-article' => 'Name of column in Special:Drafts, when there are draft versions saved.
 
 {{Identical|Page}}',
@@ -120,6 +121,8 @@ $messages['be-tarask'] = array(
 	'drafts' => 'Чарнавікі',
 	'drafts-desc' => 'Дадае магчымасьць запісу [[Special:Drafts|чарнавіка]] старонкі на сэрвэры',
 	'drafts-view' => 'Прагляд чарнавіка',
+	'drafts-view-summary' => 'Гэтая спэцыяльная старонка паказвае сьпіс усіх існуючых чарнавікоў.
+Чарнавікі, якія не выкарыстоўваюцца, будуць аўтаматычна выдаляцца праз {{PLURAL:$1|дзень|дні|дзён}}.',
 	'drafts-view-article' => 'Старонка',
 	'drafts-view-existing' => 'Існуючыя чарнавікі',
 	'drafts-view-saved' => 'Захаваны',
@@ -505,11 +508,14 @@ Njewužiwane naćiski so po {{PLURAL:$1|$1 dnju|$1 dnjomaj|$1 dnjach|$1 dnjach}}
 /** Hungarian (Magyar)
  * @author Bdamokos
  * @author Dani
+ * @author Gondnok
  */
 $messages['hu'] = array(
 	'drafts' => 'Piszkozatok',
 	'drafts-desc' => 'Lehetővé teszi lapok [[Special:Drafts|piszkozatainak]] elmentését a szerverre',
 	'drafts-view' => 'Piszkozatok megtekintése',
+	'drafts-view-summary' => 'Ez a speciális lap listázza az összes piszkozatot.
+A fel nem használt piszkozatok {{PLURAL:$1|egy nap|$1 nap}} után automatikusan törlődnek.',
 	'drafts-view-article' => 'Lap',
 	'drafts-view-existing' => 'Elmentett piszkozatok',
 	'drafts-view-saved' => 'Elmentve',
@@ -558,6 +564,7 @@ $messages['it'] = array(
 	'drafts' => 'Bozze',
 	'drafts-desc' => 'Aggiunge la possibilità di salvare versioni di [[Special:Drafts|bozza]] di una pagina sul server',
 	'drafts-view' => 'VisualizzaBozza',
+	'drafts-view-summary' => 'Questa pagina speciale mostra un elenco delle bozze esistenti. Le bozze non usate verranno cancellate automaticamente dopo {{PLURAL:$1|$1 giorno|$1 giorni}}.',
 	'drafts-view-article' => 'Pagina',
 	'drafts-view-existing' => 'Bozze esistenti',
 	'drafts-view-saved' => 'Salvata',
