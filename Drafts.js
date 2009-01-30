@@ -72,9 +72,13 @@ wgAjaxSaveDraft.onLoad = function() {
 		
 		// Detect changes
 		addHandler(document.editform.wpTextbox1, 'keypress', wgAjaxSaveDraft.change);
+		addHandler(document.editform.wpTextbox1, 'keyup', wgAjaxSaveDraft.change);
+		addHandler(document.editform.wpTextbox1, 'keydown', wgAjaxSaveDraft.change);
 		addHandler(document.editform.wpTextbox1, 'paste', wgAjaxSaveDraft.change);
 		addHandler(document.editform.wpTextbox1, 'cut', wgAjaxSaveDraft.change);
 		addHandler(document.editform.wpSummary, 'keypress', wgAjaxSaveDraft.change);
+		addHandler(document.editform.wpSummary, 'keyup', wgAjaxSaveDraft.change);
+		addHandler(document.editform.wpSummary, 'keydown', wgAjaxSaveDraft.change);
 		addHandler(document.editform.wpSummary, 'paste', wgAjaxSaveDraft.change);
 		addHandler(document.editform.wpSummary, 'cut', wgAjaxSaveDraft.change);
 		addHandler(document.editform.wpMinoredit, 'change', wgAjaxSaveDraft.change);
