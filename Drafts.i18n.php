@@ -181,6 +181,17 @@ Da li želite da nastavite?',
 	'tooltip-drafts-save' => 'Spremi kao skicu',
 );
 
+/** Catalan (Català)
+ * @author SMP
+ */
+$messages['ca'] = array(
+	'drafts-view-article' => 'Pàgina',
+	'drafts-view-saved' => 'Desat a',
+	'drafts-view-discard' => 'Descarta',
+	'drafts-view-notice' => 'Teniu $1 per aquesta pàgina.',
+	'drafts-save-saved' => 'Desat',
+);
+
 /** Czech (Česky)
  * @author Danny B.
  * @author Matěj Grabovský
@@ -834,7 +845,7 @@ Nieużywane wersje robocze zostaną automatycznie usunięte po $1 {{PLURAL:$1|dn
 	'drafts-view-nonesaved' => 'Nie masz obecnie zapisanych żadnych wersji roboczych.',
 	'drafts-view-notice' => 'Posiadasz $1 dla tej strony.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|wersja robocza|wersje robocze|wersji roboczych}}',
-	'drafts-view-warn' => 'Opuszczenie tej strony spowoduje utratę wszystkich niezapisanych zmian na tej stronie. 
+	'drafts-view-warn' => 'Opuszczenie tej strony spowoduje utratę wszystkich niezapisanych zmian w jej treści. 
 Czy chcesz kontynuować?',
 	'drafts-save' => 'Zapisz jako wersję roboczą',
 	'drafts-save-save' => 'Zapisz wersję roboczą',
