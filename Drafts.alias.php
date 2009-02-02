@@ -38,6 +38,11 @@ $aliases['de'] = array(
 	'Drafts' => array( 'Zwischengespeicherte Versionen' ),
 );
 
+/** Lower Sorbian (Dolnoserbski) */
+$aliases['dsb'] = array(
+	'Drafts' => array( 'Nacerjenja' ),
+);
+
 /** French (Français) */
 $aliases['fr'] = array(
 	'Drafts' => array( 'Brouillons' ),
@@ -46,6 +51,11 @@ $aliases['fr'] = array(
 /** Galician (Galego) */
 $aliases['gl'] = array(
 	'Drafts' => array( 'Bosquexo' ),
+);
+
+/** Upper Sorbian (Hornjoserbsce) */
+$aliases['hsb'] = array(
+	'Drafts' => array( 'Naćiski' ),
 );
 
 /** Hungarian (Magyar) */
@@ -76,6 +86,11 @@ $aliases['nds-nl'] = array(
 /** Dutch (Nederlands) */
 $aliases['nl'] = array(
 	'Drafts' => array( 'Werkversies' ),
+);
+
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
+$aliases['no'] = array(
+	'Drafts' => array( 'Utkast' ),
 );
 
 /** Portuguese (Português) */
