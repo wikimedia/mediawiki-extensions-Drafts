@@ -4,7 +4,7 @@
  *
  * @file
  * @ingroup Extensions
- * 
+ *
  * This file contains the main include file for the Drafts extension of
  * MediaWiki.
  *
@@ -45,10 +45,15 @@ $wgDraftsStyleVersion = 2;
 // Use the value 0 to disable autosave
 $egDraftsAutoSaveWait = 120;
 
+// Seconds to wait until giving up on a response from the server
+// Use the value 0 to disable autosave
+$egDraftsAutoSaveTimeout = 10;
+
 // Days to keep drafts around before automatic deletion
 $egDraftsLifeSpan = 30;
 
 // Save and View components
+$wgAutoloadClasses['Drafts'] = $dir . 'Drafts.classes.php';
 $wgAutoloadClasses['Draft'] = $dir . 'Drafts.classes.php';
 $wgAutoloadClasses['DraftHooks'] = $dir . 'Drafts.hooks.php';
 
@@ -74,7 +79,7 @@ $wgHooks['EditPageBeforeEditButtons'][] = 'DraftHooks::controls';
 $wgHooks['EditPage::showEditForm:initial'][] = 'DraftHooks::loadForm';
 
 // Register ajax response hook
-$wgAjaxExportList[] = 'DraftHooks::AjaxSave';
+$wgAjaxExportList[] = 'DraftHooks::save';
 
 // Register ajax add script hook
 $wgHooks['AjaxAddScript'][] = 'DraftHooks::addJS';

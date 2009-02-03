@@ -29,6 +29,7 @@ Do you want to continue?',
 	'drafts-save' => 'Save this as a draft',
 	'drafts-save-save' => 'Save draft',
 	'drafts-save-saved' => 'Saved',
+	'drafts-save-saving' => 'Saving',
 	'drafts-save-error' => 'Error saving draft',
 	'tooltip-drafts-save' => 'Save as a draft',
 	'accesskey-drafts-save' => 'g', # do not translate or duplicate this message to other languages
@@ -845,7 +846,7 @@ Nieużywane wersje robocze zostaną automatycznie usunięte po $1 {{PLURAL:$1|dn
 	'drafts-view-nonesaved' => 'Nie masz obecnie zapisanych żadnych wersji roboczych.',
 	'drafts-view-notice' => 'Posiadasz $1 dla tej strony.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|wersja robocza|wersje robocze|wersji roboczych}}',
-	'drafts-view-warn' => 'Opuszczenie tej strony spowoduje utratę wszystkich niezapisanych zmian w jej treści. 
+	'drafts-view-warn' => 'Opuszczenie tej strony spowoduje utratę wszystkich niezapisanych zmian w jej treści.
 Czy chcesz kontynuować?',
 	'drafts-save' => 'Zapisz jako wersję roboczą',
 	'drafts-save-save' => 'Zapisz wersję roboczą',
