@@ -86,17 +86,21 @@ $messages['ar'] = array(
 	'drafts-save' => 'حفظ هذه كمسودة',
 	'drafts-save-save' => 'حفظ المسودة',
 	'drafts-save-saved' => 'محفوظة',
+	'drafts-save-saving' => 'حفظ',
 	'drafts-save-error' => 'خطأ أثناء حفظ المسودة',
 	'tooltip-drafts-save' => 'حفظ كمسودة',
 );
 
 /** Egyptian Spoken Arabic (مصرى)
  * @author Meno25
+ * @author Ramsis II
  */
 $messages['arz'] = array(
 	'drafts' => 'مسودات',
 	'drafts-desc' => 'يضيف القدرة على حفظ نسخ [[Special:Drafts|مسودة]] لصفحة على الخادم',
 	'drafts-view' => 'عرض المسودة',
+	'drafts-view-summary' => 'هذه الصفحة الخاصة تعرض قائمة بكل المسودات الموجودة.
+المسودات غير المستخدمة سيتم التغاضى عنها بعد {{PLURAL:$1|$1 يوم|$1 يوم}} تلقائيا.',
 	'drafts-view-article' => 'الصفحة',
 	'drafts-view-existing' => 'المسودات الموجودة',
 	'drafts-view-saved' => 'محفوظة',
@@ -109,6 +113,7 @@ $messages['arz'] = array(
 	'drafts-save' => 'حفظ هذه كمسودة',
 	'drafts-save-save' => 'حفظ المسودة',
 	'drafts-save-saved' => 'محفوظة',
+	'drafts-save-saving' => 'تسييف',
 	'drafts-save-error' => 'خطأ أثناء حفظ المسودة',
 	'tooltip-drafts-save' => 'حفظ كمسودة',
 );
@@ -136,6 +141,7 @@ $messages['be-tarask'] = array(
 	'drafts-save' => 'Захаваць гэта як чарнавік',
 	'drafts-save-save' => 'Захаваць чарнавік',
 	'drafts-save-saved' => 'Захаваны',
+	'drafts-save-saving' => 'Захаваньне',
 	'drafts-save-error' => 'Памылка захаваньня чарнавіка',
 	'tooltip-drafts-save' => 'Захаваць як чарнавік',
 );
@@ -178,6 +184,7 @@ Da li želite da nastavite?',
 	'drafts-save' => 'Spremi ovo kao skicu',
 	'drafts-save-save' => 'Sačuvaj skicu',
 	'drafts-save-saved' => 'Spremljeno',
+	'drafts-save-saving' => 'spremam',
 	'drafts-save-error' => 'Greška pri spremanju skice',
 	'tooltip-drafts-save' => 'Spremi kao skicu',
 );
@@ -196,6 +203,7 @@ $messages['ca'] = array(
 /** Czech (Česky)
  * @author Danny B.
  * @author Matěj Grabovský
+ * @author Mormegil
  */
 $messages['cs'] = array(
 	'drafts' => 'Návrhy',
@@ -214,6 +222,7 @@ Nepoužité koncepty budou po {{plural:$1|$1 dni|$1 dnech}} automaticky smazány
 	'drafts-save' => 'Uložit tuto verzi jako návrh',
 	'drafts-save-save' => 'Uložit návrh',
 	'drafts-save-saved' => 'Uložené',
+	'drafts-save-saving' => 'Ukládá se',
 	'drafts-save-error' => 'Chyba při ukládání návrhu',
 	'tooltip-drafts-save' => 'Uložit jako návrh',
 );
@@ -242,6 +251,7 @@ Möchtest du dennoch fortfahren?',
 	'drafts-save' => 'Diese Version zwischenspeichern',
 	'drafts-save-save' => 'Zwischenspeichern',
 	'drafts-save-saved' => 'Gespeichert',
+	'drafts-save-saving' => 'Speichern',
 	'drafts-save-error' => 'Fehler beim Erstellen der zwischengespeicherten Version',
 	'tooltip-drafts-save' => 'Eine zwischengespeicherte Version erstellen',
 );
@@ -274,6 +284,7 @@ Coš weto pókšacowaś?',
 	'drafts-save' => 'To ako nacerjenje składowaś',
 	'drafts-save-save' => 'Nacerjenje składowaś',
 	'drafts-save-saved' => 'Skłaźony',
+	'drafts-save-saving' => 'Składowanje',
 	'drafts-save-error' => 'Zmólka pśi składowanju nacerjenja',
 	'tooltip-drafts-save' => 'Ako nacerjenje składowaś',
 );
@@ -413,6 +424,7 @@ Les brouillons inutilisés seront automatiquement supprimés après $1 {{PLURAL:
 	'drafts-save' => 'Sauvez ceci comme brouillon',
 	'drafts-save-save' => 'Sauvegarder le brouillon',
 	'drafts-save-saved' => 'Sauvegardé',
+	'drafts-save-saving' => 'Sauvegarde en cours',
 	'drafts-save-error' => 'Erreur de sauvegarde du brouillon',
 	'tooltip-drafts-save' => 'Sauvegarder comme brouillon',
 );
@@ -438,6 +450,7 @@ Quere continuar?',
 	'drafts-save' => 'Gardar isto como un borrador',
 	'drafts-save-save' => 'Gardar o borrador',
 	'drafts-save-saved' => 'Gardado',
+	'drafts-save-saving' => 'Gardando',
 	'drafts-save-error' => 'Produciuse un erro ao gardar o borrador',
 	'tooltip-drafts-save' => 'Gardar como un borrador',
 );
@@ -463,6 +476,7 @@ Mechtsch einewäg wytergoh?',
 	'drafts-save' => 'Die Version zwischespychere',
 	'drafts-save-save' => 'Zwischespychere',
 	'drafts-save-saved' => 'Gspycheret',
+	'drafts-save-saving' => 'Am Spychere',
 	'drafts-save-error' => 'Fähler bim Aalege vu dr zwischegspycherete Version',
 	'tooltip-drafts-save' => 'E zwischegspychereti Version aalege',
 );
@@ -514,6 +528,7 @@ Njewužiwane naćiski so po {{PLURAL:$1|$1 dnju|$1 dnjomaj|$1 dnjach|$1 dnjach}}
 	'drafts-save' => 'To jako naćisk składować',
 	'drafts-save-save' => 'Naćisk składować',
 	'drafts-save-saved' => 'Składowany',
+	'drafts-save-saving' => 'Składowanje',
 	'drafts-save-error' => 'Zmylk při składowanju naćiska',
 	'tooltip-drafts-save' => 'Jako naćisk składować',
 );
@@ -613,6 +628,7 @@ $messages['ja'] = array(
 	'drafts-save' => 'これを下書きとして保存する',
 	'drafts-save-save' => '下書きを保存',
 	'drafts-save-saved' => '保存完了',
+	'drafts-save-saving' => '保存中',
 	'drafts-save-error' => '下書きの保存に失敗',
 	'tooltip-drafts-save' => '下書きとして保存する',
 );
@@ -693,6 +709,7 @@ Wellß De wigger maaache?',
 	'drafts-save' => 'Wat mer heh süht als_ennen Entworf avspeichere',
 	'drafts-save-save' => 'Entworf avspeichere',
 	'drafts-save-saved' => 'Avjespeichert',
+	'drafts-save-saving' => 'Am Avspeichere',
 	'drafts-save-error' => 'Bemm Entworf Speichere es jet donevve jejange, dat hät nit jeflupp.',
 	'tooltip-drafts-save' => 'Als ene Entworf avspeichere',
 );
@@ -717,6 +734,7 @@ Bruillonen déi net benotzt ginn, ginn no {PLURAL:$1|engem Dag|$1 Deeg}} automat
 	'drafts-save' => 'Dës als Brouillon späicheren',
 	'drafts-save-save' => 'Brouillon späicheren',
 	'drafts-save-saved' => 'Gespäichert',
+	'drafts-save-saving' => 'Späicheren',
 	'drafts-save-error' => 'Feller beim späicher vum Brouillon',
 	'tooltip-drafts-save' => 'Als Brouillon späicheren',
 );
@@ -750,6 +768,7 @@ Wilt u doorgaan?',
 	'drafts-save' => 'Opslaan als werkversie',
 	'drafts-save-save' => 'Werkversie opslaan',
 	'drafts-save-saved' => 'Opgeslagen',
+	'drafts-save-saving' => 'Bezig met opslaan',
 	'drafts-save-error' => 'Fout bij het opslaan van de werkversie',
 	'tooltip-drafts-save' => 'Als werkversie opslaan',
 );
@@ -775,6 +794,7 @@ Vil du halda fram?',
 	'drafts-save' => 'Lagra dette som eit utkast',
 	'drafts-save-save' => 'Lagra utkast',
 	'drafts-save-saved' => 'Lagra',
+	'drafts-save-saving' => 'Lagrar',
 	'drafts-save-error' => 'Det oppstod ein feil under lagring av utkast',
 	'tooltip-drafts-save' => 'Lagra som utkast',
 );
@@ -801,6 +821,7 @@ Vil du fortsette?',
 	'drafts-save' => 'Lagre dette som et utkast',
 	'drafts-save-save' => 'Lagre utkast',
 	'drafts-save-saved' => 'Lagret',
+	'drafts-save-saving' => 'Lagrer',
 	'drafts-save-error' => 'Feil ved lagring av utkast',
 	'tooltip-drafts-save' => 'Lagre som et utkast',
 );
@@ -831,6 +852,7 @@ Los borrolhons inutilizats seràn suprimits automaticament aprèp $1 {{PLURAL:$1
 
 /** Polish (Polski)
  * @author Derbeth
+ * @author Holek
  * @author Leinad
  * @author Sp5uhe
  */
@@ -845,13 +867,14 @@ Nieużywane wersje robocze zostaną automatycznie usunięte po $1 {{PLURAL:$1|dn
 	'drafts-view-saved' => 'Zapisane',
 	'drafts-view-discard' => 'Usuń',
 	'drafts-view-nonesaved' => 'Nie masz obecnie zapisanych żadnych wersji roboczych.',
-	'drafts-view-notice' => 'Posiadasz $1 dla tej strony.',
-	'drafts-view-notice-link' => '$1 {{PLURAL:$1|wersja robocza|wersje robocze|wersji roboczych}}',
-	'drafts-view-warn' => 'Opuszczenie tej strony spowoduje utratę wszystkich niezapisanych zmian w jej treści.
+	'drafts-view-notice' => 'Masz obecnie $1 tej strony.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|wersję roboczą|wersje robocze|wersji roboczych}}',
+	'drafts-view-warn' => 'Opuszczenie tej strony spowoduje utratę wszystkich niezapisanych zmian w jej treści. 
 Czy chcesz kontynuować?',
 	'drafts-save' => 'Zapisz jako wersję roboczą',
 	'drafts-save-save' => 'Zapisz wersję roboczą',
 	'drafts-save-saved' => 'Zapisany',
+	'drafts-save-saving' => 'Zapisywanie',
 	'drafts-save-error' => 'Błąd zapisywania wersji roboczej',
 	'tooltip-drafts-save' => 'Zapisz jako wersję roboczą',
 );
@@ -877,6 +900,7 @@ Pretende continuar?',
 	'drafts-save' => 'Gravar isto como rascunho',
 	'drafts-save-save' => 'Gravar rascunho',
 	'drafts-save-saved' => 'Gravado',
+	'drafts-save-saving' => 'A gravar',
 	'drafts-save-error' => 'Erro a gravar rascunho',
 	'tooltip-drafts-save' => 'Gravar como rascunho',
 );
@@ -910,6 +934,7 @@ $messages['ru'] = array(
 	'drafts-save' => 'Сохранить это как черновик',
 	'drafts-save-save' => 'Сохранить черновик',
 	'drafts-save-saved' => 'Сохранено',
+	'drafts-save-saving' => 'Сохранение',
 	'drafts-save-error' => 'Ошибка сохранения черновика',
 	'tooltip-drafts-save' => 'Сохранить как черновик',
 );
@@ -945,6 +970,7 @@ Nepoužité návrhy sa po {{PLURAL:$1|$1 dni|$1 dňoch}} automaticky zahodia.',
 	'drafts-save' => 'Uložiť túto verziu ako návrh',
 	'drafts-save-save' => 'Uložiť návrh',
 	'drafts-save-saved' => 'Uložené',
+	'drafts-save-saving' => 'Ukladá sa',
 	'drafts-save-error' => 'Chyba pri ukladaní návrhu',
 	'tooltip-drafts-save' => 'Uložiť ako návrh',
 );
@@ -971,6 +997,7 @@ Vill du fortsätta?',
 	'drafts-save' => 'Spara detta som ett utkast',
 	'drafts-save-save' => 'Spara utkast',
 	'drafts-save-saved' => 'Sparad',
+	'drafts-save-saving' => 'Sparar',
 	'drafts-save-error' => 'Fel vid sparande av utkast',
 	'tooltip-drafts-save' => 'Spara som ett utkast',
 );
@@ -1003,6 +1030,7 @@ Nais mo bang magpatuloy?',
 	'drafts-save' => 'Sagipin ito bilang isang balangkas',
 	'drafts-save-save' => 'Sagipin ang balangkas',
 	'drafts-save-saved' => 'Nasagip na',
+	'drafts-save-saving' => 'Sinasagip',
 	'drafts-save-error' => 'May kamalian sa pagsasagip ng balangkas',
 	'tooltip-drafts-save' => 'Sinagip bilang isang balangkas',
 );
@@ -1028,6 +1056,7 @@ Devam etmek istiyor musunuz?',
 	'drafts-save' => 'Bunu taslak olarak kaydet',
 	'drafts-save-save' => 'Taslağı kaydet',
 	'drafts-save-saved' => 'Kaydedildi',
+	'drafts-save-saving' => 'Kaydediliyor',
 	'drafts-save-error' => 'Taslağı kaydederken hata',
 	'tooltip-drafts-save' => 'Taslak olarak kaydet',
 );
