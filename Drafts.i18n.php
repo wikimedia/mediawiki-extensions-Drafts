@@ -581,6 +581,7 @@ Continuar?',
 	'drafts-save' => 'Immagazinar isto como version provisori',
 	'drafts-save-save' => 'Immagazinar version provisori',
 	'drafts-save-saved' => 'Immagazinate',
+	'drafts-save-saving' => 'Immagazinage in curso',
 	'drafts-save-error' => 'Error immagazinante le version provisori',
 	'tooltip-drafts-save' => 'Immagazinar como version provisori',
 );
