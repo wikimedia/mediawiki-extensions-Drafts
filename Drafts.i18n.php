@@ -847,6 +847,7 @@ Los borrolhons inutilizats seràn suprimits automaticament aprèp $1 {{PLURAL:$1
 	'drafts-save' => 'Salvatz aquò coma borrolhon',
 	'drafts-save-save' => 'Salvar lo borrolhon',
 	'drafts-save-saved' => 'Salvat',
+	'drafts-save-saving' => 'Salvament en cors',
 	'drafts-save-error' => 'Error de salvament del borrolhon',
 	'tooltip-drafts-save' => 'Salvar coma borrolhon',
 );
@@ -1083,6 +1084,7 @@ Vuto continuar?",
 	'drafts-save' => 'Salva come bozza',
 	'drafts-save-save' => 'Salva bozza',
 	'drafts-save-saved' => 'Salvà',
+	'drafts-save-saving' => 'Drio salvar',
 	'drafts-save-error' => 'Eròr in tel salvatajo de la bozza',
 	'tooltip-drafts-save' => 'Salva come bozza',
 );
