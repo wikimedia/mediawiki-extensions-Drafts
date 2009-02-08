@@ -88,6 +88,11 @@ $aliases['nl'] = array(
 	'Drafts' => array( 'Werkversies' ),
 );
 
+/** Norwegian Nynorsk (‪Norsk (nynorsk)‬) */
+$aliases['nn'] = array(
+	'Drafts' => array( 'Utkast' ),
+);
+
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
 $aliases['no'] = array(
 	'Drafts' => array( 'Utkast' ),
