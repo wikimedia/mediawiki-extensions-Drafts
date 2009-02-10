@@ -168,10 +168,11 @@ abstract class Drafts {
 					urlencode( $draft->getID() )
 				);
 				// Build discard link
-				$urlDiscard = sprintf( '%s?discard=%s&token=%s',
-					SpecialPage::getTitleFor( 'Drafts' )->getFullUrl(),
-					urlencode( $draft->getID() ),
-					urlencode( $wgUser->editToken() )
+				$urlDiscard = SpecialPage::getTitleFor( 'Drafts' )->getFullUrl(
+					sprintf( 'discard=%s&token=%s',
+						urlencode( $draft->getID() ),
+						urlencode( $wgUser->editToken() )
+					)
 				);
 				// If in edit mode, return to editor
 				if (
