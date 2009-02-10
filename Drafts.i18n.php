@@ -459,6 +459,13 @@ Quere continuar?',
 	'tooltip-drafts-save' => 'Gardar como un borrador',
 );
 
+/** Ancient Greek (Ἀρχαία ἑλληνικὴ)
+ * @author Crazymadlover
+ */
+$messages['grc'] = array(
+	'drafts-view-article' => 'Δέλτος',
+);
+
 /** Swiss German (Alemannisch)
  * @author Als-Holder
  */

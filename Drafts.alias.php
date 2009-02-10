@@ -78,6 +78,11 @@ $aliases['lb'] = array(
 	'Drafts' => array( 'Brouillonen' ),
 );
 
+/** Macedonian (Македонски) */
+$aliases['mk'] = array(
+	'Drafts' => array( 'РаботнаВерзија' ),
+);
+
 /** Nedersaksisch (Nedersaksisch) */
 $aliases['nds-nl'] = array(
 	'Drafts' => array( 'Warkversies' ),
