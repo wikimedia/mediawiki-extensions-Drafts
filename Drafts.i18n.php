@@ -316,6 +316,7 @@ $messages['eo'] = array(
 /** Spanish (Español)
  * @author Crazymadlover
  * @author Imre
+ * @author Remember the dot
  */
 $messages['es'] = array(
 	'drafts' => 'Borradores',
@@ -326,9 +327,12 @@ $messages['es'] = array(
 	'drafts-view-discard' => 'Descartar',
 	'drafts-view-nonesaved' => 'No tiene ningún borrador grabado en este momento.',
 	'drafts-view-notice' => 'usted tiene $1 para esta página.',
+	'drafts-view-warn' => 'Por navigar fuera de esta página, usted perderá todos cambios no guardados a esta página.
+¿Quiere continuar?',
 	'drafts-save' => 'Guardar esto como un borrador',
 	'drafts-save-save' => 'Grabar borrador',
 	'drafts-save-saved' => 'Grabado',
+	'drafts-save-saving' => 'Grabando',
 	'drafts-save-error' => 'Error grabando borrador',
 	'tooltip-drafts-save' => 'Guardar como un borrador',
 );
@@ -950,6 +954,21 @@ $messages['sah'] = array(
 	'drafts-view' => 'ЧерновиигыКөрүү',
 	'drafts-view-summary' => 'Бу анал сирэйгэ черновиктар тиһиктэрэ көстөр.
 Туттуллубат черновиктар {{PLURAL:$1|1 күн|$1 күн}} буола-буола сотуллан иһэллэр.',
+	'drafts-view-article' => 'Сирэй',
+	'drafts-view-existing' => 'Билигин баар черновиктар',
+	'drafts-view-saved' => 'Сатанна',
+	'drafts-view-discard' => 'Бырах/ыраастаа',
+	'drafts-view-nonesaved' => 'Билигин кэлин туттарга хаалларыллыбыт черновигыҥ суох.',
+	'drafts-view-notice' => 'Эйиэхэ сирэй $1 турар.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|черновик|черновиктар}}',
+	'drafts-view-warn' => 'Бу сирэйтэн бардаххына бигэргэтиллибэтэх уларытыыларгын сүтэриэҥ.
+Салгыыгын дуо?',
+	'drafts-save' => 'Маны черновик быһыытынан хааллар',
+	'drafts-save-save' => 'Черновигы кэлин туттарга хааллар',
+	'drafts-save-saved' => 'Хаалларылынна',
+	'drafts-save-saving' => 'Хаалларыы',
+	'drafts-save-error' => 'Сатаан хаалларыллыбата',
+	'tooltip-drafts-save' => 'Харатынан хааллар',
 );
 
 /** Slovak (Slovenčina)
