@@ -280,7 +280,9 @@ class DraftHooks {
 					'type' => $wgJsMimeType,
 					'src' => $wgScriptPath . '/extensions/Drafts/Drafts.js?' .
 						$wgDraftsStyleVersion
-				)
+				),
+				'',
+				false
 			)
 		);
 		// Continue
