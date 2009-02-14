@@ -289,6 +289,13 @@ Coš weto pókšacowaś?',
 	'tooltip-drafts-save' => 'Ako nacerjenje składowaś',
 );
 
+/** Greek (Ελληνικά)
+ * @author Omnipaedista
+ */
+$messages['el'] = array(
+	'drafts-view-article' => 'Σελίδα',
+);
+
 /** Esperanto (Esperanto)
  * @author Melancholie
  * @author Yekrats
@@ -321,12 +328,15 @@ $messages['eo'] = array(
 $messages['es'] = array(
 	'drafts' => 'Borradores',
 	'drafts-desc' => 'Agregar la habilidad de grabar versiones [[Special:Drafts|borrador]] de esta página en el servidor',
+	'drafts-view-summary' => 'Esta página especial muestra una lista de todos los borradores existentes.
+Los borradores no usados serán descartados despues de {{PLURAL:$1|$1 día|$1 días}} automáticamente.',
 	'drafts-view-article' => 'Página',
 	'drafts-view-existing' => 'Borradores existentes',
 	'drafts-view-saved' => 'Grabar',
 	'drafts-view-discard' => 'Descartar',
 	'drafts-view-nonesaved' => 'No tiene ningún borrador grabado en este momento.',
 	'drafts-view-notice' => 'usted tiene $1 para esta página.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|borrador|borradores}}',
 	'drafts-view-warn' => 'Por navigar fuera de esta página, usted perderá todos cambios no guardados a esta página.
 ¿Quiere continuar?',
 	'drafts-save' => 'Guardar esto como un borrador',
@@ -756,6 +766,29 @@ Bruillonen déi net benotzt ginn, ginn no {PLURAL:$1|engem Dag|$1 Deeg}} automat
  */
 $messages['li'] = array(
 	'drafts-view-article' => 'Pazjena',
+);
+
+/** Malay (Bahasa Melayu)
+ * @author Aviator
+ */
+$messages['ms'] = array(
+	'drafts' => 'Draf',
+	'drafts-desc' => 'Menambah kebolehan untuk menyimpan laman versi [[Special:Drafts|draf]] dalam komputer pelayan',
+	'drafts-view-summary' => 'Yang berikut ialah senarai semua draf. Draf-draf yang tidak digunakan akan diabaikan secara automatik selepas $1 hari.',
+	'drafts-view-article' => 'Laman',
+	'drafts-view-existing' => 'Draf yang ada',
+	'drafts-view-saved' => 'Disimpan',
+	'drafts-view-discard' => 'Abaikan',
+	'drafts-view-nonesaved' => 'Anda tidak mempunyai draf.',
+	'drafts-view-notice' => 'Anda mempunyai $1 untuk laman ini.',
+	'drafts-view-notice-link' => '$1 draf',
+	'drafts-view-warn' => 'Anda akan kehilangan semua perubahan pada laman ini yang belum disimpan. Betul anda mahu keluar dari laman ini?',
+	'drafts-save' => 'Simpan suntingan ini sebagai draf',
+	'drafts-save-save' => 'Simpan draf',
+	'drafts-save-saved' => 'Disimpan',
+	'drafts-save-saving' => 'Menyimpan',
+	'drafts-save-error' => 'Ralat ketika menyimpan draf',
+	'tooltip-drafts-save' => 'Simpan sebagai draf',
 );
 
 /** Dutch (Nederlands)
