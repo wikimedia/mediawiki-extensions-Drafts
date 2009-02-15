@@ -63,6 +63,11 @@ $aliases['hu'] = array(
 	'Drafts' => array( 'Piszkozatok', 'Vázlatok' ),
 );
 
+/** Interlingua (Interlingua) */
+$aliases['ia'] = array(
+	'Drafts' => array( 'VersionesProvisori' ),
+);
+
 /** Japanese (日本語) */
 $aliases['ja'] = array(
 	'Drafts' => array( '下書き' ),
@@ -103,6 +108,11 @@ $aliases['no'] = array(
 	'Drafts' => array( 'Utkast' ),
 );
 
+/** Occitan (Occitan) */
+$aliases['oc'] = array(
+	'Drafts' => array( 'Borrolhons' ),
+);
+
 /** Portuguese (Português) */
 $aliases['pt'] = array(
 	'Drafts' => array( 'Rascunhos' ),
@@ -116,5 +126,15 @@ $aliases['pt-br'] = array(
 /** Sanskrit (संस्कृत) */
 $aliases['sa'] = array(
 	'Drafts' => array( 'प्रारूप' ),
+);
+
+/** Tagalog (Tagalog) */
+$aliases['tl'] = array(
+	'Drafts' => array( 'Mga balangkas' ),
+);
+
+/** Vèneto (Vèneto) */
+$aliases['vec'] = array(
+	'Drafts' => array( 'Bozze' ),
 );
 
