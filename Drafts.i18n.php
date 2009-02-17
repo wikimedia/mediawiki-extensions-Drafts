@@ -290,9 +290,12 @@ Coš weto pókšacowaś?',
 );
 
 /** Greek (Ελληνικά)
+ * @author Dead3y3
  * @author Omnipaedista
  */
 $messages['el'] = array(
+	'drafts' => 'Drafts',
+	'drafts-desc' => 'Προσθέτει την ικανότητα για αποθήκευση [[Special:Drafts|πρόχειρων]] εκδόσεων μιας σελίδας στον εξυπηρετητή',
 	'drafts-view-article' => 'Σελίδα',
 );
 
@@ -420,27 +423,29 @@ Haluatko jatkaa?',
 /** French (Français)
  * @author Grondin
  * @author IAlex
+ * @author Verdy p
  */
 $messages['fr'] = array(
 	'drafts' => 'Brouillons',
-	'drafts-desc' => 'Ajoute la possibilité de sauvegarder les versions « [[Special:Drafts|brouillon]] » d’une page sur le serveur',
+	'drafts-desc' => 'Ajoute la possibilité d’enregistrer les versions « [[Special:Drafts|brouillons]] » d’une page sur le serveur',
 	'drafts-view' => 'Voir le brouillon',
 	'drafts-view-summary' => 'Cette page spéciale liste tous les brouillons existant.
 Les brouillons inutilisés seront automatiquement supprimés après $1 {{PLURAL:$1|jour|jours}}.',
 	'drafts-view-article' => 'Page',
 	'drafts-view-existing' => 'Brouillons existants',
-	'drafts-view-saved' => 'Sauvegarder',
+	'drafts-view-saved' => 'Enregistré',
 	'drafts-view-discard' => 'Abandonner',
-	'drafts-view-nonesaved' => 'Vous n’avez pas de brouillon sauvegardé actuellement.',
+	'drafts-view-nonesaved' => 'Vous n’avez actuellement enregistré aucun brouillon.',
 	'drafts-view-notice' => 'Vous avez $1 pour cette page.',
-	'drafts-view-notice-link' => '$1 {{PLURAL:$1|brouillon|brouillons}}',
-	'drafts-view-warn' => 'En navigant en dehors de cette page vous y perdrez toutes les modifications non sauvegardées.',
-	'drafts-save' => 'Sauvez ceci comme brouillon',
-	'drafts-save-save' => 'Sauvegarder le brouillon',
-	'drafts-save-saved' => 'Sauvegardé',
-	'drafts-save-saving' => 'Sauvegarde en cours',
-	'drafts-save-error' => 'Erreur de sauvegarde du brouillon',
-	'tooltip-drafts-save' => 'Sauvegarder comme brouillon',
+	'drafts-view-notice-link' => '$1 brouillon{{PLURAL:$1||s}}',
+	'drafts-view-warn' => 'En navigant en dehors de cette page, vous perdrez toutes les modifications non enregistrées de cette page.
+Voulez-vous continuer ?',
+	'drafts-save' => 'Enregistrer ceci comme brouillon',
+	'drafts-save-save' => 'Enregistrer le brouillon',
+	'drafts-save-saved' => 'Enregistré',
+	'drafts-save-saving' => 'Enregistrement en cours',
+	'drafts-save-error' => 'Erreur d’enregistrement du brouillon',
+	'tooltip-drafts-save' => 'Enregistrer comme brouillon',
 );
 
 /** Galician (Galego)
@@ -631,6 +636,14 @@ Continuar?',
 	'drafts-save-saving' => 'Immagazinage in curso',
 	'drafts-save-error' => 'Error immagazinante le version provisori',
 	'tooltip-drafts-save' => 'Immagazinar como version provisori',
+);
+
+/** Ido (Ido)
+ * @author Malafaya
+ */
+$messages['io'] = array(
+	'drafts-view-article' => 'Pagino',
+	'drafts-view-notice' => 'Vu havas $1 por ca pagino.',
 );
 
 /** Italian (Italiano)
@@ -1172,6 +1185,32 @@ Vuto continuar?",
 	'drafts-save-saving' => 'Drio salvar',
 	'drafts-save-error' => 'Eròr in tel salvatajo de la bozza',
 	'tooltip-drafts-save' => 'Salva come bozza',
+);
+
+/** Vietnamese (Tiếng Việt)
+ * @author Vinhtantran
+ */
+$messages['vi'] = array(
+	'drafts' => 'Bản thảo',
+	'drafts-desc' => 'Thêm khả năng lưu các phiên bản [[Special:Drafts|bản thảo]] của trang trên máy chủ',
+	'drafts-view' => 'Xem bản thảo',
+	'drafts-view-summary' => 'Trang đặc biệt này hiển thị một danh sách tất cả các bản thảo hiện có.
+Các bản thảo không được sử dụng sẽ được tự động bỏ đi sau {{PLURAL:$1|$1 ngày|$1 ngày}}.',
+	'drafts-view-article' => 'Trang',
+	'drafts-view-existing' => 'Bản thảo hiện tại',
+	'drafts-view-saved' => 'Đã lưu',
+	'drafts-view-discard' => 'Loại bỏ',
+	'drafts-view-nonesaved' => 'Bạn không có bất kỳ bản thảo lưu trữ nào vào lúc này.',
+	'drafts-view-notice' => 'Bạn có $1 cho trang này.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|bản thảo|bản thảo}}',
+	'drafts-view-warn' => 'Nếu tắt trang này bạn sẽ mất toàn bộ các thay đổi chưa lưu đối với trang.
+Bạn có muốn tiếp tục?',
+	'drafts-save' => 'Lưu bản này làm bản thảo',
+	'drafts-save-save' => 'Lưu bản thảo',
+	'drafts-save-saved' => 'Đã lưu',
+	'drafts-save-saving' => 'Đang lưu',
+	'drafts-save-error' => 'Lỗi khi lưu bản thảo',
+	'tooltip-drafts-save' => 'Lưu làm bản thảo',
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
