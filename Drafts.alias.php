@@ -43,6 +43,11 @@ $aliases['dsb'] = array(
 	'Drafts' => array( 'Nacerjenja' ),
 );
 
+/** Spanish (Español) */
+$aliases['es'] = array(
+	'Drafts' => array( 'Borradores', 'Borrador' ),
+);
+
 /** French (Français) */
 $aliases['fr'] = array(
 	'Drafts' => array( 'Brouillons' ),
@@ -65,7 +70,7 @@ $aliases['hu'] = array(
 
 /** Interlingua (Interlingua) */
 $aliases['ia'] = array(
-	'Drafts' => array( 'VersionesProvisori' ),
+	'Drafts' => array( 'Versiones provisori' ),
 );
 
 /** Japanese (日本語) */
