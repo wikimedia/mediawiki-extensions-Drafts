@@ -43,6 +43,11 @@ $aliases['dsb'] = array(
 	'Drafts' => array( 'Nacerjenja' ),
 );
 
+/** Greek (Ελληνικά) */
+$aliases['el'] = array(
+	'Drafts' => array( 'Πρόχειρα' ),
+);
+
 /** Spanish (Español) */
 $aliases['es'] = array(
 	'Drafts' => array( 'Borradores', 'Borrador' ),

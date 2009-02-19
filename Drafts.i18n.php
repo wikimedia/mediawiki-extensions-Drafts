@@ -319,18 +319,21 @@ $messages['eo'] = array(
 	'drafts-save' => 'Konservi ĉi tiun kiel malneton',
 	'drafts-save-save' => 'Konservi malneton',
 	'drafts-save-saved' => 'Konservita',
+	'drafts-save-saving' => 'Konservante',
 	'drafts-save-error' => 'Eraro konservante malneton',
 	'tooltip-drafts-save' => 'Konservi kiel malneton',
 );
 
 /** Spanish (Español)
  * @author Crazymadlover
+ * @author Dferg
  * @author Imre
  * @author Remember the dot
  */
 $messages['es'] = array(
 	'drafts' => 'Borradores',
 	'drafts-desc' => 'Agregar la habilidad de grabar versiones [[Special:Drafts|borrador]] de esta página en el servidor',
+	'drafts-view' => 'Ver borrador',
 	'drafts-view-summary' => 'Esta página especial muestra una lista de todos los borradores existentes.
 Los borradores no usados serán descartados despues de {{PLURAL:$1|$1 día|$1 días}} automáticamente.',
 	'drafts-view-article' => 'Página',
@@ -987,6 +990,32 @@ Pretende continuar?',
 	'drafts-save-saved' => 'Gravado',
 	'drafts-save-saving' => 'A gravar',
 	'drafts-save-error' => 'Erro a gravar rascunho',
+	'tooltip-drafts-save' => 'Gravar como rascunho',
+);
+
+/** Brazilian Portuguese (Português do Brasil)
+ * @author Eduardo.mps
+ */
+$messages['pt-br'] = array(
+	'drafts' => 'Rascunhos',
+	'drafts-desc' => 'Adiciona a possibilidade de gravar versões [[Special:Drafts|rascunho]] de uma página no servidor',
+	'drafts-view' => 'Ver Rascunho',
+	'drafts-view-summary' => 'Esta página especial mostra uma lista de todos os rascunhos existentes.
+Rascunhos não usados serão descartados automaticamente após {{PLURAL:$1|1 dia|$1 dias}}.',
+	'drafts-view-article' => 'Página',
+	'drafts-view-existing' => 'Rascunhos existentes',
+	'drafts-view-saved' => 'Gravado',
+	'drafts-view-discard' => 'Descartar',
+	'drafts-view-nonesaved' => 'Você não tem neste momento quaisquer rascunhos gravados.',
+	'drafts-view-notice' => 'Você tem $1 para esta página.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|rascunho|rascunhos}}',
+	'drafts-view-warn' => 'Se navegar para fora desta página, perderá todas as alterações por gravar desta página.
+Deseja continuar?',
+	'drafts-save' => 'Gravar isto como rascunho',
+	'drafts-save-save' => 'Gravar rascunho',
+	'drafts-save-saved' => 'Gravado',
+	'drafts-save-saving' => 'Gravando',
+	'drafts-save-error' => 'Erro ao gravar rascunho',
 	'tooltip-drafts-save' => 'Gravar como rascunho',
 );
 
