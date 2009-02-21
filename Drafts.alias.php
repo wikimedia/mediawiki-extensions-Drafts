@@ -48,6 +48,11 @@ $aliases['el'] = array(
 	'Drafts' => array( 'Πρόχειρα' ),
 );
 
+/** Esperanto (Esperanto) */
+$aliases['eo'] = array(
+	'Drafts' => array( 'Malnetoj' ),
+);
+
 /** Spanish (Español) */
 $aliases['es'] = array(
 	'Drafts' => array( 'Borradores', 'Borrador' ),

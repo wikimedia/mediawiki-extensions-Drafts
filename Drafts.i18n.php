@@ -747,6 +747,7 @@ $messages['ko'] = array(
 	'drafts-save' => '이 편집을 초안으로 저장',
 	'drafts-save-save' => '임시 저장',
 	'drafts-save-saved' => '저장됨',
+	'drafts-save-saving' => '저장 중',
 	'drafts-save-error' => '임시 저장 중 오류 발생',
 	'tooltip-drafts-save' => '초안으로 저장하기',
 );
@@ -1188,6 +1189,13 @@ Devam etmek istiyor musunuz?',
 	'drafts-save-saving' => 'Kaydediliyor',
 	'drafts-save-error' => 'Taslağı kaydederken hata',
 	'tooltip-drafts-save' => 'Taslak olarak kaydet',
+);
+
+/** Uighur (Latin) (Uyghurche‎ / ئۇيغۇرچە (Latin))
+ * @author Jose77
+ */
+$messages['ug-latn'] = array(
+	'drafts-view-article' => 'Bet',
 );
 
 /** Vèneto (Vèneto)
