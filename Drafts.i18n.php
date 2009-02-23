@@ -646,6 +646,7 @@ Continuar?',
  */
 $messages['io'] = array(
 	'drafts-view-article' => 'Pagino',
+	'drafts-view-saved' => 'Registragita',
 	'drafts-view-notice' => 'Vu havas $1 por ca pagino.',
 );
 
