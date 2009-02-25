@@ -835,6 +835,15 @@ $messages['ms'] = array(
 	'tooltip-drafts-save' => 'Simpan sebagai draf',
 );
 
+/** Low German (Plattdüütsch)
+ * @author Slomox
+ */
+$messages['nds'] = array(
+	'drafts-view-article' => 'Sied',
+	'drafts-view-saved' => 'Spiekert',
+	'drafts-save-saved' => 'Spiekert',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  * @author Tvdm
