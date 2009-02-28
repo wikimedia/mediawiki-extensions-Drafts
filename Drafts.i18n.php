@@ -806,10 +806,30 @@ Bruillonen déi net benotzt ginn, ginn no {PLURAL:$1|engem Dag|$1 Deeg}} automat
 );
 
 /** Limburgish (Limburgs)
+ * @author Ooswesthoesbes
  * @author Remember the dot
  */
 $messages['li'] = array(
+	'drafts' => 'Drafts',
+	'drafts-desc' => "Veug functionaliteit tou om [[Special:Drafts|drafts]] van 'n pagina op de server op te slaon",
+	'drafts-view' => 'DraftZeen',
+	'drafts-view-summary' => "Deze speciale pagina toont 'n lies van alle bestaonde drafts.
+Ongebroekte drafts zulle automatisch waere verwiederd nao {{PLURAL:$1|$1 daag|$1 daag}}.",
 	'drafts-view-article' => 'Pazjena',
+	'drafts-view-existing' => 'Bestaonde drafts',
+	'drafts-view-saved' => 'Opgeslaon',
+	'drafts-view-discard' => 'Wis',
+	'drafts-view-nonesaved' => 'De höbs gein opgeslage drafts.',
+	'drafts-view-notice' => 'De mós $1 veur dees pazjena.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|draft|drafts}}',
+	'drafts-view-warn' => 'Door ven dees paasj weg te gaon, verluus se als verwieziginge die se nag neet neet höbs opgeslage.
+Wilse doorgaon?',
+	'drafts-save' => "Slaon es 'ne draft",
+	'drafts-save-save' => 'Opslaon',
+	'drafts-save-saved' => 'Opgeslaon',
+	'drafts-save-saving' => 'Opslääondje',
+	'drafts-save-error' => 'Fout ópsläöndje draft',
+	'tooltip-drafts-save' => 'Opslaon es draft',
 );
 
 /** Malay (Bahasa Melayu)
@@ -1206,6 +1226,27 @@ Devam etmek istiyor musunuz?',
  */
 $messages['ug-latn'] = array(
 	'drafts-view-article' => 'Bet',
+);
+
+/** Ukrainian (Українська)
+ * @author AS
+ */
+$messages['uk'] = array(
+	'drafts' => 'Чернетки',
+	'drafts-desc' => 'Додає можливість зберегти [[Special:Drafts|чернетки]] сторінок на сервері',
+	'drafts-view' => 'ОглядЧернеток',
+	'drafts-view-summary' => 'На цій спеціальній сторінці є список усіх чернеток.
+Невживані чернетки автоматично вилучаються через {{PLURAL:$1|день|дні|днів}}.',
+	'drafts-view-article' => 'Сторінка',
+	'drafts-view-existing' => 'Існуючі чернетки',
+	'drafts-view-saved' => 'Збережено',
+	'drafts-view-discard' => 'Відкинути',
+	'drafts-view-nonesaved' => 'На даний момент ви не маєте збережених чернеток.',
+	'drafts-view-notice' => 'Ви маєте $1 цієї сторінки',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|чернетка|чернетки|чернеток}}',
+	'drafts-view-warn' => 'При виході з цієї сторінки ви втратите усі незбережені дані.
+Бажаєте продовжити?',
+	'drafts-save' => 'Зберегти це як чернетку',
 );
 
 /** Vèneto (Vèneto)
