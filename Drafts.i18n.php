@@ -855,6 +855,13 @@ $messages['ms'] = array(
 	'tooltip-drafts-save' => 'Simpan sebagai draf',
 );
 
+/** Mirandese (Mirandés)
+ * @author Malafaya
+ */
+$messages['mwl'] = array(
+	'drafts-view-article' => 'Páigina',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
