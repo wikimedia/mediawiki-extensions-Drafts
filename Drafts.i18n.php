@@ -780,6 +780,13 @@ Wellß De wigger maaache?',
 	'tooltip-drafts-save' => 'Als ene Entworf avspeichere',
 );
 
+/** Cornish (Kernewek)
+ * @author Kw-Moon
+ */
+$messages['kw'] = array(
+	'drafts-view-article' => 'Folen',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
