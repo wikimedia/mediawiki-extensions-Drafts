@@ -795,7 +795,7 @@ $messages['lb'] = array(
 	'drafts-desc' => 'Erlaabt et Versioune vun enger Säit als [[Special:Drafts|Brouillon]] op dem Server ze späicheren',
 	'drafts-view' => 'Brouillon weisen',
 	'drafts-view-summary' => 'Dës Spezialsäit weist eng Lëscht mat alle Brouillonen, déi et gëtt.
-Bruillonen déi net benotzt ginn, ginn no {PLURAL:$1|engem Dag|$1 Deeg}} automatesch geläscht.',
+Bruillonen déi net benotzt ginn, ginn no {{PLURAL:$1|engem Dag|$1 Deeg}} automatesch geläscht.',
 	'drafts-view-article' => 'Säit',
 	'drafts-view-existing' => 'Brouillonen déi et gëtt',
 	'drafts-view-saved' => 'Gespäichert',
@@ -1244,20 +1244,21 @@ $messages['ug-latn'] = array(
 
 /** Ukrainian (Українська)
  * @author AS
+ * @author Ahonc
  */
 $messages['uk'] = array(
 	'drafts' => 'Чернетки',
-	'drafts-desc' => 'Додає можливість зберегти [[Special:Drafts|чернетки]] сторінок на сервері',
-	'drafts-view' => 'ОглядЧернеток',
-	'drafts-view-summary' => 'На цій спеціальній сторінці є список усіх чернеток.
-Невживані чернетки автоматично вилучаються через {{PLURAL:$1|день|дні|днів}}.',
+	'drafts-desc' => 'Додає можливість зберігання [[Special:Drafts|чернеток]] сторінок на сервері',
+	'drafts-view' => 'ПереглядЧернетки',
+	'drafts-view-summary' => 'На цій спеціальній сторінці показаний список усіх чернеток.
+Невикористані чернетки автоматично вилучаються через $1 {{PLURAL:$1|день|дні|днів}}.',
 	'drafts-view-article' => 'Сторінка',
-	'drafts-view-existing' => 'Існуючі чернетки',
+	'drafts-view-existing' => 'Наявні чернетки',
 	'drafts-view-saved' => 'Збережено',
 	'drafts-view-discard' => 'Відкинути',
 	'drafts-view-nonesaved' => 'На даний момент ви не маєте збережених чернеток.',
-	'drafts-view-notice' => 'Ви маєте $1 цієї сторінки',
-	'drafts-view-notice-link' => '$1 {{PLURAL:$1|чернетка|чернетки|чернеток}}',
+	'drafts-view-notice' => 'Ви маєте $1 цієї сторінки.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|чернетку|чернетки|чернеток}}',
 	'drafts-view-warn' => 'При виході з цієї сторінки ви втратите усі незбережені дані.
 Бажаєте продовжити?',
 	'drafts-save' => 'Зберегти це як чернетку',
