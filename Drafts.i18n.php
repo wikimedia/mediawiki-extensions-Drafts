@@ -651,6 +651,7 @@ $messages['io'] = array(
 );
 
 /** Italian (Italiano)
+ * @author BrokenArrow
  * @author Darth Kule
  */
 $messages['it'] = array(
@@ -669,6 +670,7 @@ $messages['it'] = array(
 	'drafts-save' => 'Salva come bozza',
 	'drafts-save-save' => 'Salva bozza',
 	'drafts-save-saved' => 'Salvata',
+	'drafts-save-saving' => 'Salvataggio',
 	'drafts-save-error' => 'Errore nel salvataggio della bozza',
 	'tooltip-drafts-save' => 'Salva come bozza',
 );
@@ -876,6 +878,7 @@ $messages['nds'] = array(
 	'drafts-view-article' => 'Sied',
 	'drafts-view-saved' => 'Spiekert',
 	'drafts-save-saved' => 'Spiekert',
+	'drafts-save-saving' => 'An’t Spiekern',
 );
 
 /** Dutch (Nederlands)
@@ -1069,6 +1072,15 @@ Deseja continuar?',
  */
 $messages['ro'] = array(
 	'drafts-view-article' => 'Pagină',
+);
+
+/** Tarandíne (Tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'drafts-view-article' => 'Vosce',
+	'drafts-view-saved' => 'Reggistrate',
+	'drafts-save-saved' => 'Reggistrate',
 );
 
 /** Russian (Русский)
