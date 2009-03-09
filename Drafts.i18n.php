@@ -875,10 +875,26 @@ $messages['mwl'] = array(
  * @author Slomox
  */
 $messages['nds'] = array(
+	'drafts' => 'Twischenspiekert Versionen',
+	'drafts-desc' => 'Maakt dat mööglich, [[Special:Drafts|twischenspiekert Versionen]] op’n Server aftoleggen',
+	'drafts-view' => 'Twischenspiekert Version ankieken',
+	'drafts-view-summary' => 'Disse Spezialsied wiest all twischenspiekerte Versionen.
+Nich bruukt twischenspiekerte Versionen warrt na {{PLURAL:$1|$1 Dag|$1 Daag}} automaatsch wegdaan.',
 	'drafts-view-article' => 'Sied',
+	'drafts-view-existing' => 'Vörhannen twischenspiekerte Versionen',
 	'drafts-view-saved' => 'Spiekert',
+	'drafts-view-discard' => 'Wegdoon',
+	'drafts-view-nonesaved' => 'Du hest noch keen Versionen twischenspiekert.',
+	'drafts-view-notice' => 'Du hest $1 för disse Sied.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|twischenspiekerte Version|twischenspiekerte Versionen}}',
+	'drafts-view-warn' => 'Wenn du nu vun disse Sied weggeist, gaht all nich spiekerte Ännern verloren.
+Wullt du dat liekers doon?',
+	'drafts-save' => 'Twischenspiekern',
+	'drafts-save-save' => 'Twischenspiekern',
 	'drafts-save-saved' => 'Spiekert',
 	'drafts-save-saving' => 'An’t Spiekern',
+	'drafts-save-error' => 'Fehler bi’t Twischenspiekern',
+	'tooltip-drafts-save' => 'Twischenspiekern',
 );
 
 /** Dutch (Nederlands)
