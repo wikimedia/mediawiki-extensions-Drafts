@@ -37,6 +37,7 @@ Do you want to continue?',
 
 /** Message documentation (Message documentation)
  * @author Darth Kule
+ * @author Dead3y3
  */
 $messages['qqq'] = array(
 	'drafts' => 'Title of Special:Drafts',
@@ -53,6 +54,8 @@ $messages['qqq'] = array(
 	'drafts-view-notice-link' => "Used in {{msg-mw|Drafts-view-notice}}. ''$1'' is the number of draft versions saved for the page",
 	'drafts-save' => 'Tooltip of {{msg-mw|Drafts-save-save}} button',
 	'drafts-save-save' => 'Button shown near "Show changes" under editing form of a page',
+	'drafts-save-saved' => 'Message indicating that the draft has been saved.',
+	'drafts-save-saving' => 'Message indicating that the draft is in the process of being saved.',
 );
 
 /** Magyar (magázó) (Magyar (magázó))
@@ -296,7 +299,23 @@ Coš weto pókšacowaś?',
 $messages['el'] = array(
 	'drafts' => 'Drafts',
 	'drafts-desc' => 'Προσθέτει την ικανότητα για αποθήκευση [[Special:Drafts|πρόχειρων]] εκδόσεων μιας σελίδας στον εξυπηρετητή',
+	'drafts-view-summary' => 'Αυτή η ειδική σελίδα εμφανίζει έναν κατάλογο όλων των υπάρχοντων προχείρων.
+Αχρησιμοποίητα πρόχειρα θα απορρίπτονται μετά από {{PLURAL:$1|$1 ημέρα|$1 ημέρες}} αυτόματα.',
 	'drafts-view-article' => 'Σελίδα',
+	'drafts-view-existing' => 'Υπάρχοντα πρόχειρα',
+	'drafts-view-saved' => 'Αποθηκευμένα',
+	'drafts-view-discard' => 'Απόρριψη',
+	'drafts-view-nonesaved' => 'Δεν έχετε κανένα πρόχειρο αποθηκευμένο αυτή τη στιγμή.',
+	'drafts-view-notice' => 'Έχετε $1 για αυτή τη σελίδα.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|πρόχειρο|πρόχειρα}}',
+	'drafts-view-warn' => 'Με την περιήγησή σας μακριά από αυτή τη σελίδα θα χάσετε όλες τις αποθήκευτες αλλαγές σε αυτή τη σελίδα.
+Θέλετε να συνεχίσετε;',
+	'drafts-save' => 'Αποθήκευση αυτού ως προχείρου',
+	'drafts-save-save' => 'Αποθήκευση προχείρου',
+	'drafts-save-saved' => 'Αποθηκεύτηκε',
+	'drafts-save-saving' => 'Αποθηκεύεται',
+	'drafts-save-error' => 'Σφάλμα στην αποθήκευση του προχείρου',
+	'tooltip-drafts-save' => 'Αποθήκευση ως ένα πρόχειρο',
 );
 
 /** Esperanto (Esperanto)
