@@ -862,10 +862,12 @@ Wilse doorgaon?',
 
 /** Malay (Bahasa Melayu)
  * @author Aviator
+ * @author Izzudin
  */
 $messages['ms'] = array(
 	'drafts' => 'Draf',
 	'drafts-desc' => 'Menambah kebolehan untuk menyimpan laman versi [[Special:Drafts|draf]] dalam komputer pelayan',
+	'drafts-view' => 'ViewDraft',
 	'drafts-view-summary' => 'Yang berikut ialah senarai semua draf. Draf-draf yang tidak digunakan akan diabaikan secara automatik selepas $1 hari.',
 	'drafts-view-article' => 'Laman',
 	'drafts-view-existing' => 'Draf yang ada',
