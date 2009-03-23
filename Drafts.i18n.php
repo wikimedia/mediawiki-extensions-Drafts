@@ -1030,26 +1030,26 @@ Los borrolhons inutilizats seràn suprimits automaticament aprèp $1 {{PLURAL:$1
  * @author Sp5uhe
  */
 $messages['pl'] = array(
-	'drafts' => 'Wersje robocze',
-	'drafts-desc' => 'Dodaje możliwość zapisywania [[Special:Drafts|wersji roboczych]] stron na serwerze',
-	'drafts-view' => 'Zobacz wersję roboczą',
-	'drafts-view-summary' => 'Ta strona specjalna prezentuje listę wszystkich wersji roboczych.
-Nieużywane wersje robocze zostaną automatycznie usunięte po $1 {{PLURAL:$1|dniu|dniach}}.',
+	'drafts' => 'Brudnopisy stron',
+	'drafts-desc' => 'Dodaje możliwość zapisywania [[Special:Drafts|brudnopisów stron]] na serwerze',
+	'drafts-view' => 'Zobacz brudnopis',
+	'drafts-view-summary' => 'Ta strona specjalna prezentuje listę wszystkich brudnopisów stron.
+Nieużywane brudnopisy zostaną automatycznie usunięte po $1 {{PLURAL:$1|dniu|dniach}}.',
 	'drafts-view-article' => 'Strona',
-	'drafts-view-existing' => 'Wersje robocze',
+	'drafts-view-existing' => 'Brudnopisy',
 	'drafts-view-saved' => 'Zapisane',
 	'drafts-view-discard' => 'Usuń',
-	'drafts-view-nonesaved' => 'Nie masz obecnie zapisanych żadnych wersji roboczych.',
+	'drafts-view-nonesaved' => 'Nie masz obecnie zapisanych żadnych brudnopisów stron.',
 	'drafts-view-notice' => 'Masz obecnie $1 tej strony.',
-	'drafts-view-notice-link' => '$1 {{PLURAL:$1|wersję roboczą|wersje robocze|wersji roboczych}}',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|brudnopis|brudnopisy|brudnopisów}}',
 	'drafts-view-warn' => 'Opuszczenie tej strony spowoduje utratę wszystkich niezapisanych zmian w jej treści. 
 Czy chcesz kontynuować?',
-	'drafts-save' => 'Zapisz jako wersję roboczą',
-	'drafts-save-save' => 'Zapisz wersję roboczą',
+	'drafts-save' => 'Zapisuje jako brudnopis strony',
+	'drafts-save-save' => 'Zapisz brudnopis',
 	'drafts-save-saved' => 'Zapisany',
 	'drafts-save-saving' => 'Zapisywanie',
-	'drafts-save-error' => 'Błąd zapisywania wersji roboczej',
-	'tooltip-drafts-save' => 'Zapisz jako wersję roboczą',
+	'drafts-save-error' => 'Błąd zapisywania brudnopisu strony',
+	'tooltip-drafts-save' => 'Zapisz jako brudnopis strony',
 );
 
 /** Portuguese (Português)
