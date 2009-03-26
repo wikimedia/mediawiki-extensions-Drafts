@@ -294,11 +294,13 @@ Coš weto pókšacowaś?',
 
 /** Greek (Ελληνικά)
  * @author Dead3y3
+ * @author Geraki
  * @author Omnipaedista
  */
 $messages['el'] = array(
 	'drafts' => 'Drafts',
 	'drafts-desc' => 'Προσθέτει την ικανότητα για αποθήκευση [[Special:Drafts|πρόχειρων]] εκδόσεων μιας σελίδας στον εξυπηρετητή',
+	'drafts-view' => 'ΕμφάνισηΠροχείρου',
 	'drafts-view-summary' => 'Αυτή η ειδική σελίδα εμφανίζει έναν κατάλογο όλων των υπάρχοντων προχείρων.
 Αχρησιμοποίητα πρόχειρα θα απορρίπτονται μετά από {{PLURAL:$1|$1 ημέρα|$1 ημέρες}} αυτόματα.',
 	'drafts-view-article' => 'Σελίδα',
