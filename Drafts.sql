@@ -3,7 +3,7 @@
 -- 
 -- Table for storing working changes to pages that
 -- users have yet to commit.
-CREATE TABLE /*$wgDBPrefix*/drafts (
+CREATE TABLE /*_*/drafts (
     -- Unique ID for drafts
     draft_id INTEGER AUTO_INCREMENT,
     -- Unique value generated at edit time to prevent duplicate submissions
