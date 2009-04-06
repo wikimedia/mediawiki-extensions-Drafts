@@ -1382,6 +1382,7 @@ $messages['zh-hans'] = array(
 	'drafts-save' => '把此页面以草稿形式保存',
 	'drafts-save-save' => '保存草稿',
 	'drafts-save-saved' => '已保存',
+	'drafts-save-saving' => '保存中',
 	'drafts-save-error' => '保存草稿时发生错误',
 	'tooltip-drafts-save' => '以草稿形式保存',
 );
