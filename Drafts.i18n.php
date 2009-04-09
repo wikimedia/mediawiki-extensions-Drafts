@@ -1341,6 +1341,13 @@ Vuto continuar?",
 	'tooltip-drafts-save' => 'Salva come bozza',
 );
 
+/** Veps (Vepsan kel')
+ * @author Игорь Бродский
+ */
+$messages['vep'] = array(
+	'drafts-view-article' => "Lehtpol'",
+);
+
 /** Vietnamese (Tiếng Việt)
  * @author Vinhtantran
  */
