@@ -83,6 +83,11 @@ $aliases['ia'] = array(
 	'Drafts' => array( 'Versiones provisori' ),
 );
 
+/** Italian (Italiano) */
+$aliases['it'] = array(
+	'Drafts' => array( 'Bozze' ),
+);
+
 /** Japanese (日本語) */
 $aliases['ja'] = array(
 	'Drafts' => array( '下書き' ),
