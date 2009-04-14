@@ -1025,6 +1025,13 @@ Los borrolhons inutilizats seràn suprimits automaticament aprèp $1 {{PLURAL:$1
 	'tooltip-drafts-save' => 'Salvar coma borrolhon',
 );
 
+/** Deitsch (Deitsch)
+ * @author Xqt
+ */
+$messages['pdc'] = array(
+	'drafts-view-article' => 'Blatt',
+);
+
 /** Polish (Polski)
  * @author Derbeth
  * @author Holek
