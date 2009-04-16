@@ -39,5 +39,6 @@ CREATE TABLE /*_*/drafts (
         draft_title,
         draft_savetime
     ),
-    INDEX draft_savetime (draft_savetime)
+    INDEX draft_savetime (draft_savetime),
+    INDEX draft_page,
 ) /*$wgDBTableOptions*/;
