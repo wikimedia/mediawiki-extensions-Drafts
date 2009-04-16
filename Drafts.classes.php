@@ -206,7 +206,7 @@ abstract class Drafts {
 			);
 			$wgOut->addHTML(
 				Xml::element( 'th',
-					array( 'nowrap' => 'nowrap' ),
+					null,
 					wfMsg( 'drafts-view-saved' )
 				)
 			);
@@ -253,7 +253,7 @@ abstract class Drafts {
 				// Build XML
 				$wgOut->addHTML( Xml::openElement( 'tr' ) );
 				$wgOut->addHTML(
-					Xml::openElement( 'td', array( 'nowrap' => 'nowrap' ) )
+					Xml::openElement( 'td' )
 				);
 				$wgOut->addHTML(
 					Xml::element( 'a',
@@ -271,14 +271,12 @@ abstract class Drafts {
 				$wgOut->addHTML( Xml::closeElement( 'td' ) );
 				$wgOut->addHTML(
 					Xml::element( 'td',
-						array( 'nowrap' => 'nowrap' ),
+						null,
 						$wgLang->timeanddate( $draft->getSaveTime() )
 					)
 				);
 				$wgOut->addHTML(
-					Xml::openElement( 'td',
-						array( 'nowrap' => 'nowrap' )
-					)
+					Xml::openElement( 'td' )
 				);
 				$jsClick = "if( wgDraft.getState() !== 'unchanged' )" .
 					"return confirm('" .
