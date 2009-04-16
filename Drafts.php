@@ -50,6 +50,12 @@ $egDraftsAutoSaveTimeout = 10;
 // Days to keep drafts around before automatic deletion
 $egDraftsLifeSpan = 30;
 
+// Ratio of times which a list of drafts requested and the list should be pruned
+// for expired drafts - expired drafts will not apear in the list even if they
+// are not yet pruned, this is just a way to keep the database from filling up
+// with old drafts
+$egDraftsCleanRatio = 1000;
+
 // Save and View components
 $wgAutoloadClasses['Drafts'] = $dir . 'Drafts.classes.php';
 $wgAutoloadClasses['Draft'] = $dir . 'Drafts.classes.php';

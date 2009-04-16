@@ -10,6 +10,11 @@ abstract class Drafts {
 
 	/* Static Functions */
 
+	private static function getDraftAgeCutoff() {
+		global $egDraftsLifeSpan;
+		return wfTimestamp( TS_UNIX ) - ( $egDraftsLifeSpan * 60 * 60 * 24 );
+	}
+
 	/**
 	 * Counts the number of existing drafts for a specific user
 	 * @return Number of drafts which match condition parameters
@@ -17,16 +22,18 @@ abstract class Drafts {
 	 * @param integer $userID[optional] ID of user, defaults to current user
 	 */
 	public static function num(
-		&$title = null,
+		$title = null,
 		$userID = null
 	) {
 		global $wgUser;
-		// Removes expired drafts for a more accurate count
-		self::clean();
 		// Get database connection
 		$dbr = wfGetDB( DB_SLAVE );
 		// Builds where clause
-		$where = array();
+		$where = array(
+			'draft_savetime > ' . $dbr->addQuotes(
+				$dbr->timestamp( self::getDraftAgeCutoff() )
+			)
+		);
 		// Checks if a specific title was given
 		if ( $title !== null ) {
 			// Adds specific title to conditions
@@ -50,19 +57,23 @@ abstract class Drafts {
 	 * by $wgDraftsLifeSpan
 	 */
 	public static function clean() {
-		global $egDraftsLifeSpan;
-		// Get database connection
-		$dbw = wfGetDB( DB_MASTER );
-		// Sets cuttoff as age longer than $wgDraftsLifeSpan days old
-		$cutoff = wfTimestamp( TS_UNIX ) - ( $egDraftsLifeSpan * 60 * 60 * 24 );
-		// Removes expired drafts from database
-		$dbw->delete( 'drafts',
-			array(
-				'draft_savetime < ' .
-					$dbw->addQuotes( $dbw->timestamp( $cutoff ) )
-			),
-			__METHOD__
-		);
+		global $egDraftsCleanRatio;
+		
+		// Only perform this action a fraction of the time
+		if ( rand( 0, $egDraftsCleanRatio ) == 0 ) {
+			// Get database connection
+			$dbw = wfGetDB( DB_MASTER );
+			// Removes expired drafts from database
+			$dbw->delete( 'drafts',
+				array(
+					'draft_savetime < ' .
+						$dbw->addQuotes(
+							$dbw->timestamp( self::getDraftAgeCutoff() )
+						)
+				),
+				__METHOD__
+			);
+		}
 	}
 
 	/**
@@ -104,7 +115,11 @@ abstract class Drafts {
 		// Gets database connection
 		$dbw = wfGetDB( DB_MASTER );
 		// Builds where clause
-		$where = array();
+		$where = array(
+			'draft_savetime > ' . $dbw->addQuotes(
+				$dbw->timestamp( self::getDraftAgeCutoff() )
+			)
+		);
 		// Checks if specific title was given
 		if ( $title !== null ) {
 			// Gets page id from title
@@ -148,7 +163,7 @@ abstract class Drafts {
 	 * @param integer $userID[optional] ID of user, defaults to current user
 	 */
 	public static function display(
-		&$title = null,
+		$title = null,
 		$userID = null
 	) {
 		global $wgOut, $wgRequest, $wgUser, $wgLang;
