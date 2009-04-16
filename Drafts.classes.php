@@ -200,20 +200,13 @@ abstract class Drafts {
 			$wgOut->addHTML( Xml::openElement( 'tr' ) );
 			$wgOut->addHTML(
 				Xml::element( 'th',
-					array(
-						'align' => 'left',
-						'width' => '75%',
-						'nowrap' => 'nowrap'
-					),
+					array( 'width' => '75%', 'nowrap' => 'nowrap' ),
 					wfMsg( 'drafts-view-article' )
 				)
 			);
 			$wgOut->addHTML(
 				Xml::element( 'th',
-					array(
-						'align' => 'left',
-						'nowrap' => 'nowrap'
-					),
+					array( 'nowrap' => 'nowrap' ),
 					wfMsg( 'drafts-view-saved' )
 				)
 			);
@@ -260,12 +253,7 @@ abstract class Drafts {
 				// Build XML
 				$wgOut->addHTML( Xml::openElement( 'tr' ) );
 				$wgOut->addHTML(
-					Xml::openElement( 'td',
-						array(
-							'align' => 'left',
-							'nowrap' => 'nowrap'
-						)
-					)
+					Xml::openElement( 'td', array( 'nowrap' => 'nowrap' ) )
 				);
 				$wgOut->addHTML(
 					Xml::element( 'a',
@@ -283,19 +271,13 @@ abstract class Drafts {
 				$wgOut->addHTML( Xml::closeElement( 'td' ) );
 				$wgOut->addHTML(
 					Xml::element( 'td',
-						array(
-							'align' => 'left',
-							'nowrap' => 'nowrap'
-						),
+						array( 'nowrap' => 'nowrap' ),
 						$wgLang->timeanddate( $draft->getSaveTime() )
 					)
 				);
 				$wgOut->addHTML(
 					Xml::openElement( 'td',
-						array(
-							'align' => 'left',
-							'nowrap' => 'nowrap'
-						)
+						array( 'nowrap' => 'nowrap' )
 					)
 				);
 				$jsClick = "if( wgDraft.getState() !== 'unchanged' )" .
