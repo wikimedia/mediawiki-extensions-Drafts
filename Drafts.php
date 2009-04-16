@@ -18,7 +18,7 @@
 
 // Check environment
 if ( !defined( 'MEDIAWIKI' ) ) {
-	echo( "This is an extension to the MediaWiki package and cannot be run standalone.\n" );
+	echo( "This is an extension to MediaWiki and cannot be run standalone.\n" );
 	die( - 1 );
 }
 
@@ -69,6 +69,9 @@ $wgHooks['EditFilter'][] = 'DraftHooks::interceptSave';
 
 // Register article save hook
 $wgHooks['ArticleSaveComplete'][] = 'DraftHooks::discard';
+
+// Updates namespaces and titles of drafts to new locations after moves
+$wgHooks['SpecialMovepageAfterMove'][] = 'DraftHooks::move';
 
 // Register controls hook
 $wgHooks['EditPageBeforeEditButtons'][] = 'DraftHooks::controls';
