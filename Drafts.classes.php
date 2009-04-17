@@ -36,9 +36,18 @@ abstract class Drafts {
 		);
 		// Checks if a specific title was given
 		if ( $title !== null ) {
-			// Adds specific title to conditions
-			$where['draft_namespace'] = $title->getNamespace();
-			$where['draft_title'] = $title->getDBKey();
+			// Get page id from title
+			$pageId = $title->getArticleId();
+			// Checks if page id exists
+			if ( $pageId ) {
+				// Adds specific page id to conditions
+				$where['draft_page'] = $pageId;
+			} else {
+				// Adds new page information to conditions
+				$where['draft_page'] = 0; // page not created yet
+				$where['draft_namespace'] = $title->getNamespace();
+				$where['draft_title'] = $title->getDBKey();
+			}
 		}
 		// Checks if specific user was given
 		if ( $userID !== null ) {
@@ -122,7 +131,7 @@ abstract class Drafts {
 		);
 		// Checks if specific title was given
 		if ( $title !== null ) {
-			// Gets page id from title
+			// Get page id from title
 			$pageId = $title->getArticleId();
 			// Checks if page id exists
 			if ( $pageId ) {
@@ -672,9 +681,9 @@ class Draft {
 			// Gets a draft token exists for the current user and article
 			$existingRow = $dbw->selectField( 'drafts', 'draft_token',
 				array(
+					'draft_user' => $data['draft_user'],
 					'draft_namespace' => $data['draft_namespace'],
 					'draft_title' => $data['draft_title'],
-					'draft_user' => $data['draft_user'],
 					'draft_token' => $data['draft_token']
 				),
 				__METHOD__
