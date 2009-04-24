@@ -63,6 +63,11 @@ $aliases['fr'] = array(
 	'Drafts' => array( 'Brouillons' ),
 );
 
+/** Franco-Provençal (Arpetan) */
+$aliases['frp'] = array(
+	'Drafts' => array( 'Brolyons' ),
+);
+
 /** Galician (Galego) */
 $aliases['gl'] = array(
 	'Drafts' => array( 'Bosquexo' ),
