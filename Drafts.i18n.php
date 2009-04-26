@@ -193,14 +193,29 @@ Da li želite da nastavite?',
 );
 
 /** Catalan (Català)
+ * @author Aleator
  * @author SMP
  */
 $messages['ca'] = array(
+	'drafts' => 'Esborranys',
+	'drafts-desc' => "Afegeix la capacitat de desar versions d'[[Special:Drafts|esborrany]] d'una pàgina al servidor",
+	'drafts-view' => 'Veure esborrany',
+	'drafts-view-summary' => 'Aquesta pàgina especial mostra una llista de tots els esborranys existents.
+Els esborranys sense utilitzar seran descartats automàticament als {{PLURAL:$1|$1 dia|$1 dies}}.',
 	'drafts-view-article' => 'Pàgina',
+	'drafts-view-existing' => 'Esborranys existents',
 	'drafts-view-saved' => 'Desat a',
 	'drafts-view-discard' => 'Descarta',
+	'drafts-view-nonesaved' => 'En aquests moments no teniu cap esborrany desat.',
 	'drafts-view-notice' => 'Teniu $1 per aquesta pàgina.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|esborrany|esborranys}}',
+	'drafts-view-warn' => "Si sortiu d'aquesta pàgina perdreu tots els canvis no desats de la mateixa.
+Voleu continuar?",
+	'drafts-save' => 'Desar-ho com un esborrany',
 	'drafts-save-saved' => 'Desat',
+	'drafts-save-saving' => 'Desant',
+	'drafts-save-error' => 'Error en desar esborrany',
+	'tooltip-drafts-save' => 'Desar com a esborrany',
 );
 
 /** Czech (Česky)
