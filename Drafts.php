@@ -26,6 +26,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 
 // Credits
 $wgExtensionCredits['other'][] = array(
+	'path' => __FILE__,
 	'name' => 'Drafts',
 	'author' => 'Trevor Parscal',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:Drafts',
