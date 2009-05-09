@@ -546,6 +546,15 @@ Mechtsch einewäg wytergoh?',
 	'tooltip-drafts-save' => 'E zwischegspychereti Version aalege',
 );
 
+/** Gujarati (ગુજરાતી)
+ * @author Dineshjk
+ */
+$messages['gu'] = array(
+	'drafts' => 'મુસદ્દા',
+	'drafts-desc' => 'સર્વર પર [[Special:મુસદ્દા|મુસદ્દા]]ના પાનાંનાં સંસ્કરણો સાચવવાની ક્ષમતા ઉમેરે છે.',
+	'drafts-view' => 'મુસદ્દો જુઓ',
+);
+
 /** Hebrew (עברית)
  * @author Rotemliss
  * @author YaronSh

@@ -103,6 +103,11 @@ $aliases['km'] = array(
 	'Drafts' => array( 'ពង្រាង' ),
 );
 
+/** Ripoarisch (Ripoarisch) */
+$aliases['ksh'] = array(
+	'Drafts' => array( 'Versione Zwescheshpeischere' ),
+);
+
 /** Luxembourgish (Lëtzebuergesch) */
 $aliases['lb'] = array(
 	'Drafts' => array( 'Brouillonen' ),
