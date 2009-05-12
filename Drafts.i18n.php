@@ -195,6 +195,7 @@ Da li želite da nastavite?',
 /** Catalan (Català)
  * @author Aleator
  * @author SMP
+ * @author Solde
  */
 $messages['ca'] = array(
 	'drafts' => 'Esborranys',
@@ -212,6 +213,7 @@ Els esborranys sense utilitzar seran descartats automàticament als {{PLURAL:$1|
 	'drafts-view-warn' => "Si sortiu d'aquesta pàgina perdreu tots els canvis no desats de la mateixa.
 Voleu continuar?",
 	'drafts-save' => 'Desar-ho com un esborrany',
+	'drafts-save-save' => 'Desa un esborrany',
 	'drafts-save-saved' => 'Desat',
 	'drafts-save-saving' => 'Desant',
 	'drafts-save-error' => 'Error en desar esborrany',
