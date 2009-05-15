@@ -462,6 +462,7 @@ Haluatko jatkaa?',
 );
 
 /** French (Français)
+ * @author Crochet.david
  * @author Grondin
  * @author IAlex
  * @author Verdy p
@@ -471,7 +472,7 @@ $messages['fr'] = array(
 	'drafts-desc' => 'Ajoute la possibilité d’enregistrer les versions « [[Special:Drafts|brouillons]] » d’une page sur le serveur',
 	'drafts-view' => 'Voir le brouillon',
 	'drafts-view-summary' => 'Cette page spéciale liste tous les brouillons existant.
-Les brouillons inutilisés seront automatiquement supprimés après $1 {{PLURAL:$1|jour|jours}}.',
+Les brouillons inutilisés seront automatiquement supprimés après $1 jour{{PLURAL:$1||s}}.',
 	'drafts-view-article' => 'Page',
 	'drafts-view-existing' => 'Brouillons existants',
 	'drafts-view-saved' => 'Enregistré',

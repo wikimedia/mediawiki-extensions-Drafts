@@ -73,6 +73,11 @@ $aliases['gl'] = array(
 	'Drafts' => array( 'Bosquexo' ),
 );
 
+/** Gujarati (ગુજરાતી) */
+$aliases['gu'] = array(
+	'Drafts' => array( 'મુસ્દ્દો' ),
+);
+
 /** Upper Sorbian (Hornjoserbsce) */
 $aliases['hsb'] = array(
 	'Drafts' => array( 'Naćiski' ),
