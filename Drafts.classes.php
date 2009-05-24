@@ -46,7 +46,7 @@ abstract class Drafts {
 				// Adds new page information to conditions
 				$where['draft_page'] = 0; // page not created yet
 				$where['draft_namespace'] = $title->getNamespace();
-				$where['draft_title'] = $title->getDBKey();
+				$where['draft_title'] = $title->getDBkey();
 			}
 		}
 		// Checks if specific user was given
@@ -99,7 +99,7 @@ abstract class Drafts {
 		$dbw->update( 'drafts',
 			array(
 				'draft_namespace' => $newTitle->getNamespace(),
-				'draft_title' => $newTitle->getDBKey()
+				'draft_title' => $newTitle->getDBkey()
 			),
 			array(
 				'draft_page' => $newTitle->getArticleId()
@@ -140,7 +140,7 @@ abstract class Drafts {
 			} else {
 				// Adds new page information to conditions
 				$where['draft_namespace'] = $title->getNamespace();
-				$where['draft_title'] = $title->getDBKey();
+				$where['draft_title'] = $title->getDBkey();
 			}
 		}
 		// Checks if a specific user was given
@@ -654,7 +654,7 @@ class Draft {
 			'draft_token' => (int) $this->getToken(),
 			'draft_user' => (int) $wgUser->getID(),
 			'draft_namespace' => (int) $this->title->getNamespace(),
-			'draft_title' => (string) $this->title->getDBKey(),
+			'draft_title' => (string) $this->title->getDBkey(),
 			'draft_page' => (int) $this->title->getArticleId(),
 			'draft_section' =>
 				$this->section == '' ? null : (int) $this->section,
