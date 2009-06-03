@@ -550,12 +550,21 @@ Mechtsch einewäg wytergoh?',
 );
 
 /** Gujarati (ગુજરાતી)
+ * @author Ashok modhvadia
  * @author Dineshjk
  */
 $messages['gu'] = array(
 	'drafts' => 'મુસદ્દા',
 	'drafts-desc' => 'સર્વર પર [[Special:મુસદ્દા|મુસદ્દા]]ના પાનાંનાં સંસ્કરણો સાચવવાની ક્ષમતા ઉમેરે છે.',
 	'drafts-view' => 'મુસદ્દો જુઓ',
+	'drafts-view-summary' => 'આ ખાસ પાનું બધા વિદ્યમાન મુસદ્દાની યાદી દર્શાવે છે.
+
+વણવપરાયેલ મુસદ્દા {{PLURAL:$1|$1 દિવસ|$1 દિવસો}} પછી આપોઆપ દુર કરાશે.',
+	'drafts-view-article' => 'પૃષ્ઠ',
+	'drafts-view-existing' => 'વિદ્યમાન મુસદ્દા',
+	'drafts-view-saved' => 'સાચવેલ',
+	'drafts-view-discard' => 'કાઢી નાખો',
+	'drafts-view-nonesaved' => 'આ સમયે તમારી પાસે કોઇ સાચવેલ મુસદ્દા નથી.',
 );
 
 /** Hebrew (עברית)
