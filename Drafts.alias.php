@@ -123,6 +123,11 @@ $aliases['mk'] = array(
 	'Drafts' => array( 'РаботнаВерзија' ),
 );
 
+/** Marathi (मराठी) */
+$aliases['mr'] = array(
+	'Drafts' => array( 'मसूदा' ),
+);
+
 /** Nedersaksisch (Nedersaksisch) */
 $aliases['nds-nl'] = array(
 	'Drafts' => array( 'Warkversies' ),
