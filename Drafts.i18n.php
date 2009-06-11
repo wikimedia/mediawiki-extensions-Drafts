@@ -733,23 +733,24 @@ $messages['it'] = array(
 );
 
 /** Japanese (日本語)
+ * @author Aotake
  * @author Fryed-peach
  * @author Hosiryuhosi
  */
 $messages['ja'] = array(
 	'drafts' => '下書き',
 	'drafts-desc' => 'ページの[[Special:Drafts|下書き]]をサーバーに保存できるようにする',
-	'drafts-view' => '下書きの閲覧',
-	'drafts-view-summary' => 'この特別ページは既存のすべての下書きを一覧表示します。使用されない下書きは $1日後に自動的に破棄されます。',
+	'drafts-view' => '下書き表示',
+	'drafts-view-summary' => 'この特別ページは現在保存されている下書きを一覧表示します。使用されていない下書きは $1日後に自動的に破棄されます。',
 	'drafts-view-article' => 'ページ',
-	'drafts-view-existing' => '既存の下書き',
+	'drafts-view-existing' => '現在保存されている下書き',
 	'drafts-view-saved' => '保存済',
 	'drafts-view-discard' => '破棄',
-	'drafts-view-nonesaved' => 'あなたが現時点で保存している下書きはありません。',
-	'drafts-view-notice' => 'あなたはこのページの$1をもっています。',
+	'drafts-view-nonesaved' => '現在保存されている下書きはありません。',
+	'drafts-view-notice' => 'このページにはあなたが作成した$1があります。',
 	'drafts-view-notice-link' => '$1個の下書き',
 	'drafts-view-warn' => 'このページから抜けると、あなたがこのページに加えた未保存の変更がすべて失われてしまいます。続けますか？',
-	'drafts-save' => 'これを下書きとして保存する',
+	'drafts-save' => '現在の原稿を下書きとして保存する',
 	'drafts-save-save' => '下書きを保存',
 	'drafts-save-saved' => '保存完了',
 	'drafts-save-saving' => '保存中',
