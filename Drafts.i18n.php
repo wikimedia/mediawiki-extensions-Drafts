@@ -1067,6 +1067,7 @@ Los borrolhons inutilizats seràn suprimits automaticament aprèp $1 {{PLURAL:$1
  */
 $messages['pdc'] = array(
 	'drafts-view-article' => 'Blatt',
+	'drafts-view-notice' => 'Du hast $1 fer des Blatt.',
 );
 
 /** Polish (Polski)
