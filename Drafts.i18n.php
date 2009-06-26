@@ -439,6 +439,7 @@ $messages['fa'] = array(
 /** Finnish (Suomi)
  * @author Crt
  * @author Nike
+ * @author Str4nd
  * @author Vililikku
  */
 $messages['fi'] = array(
@@ -457,6 +458,7 @@ Haluatko jatkaa?',
 	'drafts-save' => 'Tallenna nykyinen teksti luonnoksena',
 	'drafts-save-save' => 'Tallenna luonnos',
 	'drafts-save-saved' => 'Tallennettu',
+	'drafts-save-saving' => 'Tallennetaan',
 	'drafts-save-error' => 'Luonnoksen tallentaminen epäonnistui',
 	'tooltip-drafts-save' => 'Tallenna luonnoksena',
 );
@@ -696,6 +698,13 @@ Continuar?',
 	'drafts-save-saving' => 'Immagazinage in curso',
 	'drafts-save-error' => 'Error immagazinante le version provisori',
 	'tooltip-drafts-save' => 'Immagazinar como version provisori',
+);
+
+/** Indonesian (Bahasa Indonesia)
+ * @author Bennylin
+ */
+$messages['id'] = array(
+	'drafts-view-article' => 'Halaman',
 );
 
 /** Ido (Ido)
