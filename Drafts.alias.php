@@ -153,6 +153,11 @@ $aliases['oc'] = array(
 	'Drafts' => array( 'Borrolhons' ),
 );
 
+/** Polish (Polski) */
+$aliases['pl'] = array(
+	'Drafts' => array( 'Brudnopisy' ),
+);
+
 /** Portuguese (Português) */
 $aliases['pt'] = array(
 	'Drafts' => array( 'Rascunhos' ),
