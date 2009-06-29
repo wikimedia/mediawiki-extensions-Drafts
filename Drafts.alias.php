@@ -93,6 +93,11 @@ $aliases['ia'] = array(
 	'Drafts' => array( 'Versiones provisori' ),
 );
 
+/** Indonesian (Bahasa Indonesia) */
+$aliases['id'] = array(
+	'Drafts' => array( 'Draf' ),
+);
+
 /** Italian (Italiano) */
 $aliases['it'] = array(
 	'Drafts' => array( 'Bozze' ),
