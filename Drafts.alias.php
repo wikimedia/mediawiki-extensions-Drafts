@@ -128,6 +128,11 @@ $aliases['mk'] = array(
 	'Drafts' => array( 'РаботнаВерзија' ),
 );
 
+/** Malayalam (മലയാളം) */
+$aliases['ml'] = array(
+	'Drafts' => array( 'കരട്' ),
+);
+
 /** Marathi (मराठी) */
 $aliases['mr'] = array(
 	'Drafts' => array( 'मसूदा' ),
