@@ -769,9 +769,29 @@ $messages['ja'] = array(
 
 /** Georgian (ქართული)
  * @author Sopho
+ * @author გიორგიმელა
  */
 $messages['ka'] = array(
+	'drafts' => 'შავი ფურცლები',
+	'drafts-desc' => 'მატებს [[Special:Drafts|შავი ფურცლების]] შენახვის საშუალებას სერვერზე',
+	'drafts-view' => 'შავი ფურცლის ხილვა',
+	'drafts-view-summary' => 'ამ სპეცგვერდზე წარმოდგენილია ყველა შავი ფურცელი. 
+გამოუყენებელი შავი ფურცლები წაიშლება $1 {{PLURAL:$1|დღე|დღის|დღეები}}.',
 	'drafts-view-article' => 'გვერდი',
+	'drafts-view-existing' => 'არსებული შავი ფურცლები',
+	'drafts-view-saved' => 'შენახვა',
+	'drafts-view-discard' => 'გაუქმება',
+	'drafts-view-nonesaved' => 'ამ დროისთვის თქვენ არ გაგაჩნიათ შენახული შავი ფურცლები',
+	'drafts-view-notice' => 'თქვენ გაქვთ  $1 ამ გვერდისთვის.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|შავი ფურცელი|შავი ფურცლის|შავი ფურცლების}}',
+	'drafts-view-warn' => 'ამ გვერდის დატოვებისას თქვენ კარგავთ ყველა შეუნახავ ცვლილებას. 
+გაგრძელება?',
+	'drafts-save' => 'შეინახეთ როგორც შავი ფურცელი',
+	'drafts-save-save' => 'შეინახეთ შავი ფურცელი',
+	'drafts-save-saved' => 'შენახულია',
+	'drafts-save-saving' => 'შენახვა',
+	'drafts-save-error' => 'შავი ფურცელის შენახვის შეცდომა',
+	'tooltip-drafts-save' => 'შეინახეთ შავი ფურცელი',
 );
 
 /** Khmer (ភាសាខ្មែរ)
