@@ -183,6 +183,11 @@ $aliases['sa'] = array(
 	'Drafts' => array( 'प्रारूप' ),
 );
 
+/** Slovak (Slovenčina) */
+$aliases['sk'] = array(
+	'Drafts' => array( 'Rozpísané' ),
+);
+
 /** Tagalog (Tagalog) */
 $aliases['tl'] = array(
 	'Drafts' => array( 'Mga balangkas' ),
