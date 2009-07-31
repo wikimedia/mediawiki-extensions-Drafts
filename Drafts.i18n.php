@@ -446,6 +446,8 @@ $messages['fi'] = array(
 	'drafts' => 'Luonnokset',
 	'drafts-desc' => 'Lisää mahdollisuuden tallentaa [[Special:Drafts|luonnosversioita]] sivusta palvelimelle.',
 	'drafts-view' => 'Katso luonnosta',
+	'drafts-view-summary' => 'Tämä toimintosivu näyttää luettelon kaikista olemassa olevista luonnoksista.
+Luonnokset, joita ei käytetä hävitetään {{PLURAL:$1|$1 päivän|$1 päivän}} kuluttua automaattisesti.',
 	'drafts-view-article' => 'Sivu',
 	'drafts-view-existing' => 'Olemassa olevat luonnokset',
 	'drafts-view-saved' => 'Tallennettu',
@@ -1191,9 +1193,12 @@ $messages['ro'] = array(
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'drafts' => 'Bozze',
 	'drafts-view-article' => 'Vosce',
 	'drafts-view-saved' => 'Reggistrate',
+	'drafts-view-discard' => 'Scitte',
 	'drafts-save-saved' => 'Reggistrate',
+	'drafts-save-saving' => 'Stoche a reggistre',
 );
 
 /** Russian (Русский)
