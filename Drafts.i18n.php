@@ -407,6 +407,7 @@ $messages['eu'] = array(
 	'drafts-save' => 'Gorde hau zirriborro bezala',
 	'drafts-save-save' => 'Zirriborroa gorde',
 	'drafts-save-saved' => 'Gordeta',
+	'drafts-save-saving' => 'Gordetzen',
 	'drafts-save-error' => 'Akatsa zirriborroa gordetzean',
 	'tooltip-drafts-save' => 'Zirriborroa bezala gorde',
 );
