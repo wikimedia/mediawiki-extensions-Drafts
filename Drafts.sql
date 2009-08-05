@@ -7,7 +7,7 @@ CREATE TABLE /*_*/drafts (
     -- Unique ID for drafts
     draft_id INTEGER AUTO_INCREMENT,
     -- Unique value generated at edit time to prevent duplicate submissions
-    draft_token INTEGER,
+    draft_token VARBINARY(255),
     -- User who made the draft, 0 for anons
     draft_user INTEGER NOT NULL default 0,
     -- Page ID, 0 for proposed new pages

@@ -651,7 +651,7 @@ class Draft {
 		$dbw->begin();
 		// Builds insert/update information
 		$data = array(
-			'draft_token' => (int) $this->getToken(),
+			'draft_token' => (string) $this->getToken(),
 			'draft_user' => (int) $wgUser->getID(),
 			'draft_namespace' => (int) $this->title->getNamespace(),
 			'draft_title' => (string) $this->title->getDBkey(),
