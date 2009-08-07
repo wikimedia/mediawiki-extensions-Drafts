@@ -653,6 +653,7 @@ Njewužiwane naćiski so po {{PLURAL:$1|$1 dnju|$1 dnjomaj|$1 dnjach|$1 dnjach}}
 /** Hungarian (Magyar)
  * @author Bdamokos
  * @author Dani
+ * @author Glanthor Reviol
  * @author Gondnok
  */
 $messages['hu'] = array(
@@ -673,6 +674,7 @@ Biztosan folytatod?',
 	'drafts-save' => 'Mentés piszkozatként',
 	'drafts-save-save' => 'Mentés piszkozatként',
 	'drafts-save-saved' => 'Elmentve',
+	'drafts-save-saving' => 'Mentés…',
 	'drafts-save-error' => 'Hiba történt a piszkozat elmentése közben',
 	'tooltip-drafts-save' => 'Mentés piszkozatként',
 );
