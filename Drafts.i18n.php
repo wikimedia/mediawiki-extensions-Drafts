@@ -1186,10 +1186,14 @@ Deseja continuar?',
 );
 
 /** Romanian (Română)
+ * @author Firilacroco
  * @author KlaudiuMihaila
  */
 $messages['ro'] = array(
 	'drafts-view-article' => 'Pagină',
+	'drafts-view-saved' => 'Salvat',
+	'drafts-save-saved' => 'Salvat',
+	'drafts-save-saving' => 'Salvare',
 );
 
 /** Tarandíne (Tarandíne)
