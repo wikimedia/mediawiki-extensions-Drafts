@@ -96,15 +96,5 @@ $wgHooks['AjaxAddScript'][] = 'DraftHooks::addJS';
 $wgHooks['BeforePageDisplay'][] = 'DraftHooks::addCSS';
 
 // Register database operations
-$wgHooks['LoadExtensionSchemaUpdates'][] = 'efCheckSchema';
+$wgHooks['LoadExtensionSchemaUpdates'][] = 'DraftHooks::schema';
 
-function efCheckSchema() {
-	// Get a connection
-	$db = wfGetDB( DB_MASTER );
-	// Create table if it doesn't exist
-	if ( !$db->tableExists( 'drafts' ) ) {
-		$db->sourceFile( dirname( __FILE__  ) . '/Drafts.sql' );
-	}
-	// Continue
-	return true;
-}

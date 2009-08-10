@@ -9,6 +9,21 @@
 class DraftHooks {
 
 	/* Static Functions */
+public static function schema() {
+		global $wgExtNewTables, $wgExtModifiedFields;
+		
+		$wgExtNewTables[] = array(
+			'drafts',
+			dirname( __FILE__ ) . '/Drafts.sql'
+		);
+		$wgExtModifiedFields[] = array(
+			'drafts',
+			'draft_token',
+			dirname( __FILE__ ) . '/Drafts.patch.draft_token.sql'
+		);
+		
+		return true;
+	}
 
 	/**
 	 * SpecialMovepageAfterMove hook
