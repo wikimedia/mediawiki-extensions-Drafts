@@ -411,10 +411,16 @@ Los borradores no usados serán descartados despues de {{PLURAL:$1|$1 día|$1 d�
  * @author Avjoska
  */
 $messages['et'] = array(
+	'drafts' => 'Mustandid',
+	'drafts-view-article' => 'Lehekülg',
+	'drafts-view-existing' => 'Olemasolevad mustandid',
+	'drafts-view-saved' => 'Salvestatud',
 	'drafts-save' => 'Salvesta see mustandina',
 	'drafts-save-save' => 'Salvesta mustand',
 	'drafts-save-saved' => 'Salvestatud',
 	'drafts-save-saving' => 'Salvestamine',
+	'drafts-save-error' => 'Mustandi salvestamine ebaõnnestus',
+	'tooltip-drafts-save' => 'Salvesta mustandina',
 );
 
 /** Basque (Euskara)
