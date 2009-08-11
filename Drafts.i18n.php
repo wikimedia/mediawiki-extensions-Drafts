@@ -166,6 +166,22 @@ $messages['bg'] = array(
 	'tooltip-drafts-save' => 'Съхраняване като чернова',
 );
 
+/** Bengali (বাংলা)
+ * @author Bellayet
+ */
+$messages['bn'] = array(
+	'drafts' => 'খসড়া',
+	'drafts-view' => 'খসড়া দেখো',
+	'drafts-view-article' => 'পাতা',
+	'drafts-view-saved' => 'সংরক্ষিত',
+	'drafts-view-discard' => 'বাতিল',
+	'drafts-save' => 'খসড়া হিসেবে সংরক্ষণ করো',
+	'drafts-save-save' => 'খসড়া সংরক্ষণ',
+	'drafts-save-saved' => 'সংরক্ষিত',
+	'drafts-save-saving' => 'সংরক্ষণ করা হচ্ছে',
+	'tooltip-drafts-save' => 'খসড়া হিসেবে সংরক্ষণ করো',
+);
+
 /** Bosnian (Bosanski)
  * @author CERminator
  */
@@ -389,6 +405,16 @@ Los borradores no usados serán descartados despues de {{PLURAL:$1|$1 día|$1 d�
 	'drafts-save-saving' => 'Grabando',
 	'drafts-save-error' => 'Error grabando borrador',
 	'tooltip-drafts-save' => 'Guardar como un borrador',
+);
+
+/** Estonian (Eesti)
+ * @author Avjoska
+ */
+$messages['et'] = array(
+	'drafts-save' => 'Salvesta see mustandina',
+	'drafts-save-save' => 'Salvesta mustand',
+	'drafts-save-saved' => 'Salvestatud',
+	'drafts-save-saving' => 'Salvestamine',
 );
 
 /** Basque (Euskara)
@@ -707,9 +733,16 @@ Continuar?',
 
 /** Indonesian (Bahasa Indonesia)
  * @author Bennylin
+ * @author Kandar
  */
 $messages['id'] = array(
 	'drafts-view-article' => 'Halaman',
+	'drafts-save' => 'Simpan sebagai draf',
+	'drafts-save-save' => 'Simpan draf',
+	'drafts-save-saved' => 'Tersimpan',
+	'drafts-save-saving' => 'Menyimpan',
+	'drafts-save-error' => 'Kesalahan/gangguan menyimpan draf',
+	'tooltip-drafts-save' => 'Simpan sebagai draf',
 );
 
 /** Ido (Ido)
@@ -801,6 +834,7 @@ $messages['ka'] = array(
 
 /** Khmer (ភាសាខ្មែរ)
  * @author Thearith
+ * @author វ័ណថារិទ្ធ
  */
 $messages['km'] = array(
 	'drafts' => 'ពង្រាង',
@@ -816,6 +850,7 @@ $messages['km'] = array(
 	'drafts-save' => 'រក្សាទុក​ជា​ពង្រាង',
 	'drafts-save-save' => 'រក្សាទុក​ពង្រាង',
 	'drafts-save-saved' => 'បាន​រក្សាទុក',
+	'drafts-save-saving' => 'កំពុង​រក្សាទុក​',
 	'drafts-save-error' => 'កំហុស​រក្សាទុក​ពង្រាង',
 	'tooltip-drafts-save' => 'រក្សាទុក​ជា​ពង្រាង',
 );
