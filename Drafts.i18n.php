@@ -294,8 +294,10 @@ Möchtest du dennoch fortfahren?',
 
 /** German (formal address) (Deutsch (Sie-Form))
  * @author ChrisiPK
+ * @author Imre
  */
 $messages['de-formal'] = array(
+	'drafts-view-nonesaved' => 'Sie haben bisher noch keine zwischengespeicherten Versionen erstellt.',
 	'drafts-view-notice' => 'Sie haben $1 für diese Seite.',
 );
 
