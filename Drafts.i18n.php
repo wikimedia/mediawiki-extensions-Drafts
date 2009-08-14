@@ -68,6 +68,14 @@ $messages['hu-formal'] = array(
 Biztosan folytatja?',
 );
 
+/** Afrikaans (Afrikaans)
+ * @author Naudefj
+ */
+$messages['af'] = array(
+	'drafts-view-article' => 'Bladsy',
+	'drafts-view-saved' => 'Gestoor',
+);
+
 /** Arabic (العربية)
  * @author Meno25
  */
