@@ -302,9 +302,6 @@ public static function schema() {
 		global $wgScriptPath, $wgJsMimeType, $wgDraftsStyleVersion;
 		// FIXME: assumes standard dir structure
 		// Add javascript to support ajax draft saving
-		$out->addInlineScript(
-			"var wgDraftsStyleVersion = \"$wgDraftsStyleVersion\";\n"
-		);
 		$out->addScript(
 			Xml::element(
 				'script',
