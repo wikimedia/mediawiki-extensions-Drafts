@@ -419,12 +419,15 @@ Los borradores no usados serán descartados despues de {{PLURAL:$1|$1 día|$1 d�
 
 /** Estonian (Eesti)
  * @author Avjoska
+ * @author Pikne
  */
 $messages['et'] = array(
 	'drafts' => 'Mustandid',
 	'drafts-view-article' => 'Lehekülg',
 	'drafts-view-existing' => 'Olemasolevad mustandid',
 	'drafts-view-saved' => 'Salvestatud',
+	'drafts-view-notice' => 'Sul on selle lehekülje jaoks $1.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|mustand|mustandit}}',
 	'drafts-save' => 'Salvesta see mustandina',
 	'drafts-save-save' => 'Salvesta mustand',
 	'drafts-save-saved' => 'Salvestatud',
