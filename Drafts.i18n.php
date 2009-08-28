@@ -423,11 +423,19 @@ Los borradores no usados serán descartados despues de {{PLURAL:$1|$1 día|$1 d�
  */
 $messages['et'] = array(
 	'drafts' => 'Mustandid',
+	'drafts-desc' => 'Võimaldab serverisse lehekülje [[Special:Drafts|mustandiversioone]] salvestada.',
+	'drafts-view' => 'Vaata mustandeid',
+	'drafts-view-summary' => 'Sellel erileheküljel kuvatakse kõik olemasolevad mustandid.
+Kasutamata mustandid vistakse {{PLURAL:$1|ühe päeava|$1 päeva}} möödudes automaatselt ära.',
 	'drafts-view-article' => 'Lehekülg',
 	'drafts-view-existing' => 'Olemasolevad mustandid',
 	'drafts-view-saved' => 'Salvestatud',
+	'drafts-view-discard' => 'Viska ära',
+	'drafts-view-nonesaved' => 'Hetkel pole sul ühtegi salvestatud mustandit.',
 	'drafts-view-notice' => 'Sul on selle lehekülje jaoks $1.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|mustand|mustandit}}',
+	'drafts-view-warn' => 'Kui sellelt leheküljelt lahkud, jääd ilma kõigist sellel leheküljel tehtud salvestamata muudatustest.
+Kas soovid jätkata?',
 	'drafts-save' => 'Salvesta see mustandina',
 	'drafts-save-save' => 'Salvesta mustand',
 	'drafts-save-saved' => 'Salvestatud',
