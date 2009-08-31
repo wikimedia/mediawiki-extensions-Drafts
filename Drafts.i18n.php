@@ -760,16 +760,30 @@ Continuar?',
 
 /** Indonesian (Bahasa Indonesia)
  * @author Bennylin
+ * @author Irwangatot
  * @author Kandar
  */
 $messages['id'] = array(
+	'drafts' => 'Rancangan',
+	'drafts-desc' => 'Menambahkan kemampuan untuk menyimpan versi [[Special:Drafts|tulisan rancangan]] suatu halaman di peladen',
+	'drafts-view' => 'LihatRancangan',
+	'drafts-view-summary' => 'Halaman istimewa ini menunjukkan daftar semua tulisan rancangan yang ada.
+Tulisan rancangan yang tidak digunakan akan dibuang secara otomatis setelah {{PLURAL:$1||}}$1 hari.',
 	'drafts-view-article' => 'Halaman',
-	'drafts-save' => 'Simpan sebagai draf',
-	'drafts-save-save' => 'Simpan draf',
+	'drafts-view-existing' => 'Tulisan rancangan yang ada',
+	'drafts-view-saved' => 'Simpan..',
+	'drafts-view-discard' => 'Buang',
+	'drafts-view-nonesaved' => 'Saat ini Anda tidak memiliki tulisan rancangan yang tersimpan.',
+	'drafts-view-notice' => 'Anda memiliki $1 untuk halaman ini.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1||}}tulisan rancangan',
+	'drafts-view-warn' => 'Jika Anda meninggalkan halaman ini Anda akan kehilangan semua perubahan yang belum tersimpan. 
+Apakah Anda ingin meninggalkan halaman ini?',
+	'drafts-save' => 'Simpan halaman ini sebagai tulisan rancangan',
+	'drafts-save-save' => 'Simpan tulisan rancangan',
 	'drafts-save-saved' => 'Tersimpan',
 	'drafts-save-saving' => 'Menyimpan',
-	'drafts-save-error' => 'Kesalahan/gangguan menyimpan draf',
-	'tooltip-drafts-save' => 'Simpan sebagai draf',
+	'drafts-save-error' => 'Terjadi kesalahan pada saat menyimpan tulisan rancangan',
+	'tooltip-drafts-save' => 'Simpan sebagai tulisan rancangan',
 );
 
 /** Ido (Ido)
