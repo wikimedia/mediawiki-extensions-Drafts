@@ -19,7 +19,7 @@ public static function schema() {
 		$wgExtModifiedFields[] = array(
 			'drafts',
 			'draft_token',
-			dirname( __FILE__ ) . '/Drafts.patch.draft_token.sql'
+			dirname( __FILE__ ) . '/patch-draft_token.sql'
 		);
 		
 		return true;
