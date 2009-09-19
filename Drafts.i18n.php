@@ -1475,6 +1475,11 @@ $messages['uk'] = array(
 	'drafts-view-warn' => 'При виході з цієї сторінки ви втратите усі незбережені дані.
 Бажаєте продовжити?',
 	'drafts-save' => 'Зберегти це як чернетку',
+	'drafts-save-save' => 'Зберегти чернетку',
+	'drafts-save-saved' => 'Збережено',
+	'drafts-save-saving' => 'Зберігаю',
+	'drafts-save-error' => 'Помилка збереження чернетки',
+	'tooltip-drafts-save' => 'Зберегти як чернетку',
 );
 
 /** Vèneto (Vèneto)
