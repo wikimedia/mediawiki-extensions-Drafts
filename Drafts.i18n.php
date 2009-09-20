@@ -1209,6 +1209,13 @@ Czy chcesz kontynuować?',
 	'tooltip-drafts-save' => 'Zapisz jako brudnopis strony',
 );
 
+/** Piedmontese (Piemontèis)
+ * @author Dragonòt
+ */
+$messages['pms'] = array(
+	'drafts' => 'Sbòss',
+);
+
 /** Portuguese (Português)
  * @author Malafaya
  */
