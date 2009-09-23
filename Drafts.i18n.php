@@ -1216,6 +1216,13 @@ $messages['pms'] = array(
 	'drafts' => 'Sbòss',
 );
 
+/** Pashto (پښتو)
+ * @author Ahmed-Najib-Biabani-Ibrahimkhel
+ */
+$messages['ps'] = array(
+	'drafts-view-article' => 'مخ',
+);
+
 /** Portuguese (Português)
  * @author Malafaya
  */
