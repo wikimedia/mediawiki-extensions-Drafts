@@ -1216,7 +1216,23 @@ $messages['pms'] = array(
 	'drafts' => 'Sbòss',
 	'drafts-desc' => 'A gionta la possibilità ëd salvé vërsion [[Special:Drafts|sbòss]] ëd na pàgina an sël server',
 	'drafts-view' => 'VardaSbòss',
+	'drafts-view-summary' => "Sta pàgina special-sì a mosta na lista ëd tùit jë sbòss esistent.
+Jë sbòss pa dovrà a saran scartà automaticament d'apress {{PLURAL:$1|$1 di|$1 di}}.",
 	'drafts-view-article' => 'Pàgina',
+	'drafts-view-existing' => 'Sbòss esistent',
+	'drafts-view-saved' => 'Salvà',
+	'drafts-view-discard' => 'Scartà',
+	'drafts-view-nonesaved' => "It l'has pa gnun sbòss salvà an cost moment.",
+	'drafts-view-notice' => "It l'ha $1 për sta pàgina-sì.",
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|sbòss|sbòss}}',
+	'drafts-view-warn' => 'An navigand anans da sta pàgina-sì it përdras tùit ij cambi pa salvà a sta pàgina-sì.
+It veus-to continué?',
+	'drafts-save' => 'Salva sòn-sì com në sbòss',
+	'drafts-save-save' => 'Salva sbòss',
+	'drafts-save-saved' => 'Salvà',
+	'drafts-save-saving' => 'An salvand',
+	'drafts-save-error' => 'Eror an salvand sbòss',
+	'tooltip-drafts-save' => 'Salva com në sbòss',
 );
 
 /** Pashto (پښتو)
