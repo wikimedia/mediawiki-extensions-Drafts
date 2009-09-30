@@ -303,10 +303,13 @@ Möchtest du dennoch fortfahren?',
 /** German (formal address) (Deutsch (Sie-Form))
  * @author ChrisiPK
  * @author Imre
+ * @author MichaelFrey
  */
 $messages['de-formal'] = array(
 	'drafts-view-nonesaved' => 'Sie haben bisher noch keine zwischengespeicherten Versionen erstellt.',
 	'drafts-view-notice' => 'Sie haben $1 für diese Seite.',
+	'drafts-view-warn' => 'Wenn Sie diese Seite verlasseb, gehen alle nichtgespeicherten Änderungen verloren.
+Möchten Sie dennoch fortfahren?',
 );
 
 /** Lower Sorbian (Dolnoserbski)
