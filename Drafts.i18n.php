@@ -38,6 +38,7 @@ Do you want to continue?',
 /** Message documentation (Message documentation)
  * @author Darth Kule
  * @author Dead3y3
+ * @author EugeneZelenko
  */
 $messages['qqq'] = array(
 	'drafts' => 'Title of Special:Drafts',
@@ -51,9 +52,11 @@ $messages['qqq'] = array(
 	'drafts-view-discard' => 'Name of button to delete draft version of a page',
 	'drafts-view-nonesaved' => 'Displayed in Special:Drafts when there are no draft versions saved',
 	'drafts-view-notice' => "Shown at the top while previewing a page with draft versions saved. ''$1'' is {{msg-mw|Drafts-view-notice-link}} message",
-	'drafts-view-notice-link' => "Used in {{msg-mw|Drafts-view-notice}}. ''$1'' is the number of draft versions saved for the page",
+	'drafts-view-notice-link' => "Used in {{msg-mw|Drafts-view-notice}}. ''$1'' is the number of draft versions saved for the page
+{{Identical|Draft}}",
 	'drafts-save' => 'Tooltip of {{msg-mw|Drafts-save-save}} button',
-	'drafts-save-save' => 'Button shown near "Show changes" under editing form of a page',
+	'drafts-save-save' => 'Button shown near "Show changes" under editing form of a page
+{{Identical|Save draft}}',
 	'drafts-save-saved' => 'Message indicating that the draft has been saved.',
 	'drafts-save-saving' => 'Message indicating that the draft is in the process of being saved.',
 );
@@ -74,6 +77,8 @@ Biztosan folytatja?',
 $messages['af'] = array(
 	'drafts-view-article' => 'Bladsy',
 	'drafts-view-saved' => 'Gestoor',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|werkweergawe|werkweergawes}}',
+	'drafts-save-save' => 'Stoor as kladwerk',
 );
 
 /** Arabic (العربية)
