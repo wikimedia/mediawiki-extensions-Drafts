@@ -317,6 +317,33 @@ $messages['de-formal'] = array(
 Möchten Sie dennoch fortfahren?',
 );
 
+/** Zazaki (Zazaki)
+ * @author Aspar
+ * @author Xoser
+ */
+$messages['diq'] = array(
+	'drafts' => 'nımuneyi',
+	'drafts-desc' => 'Xacetê versiyonê [[Special:Drafts|draft]] yew peleyî qeyd kerdişî de keno',
+	'drafts-view' => 'nımune bıvin',
+	'drafts-view-summary' => 'no pelo xususi listeya numuneyi ya mewcudi ramocneno.
+numuneyê ke nêşuxuliyeni badê $1 {{PLURAL:$1|roci|roci}} bı otomatik esteriyeni.',
+	'drafts-view-article' => 'Pel',
+	'drafts-view-existing' => 'Draftan ke esto',
+	'drafts-view-saved' => 'Qeyd biker',
+	'drafts-view-discard' => 'Îptal biker',
+	'drafts-view-nonesaved' => 'Ti hama nika yew draft qeyd nikerd.',
+	'drafts-view-notice' => 'Ser ena pel de $1 teneyê tu esto.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|draft|draftan}}',
+	'drafts-view-warn' => 'Eka ti ena pele qefinene, vurnayîşê tu ke ti qeyd nikerd înan pêran beno vin.
+Ti wazeno dewam bikero?',
+	'drafts-save' => 'Eno ze yew draft qeyd bike',
+	'drafts-save-save' => 'Draft qeyd ke',
+	'drafts-save-saved' => 'Qeyd bike',
+	'drafts-save-saving' => 'Ho qeyd keno',
+	'drafts-save-error' => 'Qeyd kerdişî de yew ğelet biyo',
+	'tooltip-drafts-save' => 'Ze yew draft qeyd bike',
+);
+
 /** Lower Sorbian (Dolnoserbski)
  * @author Michawiki
  */
