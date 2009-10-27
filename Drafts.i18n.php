@@ -1018,6 +1018,7 @@ Bruillonen déi net benotzt ginn, ginn no {{PLURAL:$1|engem Dag|$1 Deeg}} automa
 );
 
 /** Limburgish (Limburgs)
+ * @author Aelske
  * @author Ooswesthoesbes
  * @author Remember the dot
  */
@@ -1029,7 +1030,7 @@ $messages['li'] = array(
 Ongebroekte drafts zulle automatisch waere verwiederd nao {{PLURAL:$1|$1 daag|$1 daag}}.",
 	'drafts-view-article' => 'Pazjena',
 	'drafts-view-existing' => 'Bestaonde drafts',
-	'drafts-view-saved' => 'Opgeslaon',
+	'drafts-view-saved' => 'Opgesjlage',
 	'drafts-view-discard' => 'Wis',
 	'drafts-view-nonesaved' => 'De höbs gein opgeslage drafts.',
 	'drafts-view-notice' => 'De mós $1 veur dees pazjena.',
