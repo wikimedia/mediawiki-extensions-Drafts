@@ -195,6 +195,16 @@ $messages['bn'] = array(
 	'tooltip-drafts-save' => 'খসড়া হিসেবে সংরক্ষণ করো',
 );
 
+/** Breton (Brezhoneg)
+ * @author Fulup
+ */
+$messages['br'] = array(
+	'drafts' => 'Brouilhedoù',
+	'drafts-save-save' => 'Enrollañ ar brouilhed',
+	'drafts-save-saved' => 'Enrollet',
+	'tooltip-drafts-save' => 'Enrollañ evel brouilhed',
+);
+
 /** Bosnian (Bosanski)
  * @author CERminator
  */
