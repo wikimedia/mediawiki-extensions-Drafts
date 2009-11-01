@@ -1499,6 +1499,7 @@ Vill du fortsätta?',
  */
 $messages['te'] = array(
 	'drafts-view-article' => 'పేజీ',
+	'drafts-save-saved' => 'భద్రమయ్యింది',
 );
 
 /** Tagalog (Tagalog)
