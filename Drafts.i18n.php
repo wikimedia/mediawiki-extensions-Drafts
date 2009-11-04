@@ -196,12 +196,17 @@ $messages['bn'] = array(
 );
 
 /** Breton (Brezhoneg)
+ * @author Fohanno
  * @author Fulup
  */
 $messages['br'] = array(
 	'drafts' => 'Brouilhedoù',
+	'drafts-view-article' => 'Pajenn',
+	'drafts-view-saved' => 'Enrollet',
+	'drafts-view-discard' => 'Disteurel',
 	'drafts-save-save' => 'Enrollañ ar brouilhed',
 	'drafts-save-saved' => 'Enrollet',
+	'drafts-save-saving' => "Oc'h enrollañ",
 	'tooltip-drafts-save' => 'Enrollañ evel brouilhed',
 );
 
