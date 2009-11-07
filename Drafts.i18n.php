@@ -1000,7 +1000,7 @@ Wellß De wigger maaache?',
 	'tooltip-drafts-save' => 'Als ene Entworf avspeichere',
 );
 
-/** Cornish (Kernewek)
+/** Cornish (Kernowek)
  * @author Kw-Moon
  */
 $messages['kw'] = array(
