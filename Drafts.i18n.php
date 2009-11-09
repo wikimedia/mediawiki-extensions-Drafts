@@ -83,6 +83,7 @@ $messages['af'] = array(
 
 /** Arabic (العربية)
  * @author Meno25
+ * @author OsamaK
  */
 $messages['ar'] = array(
 	'drafts' => 'مسودات',
@@ -99,8 +100,8 @@ $messages['ar'] = array(
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|مسودة|مسودة}}',
 	'drafts-view-warn' => 'بواسطة الإبحار عن هذه الصفحة ستفقد كل التغييرات غير المحفوظة لهذه الصفحة.
 هل تريد الاستمرار؟',
-	'drafts-save' => 'حفظ هذه كمسودة',
-	'drafts-save-save' => 'حفظ المسودة',
+	'drafts-save' => 'يحفظ هذه كمسودة',
+	'drafts-save-save' => 'احفظ المسودة',
 	'drafts-save-saved' => 'محفوظة',
 	'drafts-save-saving' => 'حفظ',
 	'drafts-save-error' => 'خطأ أثناء حفظ المسودة',
@@ -673,6 +674,17 @@ $messages['gu'] = array(
 	'drafts-view-saved' => 'સાચવેલ',
 	'drafts-view-discard' => 'કાઢી નાખો',
 	'drafts-view-nonesaved' => 'આ સમયે તમારી પાસે કોઇ સાચવેલ મુસદ્દા નથી.',
+	'drafts-view-notice' => 'તમારી પાસે આ પાના માટે $1 છે.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|મુસદ્દો|મુસદ્દા}}',
+	'drafts-view-warn' => 'આ પાના પરથી બીજે જતા તમે સાચવ્યા વિનાના બધાજ ફેરફારો ગુમાવશો.
+
+તમે આગળ વધવા માંગો છો?',
+	'drafts-save' => 'આને મુસદ્દા તરીકે સાચવો',
+	'drafts-save-save' => 'મુસદ્દો સાચવો',
+	'drafts-save-saved' => 'સાચવ્યું',
+	'drafts-save-saving' => 'સચવાય છે',
+	'drafts-save-error' => 'મુસદ્દો સાચવવામાં ત્રુટી',
+	'tooltip-drafts-save' => 'મુસદ્દા તરીકે સાચવો',
 );
 
 /** Hebrew (עברית)
