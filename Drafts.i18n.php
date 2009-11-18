@@ -203,6 +203,7 @@ $messages['bn'] = array(
 $messages['br'] = array(
 	'drafts' => 'Brouilhedoù',
 	'drafts-view-article' => 'Pajenn',
+	'drafts-view-existing' => 'Brouilhedoù zo anezho dija',
 	'drafts-view-saved' => 'Enrollet',
 	'drafts-view-discard' => 'Disteurel',
 	'drafts-save-save' => 'Enrollañ ar brouilhed',
