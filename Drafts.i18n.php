@@ -1073,6 +1073,32 @@ Wilse doorgaon?',
 	'tooltip-drafts-save' => 'Opslaon es draft',
 );
 
+/** Macedonian (Македонски)
+ * @author Bjankuloski06
+ */
+$messages['mk'] = array(
+	'drafts' => 'Нацрти',
+	'drafts-desc' => 'Додава можност за зачувување на [[Special:Drafts|нацрт]]-верзии на страниците на серверот',
+	'drafts-view' => 'ПрегледНаНацртот',
+	'drafts-view-summary' => 'Оваа специјална страница ги наведува сите постоечки нацрти.
+Неискористените нацрти ќе бидат автоматски исфрлени по {{PLURAL:$1|$1 ден|$1 дена}}.',
+	'drafts-view-article' => 'Страница',
+	'drafts-view-existing' => 'Постоечки нацрти',
+	'drafts-view-saved' => 'Зачувано',
+	'drafts-view-discard' => 'Фрли',
+	'drafts-view-nonesaved' => 'Моментално немате зачувани нацрти.',
+	'drafts-view-notice' => 'Имате $1 за оваа страница.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|нацрт|нацрти}}',
+	'drafts-view-warn' => 'Ако се оттргнете од страницава ќе ги изгубите сите незачувани промени.
+Дали сакате да продолжите?',
+	'drafts-save' => 'Зачувај го ова како нацрт',
+	'drafts-save-save' => 'Зачувај нацрт',
+	'drafts-save-saved' => 'Зачувано',
+	'drafts-save-saving' => 'Зачувување',
+	'drafts-save-error' => 'Грешка при зачувувањето на нацртот',
+	'tooltip-drafts-save' => 'Зачувај како нацрт',
+);
+
 /** Malayalam (മലയാളം)
  * @author Praveenp
  */
