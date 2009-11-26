@@ -31,7 +31,7 @@ $wgExtensionCredits['other'][] = array(
 	'author' => 'Trevor Parscal',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:Drafts',
 	'description' => 'Save and view draft versions of pages',
-	'description-msg' => 'drafts-desc',
+	'descriptionmsg' => 'drafts-desc',
 );
 
 // Shortcut to this extension directory
