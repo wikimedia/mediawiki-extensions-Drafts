@@ -1121,7 +1121,7 @@ $messages['ml'] = array(
 	'drafts-save-save' => 'കരട് സേവ് ചെയ്യുക',
 	'drafts-save-saved' => 'സേവ് ചെയ്തിരിക്കുന്നു',
 	'drafts-save-saving' => 'സേവ് ചെയ്യുന്നു',
-	'drafts-save-error' => 'കരട് സേവ് ചെയ്തപ്പോൾ പിശകുണ്ടായി',
+	'drafts-save-error' => 'കരട് സേവ് ചെയ്തപ്പോൾ പിഴവുണ്ടായി',
 	'tooltip-drafts-save' => 'കരട് ആയി സേവ് ചെയ്യുക',
 );
 
