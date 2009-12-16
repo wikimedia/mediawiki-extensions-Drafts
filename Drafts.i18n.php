@@ -199,16 +199,21 @@ $messages['bn'] = array(
 /** Breton (Brezhoneg)
  * @author Fohanno
  * @author Fulup
+ * @author Y-M D
  */
 $messages['br'] = array(
 	'drafts' => 'Brouilhedoù',
+	'drafts-view' => 'Gwelet ar brouilhoñs',
 	'drafts-view-article' => 'Pajenn',
 	'drafts-view-existing' => 'Brouilhedoù zo anezho dija',
 	'drafts-view-saved' => 'Enrollet',
 	'drafts-view-discard' => 'Disteurel',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|brouilhoñs|brouilhoñsoù}}',
+	'drafts-save' => 'Enrollañ evel ur brouilh',
 	'drafts-save-save' => 'Enrollañ ar brouilhed',
 	'drafts-save-saved' => 'Enrollet',
 	'drafts-save-saving' => "Oc'h enrollañ",
+	'drafts-save-error' => 'Fazi enrollañ ar brouilh',
 	'tooltip-drafts-save' => 'Enrollañ evel brouilhed',
 );
 
