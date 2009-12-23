@@ -1418,8 +1418,11 @@ Deseja continuar?',
 /** Romanian (Română)
  * @author Firilacroco
  * @author KlaudiuMihaila
+ * @author Stelistcristi
  */
 $messages['ro'] = array(
+	'drafts' => 'Schiţe',
+	'drafts-view' => 'VizualizeazăSchiţă',
 	'drafts-view-article' => 'Pagină',
 	'drafts-view-saved' => 'Salvat',
 	'drafts-save-saved' => 'Salvat',
@@ -1549,6 +1552,16 @@ Vill du fortsätta?',
 $messages['te'] = array(
 	'drafts-view-article' => 'పేజీ',
 	'drafts-save-saved' => 'భద్రమయ్యింది',
+);
+
+/** Turkmen (Türkmençe)
+ * @author Hanberke
+ */
+$messages['tk'] = array(
+	'drafts-view-article' => 'Sahypa',
+	'drafts-view-saved' => 'Ýazdyryldy',
+	'drafts-save-saved' => 'Ýazdyryldy',
+	'drafts-save-saving' => 'Ýazdyrylýar',
 );
 
 /** Tagalog (Tagalog)
