@@ -1424,9 +1424,17 @@ $messages['ro'] = array(
 	'drafts' => 'Schiţe',
 	'drafts-view' => 'VizualizeazăSchiţă',
 	'drafts-view-article' => 'Pagină',
+	'drafts-view-existing' => 'Schiţe existente',
 	'drafts-view-saved' => 'Salvat',
+	'drafts-view-discard' => 'Respinge',
+	'drafts-view-nonesaved' => 'Nu aveţi vreo schiţă salvată în acest moment.',
+	'drafts-view-notice' => 'Aveţi $1 pentru această pagină.',
+	'drafts-save' => 'Salvează aceasta ca o schiţă',
+	'drafts-save-save' => 'Salvează schiţă',
 	'drafts-save-saved' => 'Salvat',
 	'drafts-save-saving' => 'Salvare',
+	'drafts-save-error' => 'Eroare la salvarea schiţei',
+	'tooltip-drafts-save' => 'Salvaţi ca o schiţă',
 );
 
 /** Tarandíne (Tarandíne)
@@ -1561,10 +1569,21 @@ $messages['te'] = array(
  * @author Hanberke
  */
 $messages['tk'] = array(
+	'drafts' => 'Garalamalar',
+	'drafts-desc' => 'Sahypanyň [[Special:Drafts|garalama]] wersiýasyny serwere ýazdyrmak mümkinçiligini goşýar',
+	'drafts-view' => 'GaralamaGörkez',
 	'drafts-view-article' => 'Sahypa',
+	'drafts-view-existing' => 'Bar bolan garalamalar',
 	'drafts-view-saved' => 'Ýazdyryldy',
+	'drafts-view-nonesaved' => 'Häzirki wagtda ýazdyrylan hiç hili garalamaňyz ýok.',
+	'drafts-view-notice' => 'Bu sahypa üçin $1 bar.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|garalamaňyz|garalamaňyz}}',
+	'drafts-save' => 'Muny garalama hökmünde ýazdyr',
+	'drafts-save-save' => 'Garalamany ýazdyr',
 	'drafts-save-saved' => 'Ýazdyryldy',
 	'drafts-save-saving' => 'Ýazdyrylýar',
+	'drafts-save-error' => 'Garalama ýazdyrma säwligi',
+	'tooltip-drafts-save' => 'Garalama hökmünde ýazdyr',
 );
 
 /** Tagalog (Tagalog)
@@ -1734,17 +1753,21 @@ $messages['zh-hans'] = array(
 
 /** Traditional Chinese (‪中文(繁體)‬)
  * @author Gzdavidwong
+ * @author Liangent
  * @author Wrightbus
  */
 $messages['zh-hant'] = array(
 	'drafts' => '草稿',
+	'drafts-view' => '查看草稿',
 	'drafts-view-article' => '頁面',
 	'drafts-view-existing' => '現有草稿',
 	'drafts-view-saved' => '已儲存',
 	'drafts-view-discard' => '捨棄',
+	'drafts-view-nonesaved' => '您還沒有任何已保存的草稿。',
 	'drafts-save' => '把此頁面以草稿形式儲存',
 	'drafts-save-save' => '儲存草稿',
 	'drafts-save-saved' => '已儲存',
+	'drafts-save-saving' => '保存中',
 	'drafts-save-error' => '儲存草稿時發生錯誤',
 	'tooltip-drafts-save' => '以草稿形式儲存',
 );
