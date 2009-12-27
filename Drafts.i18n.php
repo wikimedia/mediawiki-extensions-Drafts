@@ -165,17 +165,22 @@ $messages['be-tarask'] = array(
 
 /** Bulgarian (Български)
  * @author DCLXVI
+ * @author Turin
  */
 $messages['bg'] = array(
 	'drafts' => 'Чернови',
 	'drafts-desc' => 'Добавя възможност за съхраняване на [[Special:Drafts|чернови]] на страниците',
 	'drafts-view-article' => 'Страница',
 	'drafts-view-existing' => 'Налични чернови',
+	'drafts-view-saved' => 'Запазено',
+	'drafts-view-discard' => 'Отхвърляне',
 	'drafts-view-nonesaved' => 'Все още нямате съхранени чернови.',
 	'drafts-view-notice' => 'Имате $1 за тази страница.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|чернова|чернови}}',
 	'drafts-save' => 'Съхраняване на съдържанието като чернова',
 	'drafts-save-save' => 'Съхраняване като чернова',
+	'drafts-save-saved' => 'Запазено',
+	'drafts-save-saving' => 'Запазване',
 	'drafts-save-error' => 'Възникна грешка при съхраняване на черновата',
 	'tooltip-drafts-save' => 'Съхраняване като чернова',
 );
@@ -203,11 +208,14 @@ $messages['bn'] = array(
  */
 $messages['br'] = array(
 	'drafts' => 'Brouilhedoù',
+	'drafts-desc' => 'Aotreañ a ra da enrollañ ur stumm brouilhed eus ur bajenn war ar servijer',
 	'drafts-view' => 'Gwelet ar brouilhoñs',
 	'drafts-view-article' => 'Pajenn',
 	'drafts-view-existing' => 'Brouilhedoù zo anezho dija',
 	'drafts-view-saved' => 'Enrollet',
 	'drafts-view-discard' => 'Disteurel',
+	'drafts-view-nonesaved' => "N'ho peus brouilhoñs ebet enrollet er mare-mañ.",
+	'drafts-view-notice' => '$1 ho peus evit ar bajenn-mañ.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|brouilhoñs|brouilhoñsoù}}',
 	'drafts-save' => 'Enrollañ evel ur brouilh',
 	'drafts-save-save' => 'Enrollañ ar brouilhed',
@@ -1572,12 +1580,17 @@ $messages['tk'] = array(
 	'drafts' => 'Garalamalar',
 	'drafts-desc' => 'Sahypanyň [[Special:Drafts|garalama]] wersiýasyny serwere ýazdyrmak mümkinçiligini goşýar',
 	'drafts-view' => 'GaralamaGörkez',
+	'drafts-view-summary' => 'Bu ýörite sahypa bar bolan ähli garalamalaryň sanawyny görkezýär.
+Ulanylmaýan garalamalar $1 {{PLURAL:$1|gün|gün}} geçensoň awtomatik öçüriler.',
 	'drafts-view-article' => 'Sahypa',
 	'drafts-view-existing' => 'Bar bolan garalamalar',
 	'drafts-view-saved' => 'Ýazdyryldy',
+	'drafts-view-discard' => 'Öçür',
 	'drafts-view-nonesaved' => 'Häzirki wagtda ýazdyrylan hiç hili garalamaňyz ýok.',
 	'drafts-view-notice' => 'Bu sahypa üçin $1 bar.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|garalamaňyz|garalamaňyz}}',
+	'drafts-view-warn' => 'Bu sahypadan gitseňiz, sahypadaky ähli ýazdyrylmadyk üýtgeşmeleri ýitirersiňiz.
+Dowam etmek isleýärsiňizmi?',
 	'drafts-save' => 'Muny garalama hökmünde ýazdyr',
 	'drafts-save-save' => 'Garalamany ýazdyr',
 	'drafts-save-saved' => 'Ýazdyryldy',
