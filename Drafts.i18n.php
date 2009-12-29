@@ -77,8 +77,15 @@ Biztosan folytatja?',
 $messages['af'] = array(
 	'drafts-view-article' => 'Bladsy',
 	'drafts-view-saved' => 'Gestoor',
+	'drafts-view-discard' => 'Verwyder',
+	'drafts-view-notice' => 'U het $1 vir hierdie bladsy.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|werkweergawe|werkweergawes}}',
+	'drafts-save' => "Stoor dit as 'n werkweergawe",
 	'drafts-save-save' => 'Stoor as kladwerk',
+	'drafts-save-saved' => 'Gestoor',
+	'drafts-save-saving' => 'Besig om te stoor',
+	'drafts-save-error' => 'Fout tydens stoor van werkweergawe',
+	'tooltip-drafts-save' => 'As werkweergawe stoor',
 );
 
 /** Arabic (العربية)
@@ -208,8 +215,10 @@ $messages['bn'] = array(
  */
 $messages['br'] = array(
 	'drafts' => 'Brouilhedoù',
-	'drafts-desc' => 'Aotreañ a ra da enrollañ ur stumm brouilhed eus ur bajenn war ar servijer',
+	'drafts-desc' => 'Aotreañ a ra da enrollañ ur stumm [[Special:Drafts|brouilhed]] eus ur bajenn war ar servijer',
 	'drafts-view' => 'Gwelet ar brouilhoñs',
+	'drafts-view-summary' => 'Ar bajenn ispisial-mañ a zo ur roll eus an holl brouilhedoù a zo.
+Ar brouilhedoù nann-implijet a vo distaolet emgefre goude $1 devez{{PLURAL:$1||}}.',
 	'drafts-view-article' => 'Pajenn',
 	'drafts-view-existing' => 'Brouilhedoù zo anezho dija',
 	'drafts-view-saved' => 'Enrollet',
@@ -217,6 +226,8 @@ $messages['br'] = array(
 	'drafts-view-nonesaved' => "N'ho peus brouilhoñs ebet enrollet er mare-mañ.",
 	'drafts-view-notice' => '$1 ho peus evit ar bajenn-mañ.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|brouilhoñs|brouilhoñsoù}}',
+	'drafts-view-warn' => "En ur merdea er maez eus ar bajenn-mañ e kolloc'h holl kemmoù nann-enrollet ar bajenn-mañ.
+Ha c'hoant ho peus kenderc'hel ?",
 	'drafts-save' => 'Enrollañ evel ur brouilh',
 	'drafts-save-save' => 'Enrollañ ar brouilhed',
 	'drafts-save-saved' => 'Enrollet',
@@ -436,6 +447,8 @@ $messages['eo'] = array(
 	'drafts' => 'Malnetoj',
 	'drafts-desc' => 'Permesas la kapablon konservi [[Special:Drafts|malnetajn]] versiojn de paĝo de la servilo',
 	'drafts-view' => 'VidiMalneton',
+	'drafts-view-summary' => 'Ĉi tiu speciala paĝo montras liston de ĉiuj ekzistantaj malnetoj.
+Neuzataj malnetoj estos forĵetitaj post {{PLURAL:$1|$1 tago|$1 tagoj}} aŭtomate.',
 	'drafts-view-article' => 'Paĝo',
 	'drafts-view-existing' => 'Ekzistante malnetojn',
 	'drafts-view-saved' => 'Konservita',
