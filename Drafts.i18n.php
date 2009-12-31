@@ -1613,6 +1613,18 @@ $messages['te'] = array(
 	'drafts-save-saved' => 'భద్రమయ్యింది',
 );
 
+/** Thai (ไทย)
+ * @author Woraponboonkerd
+ */
+$messages['th'] = array(
+	'drafts-view-saved' => 'บันทึก',
+	'drafts-view-discard' => 'ยกเลิก',
+	'drafts-save-saved' => 'บันทึก',
+	'drafts-save-saving' => 'กำลังบันทึก',
+	'drafts-save-error' => 'เกิดความผิดพลาดในการบันทึกฉบับร่าง',
+	'tooltip-drafts-save' => 'บันทึกเป็นฉบับร่าง',
+);
+
 /** Turkmen (Türkmençe)
  * @author Hanberke
  */
