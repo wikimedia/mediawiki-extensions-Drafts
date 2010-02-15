@@ -326,7 +326,7 @@ Nepoužité koncepty budou po {{plural:$1|$1 dni|$1 dnech}} automaticky smazány
  */
 $messages['de'] = array(
 	'drafts' => 'Zwischengespeicherte Versionen',
-	'drafts-desc' => 'Ermöglicht, [[Special:Drafts|zwischengespeicherte Versionen]] auf dem Server zu erstellen',
+	'drafts-desc' => 'Zwischenspeichern von Textentwürfen auf dem Server',
 	'drafts-view' => 'Zwischengespeicherte Version anzeigen',
 	'drafts-view-summary' => 'Diese Spezialseite listet alle bestehenden zwischengespeicherten Versionen auf.
 Nicht verwendete zwischengespeicherte Versionen werden nach {{PLURAL:$1|$1 Tag|$1 Tagen}} automatisch verworfen.',
