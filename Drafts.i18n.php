@@ -853,7 +853,7 @@ Biztosan folytatod?',
  */
 $messages['ia'] = array(
 	'drafts' => 'Versiones provisori',
-	'drafts-desc' => 'Adde le possibilitate de immagazinar versiones [[Special:Drafts|provisori]] de un pagina in le servitor',
+	'drafts-desc' => 'Adde le possibilitate de salveguardar [[Special:Drafts|versiones provisori]] de un pagina in le servitor',
 	'drafts-view' => 'ViderVersionProvisori',
 	'drafts-view-summary' => 'Iste pagina special monstra un lista de tote le versiones provisori existente.
 Le versiones provisori non usate essera automaticamente abandonate post {{PLURAL:$1|$1 die|$1 dies}}.',
@@ -866,12 +866,12 @@ Le versiones provisori non usate essera automaticamente abandonate post {{PLURAL
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|version|versiones}} provisori',
 	'drafts-view-warn' => 'Si tu quita iste pagina, tu perdera tote le modificationes non immagazinate de iste pagina.
 Continuar?',
-	'drafts-save' => 'Immagazinar isto como version provisori',
-	'drafts-save-save' => 'Immagazinar version provisori',
+	'drafts-save' => 'Salveguardar isto como version provisori',
+	'drafts-save-save' => 'Salveguardar version provisori',
 	'drafts-save-saved' => 'Immagazinate',
-	'drafts-save-saving' => 'Immagazinage in curso',
+	'drafts-save-saving' => 'Salveguarda in curso',
 	'drafts-save-error' => 'Error immagazinante le version provisori',
-	'tooltip-drafts-save' => 'Immagazinar como version provisori',
+	'tooltip-drafts-save' => 'Salveguardar como version provisori',
 );
 
 /** Indonesian (Bahasa Indonesia)
