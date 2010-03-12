@@ -322,11 +322,12 @@ Nepoužité koncepty budou po {{plural:$1|$1 dni|$1 dnech}} automaticky smazány
  * @author ChrisiPK
  * @author Metalhead64
  * @author Pill
+ * @author Umherirrender
  * @author W (aka Wuzur)
  */
 $messages['de'] = array(
 	'drafts' => 'Zwischengespeicherte Versionen',
-	'drafts-desc' => 'Zwischenspeichern von Textentwürfen auf dem Server',
+	'drafts-desc' => 'Zwischenspeichern von [[Special:Drafts|Textentwürfen]] auf dem Server',
 	'drafts-view' => 'Zwischengespeicherte Version anzeigen',
 	'drafts-view-summary' => 'Diese Spezialseite listet alle bestehenden zwischengespeicherten Versionen auf.
 Nicht verwendete zwischengespeicherte Versionen werden nach {{PLURAL:$1|$1 Tag|$1 Tagen}} automatisch verworfen.',
