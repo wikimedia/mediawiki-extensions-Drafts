@@ -118,7 +118,7 @@ $aliases['km'] = array(
 	'Drafts' => array( 'ពង្រាង' ),
 );
 
-/** Ripoarisch (Ripoarisch) */
+/** Colognian (Ripoarisch) */
 $aliases['ksh'] = array(
 	'Drafts' => array( 'Versione Zwescheshpeischere' ),
 );
