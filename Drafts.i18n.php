@@ -217,7 +217,7 @@ $messages['bn'] = array(
 $messages['br'] = array(
 	'drafts' => 'Brouilhedoù',
 	'drafts-desc' => 'Aotreañ a ra da enrollañ ur stumm [[Special:Drafts|brouilhed]] eus ur bajenn war ar servijer',
-	'drafts-view' => 'Gwelet ar brouilhoñs',
+	'drafts-view' => 'Gwelet ar brouilhed',
 	'drafts-view-summary' => 'Ar bajenn ispisial-mañ a zo ur roll eus an holl brouilhedoù a zo.
 Ar brouilhedoù nann-implijet a vo distaolet emgefre goude $1 devez{{PLURAL:$1||}}.',
 	'drafts-view-article' => 'Pajenn',
@@ -226,14 +226,14 @@ Ar brouilhedoù nann-implijet a vo distaolet emgefre goude $1 devez{{PLURAL:$1||
 	'drafts-view-discard' => 'Disteurel',
 	'drafts-view-nonesaved' => "N'ho peus brouilhoñs ebet enrollet er mare-mañ.",
 	'drafts-view-notice' => '$1 ho peus evit ar bajenn-mañ.',
-	'drafts-view-notice-link' => '$1 {{PLURAL:$1|brouilhoñs|brouilhoñsoù}}',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|brouilhed|brouilhed}}',
 	'drafts-view-warn' => "En ur merdea er maez eus ar bajenn-mañ e kolloc'h holl kemmoù nann-enrollet ar bajenn-mañ.
 Ha c'hoant ho peus kenderc'hel ?",
-	'drafts-save' => 'Enrollañ evel ur brouilh',
+	'drafts-save' => 'Enrollañ an dra-mañ evel brouilhed',
 	'drafts-save-save' => 'Enrollañ ar brouilhed',
 	'drafts-save-saved' => 'Enrollet',
 	'drafts-save-saving' => "Oc'h enrollañ",
-	'drafts-save-error' => 'Fazi enrollañ ar brouilh',
+	'drafts-save-error' => 'Fazi enrollañ ar brouilhed',
 	'tooltip-drafts-save' => 'Enrollañ evel brouilhed',
 );
 
