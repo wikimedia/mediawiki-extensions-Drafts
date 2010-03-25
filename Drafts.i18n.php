@@ -1576,6 +1576,13 @@ Nepoužité návrhy sa po {{PLURAL:$1|$1 dni|$1 dňoch}} automaticky zahodia.',
 	'tooltip-drafts-save' => 'Uložiť ako návrh',
 );
 
+/** Slovenian (Slovenščina)
+ * @author Dbc334
+ */
+$messages['sl'] = array(
+	'drafts' => 'Osnutki',
+);
+
 /** Swedish (Svenska)
  * @author Boivie
  * @author Najami
