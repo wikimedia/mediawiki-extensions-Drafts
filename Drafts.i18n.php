@@ -1047,7 +1047,7 @@ $messages['ko'] = array(
 	'tooltip-drafts-save' => '초안으로 저장하기',
 );
 
-/** Ripoarisch (Ripoarisch)
+/** Colognian (Ripoarisch)
  * @author Purodha
  */
 $messages['ksh'] = array(
@@ -1074,7 +1074,7 @@ Wellß De wigger maaache?',
 	'tooltip-drafts-save' => 'Als ene Entworf avspeichere',
 );
 
-/** Cornish (Kernowek)
+/** Cornish (Kernewek)
  * @author Kw-Moon
  */
 $messages['kw'] = array(
