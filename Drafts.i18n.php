@@ -1478,20 +1478,20 @@ Deseja continuar?',
  * @author Stelistcristi
  */
 $messages['ro'] = array(
-	'drafts' => 'Schiţe',
-	'drafts-view' => 'VizualizeazăSchiţă',
+	'drafts' => 'Schițe',
+	'drafts-view' => 'VizualizeazăSchiță',
 	'drafts-view-article' => 'Pagină',
-	'drafts-view-existing' => 'Schiţe existente',
+	'drafts-view-existing' => 'Schițe existente',
 	'drafts-view-saved' => 'Salvat',
 	'drafts-view-discard' => 'Respinge',
-	'drafts-view-nonesaved' => 'Nu aveţi vreo schiţă salvată în acest moment.',
-	'drafts-view-notice' => 'Aveţi $1 pentru această pagină.',
-	'drafts-save' => 'Salvează aceasta ca o schiţă',
-	'drafts-save-save' => 'Salvează schiţă',
+	'drafts-view-nonesaved' => 'Nu aveți vreo schiță salvată în acest moment.',
+	'drafts-view-notice' => 'Aveți $1 pentru această pagină.',
+	'drafts-save' => 'Salvează aceasta ca o schiță',
+	'drafts-save-save' => 'Salvează schiță',
 	'drafts-save-saved' => 'Salvat',
 	'drafts-save-saving' => 'Salvare',
-	'drafts-save-error' => 'Eroare la salvarea schiţei',
-	'tooltip-drafts-save' => 'Salvaţi ca o schiţă',
+	'drafts-save-error' => 'Eroare la salvarea schiței',
+	'tooltip-drafts-save' => 'Salvați ca o schiță',
 );
 
 /** Tarandíne (Tarandíne)
