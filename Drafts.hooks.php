@@ -114,8 +114,6 @@ public static function schema() {
 				$wgRequest->setVal( 'draft', $draft->getID() );
 			}
 		}
-		// Internationalization
-		wfLoadExtensionMessages( 'Drafts' );
 		$numDrafts = Drafts::num( $wgTitle );
 		// Show list of drafts
 		if ( $numDrafts  > 0 ) {
@@ -183,8 +181,6 @@ public static function schema() {
 		global $egDraftsAutoSaveWait, $egDraftsAutoSaveTimeout;
 		// Check permissions
 		if ( $wgUser->isAllowed( 'edit' ) && $wgUser->isLoggedIn() ) {
-			// Internationalization
-			wfLoadExtensionMessages( 'Drafts' );
 			// Build XML
 			$buttons['savedraft'] = Xml::openElement( 'script',
 				array(
