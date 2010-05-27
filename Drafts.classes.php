@@ -182,6 +182,8 @@ abstract class Drafts {
 		$drafts = Drafts::get( $title, $userID );
 		if ( count( $drafts ) > 0 ) {
 			global $egDraftsLifeSpan;
+			// Internationalization
+			wfLoadExtensionMessages( 'Drafts' );
 			// Add a summary, on Special:Drafts only
 			if( !$title || $title->getNamespace() == NS_SPECIAL ) {
 				$wgOut->wrapWikiMsg(

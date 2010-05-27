@@ -16,6 +16,8 @@ class DraftsPage extends SpecialPage {
 	public function __construct() {
 		// Initialize special page
 		SpecialPage::SpecialPage( 'Drafts' );
+		// Internationalization
+		wfLoadExtensionMessages( 'Drafts' );
 	}
 
 	/**
