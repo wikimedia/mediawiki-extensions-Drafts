@@ -1416,6 +1416,7 @@ It veus-to continué?',
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
 $messages['ps'] = array(
+	'drafts' => 'ګارلیکونه',
 	'drafts-view-article' => 'مخ',
 );
 
@@ -1589,6 +1590,25 @@ Nepoužité návrhy sa po {{PLURAL:$1|$1 dni|$1 dňoch}} automaticky zahodia.',
  */
 $messages['sl'] = array(
 	'drafts' => 'Osnutki',
+);
+
+/** Serbian Cyrillic ekavian (Српски (ћирилица))
+ * @author Михајло Анђелковић
+ */
+$messages['sr-ec'] = array(
+	'drafts' => 'Нацрти',
+	'drafts-view-article' => 'Страна',
+	'drafts-view-existing' => 'Постојећи нацрти',
+	'drafts-view-saved' => 'Снимљено',
+	'drafts-view-discard' => 'Одбаци',
+	'drafts-view-nonesaved' => 'Тренутно немате снимљених нацрта.',
+	'drafts-view-notice' => 'Имате $1 за ову страну.',
+	'drafts-save' => 'Сними ово као нацрт',
+	'drafts-save-save' => 'Сними нацрт',
+	'drafts-save-saved' => 'Снимљено',
+	'drafts-save-saving' => 'Снимање у току',
+	'drafts-save-error' => 'Грешка приликом снимања нацрта',
+	'tooltip-drafts-save' => 'Сними као нацрт',
 );
 
 /** Swedish (Svenska)
