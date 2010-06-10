@@ -1590,6 +1590,25 @@ Nepoužité návrhy sa po {{PLURAL:$1|$1 dni|$1 dňoch}} automaticky zahodia.',
  */
 $messages['sl'] = array(
 	'drafts' => 'Osnutki',
+	'drafts-desc' => 'Doda zmožnost shranjevanja različic [[Special:Drafts|osnutkov]] strani na strežniku',
+	'drafts-view' => 'Ogled osnutka',
+	'drafts-view-summary' => 'Ta posebna stran prikazuje seznam vseh obstoječih osnutkov.
+Neuporabljeni osnutki bodo samodejno zavrženi po $1 {{PLURAL:$1|dnevu|dneh}}.',
+	'drafts-view-article' => 'Stran',
+	'drafts-view-existing' => 'Obstoječi osnutki',
+	'drafts-view-saved' => 'Shranjeno',
+	'drafts-view-discard' => 'Zavrzi',
+	'drafts-view-nonesaved' => 'Trenutno nimate shranjenih nobenih osnutkov.',
+	'drafts-view-notice' => 'Imate $1 za to stran.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|osnutek|osnutka|osnutke|osnutkov}}',
+	'drafts-view-warn' => 'Z odhodom iz te strani boste izgubili vse neshranjene spremembe na tej strani.
+Ali želite nadaljevati?',
+	'drafts-save' => 'Shrani kot osnutek',
+	'drafts-save-save' => 'Shrani osnutek',
+	'drafts-save-saved' => 'Shranjeno',
+	'drafts-save-saving' => 'Shranjevanje',
+	'drafts-save-error' => 'Napaka pri shranjevanju osnutka',
+	'tooltip-drafts-save' => 'Shrani kot osnutek',
 );
 
 /** Serbian Cyrillic ekavian (Српски (ћирилица))
