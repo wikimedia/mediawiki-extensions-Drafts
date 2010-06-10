@@ -1611,6 +1611,23 @@ $messages['sr-ec'] = array(
 	'tooltip-drafts-save' => 'Сними као нацрт',
 );
 
+/** Serbian Latin ekavian (Srpski (latinica)) */
+$messages['sr-el'] = array(
+	'drafts' => 'Nacrti',
+	'drafts-view-article' => 'Strana',
+	'drafts-view-existing' => 'Postojeći nacrti',
+	'drafts-view-saved' => 'Snimljeno',
+	'drafts-view-discard' => 'Odbaci',
+	'drafts-view-nonesaved' => 'Trenutno nemate snimljenih nacrta.',
+	'drafts-view-notice' => 'Imate $1 za ovu stranu.',
+	'drafts-save' => 'Snimi ovo kao nacrt',
+	'drafts-save-save' => 'Snimi nacrt',
+	'drafts-save-saved' => 'Snimljeno',
+	'drafts-save-saving' => 'Snimanje u toku',
+	'drafts-save-error' => 'Greška prilikom snimanja nacrta',
+	'tooltip-drafts-save' => 'Snimi kao nacrt',
+);
+
 /** Swedish (Svenska)
  * @author Boivie
  * @author Najami
@@ -1844,6 +1861,7 @@ $messages['zh-hans'] = array(
 	'drafts-view-saved' => '已保存',
 	'drafts-view-discard' => '舍弃',
 	'drafts-view-nonesaved' => '您还没有任何已保存的草稿。',
+	'drafts-view-notice' => '您有$1供此页。',
 	'drafts-save' => '把此页面以草稿形式保存',
 	'drafts-save-save' => '保存草稿',
 	'drafts-save-saved' => '已保存',
@@ -1854,6 +1872,7 @@ $messages['zh-hans'] = array(
 
 /** Traditional Chinese (‪中文(繁體)‬)
  * @author Gzdavidwong
+ * @author Horacewai2
  * @author Liangent
  * @author Wrightbus
  */
@@ -1865,6 +1884,7 @@ $messages['zh-hant'] = array(
 	'drafts-view-saved' => '已儲存',
 	'drafts-view-discard' => '捨棄',
 	'drafts-view-nonesaved' => '您還沒有任何已保存的草稿。',
+	'drafts-view-notice' => '您有$1供此頁。',
 	'drafts-save' => '把此頁面以草稿形式儲存',
 	'drafts-save-save' => '儲存草稿',
 	'drafts-save-saved' => '已儲存',
