@@ -420,6 +420,11 @@ Coš weto pókšacowaś?',
 	'tooltip-drafts-save' => 'Ako nacerjenje składowaś',
 );
 
+/** Ewe (Eʋegbe) */
+$messages['ee'] = array(
+	'drafts-view-article' => 'Axa',
+);
+
 /** Greek (Ελληνικά)
  * @author Dead3y3
  * @author Geraki
