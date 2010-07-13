@@ -1425,6 +1425,8 @@ It veus-to continué?',
 $messages['ps'] = array(
 	'drafts' => 'ګارلیکونه',
 	'drafts-view-article' => 'مخ',
+	'drafts-save' => 'د يوه ګارليک په توګه خوندي کول',
+	'drafts-save-save' => 'ګارليک خوندي کول',
 );
 
 /** Portuguese (Português)
