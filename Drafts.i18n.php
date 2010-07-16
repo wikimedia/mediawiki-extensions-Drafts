@@ -867,23 +867,23 @@ Biztosan folytatod?',
 $messages['ia'] = array(
 	'drafts' => 'Versiones provisori',
 	'drafts-desc' => 'Adde le possibilitate de salveguardar [[Special:Drafts|versiones provisori]] de un pagina in le servitor',
-	'drafts-view' => 'ViderVersionProvisori',
+	'drafts-view' => 'Vider version provisori',
 	'drafts-view-summary' => 'Iste pagina special monstra un lista de tote le versiones provisori existente.
 Le versiones provisori non usate essera automaticamente abandonate post {{PLURAL:$1|$1 die|$1 dies}}.',
 	'drafts-view-article' => 'Pagina',
 	'drafts-view-existing' => 'Versiones provisori existente',
-	'drafts-view-saved' => 'Immagazinate',
+	'drafts-view-saved' => 'Salveguardate',
 	'drafts-view-discard' => 'Abandonar',
-	'drafts-view-nonesaved' => 'Tu non ha alcun version provisori immagazinate al momento.',
+	'drafts-view-nonesaved' => 'Tu non ha alcun version provisori salveguardate al momento.',
 	'drafts-view-notice' => 'Tu ha $1 pro iste pagina.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|version|versiones}} provisori',
-	'drafts-view-warn' => 'Si tu quita iste pagina, tu perdera tote le modificationes non immagazinate de iste pagina.
+	'drafts-view-warn' => 'Si tu quita iste pagina, tu perdera tote le modificationes non salveguardate de iste pagina.
 Continuar?',
 	'drafts-save' => 'Salveguardar isto como version provisori',
 	'drafts-save-save' => 'Salveguardar version provisori',
-	'drafts-save-saved' => 'Immagazinate',
+	'drafts-save-saved' => 'Salveguardate',
 	'drafts-save-saving' => 'Salveguarda in curso',
-	'drafts-save-error' => 'Error immagazinante le version provisori',
+	'drafts-save-error' => 'Error salveguardante le version provisori',
 	'tooltip-drafts-save' => 'Salveguardar como version provisori',
 );
 
