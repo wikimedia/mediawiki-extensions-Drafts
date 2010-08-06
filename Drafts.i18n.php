@@ -754,6 +754,11 @@ $messages['gu'] = array(
 	'tooltip-drafts-save' => 'મુસદ્દા તરીકે સાચવો',
 );
 
+/** Hausa (هَوُسَ) */
+$messages['ha'] = array(
+	'drafts-view-article' => 'Shafi',
+);
+
 /** Hebrew (עברית)
  * @author Rotemliss
  * @author YaronSh
