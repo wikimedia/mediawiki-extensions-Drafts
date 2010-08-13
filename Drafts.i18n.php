@@ -1802,7 +1802,7 @@ Devam etmek istiyor musunuz?',
 	'tooltip-drafts-save' => 'Taslak olarak kaydet',
 );
 
-/** Uighur (Latin) (Uyghurche‎ / ئۇيغۇرچە (Latin))
+/** Uighur (Latin) (ئۇيغۇرچە / Uyghurche‎ (Latin))
  * @author Jose77
  */
 $messages['ug-latn'] = array(
