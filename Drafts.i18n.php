@@ -559,6 +559,7 @@ $messages['eu'] = array(
 
 /** Persian (فارسی)
  * @author Huji
+ * @author Wayiran
  */
 $messages['fa'] = array(
 	'drafts' => 'پیش‌نویس‌ها',
@@ -578,6 +579,7 @@ $messages['fa'] = array(
 	'drafts-save' => 'ذخیره کردن این متن به عنوان پیش‌نویس',
 	'drafts-save-save' => 'ذخیره کردن پیش‌نویس',
 	'drafts-save-saved' => 'ذخیره شد',
+	'drafts-save-saving' => 'ذخیره‌سازی',
 	'drafts-save-error' => 'خطا در ذخیره کردن پیش‌نویس',
 	'tooltip-drafts-save' => 'ذخیره به عنوان پیش‌نویس',
 );
