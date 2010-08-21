@@ -39,10 +39,11 @@ Do you want to continue?',
  * @author Darth Kule
  * @author Dead3y3
  * @author EugeneZelenko
+ * @author The Evil IP address
  */
 $messages['qqq'] = array(
 	'drafts' => 'Title of Special:Drafts',
-	'drafts-desc' => 'Short description of the Drafts extension, shown in [[Special:Version]]. Do not translate or change links.',
+	'drafts-desc' => '{{desc}}',
 	'drafts-view-summary' => 'Used in [[Special:Drafts]] when there is at least one draft saved.',
 	'drafts-view-article' => 'Name of column in Special:Drafts, when there are draft versions saved.
 
