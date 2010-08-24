@@ -1898,6 +1898,14 @@ Bạn có muốn tiếp tục?',
 	'tooltip-drafts-save' => 'Lưu làm bản thảo',
 );
 
+/** Volapük (Volapük)
+ * @author Malafaya
+ */
+$messages['vo'] = array(
+	'drafts' => 'Rigets',
+	'drafts-view-article' => 'Pad',
+);
+
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Gzdavidwong
  * @author Wmr89502270
