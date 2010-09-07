@@ -1704,6 +1704,11 @@ Vill du fortsätta?',
 	'tooltip-drafts-save' => 'Spara som ett utkast',
 );
 
+/** Swahili (Kiswahili) */
+$messages['sw'] = array(
+	'drafts-view-article' => 'Ukurasa',
+);
+
 /** Telugu (తెలుగు)
  * @author Veeven
  */
