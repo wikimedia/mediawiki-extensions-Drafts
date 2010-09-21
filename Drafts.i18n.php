@@ -1557,7 +1557,7 @@ $messages['ru'] = array(
 	'tooltip-drafts-save' => 'Сохранить как черновик',
 );
 
-/** Rusyn (русиньскый язык)
+/** Rusyn (Русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
