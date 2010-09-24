@@ -1233,6 +1233,14 @@ $messages['mwl'] = array(
 	'drafts-view-article' => 'Páigina',
 );
 
+/** Erzya (Эрзянь)
+ * @author Botuzhaleny-sodamo
+ */
+$messages['myv'] = array(
+	'drafts-view-article' => 'Лопа',
+	'drafts-save-saved' => 'Ванстозь',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
