@@ -1717,6 +1717,14 @@ $messages['sw'] = array(
 	'drafts-view-article' => 'Ukurasa',
 );
 
+/** Tamil (தமிழ்)
+ * @author TRYPPN
+ */
+$messages['ta'] = array(
+	'drafts-view-article' => 'பக்கம்',
+	'drafts-view-saved' => 'சேமிக்கப்பட்டது',
+);
+
 /** Telugu (తెలుగు)
  * @author Veeven
  */
