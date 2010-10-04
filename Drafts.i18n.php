@@ -1296,6 +1296,7 @@ Wilt u doorgaan?',
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
  * @author Harald Khan
+ * @author Ranveig
  */
 $messages['nn'] = array(
 	'drafts' => 'Utkast',
@@ -1307,7 +1308,7 @@ Unytta utkast vil verta vraka av seg sjølv etter {{PLURAL:$1|éin dag|$1 dagar}
 	'drafts-view-existing' => 'Eksisterande utkast',
 	'drafts-view-saved' => 'Lagra',
 	'drafts-view-discard' => 'Vrak',
-	'drafts-view-nonesaved' => 'Du har ingen lagra utkast på noverande tidspunkt.',
+	'drafts-view-nonesaved' => 'Du har ingen lagra utkast nett no.',
 	'drafts-view-notice' => 'Du har $1 for denne sida.',
 	'drafts-view-notice-link' => '{{PLURAL:$1|eitt utkast|$1 utkast}}',
 	'drafts-view-warn' => 'Ved å navigera vekk frå denne sida vil du missa alle endringane på sida som ikkje er lagra.
