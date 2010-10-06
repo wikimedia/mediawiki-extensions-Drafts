@@ -1035,6 +1035,13 @@ $messages['km'] = array(
 	'tooltip-drafts-save' => 'រក្សាទុក​ជា​ពង្រាង',
 );
 
+/** Kannada (ಕನ್ನಡ)
+ * @author Nayvik
+ */
+$messages['kn'] = array(
+	'drafts-view-article' => 'ಪುಟ',
+);
+
 /** Korean (한국어)
  * @author Klutzy
  * @author Kwj2772
@@ -1926,6 +1933,13 @@ Bạn có muốn tiếp tục?',
 $messages['vo'] = array(
 	'drafts' => 'Rigets',
 	'drafts-view-article' => 'Pad',
+);
+
+/** Yiddish (ייִדיש)
+ * @author פוילישער
+ */
+$messages['yi'] = array(
+	'drafts-view-article' => 'בלאַט',
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
