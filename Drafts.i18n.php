@@ -1731,6 +1731,8 @@ $messages['sw'] = array(
 $messages['ta'] = array(
 	'drafts-view-article' => 'பக்கம்',
 	'drafts-view-saved' => 'சேமிக்கப்பட்டது',
+	'drafts-save-saved' => 'சேமிக்கப்பட்டது',
+	'drafts-save-saving' => 'சேமிக்கப்படுகிறது',
 );
 
 /** Telugu (తెలుగు)
