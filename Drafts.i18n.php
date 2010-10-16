@@ -76,6 +76,8 @@ Biztosan folytatja?',
  * @author Naudefj
  */
 $messages['af'] = array(
+	'drafts' => 'Werkweergawes',
+	'drafts-view' => 'WysWerkweergawe',
 	'drafts-view-article' => 'Bladsy',
 	'drafts-view-saved' => 'Gestoor',
 	'drafts-view-discard' => 'Verwyder',
@@ -1526,6 +1528,7 @@ $messages['ro'] = array(
 	'drafts-view-discard' => 'Respinge',
 	'drafts-view-nonesaved' => 'Nu aveți vreo schiță salvată în acest moment.',
 	'drafts-view-notice' => 'Aveți $1 pentru această pagină.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|ciornă|ciorne}}',
 	'drafts-save' => 'Salvează aceasta ca o schiță',
 	'drafts-save-save' => 'Salvează schiță',
 	'drafts-save-saved' => 'Salvat',
@@ -1739,8 +1742,12 @@ $messages['ta'] = array(
  * @author Veeven
  */
 $messages['te'] = array(
+	'drafts' => 'చిత్తుప్రతులు',
 	'drafts-view-article' => 'పేజీ',
+	'drafts-view-existing' => 'ప్రస్తుత చిత్తుప్రతులు',
 	'drafts-view-nonesaved' => 'ప్రస్తుతం మీరు భద్రపరచిన ప్రతులు ఏమీ లేవు.',
+	'drafts-view-notice' => 'ఈ పుటకి మీకు $1.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|చిత్తుప్రతి ఉంది|చిత్తుప్రతులు ఉన్నాయి}}',
 	'drafts-view-warn' => 'మీ పేజీని వదిలివెళ్ళడం ద్వారా ఈ పేజీలోని భద్రపరచని అన్ని మార్పులనీ కోల్పోతారు.
 అయినా మీరు కొనసాగాలనుకుంటున్నరా?',
 	'drafts-save-saved' => 'భద్రమయ్యింది',
@@ -1945,6 +1952,7 @@ $messages['yi'] = array(
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
+ * @author Chenxiaoqino
  * @author Gzdavidwong
  * @author Wmr89502270
  */
@@ -1957,6 +1965,7 @@ $messages['zh-hans'] = array(
 	'drafts-view-discard' => '舍弃',
 	'drafts-view-nonesaved' => '您还没有任何已保存的草稿。',
 	'drafts-view-notice' => '您有$1供此页。',
+	'drafts-view-notice-link' => '草稿',
 	'drafts-save' => '把此页面以草稿形式保存',
 	'drafts-save-save' => '保存草稿',
 	'drafts-save-saved' => '已保存',
