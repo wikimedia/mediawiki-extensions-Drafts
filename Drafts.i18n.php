@@ -1529,6 +1529,8 @@ $messages['ro'] = array(
 	'drafts-view-nonesaved' => 'Nu aveți vreo schiță salvată în acest moment.',
 	'drafts-view-notice' => 'Aveți $1 pentru această pagină.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|ciornă|ciorne}}',
+	'drafts-view-warn' => 'Dacă ieşiţi de pe această pagină veţi pierde toate schimbările nesalvate acestei pagini.
+Vreţi să continuaţi?',
 	'drafts-save' => 'Salvează aceasta ca o schiță',
 	'drafts-save-save' => 'Salvează schiță',
 	'drafts-save-saved' => 'Salvat',
@@ -1745,6 +1747,7 @@ $messages['te'] = array(
 	'drafts' => 'చిత్తుప్రతులు',
 	'drafts-view-article' => 'పేజీ',
 	'drafts-view-existing' => 'ప్రస్తుత చిత్తుప్రతులు',
+	'drafts-view-saved' => 'భద్రపరచినవి',
 	'drafts-view-nonesaved' => 'ప్రస్తుతం మీరు భద్రపరచిన ప్రతులు ఏమీ లేవు.',
 	'drafts-view-notice' => 'ఈ పుటకి మీకు $1.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|చిత్తుప్రతి ఉంది|చిత్తుప్రతులు ఉన్నాయి}}',
