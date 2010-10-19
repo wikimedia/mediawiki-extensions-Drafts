@@ -1611,6 +1611,15 @@ $messages['sah'] = array(
 	'tooltip-drafts-save' => 'Харатынан хааллар',
 );
 
+/** Sicilian (Sicilianu)
+ * @author Aushulz
+ */
+$messages['scn'] = array(
+	'drafts-view-article' => 'Pàggina',
+	'drafts-view-saved' => 'Sarvata',
+	'drafts-save-saved' => 'Sarvata',
+);
+
 /** Slovak (Slovenčina)
  * @author Helix84
  */
