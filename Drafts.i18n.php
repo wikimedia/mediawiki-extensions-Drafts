@@ -1582,7 +1582,11 @@ $messages['ru'] = array(
  * @author Gazeb
  */
 $messages['rue'] = array(
+	'drafts' => 'Концепты',
 	'drafts-view-article' => 'Сторінка',
+	'drafts-view-saved' => 'Уложене',
+	'drafts-view-discard' => 'Змазати',
+	'drafts-save-saved' => 'Уложене',
 );
 
 /** Yakut (Саха тыла)
