@@ -1541,14 +1541,19 @@ Vreţi să continuaţi?',
 
 /** Tarandíne (Tarandíne)
  * @author Joetaras
+ * @author Reder
  */
 $messages['roa-tara'] = array(
 	'drafts' => 'Bozze',
 	'drafts-view-article' => 'Vosce',
 	'drafts-view-saved' => 'Reggistrate',
 	'drafts-view-discard' => 'Scitte',
+	'drafts-save' => 'Salve quiste cumme bozze',
+	'drafts-save-save' => "Salve 'a bozze",
 	'drafts-save-saved' => 'Reggistrate',
 	'drafts-save-saving' => 'Stoche a reggistre',
+	'drafts-save-error' => "Errore de salvatagge d'u pruggette",
+	'tooltip-drafts-save' => 'Salve cumme bozze',
 );
 
 /** Russian (Русский)
