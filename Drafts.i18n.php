@@ -125,6 +125,15 @@ $messages['ar'] = array(
 	'tooltip-drafts-save' => 'حفظ كمسودة',
 );
 
+/** Aramaic (ܐܪܡܝܐ)
+ * @author Basharh
+ */
+$messages['arc'] = array(
+	'drafts-view-article' => 'ܕܦܐ',
+	'drafts-view-saved' => 'ܠܒܟܬ',
+	'drafts-save-saved' => 'ܠܒܟܬ',
+);
+
 /** Egyptian Spoken Arabic (مصرى)
  * @author Meno25
  * @author Ramsis II
