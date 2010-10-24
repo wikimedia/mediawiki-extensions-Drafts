@@ -1219,6 +1219,13 @@ $messages['ml'] = array(
 	'tooltip-drafts-save' => 'കരട് ആയി സേവ് ചെയ്യുക',
 );
 
+/** Mongolian (Монгол)
+ * @author Chinneeb
+ */
+$messages['mn'] = array(
+	'drafts-view-article' => 'Хуудас',
+);
+
 /** Malay (Bahasa Melayu)
  * @author Aviator
  * @author Izzudin
@@ -1555,8 +1562,12 @@ Vreţi să continuaţi?',
 $messages['roa-tara'] = array(
 	'drafts' => 'Bozze',
 	'drafts-view-article' => 'Vosce',
+	'drafts-view-existing' => 'Pruggette esistende',
 	'drafts-view-saved' => 'Reggistrate',
 	'drafts-view-discard' => 'Scitte',
+	'drafts-view-nonesaved' => 'Non ge tène totte le pruggette salvate jndre stù momende.',
+	'drafts-view-notice' => 'Tu tène $1 pè quèste pàgene.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|pruggette|pruggette}}',
 	'drafts-save' => 'Salve quiste cumme bozze',
 	'drafts-save-save' => "Salve 'a bozze",
 	'drafts-save-saved' => 'Reggistrate',
@@ -1597,10 +1608,21 @@ $messages['ru'] = array(
  */
 $messages['rue'] = array(
 	'drafts' => 'Концепты',
+	'drafts-view' => 'Зобразити концепт',
 	'drafts-view-article' => 'Сторінка',
+	'drafts-view-existing' => 'Єстуючі концепты',
 	'drafts-view-saved' => 'Уложене',
 	'drafts-view-discard' => 'Змазати',
+	'drafts-view-nonesaved' => 'Моментално не маєте уложены жадны концепты',
+	'drafts-view-notice' => 'Маєте $1 той сторінкы.',
+	'drafts-view-notice-link' => '$1 {{plural:$1|концепт|концепты|концептів}}',
+	'drafts-view-warn' => 'Кідь одыйдете з той сторінкы, стратите вшыткы уложены зміны той сторінкы. Хочете продовжыти?',
+	'drafts-save' => 'Уложыти тоту верзію як концепт',
+	'drafts-save-save' => 'Уложыти концепт',
 	'drafts-save-saved' => 'Уложене',
+	'drafts-save-saving' => 'Укладать ся',
+	'drafts-save-error' => 'Хыба почас укладаня концепту',
+	'tooltip-drafts-save' => 'Уложыти як концепт',
 );
 
 /** Yakut (Саха тыла)
@@ -1780,6 +1802,8 @@ $messages['te'] = array(
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|చిత్తుప్రతి ఉంది|చిత్తుప్రతులు ఉన్నాయి}}',
 	'drafts-view-warn' => 'మీ పేజీని వదిలివెళ్ళడం ద్వారా ఈ పేజీలోని భద్రపరచని అన్ని మార్పులనీ కోల్పోతారు.
 అయినా మీరు కొనసాగాలనుకుంటున్నరా?',
+	'drafts-save' => 'దీన్ని చిత్తుప్రతిగా భద్రపరచు',
+	'drafts-save-save' => 'చిత్తుప్రతిని భద్రపరచు',
 	'drafts-save-saved' => 'భద్రమయ్యింది',
 );
 
