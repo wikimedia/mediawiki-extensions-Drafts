@@ -22,7 +22,8 @@ class DraftsPage extends SpecialPage {
 
 	/**
 	 * Executes special page rendering and data processing
-	 * @param string $sub MediaWiki supplied sub-page path
+	 *
+	 * @param $sub Mixed: MediaWiki supplied sub-page path
 	 */
 	public function execute( $sub ) {
 		global $wgRequest, $wgOut, $wgUser;

@@ -1,9 +1,9 @@
 /* JavaScript for Drafts extension */
 
 function Draft() {
-	
+
 	/* Private Members */
-	
+
 	// Reference to object's self
 	var self = this;
 	// Configuration settings
@@ -16,16 +16,14 @@ function Draft() {
 	var timer = null;
 	// Reference to edit form draft is being edited with
 	var form = null;
-	
+
 	/* Functions */
-	
+
 	/**
 	 * Sets the state of the draft
 	 * @param {String} newState
 	 */
-	this.setState = function(
-		newState
-	) {
+	this.setState = function( newState ) {
 		// Stores state information
 		state = newState;
 		// Updates UI elements
@@ -53,14 +51,14 @@ function Draft() {
 			default: break;
 		}
 	}
-	
+
 	/**
 	 * Gets the state of the draft
 	 */
 	this.getState = function() {
 		return state;
 	}
-	
+
 	/**
 	 * Sends draft data to server to be saved
 	 */
@@ -75,10 +73,10 @@ function Draft() {
 		// Saves current request type
 		var oldRequestType = sajax_request_type;
 		// Changes request type to post
-		sajax_request_type = "POST";
+		sajax_request_type = 'POST';
 		// Performs asynchronous save on server
 		sajax_do_call(
-			"DraftHooks::save",
+			'DraftHooks::save',
 			[
 				form.wpDraftToken.value,
 				form.wpEditToken.value,
@@ -92,7 +90,7 @@ function Draft() {
 				form.wpSummary.value,
 				form.wpMinoredit.checked ? 1 : 0
 			],
-			new Function( "request", "wgDraft.respond( request )" )
+			new Function( 'request', 'wgDraft.respond( request )' )
 		);
 		// Restores current request type
 		sajax_request_type = oldRequestType;
@@ -119,11 +117,11 @@ function Draft() {
 		if ( configuration.autoSaveWait && configuration.autoSaveWait > 0 ) {
 			// Sets timer to save automatically after a period of time
 			timer = setTimeout(
-				"wgDraft.save()", configuration.autoSaveWait * 1000
+				'wgDraft.save()', configuration.autoSaveWait * 1000
 			);
 		}
 	}
-	
+
 	/**
 	 * Initializes the user interface
 	 */
@@ -165,9 +163,7 @@ function Draft() {
 	 * Responds to the server after a save request has been handled
 	 * @param {Object} request
 	 */
-	this.respond = function(
-		request
-	) {
+	this.respond = function( request ) {
 		// Checks that an error did not occur
 		if ( request.responseText > -1 ) {
 			// Changes state to saved
@@ -184,4 +180,4 @@ function Draft() {
 // Instantiates a draft object
 var wgDraft = new Draft();
 // Registers hooks
-hookEvent( "load", wgDraft.initialize );
+hookEvent( 'load', wgDraft.initialize );

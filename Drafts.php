@@ -19,7 +19,7 @@
 // Check environment
 if ( !defined( 'MEDIAWIKI' ) ) {
 	echo( "This is an extension to MediaWiki and cannot be run standalone.\n" );
-	die( - 1 );
+	die( -1 );
 }
 
 /* Configuration */
@@ -28,6 +28,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'Drafts',
+	'version' => '0.1.0',
 	'author' => 'Trevor Parscal',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:Drafts',
 	'descriptionmsg' => 'drafts-desc',
