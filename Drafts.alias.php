@@ -68,6 +68,11 @@ $specialPageAliases['fa'] = array(
 	'Drafts' => array( 'پیش‌نویس‌ها' ),
 );
 
+/** Finnish (Suomi) */
+$specialPageAliases['fi'] = array(
+	'Drafts' => array( 'Luonnokset' ),
+);
+
 /** French (Français) */
 $specialPageAliases['fr'] = array(
 	'Drafts' => array( 'Brouillons' ),
