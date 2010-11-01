@@ -1561,6 +1561,7 @@ Vreţi să continuaţi?',
  */
 $messages['roa-tara'] = array(
 	'drafts' => 'Bozze',
+	'drafts-view' => 'ViewDraft',
 	'drafts-view-article' => 'Vosce',
 	'drafts-view-existing' => 'Pruggette esistende',
 	'drafts-view-saved' => 'Reggistrate',
@@ -2008,6 +2009,7 @@ $messages['yi'] = array(
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Chenxiaoqino
  * @author Gzdavidwong
+ * @author Hydra
  * @author Wmr89502270
  */
 $messages['zh-hans'] = array(
@@ -2020,6 +2022,8 @@ $messages['zh-hans'] = array(
 	'drafts-view-nonesaved' => '您还没有任何已保存的草稿。',
 	'drafts-view-notice' => '您有$1供此页。',
 	'drafts-view-notice-link' => '草稿',
+	'drafts-view-warn' => '如果你离开这页，你将会失去你的更改。
+你想继续吗？',
 	'drafts-save' => '把此页面以草稿形式保存',
 	'drafts-save-save' => '保存草稿',
 	'drafts-save-saved' => '已保存',
