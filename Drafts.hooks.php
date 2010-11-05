@@ -101,6 +101,7 @@ class DraftHooks {
 			}
 		}
 		// Internationalization
+		wfLoadExtensionMessages( 'Drafts' );
 		$numDrafts = Drafts::num( $wgTitle );
 		// Show list of drafts
 		if ( $numDrafts  > 0 ) {
@@ -161,6 +162,7 @@ class DraftHooks {
 		// Check permissions
 		if ( $wgUser->isAllowed( 'edit' ) && $wgUser->isLoggedIn() ) {
 			// Internationalization
+			wfLoadExtensionMessages( 'Drafts' );
 			// Build XML
 			$buttons['savedraft'] = Xml::openElement( 'script',
 				array(
