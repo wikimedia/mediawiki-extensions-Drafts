@@ -9,18 +9,25 @@
 class DraftHooks {
 
 	/* Static Functions */
-	public static function schema() {
-		global $wgExtNewTables, $wgExtModifiedFields;
+	public static function schema( $updater = null ) {
+		if ( $updater === null ) {
+			global $wgExtNewTables, $wgExtModifiedFields;
 
-		$wgExtNewTables[] = array(
-			'drafts',
-			dirname( __FILE__ ) . '/Drafts.sql'
-		);
-		$wgExtModifiedFields[] = array(
-			'drafts',
-			'draft_token',
-			dirname( __FILE__ ) . '/patch-draft_token.sql'
-		);
+			$wgExtNewTables[] = array(
+				'drafts',
+				dirname( __FILE__ ) . '/Drafts.sql'
+			);
+			$wgExtModifiedFields[] = array(
+				'drafts',
+				'draft_token',
+				dirname( __FILE__ ) . '/patch-draft_token.sql'
+			);
+		} else {
+			$updater->addExtensionUpdate( array( 'addTable', 'drafts',
+				dirname( __FILE__ ) . '/Drafts.sql', true ) );
+			$updater->addExtensionUpdate( array( 'modifyField', 'drafts', 'draft_token',
+				dirname( __FILE__ ) . '/patch-draft_token.sql', true ) );
+		}
 
 		return true;
 	}
