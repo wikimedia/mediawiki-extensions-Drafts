@@ -161,6 +161,32 @@ $messages['arz'] = array(
 	'tooltip-drafts-save' => 'حفظ كمسودة',
 );
 
+/** Bashkir (Башҡорт)
+ * @author Assele
+ */
+$messages['ba'] = array(
+	'drafts' => 'Ҡараламалар',
+	'drafts-desc' => 'Серверҙа биттәрҙең [[Special:Drafts|ҡараламаһын]] һаҡлау мөмкинлеген өҫтәй',
+	'drafts-view' => 'ҠараламаҠарау',
+	'drafts-view-summary' => 'Был махсус бит бөтә булған ҡараламаларҙы күрһәтә.
+Ҡулланылмаған ҡараламалар {{PLURAL:$1|$1 көндән}} үҙенән-үҙе юйыла.',
+	'drafts-view-article' => 'Бит',
+	'drafts-view-existing' => 'Булған ҡараламалар',
+	'drafts-view-saved' => 'Һаҡланған',
+	'drafts-view-discard' => 'Кире алырға',
+	'drafts-view-nonesaved' => 'Әлеге выҡытта һеҙҙең бер ҡараламағыҙ ҙа юҡ.',
+	'drafts-view-notice' => 'Һеҙҙең был бит өсөн $1 бар.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|ҡаралама}}',
+	'drafts-view-warn' => 'Был биттән китһәгеҙ, һеҙ биттәге бөтә һаҡланмаған үҙгәртеүҙәрҙе юғалтасаҡһығыҙ.
+Дауам итергә теләйһегеҙме?',
+	'drafts-save' => 'Ҡаралама рәүешендә һаҡларға',
+	'drafts-save-save' => 'Ҡараламаны һаҡларға',
+	'drafts-save-saved' => 'Һаҡланған',
+	'drafts-save-saving' => 'Һаҡлау',
+	'drafts-save-error' => 'Ҡараламаны һаҡлау хатаһы',
+	'tooltip-drafts-save' => 'Ҡаралама рәүешендә һаҡларға',
+);
+
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
  * @author EugeneZelenko
  * @author Jim-by
