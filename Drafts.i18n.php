@@ -2040,14 +2040,17 @@ $messages['yi'] = array(
  */
 $messages['zh-hans'] = array(
 	'drafts' => '草稿',
+	'drafts-desc' => '添加要在服务器上保存页面的 [[Special:Drafts|草案]] 版本的能力',
 	'drafts-view' => '查看草稿',
+	'drafts-view-summary' => '此特殊页显示一个列表中的所有现有的草稿。
+未使用的草稿以后就会在{{PLURAL：$1|$1天|$1天}}自动被删除。',
 	'drafts-view-article' => '页面',
 	'drafts-view-existing' => '现有草稿',
 	'drafts-view-saved' => '已保存',
 	'drafts-view-discard' => '舍弃',
 	'drafts-view-nonesaved' => '您还没有任何已保存的草稿。',
 	'drafts-view-notice' => '您有$1供此页。',
-	'drafts-view-notice-link' => '草稿',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|草稿|草稿}}',
 	'drafts-view-warn' => '如果你离开这页，你将会失去你的更改。
 你想继续吗？',
 	'drafts-save' => '把此页面以草稿形式保存',
