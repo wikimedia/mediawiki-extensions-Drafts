@@ -11,22 +11,26 @@ class DraftHooks {
 	/* Static Functions */
 	public static function schema( $updater = null ) {
 		if ( $updater === null ) {
-			global $wgExtNewTables, $wgExtModifiedFields;
+			global $wgExtNewTables, $wgExtModifiedFields, $wgDBtype;
 
 			$wgExtNewTables[] = array(
 				'drafts',
 				dirname( __FILE__ ) . '/Drafts.sql'
 			);
-			$wgExtModifiedFields[] = array(
-				'drafts',
-				'draft_token',
-				dirname( __FILE__ ) . '/patch-draft_token.sql'
-			);
+			if ( $wgDBtype != 'sqlite' ) {
+				$wgExtModifiedFields[] = array(
+					'drafts',
+					'draft_token',
+					dirname( __FILE__ ) . '/patch-draft_token.sql'
+				);
+			}
 		} else {
 			$updater->addExtensionUpdate( array( 'addTable', 'drafts',
 				dirname( __FILE__ ) . '/Drafts.sql', true ) );
-			$updater->addExtensionUpdate( array( 'modifyField', 'drafts', 'draft_token',
-				dirname( __FILE__ ) . '/patch-draft_token.sql', true ) );
+			if ( $updater->getDb()->getType() != 'sqlite' ) {
+				$updater->addExtensionUpdate( array( 'modifyField', 'drafts', 'draft_token',
+					dirname( __FILE__ ) . '/patch-draft_token.sql', true ) );
+			}
 		}
 
 		return true;
