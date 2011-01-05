@@ -48,7 +48,7 @@ $egDraftsAutoSaveWait = 120;
 // Use the value 0 to disable autosave
 $egDraftsAutoSaveTimeout = 10;
 
-// Days to keep drafts around before automatic deletion
+// Days to keep drafts around before automatic deletion. Set to 0 to keep forever.
 $egDraftsLifeSpan = 30;
 
 // Ratio of times which a list of drafts requested and the list should be pruned

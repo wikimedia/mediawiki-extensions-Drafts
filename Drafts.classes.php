@@ -12,6 +12,10 @@ abstract class Drafts {
 
 	private static function getDraftAgeCutoff() {
 		global $egDraftsLifeSpan;
+		if ( !$egDraftsLifeSpan ) {
+			// Drafts stay forever
+			return 0;
+		}
 		return wfTimestamp( TS_UNIX ) - ( $egDraftsLifeSpan * 60 * 60 * 24 );
 	}
 
