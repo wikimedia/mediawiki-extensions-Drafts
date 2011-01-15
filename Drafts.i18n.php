@@ -2065,21 +2065,28 @@ $messages['zh-hans'] = array(
  * @author Gzdavidwong
  * @author Horacewai2
  * @author Liangent
+ * @author Mark85296341
  * @author Wrightbus
  */
 $messages['zh-hant'] = array(
 	'drafts' => '草稿',
-	'drafts-view' => '查看草稿',
+	'drafts-desc' => '新增要在伺服器上儲存頁面的 [[Special:Drafts|草案]] 版本的能力',
+	'drafts-view' => '檢視草稿',
+	'drafts-view-summary' => '此特殊頁面顯示一個列表中的所有現有的草稿。
+未使用的草稿以後就會在{{PLURAL:$1|$1天|$1天}}自動被刪除。',
 	'drafts-view-article' => '頁面',
 	'drafts-view-existing' => '現有草稿',
 	'drafts-view-saved' => '已儲存',
 	'drafts-view-discard' => '捨棄',
 	'drafts-view-nonesaved' => '您還沒有任何已保存的草稿。',
 	'drafts-view-notice' => '您有$1供此頁。',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|草稿|草稿}}',
+	'drafts-view-warn' => '如果你離開這頁，你將會失去你的更改。
+你想繼續嗎？',
 	'drafts-save' => '把此頁面以草稿形式儲存',
 	'drafts-save-save' => '儲存草稿',
 	'drafts-save-saved' => '已儲存',
-	'drafts-save-saving' => '保存中',
+	'drafts-save-saving' => '儲存中',
 	'drafts-save-error' => '儲存草稿時發生錯誤',
 	'tooltip-drafts-save' => '以草稿形式儲存',
 );
