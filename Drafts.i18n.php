@@ -161,7 +161,7 @@ $messages['arz'] = array(
 	'tooltip-drafts-save' => 'حفظ كمسودة',
 );
 
-/** Bashkir (Башҡорт)
+/** Bashkir (Башҡортса)
  * @author Assele
  */
 $messages['ba'] = array(
@@ -187,7 +187,7 @@ $messages['ba'] = array(
 	'tooltip-drafts-save' => 'Ҡаралама рәүешендә һаҡларға',
 );
 
-/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
@@ -393,7 +393,7 @@ Möchtest du dennoch fortfahren?',
 	'tooltip-drafts-save' => 'Eine zwischengespeicherte Version erstellen',
 );
 
-/** German (formal address) (Deutsch (Sie-Form))
+/** German (formal address) (‪Deutsch (Sie-Form)‬)
  * @author ChrisiPK
  * @author Imre
  * @author MichaelFrey
@@ -1133,7 +1133,7 @@ Wellß De wigger maaache?',
 	'tooltip-drafts-save' => 'Als ene Entworf avspeichere',
 );
 
-/** Cornish (Kernewek)
+/** Cornish (Kernowek)
  * @author Kw-Moon
  */
 $messages['kw'] = array(
@@ -1738,7 +1738,7 @@ Ali želite nadaljevati?',
 	'tooltip-drafts-save' => 'Shrani kot osnutek',
 );
 
-/** Serbian Cyrillic ekavian (Српски (ћирилица))
+/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
  * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
@@ -1757,7 +1757,7 @@ $messages['sr-ec'] = array(
 	'tooltip-drafts-save' => 'Сними као нацрт',
 );
 
-/** Serbian Latin ekavian (Srpski (latinica)) */
+/** Serbian Latin ekavian (‪Srpski (latinica)‬) */
 $messages['sr-el'] = array(
 	'drafts' => 'Nacrti',
 	'drafts-view-article' => 'Strana',
@@ -2066,6 +2066,7 @@ $messages['zh-hans'] = array(
  * @author Horacewai2
  * @author Liangent
  * @author Mark85296341
+ * @author Waihorace
  * @author Wrightbus
  */
 $messages['zh-hant'] = array(
