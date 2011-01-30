@@ -1739,6 +1739,7 @@ Ali želite nadaljevati?',
 );
 
 /** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
+ * @author Rancher
  * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
@@ -1752,7 +1753,7 @@ $messages['sr-ec'] = array(
 	'drafts-save' => 'Сними ово као нацрт',
 	'drafts-save-save' => 'Сними нацрт',
 	'drafts-save-saved' => 'Снимљено',
-	'drafts-save-saving' => 'Снимање у току',
+	'drafts-save-saving' => 'Чување',
 	'drafts-save-error' => 'Грешка приликом снимања нацрта',
 	'tooltip-drafts-save' => 'Сними као нацрт',
 );
