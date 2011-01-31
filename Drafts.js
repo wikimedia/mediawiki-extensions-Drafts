@@ -23,11 +23,11 @@ function Draft() {
 	 * Sets the state of the draft
 	 * @param {String} newState
 	 */
-	this.setState = function( newState ) {
+	this.setState = function(newState) {
 		// Stores state information
 		state = newState;
 		// Updates UI elements
-		switch ( state ) {
+		switch (state) {
 			case 'unchanged':
 				form.wpDraftSave.disabled = true;
 				form.wpDraftSave.value = messages.saveDraft;
@@ -50,21 +50,21 @@ function Draft() {
 				break;
 			default: break;
 		}
-	}
+	};
 
 	/**
 	 * Gets the state of the draft
 	 */
 	this.getState = function() {
 		return state;
-	}
+	};
 
 	/**
 	 * Sends draft data to server to be saved
 	 */
 	this.save = function() {
 		// Checks if a save is already taking place
-		if ( state == 'saving' ) {
+		if (state == 'saving') {
 			// Exits function immediately
 			return;
 		}
@@ -100,7 +100,7 @@ function Draft() {
 		);
 		// Ensure timer is cleared in case we saved manually before it expired
 		clearTimeout( timer );
-	}
+	};
 
 	/**
 	 * Updates the user interface to represent being out of sync with the server
@@ -120,7 +120,7 @@ function Draft() {
 				'wgDraft.save()', configuration.autoSaveWait * 1000
 			);
 		}
-	}
+	};
 
 	/**
 	 * Initializes the user interface
@@ -157,7 +157,7 @@ function Draft() {
 				error: form.wpMsgError.value
 			};
 		}
-	}
+	};
 
 	/**
 	 * Responds to the server after a save request has been handled
