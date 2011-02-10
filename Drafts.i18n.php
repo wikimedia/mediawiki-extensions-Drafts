@@ -1051,6 +1051,7 @@ $messages['ka'] = array(
 
 /** Khmer (ភាសាខ្មែរ)
  * @author Thearith
+ * @author គីមស៊្រុន
  * @author វ័ណថារិទ្ធ
  */
 $messages['km'] = array(
@@ -1064,6 +1065,9 @@ $messages['km'] = array(
 	'drafts-view-nonesaved' => 'អ្នក​មិន​មាន​ពង្រាង​ណាមួយ​ត្រូវ​បាន​រក្សាទុក​នាពេលនេះ​ទេ​។',
 	'drafts-view-notice' => 'អ្នក​មាន $1 សម្រាប់​ទំព័រ​នេះ​។',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|ពង្រាង|ពង្រាង}}',
+	'drafts-view-warn' => 'បើចាកចេញពីទំព័រនេះ អ្នកនឹងបាត់បង់រាល់អ្វីដែលមិនទាន់បានរក្សាទុកនៅលើទំព័រនេះ។
+
+តើអ្នកចង់បន្តទេ?',
 	'drafts-save' => 'រក្សាទុក​ជា​ពង្រាង',
 	'drafts-save-save' => 'រក្សាទុក​ពង្រាង',
 	'drafts-save-saved' => 'បាន​រក្សាទុក',
