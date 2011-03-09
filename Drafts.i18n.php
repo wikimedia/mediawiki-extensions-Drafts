@@ -269,11 +269,11 @@ Ar brouilhedoù nann-implijet a vo distaolet emgefre goude $1 devez{{PLURAL:$1||
 	'drafts-view-existing' => 'Brouilhedoù zo anezho dija',
 	'drafts-view-saved' => 'Enrollet',
 	'drafts-view-discard' => 'Disteurel',
-	'drafts-view-nonesaved' => "N'ho peus brouilhoñs ebet enrollet er mare-mañ.",
+	'drafts-view-nonesaved' => "N'hoc'h eus tamm brouilhoñs ebet enrollet er mare-mañ.",
 	'drafts-view-notice' => '$1 ho peus evit ar bajenn-mañ.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|brouilhed|brouilhed}}',
-	'drafts-view-warn' => "En ur merdea er maez eus ar bajenn-mañ e kolloc'h holl kemmoù nann-enrollet ar bajenn-mañ.
-Ha c'hoant ho peus kenderc'hel ?",
+	'drafts-view-warn' => "Ma'z it da verdeiñ er maez eus ar bajenn-mañ e kollot an holl gemmoù dienroll degaset d'ar bajenn-mañ.
+Ha kenderc'hel a fell deoc'h ober ?",
 	'drafts-save' => 'Enrollañ an dra-mañ evel brouilhed',
 	'drafts-save-save' => 'Enrollañ ar brouilhed',
 	'drafts-save-saved' => 'Enrollet',
