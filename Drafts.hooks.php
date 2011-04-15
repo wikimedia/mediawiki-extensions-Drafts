@@ -84,7 +84,8 @@ class DraftHooks {
 
 			// Save draft on non-save submission
 			if ( $wgRequest->getVal( 'action' ) == 'submit' &&
-				$wgUser->editToken() == $wgRequest->getText( 'wpEditToken' ) )
+				$wgUser->editToken() == $wgRequest->getText( 'wpEditToken' ) &&
+				is_null( $wgRequest->getText( 'wpDraftTitle' ) ) )
 			{
 				// If the draft wasn't specified in the url, try using a
 				// form-submitted one
