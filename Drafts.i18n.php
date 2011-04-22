@@ -935,11 +935,12 @@ Continuar?',
 /** Indonesian (Bahasa Indonesia)
  * @author Bennylin
  * @author Irwangatot
+ * @author IvanLanin
  * @author Kandar
  */
 $messages['id'] = array(
 	'drafts' => 'Rancangan',
-	'drafts-desc' => 'Menambahkan kemampuan untuk menyimpan versi [[Special:Drafts|tulisan rancangan]] suatu halaman di peladen',
+	'drafts-desc' => 'Menambahkan kemampuan untuk menyimpan versi [[Special:Drafts|tulisan rancangan]] suatu halaman di server',
 	'drafts-view' => 'LihatRancangan',
 	'drafts-view-summary' => 'Halaman istimewa ini menunjukkan daftar semua tulisan rancangan yang ada.
 Tulisan rancangan yang tidak digunakan akan dibuang secara otomatis setelah {{PLURAL:$1||}}$1 hari.',
