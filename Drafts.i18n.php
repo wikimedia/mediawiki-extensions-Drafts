@@ -161,6 +161,13 @@ $messages['arz'] = array(
 	'tooltip-drafts-save' => 'حفظ كمسودة',
 );
 
+/** Azerbaijani (Azərbaycanca)
+ * @author Cekli829
+ */
+$messages['az'] = array(
+	'drafts-view-article' => 'Səhifə',
+);
+
 /** Bashkir (Башҡортса)
  * @author Assele
  */
