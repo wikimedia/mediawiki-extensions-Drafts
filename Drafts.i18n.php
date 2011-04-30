@@ -247,17 +247,23 @@ $messages['bg'] = array(
 
 /** Bengali (বাংলা)
  * @author Bellayet
+ * @author Wikitanvir
  */
 $messages['bn'] = array(
 	'drafts' => 'খসড়া',
 	'drafts-view' => 'খসড়া দেখো',
 	'drafts-view-article' => 'পাতা',
+	'drafts-view-existing' => 'বর্তমানে রয়েছে এমন খসড়াসমূহ',
 	'drafts-view-saved' => 'সংরক্ষিত',
 	'drafts-view-discard' => 'বাতিল',
+	'drafts-view-nonesaved' => 'আপনার বর্তমানে সংরক্ষিত কোনো খসড়া নেই।',
+	'drafts-view-notice' => 'এই পাতার জন্য আপনার $1টি রয়েছে।',
+	'drafts-view-notice-link' => '$1টি {{PLURAL:$1|খসড়া|খসড়া}}',
 	'drafts-save' => 'খসড়া হিসেবে সংরক্ষণ করো',
 	'drafts-save-save' => 'খসড়া সংরক্ষণ',
 	'drafts-save-saved' => 'সংরক্ষিত',
 	'drafts-save-saving' => 'সংরক্ষণ করা হচ্ছে',
+	'drafts-save-error' => 'ড্রাফট সংরক্ষণে ত্রুটি',
 	'tooltip-drafts-save' => 'খসড়া হিসেবে সংরক্ষণ করো',
 );
 
@@ -1845,6 +1851,13 @@ $messages['te'] = array(
 	'drafts-save' => 'దీన్ని చిత్తుప్రతిగా భద్రపరచు',
 	'drafts-save-save' => 'చిత్తుప్రతిని భద్రపరచు',
 	'drafts-save-saved' => 'భద్రమయ్యింది',
+);
+
+/** Tetum (Tetun)
+ * @author MF-Warburg
+ */
+$messages['tet'] = array(
+	'drafts-view-article' => 'Pájina',
 );
 
 /** Thai (ไทย)
