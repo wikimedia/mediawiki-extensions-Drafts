@@ -32,7 +32,7 @@ CREATE TABLE /*_*/drafts (
     draft_minoredit BOOL
 ) /*$wgDBTableOptions*/;
 
-CREATE INDEX /*i*/draft_user_savetime ( draft_user, draft_savetime );
+CREATE INDEX /*i*/draft_user_savetime ON /*_*/drafts ( draft_user, draft_savetime );
 CREATE INDEX /*i*/draft_user_page_savetime ON /*_*/drafts ( draft_user, draft_page, draft_namespace, draft_title, draft_savetime );
 CREATE INDEX /*i*/draft_savetime ON /*_*/drafts (draft_savetime);
 CREATE INDEX /*i*/draft_page ON /*_*/drafts (draft_page);
