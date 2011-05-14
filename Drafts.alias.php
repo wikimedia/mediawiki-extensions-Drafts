@@ -38,6 +38,11 @@ $specialPageAliases['bs'] = array(
 	'Drafts' => array( 'Skiciranje' ),
 );
 
+/** Czech (Česky) */
+$specialPageAliases['cs'] = array(
+	'Drafts' => array( 'Koncepty' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'Drafts' => array( 'Zwischengespeicherte_Versionen' ),
@@ -101,6 +106,11 @@ $specialPageAliases['hr'] = array(
 /** Upper Sorbian (Hornjoserbsce) */
 $specialPageAliases['hsb'] = array(
 	'Drafts' => array( 'Naćiski' ),
+);
+
+/** Haitian (Kreyòl ayisyen) */
+$specialPageAliases['ht'] = array(
+	'Drafts' => array( 'Bwouyon' ),
 );
 
 /** Hungarian (Magyar) */
@@ -213,6 +223,11 @@ $specialPageAliases['sk'] = array(
 	'Drafts' => array( 'Rozpísané' ),
 );
 
+/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬) */
+$specialPageAliases['sr-ec'] = array(
+	'Drafts' => array( 'Нацрти' ),
+);
+
 /** Swedish (Svenska) */
 $specialPageAliases['sv'] = array(
 	'Drafts' => array( 'Utkast' ),
@@ -231,6 +246,11 @@ $specialPageAliases['tr'] = array(
 /** Vèneto (Vèneto) */
 $specialPageAliases['vec'] = array(
 	'Drafts' => array( 'Bozze' ),
+);
+
+/** Simplified Chinese (‪中文(简体)‬) */
+$specialPageAliases['zh-hans'] = array(
+	'Drafts' => array( '草稿' ),
 );
 
 /**
