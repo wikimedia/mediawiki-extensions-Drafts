@@ -1926,6 +1926,7 @@ Nais mo bang magpatuloy?',
 
 /** Turkish (Türkçe)
  * @author Joseph
+ * @author Stultiwikia
  */
 $messages['tr'] = array(
 	'drafts' => 'Taslaklar',
@@ -1933,7 +1934,7 @@ $messages['tr'] = array(
 	'drafts-view' => 'TaslağıGör',
 	'drafts-view-summary' => 'Bu özel sayfa tüm mevcut taslakların bir listesini gösterir.
 Kullanılmayan taslaklar $1 {{PLURAL:$1|gün|gün}} sonra otomatik olarak silinir.',
-	'drafts-view-article' => 'Sayfa',
+	'drafts-view-article' => 'Madde',
 	'drafts-view-existing' => 'Mevcut taslaklar',
 	'drafts-view-saved' => 'Kaydedildi',
 	'drafts-view-discard' => 'Sil',
