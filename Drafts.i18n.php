@@ -1037,6 +1037,7 @@ $messages['ja'] = array(
 );
 
 /** Georgian (ქართული)
+ * @author Dawid Deutschland
  * @author Sopho
  * @author გიორგიმელა
  */
@@ -1052,7 +1053,7 @@ $messages['ka'] = array(
 	'drafts-view-discard' => 'გაუქმება',
 	'drafts-view-nonesaved' => 'ამ დროისთვის თქვენ არ გაგაჩნიათ შენახული შავი ფურცლები',
 	'drafts-view-notice' => 'თქვენ გაქვთ  $1 ამ გვერდისთვის.',
-	'drafts-view-notice-link' => '$1 {{PLURAL:$1|შავი ფურცელი|შავი ფურცლის|შავი ფურცლების}}',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|შეუმოწმებელი ვერსია|შეუმოწმებელი ვერსიები}}',
 	'drafts-view-warn' => 'ამ გვერდის დატოვებისას თქვენ კარგავთ ყველა შეუნახავ ცვლილებას. 
 გაგრძელება?',
 	'drafts-save' => 'შეინახეთ როგორც შავი ფურცელი',
