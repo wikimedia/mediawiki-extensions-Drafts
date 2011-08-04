@@ -378,6 +378,7 @@ Nepoužité koncepty budou po {{plural:$1|$1 dni|$1 dnech}} automaticky smazány
 
 /** German (Deutsch)
  * @author ChrisiPK
+ * @author Kghbln
  * @author Metalhead64
  * @author Pill
  * @author Umherirrender
@@ -401,7 +402,7 @@ Möchtest du dennoch fortfahren?',
 	'drafts-save' => 'Diese Version zwischenspeichern',
 	'drafts-save-save' => 'Zwischenspeichern',
 	'drafts-save-saved' => 'Gespeichert',
-	'drafts-save-saving' => 'Speichern',
+	'drafts-save-saving' => 'Am Speichern …',
 	'drafts-save-error' => 'Fehler beim Erstellen der zwischengespeicherten Version',
 	'tooltip-drafts-save' => 'Eine zwischengespeicherte Version erstellen',
 );
