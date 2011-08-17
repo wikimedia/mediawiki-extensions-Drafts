@@ -1599,11 +1599,15 @@ Deseja continuar?',
 /** Romanian (Română)
  * @author Firilacroco
  * @author KlaudiuMihaila
+ * @author Minisarm
  * @author Stelistcristi
  */
 $messages['ro'] = array(
 	'drafts' => 'Schițe',
+	'drafts-desc' => 'Adaugă posibilitatea de a salva pe server versiuni-[[Special:Drafts|schițe]] ale unei pagini',
 	'drafts-view' => 'VizualizeazăSchiță',
+	'drafts-view-summary' => 'Această pagină specială afișează o listă cu toate schițele existente.
+Schițele nefolosite vor fi șterse automat după {{PLURAL:$1|$1 zi|$1 zile}}.',
 	'drafts-view-article' => 'Pagină',
 	'drafts-view-existing' => 'Schițe existente',
 	'drafts-view-saved' => 'Salvat',
@@ -1611,14 +1615,14 @@ $messages['ro'] = array(
 	'drafts-view-nonesaved' => 'Nu aveți vreo schiță salvată în acest moment.',
 	'drafts-view-notice' => 'Aveți $1 pentru această pagină.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|ciornă|ciorne}}',
-	'drafts-view-warn' => 'Dacă ieşiţi de pe această pagină veţi pierde toate schimbările nesalvate acestei pagini.
-Vreţi să continuaţi?',
+	'drafts-view-warn' => 'Dacă părăsiți această pagină veți pierde toate modificările nesalvate aduse paginii.
+Doriți să continuați?',
 	'drafts-save' => 'Salvează aceasta ca o schiță',
 	'drafts-save-save' => 'Salvează schiță',
 	'drafts-save-saved' => 'Salvat',
 	'drafts-save-saving' => 'Salvare',
 	'drafts-save-error' => 'Eroare la salvarea schiței',
-	'tooltip-drafts-save' => 'Salvați ca o schiță',
+	'tooltip-drafts-save' => 'Salvează ca schiță',
 );
 
 /** Tarandíne (Tarandíne)
@@ -1692,7 +1696,7 @@ $messages['rue'] = array(
 	'tooltip-drafts-save' => 'Уложыти як концепт',
 );
 
-/** Yakut (Саха тыла)
+/** Sakha (Саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
