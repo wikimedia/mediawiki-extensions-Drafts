@@ -163,9 +163,12 @@ $messages['arz'] = array(
 
 /** Azerbaijani (Azərbaycanca)
  * @author Cekli829
+ * @author Vago
  */
 $messages['az'] = array(
 	'drafts-view-article' => 'Səhifə',
+	'drafts-view-saved' => 'Yaddaşa verildi',
+	'drafts-save-saved' => 'Yaddaşa verildi',
 );
 
 /** Bashkir (Башҡортса)
