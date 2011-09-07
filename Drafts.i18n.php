@@ -49,7 +49,8 @@ $messages['qqq'] = array(
 
 {{Identical|Page}}',
 	'drafts-view-existing' => 'Shown at the top while editing a page with draft versions saved',
-	'drafts-view-saved' => 'Name of column in Special:Drafts, when there are draft versions saved',
+	'drafts-view-saved' => 'Name of column in Special:Drafts, when there are draft versions saved.
+{{Identical|Saved}}',
 	'drafts-view-discard' => 'Name of button to delete draft version of a page',
 	'drafts-view-nonesaved' => 'Displayed in Special:Drafts when there are no draft versions saved',
 	'drafts-view-notice' => "Shown at the top while previewing a page with draft versions saved. ''$1'' is {{msg-mw|Drafts-view-notice-link}} message",
@@ -58,7 +59,8 @@ $messages['qqq'] = array(
 	'drafts-save' => 'Tooltip of {{msg-mw|Drafts-save-save}} button',
 	'drafts-save-save' => 'Button shown near "Show changes" under editing form of a page
 {{Identical|Save draft}}',
-	'drafts-save-saved' => 'Message indicating that the draft has been saved.',
+	'drafts-save-saved' => 'Message indicating that the draft has been saved.
+{{Identical|Saved}}',
 	'drafts-save-saving' => 'Message indicating that the draft is in the process of being saved.',
 );
 
