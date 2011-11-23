@@ -1787,7 +1787,7 @@ Ali želite nadaljevati?',
 	'tooltip-drafts-save' => 'Shrani kot osnutek',
 );
 
-/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
  * @author Rancher
  * @author Михајло Анђелковић
  */
@@ -1807,7 +1807,7 @@ $messages['sr-ec'] = array(
 	'tooltip-drafts-save' => 'Сними као нацрт',
 );
 
-/** Serbian Latin ekavian (‪Srpski (latinica)‬) */
+/** Serbian (Latin script) (‪Srpski (latinica)‬) */
 $messages['sr-el'] = array(
 	'drafts' => 'Nacrti',
 	'drafts-view-article' => 'Strana',
@@ -1982,7 +1982,7 @@ Devam etmek istiyor musunuz?',
 	'tooltip-drafts-save' => 'Taslak olarak kaydet',
 );
 
-/** Uighur (Latin) (ئۇيغۇرچە / Uyghurche‎ (Latin))
+/** Uyghur (Latin script) (Uyghurche‎)
  * @author Jose77
  */
 $messages['ug-latn'] = array(
