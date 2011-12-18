@@ -97,4 +97,3 @@ $wgHooks['BeforePageDisplay'][] = 'DraftHooks::addCSS';
 
 // Register database operations
 $wgHooks['LoadExtensionSchemaUpdates'][] = 'DraftHooks::schema';
-

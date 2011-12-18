@@ -178,7 +178,7 @@ abstract class Drafts {
 		if ( count( $drafts ) > 0 ) {
 			global $egDraftsLifeSpan;
 			// Internationalization
-			
+
 			// Add a summary, on Special:Drafts only
 			if( !$title || $title->getNamespace() == NS_SPECIAL ) {
 				$wgOut->wrapWikiMsg(
@@ -276,7 +276,7 @@ abstract class Drafts {
 				$wgOut->addHTML(
 					Xml::element( 'td',
 						null,
-						$wgLang->timeanddate( $draft->getSaveTime(), 
+						$wgLang->timeanddate( $draft->getSaveTime(),
 							true /* Adjust to user time zone*/ )
 					)
 				);

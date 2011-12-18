@@ -970,7 +970,7 @@ Tulisan rancangan yang tidak digunakan akan dibuang secara otomatis setelah {{PL
 	'drafts-view-nonesaved' => 'Saat ini Anda tidak memiliki tulisan rancangan yang tersimpan.',
 	'drafts-view-notice' => 'Anda memiliki $1 untuk halaman ini.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1||}}tulisan rancangan',
-	'drafts-view-warn' => 'Jika Anda meninggalkan halaman ini Anda akan kehilangan semua perubahan yang belum tersimpan. 
+	'drafts-view-warn' => 'Jika Anda meninggalkan halaman ini Anda akan kehilangan semua perubahan yang belum tersimpan.
 Apakah Anda ingin meninggalkan halaman ini?',
 	'drafts-save' => 'Simpan halaman ini sebagai tulisan rancangan',
 	'drafts-save-save' => 'Simpan tulisan rancangan',
@@ -1051,7 +1051,7 @@ $messages['ka'] = array(
 	'drafts' => 'შავი ფურცლები',
 	'drafts-desc' => 'მატებს [[Special:Drafts|შავი ფურცლების]] შენახვის საშუალებას სერვერზე',
 	'drafts-view' => 'შავი ფურცლის ხილვა',
-	'drafts-view-summary' => 'ამ სპეცგვერდზე წარმოდგენილია ყველა შავი ფურცელი. 
+	'drafts-view-summary' => 'ამ სპეცგვერდზე წარმოდგენილია ყველა შავი ფურცელი.
 გამოუყენებელი შავი ფურცლები წაიშლება $1 {{PLURAL:$1|დღე|დღის|დღეები}}.',
 	'drafts-view-article' => 'გვერდი',
 	'drafts-view-existing' => 'არსებული შავი ფურცლები',
@@ -1060,7 +1060,7 @@ $messages['ka'] = array(
 	'drafts-view-nonesaved' => 'ამ დროისთვის თქვენ არ გაგაჩნიათ შენახული შავი ფურცლები',
 	'drafts-view-notice' => 'თქვენ გაქვთ  $1 ამ გვერდისთვის.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|შეუმოწმებელი ვერსია|შეუმოწმებელი ვერსიები}}',
-	'drafts-view-warn' => 'ამ გვერდის დატოვებისას თქვენ კარგავთ ყველა შეუნახავ ცვლილებას. 
+	'drafts-view-warn' => 'ამ გვერდის დატოვებისას თქვენ კარგავთ ყველა შეუნახავ ცვლილებას.
 გაგრძელება?',
 	'drafts-save' => 'შეინახეთ როგორც შავი ფურცელი',
 	'drafts-save-save' => 'შეინახეთ შავი ფურცელი',
@@ -1496,7 +1496,7 @@ Nieużywane brudnopisy zostaną automatycznie usunięte po $1 {{PLURAL:$1|dniu|d
 	'drafts-view-nonesaved' => 'Nie masz obecnie zapisanych żadnych brudnopisów stron.',
 	'drafts-view-notice' => 'Masz obecnie $1 tej strony.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|brudnopis|brudnopisy|brudnopisów}}',
-	'drafts-view-warn' => 'Opuszczenie tej strony spowoduje utratę wszystkich niezapisanych zmian w jej treści. 
+	'drafts-view-warn' => 'Opuszczenie tej strony spowoduje utratę wszystkich niezapisanych zmian w jej treści.
 Czy chcesz kontynuować?',
 	'drafts-save' => 'Zapisuje jako brudnopis strony',
 	'drafts-save-save' => 'Zapisz brudnopis',
@@ -2149,4 +2149,3 @@ $messages['zh-hant'] = array(
 	'drafts-save-error' => '儲存草稿時發生錯誤',
 	'tooltip-drafts-save' => '以草稿形式儲存',
 );
-

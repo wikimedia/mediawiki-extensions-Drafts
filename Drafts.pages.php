@@ -17,7 +17,7 @@ class DraftsPage extends SpecialPage {
 		// Initialize special page
 		parent::__construct( 'Drafts' );
 		// Internationalization
-		
+
 	}
 
 	/**
