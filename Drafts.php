@@ -64,7 +64,7 @@ $wgAutoloadClasses['DraftHooks'] = $dir . 'Drafts.hooks.php';
 
 // Internationalization
 $wgExtensionMessagesFiles['Drafts'] = $dir . 'Drafts.i18n.php';
-$wgExtensionAliasesFiles['Drafts'] = $dir . 'Drafts.alias.php';
+$wgExtensionMessagesFiles['DraftsAlias'] = $dir . 'Drafts.alias.php';
 
 // Register the Drafts special page
 $wgSpecialPages['Drafts'] = 'DraftsPage';
