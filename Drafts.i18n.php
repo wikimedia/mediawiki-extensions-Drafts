@@ -1421,7 +1421,7 @@ Vil du halda fram?',
  * @author Jon Harald Søby
  * @author Laaknor
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'drafts' => 'Kladder',
 	'drafts-desc' => 'Legger til muligheten til å lagre [[Special:Drafts|utkast]]versjoner av en side på serveren',
 	'drafts-view' => 'Vis utkast',

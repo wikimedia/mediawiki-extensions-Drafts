@@ -189,7 +189,7 @@ $specialPageAliases['nn'] = array(
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
-$specialPageAliases['no'] = array(
+$specialPageAliases['nb'] = array(
 	'Drafts' => array( 'Utkast' ),
 );
 
