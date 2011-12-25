@@ -90,7 +90,7 @@ $specialPageAliases['frp'] = array(
 
 /** Galician (Galego) */
 $specialPageAliases['gl'] = array(
-	'Drafts' => array( 'Bosquexo' ),
+	'Drafts' => array( 'Bosquexos' ),
 );
 
 /** Gujarati (ગુજરાતી) */
@@ -165,12 +165,17 @@ $specialPageAliases['mk'] = array(
 
 /** Malayalam (മലയാളം) */
 $specialPageAliases['ml'] = array(
-	'Drafts' => array( 'കരട്' ),
+	'Drafts' => array( 'കരടുകൾ' ),
 );
 
 /** Marathi (मराठी) */
 $specialPageAliases['mr'] = array(
 	'Drafts' => array( 'मसूदा' ),
+);
+
+/** Norwegian Bokmål (‪Norsk (bokmål)‬) */
+$specialPageAliases['nb'] = array(
+	'Drafts' => array( 'Utkast' ),
 );
 
 /** Nedersaksisch (Nedersaksisch) */
@@ -185,11 +190,6 @@ $specialPageAliases['nl'] = array(
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬) */
 $specialPageAliases['nn'] = array(
-	'Drafts' => array( 'Utkast' ),
-);
-
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
-$specialPageAliases['nb'] = array(
 	'Drafts' => array( 'Utkast' ),
 );
 
@@ -213,7 +213,7 @@ $specialPageAliases['pt-br'] = array(
 	'Drafts' => array( 'Rascunhos' ),
 );
 
-/** Sanskrit (संस्कृत) */
+/** Sanskrit (संस्कृतम्) */
 $specialPageAliases['sa'] = array(
 	'Drafts' => array( 'प्रारूप' ),
 );
@@ -257,8 +257,3 @@ $specialPageAliases['zh-hans'] = array(
 $specialPageAliases['zh-hant'] = array(
 	'Drafts' => array( '草稿' ),
 );
-
-/**
- * For backwards compatibility with MediaWiki 1.15 and earlier.
- */
-$aliases =& $specialPageAliases;
