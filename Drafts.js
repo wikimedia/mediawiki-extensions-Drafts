@@ -24,31 +24,33 @@ function Draft() {
 	 * @param {String} newState
 	 */
 	this.setState = function(newState) {
-		// Stores state information
-		state = newState;
-		// Updates UI elements
-		switch (state) {
-			case 'unchanged':
-				form.wpDraftSave.disabled = true;
-				form.wpDraftSave.value = messages.saveDraft;
-				break;
-			case 'changed':
-				form.wpDraftSave.disabled = false;
-				form.wpDraftSave.value = messages.saveDraft;
-				break;
-			case 'saved':
-				form.wpDraftSave.disabled = true;
-				form.wpDraftSave.value = messages.saved;
-				break;
-			case 'saving':
-				form.wpDraftSave.disabled = true;
-				form.wpDraftSave.value = messages.saving;
-				break;
-			case 'error':
-				form.wpDraftSave.disabled = true;
-				form.wpDraftSave.value = messages.error;
-				break;
-			default: break;
+		if (state != newState) {
+			// Stores state information
+			state = newState;
+			// Updates UI elements
+			switch ( state ) {
+				case 'unchanged':
+					form.wpDraftSave.disabled = true;
+					form.wpDraftSave.value = messages.saveDraft;
+					break;
+				case 'changed':
+					form.wpDraftSave.disabled = false;
+					form.wpDraftSave.value = messages.saveDraft;
+					break;
+				case 'saved':
+					form.wpDraftSave.disabled = true;
+					form.wpDraftSave.value = messages.saved;
+					break;
+				case 'saving':
+					form.wpDraftSave.disabled = true;
+					form.wpDraftSave.value = messages.saving;
+					break;
+				case 'error':
+					form.wpDraftSave.disabled = true;
+					form.wpDraftSave.value = messages.error;
+					break;
+				default: break;
+			}
 		}
 	};
 
