@@ -1337,6 +1337,33 @@ $messages['myv'] = array(
 	'drafts-save-saved' => 'Ванстозь',
 );
 
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Jon Harald Søby
+ * @author Laaknor
+ */
+$messages['nb'] = array(
+	'drafts' => 'Kladder',
+	'drafts-desc' => 'Legger til muligheten til å lagre [[Special:Drafts|utkast]]versjoner av en side på serveren',
+	'drafts-view' => 'Vis utkast',
+	'drafts-view-summary' => 'Denne spesialsiden viser en liste over nåværende utkast.
+Ubrukte utkast vil slettes automatisk etter {{PLURAL:$1|én dag|$1 dager}}.',
+	'drafts-view-article' => 'Side',
+	'drafts-view-existing' => 'Eksisterende utkast',
+	'drafts-view-saved' => 'Lagret',
+	'drafts-view-discard' => 'Forkast',
+	'drafts-view-nonesaved' => 'Du har ingen utkast lagret på nåværende tidspunkt',
+	'drafts-view-notice' => 'Du har $1 for denne siden.',
+	'drafts-view-notice-link' => '{{PLURAL:$1|ett utkast|$1 utkast}}',
+	'drafts-view-warn' => 'Ved å navigere vekk fra denne siden vil du miste alle ulagrede endringer til denne siden.
+Vil du fortsette?',
+	'drafts-save' => 'Lagre dette som et utkast',
+	'drafts-save-save' => 'Lagre utkast',
+	'drafts-save-saved' => 'Lagret',
+	'drafts-save-saving' => 'Lagrer',
+	'drafts-save-error' => 'Feil ved lagring av utkast',
+	'tooltip-drafts-save' => 'Lagre som et utkast',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
@@ -1417,33 +1444,6 @@ Vil du halda fram?',
 	'tooltip-drafts-save' => 'Lagra som utkast',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
- * @author Laaknor
- */
-$messages['nb'] = array(
-	'drafts' => 'Kladder',
-	'drafts-desc' => 'Legger til muligheten til å lagre [[Special:Drafts|utkast]]versjoner av en side på serveren',
-	'drafts-view' => 'Vis utkast',
-	'drafts-view-summary' => 'Denne spesialsiden viser en liste over nåværende utkast.
-Ubrukte utkast vil slettes automatisk etter {{PLURAL:$1|én dag|$1 dager}}.',
-	'drafts-view-article' => 'Side',
-	'drafts-view-existing' => 'Eksisterende utkast',
-	'drafts-view-saved' => 'Lagret',
-	'drafts-view-discard' => 'Forkast',
-	'drafts-view-nonesaved' => 'Du har ingen utkast lagret på nåværende tidspunkt',
-	'drafts-view-notice' => 'Du har $1 for denne siden.',
-	'drafts-view-notice-link' => '{{PLURAL:$1|ett utkast|$1 utkast}}',
-	'drafts-view-warn' => 'Ved å navigere vekk fra denne siden vil du miste alle ulagrede endringer til denne siden.
-Vil du fortsette?',
-	'drafts-save' => 'Lagre dette som et utkast',
-	'drafts-save-save' => 'Lagre utkast',
-	'drafts-save-saved' => 'Lagret',
-	'drafts-save-saving' => 'Lagrer',
-	'drafts-save-error' => 'Feil ved lagring av utkast',
-	'tooltip-drafts-save' => 'Lagre som et utkast',
-);
-
 /** Occitan (Occitan)
  * @author Cedric31
  */
@@ -1474,7 +1474,9 @@ Los borrolhons inutilizats seràn suprimits automaticament aprèp $1 {{PLURAL:$1
  */
 $messages['pdc'] = array(
 	'drafts-view-article' => 'Blatt',
+	'drafts-view-saved' => 'Bhalde',
 	'drafts-view-notice' => 'Du hast $1 fer des Blatt.',
+	'drafts-save-saved' => 'Bhalde',
 );
 
 /** Polish (Polski)
