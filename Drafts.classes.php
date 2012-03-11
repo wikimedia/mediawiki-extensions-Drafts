@@ -39,7 +39,7 @@ abstract class Drafts {
 		// Checks if a specific title was given
 		if ( $title !== null ) {
 			// Get page id from title
-			$pageId = $title->getArticleId();
+			$pageId = $title->getArticleID();
 			// Checks if page id exists
 			if ( $pageId ) {
 				// Adds specific page id to conditions
@@ -101,7 +101,7 @@ abstract class Drafts {
 				'draft_title' => $newTitle->getDBkey()
 			),
 			array(
-				'draft_page' => $newTitle->getArticleId()
+				'draft_page' => $newTitle->getArticleID()
 			),
 			__METHOD__
 		);
@@ -129,7 +129,7 @@ abstract class Drafts {
 		// Checks if specific title was given
 		if ( $title !== null ) {
 			// Get page id from title
-			$pageId = $title->getArticleId();
+			$pageId = $title->getArticleID();
 			// Checks if page id exists
 			if ( $pageId ) {
 				// Adds specific page id to conditions
@@ -624,7 +624,7 @@ class Draft {
 			'draft_user' => (int) $wgUser->getID(),
 			'draft_namespace' => (int) $this->title->getNamespace(),
 			'draft_title' => (string) $this->title->getDBkey(),
-			'draft_page' => (int) $this->title->getArticleId(),
+			'draft_page' => (int) $this->title->getArticleID(),
 			'draft_section' =>
 				$this->section == '' ? null : (int) $this->section,
 			'draft_starttime' => $dbw->timestamp( $this->starttime ),
