@@ -53,7 +53,7 @@ class DraftHooks {
 		$watchthis, $section, $flags, $rev
 	) {
 		global $wgRequest;
-		// Check if the save occured from a draft
+		// Check if the save occurred from a draft
 		$draft = Draft::newFromID( $wgRequest->getIntOrNull( 'wpDraftID' ) );
 		if ( $draft->exists() ) {
 			// Discard the draft
