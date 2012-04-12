@@ -110,7 +110,20 @@ function Draft() {
 	this.change = function() {
 		// Sets state to changed
 		self.setState( 'changed' );
-		// Checks if timer is pending
+		// Checks if timer is pending and if we want to wait for user input
+		if ( !configuration.autoSaveBasedOnInput ) {
+			if ( timer ) {
+				return;
+			}
+			if ( configuration.autoSaveWait && configuration.autoSaveWait > 0 ) {
+				// Sets timer to save automatically after a period of time
+				timer = setTimeout(
+					'wgDraft.save()', configuration.autoSaveWait * 1000
+				);
+			}
+			return;
+		}
+
 		if ( timer ) {
 			// Clears pending timer
 			clearTimeout( timer );
@@ -149,7 +162,8 @@ function Draft() {
 			// Gets configured specific values
 			configuration = {
 				autoSaveWait: form.wpDraftAutoSaveWait.value,
-				autoSaveTimeout: form.wpDraftAutoSaveTimeout.value
+				autoSaveTimeout: form.wpDraftAutoSaveTimeout.value,
+				autoSaveBasedOnInput: form.wpDraftAutoSaveInputBased.value
 			};
 			// Gets language-specific messages
 			messages = {

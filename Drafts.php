@@ -12,6 +12,7 @@
  * require_once( "$IP/extensions/Drafts/Drafts.php" );
  *
  * @author Trevor Parscal <tparscal@wikimedia.org>
+ * @author enhanced by Petr Bena <benapetr@gmail.com>
  * @license GPL v2
  * @version 0.1.0
  */
@@ -28,7 +29,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'Drafts',
-	'version' => '0.1.0',
+	'version' => '0.1.1',
 	'author' => 'Trevor Parscal',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:Drafts',
 	'descriptionmsg' => 'drafts-desc',
@@ -44,9 +45,12 @@ $wgDraftsStyleVersion = 3;
 // Use the value 0 to disable autosave
 $egDraftsAutoSaveWait = 120;
 
+// Enable auto save only if user stop typing (less auto saves, but much worse recovery ability)
+$egDraftsAutoSaveInputBased = false;
+
 // Seconds to wait until giving up on a response from the server
 // Use the value 0 to disable autosave
-$egDraftsAutoSaveTimeout = 10;
+$egDraftsAutoSaveTimeout = 20;
 
 // Days to keep drafts around before automatic deletion. Set to 0 to keep forever.
 $egDraftsLifeSpan = 30;

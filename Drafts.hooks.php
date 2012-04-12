@@ -170,7 +170,7 @@ class DraftHooks {
 	 */
 	public static function controls( $editpage, $buttons ) {
 		global $wgUser, $wgTitle, $wgRequest;
-		global $egDraftsAutoSaveWait, $egDraftsAutoSaveTimeout;
+		global $egDraftsAutoSaveWait, $egDraftsAutoSaveTimeout, $egDraftsAutoSaveInputBased;
 		// Check permissions
 		if ( $wgUser->isAllowed( 'edit' ) && $wgUser->isLoggedIn() ) {
 			// Internationalization
@@ -219,6 +219,13 @@ class DraftHooks {
 					'type' => 'hidden',
 					'name' => 'wpDraftAutoSaveWait',
 					'value' => $egDraftsAutoSaveWait
+				)
+			);
+			$buttons['savedraft'] .= Xml::element( 'input',
+				array(
+					'type' => 'hidden',
+					'name' => 'wpDraftAutoSaveInputBased',
+					'value' => $egDraftsAutoSaveInputBased
 				)
 			);
 			$buttons['savedraft'] .= Xml::element( 'input',
