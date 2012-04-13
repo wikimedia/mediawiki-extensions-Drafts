@@ -9,7 +9,7 @@
 class DraftHooks {
 
 	/* Static Functions */
-	public static function defaults( &$defaultOptions ) {
+	public static function defaultOptions( &$defaultOptions ) {
 		$defaultOptions['extensionDrafts_enable'] = true;
 		return true;
 	}
