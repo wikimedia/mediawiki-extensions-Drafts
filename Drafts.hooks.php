@@ -183,6 +183,9 @@ class DraftHooks {
 	public static function controls( $editpage, $buttons ) {
 		global $wgUser, $wgTitle, $wgRequest;
 		global $egDraftsAutoSaveWait, $egDraftsAutoSaveTimeout, $egDraftsAutoSaveInputBased;
+		if ( !$wgUser->getOption( 'extensionDrafts_enable', 'true' ) ) {
+			return true;
+		}
 		// Check permissions
 		if ( $wgUser->isAllowed( 'edit' ) && $wgUser->isLoggedIn() ) {
 			// Internationalization
