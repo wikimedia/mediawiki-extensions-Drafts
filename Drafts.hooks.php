@@ -9,6 +9,10 @@
 class DraftHooks {
 
 	/* Static Functions */
+	public static function defaults( &$defaultOptions ) {
+		$defaultOptions['extensionDrafts_enable'] = true;
+		return true;
+	}
 	public static function preferences( User $user, array &$preferences ) {
 		$preferences['extensionDrafts_enable'] = array( 'type' => 'toggle', 'label-message' => 'drafts-enable', 'section' => 'editing/extension-drafts' );
 		return true;

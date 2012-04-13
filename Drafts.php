@@ -75,6 +75,9 @@ $wgSpecialPages['Drafts'] = 'DraftsPage';
 $wgSpecialPageGroups['Drafts'] = 'pagetools';
 $wgAutoloadClasses['DraftsPage'] = $dir . 'Drafts.pages.php';
 
+// Values for options
+$wgHooks['UserGetDefaultOptions'][] = 'DraftHooks::defaultOptions';
+
 // Preferences hook
 $wgHooks['GetPreferences'][] = 'DraftHooks::preferences';
 
