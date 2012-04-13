@@ -9,6 +9,11 @@
 class DraftHooks {
 
 	/* Static Functions */
+	public static function preferences( User $user, array &$preferences ) {
+		$preferences['extensionDrafts_enable'] = array( 'type' => 'toggle', 'label-message' => 'drafts-enable', 'section' => 'editing/extension-drafts' );
+		return true;
+	}
+
 	public static function schema( $updater = null ) {
 		if ( $updater === null ) {
 			global $wgExtNewTables, $wgExtModifiedFields, $wgDBtype;
@@ -69,6 +74,9 @@ class DraftHooks {
 	 */
 	public static function loadForm( $editpage ) {
 		global $wgUser, $wgRequest, $wgOut, $wgTitle, $wgLang;
+		if ( !$wgUser->getOption( 'extensionDrafts_enable', 'true' ) ) {
+			return true;
+		}
 		// Check permissions
 		if ( $wgUser->isAllowed( 'edit' ) && $wgUser->isLoggedIn() ) {
 			// Get draft

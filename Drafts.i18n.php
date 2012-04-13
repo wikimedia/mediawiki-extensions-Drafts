@@ -31,6 +31,8 @@ Do you want to continue?',
 	'drafts-save-saved' => 'Saved',
 	'drafts-save-saving' => 'Saving',
 	'drafts-save-error' => 'Error saving draft',
+	'drafts-enable' => 'Enable feature to save a draft in edit form',
+	'prefs-extension-drafts' => 'Drafts',
 	'tooltip-drafts-save' => 'Save as a draft',
 	'accesskey-drafts-save' => 'g', # do not translate or duplicate this message to other languages
 );
@@ -62,6 +64,7 @@ $messages['qqq'] = array(
 	'drafts-save-saved' => 'Message indicating that the draft has been saved.
 {{Identical|Saved}}',
 	'drafts-save-saving' => 'Message indicating that the draft is in the process of being saved.',
+	'drafts-enable' => 'Preferences, if user wants to enable this tool or not, checked means that yes',
 );
 
 /** Magyar (magázó) (Magyar (magázó))

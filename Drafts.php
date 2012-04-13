@@ -75,6 +75,9 @@ $wgSpecialPages['Drafts'] = 'DraftsPage';
 $wgSpecialPageGroups['Drafts'] = 'pagetools';
 $wgAutoloadClasses['DraftsPage'] = $dir . 'Drafts.pages.php';
 
+// Preferences hook
+$wgHooks['GetPreferences'][] = 'DraftHooks::preferences';
+
 // Register save interception to detect non-javascript draft saving
 $wgHooks['EditFilter'][] = 'DraftHooks::interceptSave';
 
