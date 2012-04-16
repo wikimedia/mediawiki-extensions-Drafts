@@ -206,6 +206,7 @@ $messages['ba'] = array(
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
+ * @author Wizardist
  */
 $messages['be-tarask'] = array(
 	'drafts' => 'Чарнавікі',
@@ -227,6 +228,8 @@ $messages['be-tarask'] = array(
 	'drafts-save-saved' => 'Захаваны',
 	'drafts-save-saving' => 'Захаваньне',
 	'drafts-save-error' => 'Памылка захаваньня чарнавіка',
+	'drafts-enable' => 'Уключыць магчымасьць захаваньня чарнавікоў',
+	'prefs-extension-drafts' => 'Чарнавікі',
 	'tooltip-drafts-save' => 'Захаваць як чарнавік',
 );
 
@@ -412,6 +415,8 @@ Möchtest du dennoch fortfahren?',
 	'drafts-save-saved' => 'Gespeichert',
 	'drafts-save-saving' => 'Am Speichern …',
 	'drafts-save-error' => 'Fehler beim Erstellen der zwischengespeicherten Version',
+	'drafts-enable' => 'Funktion aktivieren, um einen Entwurf im Bearbeitungsfeld speichern zu können',
+	'prefs-extension-drafts' => 'Entwürfe',
 	'tooltip-drafts-save' => 'Eine zwischengespeicherte Version erstellen',
 );
 
@@ -477,6 +482,8 @@ Coš weto pókšacowaś?',
 	'drafts-save-saved' => 'Skłaźony',
 	'drafts-save-saving' => 'Składowanje',
 	'drafts-save-error' => 'Zmólka pśi składowanju nacerjenja',
+	'drafts-enable' => 'Funkciju zmóžniś,  aby se nacerjenje we wobźěłowańskem pólu składowało',
+	'prefs-extension-drafts' => 'Nacerjenja',
 	'tooltip-drafts-save' => 'Ako nacerjenje składowaś',
 );
 
@@ -541,6 +548,7 @@ Neuzataj malnetoj estos forĵetitaj post {{PLURAL:$1|$1 tago|$1 tagoj}} aŭtomat
 );
 
 /** Spanish (Español)
+ * @author Armando-Martin
  * @author Crazymadlover
  * @author Dferg
  * @author Imre
@@ -566,6 +574,8 @@ Los borradores no usados serán descartados despues de {{PLURAL:$1|$1 día|$1 d�
 	'drafts-save-saved' => 'Grabado',
 	'drafts-save-saving' => 'Grabando',
 	'drafts-save-error' => 'Error grabando borrador',
+	'drafts-enable' => 'Activar función para guardar un borrador en forma de edición',
+	'prefs-extension-drafts' => 'Borradores',
 	'tooltip-drafts-save' => 'Guardar como un borrador',
 );
 
@@ -675,6 +685,7 @@ Haluatko jatkaa?',
 
 /** French (Français)
  * @author Crochet.david
+ * @author Gomoko
  * @author Grondin
  * @author IAlex
  * @author Verdy p
@@ -699,6 +710,8 @@ Voulez-vous continuer ?',
 	'drafts-save-saved' => 'Enregistré',
 	'drafts-save-saving' => 'Enregistrement en cours',
 	'drafts-save-error' => 'Erreur d’enregistrement du brouillon',
+	'drafts-enable' => 'Activer la fonctionnalité pour enregistrer un brouillon dans le formulaire de modification',
+	'prefs-extension-drafts' => 'Brouillons',
 	'tooltip-drafts-save' => 'Enregistrer comme brouillon',
 );
 
@@ -751,6 +764,8 @@ Quere continuar?',
 	'drafts-save-saved' => 'Gardado',
 	'drafts-save-saving' => 'Gardando',
 	'drafts-save-error' => 'Produciuse un erro ao gardar o borrador',
+	'drafts-enable' => 'Activar a función para gardar un borrador no formulario de edición',
+	'prefs-extension-drafts' => 'Borradores',
 	'tooltip-drafts-save' => 'Gardar como un borrador',
 );
 
@@ -896,6 +911,8 @@ Njewužiwane naćiski so po {{PLURAL:$1|$1 dnju|$1 dnjomaj|$1 dnjach|$1 dnjach}}
 	'drafts-save-saved' => 'Składowany',
 	'drafts-save-saving' => 'Składowanje',
 	'drafts-save-error' => 'Zmylk při składowanju naćiska',
+	'drafts-enable' => 'Funkciju zmóžnić, zo by so naćisk we wobdźěłowanskim polu składował',
+	'prefs-extension-drafts' => 'Naćiski',
 	'tooltip-drafts-save' => 'Jako naćisk składować',
 );
 
@@ -951,6 +968,8 @@ Continuar?',
 	'drafts-save-saved' => 'Salveguardate',
 	'drafts-save-saving' => 'Salveguarda in curso',
 	'drafts-save-error' => 'Error salveguardante le version provisori',
+	'drafts-enable' => 'Activar le function pro salveguardar un version provisori in le formulario de modification',
+	'prefs-extension-drafts' => 'Versiones provisori',
 	'tooltip-drafts-save' => 'Salveguardar como version provisori',
 );
 
@@ -1172,7 +1191,7 @@ $messages['kw'] = array(
  * @author Robby
  */
 $messages['lb'] = array(
-	'drafts' => 'Brouillonen',
+	'drafts' => 'Virbereedungen',
 	'drafts-desc' => 'Erlaabt et Versioune vun enger Säit als [[Special:Drafts|Brouillon]] op dem Server ze späicheren',
 	'drafts-view' => 'Brouillon weisen',
 	'drafts-view-summary' => 'Dës Spezialsäit weist eng Lëscht mat alle Brouillonen, déi et gëtt.
@@ -1190,6 +1209,8 @@ Bruillonen déi net benotzt ginn, ginn no {{PLURAL:$1|engem Dag|$1 Deeg}} automa
 	'drafts-save-saved' => 'Gespäichert',
 	'drafts-save-saving' => 'Späicheren',
 	'drafts-save-error' => 'Feller beim späicher vum Brouillon',
+	'drafts-enable' => 'Fonctioun aktivéieren fir eng Virbereedung  am Ännerungs-Formulaire ze späicheren',
+	'prefs-extension-drafts' => 'Virbereedungen',
 	'tooltip-drafts-save' => 'Als Brouillon späicheren',
 );
 
@@ -1245,7 +1266,7 @@ $messages['mai'] = array(
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
-	'drafts' => 'Работни верзии',
+	'drafts' => 'Недопишани',
 	'drafts-desc' => 'Додава можност за зачувување на [[Special:Drafts|работни верзии]] на страниците на опслужувачот',
 	'drafts-view' => 'ПрегледНаРаботнаВерзија',
 	'drafts-view-summary' => 'Оваа специјална страница ги наведува сите постоечки работни верзии.
@@ -1264,6 +1285,8 @@ $messages['mk'] = array(
 	'drafts-save-saved' => 'Зачувано',
 	'drafts-save-saving' => 'Зачувување',
 	'drafts-save-error' => 'Грешка при зачувувањето на работната верзија',
+	'drafts-enable' => 'Овозможете ја функцијата за да го зачувате недопишаното во образецот за уредување',
+	'prefs-extension-drafts' => 'Недопишани',
 	'tooltip-drafts-save' => 'Зачувај како работна верзија',
 );
 
@@ -1417,6 +1440,7 @@ Wilt u doorgaan?',
 	'drafts-save-saved' => 'Opgeslagen',
 	'drafts-save-saving' => 'Bezig met opslaan',
 	'drafts-save-error' => 'Fout bij het opslaan van de werkversie',
+	'prefs-extension-drafts' => 'Werkversies',
 	'tooltip-drafts-save' => 'Als werkversie opslaan',
 );
 
