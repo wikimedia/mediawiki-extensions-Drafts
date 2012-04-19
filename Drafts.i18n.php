@@ -1324,6 +1324,7 @@ $messages['mn'] = array(
 );
 
 /** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
  * @author Aviator
  * @author Izzudin
  */
@@ -1345,6 +1346,8 @@ $messages['ms'] = array(
 	'drafts-save-saved' => 'Disimpan',
 	'drafts-save-saving' => 'Menyimpan',
 	'drafts-save-error' => 'Ralat ketika menyimpan draf',
+	'drafts-enable' => 'Hidupkan ciri menyimpan draf dalam bentuk sunting',
+	'prefs-extension-drafts' => 'Draf',
 	'tooltip-drafts-save' => 'Simpan sebagai draf',
 );
 
