@@ -1443,6 +1443,7 @@ Wilt u doorgaan?',
 	'drafts-save-saved' => 'Opgeslagen',
 	'drafts-save-saving' => 'Bezig met opslaan',
 	'drafts-save-error' => 'Fout bij het opslaan van de werkversie',
+	'drafts-enable' => 'Mogelijkheid om concepten op te slaan inschakelen',
 	'prefs-extension-drafts' => 'Werkversies',
 	'tooltip-drafts-save' => 'Als werkversie opslaan',
 );
