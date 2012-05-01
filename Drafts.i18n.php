@@ -1817,6 +1817,8 @@ Ali želite nadaljevati?',
 	'drafts-save-saved' => 'Shranjeno',
 	'drafts-save-saving' => 'Shranjevanje',
 	'drafts-save-error' => 'Napaka pri shranjevanju osnutka',
+	'drafts-enable' => 'Omogoči zmožnost shranjevanje osnutka v urejevalnem obrazcu',
+	'prefs-extension-drafts' => 'Osnutki',
 	'tooltip-drafts-save' => 'Shrani kot osnutek',
 );
 
