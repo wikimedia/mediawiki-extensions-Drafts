@@ -837,6 +837,7 @@ $messages['ha'] = array(
 );
 
 /** Hebrew (עברית)
+ * @author Amire80
  * @author Rotemliss
  * @author YaronSh
  */
@@ -860,6 +861,8 @@ $messages['he'] = array(
 	'drafts-save-saved' => 'נשמרה',
 	'drafts-save-saving' => 'בשמירה',
 	'drafts-save-error' => 'שגיאה בשמירת הטיוטה',
+	'drafts-enable' => 'הפעלה האפשרות לשמור טיוטה בטופס העריכה',
+	'prefs-extension-drafts' => 'טיוטות',
 	'tooltip-drafts-save' => 'שמירה כטיוטה',
 );
 
