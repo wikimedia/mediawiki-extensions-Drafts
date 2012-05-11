@@ -434,6 +434,7 @@ Möchten Sie dennoch fortfahren?',
 
 /** Zazaki (Zazaki)
  * @author Aspar
+ * @author Erdemaslancan
  * @author Xoser
  */
 $messages['diq'] = array(
@@ -454,7 +455,7 @@ Ti wazeno dewam bikero?',
 	'drafts-save' => 'Eno ze yew draft qeyd bike',
 	'drafts-save-save' => 'Draft qeyd ke',
 	'drafts-save-saved' => 'Qeyd bike',
-	'drafts-save-saving' => 'Ho qeyd keno',
+	'drafts-save-saving' => 'Qeydbi',
 	'drafts-save-error' => 'Qeyd kerdişî de yew ğelet biyo',
 	'tooltip-drafts-save' => 'Ze yew draft qeyd bike',
 );
