@@ -454,7 +454,7 @@ numuneyê ke nêşuxuliyeni badê $1 {{PLURAL:$1|roci|roci}} bı otomatik esteri
 Ti wazeno dewam bikero?',
 	'drafts-save' => 'Eno ze yew draft qeyd bike',
 	'drafts-save-save' => 'Draft qeyd ke',
-	'drafts-save-saved' => 'Qeyd bike',
+	'drafts-save-saved' => 'Qeyd Kerd',
 	'drafts-save-saving' => 'Qeydbi',
 	'drafts-save-error' => 'Qeyd kerdişî de yew ğelet biyo',
 	'tooltip-drafts-save' => 'Ze yew draft qeyd bike',
@@ -1454,6 +1454,7 @@ Wilt u doorgaan?',
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
  * @author Harald Khan
+ * @author Njardarlogar
  * @author Ranveig
  */
 $messages['nn'] = array(
@@ -2021,7 +2022,7 @@ Devam etmek istiyor musunuz?',
 	'tooltip-drafts-save' => 'Taslak olarak kaydet',
 );
 
-/** Uyghur (Latin script) (Uyghurche‎)
+/** Uyghur (Latin script) (Uyghurche)
  * @author Jose77
  */
 $messages['ug-latn'] = array(
@@ -2081,7 +2082,7 @@ Vuto continuar?",
 	'tooltip-drafts-save' => 'Salva come bozza',
 );
 
-/** Veps (Vepsan kel')
+/** Veps (Vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
