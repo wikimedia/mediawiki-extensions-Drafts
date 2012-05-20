@@ -1516,6 +1516,7 @@ $messages['pdc'] = array(
 );
 
 /** Polish (Polski)
+ * @author BeginaFelicysym
  * @author Derbeth
  * @author Holek
  * @author Leinad
@@ -1541,6 +1542,8 @@ Czy chcesz kontynuować?',
 	'drafts-save-saved' => 'Zapisany',
 	'drafts-save-saving' => 'Zapisywanie',
 	'drafts-save-error' => 'Błąd zapisywania brudnopisu strony',
+	'drafts-enable' => 'Włącz funkcję zapisu brudnopisu na formularzu edycji',
+	'prefs-extension-drafts' => 'Brudnopisy stron',
 	'tooltip-drafts-save' => 'Zapisz jako brudnopis strony',
 );
 
