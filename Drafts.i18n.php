@@ -1018,6 +1018,7 @@ $messages['io'] = array(
 );
 
 /** Italian (Italiano)
+ * @author Beta16
  * @author BrokenArrow
  * @author Darth Kule
  */
@@ -1039,6 +1040,8 @@ $messages['it'] = array(
 	'drafts-save-saved' => 'Salvata',
 	'drafts-save-saving' => 'Salvataggio',
 	'drafts-save-error' => 'Errore nel salvataggio della bozza',
+	'drafts-enable' => 'Abilita la funzione per salvare una bozza nel modulo di modifica',
+	'prefs-extension-drafts' => 'Bozze',
 	'tooltip-drafts-save' => 'Salva come bozza',
 );
 
