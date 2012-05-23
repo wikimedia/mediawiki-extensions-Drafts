@@ -28,6 +28,11 @@ $specialPageAliases['arz'] = array(
 	'Drafts' => array( 'مسودات' ),
 );
 
+/** Banjar (Bahasa Banjar) */
+$specialPageAliases['bjn'] = array(
+	'Drafts' => array( 'Drap' ),
+);
+
 /** Breton (Brezhoneg) */
 $specialPageAliases['br'] = array(
 	'Drafts' => array( 'Brouilhedoù' ),
@@ -45,7 +50,7 @@ $specialPageAliases['cs'] = array(
 
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
-	'Drafts' => array( 'Zwischengespeicherte_Versionen' ),
+	'Drafts' => array( 'Zwischengespeicherte_Versionen', 'Entwürfe' ),
 );
 
 /** Lower Sorbian (Dolnoserbski) */
