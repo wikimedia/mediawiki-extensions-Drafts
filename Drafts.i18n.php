@@ -303,6 +303,7 @@ Ha kenderc'hel a fell deoc'h ober ?",
 	'drafts-save-saved' => 'Enrollet',
 	'drafts-save-saving' => "Oc'h enrollañ",
 	'drafts-save-error' => 'Fazi enrollañ ar brouilhed',
+	'prefs-extension-drafts' => 'Brouilhedoù',
 	'tooltip-drafts-save' => 'Enrollañ evel brouilhed',
 );
 
@@ -1663,7 +1664,7 @@ Schițele nefolosite vor fi șterse automat după {{PLURAL:$1|$1 zi|$1 zile}}.',
 	'drafts-view-discard' => 'Respinge',
 	'drafts-view-nonesaved' => 'Nu aveți vreo schiță salvată în acest moment.',
 	'drafts-view-notice' => 'Aveți $1 pentru această pagină.',
-	'drafts-view-notice-link' => '$1 {{PLURAL:$1|ciornă|ciorne}}',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|schiță|schițe}}',
 	'drafts-view-warn' => 'Dacă părăsiți această pagină veți pierde toate modificările nesalvate aduse paginii.
 Doriți să continuați?',
 	'drafts-save' => 'Salvează aceasta ca o schiță',
@@ -1671,6 +1672,8 @@ Doriți să continuați?',
 	'drafts-save-saved' => 'Salvat',
 	'drafts-save-saving' => 'Salvare',
 	'drafts-save-error' => 'Eroare la salvarea schiței',
+	'drafts-enable' => 'Activează opțiunea de a salva o schiță în formularul de editare',
+	'prefs-extension-drafts' => 'Schițe',
 	'tooltip-drafts-save' => 'Salvează ca schiță',
 );
 
