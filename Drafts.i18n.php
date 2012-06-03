@@ -278,7 +278,7 @@ $messages['bn'] = array(
 	'tooltip-drafts-save' => 'খসড়া হিসেবে সংরক্ষণ করো',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fohanno
  * @author Fulup
  * @author Y-M D
@@ -1646,7 +1646,7 @@ Deseja continuar?',
 	'tooltip-drafts-save' => 'Gravar como rascunho',
 );
 
-/** Romanian (Română)
+/** Romanian (română)
  * @author Firilacroco
  * @author KlaudiuMihaila
  * @author Minisarm
