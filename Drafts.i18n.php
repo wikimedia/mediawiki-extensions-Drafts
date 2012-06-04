@@ -779,6 +779,7 @@ $messages['grc'] = array(
 );
 
 /** Swiss German (Alemannisch)
+ * @author Als-Chlämens
  * @author Als-Holder
  */
 $messages['gsw'] = array(
@@ -801,6 +802,8 @@ Mechtsch einewäg wytergoh?',
 	'drafts-save-saved' => 'Gspycheret',
 	'drafts-save-saving' => 'Am Spychere',
 	'drafts-save-error' => 'Fähler bim Aalege vu dr zwischegspycherete Version',
+	'drafts-enable' => 'Funktion aktiviere, zume en Entwurf im Bearbeitigsfäld chönne spyychere.',
+	'prefs-extension-drafts' => 'Entwirf',
 	'tooltip-drafts-save' => 'E zwischegspychereti Version aalege',
 );
 
