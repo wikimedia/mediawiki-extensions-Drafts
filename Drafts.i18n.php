@@ -393,6 +393,7 @@ Nepoužité koncepty budou po {{plural:$1|$1 dni|$1 dnech}} automaticky smazány
  * @author Kghbln
  * @author Metalhead64
  * @author Pill
+ * @author Purodha
  * @author Umherirrender
  * @author W (aka Wuzur)
  */
@@ -416,7 +417,7 @@ Möchtest du dennoch fortfahren?',
 	'drafts-save-saved' => 'Gespeichert',
 	'drafts-save-saving' => 'Am Speichern …',
 	'drafts-save-error' => 'Fehler beim Erstellen der zwischengespeicherten Version',
-	'drafts-enable' => 'Funktion aktivieren, um einen Entwurf im Bearbeitungsfeld speichern zu können',
+	'drafts-enable' => 'Funktion aktivieren, um einen Entwurf im Bearbeitungsformular speichern zu können',
 	'prefs-extension-drafts' => 'Entwürfe',
 	'tooltip-drafts-save' => 'Eine zwischengespeicherte Version erstellen',
 );
@@ -1188,6 +1189,8 @@ Wellß De wigger maaache?',
 	'drafts-save-saved' => 'Avjespeichert',
 	'drafts-save-saving' => 'Am Avspeichere',
 	'drafts-save-error' => 'Bemm Entworf Speichere es jet donevve jejange, dat hät nit jeflupp.',
+	'drafts-enable' => 'Ennschallde, dat me ene Äntworv em beim Beärbeide faßhallde kann',
+	'prefs-extension-drafts' => 'Äntwörf',
 	'tooltip-drafts-save' => 'Als ene Entworf avspeichere',
 );
 
