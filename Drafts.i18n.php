@@ -1580,6 +1580,8 @@ It veus-to continué?',
 	'drafts-save-saved' => 'Salvà',
 	'drafts-save-saving' => 'An salvand',
 	'drafts-save-error' => 'Eror an salvand sbòss',
+	'drafts-enable' => 'Abìlita funsion për salvé në sbòss ant ël formolari ëd modìfica',
+	'prefs-extension-drafts' => 'Sbòss',
 	'tooltip-drafts-save' => 'Salva com në sbòss',
 );
 
