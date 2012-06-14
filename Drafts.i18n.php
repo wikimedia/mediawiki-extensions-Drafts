@@ -166,7 +166,7 @@ $messages['arz'] = array(
 	'tooltip-drafts-save' => 'حفظ كمسودة',
 );
 
-/** Azerbaijani (Azərbaycanca)
+/** Azerbaijani (azərbaycanca)
  * @author Cekli829
  * @author Vago
  */
@@ -233,7 +233,7 @@ $messages['be-tarask'] = array(
 	'tooltip-drafts-save' => 'Захаваць як чарнавік',
 );
 
-/** Bulgarian (Български)
+/** Bulgarian (български)
  * @author DCLXVI
  * @author Turin
  */
@@ -307,7 +307,7 @@ Ha kenderc'hel a fell deoc'h ober ?",
 	'tooltip-drafts-save' => 'Enrollañ evel brouilhed',
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
@@ -333,7 +333,7 @@ Da li želite da nastavite?',
 	'tooltip-drafts-save' => 'Spremi kao skicu',
 );
 
-/** Catalan (Català)
+/** Catalan (català)
  * @author Aleator
  * @author SMP
  * @author Solde
@@ -361,7 +361,7 @@ Voleu continuar?",
 	'tooltip-drafts-save' => 'Desar com a esborrany',
 );
 
-/** Czech (Česky)
+/** Czech (česky)
  * @author Danny B.
  * @author Matěj Grabovský
  * @author Mormegil
@@ -490,7 +490,7 @@ Coš weto pókšacowaś?',
 	'tooltip-drafts-save' => 'Ako nacerjenje składowaś',
 );
 
-/** Ewe (Eʋegbe) */
+/** Ewe (eʋegbe) */
 $messages['ee'] = array(
 	'drafts-view-article' => 'Axa',
 );
@@ -550,7 +550,7 @@ Neuzataj malnetoj estos forĵetitaj post {{PLURAL:$1|$1 tago|$1 tagoj}} aŭtomat
 	'tooltip-drafts-save' => 'Konservi kiel malneton',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Armando-Martin
  * @author Crazymadlover
  * @author Dferg
@@ -582,7 +582,7 @@ Los borradores no usados serán descartados despues de {{PLURAL:$1|$1 día|$1 d�
 	'tooltip-drafts-save' => 'Guardar como un borrador',
 );
 
-/** Estonian (Eesti)
+/** Estonian (eesti)
  * @author Avjoska
  * @author Pikne
  */
@@ -609,7 +609,7 @@ Kas soovid jätkata?',
 	'tooltip-drafts-save' => 'Salvesta mustandina',
 );
 
-/** Basque (Euskara)
+/** Basque (euskara)
  * @author An13sa
  * @author Kobazulo
  */
@@ -657,7 +657,7 @@ $messages['fa'] = array(
 	'tooltip-drafts-save' => 'ذخیره به عنوان پیش‌نویس',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Crt
  * @author Nike
  * @author Str4nd
@@ -686,7 +686,7 @@ Haluatko jatkaa?',
 	'tooltip-drafts-save' => 'Tallenna luonnoksena',
 );
 
-/** French (Français)
+/** French (français)
  * @author Crochet.david
  * @author Gomoko
  * @author Grondin
@@ -718,7 +718,7 @@ Voulez-vous continuer ?',
 	'tooltip-drafts-save' => 'Enregistrer comme brouillon',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -872,7 +872,7 @@ $messages['he'] = array(
 	'tooltip-drafts-save' => 'שמירה כטיוטה',
 );
 
-/** Croatian (Hrvatski)
+/** Croatian (hrvatski)
  * @author SpeedyGonsales
  */
 $messages['hr'] = array(
@@ -925,7 +925,7 @@ Njewužiwane naćiski so po {{PLURAL:$1|$1 dnju|$1 dnjomaj|$1 dnjach|$1 dnjach}}
 	'tooltip-drafts-save' => 'Jako naćisk składować',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Bdamokos
  * @author Dani
  * @author Glanthor Reviol
@@ -954,7 +954,7 @@ Biztosan folytatod?',
 	'tooltip-drafts-save' => 'Mentés piszkozatként',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -1022,7 +1022,7 @@ $messages['io'] = array(
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|klado|kladi}}',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Beta16
  * @author BrokenArrow
  * @author Darth Kule
@@ -1194,7 +1194,7 @@ Wellß De wigger maaache?',
 	'tooltip-drafts-save' => 'Als ene Entworf avspeichere',
 );
 
-/** Cornish (Kernowek)
+/** Cornish (kernowek)
  * @author Kw-Moon
  */
 $messages['kw'] = array(
@@ -1276,7 +1276,7 @@ $messages['mai'] = array(
 	'tooltip-drafts-save' => 'प्रारूप के सुरक्षित करू',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -1330,7 +1330,7 @@ $messages['ml'] = array(
 	'tooltip-drafts-save' => 'കരട് ആയി സേവ് ചെയ്യുക',
 );
 
-/** Mongolian (Монгол)
+/** Mongolian (монгол)
  * @author Chinneeb
  */
 $messages['mn'] = array(
@@ -1462,7 +1462,7 @@ Wilt u doorgaan?',
 	'tooltip-drafts-save' => 'Als werkversie opslaan',
 );
 
-/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
  * @author Harald Khan
  * @author Njardarlogar
  * @author Ranveig
@@ -1490,7 +1490,7 @@ Vil du halda fram?',
 	'tooltip-drafts-save' => 'Lagra som utkast',
 );
 
-/** Occitan (Occitan)
+/** Occitan (occitan)
  * @author Cedric31
  */
 $messages['oc'] = array(
@@ -1525,7 +1525,7 @@ $messages['pdc'] = array(
 	'drafts-save-saved' => 'Bhalde',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author BeginaFelicysym
  * @author Derbeth
  * @author Holek
@@ -1602,7 +1602,7 @@ $messages['ps'] = array(
 	'tooltip-drafts-save' => 'د يوه ګارليک په توګه خوندي کول',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Hamilton Abreu
  * @author Malafaya
  */
@@ -1629,7 +1629,7 @@ Pretende continuar?',
 	'tooltip-drafts-save' => 'Gravar como rascunho',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author Eduardo.mps
  */
 $messages['pt-br'] = array(
@@ -1686,7 +1686,7 @@ Doriți să continuați?',
 	'tooltip-drafts-save' => 'Salvează ca schiță',
 );
 
-/** Tarandíne (Tarandíne)
+/** tarandíne (tarandíne)
  * @author Joetaras
  * @author Reder
  */
@@ -1708,7 +1708,7 @@ $messages['roa-tara'] = array(
 	'tooltip-drafts-save' => 'Salve cumme bozze',
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Ferrer
  * @author Александр Сигачёв
  */
@@ -1757,7 +1757,7 @@ $messages['rue'] = array(
 	'tooltip-drafts-save' => 'Уложыти як концепт',
 );
 
-/** Sakha (Саха тыла)
+/** Sakha (саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
@@ -1783,7 +1783,7 @@ $messages['sah'] = array(
 	'tooltip-drafts-save' => 'Харатынан хааллар',
 );
 
-/** Sicilian (Sicilianu)
+/** Sicilian (sicilianu)
  * @author Aushulz
  */
 $messages['scn'] = array(
@@ -1792,7 +1792,7 @@ $messages['scn'] = array(
 	'drafts-save-saved' => 'Sarvata',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Helix84
  */
 $messages['sk'] = array(
@@ -1817,7 +1817,7 @@ Nepoužité návrhy sa po {{PLURAL:$1|$1 dni|$1 dňoch}} automaticky zahodia.',
 	'tooltip-drafts-save' => 'Uložiť ako návrh',
 );
 
-/** Slovenian (Slovenščina)
+/** Slovenian (slovenščina)
  * @author Dbc334
  */
 $messages['sl'] = array(
@@ -1845,7 +1845,7 @@ Ali želite nadaljevati?',
 	'tooltip-drafts-save' => 'Shrani kot osnutek',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Rancher
  * @author Михајло Анђелковић
  */
@@ -1865,7 +1865,7 @@ $messages['sr-ec'] = array(
 	'tooltip-drafts-save' => 'Сними као нацрт',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬) */
+/** Serbian (Latin script) (‪srpski (latinica)‬) */
 $messages['sr-el'] = array(
 	'drafts' => 'Nacrti',
 	'drafts-view-article' => 'Strana',
@@ -1882,7 +1882,7 @@ $messages['sr-el'] = array(
 	'tooltip-drafts-save' => 'Snimi kao nacrt',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Boivie
  * @author Najami
  */
@@ -1942,7 +1942,7 @@ $messages['te'] = array(
 	'drafts-save-saved' => 'భద్రమయ్యింది',
 );
 
-/** Tetum (Tetun)
+/** Tetum (tetun)
  * @author MF-Warburg
  */
 $messages['tet'] = array(
@@ -2047,7 +2047,7 @@ $messages['ug-latn'] = array(
 	'drafts-view-article' => 'Bet',
 );
 
-/** Ukrainian (Українська)
+/** Ukrainian (українська)
  * @author AS
  * @author Ahonc
  */
@@ -2074,7 +2074,7 @@ $messages['uk'] = array(
 	'tooltip-drafts-save' => 'Зберегти як чернетку',
 );
 
-/** Vèneto (Vèneto)
+/** vèneto (vèneto)
  * @author Candalua
  */
 $messages['vec'] = array(
@@ -2148,7 +2148,7 @@ $messages['yi'] = array(
 	'drafts-view-article' => 'בלאַט',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Chenxiaoqino
  * @author Gzdavidwong
  * @author Hydra
@@ -2177,7 +2177,7 @@ $messages['zh-hans'] = array(
 	'tooltip-drafts-save' => '以草稿形式保存',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Gzdavidwong
  * @author Horacewai2
  * @author Liangent
