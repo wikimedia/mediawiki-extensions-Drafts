@@ -10,6 +10,9 @@ abstract class Drafts {
 
 	/* Static Functions */
 
+	/**
+	 * @return int|Mixed
+	 */
 	private static function getDraftAgeCutoff() {
 		global $egDraftsLifeSpan;
 		if ( !$egDraftsLifeSpan ) {
@@ -22,8 +25,8 @@ abstract class Drafts {
 	/**
 	 * Counts the number of existing drafts for a specific user
 	 *
-	 * @param $title Object: [optional] Title of article, defaults to all articles
-	 * @param $userID Integer: [optional] ID of user, defaults to current user
+	 * @param $title Title|null [optional] Title of article, defaults to all articles
+	 * @param $userID int|null [optional] ID of user, defaults to current user
 	 * @return Number of drafts which match condition parameters
 	 */
 	public static function num( $title = null, $userID = null ) {
@@ -90,6 +93,8 @@ abstract class Drafts {
 	/**
 	 * Re-titles drafts which point to a particlar article, as a response to the
 	 * article being moved.
+	 * @param $oldTitle Title
+	 * @param $newTitle Title
 	 */
 	public static function move( $oldTitle, $newTitle ) {
 		// Get database connection
@@ -110,9 +115,9 @@ abstract class Drafts {
 	/**
 	 * Gets a list of existing drafts for a specific user
 	 *
-	 * @param $title Object: [optional] Title of article, defaults to all articles
-	 * @param $userID Integer: [optional] ID of user, defaults to current user
-	 * @return List of drafts or null
+	 * @param $title Title [optional] Title of article, defaults to all articles
+	 * @param $userID Integer [optional] ID of user, defaults to current user
+	 * @return array|null List of drafts or null
 	 */
 	public static function get( $title = null, $userID = null ) {
 		global $wgUser;
@@ -150,10 +155,10 @@ abstract class Drafts {
 		}
 		// Gets matching drafts from database
 		$result = $dbw->select( 'drafts', '*', $where, __METHOD__ );
+		$drafts = array();
 		if ( $result ) {
 			// Creates an array of matching drafts
-			$drafts = array();
-			while ( $row = $dbw->fetchRow( $result ) ) {
+			foreach( $result as $row ) {
 				// Adds a new draft to the list from the row
 				$drafts[] = Draft::newFromRow( $row );
 			}
@@ -165,9 +170,9 @@ abstract class Drafts {
 	/**
 	 * Outputs a table of existing drafts
 	 *
-	 * @param $title Object: [optional] Title of article, defaults to all articles
+	 * @param $title Title [optional] Title of article, defaults to all articles
 	 * @param $userID Integer: [optional] ID of user, defaults to current user
-	 * @return Number of drafts in the table
+	 * @return int Number of drafts in the table
 	 */
 	public static function display( $title = null, $userID = null ) {
 		global $wgOut, $wgRequest, $wgUser, $wgLang;
@@ -217,6 +222,9 @@ abstract class Drafts {
 			$wgOut->addHTML( Xml::element( 'th' ) );
 			$wgOut->addHTML( Xml::closeElement( 'tr' ) );
 			// Add existing drafts for this page and user
+			/**
+			 * @var $draft Draft
+			 */
 			foreach ( $drafts as $draft ) {
 				// Get article title text
 				$htmlTitle = $draft->getTitle()->getEscapedText();
@@ -314,6 +322,10 @@ class Draft {
 	private $id;
 	private $token;
 	private $userID;
+
+	/**
+	 * @var Title
+	 */
 	private $title;
 	private $section;
 	private $starttime;
@@ -331,7 +343,7 @@ class Draft {
 	 *
 	 * @param $id Integer: ID of draft
 	 * @param $autoload Boolean: [optional] Whether to load draft information
-	 * @return New Draft object
+	 * @return Draft object
 	 */
 	public static function newFromID( $id, $autoload = true ) {
 		return new Draft( $id, $autoload );
@@ -341,7 +353,7 @@ class Draft {
 	 * Creates a new Draft object from a database row
 	 *
 	 * @param $row Array: Database row to create Draft object with
-	 * @return New Draft object
+	 * @return Draft object
 	 */
 	public static function newFromRow( $row ) {
 		$draft = new Draft( $row['draft_id'], false );
@@ -363,7 +375,7 @@ class Draft {
 	/* Properties */
 
 	/**
-	 * @return Whether draft exists in database
+	 * @return bool Whether draft exists in database
 	 */
 	public function exists() {
 		return $this->exists;
@@ -377,7 +389,7 @@ class Draft {
 	}
 
 	/**
-	 * @return Edit token
+	 * @return string Edit token
 	 */
 	public function getToken() {
 		return $this->token;
@@ -392,7 +404,7 @@ class Draft {
 	}
 
 	/**
-	 * @return User ID of draft creator
+	 * @return int User ID of draft creator
 	 */
 	public function getUserID() {
 		return $this->userID;
@@ -437,7 +449,7 @@ class Draft {
 	}
 
 	/**
-	 * @return Time when draft of the article started
+	 * @return string Time when draft of the article started
 	 */
 	public function getStartTime() {
 		return $this->starttime;
@@ -452,7 +464,7 @@ class Draft {
 	}
 
 	/**
-	 * @return Time of most recent revision of article when this draft started
+	 * @return string Time of most recent revision of article when this draft started
 	 */
 	public function getEditTime() {
 		return $this->edittime;
@@ -467,7 +479,7 @@ class Draft {
 	}
 
 	/**
-	 * @return Time when draft was last modified
+	 * @return string Time when draft was last modified
 	 */
 	public function getSaveTime() {
 		return $this->savetime;
@@ -512,7 +524,7 @@ class Draft {
 	}
 
 	/**
-	 * @return Summary of changes
+	 * @return string Summary of changes
 	 */
 	public function getSummary() {
 		return $this->summary;
@@ -527,7 +539,7 @@ class Draft {
 	}
 
 	/**
-	 * @return Whether edit is considdered to be a minor change
+	 * @return bool Whether edit is considdered to be a minor change
 	 */
 	public function getMinorEdit() {
 		return $this->minoredit;

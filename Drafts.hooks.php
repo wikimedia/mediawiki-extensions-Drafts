@@ -9,39 +9,37 @@
 class DraftHooks {
 
 	/* Static Functions */
+
+	/**
+	 * @param $defaultOptions array
+	 * @return bool
+	 */
 	public static function defaultOptions( &$defaultOptions ) {
 		$defaultOptions['extensionDrafts_enable'] = true;
 		return true;
 	}
+
+	/**
+	 * @param $user User
+	 * @param $preferences array
+	 * @return bool
+	 */
 	public static function preferences( User $user, array &$preferences ) {
 		$preferences['extensionDrafts_enable'] = array( 'type' => 'toggle', 'label-message' => 'drafts-enable', 'section' => 'editing/extension-drafts' );
 		return true;
 	}
 
+	/**
+	 * @param $updater DatabaseUpdater
+	 * @return bool
+	 */
 	public static function schema( $updater = null ) {
-		if ( $updater === null ) {
-			global $wgExtNewTables, $wgExtModifiedFields, $wgDBtype;
-
-			$wgExtNewTables[] = array(
-				'drafts',
-				dirname( __FILE__ ) . '/Drafts.sql'
-			);
-			if ( $wgDBtype != 'sqlite' ) {
-				$wgExtModifiedFields[] = array(
-					'drafts',
-					'draft_token',
-					dirname( __FILE__ ) . '/patch-draft_token.sql'
-				);
-			}
-		} else {
-			$updater->addExtensionUpdate( array( 'addTable', 'drafts',
-				dirname( __FILE__ ) . '/Drafts.sql', true ) );
-			if ( $updater->getDb()->getType() != 'sqlite' ) {
-				$updater->addExtensionUpdate( array( 'modifyField', 'drafts', 'draft_token',
-					dirname( __FILE__ ) . '/patch-draft_token.sql', true ) );
-			}
+		$updater->addExtensionUpdate( array( 'addTable', 'drafts',
+			dirname( __FILE__ ) . '/Drafts.sql', true ) );
+		if ( $updater->getDb()->getType() != 'sqlite' ) {
+			$updater->addExtensionUpdate( array( 'modifyField', 'drafts', 'draft_token',
+				dirname( __FILE__ ) . '/patch-draft_token.sql', true ) );
 		}
-
 		return true;
 	}
 
@@ -307,6 +305,8 @@ class DraftHooks {
 	/**
 	 * AjaxAddScript hook
 	 * Add AJAX support script
+	 * @param $out OutputPage
+	 * @return bool
 	 */
 	public static function addJS( $out ) {
 		global $wgScriptPath, $wgJsMimeType, $wgDraftsStyleVersion;
@@ -331,6 +331,8 @@ class DraftHooks {
 	/**
 	 * BeforePageDisplay hook
 	 * Add CSS style sheet
+	 * @param $out OutputPage
+	 * @return bool
 	 */
 	public static function addCSS( $out ) {
 		global $wgScriptPath, $wgDraftsStyleVersion;
@@ -355,7 +357,7 @@ class DraftHooks {
 	public static function save( $dtoken, $etoken, $id, $title, $section,
 		$starttime, $edittime, $scrolltop, $text, $summary, $minoredit
 	) {
-		global $wgUser, $wgRequest;
+		global $wgUser;
 		// Verify token
 		if ( $wgUser->editToken() == $etoken ) {
 			// Create Draft

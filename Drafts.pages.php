@@ -17,7 +17,6 @@ class DraftsPage extends SpecialPage {
 		// Initialize special page
 		parent::__construct( 'Drafts' );
 		// Internationalization
-
 	}
 
 	/**
@@ -26,34 +25,37 @@ class DraftsPage extends SpecialPage {
 	 * @param $sub Mixed: MediaWiki supplied sub-page path
 	 */
 	public function execute( $sub ) {
-		global $wgRequest, $wgOut, $wgUser;
+		$out = $this->getOutput();
+		$user = $this->getUser();
+		$request = $this->getRequest();
+
 		// Begin output
 		$this->setHeaders();
 		// Make sure the user is logged in
-		if ( !$wgUser->isLoggedIn() ) {
+		if ( !$user->isLoggedIn() ) {
 			// If not, let them know they need to
-			$wgOut->loginToUse();
+			$out->loginToUse();
 			// Continue
-			return true;
+			return;
 		}
 		// Handle discarding
-		$draft = Draft::newFromID( $wgRequest->getIntOrNull( 'discard' ) );
+		$draft = Draft::newFromID( $request->getIntOrNull( 'discard' ) );
 		if ( $draft->exists() ) {
 			// Discard draft
 			$draft->discard();
 			// Redirect to the article editor or view if returnto was set
-			$section = $wgRequest->getIntOrNull( 'section' );
+			$section = $request->getIntOrNull( 'section' );
 			$urlSection = $section !== null ? "&section={$section}" : '';
-			switch( $wgRequest->getText( 'returnto' ) ) {
+			switch( $request->getText( 'returnto' ) ) {
 				case 'edit':
 					$title = Title::newFromDBKey( $draft->getTitle() );
-					$wgOut->redirect(
+					$out->redirect(
 						wfExpandURL( $title->getEditURL() . $urlSection )
 					);
 					break;
 				case 'view':
 					$title = Title::newFromDBKey( $draft->getTitle() );
-					$wgOut->redirect(
+					$out->redirect(
 						wfExpandURL( $title->getFullURL() . $urlSection )
 					);
 					break;
@@ -61,7 +63,7 @@ class DraftsPage extends SpecialPage {
 		}
 		// Show list of drafts, or a message that there are none
 		if ( Drafts::display() == 0 ) {
-			$wgOut->addHTML( wfMsgHTML( 'drafts-view-nonesaved' ) );
+			$out->addHTML( wfMsgHTML( 'drafts-view-nonesaved' ) );
 		}
 	}
 }
