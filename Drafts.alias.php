@@ -28,6 +28,11 @@ $specialPageAliases['arz'] = array(
 	'Drafts' => array( 'مسودات' ),
 );
 
+/** Assamese (অসমীয়া) */
+$specialPageAliases['as'] = array(
+	'Drafts' => array( 'খচৰা' ),
+);
+
 /** Banjar (Bahasa Banjar) */
 $specialPageAliases['bjn'] = array(
 	'Drafts' => array( 'Drap' ),
@@ -58,7 +63,7 @@ $specialPageAliases['diq'] = array(
 	'Drafts' => array( 'Taslaxi' ),
 );
 
-/** Lower Sorbian (Dolnoserbski) */
+/** Lower Sorbian (dolnoserbski) */
 $specialPageAliases['dsb'] = array(
 	'Drafts' => array( 'Nacerjenja' ),
 );
@@ -98,7 +103,7 @@ $specialPageAliases['frp'] = array(
 	'Drafts' => array( 'Brolyons' ),
 );
 
-/** Galician (Galego) */
+/** Galician (galego) */
 $specialPageAliases['gl'] = array(
 	'Drafts' => array( 'Bosquexos' ),
 );
@@ -113,7 +118,7 @@ $specialPageAliases['hr'] = array(
 	'Drafts' => array( 'Nacrti' ),
 );
 
-/** Upper Sorbian (Hornjoserbsce) */
+/** Upper Sorbian (hornjoserbsce) */
 $specialPageAliases['hsb'] = array(
 	'Drafts' => array( 'Naćiski' ),
 );
