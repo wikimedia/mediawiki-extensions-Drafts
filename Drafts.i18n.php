@@ -96,7 +96,7 @@ $messages['af'] = array(
 	'tooltip-drafts-save' => 'As werkweergawe stoor',
 );
 
-/** Aragonese (Aragonés)
+/** Aragonese (aragonés)
  * @author Juanpabl
  */
 $messages['an'] = array(
@@ -202,7 +202,7 @@ $messages['ba'] = array(
 	'tooltip-drafts-save' => 'Ҡаралама рәүешендә һаҡларға',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
@@ -462,7 +462,7 @@ Ti wazeno dewam bikero?',
 	'tooltip-drafts-save' => 'Ze yew draft qeyd bike',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -744,7 +744,7 @@ Voléd-vos continuar ?',
 	'tooltip-drafts-save' => 'Encartar coment brolyon',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -898,7 +898,7 @@ Neuporabljeni nacrti će biti automatski odbačeni nakon {{PLURAL:$1|jednog dana
 	'tooltip-drafts-save' => 'Spremi kao skicu',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
@@ -1738,7 +1738,7 @@ $messages['ru'] = array(
 	'tooltip-drafts-save' => 'Сохранить как черновик',
 );
 
-/** Rusyn (Русиньскый)
+/** Rusyn (русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
