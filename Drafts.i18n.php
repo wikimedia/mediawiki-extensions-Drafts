@@ -166,6 +166,20 @@ $messages['arz'] = array(
 	'tooltip-drafts-save' => 'حفظ كمسودة',
 );
 
+/** Assamese (অসমীয়া)
+ * @author Bishnu Saikia
+ */
+$messages['as'] = array(
+	'drafts' => 'খচৰাসমূহ',
+	'drafts-view' => 'খচৰা চাওক',
+	'drafts-view-article' => 'পৃষ্ঠা',
+	'drafts-view-discard' => 'বাতিল কৰক',
+	'drafts-save-saved' => 'সাঁচি থোৱা হ’ল',
+	'drafts-save-saving' => 'সাঁচি ৰখা হৈ আছে',
+	'prefs-extension-drafts' => 'খচৰাসমূহ',
+	'tooltip-drafts-save' => 'খচৰাৰূপে সাঁচি থওক',
+);
+
 /** Azerbaijani (azərbaycanca)
  * @author Cekli829
  * @author Vago
@@ -834,6 +848,7 @@ $messages['gu'] = array(
 	'drafts-save-saved' => 'સાચવ્યું',
 	'drafts-save-saving' => 'સચવાય છે',
 	'drafts-save-error' => 'મુસદ્દો સાચવવામાં ત્રુટી',
+	'prefs-extension-drafts' => 'મુસદ્દા',
 	'tooltip-drafts-save' => 'મુસદ્દા તરીકે સાચવો',
 );
 

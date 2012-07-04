@@ -110,7 +110,7 @@ $specialPageAliases['gl'] = array(
 
 /** Gujarati (ગુજરાતી) */
 $specialPageAliases['gu'] = array(
-	'Drafts' => array( 'મુસ્દ્દો' ),
+	'Drafts' => array( 'મુસદ્દો' ),
 );
 
 /** Croatian (hrvatski) */
