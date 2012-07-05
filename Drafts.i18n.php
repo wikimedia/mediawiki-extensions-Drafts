@@ -2028,6 +2028,8 @@ Nais mo bang magpatuloy?',
 	'drafts-save-saved' => 'Nasagip na',
 	'drafts-save-saving' => 'Sinasagip',
 	'drafts-save-error' => 'May kamalian sa pagsasagip ng balangkas',
+	'drafts-enable' => 'Paganahin ang tampok upang masagip ang isang burador sa loob ng pormularyong pampatnugot',
+	'prefs-extension-drafts' => 'Mga balangkas',
 	'tooltip-drafts-save' => 'Sinagip bilang isang balangkas',
 );
 
