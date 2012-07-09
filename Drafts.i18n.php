@@ -1274,6 +1274,19 @@ Wilse doorgaon?',
 	'tooltip-drafts-save' => 'Opslaon es draft',
 );
 
+/** Lithuanian (lietuvių)
+ * @author Eitvys200
+ */
+$messages['lt'] = array(
+	'drafts' => 'Ruošiniai',
+	'drafts-view-article' => 'Puslapis',
+	'drafts-view-saved' => 'Išsaugota',
+	'drafts-save' => 'Išsaugoti šį kaip ruošinį',
+	'drafts-save-save' => 'Išsaugoti ruošinį',
+	'drafts-save-saved' => 'Išsaugota',
+	'prefs-extension-drafts' => 'Ruošiniai',
+);
+
 /** Maithili (मैथिली)
  * @author Vinitutpal
  */

@@ -255,7 +255,7 @@ $specialPageAliases['sv'] = array(
 
 /** Tagalog (Tagalog) */
 $specialPageAliases['tl'] = array(
-	'Drafts' => array( 'Mga balangkas' ),
+	'Drafts' => array( 'Mga_balangkas' ),
 );
 
 /** Turkish (Türkçe) */
