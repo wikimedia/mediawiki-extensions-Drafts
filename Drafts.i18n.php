@@ -190,7 +190,7 @@ $messages['az'] = array(
 	'drafts-save-saved' => 'Yaddaşa verildi',
 );
 
-/** Bashkir (Башҡортса)
+/** Bashkir (башҡортса)
  * @author Assele
  */
 $messages['ba'] = array(
@@ -1403,7 +1403,7 @@ $messages['mwl'] = array(
 	'drafts-view-article' => 'Páigina',
 );
 
-/** Erzya (Эрзянь)
+/** Erzya (эрзянь)
  * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
@@ -1411,8 +1411,7 @@ $messages['myv'] = array(
 	'drafts-save-saved' => 'Ванстозь',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Laaknor
  */
 $messages['nb'] = array(
@@ -2133,7 +2132,7 @@ Vuto continuar?",
 	'tooltip-drafts-save' => 'Salva come bozza',
 );
 
-/** Veps (Vepsän kel’)
+/** Veps (vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
