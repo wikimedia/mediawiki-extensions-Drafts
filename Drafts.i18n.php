@@ -454,9 +454,9 @@ Möchten Sie dennoch fortfahren?',
  * @author Xoser
  */
 $messages['diq'] = array(
-	'drafts' => 'nımuneyi',
+	'drafts' => 'Taslaxi',
 	'drafts-desc' => 'Xacetê versiyonê [[Special:Drafts|draft]] yew peleyî qeyd kerdişî de keno',
-	'drafts-view' => 'nımune bıvin',
+	'drafts-view' => 'TaslaxBıvin',
 	'drafts-view-summary' => 'no pelo xususi listeya numuneyi ya mewcudi ramocneno.
 numuneyê ke nêşuxuliyeni badê $1 {{PLURAL:$1|roci|roci}} bı otomatik esteriyeni.',
 	'drafts-view-article' => 'Pel',
@@ -468,7 +468,7 @@ numuneyê ke nêşuxuliyeni badê $1 {{PLURAL:$1|roci|roci}} bı otomatik esteri
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|draft|draftan}}',
 	'drafts-view-warn' => 'Eka ti ena pele qefinene, vurnayîşê tu ke ti qeyd nikerd înan pêran beno vin.
 Ti wazeno dewam bikero?',
-	'drafts-save' => 'Eno ze yew draft qeyd bike',
+	'drafts-save' => 'Eney taslax deye qeyd bike',
 	'drafts-save-save' => 'Draft qeyd ke',
 	'drafts-save-saved' => 'Stariya',
 	'drafts-save-saving' => 'Starêno',
