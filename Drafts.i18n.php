@@ -376,6 +376,7 @@ Voleu continuar?",
 );
 
 /** Czech (česky)
+ * @author Chmee2
  * @author Danny B.
  * @author Matěj Grabovský
  * @author Mormegil
@@ -399,6 +400,7 @@ Nepoužité koncepty budou po {{plural:$1|$1 dni|$1 dnech}} automaticky smazány
 	'drafts-save-saved' => 'Uložené',
 	'drafts-save-saving' => 'Ukládá se',
 	'drafts-save-error' => 'Chyba při ukládání konceptu',
+	'prefs-extension-drafts' => 'Návrhy',
 	'tooltip-drafts-save' => 'Uložit jako koncept',
 );
 
@@ -1820,6 +1822,13 @@ $messages['scn'] = array(
 	'drafts-view-article' => 'Pàggina',
 	'drafts-view-saved' => 'Sarvata',
 	'drafts-save-saved' => 'Sarvata',
+);
+
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'drafts-view-article' => 'පිටුව',
 );
 
 /** Slovak (slovenčina)
