@@ -1631,7 +1631,7 @@ $messages['ps'] = array(
 	'drafts-save' => 'د يوه ګارليک په توګه خوندي کول',
 	'drafts-save-save' => 'ګارليک خوندي کول',
 	'drafts-save-saved' => 'خوندي شو',
-	'drafts-save-saving' => 'د خوندي کېدلو په حال کې',
+	'drafts-save-saving' => 'خوندي کېدنې کې دی...',
 	'prefs-extension-drafts' => 'ګارليکونه',
 	'tooltip-drafts-save' => 'د يوه ګارليک په توګه خوندي کول',
 );
@@ -1831,6 +1831,15 @@ $messages['scn'] = array(
  */
 $messages['si'] = array(
 	'drafts-view-article' => 'පිටුව',
+	'drafts-view-existing' => 'පවතින කෙටුම්පත්',
+	'drafts-view-saved' => 'සුරකින ලදී',
+	'drafts-view-discard' => 'ඉවතලන්න',
+	'drafts-save' => 'මෙය කෙටුම්පතක් ලෙස සුරකින්න',
+	'drafts-save-save' => 'කෙටුම්පත සුරකින්න',
+	'drafts-save-saved' => 'සුරකින ලදී',
+	'drafts-save-saving' => 'සුරකිමින්',
+	'prefs-extension-drafts' => 'කෙටුම්පත්',
+	'tooltip-drafts-save' => 'කෙටුම්පතක් ලෙස සුරකින්න',
 );
 
 /** Slovak (slovenčina)
@@ -1956,13 +1965,21 @@ $messages['sw'] = array(
 );
 
 /** Tamil (தமிழ்)
+ * @author Karthi.dr
  * @author TRYPPN
  */
 $messages['ta'] = array(
+	'drafts' => 'வரைவுகள்',
 	'drafts-view-article' => 'பக்கம்',
+	'drafts-view-existing' => 'இருக்கும் வரைவுகள்',
 	'drafts-view-saved' => 'சேமிக்கப்பட்டது',
+	'drafts-save' => 'இதை வரைவாகச் சேமிக்கவும்',
+	'drafts-save-save' => 'வரைவை சேமி',
 	'drafts-save-saved' => 'சேமிக்கப்பட்டது',
 	'drafts-save-saving' => 'சேமிக்கப்படுகிறது',
+	'drafts-save-error' => 'வரைவைச் சேமிப்பதில் பிழை',
+	'prefs-extension-drafts' => 'வரைவுகள்',
+	'tooltip-drafts-save' => 'வரைவாகச் சேமிக்கவும்',
 );
 
 /** Telugu (తెలుగు)
