@@ -760,6 +760,13 @@ Voléd-vos continuar ?',
 	'tooltip-drafts-save' => 'Encartar coment brolyon',
 );
 
+/** Irish (Gaeilge)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ga'] = array(
+	'drafts-view-article' => 'Leathanach',
+);
+
 /** Galician (galego)
  * @author Toliño
  */
