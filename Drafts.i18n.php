@@ -674,6 +674,7 @@ $messages['fa'] = array(
 );
 
 /** Finnish (suomi)
+ * @author Beluga
  * @author Crt
  * @author Nike
  * @author Str4nd
@@ -699,6 +700,7 @@ Haluatko jatkaa?',
 	'drafts-save-saved' => 'Tallennettu',
 	'drafts-save-saving' => 'Tallennetaan',
 	'drafts-save-error' => 'Luonnoksen tallentaminen epäonnistui',
+	'prefs-extension-drafts' => 'Luonnokset',
 	'tooltip-drafts-save' => 'Tallenna luonnoksena',
 );
 
