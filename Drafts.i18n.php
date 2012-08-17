@@ -2143,6 +2143,14 @@ $messages['uk'] = array(
 	'tooltip-drafts-save' => 'Зберегти як чернетку',
 );
 
+/** Urdu (اردو)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ur'] = array(
+	'drafts-view-article' => 'صفحہ',
+	'drafts-view-saved' => 'محفوظ کر لیا',
+);
+
 /** vèneto (vèneto)
  * @author Candalua
  */
