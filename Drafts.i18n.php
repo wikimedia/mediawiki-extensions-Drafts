@@ -1048,6 +1048,32 @@ $messages['io'] = array(
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|klado|kladi}}',
 );
 
+/** Icelandic (íslenska)
+ * @author Snævar
+ */
+$messages['is'] = array(
+	'drafts-view' => 'Skoða uppkast',
+	'drafts-view-summary' => 'Þessi kerfisíða sínir lista yfir öll uppköst.
+Ónotuðum uppköstum verður eytt sjálfkrafa eftir {{PLURAL:$1|$1 dag|$1 daga}}.',
+	'drafts-view-article' => 'Síða',
+	'drafts-view-existing' => 'Uppköst sem til eru fyrir',
+	'drafts-view-saved' => 'Vistað',
+	'drafts-view-discard' => 'Eyða',
+	'drafts-view-nonesaved' => 'Þú hefur ekki nein uppköst vistuð akkúrat núna.',
+	'drafts-view-notice' => 'Þú hefur $1 fyrir þessa síðu.',
+	'drafts-view-notice-link' => '{{PLURAL:$1|eitt uppkast|$1 uppköst}}',
+	'drafts-view-warn' => 'Með því að fara frá þessari síðu tapar þú öllum óvistuðum breytingum á síðunni.
+Viltu halda áfram?',
+	'drafts-save' => 'Vista sem uppkast',
+	'drafts-save-save' => 'Vista uppkast',
+	'drafts-save-saved' => 'Vistað',
+	'drafts-save-saving' => 'Vista',
+	'drafts-save-error' => 'Villa við vistun uppkasts',
+	'drafts-enable' => 'Virkja möguleika til þess að vista uppköst í breytingarham',
+	'prefs-extension-drafts' => 'Uppköst',
+	'tooltip-drafts-save' => 'Vista sem uppkast',
+);
+
 /** Italian (italiano)
  * @author Beta16
  * @author BrokenArrow
