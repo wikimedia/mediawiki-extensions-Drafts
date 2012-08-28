@@ -352,23 +352,23 @@ class Draft {
 	/**
 	 * Creates a new Draft object from a database row
 	 *
-	 * @param $row Array: Database row to create Draft object with
+	 * @param $row Object: Database row object to create Draft object with
 	 * @return Draft object
 	 */
 	public static function newFromRow( $row ) {
-		$draft = new Draft( $row['draft_id'], false );
-		$draft->setToken( $row['draft_token'] );
+		$draft = new Draft( $row->draft_id, false );
+		$draft->setToken( $row->draft_token );
 		$draft->setTitle(
-			Title::makeTitle( $row['draft_namespace'], $row['draft_title'] )
+			Title::makeTitle( $row->draft_namespace, $row->draft_title )
 		);
-		$draft->setSection( $row['draft_section'] );
-		$draft->setStartTime( $row['draft_starttime'] );
-		$draft->setEditTime( $row['draft_edittime'] );
-		$draft->setSaveTime( $row['draft_savetime'] );
-		$draft->setScrollTop( $row['draft_scrolltop'] );
-		$draft->setText( $row['draft_text'] );
-		$draft->setSummary( $row['draft_summary'] );
-		$draft->setMinorEdit( $row['draft_minoredit'] );
+		$draft->setSection( $row->draft_section );
+		$draft->setStartTime( $row->draft_starttime );
+		$draft->setEditTime( $row->draft_edittime );
+		$draft->setSaveTime( $row->draft_savetime );
+		$draft->setScrollTop( $row->draft_scrolltop );
+		$draft->setText( $row->draft_text );
+		$draft->setSummary( $row->draft_summary );
+		$draft->setMinorEdit( $row->draft_minoredit );
 		return $draft;
 	}
 
@@ -585,7 +585,7 @@ class Draft {
 		// Gets database connection
 		$dbw = wfGetDB( DB_MASTER );
 		// Gets drafts for this article and user from database
-		$result = $dbw->select( 'drafts',
+		$row = $dbw->selectRow( 'drafts',
 			array( '*' ),
 			array(
 				'draft_id' => (int) $this->id,
@@ -594,30 +594,23 @@ class Draft {
 			__METHOD__
 		);
 		// Checks if query returned any results
-		if ( $result === false ) {
-			// Exists immediately
-			return;
-		}
-		// Fetches the row of the draft from the result
-		$row = $dbw->fetchRow( $result );
-		// Checks if the row is not an array or is an empty array
-		if ( !is_array( $row ) || count( $row ) == 0 ) {
+		if ( $row === false ) {
 			// Exists immediately
 			return;
 		}
 		// Synchronizes data
-		$this->token = $row['draft_token'];
+		$this->token = $row->draft_token;
 		$this->title = Title::makeTitle(
-			$row['draft_namespace'], $row['draft_title']
+			$row->draft_namespace, $row->draft_title
 		);
-		$this->section = $row['draft_section'];
-		$this->starttime = $row['draft_starttime'];
-		$this->edittime = $row['draft_edittime'];
-		$this->savetime = $row['draft_savetime'];
-		$this->scrolltop = $row['draft_scrolltop'];
-		$this->text = $row['draft_text'];
-		$this->summary = $row['draft_summary'];
-		$this->minoredit = $row['draft_minoredit'];
+		$this->section = $row->draft_section;
+		$this->starttime = $row->draft_starttime;
+		$this->edittime = $row->draft_edittime;
+		$this->savetime = $row->draft_savetime;
+		$this->scrolltop = $row->draft_scrolltop;
+		$this->text = $row->draft_text;
+		$this->summary = $row->draft_summary;
+		$this->minoredit = $row->draft_minoredit;
 		// Updates state
 		$this->exists = true;
 	}
