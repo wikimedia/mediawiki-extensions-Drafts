@@ -99,11 +99,15 @@ $wgHooks['EditPage::showEditForm:initial'][] = 'DraftHooks::loadForm';
 // Register ajax response hook
 $wgAjaxExportList[] = 'DraftHooks::save';
 
-// Register ajax add script hook
-$wgHooks['AjaxAddScript'][] = 'DraftHooks::addJS';
+// Register JS / CSS
+$wgResourceModules[ 'ext.Drafts' ] = array(
+  'scripts'       => 'modules/ext.Drafts.js',
+  'styles'        => 'modules/ext.Drafts.css',
+  'localBasePath' => $dir,
+  'remoteExtPath' => 'Drafts'
+);
 
-// Register css add script hook
-$wgHooks['BeforePageDisplay'][] = 'DraftHooks::addCSS';
+$wgHooks['BeforePageDisplay'][] = 'DraftHooks::onBeforePageDisplay';
 
 // Register database operations
 $wgHooks['LoadExtensionSchemaUpdates'][] = 'DraftHooks::schema';

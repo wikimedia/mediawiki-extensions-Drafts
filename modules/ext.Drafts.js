@@ -193,7 +193,6 @@ function Draft() {
 		}
 	}
 }
-// Instantiates a draft object
+
 var wgDraft = new Draft();
-// Registers hooks
-hookEvent( 'load', wgDraft.initialize );
+wgDraft.initialize();

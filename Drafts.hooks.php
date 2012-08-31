@@ -303,50 +303,16 @@ class DraftHooks {
 	}
 
 	/**
-	 * AjaxAddScript hook
-	 * Add AJAX support script
-	 * @param $out OutputPage
-	 * @return bool
-	 */
-	public static function addJS( $out ) {
-		global $wgScriptPath, $wgJsMimeType, $wgDraftsStyleVersion;
-		// FIXME: assumes standard dir structure
-		// Add JavaScript to support AJAX draft saving
-		$out->addScript(
-			Xml::element(
-				'script',
-				array(
-					'type' => $wgJsMimeType,
-					'src' => $wgScriptPath . '/extensions/Drafts/Drafts.js?' .
-						$wgDraftsStyleVersion
-				),
-				'',
-				false
-			)
-		);
-		// Continue
-		return true;
-	}
-
-	/**
 	 * BeforePageDisplay hook
-	 * Add CSS style sheet
-	 * @param $out OutputPage
+	 *
+	 * Adds the modules to the page
+	 *
+	 * @param $out OutputPage output page
+	 * @param $skin Skin current skin
 	 * @return bool
 	 */
-	public static function addCSS( $out ) {
-		global $wgScriptPath, $wgDraftsStyleVersion;
-		// FIXME: assumes standard dir structure
-		// Add CSS for various styles
-		$out->addLink(
-			array(
-				'rel' => 'stylesheet',
-				'type' => 'text/css',
-				'href' => $wgScriptPath . '/extensions/Drafts/Drafts.css?' .
-					$wgDraftsStyleVersion,
-			)
-		);
-		// Continue
+	public static function onBeforePageDisplay( $out, $skin ) {
+		$out->addModules( 'ext.Drafts' );
 		return true;
 	}
 
