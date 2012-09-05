@@ -461,7 +461,7 @@ $messages['diq'] = array(
 	'drafts-view' => 'TaslaxBıvin',
 	'drafts-view-summary' => 'no pelo xususi listeya numuneyi ya mewcudi ramocneno.
 numuneyê ke nêşuxuliyeni badê $1 {{PLURAL:$1|roci|roci}} bı otomatik esteriyeni.',
-	'drafts-view-article' => 'Pel',
+	'drafts-view-article' => 'Per',
 	'drafts-view-existing' => 'Draftan ke esto',
 	'drafts-view-saved' => 'Stariya',
 	'drafts-view-discard' => 'Îptal biker',
@@ -2106,6 +2106,13 @@ Nais mo bang magpatuloy?',
 	'drafts-enable' => 'Paganahin ang tampok upang masagip ang isang burador sa loob ng pormularyong pampatnugot',
 	'prefs-extension-drafts' => 'Mga balangkas',
 	'tooltip-drafts-save' => 'Sinagip bilang isang balangkas',
+);
+
+/** толышә зывон (толышә зывон)
+ * @author Erdemaslancan
+ */
+$messages['tly'] = array(
+	'drafts-view-article' => 'Сәһифә',
 );
 
 /** Turkish (Türkçe)
