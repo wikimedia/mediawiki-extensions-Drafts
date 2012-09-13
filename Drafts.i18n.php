@@ -475,6 +475,8 @@ Ti wazeno dewam bikero?',
 	'drafts-save-saved' => 'Stariya',
 	'drafts-save-saving' => 'Starêno',
 	'drafts-save-error' => 'Qeyd kerdişî de yew ğelet biyo',
+	'drafts-enable' => 'Zey timar kerden hunerê  taslax qeyd kerdış aktiv ke',
+	'prefs-extension-drafts' => 'Taslaxi',
 	'tooltip-drafts-save' => 'Ze yew draft qeyd bike',
 );
 
