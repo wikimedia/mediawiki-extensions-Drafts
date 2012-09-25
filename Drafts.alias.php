@@ -193,7 +193,7 @@ $specialPageAliases['mr'] = array(
 	'Drafts' => array( 'मसूदा' ),
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬) */
+/** Norwegian Bokmål (norsk (bokmål)‎) */
 $specialPageAliases['nb'] = array(
 	'Drafts' => array( 'Utkast' ),
 );
@@ -208,7 +208,7 @@ $specialPageAliases['nl'] = array(
 	'Drafts' => array( 'Werkversies' ),
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬) */
+/** Norwegian Nynorsk (norsk (nynorsk)‎) */
 $specialPageAliases['nn'] = array(
 	'Drafts' => array( 'Utkast' ),
 );
@@ -243,7 +243,7 @@ $specialPageAliases['sk'] = array(
 	'Drafts' => array( 'Rozpísané' ),
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬) */
+/** Serbian (Cyrillic script) (српски (ћирилица)‎) */
 $specialPageAliases['sr-ec'] = array(
 	'Drafts' => array( 'Нацрти' ),
 );
@@ -268,12 +268,12 @@ $specialPageAliases['vec'] = array(
 	'Drafts' => array( 'Bozze' ),
 );
 
-/** Simplified Chinese (‪中文（简体）‬) */
+/** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'Drafts' => array( '草稿' ),
 );
 
-/** Traditional Chinese (‪中文（繁體）‬) */
+/** Traditional Chinese (中文（繁體）‎) */
 $specialPageAliases['zh-hant'] = array(
 	'Drafts' => array( '草稿' ),
 );
