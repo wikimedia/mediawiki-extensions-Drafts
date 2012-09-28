@@ -90,7 +90,7 @@ function Draft() {
 				form.wpTextbox1.scrollTop,
 				form.wpTextbox1.value,
 				form.wpSummary.value,
-				form.wpMinoredit.checked ? 1 : 0
+				( form.wpMinoredit && form.wpMinoredit.checked ) ? 1 : 0
 			],
 			new Function( 'request', 'wgDraft.respond( request )' )
 		);
@@ -158,7 +158,9 @@ function Draft() {
 			addHandler( form.wpSummary, 'keydown', self.change );
 			addHandler( form.wpSummary, 'paste', self.change );
 			addHandler( form.wpSummary, 'cut', self.change );
-			addHandler( form.wpMinoredit, 'change', self.change );
+			if ( form.wpMinoredit ) {
+				addHandler( form.wpMinoredit, 'change', self.change );
+			}
 			// Gets configured specific values
 			configuration = {
 				autoSaveWait: form.wpDraftAutoSaveWait.value,
