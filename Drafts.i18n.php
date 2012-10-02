@@ -216,7 +216,7 @@ $messages['ba'] = array(
 	'tooltip-drafts-save' => 'Ҡаралама рәүешендә һаҡларға',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
@@ -438,7 +438,7 @@ Möchtest du dennoch fortfahren?',
 	'tooltip-drafts-save' => 'Eine zwischengespeicherte Version erstellen',
 );
 
-/** German (formal address) (‪Deutsch (Sie-Form)‬)
+/** German (formal address) (Deutsch (Sie-Form)‎)
  * @author ChrisiPK
  * @author Imre
  * @author MichaelFrey
@@ -865,7 +865,7 @@ $messages['gu'] = array(
 	'tooltip-drafts-save' => 'મુસદ્દા તરીકે સાચવો',
 );
 
-/** Hausa (هَوُسَ) */
+/** Hausa (Hausa) */
 $messages['ha'] = array(
 	'drafts-view-article' => 'Shafi',
 );
@@ -1450,7 +1450,7 @@ $messages['myv'] = array(
 	'drafts-save-saved' => 'Ванстозь',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Laaknor
  */
 $messages['nb'] = array(
@@ -1531,7 +1531,7 @@ Wilt u doorgaan?',
 	'tooltip-drafts-save' => 'Als werkversie opslaan',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Harald Khan
  * @author Njardarlogar
  * @author Ranveig
@@ -1932,7 +1932,7 @@ Ali želite nadaljevati?',
 	'tooltip-drafts-save' => 'Shrani kot osnutek',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Rancher
  * @author Михајло Анђелковић
  */
@@ -1952,7 +1952,7 @@ $messages['sr-ec'] = array(
 	'tooltip-drafts-save' => 'Сними као нацрт',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬) */
+/** Serbian (Latin script) (srpski (latinica)‎) */
 $messages['sr-el'] = array(
 	'drafts' => 'Nacrti',
 	'drafts-view-article' => 'Strana',
@@ -2260,7 +2260,7 @@ $messages['yi'] = array(
 	'drafts-view-article' => 'בלאַט',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Chenxiaoqino
  * @author Gzdavidwong
  * @author Hydra
@@ -2289,7 +2289,7 @@ $messages['zh-hans'] = array(
 	'tooltip-drafts-save' => '以草稿形式保存',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Gzdavidwong
  * @author Horacewai2
  * @author Liangent
