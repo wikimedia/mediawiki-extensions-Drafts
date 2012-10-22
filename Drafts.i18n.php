@@ -42,6 +42,7 @@ Do you want to continue?',
  * @author Dead3y3
  * @author EugeneZelenko
  * @author The Evil IP address
+ * @author Umherirrender
  */
 $messages['qqq'] = array(
 	'drafts' => 'Title of Special:Drafts',
@@ -65,16 +66,7 @@ $messages['qqq'] = array(
 {{Identical|Saved}}',
 	'drafts-save-saving' => 'Message indicating that the draft is in the process of being saved.',
 	'drafts-enable' => 'Preferences, if user wants to enable this tool or not, checked means that yes',
-);
-
-/** Magyar (magázó) (Magyar (magázó))
- * @author Dani
- */
-$messages['hu-formal'] = array(
-	'drafts-view-nonesaved' => 'Jelenleg nincs egyetlen elmentett piszkozata sem.',
-	'drafts-view-notice-link' => '{{PLURAL:$1|egy|$1}} piszkozata',
-	'drafts-view-warn' => 'Ha elmegy az oldalról, az összes mentetlen változtatás elvész.
-Biztosan folytatja?',
+	'accesskey-drafts-save' => '{{doc-accesskey}}',
 );
 
 /** Afrikaans (Afrikaans)
@@ -508,7 +500,8 @@ Coš weto pókšacowaś?',
 	'tooltip-drafts-save' => 'Ako nacerjenje składowaś',
 );
 
-/** Ewe (eʋegbe) */
+/** Ewe (eʋegbe)
+ */
 $messages['ee'] = array(
 	'drafts-view-article' => 'Axa',
 );
@@ -865,7 +858,8 @@ $messages['gu'] = array(
 	'tooltip-drafts-save' => 'મુસદ્દા તરીકે સાચવો',
 );
 
-/** Hausa (Hausa) */
+/** Hausa (Hausa)
+ */
 $messages['ha'] = array(
 	'drafts-view-article' => 'Shafi',
 );
@@ -980,6 +974,16 @@ Biztosan folytatod?',
 	'drafts-save-saving' => 'Mentés…',
 	'drafts-save-error' => 'Hiba történt a piszkozat elmentése közben',
 	'tooltip-drafts-save' => 'Mentés piszkozatként',
+);
+
+/** Magyar (magázó) (Magyar (magázó))
+ * @author Dani
+ */
+$messages['hu-formal'] = array(
+	'drafts-view-nonesaved' => 'Jelenleg nincs egyetlen elmentett piszkozata sem.',
+	'drafts-view-notice-link' => '{{PLURAL:$1|egy|$1}} piszkozata',
+	'drafts-view-warn' => 'Ha elmegy az oldalról, az összes mentetlen változtatás elvész.
+Biztosan folytatja?',
 );
 
 /** Interlingua (interlingua)
@@ -1952,7 +1956,8 @@ $messages['sr-ec'] = array(
 	'tooltip-drafts-save' => 'Сними као нацрт',
 );
 
-/** Serbian (Latin script) (srpski (latinica)‎) */
+/** Serbian (Latin script) (srpski (latinica)‎)
+ */
 $messages['sr-el'] = array(
 	'drafts' => 'Nacrti',
 	'drafts-view-article' => 'Strana',
@@ -1996,7 +2001,8 @@ Vill du fortsätta?',
 	'tooltip-drafts-save' => 'Spara som ett utkast',
 );
 
-/** Swahili (Kiswahili) */
+/** Swahili (Kiswahili)
+ */
 $messages['sw'] = array(
 	'drafts-view-article' => 'Ukurasa',
 );
@@ -2319,4 +2325,3 @@ $messages['zh-hant'] = array(
 	'drafts-save-error' => '儲存草稿時發生錯誤',
 	'tooltip-drafts-save' => '以草稿形式儲存',
 );
-
