@@ -198,6 +198,7 @@ class DraftHooks {
 			$buttonAttribs = array(
 				'id' => 'wpDraftSave',
 				'name' => 'wpDraftSave',
+				'class' => 'mw-ui-button',
 				'tabindex' => 8,
 				'value' => wfMsg( 'drafts-save-save' ),
 			);
@@ -210,7 +211,7 @@ class DraftHooks {
 			}
 			$ajaxButton = Xml::escapeJsString(
 				Xml::element( 'input',
-					array( 'type' => 'button' ) + $buttonAttribs
+					array( 'type' => 'submit' ) + $buttonAttribs
 					+ ( $wgRequest->getText( 'action' ) !== 'submit' ?
 						array ( 'disabled' => 'disabled' )
 						: array()
