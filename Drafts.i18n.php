@@ -445,6 +445,7 @@ Möchten Sie dennoch fortfahren?',
 /** Zazaki (Zazaki)
  * @author Aspar
  * @author Erdemaslancan
+ * @author Mirzali
  * @author Xoser
  */
 $messages['diq'] = array(
@@ -453,7 +454,7 @@ $messages['diq'] = array(
 	'drafts-view' => 'TaslaxBıvin',
 	'drafts-view-summary' => 'no pelo xususi listeya numuneyi ya mewcudi ramocneno.
 numuneyê ke nêşuxuliyeni badê $1 {{PLURAL:$1|roci|roci}} bı otomatik esteriyeni.',
-	'drafts-view-article' => 'Per',
+	'drafts-view-article' => 'Pele',
 	'drafts-view-existing' => 'Draftan ke esto',
 	'drafts-view-saved' => 'Stariya',
 	'drafts-view-discard' => 'Îptal biker',
