@@ -2227,6 +2227,7 @@ $messages['vep'] = array(
 );
 
 /** Vietnamese (Tiếng Việt)
+ * @author Minh Nguyen
  * @author Vinhtantran
  */
 $messages['vi'] = array(
@@ -2249,6 +2250,8 @@ Bạn có muốn tiếp tục?',
 	'drafts-save-saved' => 'Đã lưu',
 	'drafts-save-saving' => 'Đang lưu',
 	'drafts-save-error' => 'Lỗi khi lưu bản thảo',
+	'drafts-enable' => 'Cho phép lưu bản thảo trong biểu mẫu sửa đổi',
+	'prefs-extension-drafts' => 'Bản thảo',
 	'tooltip-drafts-save' => 'Lưu làm bản thảo',
 );
 
