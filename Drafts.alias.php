@@ -238,6 +238,11 @@ $specialPageAliases['sa'] = array(
 	'Drafts' => array( 'प्रारूप' ),
 );
 
+/** Sicilian (sicilianu) */
+$specialPageAliases['scn'] = array(
+	'Drafts' => array( 'Bozze' ),
+);
+
 /** Slovak (slovenčina) */
 $specialPageAliases['sk'] = array(
 	'Drafts' => array( 'Rozpísané' ),
