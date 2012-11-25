@@ -48,6 +48,11 @@ $specialPageAliases['bs'] = array(
 	'Drafts' => array( 'Skiciranje' ),
 );
 
+/** буряад (буряад) */
+$specialPageAliases['bxr'] = array(
+	'Drafts' => array( 'Ноорог' ),
+);
+
 /** Czech (česky) */
 $specialPageAliases['cs'] = array(
 	'Drafts' => array( 'Koncepty' ),
