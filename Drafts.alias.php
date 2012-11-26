@@ -223,6 +223,11 @@ $specialPageAliases['oc'] = array(
 	'Drafts' => array( 'Borrolhons' ),
 );
 
+/** Punjabi (ਪੰਜਾਬੀ) */
+$specialPageAliases['pa'] = array(
+	'Drafts' => array( 'ਖਾਕੇ' ),
+);
+
 /** Polish (polski) */
 $specialPageAliases['pl'] = array(
 	'Drafts' => array( 'Brudnopisy' ),
