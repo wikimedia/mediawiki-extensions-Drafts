@@ -203,7 +203,7 @@ $specialPageAliases['nb'] = array(
 	'Drafts' => array( 'Utkast' ),
 );
 
-/** Nedersaksisch (Nedersaksisch) */
+/** Nedersaksies (Nedersaksies) */
 $specialPageAliases['nds-nl'] = array(
 	'Drafts' => array( 'Warkversies' ),
 );
