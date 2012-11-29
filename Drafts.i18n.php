@@ -392,6 +392,7 @@ Nepoužité koncepty budou po {{plural:$1|$1 dni|$1 dnech}} automaticky smazány
 	'drafts-save-saved' => 'Uložené',
 	'drafts-save-saving' => 'Ukládá se',
 	'drafts-save-error' => 'Chyba při ukládání konceptu',
+	'drafts-enable' => 'Zapnout funkci pro ukládání konceptů z editačního okna',
 	'prefs-extension-drafts' => 'Návrhy',
 	'tooltip-drafts-save' => 'Uložit jako koncept',
 );
@@ -672,6 +673,7 @@ $messages['fa'] = array(
 /** Finnish (suomi)
  * @author Beluga
  * @author Crt
+ * @author Nedergard
  * @author Nike
  * @author Str4nd
  * @author Vililikku
@@ -696,6 +698,7 @@ Haluatko jatkaa?',
 	'drafts-save-saved' => 'Tallennettu',
 	'drafts-save-saving' => 'Tallennetaan',
 	'drafts-save-error' => 'Luonnoksen tallentaminen epäonnistui',
+	'drafts-enable' => 'Ota käyttöön luonnoksen tallentaminen muokkausmuodossa',
 	'prefs-extension-drafts' => 'Luonnokset',
 	'tooltip-drafts-save' => 'Tallenna luonnoksena',
 );
