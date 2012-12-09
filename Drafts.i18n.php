@@ -2164,6 +2164,7 @@ $messages['ug-latn'] = array(
 /** Ukrainian (українська)
  * @author AS
  * @author Ahonc
+ * @author Base
  */
 $messages['uk'] = array(
 	'drafts' => 'Чернетки',
@@ -2185,6 +2186,8 @@ $messages['uk'] = array(
 	'drafts-save-saved' => 'Збережено',
 	'drafts-save-saving' => 'Зберігаю',
 	'drafts-save-error' => 'Помилка збереження чернетки',
+	'drafts-enable' => 'Увімкнути функцію зберігання чернетки у формі редагування',
+	'prefs-extension-drafts' => 'Чернетки',
 	'tooltip-drafts-save' => 'Зберегти як чернетку',
 );
 
