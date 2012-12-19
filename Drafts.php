@@ -104,7 +104,8 @@ $wgResourceModules[ 'ext.Drafts' ] = array(
   'scripts'       => 'modules/ext.Drafts.js',
   'styles'        => 'modules/ext.Drafts.css',
   'localBasePath' => $dir,
-  'remoteExtPath' => 'Drafts'
+  'remoteExtPath' => 'Drafts',
+  'dependencies'  => array( 'mediawiki.legacy.wikibits' ),
 );
 
 $wgHooks['BeforePageDisplay'][] = 'DraftHooks::onBeforePageDisplay';
