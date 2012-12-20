@@ -283,6 +283,11 @@ $specialPageAliases['vec'] = array(
 	'Drafts' => array( 'Bozze' ),
 );
 
+/** Vietnamese (Tiếng Việt) */
+$specialPageAliases['vi'] = array(
+	'Drafts' => array( 'Bản_nháp' ),
+);
+
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'Drafts' => array( '草稿' ),
