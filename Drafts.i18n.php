@@ -512,6 +512,7 @@ $messages['ee'] = array(
  * @author Dead3y3
  * @author Geraki
  * @author Omnipaedista
+ * @author ZaDiak
  */
 $messages['el'] = array(
 	'drafts' => 'Drafts',
@@ -533,6 +534,7 @@ $messages['el'] = array(
 	'drafts-save-saved' => 'Αποθηκεύτηκε',
 	'drafts-save-saving' => 'Αποθηκεύεται',
 	'drafts-save-error' => 'Σφάλμα στην αποθήκευση του προχείρου',
+	'prefs-extension-drafts' => 'Προσχέδια',
 	'tooltip-drafts-save' => 'Αποθήκευση ως ένα πρόχειρο',
 );
 
@@ -645,6 +647,7 @@ $messages['eu'] = array(
 
 /** Persian (فارسی)
  * @author Huji
+ * @author Mjbmr
  * @author Wayiran
  */
 $messages['fa'] = array(
@@ -667,6 +670,7 @@ $messages['fa'] = array(
 	'drafts-save-saved' => 'ذخیره شد',
 	'drafts-save-saving' => 'ذخیره‌سازی',
 	'drafts-save-error' => 'خطا در ذخیره کردن پیش‌نویس',
+	'prefs-extension-drafts' => 'پیش‌نویس‌ها',
 	'tooltip-drafts-save' => 'ذخیره به عنوان پیش‌نویس',
 );
 
@@ -1020,6 +1024,7 @@ Continuar?',
 
 /** Indonesian (Bahasa Indonesia)
  * @author Bennylin
+ * @author Farras
  * @author Irwangatot
  * @author IvanLanin
  * @author Kandar
@@ -1044,6 +1049,7 @@ Apakah Anda ingin meninggalkan halaman ini?',
 	'drafts-save-saved' => 'Tersimpan',
 	'drafts-save-saving' => 'Menyimpan',
 	'drafts-save-error' => 'Terjadi kesalahan pada saat menyimpan tulisan rancangan',
+	'prefs-extension-drafts' => 'Draf',
 	'tooltip-drafts-save' => 'Simpan sebagai tulisan rancangan',
 );
 
@@ -1518,8 +1524,8 @@ $messages['nl'] = array(
 	'drafts' => 'Werkversies',
 	'drafts-desc' => 'Voegt functionaliteit toe om [[Special:Drafts|werkversies]] van een pagina op de server op te slaan',
 	'drafts-view' => 'WerkversieBekijken',
-	'drafts-view-summary' => 'Deze speciale pagina toont een lijst van alle bestaande werkversies.
-Ongebruikte werkversies zullen automatisch worden verwijderd na {{PLURAL:$1|$1 dag|$1 dagen}}.',
+	'drafts-view-summary' => 'Op deze speciale pagina wordt een lijst weergegeven van alle bestaande werkversies.
+Ongebruikte werkversies worden na {{PLURAL:$1|$1 dag|$1 dagen}} automatisch verwijderd.',
 	'drafts-view-article' => 'Pagina',
 	'drafts-view-existing' => 'Bestaande werkversies',
 	'drafts-view-saved' => 'Opgeslagen',
@@ -1875,6 +1881,7 @@ $messages['scn'] = array(
  * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
+	'drafts' => 'කෙටුම්පත්',
 	'drafts-view-article' => 'පිටුව',
 	'drafts-view-existing' => 'පවතින කෙටුම්පත්',
 	'drafts-view-saved' => 'සුරකින ලදී',
