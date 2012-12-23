@@ -281,6 +281,7 @@ $messages['bn'] = array(
 	'drafts-save-saved' => 'সংরক্ষিত',
 	'drafts-save-saving' => 'সংরক্ষণ করা হচ্ছে',
 	'drafts-save-error' => 'ড্রাফট সংরক্ষণে ত্রুটি',
+	'prefs-extension-drafts' => 'খসড়া',
 	'tooltip-drafts-save' => 'খসড়া হিসেবে সংরক্ষণ করো',
 );
 
@@ -395,6 +396,23 @@ Nepoužité koncepty budou po {{plural:$1|$1 dni|$1 dnech}} automaticky smazány
 	'drafts-enable' => 'Zapnout funkci pro ukládání konceptů z editačního okna',
 	'prefs-extension-drafts' => 'Návrhy',
 	'tooltip-drafts-save' => 'Uložit jako koncept',
+);
+
+/** Danish (dansk)
+ * @author Tjernobyl
+ */
+$messages['da'] = array(
+	'drafts' => 'Kladder',
+	'drafts-view-article' => 'Side',
+	'drafts-view-existing' => 'Eksisterende kladder',
+	'drafts-view-saved' => 'Gemt',
+	'drafts-view-discard' => 'Kasser',
+	'drafts-save' => 'Gem som et udkast',
+	'drafts-save-save' => 'Gem kladde',
+	'drafts-save-saved' => 'Gemt',
+	'drafts-save-saving' => 'Gemmer',
+	'prefs-extension-drafts' => 'Kladder',
+	'tooltip-drafts-save' => 'Gem som kladde',
 );
 
 /** German (Deutsch)
@@ -562,6 +580,8 @@ Neuzataj malnetoj estos forĵetitaj post {{PLURAL:$1|$1 tago|$1 tagoj}} aŭtomat
 	'drafts-save-saved' => 'Konservita',
 	'drafts-save-saving' => 'Konservante',
 	'drafts-save-error' => 'Eraro konservante malneton',
+	'drafts-enable' => 'Ŝalti programeron por konservi malneto redakto-stile.',
+	'prefs-extension-drafts' => 'Malnetoj',
 	'tooltip-drafts-save' => 'Konservi kiel malneton',
 );
 
