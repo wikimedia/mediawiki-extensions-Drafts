@@ -641,6 +641,7 @@ Kas soovid jätkata?',
 	'drafts-save-saved' => 'Salvestatud',
 	'drafts-save-saving' => 'Salvestamine',
 	'drafts-save-error' => 'Mustandi salvestamine ebaõnnestus',
+	'prefs-extension-drafts' => 'Mustandid',
 	'tooltip-drafts-save' => 'Salvesta mustandina',
 );
 
@@ -1142,12 +1143,14 @@ $messages['it'] = array(
  * @author Aotake
  * @author Fryed-peach
  * @author Hosiryuhosi
+ * @author Shirayuki
  */
 $messages['ja'] = array(
 	'drafts' => '下書き',
 	'drafts-desc' => 'ページの[[Special:Drafts|下書き]]をサーバーに保存できるようにする',
 	'drafts-view' => '下書き表示',
-	'drafts-view-summary' => 'この特別ページは現在保存されている下書きを一覧表示します。使用されていない下書きは $1{{PLURAL:$1|日}}後に自動的に破棄されます。',
+	'drafts-view-summary' => 'この特別ページでは、現在保存されている下書きをすべて列挙します。
+使用されていない下書きは $1 {{PLURAL:$1|日}}後に自動的に破棄されます。',
 	'drafts-view-article' => 'ページ',
 	'drafts-view-existing' => '現在保存されている下書き',
 	'drafts-view-saved' => '保存済',
@@ -1155,12 +1158,15 @@ $messages['ja'] = array(
 	'drafts-view-nonesaved' => '現在保存されている下書きはありません。',
 	'drafts-view-notice' => 'このページにはあなたが作成した$1があります。',
 	'drafts-view-notice-link' => '$1個の{{PLURAL:$1|下書き}}',
-	'drafts-view-warn' => 'このページから抜けると、あなたがこのページに加えた未保存の変更がすべて失われてしまいます。続けますか？',
+	'drafts-view-warn' => 'このページから抜けると、あなたがこのページに加えた未保存の変更がすべて失われてしまいます。
+続行しますか?',
 	'drafts-save' => '現在の原稿を下書きとして保存する',
 	'drafts-save-save' => '下書きを保存',
 	'drafts-save-saved' => '保存完了',
 	'drafts-save-saving' => '保存中',
 	'drafts-save-error' => '下書きの保存に失敗',
+	'drafts-enable' => '編集フォームで下書きを保存する機能を有効にする',
+	'prefs-extension-drafts' => '下書き',
 	'tooltip-drafts-save' => '下書きとして保存する',
 );
 
