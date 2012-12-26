@@ -1821,6 +1821,7 @@ $messages['roa-tara'] = array(
 
 /** Russian (русский)
  * @author Ferrer
+ * @author KPu3uC B Poccuu
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
@@ -1843,6 +1844,8 @@ $messages['ru'] = array(
 	'drafts-save-saved' => 'Сохранено',
 	'drafts-save-saving' => 'Сохранение',
 	'drafts-save-error' => 'Ошибка сохранения черновика',
+	'drafts-enable' => 'Включить функцию для сохранения черновика в форме редактирования',
+	'prefs-extension-drafts' => 'Черновики',
 	'tooltip-drafts-save' => 'Сохранить как черновик',
 );
 
@@ -1908,14 +1911,18 @@ $messages['scn'] = array(
  */
 $messages['si'] = array(
 	'drafts' => 'කෙටුම්පත්',
+	'drafts-view' => 'කෙටුම්පත නරඹන්න',
 	'drafts-view-article' => 'පිටුව',
 	'drafts-view-existing' => 'පවතින කෙටුම්පත්',
 	'drafts-view-saved' => 'සුරකින ලදී',
 	'drafts-view-discard' => 'ඉවතලන්න',
+	'drafts-view-notice' => 'ඔබට මෙම පිටුව $1 සඳහා ඇත.',
+	'drafts-view-notice-link' => '{{PLURAL:$1|කෙටුම්පත්|කෙටුම්පත්}} $1', # Fuzzy
 	'drafts-save' => 'මෙය කෙටුම්පතක් ලෙස සුරකින්න',
 	'drafts-save-save' => 'කෙටුම්පත සුරකින්න',
 	'drafts-save-saved' => 'සුරකින ලදී',
 	'drafts-save-saving' => 'සුරකිමින්',
+	'drafts-save-error' => 'කෙටුම්පත සුරැකීමේ දෝෂය',
 	'prefs-extension-drafts' => 'කෙටුම්පත්',
 	'tooltip-drafts-save' => 'කෙටුම්පතක් ලෙස සුරකින්න',
 );
