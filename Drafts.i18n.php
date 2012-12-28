@@ -182,6 +182,13 @@ $messages['az'] = array(
 	'drafts-save-saved' => 'Yaddaşa verildi',
 );
 
+/** South Azerbaijani (تورکجه)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['azb'] = array(
+	'drafts-view-article' => 'صحیفه',
+);
+
 /** Bashkir (башҡортса)
  * @author Assele
  */
