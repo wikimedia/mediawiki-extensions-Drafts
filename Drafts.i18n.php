@@ -986,6 +986,7 @@ Njewužiwane naćiski so po {{PLURAL:$1|$1 dnju|$1 dnjomaj|$1 dnjach|$1 dnjach}}
 /** Hungarian (magyar)
  * @author Bdamokos
  * @author Dani
+ * @author Dj
  * @author Glanthor Reviol
  * @author Gondnok
  */
@@ -1009,6 +1010,8 @@ Biztosan folytatod?',
 	'drafts-save-saved' => 'Elmentve',
 	'drafts-save-saving' => 'Mentés…',
 	'drafts-save-error' => 'Hiba történt a piszkozat elmentése közben',
+	'drafts-enable' => 'Lehetőséget biztosít piszkozatok mentésére szerkesztő űrlapon',
+	'prefs-extension-drafts' => 'Piszkozatok',
 	'tooltip-drafts-save' => 'Mentés piszkozatként',
 );
 
