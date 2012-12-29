@@ -178,7 +178,7 @@ class DraftHooks {
 	 * EditPageBeforeEditButtons hook
 	 * Add draft saving controls
 	 */
-	public static function controls( $editpage, $buttons ) {
+	public static function controls( &$editpage, &$buttons, &$tabindex ) {
 		global $wgUser, $wgTitle, $wgRequest;
 		global $egDraftsAutoSaveWait, $egDraftsAutoSaveTimeout, $egDraftsAutoSaveInputBased;
 		if ( !$wgUser->getOption( 'extensionDrafts_enable', 'true' ) ) {
@@ -199,7 +199,7 @@ class DraftHooks {
 				'id' => 'wpDraftSave',
 				'name' => 'wpDraftSave',
 				'class' => 'mw-ui-button',
-				'tabindex' => 8,
+				'tabindex' => ++$tabindex,
 				'value' => wfMsg( 'drafts-save-save' ),
 			);
 			$attribs = $wgUser->getSkin()->tooltipAndAccesskeyAttribs( 'drafts-save' );
