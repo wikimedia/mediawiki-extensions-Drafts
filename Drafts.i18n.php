@@ -191,6 +191,7 @@ $messages['azb'] = array(
 
 /** Bashkir (башҡортса)
  * @author Assele
+ * @author Ләйсән
  */
 $messages['ba'] = array(
 	'drafts' => 'Ҡараламалар',
@@ -212,6 +213,7 @@ $messages['ba'] = array(
 	'drafts-save-saved' => 'Һаҡланған',
 	'drafts-save-saving' => 'Һаҡлау',
 	'drafts-save-error' => 'Ҡараламаны һаҡлау хатаһы',
+	'prefs-extension-drafts' => 'Ҡараламалар',
 	'tooltip-drafts-save' => 'Ҡаралама рәүешендә һаҡларға',
 );
 
@@ -790,6 +792,7 @@ Voléd-vos continuar ?',
 	'drafts-save-saved' => 'Encartâ',
 	'drafts-save-saving' => 'Encartâjo en cors',
 	'drafts-save-error' => 'Èrror d’encartâjo du brolyon',
+	'prefs-extension-drafts' => 'Brolyons',
 	'tooltip-drafts-save' => 'Encartar coment brolyon',
 );
 
@@ -1579,6 +1582,16 @@ Wilt u doorgaan?',
 	'drafts-enable' => 'Mogelijkheid om concepten op te slaan inschakelen',
 	'prefs-extension-drafts' => 'Werkversies',
 	'tooltip-drafts-save' => 'Als werkversie opslaan',
+);
+
+/** Nederlands (informeel)‎ (Nederlands (informeel)‎)
+ * @author Siebrand
+ */
+$messages['nl-informal'] = array(
+	'drafts-view-nonesaved' => 'Je hebt geen opgeslagen werkversies.',
+	'drafts-view-notice' => 'Je moet $1 voor deze pagina.',
+	'drafts-view-warn' => 'Door van deze pagina weg te navigeren verlies je alle wijzigingen die je nog niet hebt opgeslagen.
+Wil je doorgaan?',
 );
 
 /** Norwegian Nynorsk (norsk (nynorsk)‎)
