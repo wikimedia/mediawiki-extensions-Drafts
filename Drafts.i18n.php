@@ -933,6 +933,14 @@ $messages['he'] = array(
 	'tooltip-drafts-save' => 'שמירה כטיוטה',
 );
 
+/** Hindi (हिन्दी)
+ * @author Ansumang
+ */
+$messages['hi'] = array(
+	'drafts' => 'ड्राफ्ट्स',
+	'drafts-view-article' => 'पृष्ठ',
+);
+
 /** Croatian (hrvatski)
  * @author SpeedyGonsales
  */
@@ -2020,6 +2028,7 @@ $messages['sr-ec'] = array(
 	'drafts-save-saved' => 'Сачувано',
 	'drafts-save-saving' => 'Чување',
 	'drafts-save-error' => 'Грешка приликом снимања нацрта',
+	'prefs-extension-drafts' => 'Нацрти',
 	'tooltip-drafts-save' => 'Сними као нацрт',
 );
 
