@@ -1269,10 +1269,10 @@ $messages['ko'] = array(
 	'drafts-view-saved' => '저장된 시간',
 	'drafts-view-discard' => '삭제',
 	'drafts-view-nonesaved' => '임시 저장한 문서가 없습니다.',
-	'drafts-view-notice' => '당신은 이 문서에 $1를 갖고 있습니다.',
+	'drafts-view-notice' => '이 문서에 $1(을)를 갖고 있습니다.',
 	'drafts-view-notice-link' => '초안 $1개',
-	'drafts-view-warn' => '다른 문서를 둘러보면, 당신은 저장하지 않은 모든 편집이 사라질 것입니다.
-계속하시곘습니까?',
+	'drafts-view-warn' => '이 문서를 떠나 둘러보면 저장하지 않은 모든 바뀜이 사라집니다.
+계속하시겠습니까?',
 	'drafts-save' => '이 편집을 초안으로 저장',
 	'drafts-save-save' => '임시 저장',
 	'drafts-save-saved' => '저장됨',
