@@ -102,6 +102,7 @@ function Draft() {
 		);
 		// Ensure timer is cleared in case we saved manually before it expired
 		clearTimeout( timer );
+		timer = null;
 	};
 
 	/**
