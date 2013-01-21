@@ -2353,10 +2353,11 @@ $messages['yi'] = array(
  * @author Gzdavidwong
  * @author Hydra
  * @author Wmr89502270
+ * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
 	'drafts' => '草稿',
-	'drafts-desc' => '添加要在服务器上保存页面的 [[Special:Drafts|草案]] 版本的能力',
+	'drafts-desc' => '增加在服务器上保存页面[[Special:Drafts|草案]]版本的能力',
 	'drafts-view' => '查看草稿',
 	'drafts-view-summary' => '此特殊页显示一个列表中的所有现有的草稿。
 未使用的草稿以后就会在{{PLURAL：$1|$1天|$1天}}自动被删除。',
@@ -2374,7 +2375,9 @@ $messages['zh-hans'] = array(
 	'drafts-save-saved' => '已保存',
 	'drafts-save-saving' => '保存中',
 	'drafts-save-error' => '保存草稿时发生错误',
-	'tooltip-drafts-save' => '以草稿形式保存',
+	'drafts-enable' => '启用保存编辑表单为草稿的功能',
+	'prefs-extension-drafts' => '草稿',
+	'tooltip-drafts-save' => '保存为草稿',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
