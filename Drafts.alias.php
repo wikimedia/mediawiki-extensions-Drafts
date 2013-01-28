@@ -203,7 +203,7 @@ $specialPageAliases['nb'] = array(
 	'Drafts' => array( 'Utkast' ),
 );
 
-/** Nedersaksies (Nedersaksies) */
+/** Low Saxon (Netherlands) (Nedersaksies) */
 $specialPageAliases['nds-nl'] = array(
 	'Drafts' => array( 'Warkversies' ),
 );
