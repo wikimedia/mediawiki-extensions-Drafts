@@ -198,7 +198,7 @@ $specialPageAliases['mr'] = array(
 	'Drafts' => array( 'मसूदा' ),
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎) */
+/** Norwegian Bokmål (norsk bokmål) */
 $specialPageAliases['nb'] = array(
 	'Drafts' => array( 'Utkast' ),
 );
@@ -213,7 +213,7 @@ $specialPageAliases['nl'] = array(
 	'Drafts' => array( 'Werkversies' ),
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎) */
+/** Norwegian Nynorsk (norsk nynorsk) */
 $specialPageAliases['nn'] = array(
 	'Drafts' => array( 'Utkast' ),
 );
