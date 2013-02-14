@@ -41,11 +41,13 @@ Do you want to continue?',
  * @author Darth Kule
  * @author Dead3y3
  * @author EugeneZelenko
+ * @author Shirayuki
  * @author The Evil IP address
  * @author Umherirrender
  */
 $messages['qqq'] = array(
-	'drafts' => 'Title of Special:Drafts',
+	'drafts' => 'Title of Special:Drafts.
+{{Identical|Draft}}',
 	'drafts-desc' => '{{desc}}',
 	'drafts-view-summary' => 'Used in [[Special:Drafts]] when there is at least one draft saved.',
 	'drafts-view-article' => 'Name of column in Special:Drafts, when there are draft versions saved.
@@ -66,6 +68,7 @@ $messages['qqq'] = array(
 {{Identical|Saved}}',
 	'drafts-save-saving' => 'Message indicating that the draft is in the process of being saved.',
 	'drafts-enable' => 'Preferences, if user wants to enable this tool or not, checked means that yes',
+	'prefs-extension-drafts' => '{{Identical|Draft}}',
 	'accesskey-drafts-save' => '{{doc-accesskey}}',
 );
 
