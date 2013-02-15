@@ -1195,6 +1195,7 @@ $messages['ja'] = array(
 );
 
 /** Georgian (ქართული)
+ * @author David1010
  * @author Dawid Deutschland
  * @author Sopho
  * @author გიორგიმელა
@@ -1219,6 +1220,7 @@ $messages['ka'] = array(
 	'drafts-save-saved' => 'შენახულია',
 	'drafts-save-saving' => 'შენახვა',
 	'drafts-save-error' => 'შავი ფურცელის შენახვის შეცდომა',
+	'prefs-extension-drafts' => 'ესკიზები',
 	'tooltip-drafts-save' => 'შეინახეთ შავი ფურცელი',
 );
 
