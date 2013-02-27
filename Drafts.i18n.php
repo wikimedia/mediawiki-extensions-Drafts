@@ -1852,6 +1852,7 @@ $messages['roa-tara'] = array(
 	'drafts-save-saved' => 'Reggistrate',
 	'drafts-save-saving' => 'Stoche a reggistre',
 	'drafts-save-error' => "Errore de salvatagge d'u pruggette",
+	'prefs-extension-drafts' => 'Bozze',
 	'tooltip-drafts-save' => 'Salve cumme bozze',
 );
 
