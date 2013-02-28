@@ -48,7 +48,7 @@ Do you want to continue?',
 $messages['qqq'] = array(
 	'drafts' => 'Title of Special:Drafts.
 {{Identical|Draft}}',
-	'drafts-desc' => '{{desc}}',
+	'drafts-desc' => '{{desc|name=Drafts|url=http://www.mediawiki.org/wiki/Extension:Drafts}}',
 	'drafts-view-summary' => 'Used in [[Special:Drafts]] when there is at least one draft saved.',
 	'drafts-view-article' => 'Name of column in Special:Drafts, when there are draft versions saved.
 
@@ -1839,6 +1839,7 @@ Doriți să continuați?',
  */
 $messages['roa-tara'] = array(
 	'drafts' => 'Bozze',
+	'drafts-desc' => "Aggiunge l'abbilità de reggistrà le versiune de [[Special:Drafts|bozze]] de 'na pàgene sus a 'u server",
 	'drafts-view' => 'ViewDraft',
 	'drafts-view-article' => 'Vosce',
 	'drafts-view-existing' => 'Pruggette esistende',
@@ -1852,6 +1853,7 @@ $messages['roa-tara'] = array(
 	'drafts-save-saved' => 'Reggistrate',
 	'drafts-save-saving' => 'Stoche a reggistre',
 	'drafts-save-error' => "Errore de salvatagge d'u pruggette",
+	'drafts-enable' => "Abbilite 'a funzionalità pe reggistrà 'na bozze jndr'à 'u module de cangiamende",
 	'prefs-extension-drafts' => 'Bozze',
 	'tooltip-drafts-save' => 'Salve cumme bozze',
 );
