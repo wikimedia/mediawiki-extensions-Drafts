@@ -177,12 +177,25 @@ $messages['as'] = array(
 
 /** Azerbaijani (azərbaycanca)
  * @author Cekli829
+ * @author Khan27
  * @author Vago
  */
 $messages['az'] = array(
+	'drafts' => 'Qaralamalar',
+	'drafts-view' => 'QaralamanıGör',
 	'drafts-view-article' => 'Səhifə',
 	'drafts-view-saved' => 'Yaddaşa verildi',
+	'drafts-view-discard' => 'Sil',
+	'drafts-view-nonesaved' => 'Hal hazırda hər hansı saxlanılmış qaralama yoxdur.',
+	'drafts-view-notice' => 'Bu səhifsə üçün $1 var.',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|qaralama|qaralama}}',
+	'drafts-save' => 'Bunu qaralama olaraq saxla',
+	'drafts-save-save' => 'Qaralamanı saxla',
 	'drafts-save-saved' => 'Yaddaşa verildi',
+	'drafts-save-saving' => 'Saxlanılır',
+	'drafts-save-error' => 'Qaralama saxlanarkən səhv',
+	'prefs-extension-drafts' => 'Qaralamalar',
+	'tooltip-drafts-save' => 'Qaralama olaraq saxla',
 );
 
 /** South Azerbaijani (تورکجه)
