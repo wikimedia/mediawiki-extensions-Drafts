@@ -58,9 +58,13 @@ $messages['qqq'] = array(
 {{Identical|Saved}}',
 	'drafts-view-discard' => 'Name of button to delete draft version of a page',
 	'drafts-view-nonesaved' => 'Displayed in Special:Drafts when there are no draft versions saved',
-	'drafts-view-notice' => "Shown at the top while previewing a page with draft versions saved. ''$1'' is {{msg-mw|Drafts-view-notice-link}} message",
-	'drafts-view-notice-link' => "Used in {{msg-mw|Drafts-view-notice}}. ''$1'' is the number of draft versions saved for the page
-{{Identical|Draft}}",
+	'drafts-view-notice' => 'Shown at the top while previewing a page with draft versions saved. Parameters:
+* $1 - the message {{msg-mw|Drafts-view-notice-link}}',
+	'drafts-view-notice-link' => 'Used as <code>$1</code> in {{msg-mw|Drafts-view-notice}}.
+
+Parameters:
+* $1 - the number of drafts (draft versions) saved for the page
+{{Identical|Draft}}',
 	'drafts-save' => 'Tooltip of {{msg-mw|Drafts-save-save}} button',
 	'drafts-save-save' => 'Button shown near "Show changes" under editing form of a page
 {{Identical|Save draft}}',
