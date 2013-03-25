@@ -66,13 +66,16 @@ Parameters:
 * $1 - the number of drafts (draft versions) saved for the page
 {{Identical|Draft}}',
 	'drafts-save' => 'Tooltip of {{msg-mw|Drafts-save-save}} button',
-	'drafts-save-save' => 'Button shown near "Show changes" under editing form of a page
+	'drafts-save-save' => 'Button shown near "Show changes" under editing form of a page.
+
+The tooltip for the button is {{msg-mw|Tooltip-drafts-save}}.
 {{Identical|Save draft}}',
 	'drafts-save-saved' => 'Message indicating that the draft has been saved.
 {{Identical|Saved}}',
 	'drafts-save-saving' => 'Message indicating that the draft is in the process of being saved.',
 	'drafts-enable' => 'Preferences, if user wants to enable this tool or not, checked means that yes',
 	'prefs-extension-drafts' => '{{Identical|Draft}}',
+	'tooltip-drafts-save' => 'Used as tooltip for the button {{msg-mw|Drafts-save-save}}.',
 	'accesskey-drafts-save' => '{{doc-accesskey}}',
 );
 
