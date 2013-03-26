@@ -46,7 +46,7 @@ Do you want to continue?',
  * @author Umherirrender
  */
 $messages['qqq'] = array(
-	'drafts' => 'Title of Special:Drafts.
+	'drafts' => '{{doc-special|Drafts}}
 {{Identical|Draft}}',
 	'drafts-desc' => '{{desc|name=Drafts|url=http://www.mediawiki.org/wiki/Extension:Drafts}}',
 	'drafts-view-summary' => 'Used in [[Special:Drafts]] when there is at least one draft saved.',
