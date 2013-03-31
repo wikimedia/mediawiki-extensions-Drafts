@@ -49,14 +49,18 @@ $messages['qqq'] = array(
 	'drafts' => '{{doc-special|Drafts}}
 {{Identical|Draft}}',
 	'drafts-desc' => '{{desc|name=Drafts|url=http://www.mediawiki.org/wiki/Extension:Drafts}}',
+	'drafts-view' => 'Unused at this time.',
 	'drafts-view-summary' => 'Used in [[Special:Drafts]] when there is at least one draft saved.',
 	'drafts-view-article' => 'Name of column in Special:Drafts, when there are draft versions saved.
 
 {{Identical|Page}}',
 	'drafts-view-existing' => 'Shown at the top while editing a page with draft versions saved',
-	'drafts-view-saved' => 'Name of column in Special:Drafts, when there are draft versions saved.
+	'drafts-view-saved' => 'Name of column in [[Special:Drafts]].
+
+This message is followed by timestamp (time and date) when there are draft versions saved.
 {{Identical|Saved}}',
-	'drafts-view-discard' => 'Name of button to delete draft version of a page',
+	'drafts-view-discard' => '{{doc-actionlink}}
+Name of button to delete draft version of a page.',
 	'drafts-view-nonesaved' => 'Displayed in Special:Drafts when there are no draft versions saved',
 	'drafts-view-notice' => 'Shown at the top while previewing a page with draft versions saved. Parameters:
 * $1 - the message {{msg-mw|Drafts-view-notice-link}}',
@@ -65,14 +69,21 @@ $messages['qqq'] = array(
 Parameters:
 * $1 - the number of drafts (draft versions) saved for the page
 {{Identical|Draft}}',
+	'drafts-view-warn' => 'Used as confirmation message which is shown by JavaScript <code>confirm()</code> function.',
 	'drafts-save' => 'Tooltip of {{msg-mw|Drafts-save-save}} button',
 	'drafts-save-save' => 'Button shown near "Show changes" under editing form of a page.
 
 The tooltip for the button is {{msg-mw|Tooltip-drafts-save}}.
+{{Related|Drafts-save}}
 {{Identical|Save draft}}',
-	'drafts-save-saved' => 'Message indicating that the draft has been saved.
+	'drafts-save-saved' => 'Used as button text which indicates that the draft has been saved.
+{{Related|Drafts-save}}
 {{Identical|Saved}}',
-	'drafts-save-saving' => 'Message indicating that the draft is in the process of being saved.',
+	'drafts-save-saving' => 'Message indicating that the draft is in the process of being saved.
+{{Related|Drafts-save}}
+{{Identical|Saving}}',
+	'drafts-save-error' => 'Used as button text which indicates failed to save draft.
+{{Related|Drafts-save}}',
 	'drafts-enable' => 'Preferences, if user wants to enable this tool or not, checked means that yes',
 	'prefs-extension-drafts' => '{{Identical|Draft}}',
 	'tooltip-drafts-save' => 'Used as tooltip for the button {{msg-mw|Drafts-save-save}}.',
@@ -1197,7 +1208,7 @@ $messages['ja'] = array(
 使用されていない下書きは $1 {{PLURAL:$1|日}}後に自動的に破棄されます。',
 	'drafts-view-article' => 'ページ',
 	'drafts-view-existing' => '現在保存されている下書き',
-	'drafts-view-saved' => '保存済',
+	'drafts-view-saved' => '保存日時',
 	'drafts-view-discard' => '破棄',
 	'drafts-view-nonesaved' => '現在保存されている下書きはありません。',
 	'drafts-view-notice' => 'このページにはあなたが作成した$1があります。',
