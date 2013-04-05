@@ -1875,6 +1875,8 @@ $messages['roa-tara'] = array(
 	'drafts' => 'Bozze',
 	'drafts-desc' => "Aggiunge l'abbilità de reggistrà le versiune de [[Special:Drafts|bozze]] de 'na pàgene sus a 'u server",
 	'drafts-view' => 'ViewDraft',
+	'drafts-view-summary' => "Sta pàgena speciale face vedè 'n'elenghe de tutte le bozze esistende.
+Le bozze non ausate avènene scettate apprisse {{PLURAL:$1|$1 sciurne}} automaticamende.",
 	'drafts-view-article' => 'Vosce',
 	'drafts-view-existing' => 'Pruggette esistende',
 	'drafts-view-saved' => 'Reggistrate',
@@ -1882,6 +1884,7 @@ $messages['roa-tara'] = array(
 	'drafts-view-nonesaved' => 'Non ge tène totte le pruggette salvate jndre stù momende.',
 	'drafts-view-notice' => 'Tu tène $1 pè quèste pàgene.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|pruggette|pruggette}}',
+	'drafts-view-warn' => 'Naviganne lundane da sta pàgene tu pirde tutte le cangiaminde non reggistrate sus a sta pàgene. Vuè ccu condinue?',
 	'drafts-save' => 'Salve quiste cumme bozze',
 	'drafts-save-save' => "Salve 'a bozze",
 	'drafts-save-saved' => 'Reggistrate',
