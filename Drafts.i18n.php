@@ -37,10 +37,7 @@ Do you want to continue?',
 	'accesskey-drafts-save' => 'g', # do not translate or duplicate this message to other languages
 );
 
-/** Message documentation (This is the name of the message documentation language code (qqq). Follow the rules of your languages and use small first letter if it doesn't capitalize language names always.
-
-It might be easier to translate it as "translation guidelines" or "translation help".
-{{Identical|Message documentation}})
+/** Message documentation (Message documentation)
  * @author Darth Kule
  * @author Dead3y3
  * @author EugeneZelenko
