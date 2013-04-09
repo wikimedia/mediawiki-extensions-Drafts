@@ -28,7 +28,7 @@ $specialPageAliases['arz'] = array(
 	'Drafts' => array( 'مسودات' ),
 );
 
-/** Assamese (অসমীয়া) */
+/** Assamese (অসমীয়া) */
 $specialPageAliases['as'] = array(
 	'Drafts' => array( 'খচৰা' ),
 );
