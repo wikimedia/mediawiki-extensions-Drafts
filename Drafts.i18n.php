@@ -1809,10 +1809,11 @@ Pretende continuar?',
 
 /** Brazilian Portuguese (português do Brasil)
  * @author Eduardo.mps
+ * @author Luckas
  */
 $messages['pt-br'] = array(
 	'drafts' => 'Rascunhos',
-	'drafts-desc' => 'Adiciona a possibilidade de gravar versões [[Special:Drafts|rascunho]] de uma página no servidor',
+	'drafts-desc' => 'Adiciona a possibilidade de salvar versões [[Special:Drafts|rascunho]] de uma página no servidor',
 	'drafts-view' => 'Ver Rascunho',
 	'drafts-view-summary' => 'Esta página especial mostra uma lista de todos os rascunhos existentes.
 Rascunhos não usados serão descartados automaticamente após {{PLURAL:$1|1 dia|$1 dias}}.',
@@ -1823,14 +1824,14 @@ Rascunhos não usados serão descartados automaticamente após {{PLURAL:$1|1 dia
 	'drafts-view-nonesaved' => 'Você não tem neste momento quaisquer rascunhos gravados.',
 	'drafts-view-notice' => 'Você tem $1 para esta página.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|rascunho|rascunhos}}',
-	'drafts-view-warn' => 'Se navegar para fora desta página, perderá todas as alterações por gravar desta página.
+	'drafts-view-warn' => 'Se navegar para fora desta página, perderá todas as alterações não salvas desta página.
 Deseja continuar?',
-	'drafts-save' => 'Gravar isto como rascunho',
-	'drafts-save-save' => 'Gravar rascunho',
+	'drafts-save' => 'Salvar isto como rascunho',
+	'drafts-save-save' => 'Salvar rascunho',
 	'drafts-save-saved' => 'Gravado',
 	'drafts-save-saving' => 'Gravando',
-	'drafts-save-error' => 'Erro ao gravar rascunho',
-	'tooltip-drafts-save' => 'Gravar como rascunho',
+	'drafts-save-error' => 'Erro ao salvar rascunho',
+	'tooltip-drafts-save' => 'Salvar como rascunho',
 );
 
 /** Romanian (română)
