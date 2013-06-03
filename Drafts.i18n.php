@@ -179,7 +179,7 @@ $messages['arz'] = array(
 	'tooltip-drafts-save' => 'حفظ كمسودة',
 );
 
-/** Assamese (অসমীয়া)
+/** Assamese (অসমীয়া)
  * @author Bishnu Saikia
  */
 $messages['as'] = array(
@@ -633,6 +633,7 @@ Neuzataj malnetoj estos forĵetitaj post {{PLURAL:$1|$1 tago|$1 tagoj}} aŭtomat
  * @author Crazymadlover
  * @author Dferg
  * @author Imre
+ * @author MarcoAurelio
  * @author Remember the dot
  */
 $messages['es'] = array(
@@ -1547,7 +1548,7 @@ $messages['myv'] = array(
 	'drafts-save-saved' => 'Ванстозь',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  * @author Laaknor
  */
 $messages['nb'] = array(
@@ -1638,7 +1639,7 @@ $messages['nl-informal'] = array(
 Wil je doorgaan?',
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎)
+/** Norwegian Nynorsk (norsk nynorsk)
  * @author Harald Khan
  * @author Njardarlogar
  * @author Ranveig
