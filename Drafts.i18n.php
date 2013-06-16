@@ -2096,6 +2096,7 @@ $messages['sr-el'] = array(
 
 /** Swedish (svenska)
  * @author Boivie
+ * @author Jopparn
  * @author Najami
  */
 $messages['sv'] = array(
@@ -2118,6 +2119,7 @@ Vill du fortsätta?',
 	'drafts-save-saved' => 'Sparad',
 	'drafts-save-saving' => 'Sparar',
 	'drafts-save-error' => 'Fel vid sparande av utkast',
+	'prefs-extension-drafts' => 'Utkast',
 	'tooltip-drafts-save' => 'Spara som ett utkast',
 );
 
