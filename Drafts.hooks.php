@@ -105,9 +105,11 @@ class DraftHooks {
 					);
 				}
 				// Load draft with info
-				$draft->setTitle( Title::newFromText(
-					$wgRequest->getText( 'wpDraftTitle' ) )
-				);
+				$title = Title::newFromText( $wgRequest->getText( 'wpDraftTitle' ) );
+				if ( !$title ) {
+					$title = $editpage->mTitle;
+				}
+				$draft->setTitle( $title );
 				$draft->setSection( $wgRequest->getInt( 'wpSection' ) );
 				$draft->setStartTime( $wgRequest->getText( 'wpStarttime' ) );
 				$draft->setEditTime( $wgRequest->getText( 'wpEdittime' ) );
