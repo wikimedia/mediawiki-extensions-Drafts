@@ -1302,7 +1302,7 @@ $messages['ko'] = array(
 	'drafts-desc' => '작업중인 문서를 [[Special:Drafts|임시적으로 저장]]하는 기능입니다.',
 	'drafts-view' => '초안 보기',
 	'drafts-view-summary' => '이 특수 문서는 모든 존재하는 초안를 보여 주고 있습니다.
-사용되지 않는 초안는 $1일 후에 자동적으로 폐기될 것입니다.',
+사용되지 않는 초안는 {{PLURAL:$1|$1일}} 후에 자동적으로 폐기됩니다.',
 	'drafts-view-article' => '문서',
 	'drafts-view-existing' => '임시 저장된 문서 목록',
 	'drafts-view-saved' => '저장된 시간',
