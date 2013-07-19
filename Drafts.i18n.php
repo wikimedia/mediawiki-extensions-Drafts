@@ -1423,6 +1423,8 @@ $messages['lt'] = array(
 	'drafts-save' => 'Išsaugoti šį kaip ruošinį',
 	'drafts-save-save' => 'Išsaugoti ruošinį',
 	'drafts-save-saved' => 'Išsaugota',
+	'drafts-save-saving' => 'Išsaugomas',
+	'drafts-save-error' => 'Klaida įrašant projektą',
 	'prefs-extension-drafts' => 'Ruošiniai',
 );
 
