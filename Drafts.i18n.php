@@ -411,6 +411,14 @@ Voleu continuar?",
 	'tooltip-drafts-save' => 'Desar com a esborrany',
 );
 
+/** Chechen (нохчийн)
+ * @author Умар
+ */
+$messages['ce'] = array(
+	'drafts-view-warn' => 'ХӀара агӀо дӀаьгӀча хьан Ӏалашбина боцу берриг хийцамаш дӀабоьра бу.
+Лаьий хьуна кхочушдан?',
+);
+
 /** Czech (česky)
  * @author Chmee2
  * @author Danny B.
