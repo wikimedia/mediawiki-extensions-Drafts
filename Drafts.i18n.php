@@ -1306,27 +1306,27 @@ $messages['kn'] = array(
  * @author 아라
  */
 $messages['ko'] = array(
-	'drafts' => '임시 저장된 문서 목록',
-	'drafts-desc' => '작업중인 문서를 [[Special:Drafts|임시적으로 저장]]하는 기능입니다.',
+	'drafts' => '초안 목록',
+	'drafts-desc' => '서버에 문서를 [[Special:Drafts|초안]] 판을 저장하는 기능을 추가합니다',
 	'drafts-view' => '초안 보기',
 	'drafts-view-summary' => '이 특수 문서는 모든 존재하는 초안를 보여 주고 있습니다.
 사용되지 않는 초안는 {{PLURAL:$1|$1일}} 후에 자동적으로 폐기됩니다.',
 	'drafts-view-article' => '문서',
-	'drafts-view-existing' => '임시 저장된 문서 목록',
+	'drafts-view-existing' => '기존 초안 목록',
 	'drafts-view-saved' => '저장된 시간',
 	'drafts-view-discard' => '삭제',
-	'drafts-view-nonesaved' => '임시 저장한 문서가 없습니다.',
-	'drafts-view-notice' => '이 문서에 $1(을)를 갖고 있습니다.',
-	'drafts-view-notice-link' => '초안 $1개',
+	'drafts-view-nonesaved' => '이 시간에 저장된 초안이 없습니다.',
+	'drafts-view-notice' => '이 문서에 $1(이)가 있습니다.',
+	'drafts-view-notice-link' => '{{PLURAL:$1|초안}} $1개',
 	'drafts-view-warn' => '이 문서를 떠나 둘러보면 저장하지 않은 모든 바뀜이 사라집니다.
 계속하시겠습니까?',
 	'drafts-save' => '이 편집을 초안으로 저장',
-	'drafts-save-save' => '임시 저장',
+	'drafts-save-save' => '초안 저장',
 	'drafts-save-saved' => '저장됨',
 	'drafts-save-saving' => '저장 중',
-	'drafts-save-error' => '임시 저장 중 오류 발생',
+	'drafts-save-error' => '초안을 저장하는 중 오류',
 	'drafts-enable' => '편집 화면에서 초안을 저장하는 기능을 활성화',
-	'prefs-extension-drafts' => '임시 저장된 문서 목록',
+	'prefs-extension-drafts' => '초안 목록',
 	'tooltip-drafts-save' => '초안으로 저장하기',
 );
 
