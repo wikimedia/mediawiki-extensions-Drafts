@@ -50,7 +50,8 @@ $messages['qqq'] = array(
 {{Identical|Draft}}',
 	'drafts-desc' => '{{desc|name=Drafts|url=http://www.mediawiki.org/wiki/Extension:Drafts}}',
 	'drafts-view' => 'Unused at this time.',
-	'drafts-view-summary' => 'Used in [[Special:Drafts]] when there is at least one draft saved.',
+	'drafts-view-summary' => 'Used in [[Special:Drafts]] when there is at least one draft saved. Parameters:
+* $1 - number of days. Default value: 30',
 	'drafts-view-article' => 'Name of column in Special:Drafts, when there are draft versions saved.
 
 {{Identical|Page}}',
