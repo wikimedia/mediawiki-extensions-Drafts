@@ -2412,6 +2412,7 @@ $messages['yi'] = array(
  * @author Chenxiaoqino
  * @author Gzdavidwong
  * @author Hydra
+ * @author Shirayuki
  * @author Wmr89502270
  * @author Yfdyh000
  */
@@ -2427,7 +2428,7 @@ $messages['zh-hans'] = array(
 	'drafts-view-discard' => '舍弃',
 	'drafts-view-nonesaved' => '您还没有任何已保存的草稿。',
 	'drafts-view-notice' => '您有$1供此页。',
-	'drafts-view-notice-link' => '$1 {{PLURAL:$1|草稿|草稿}}',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|草稿}}',
 	'drafts-view-warn' => '如果你离开这页，你将会失去你的更改。
 你想继续吗？',
 	'drafts-save' => '把此页面以草稿形式保存',
