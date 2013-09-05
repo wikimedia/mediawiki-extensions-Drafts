@@ -1823,6 +1823,7 @@ $messages['ps'] = array(
 );
 
 /** Portuguese (português)
+ * @author Cainamarques
  * @author Hamilton Abreu
  * @author Malafaya
  */
@@ -1846,10 +1847,12 @@ Pretende continuar?',
 	'drafts-save-saved' => 'Gravado',
 	'drafts-save-saving' => 'A gravar',
 	'drafts-save-error' => 'Erro a gravar rascunho',
+	'prefs-extension-drafts' => 'Rascunhos',
 	'tooltip-drafts-save' => 'Gravar como rascunho',
 );
 
 /** Brazilian Portuguese (português do Brasil)
+ * @author Cainamarques
  * @author Eduardo.mps
  * @author Luckas
  */
@@ -1873,6 +1876,7 @@ Deseja continuar?',
 	'drafts-save-saved' => 'Gravado',
 	'drafts-save-saving' => 'Gravando',
 	'drafts-save-error' => 'Erro ao salvar rascunho',
+	'prefs-extension-drafts' => 'Rascunhos',
 	'tooltip-drafts-save' => 'Salvar como rascunho',
 );
 
