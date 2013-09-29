@@ -1397,6 +1397,7 @@ $messages['kw'] = array(
 
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
+ * @author Soued031
  */
 $messages['lb'] = array(
 	'drafts' => 'Virbereedungen',
@@ -1417,7 +1418,7 @@ Bruillonen déi net benotzt ginn, ginn no {{PLURAL:$1|engem Dag|$1 Deeg}} automa
 	'drafts-save-saved' => 'Gespäichert',
 	'drafts-save-saving' => 'Späicheren',
 	'drafts-save-error' => 'Feller beim späicher vum Brouillon',
-	'drafts-enable' => 'Fonctioun aktivéieren fir eng Virbereedung  am Ännerungs-Formulaire ze späicheren',
+	'drafts-enable' => 'Funktioun aktivéiere fir eng Virbereedung am Ännerungsformulaire ze späicheren',
 	'prefs-extension-drafts' => 'Virbereedungen',
 	'tooltip-drafts-save' => 'Als Brouillon späicheren',
 );
