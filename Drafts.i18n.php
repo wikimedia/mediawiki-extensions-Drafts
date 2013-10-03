@@ -24,8 +24,7 @@ Unused drafts will be discarded after {{PLURAL:$1|$1 day|$1 days}} automatically
 	'drafts-view-nonesaved' => 'You do not have any drafts saved at this time.',
 	'drafts-view-notice' => 'You have $1 for this page.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|draft|drafts}}',
-	'drafts-view-warn' => 'By navigating away from this page you will lose all unsaved changes to this page.
-Do you want to continue?',
+	'drafts-view-warn' => 'Do you want to continue navigating away from this page? By doing so, you will lose all unsaved changes to this page.',
 	'drafts-save' => 'Save this as a draft',
 	'drafts-save-save' => 'Save draft',
 	'drafts-save-saved' => 'Saved',
