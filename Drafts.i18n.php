@@ -8,7 +8,7 @@
 
 $messages = array();
 
-/** English (English)
+/** English
  * @author Trevor Parscal
  */
 $messages['en'] = array(
@@ -33,7 +33,7 @@ Unused drafts will be discarded after {{PLURAL:$1|$1 day|$1 days}} automatically
 	'drafts-enable' => 'Enable feature to save a draft in edit form',
 	'prefs-extension-drafts' => 'Drafts',
 	'tooltip-drafts-save' => 'Save as a draft',
-	'accesskey-drafts-save' => 'g',
+	'accesskey-drafts-save' => 'g', # do not translate or duplicate this message to other languages
 );
 
 /** Message documentation (Message documentation)
@@ -516,7 +516,8 @@ Nicht verwendete zwischengespeicherte Versionen werden nach {{PLURAL:$1|$1 Tag|$
 	'drafts-view-nonesaved' => 'Du hast bisher noch keine zwischengespeicherten Versionen erstellt.',
 	'drafts-view-notice' => 'Du hast $1 für diese Seite.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|zwischengespeicherte Version|zwischengespeicherte Versionen}}',
-	'drafts-view-warn' => 'Willst du mit dem Verlassen dieser Seite fortfahren? Falls ja, gehen alle ungespeicherten Änderungen an dieser Seite verloren.',
+	'drafts-view-warn' => 'Wenn du diese Seite verlässt, gehen alle nichtgespeicherten Änderungen verloren.
+Möchtest du dennoch fortfahren?',
 	'drafts-save' => 'Diese Version zwischenspeichern',
 	'drafts-save-save' => 'Zwischenspeichern',
 	'drafts-save-saved' => 'Gespeichert',
@@ -811,7 +812,6 @@ Haluatko jatkaa?',
 
 /** French (français)
  * @author Crochet.david
- * @author DavidL
  * @author Gomoko
  * @author Grondin
  * @author IAlex
@@ -830,7 +830,8 @@ Les brouillons inutilisés seront automatiquement supprimés après $1 jour{{PLU
 	'drafts-view-nonesaved' => 'Vous n’avez actuellement enregistré aucun brouillon.',
 	'drafts-view-notice' => 'Vous avez $1 pour cette page.',
 	'drafts-view-notice-link' => '$1 brouillon{{PLURAL:$1||s}}',
-	'drafts-view-warn' => 'Voulez-vous continuer à naviguer en dehors de cette page ? En faisant cela vous perdrez toutes les modifications non enregistrées de cette page.',
+	'drafts-view-warn' => 'En navigant en dehors de cette page, vous perdrez toutes les modifications non enregistrées de cette page.
+Voulez-vous continuer ?',
 	'drafts-save' => 'Enregistrer ceci comme brouillon',
 	'drafts-save-save' => 'Enregistrer le brouillon',
 	'drafts-save-saved' => 'Enregistré',
@@ -1251,7 +1252,8 @@ $messages['ja'] = array(
 	'drafts-view-nonesaved' => '現在保存されている下書きはありません。',
 	'drafts-view-notice' => 'このページにはあなたが作成した$1があります。',
 	'drafts-view-notice-link' => '$1個の{{PLURAL:$1|下書き}}',
-	'drafts-view-warn' => 'このページから本当に抜けますか? 続行すると、あなたがこのページに加えた未保存の変更がすべて失われてしまいます。',
+	'drafts-view-warn' => 'このページから抜けると、あなたがこのページに加えた未保存の変更がすべて失われてしまいます。
+続行しますか?',
 	'drafts-save' => '現在の原稿を下書きとして保存する',
 	'drafts-save-save' => '下書きを保存',
 	'drafts-save-saved' => '保存完了',
@@ -1409,7 +1411,7 @@ Bruillonen déi net benotzt ginn, ginn no {{PLURAL:$1|engem Dag|$1 Deeg}} automa
 	'drafts-view-nonesaved' => 'Dir hutt elo keng Brouillone gespäichert.',
 	'drafts-view-notice' => 'Dir hutt $1 fir dës Säit.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|Brouillon|Brouillone}}',
-	'drafts-view-warn' => 'Wëllt Dir vun dëser Säit weidersurfen? Wann Dir dat maacht da verléiert Dir all netgespäichert Ännerunge vun dëser Säit.',
+	'drafts-view-warn' => 'Wann Dir vun dëser Säit weidersurft da verléiert Dir all netgespäichert ännerungen vun dëser Säit.',
 	'drafts-save' => 'Dës als Brouillon späicheren',
 	'drafts-save-save' => 'Brouillon späicheren',
 	'drafts-save-saved' => 'Gespäichert',
@@ -1940,7 +1942,6 @@ Le bozze non ausate avènene scettate apprisse {{PLURAL:$1|$1 sciurne}} automati
 /** Russian (русский)
  * @author Ferrer
  * @author KPu3uC B Poccuu
- * @author Okras
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
@@ -1956,8 +1957,8 @@ $messages['ru'] = array(
 	'drafts-view-nonesaved' => 'В настоящее время у вас нет сохранённых черновиков.',
 	'drafts-view-notice' => 'У вас $1 этой страницы.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|черновик|черновика|черновиков}}',
-	'drafts-view-warn' => 'Вы действительно желаете уйти с этой страницы?
-Так вы потеряете все несохранённые изменения на этой странице.',
+	'drafts-view-warn' => 'Уходя с этой страницы вы потеряете все несохранённые изменения.
+Вы желаете продолжить?',
 	'drafts-save' => 'Сохранить это как черновик',
 	'drafts-save-save' => 'Сохранить черновик',
 	'drafts-save-saved' => 'Сохранено',
@@ -2327,7 +2328,6 @@ $messages['ug-latn'] = array(
 /** Ukrainian (українська)
  * @author AS
  * @author Ahonc
- * @author Andriykopanytsia
  * @author Base
  */
 $messages['uk'] = array(
@@ -2343,7 +2343,8 @@ $messages['uk'] = array(
 	'drafts-view-nonesaved' => 'На даний момент ви не маєте збережених чернеток.',
 	'drafts-view-notice' => 'Ви маєте $1 цієї сторінки.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|чернетку|чернетки|чернеток}}',
-	'drafts-view-warn' => 'Ви хочете продовжити вихід з цієї сторінки? При виході ви втратите усі незбережені дані.',
+	'drafts-view-warn' => 'При виході з цієї сторінки ви втратите усі незбережені дані.
+Бажаєте продовжити?',
 	'drafts-save' => 'Зберегти це як чернетку',
 	'drafts-save-save' => 'Зберегти чернетку',
 	'drafts-save-saved' => 'Збережено',
@@ -2443,7 +2444,6 @@ $messages['yi'] = array(
  * @author Chenxiaoqino
  * @author Gzdavidwong
  * @author Hydra
- * @author Liuxinyu970226
  * @author Shirayuki
  * @author Wmr89502270
  * @author Yfdyh000
@@ -2461,7 +2461,8 @@ $messages['zh-hans'] = array(
 	'drafts-view-nonesaved' => '您还没有任何已保存的草稿。',
 	'drafts-view-notice' => '您有$1供此页。',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|草稿}}',
-	'drafts-view-warn' => '你真的要离开此页面么？如果执意这样做，您将丢失所有未保存的更改。',
+	'drafts-view-warn' => '如果你离开这页，你将会失去你的更改。
+你想继续吗？',
 	'drafts-save' => '把此页面以草稿形式保存',
 	'drafts-save-save' => '保存草稿',
 	'drafts-save-saved' => '已保存',
