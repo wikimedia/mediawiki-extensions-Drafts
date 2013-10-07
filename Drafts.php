@@ -71,27 +71,27 @@ $wgExtensionMessagesFiles['Drafts'] = $dir . 'Drafts.i18n.php';
 $wgExtensionMessagesFiles['DraftsAlias'] = $dir . 'Drafts.alias.php';
 
 // Register the Drafts special page
-$wgSpecialPages['Drafts'] = 'DraftsPage';
+$wgSpecialPages['Drafts'] = 'SpecialDrafts';
 $wgSpecialPageGroups['Drafts'] = 'pagetools';
-$wgAutoloadClasses['DraftsPage'] = $dir . 'Drafts.pages.php';
+$wgAutoloadClasses['SpecialDrafts'] = $dir . 'SpecialDrafts.php';
 
 // Values for options
-$wgHooks['UserGetDefaultOptions'][] = 'DraftHooks::defaultOptions';
+$wgHooks['UserGetDefaultOptions'][] = 'DraftHooks::onUserGetDefaultOptions';
 
 // Preferences hook
-$wgHooks['GetPreferences'][] = 'DraftHooks::preferences';
+$wgHooks['GetPreferences'][] = 'DraftHooks::onGetPreferences';
 
 // Register save interception to detect non-javascript draft saving
-$wgHooks['EditFilter'][] = 'DraftHooks::interceptSave';
+$wgHooks['EditFilter'][] = 'DraftHooks::onEditFilter';
 
 // Register article save hook
-$wgHooks['ArticleSaveComplete'][] = 'DraftHooks::discard';
+$wgHooks['ArticleSaveComplete'][] = 'DraftHooks::onArticleSaveComplete';
 
 // Updates namespaces and titles of drafts to new locations after moves
-$wgHooks['SpecialMovepageAfterMove'][] = 'DraftHooks::move';
+$wgHooks['SpecialMovepageAfterMove'][] = 'DraftHooks::onSpecialMovepageAfterMove';
 
 // Register controls hook
-$wgHooks['EditPageBeforeEditButtons'][] = 'DraftHooks::controls';
+$wgHooks['EditPageBeforeEditButtons'][] = 'DraftHooks::onEditPageBeforeEditButtons';
 
 // Register load hook
 $wgHooks['EditPage::showEditForm:initial'][] = 'DraftHooks::loadForm';

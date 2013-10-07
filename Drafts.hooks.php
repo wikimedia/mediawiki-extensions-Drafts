@@ -11,7 +11,7 @@ class DraftHooks {
 	 * @param $defaultOptions array
 	 * @return bool
 	 */
-	public static function defaultOptions( &$defaultOptions ) {
+	public static function onUserGetDefaultOptions( &$defaultOptions ) {
 		$defaultOptions['extensionDrafts_enable'] = true;
 		return true;
 	}
@@ -21,7 +21,7 @@ class DraftHooks {
 	 * @param $preferences array
 	 * @return bool
 	 */
-	public static function preferences( User $user, array &$preferences ) {
+	public static function onGetPreferences( User $user, array &$preferences ) {
 		$preferences['extensionDrafts_enable'] = array(
 			'type' => 'toggle',
 			'label-message' => 'drafts-enable',
@@ -47,7 +47,7 @@ class DraftHooks {
 	/**
 	 * SpecialMovepageAfterMove hook
 	 */
-	public static function move( $this, $ot, $nt ) {
+	public static function onSpecialMovepageAfterMove( $this, $ot, $nt ) {
 		// Update all drafts of old article to new article for all users
 		Drafts::move( $ot, $nt );
 		// Continue
@@ -57,7 +57,7 @@ class DraftHooks {
 	/**
 	 * ArticleSaveComplete hook
 	 */
-	public static function discard( WikiPage $article, $user, $text, $summary, $m,
+	public static function onArticleSaveComplete( WikiPage $article, $user, $text, $summary, $m,
 		$watchthis, $section, $flags, $rev
 	) {
 		global $wgRequest;
@@ -165,7 +165,7 @@ class DraftHooks {
 	 * Intercept the saving of an article to detect if the submission was from
 	 * the non-javascript save draft button
 	 */
-	public static function interceptSave( EditPage $editor, $text, $section, $error ) {
+	public static function onEditFilter( EditPage $editor, $text, $section, $error ) {
 		// Don't save if the save draft button caused the submit
 		if ( $editor->getArticle()->getContext()->getRequest()->getText( 'wpDraftSave' ) !== '' ) {
 			// Modify the error so it's clear we want to remain in edit mode
@@ -179,7 +179,7 @@ class DraftHooks {
 	 * EditPageBeforeEditButtons hook
 	 * Add draft saving controls
 	 */
-	public static function controls( EditPage $editpage, $buttons, &$tabindex ) {
+	public static function onEditPageBeforeEditButtons( EditPage $editpage, $buttons, &$tabindex ) {
 		global $egDraftsAutoSaveWait, $egDraftsAutoSaveTimeout, $egDraftsAutoSaveInputBased;
 
 		$context = $editpage->getArticle()->getContext();
