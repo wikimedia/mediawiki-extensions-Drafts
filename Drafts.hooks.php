@@ -55,10 +55,11 @@ class DraftHooks {
 	}
 
 	/**
-	 * ArticleSaveComplete hook
+	 * PageContentSaveComplete hook
+	 *
 	 */
-	public static function onArticleSaveComplete( WikiPage $article, $user, $text, $summary, $m,
-		$watchthis, $section, $flags, $rev
+	public static function onPageContentSaveComplete( WikiPage $article, $user, $content, $summary, $isMinor,
+		$isWatch, $section, $flags, $revision, $status, $baseRevId
 	) {
 		global $wgRequest;
 		// Check if the save occured from a draft
