@@ -1327,6 +1327,7 @@ $messages['kn'] = array(
 );
 
 /** Korean (한국어)
+ * @author Hym411
  * @author Klutzy
  * @author Kwj2772
  * @author 아라
@@ -1344,7 +1345,7 @@ $messages['ko'] = array(
 	'drafts-view-nonesaved' => '이 시간에 저장된 초안이 없습니다.',
 	'drafts-view-notice' => '이 문서에 $1(이)가 있습니다.',
 	'drafts-view-notice-link' => '{{PLURAL:$1|초안}} $1개',
-	'drafts-view-warn' => '이 문서를 떠나 둘러보면 저장하지 않은 모든 바뀜이 사라집니다.
+	'drafts-view-warn' => '이 문서를 떠나면 저장하지 않은 모든 바뀜이 사라집니다.
 계속하시겠습니까?',
 	'drafts-save' => '이 편집을 초안으로 저장',
 	'drafts-save-save' => '초안 저장',
