@@ -29,14 +29,14 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'Drafts',
-	'version' => '0.1.1',
+	'version' => '0.2',
 	'author' => 'Trevor Parscal',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:Drafts',
 	'descriptionmsg' => 'drafts-desc',
 );
 
 // Shortcut to this extension directory
-$dir = dirname( __FILE__ ) . '/';
+$dir = __DIR__ . '/';
 
 # Bump the version number every time you change any of the .css/.js files
 $wgDraftsStyleVersion = 3;

@@ -7,22 +7,15 @@
  */
 
 class DraftsPage extends SpecialPage {
-
-	/* Functions */
-
-	/**
-	 * Generic constructor
-	 */
 	public function __construct() {
-		// Initialize special page
 		parent::__construct( 'Drafts' );
-		// Internationalization
 	}
 
 	/**
 	 * Executes special page rendering and data processing
 	 *
 	 * @param $sub Mixed: MediaWiki supplied sub-page path
+	 * @throws PermissionsError
 	 */
 	public function execute( $sub ) {
 		$out = $this->getOutput();
@@ -33,10 +26,7 @@ class DraftsPage extends SpecialPage {
 		$this->setHeaders();
 		// Make sure the user is logged in
 		if ( !$user->isLoggedIn() ) {
-			// If not, let them know they need to
-			$out->loginToUse();
-			// Continue
-			return;
+			throw new PermissionsError( 'read' );
 		}
 		// Handle discarding
 		$draft = Draft::newFromID( $request->getIntOrNull( 'discard' ) );
@@ -63,7 +53,7 @@ class DraftsPage extends SpecialPage {
 		}
 		// Show list of drafts, or a message that there are none
 		if ( Drafts::display() == 0 ) {
-			$out->addHTML( wfMsgHTML( 'drafts-view-nonesaved' ) );
+			$out->addWikiMsg( 'drafts-view-nonesaved' );
 		}
 	}
 }

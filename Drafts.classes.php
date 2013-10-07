@@ -7,9 +7,6 @@
  */
 
 abstract class Drafts {
-
-	/* Static Functions */
-
 	/**
 	 * @return int|Mixed
 	 */
@@ -185,7 +182,7 @@ abstract class Drafts {
 			// Internationalization
 
 			// Add a summary, on Special:Drafts only
-			if( !$title || $title->getNamespace() == NS_SPECIAL ) {
+			if ( !$title || $title->getNamespace() === NS_SPECIAL ) {
 				$wgOut->wrapWikiMsg(
 					'<div class="mw-drafts-summary">$1</div>',
 					array(
@@ -210,13 +207,13 @@ abstract class Drafts {
 			$wgOut->addHTML(
 				Xml::element( 'th',
 					array( 'width' => '75%', 'nowrap' => 'nowrap' ),
-					wfMsg( 'drafts-view-article' )
+					wfMessage( 'drafts-view-article' )->text()
 				)
 			);
 			$wgOut->addHTML(
 				Xml::element( 'th',
 					null,
-					wfMsg( 'drafts-view-saved' )
+					wfMessage( 'drafts-view-saved' )->text()
 				)
 			);
 			$wgOut->addHTML( Xml::element( 'th' ) );
@@ -236,7 +233,7 @@ abstract class Drafts {
 				$urlDiscard = SpecialPage::getTitleFor( 'Drafts' )->getFullURL(
 					sprintf( 'discard=%s&token=%s',
 						urlencode( $draft->getID() ),
-						urlencode( $wgUser->editToken() )
+						urlencode( $wgUser->getEditToken() )
 					)
 				);
 				// If in edit mode, return to editor
@@ -293,7 +290,7 @@ abstract class Drafts {
 				);
 				$jsClick = "if( wgDraft.getState() !== 'unchanged' )" .
 					"return confirm('" .
-					Xml::escapeJsString( wfMsgHTML( 'drafts-view-warn' ) ) .
+					Xml::escapeJsString( wfMessage( 'drafts-view-warn' )->escaped() ) .
 					"')";
 				$wgOut->addHTML(
 					Xml::element( 'a',
@@ -301,7 +298,7 @@ abstract class Drafts {
 							'href' => $urlDiscard,
 							'onclick' => $jsClick
 						),
-						wfMsg( 'drafts-view-discard' )
+						wfMessage( 'drafts-view-discard' )->text()
 					)
 				);
 				$wgOut->addHTML( Xml::closeElement( 'td' ) );
@@ -316,7 +313,6 @@ abstract class Drafts {
 }
 
 class Draft {
-
 	/* Members */
 	private $exists = false;
 	private $id;
@@ -434,7 +430,7 @@ class Draft {
 	}
 
 	/**
-	 * @return Section of the article of draft
+	 * @return string Section of the article of draft
 	 */
 	public function getSection() {
 		return $this->section;
@@ -494,7 +490,7 @@ class Draft {
 	}
 
 	/**
-	 * @return Scroll position of editor when draft was last modified
+	 * @return int Scroll position of editor when draft was last modified
 	 */
 	public function getScrollTop() {
 		return $this->scrolltop;
@@ -509,7 +505,7 @@ class Draft {
 	}
 
 	/**
-	 * @return Text of draft version of article
+	 * @return string Text of draft version of article
 	 */
 	public function getText() {
 		return $this->text;
@@ -619,7 +615,7 @@ class Draft {
 	 * Inserts or updates draft row in database
 	 */
 	public function save() {
-		global $wgUser, $wgRequest;
+		global $wgUser;
 		// Gets database connection
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->begin();

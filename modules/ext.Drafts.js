@@ -5,17 +5,17 @@ function Draft() {
 	/* Private Members */
 
 	// Reference to object's self
-	var self = this;
-	// Configuration settings
-	var configuration = null;
-	// Language specific messages
-	var messages = null;
-	// State of the draft as it pertains to asynchronous saving
-	var state = 'unchanged';
-	// Timer handle for auto-saving
-	var timer = null;
-	// Reference to edit form draft is being edited with
-	var form = null;
+	var self = this,
+		// Configuration settings
+		configuration = null,
+		// Language specific messages
+		messages = null,
+		// State of the draft as it pertains to asynchronous saving
+		state = 'unchanged',
+		// Timer handle for auto-saving
+		timer = null,
+		// Reference to edit form draft is being edited with
+		form = null;
 
 	/* Functions */
 
@@ -24,7 +24,7 @@ function Draft() {
 	 * @param {String} newState
 	 */
 	this.setState = function(newState) {
-		if (state != newState) {
+		if (state !== newState) {
 			// Stores state information
 			state = newState;
 			// Updates UI elements
@@ -66,7 +66,7 @@ function Draft() {
 	 */
 	this.save = function() {
 		// Checks if a save is already taking place
-		if (state == 'saving') {
+		if (state === 'saving') {
 			// Exits function immediately
 			return;
 		}
@@ -194,7 +194,7 @@ function Draft() {
 			// Changes state to error
 			self.setState( 'error' );
 		}
-	}
+	};
 }
 
 var wgDraft = new Draft();
