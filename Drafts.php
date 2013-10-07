@@ -66,6 +66,11 @@ $wgAutoloadClasses['Drafts'] = $dir . 'Drafts.classes.php';
 $wgAutoloadClasses['Draft'] = $dir . 'Drafts.classes.php';
 $wgAutoloadClasses['DraftHooks'] = $dir . 'Drafts.hooks.php';
 
+// API module
+$wgAutoloadClasses['ApiSaveDrafts'] = "$dir/ApiSaveDrafts.php";
+$wgAPIModules['savedrafts'] = 'ApiSaveDrafts';
+
+
 // Internationalization
 $wgExtensionMessagesFiles['Drafts'] = $dir . 'Drafts.i18n.php';
 $wgExtensionMessagesFiles['DraftsAlias'] = $dir . 'Drafts.alias.php';
@@ -95,9 +100,6 @@ $wgHooks['EditPageBeforeEditButtons'][] = 'DraftHooks::onEditPageBeforeEditButto
 
 // Register load hook
 $wgHooks['EditPage::showEditForm:initial'][] = 'DraftHooks::loadForm';
-
-// Register ajax response hook
-$wgAjaxExportList[] = 'DraftHooks::save';
 
 // Register JS / CSS
 $wgResourceModules[ 'ext.Drafts' ] = array(
