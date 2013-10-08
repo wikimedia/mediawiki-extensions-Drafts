@@ -232,27 +232,6 @@ class DraftHooks {
 			$buttons['savedraft'] .= Xml::element( 'input',
 				array(
 					'type' => 'hidden',
-					'name' => 'wpDraftAutoSaveWait',
-					'value' => $egDraftsAutoSaveWait
-				)
-			);
-			$buttons['savedraft'] .= Xml::element( 'input',
-				array(
-					'type' => 'hidden',
-					'name' => 'wpDraftAutoSaveInputBased',
-					'value' => $egDraftsAutoSaveInputBased
-				)
-			);
-			$buttons['savedraft'] .= Xml::element( 'input',
-				array(
-					'type' => 'hidden',
-					'name' => 'wpDraftAutoSaveTimeout',
-					'value' => $egDraftsAutoSaveTimeout
-				)
-			);
-			$buttons['savedraft'] .= Xml::element( 'input',
-				array(
-					'type' => 'hidden',
 					'name' => 'wpDraftToken',
 					'value' => MWCryptRand::generateHex( 32 )
 				)
@@ -301,6 +280,21 @@ class DraftHooks {
 			);
 		}
 		// Continue
+		return true;
+	}
+
+	/**
+	 * Hook for ResourceLoaderGetConfigVars
+	 *
+	 * @param array $vars
+	 * @return bool
+	 */
+	public static function onResourceLoaderGetConfigVars( &$vars ) {
+		global $egDraftsAutoSaveWait, $egDraftsAutoSaveTimeout,
+		       $egDraftsAutoSaveInputBased;
+		$vars['wgDraftAutoSaveWait'] = $egDraftsAutoSaveWait;
+		$vars['wgDraftAutoSaveTimeout'] = $egDraftsAutoSaveTimeout;
+		$vars['wgDraftAutoSaveInputBased'] = $egDraftsAutoSaveInputBased;
 		return true;
 	}
 

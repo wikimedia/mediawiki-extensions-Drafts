@@ -103,11 +103,14 @@ $wgHooks['EditPage::showEditForm:initial'][] = 'DraftHooks::loadForm';
 
 // Register JS / CSS
 $wgResourceModules[ 'ext.Drafts' ] = array(
-  'scripts'       => 'modules/ext.Drafts.js',
-  'styles'        => 'modules/ext.Drafts.css',
-  'localBasePath' => $dir,
-  'remoteExtPath' => 'Drafts',
-  'dependencies'  => array( 'mediawiki.legacy.wikibits' ),
+	'scripts'       => 'modules/ext.Drafts.js',
+	'styles'        => 'modules/ext.Drafts.css',
+	'localBasePath' => $dir,
+	'remoteExtPath' => 'Drafts',
+	'dependencies'  => array(
+		'mediawiki.legacy.wikibits',
+		'mediaWiki.config',
+	),
 );
 
 $wgHooks['BeforePageDisplay'][] = 'DraftHooks::onBeforePageDisplay';

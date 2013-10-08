@@ -162,9 +162,9 @@ function Draft() {
 			}
 			// Gets configured specific values
 			configuration = {
-				autoSaveWait: form.wpDraftAutoSaveWait.value,
-				autoSaveTimeout: form.wpDraftAutoSaveTimeout.value,
-				autoSaveBasedOnInput: form.wpDraftAutoSaveInputBased.value
+				autoSaveWait: mw.config.get( 'wgDraftAutoSaveWait' ),
+				autoSaveTimeout: mw.config.get( 'wgDraftAutoSaveTimeout' ),
+				autoSaveBasedOnInput: mw.config.get( 'wgDraftAutoSaveInputBased' )
 			};
 			// Gets language-specific messages
 			messages = {
