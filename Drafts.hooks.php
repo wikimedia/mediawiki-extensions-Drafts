@@ -250,34 +250,6 @@ class DraftHooks {
 					'value' => $context->getTitle()->getPrefixedText()
 				)
 			);
-			$buttons['savedraft'] .= Xml::element( 'input',
-				array(
-					'type' => 'hidden',
-					'name' => 'wpMsgSaved',
-					'value' => $context->msg( 'drafts-save-saved' )->text()
-				)
-			);
-			$buttons['savedraft'] .= Xml::element( 'input',
-				array(
-					'type' => 'hidden',
-					'name' => 'wpMsgSaving',
-					'value' => $context->msg( 'drafts-save-saving' )->text()
-				)
-			);
-			$buttons['savedraft'] .= Xml::element( 'input',
-				array(
-					'type' => 'hidden',
-					'name' => 'wpMsgSaveDraft',
-					'value' => $context->msg( 'drafts-save-save' )->text()
-				)
-			);
-			$buttons['savedraft'] .= Xml::element( 'input',
-				array(
-					'type' => 'hidden',
-					'name' => 'wpMsgError',
-					'value' => $context->msg( 'drafts-save-error' )->text()
-				)
-			);
 		}
 		// Continue
 		return true;

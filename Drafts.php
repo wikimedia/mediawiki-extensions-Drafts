@@ -110,6 +110,13 @@ $wgResourceModules[ 'ext.Drafts' ] = array(
 	'dependencies'  => array(
 		'mediawiki.legacy.wikibits',
 		'mediaWiki.config',
+		'mediawiki.jqueryMsg',
+	),
+	'messages' => array(
+		'drafts-save-save',
+		'drafts-save-saved',
+		'drafts-save-saving',
+		'drafts-save-error',
 	),
 );
 

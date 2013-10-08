@@ -8,8 +8,6 @@ function Draft() {
 	var self = this,
 		// Configuration settings
 		configuration = null,
-		// Language specific messages
-		messages = null,
 		// State of the draft as it pertains to asynchronous saving
 		state = 'unchanged',
 		// Timer handle for auto-saving
@@ -31,23 +29,23 @@ function Draft() {
 			switch ( state ) {
 				case 'unchanged':
 					form.wpDraftSave.disabled = true;
-					form.wpDraftSave.value = messages.saveDraft;
+					form.wpDraftSave.value = mw.message( 'drafts-save-save' ).text();
 					break;
 				case 'changed':
 					form.wpDraftSave.disabled = false;
-					form.wpDraftSave.value = messages.saveDraft;
+					form.wpDraftSave.value = mw.message( 'drafts-save-save' ).text();
 					break;
 				case 'saved':
 					form.wpDraftSave.disabled = true;
-					form.wpDraftSave.value = messages.saved;
+					form.wpDraftSave.value = mw.message( 'drafts-save-saved' ).text();
 					break;
 				case 'saving':
 					form.wpDraftSave.disabled = true;
-					form.wpDraftSave.value = messages.saving;
+					form.wpDraftSave.value = mw.message( 'drafts-save-saving' ).text();
 					break;
 				case 'error':
 					form.wpDraftSave.disabled = true;
-					form.wpDraftSave.value = messages.error;
+					form.wpDraftSave.value = mw.message( 'drafts-save-error' ).text();
 					break;
 				default: break;
 			}
@@ -165,13 +163,6 @@ function Draft() {
 				autoSaveWait: mw.config.get( 'wgDraftAutoSaveWait' ),
 				autoSaveTimeout: mw.config.get( 'wgDraftAutoSaveTimeout' ),
 				autoSaveBasedOnInput: mw.config.get( 'wgDraftAutoSaveInputBased' )
-			};
-			// Gets language-specific messages
-			messages = {
-				saveDraft: form.wpMsgSaveDraft.value,
-				saving: form.wpMsgSaving.value,
-				saved: form.wpMsgSaved.value,
-				error: form.wpMsgError.value
 			};
 		}
 	};
