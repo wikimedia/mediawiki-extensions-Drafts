@@ -169,44 +169,39 @@ abstract class Drafts {
 	 *
 	 * @param $title Title [optional] Title of article, defaults to all articles
 	 * @param $userID Integer: [optional] ID of user, defaults to current user
-	 * @return int Number of drafts in the table
+	 * @return string HTML to be shown to the user
 	 */
 	public static function display( $title = null, $userID = null ) {
-		global $wgOut, $wgRequest, $wgUser, $wgLang;
+		global $wgRequest, $wgUser, $wgLang;
 		// Gets draftID
 		$currentDraft = Draft::newFromID( $wgRequest->getIntOrNull( 'draft' ) );
 		// Output HTML for list of drafts
 		$drafts = Drafts::get( $title, $userID );
 		if ( count( $drafts ) > 0 ) {
-			// Internationalization
+			$html = '';
 
 			// Build XML
-			$wgOut->addHTML(
-				Xml::openElement( 'table',
-					array(
-						'cellpadding' => 5,
-						'cellspacing' => 0,
-						'width' => '100%',
-						'border' => 0,
-						'id' => 'drafts-list-table'
-					)
+			$html .= Xml::openElement( 'table',
+				array(
+					'cellpadding' => 5,
+					'cellspacing' => 0,
+					'width' => '100%',
+					'border' => 0,
+					'id' => 'drafts-list-table'
 				)
 			);
-			$wgOut->addHTML( Xml::openElement( 'tr' ) );
-			$wgOut->addHTML(
-				Xml::element( 'th',
-					array( 'width' => '75%', 'nowrap' => 'nowrap' ),
-					wfMessage( 'drafts-view-article' )->text()
-				)
+
+			$html .= Xml::openElement( 'tr' );
+			$html .= Xml::element( 'th',
+				array( 'width' => '75%', 'nowrap' => 'nowrap' ),
+				wfMessage( 'drafts-view-article' )->text()
 			);
-			$wgOut->addHTML(
-				Xml::element( 'th',
-					null,
-					wfMessage( 'drafts-view-saved' )->text()
-				)
+			$html .=  Xml::element( 'th',
+				null,
+				wfMessage( 'drafts-view-saved' )->text()
 			);
-			$wgOut->addHTML( Xml::element( 'th' ) );
-			$wgOut->addHTML( Xml::closeElement( 'tr' ) );
+			$html .= Xml::element( 'th' );
+			$html .= Xml::closeElement( 'tr' );
 			// Add existing drafts for this page and user
 			/**
 			 * @var $draft Draft
@@ -249,54 +244,44 @@ abstract class Drafts {
 						urlencode( $draft->getSection() );
 				}
 				// Build XML
-				$wgOut->addHTML( Xml::openElement( 'tr' ) );
-				$wgOut->addHTML(
-					Xml::openElement( 'td' )
+				$html .= Xml::openElement( 'tr' );
+				$html .= Xml::openElement( 'td' );
+				$html .= Xml::element( 'a',
+					array(
+						'href' => $urlLoad,
+						'style' => 'font-weight:' .
+							(
+								$currentDraft->getID() == $draft->getID() ?
+								'bold' : 'normal'
+							)
+					),
+					$htmlTitle
 				);
-				$wgOut->addHTML(
-					Xml::element( 'a',
-						array(
-							'href' => $urlLoad,
-							'style' => 'font-weight:' .
-								(
-									$currentDraft->getID() == $draft->getID() ?
-									'bold' : 'normal'
-								)
-						),
-						$htmlTitle
-					)
+				$html .= Xml::closeElement( 'td' );
+				$html .= Xml::element( 'td',
+					null,
+					MWTimestamp::getInstance( $draft->getSaveTime() )->getHumanTimestamp()
 				);
-				$wgOut->addHTML( Xml::closeElement( 'td' ) );
-				$wgOut->addHTML(
-					Xml::element( 'td',
-						null,
-						MWTimestamp::getInstance( $draft->getSaveTime() )->getHumanTimestamp()
-					)
-				);
-				$wgOut->addHTML(
-					Xml::openElement( 'td' )
-				);
+				$html .= Xml::openElement( 'td' );
 				$jsClick = "if( wgDraft.getState() !== 'unchanged' )" .
 					"return confirm('" .
 					Xml::escapeJsString( wfMessage( 'drafts-view-warn' )->escaped() ) .
 					"')";
-				$wgOut->addHTML(
-					Xml::element( 'a',
-						array(
-							'href' => $urlDiscard,
-							'onclick' => $jsClick
-						),
-						wfMessage( 'drafts-view-discard' )->text()
-					)
-				);
-				$wgOut->addHTML( Xml::closeElement( 'td' ) );
-				$wgOut->addHTML( Xml::closeElement( 'tr' ) );
+				$html .= Xml::element( 'a',
+					array(
+						'href' => $urlDiscard,
+						'onclick' => $jsClick
+					),
+					wfMessage( 'drafts-view-discard' )->text()
+					);
+				$html .= Xml::closeElement( 'td' );
+				$html .= Xml::closeElement( 'tr' );
 			}
-			$wgOut->addHTML( Xml::closeElement( 'table' ) );
-			// Return number of drafts
-			return count( $drafts );
+			$html .= Xml::closeElement( 'table' );
+			// Return html
+			return $html;
 		}
-		return 0;
+		return '';
 	}
 }
 

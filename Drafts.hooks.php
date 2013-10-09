@@ -141,7 +141,7 @@ class DraftHooks {
 				$out->addHTML( Xml::element(
 					'h3', null, $context->msg( 'drafts-view-existing' )->text() )
 				);
-				Drafts::display( $context->getTitle() );
+				$out->addHTML( Drafts::display( $context->getTitle() ) );
 				$out->addHTML( Xml::closeElement( 'div' ) );
 			} else {
 				$jsWarn = "if( !wgAjaxSaveDraft.insync ) return confirm('" .
