@@ -178,19 +178,8 @@ abstract class Drafts {
 		// Output HTML for list of drafts
 		$drafts = Drafts::get( $title, $userID );
 		if ( count( $drafts ) > 0 ) {
-			global $egDraftsLifeSpan;
 			// Internationalization
 
-			// Add a summary, on Special:Drafts only
-			if ( !$title || $title->getNamespace() === NS_SPECIAL ) {
-				$wgOut->wrapWikiMsg(
-					'<div class="mw-drafts-summary">$1</div>',
-					array(
-						'drafts-view-summary',
-						$wgLang->formatNum( $egDraftsLifeSpan )
-					)
-				);
-			}
 			// Build XML
 			$wgOut->addHTML(
 				Xml::openElement( 'table',

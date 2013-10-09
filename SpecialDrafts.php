@@ -18,6 +18,8 @@ class SpecialDrafts extends SpecialPage {
 	 * @throws PermissionsError
 	 */
 	public function execute( $sub ) {
+		global $egDraftsLifeSpan;
+
 		$out = $this->getOutput();
 		$user = $this->getUser();
 		$request = $this->getRequest();
@@ -51,6 +53,16 @@ class SpecialDrafts extends SpecialPage {
 					break;
 			}
 		}
+
+		// Add a summary
+		$out->wrapWikiMsg(
+			'<div class="mw-drafts-summary">$1</div>',
+			array(
+				'drafts-view-summary',
+				$this->getLanguage()->formatNum( $egDraftsLifeSpan )
+			)
+		);
+
 		// Show list of drafts, or a message that there are none
 		if ( Drafts::display() == 0 ) {
 			$out->addWikiMsg( 'drafts-view-nonesaved' );
