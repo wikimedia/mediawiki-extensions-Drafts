@@ -891,8 +891,7 @@ Os borradores non usuados serán descartados automaticamente tras {{PLURAL:$1|un
 	'drafts-view-nonesaved' => 'Nestes intres non ten gardado ningún borrador.',
 	'drafts-view-notice' => 'Ten $1 para esta páxina.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|borrador|borradores}}',
-	'drafts-view-warn' => 'Se deixa esta páxina perderá todos os cambios que non foron gardados.
-Quere continuar?',
+	'drafts-view-warn' => 'Quere deixar esta páxina e navegar por outras? Ao facelo, perderá todos os cambios que non foron gardados.',
 	'drafts-save' => 'Gardar isto como un borrador',
 	'drafts-save-save' => 'Gardar o borrador',
 	'drafts-save-saved' => 'Gardado',
