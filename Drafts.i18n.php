@@ -443,8 +443,9 @@ Voleu continuar?",
  * @author Умар
  */
 $messages['ce'] = array(
+	'drafts-view-article' => 'АгӀо',
 	'drafts-view-warn' => 'ХӀара агӀо дӀаьгӀча хьан Ӏалашбина боцу берриг хийцамаш дӀабоьра бу.
-Лаьий хьуна кхочушдан?',
+Лаьий хьуна кхочушдан?', # Fuzzy
 );
 
 /** Czech (česky)
