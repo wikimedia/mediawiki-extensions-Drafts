@@ -423,7 +423,7 @@ class Draft {
 
 	/**
 	 * Sets title of article of draft
-	 * @param $title Object
+	 * @param $title Title
 	 */
 	public function setTitle( $title ) {
 		$this->title = $title;
