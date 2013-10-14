@@ -326,8 +326,9 @@ class DraftHooks {
 		$starttime, $edittime, $scrolltop, $text, $summary, $minoredit
 	) {
 		global $wgUser;
+
 		// Verify token
-		if ( $wgUser->getEditToken() == $etoken ) {
+		if ( $wgUser->matchEditToken( $etoken ) ) {
 			// Create Draft
 			$draft = Draft::newFromID( $id );
 			// Load draft with info
