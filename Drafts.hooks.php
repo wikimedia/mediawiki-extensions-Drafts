@@ -318,37 +318,4 @@ class DraftHooks {
 		return true;
 	}
 
-	/**
-	 * AJAX function export DraftHooks::AjaxSave
-	 * Respond to AJAX queries
-	 */
-	public static function save( $dtoken, $etoken, $id, $title, $section,
-		$starttime, $edittime, $scrolltop, $text, $summary, $minoredit
-	) {
-		global $wgUser;
-
-		// Verify token
-		if ( $wgUser->matchEditToken( $etoken ) ) {
-			// Create Draft
-			$draft = Draft::newFromID( $id );
-			// Load draft with info
-			$draft->setToken( $dtoken );
-			$draft->setTitle( Title::newFromText( $title ) );
-			$draft->setSection( $section == '' ? null : $section );
-			$draft->setStartTime( $starttime );
-			$draft->setEditTime( $edittime );
-			$draft->setSaveTime( wfTimestampNow() );
-			$draft->setScrollTop( $scrolltop );
-			$draft->setText( $text );
-			$draft->setSummary( $summary );
-			$draft->setMinorEdit( $minoredit );
-			// Save draft
-			$draft->save();
-			// Return draft id to client (used for next save)
-			return (string) $draft->getID();
-		} else {
-			// Return failure
-			return '-1';
-		}
-	}
 }

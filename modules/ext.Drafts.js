@@ -72,30 +72,28 @@ function Draft() {
 		}
 		// Sets state to saving
 		self.setState( 'saving' );
-		// Saves current request type
-		var oldRequestType = sajax_request_type;
-		// Changes request type to post
-		sajax_request_type = 'POST';
+		var params = {
+			action: 'savedrafts',
+			drafttoken: form.wpDraftToken.value,
+			token: form.wpEditToken.value,
+			id: form.wpDraftID.value,
+			title: form.wpDraftTitle.value,
+			section: form.wpSection.value,
+			starttime: form.wpStarttime.value,
+			edittime: form.wpEdittime.value,
+			scrolltop: form.wpTextbox1.scrollTop,
+			text: form.wpTextbox1.value,
+			summary: form.wpSummary.value
+		};
+
+		if ( form.wpMinoredit !== undefined && form.wpMinoredit.checked ) {
+			params.minoredit = 1;
+		}
+
 		// Performs asynchronous save on server
-		sajax_do_call(
-			'DraftHooks::save',
-			[
-				form.wpDraftToken.value,
-				form.wpEditToken.value,
-				form.wpDraftID.value,
-				form.wpDraftTitle.value,
-				form.wpSection.value,
-				form.wpStarttime.value,
-				form.wpEdittime.value,
-				form.wpTextbox1.scrollTop,
-				form.wpTextbox1.value,
-				form.wpSummary.value,
-				( form.wpMinoredit && form.wpMinoredit.checked ) ? 1 : 0
-			],
-			new Function( 'request', 'wgDraft.respond( request )' )
-		);
-		// Restores current request type
-		sajax_request_type = oldRequestType;
+		var api = new mw.Api();
+		api.post(params).done( self.respond ).fail( self.respond );
+
 		// Re-allow request if it is not done in 10 seconds
 		self.timeoutID = window.setTimeout(
 			"wgDraft.setState( 'changed' )", 10000
@@ -180,16 +178,16 @@ function Draft() {
 
 	/**
 	 * Responds to the server after a save request has been handled
-	 * @param {Object} request
+	 * @param {Object} data
 	 */
-	this.respond = function( request ) {
+	this.respond = function( data ) {
 		// Checks that an error did not occur
-		if ( request.responseText > -1 ) {
+		if ( data.savedrafts && data.savedrafts.id ) {
 			// Changes state to saved
 			self.setState( 'saved' );
 			// Gets id of newly inserted draft (or updates if it already exists)
 			// and stores it in a hidden form field
-			form.wpDraftID.value = request.responseText;
+			form.wpDraftID.value = data.savedrafts.id;
 		} else {
 			// Changes state to error
 			self.setState( 'error' );
