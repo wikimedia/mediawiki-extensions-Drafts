@@ -191,6 +191,7 @@ class DraftHooks {
 		// Check permissions
 		if ( $user->isAllowed( 'edit' ) && $user->isLoggedIn() ) {
 			$request = $context->getRequest();
+			$context->getOutput()->addModules( 'ext.Drafts' );
 
 			// Build XML
 			$buttons['savedraft'] = Xml::openElement( 'script',
@@ -267,20 +268,6 @@ class DraftHooks {
 		$vars['wgDraftAutoSaveWait'] = $egDraftsAutoSaveWait;
 		$vars['wgDraftAutoSaveTimeout'] = $egDraftsAutoSaveTimeout;
 		$vars['wgDraftAutoSaveInputBased'] = $egDraftsAutoSaveInputBased;
-		return true;
-	}
-
-	/**
-	 * BeforePageDisplay hook
-	 *
-	 * Adds the modules to the page
-	 *
-	 * @param $out OutputPage output page
-	 * @param $skin Skin current skin
-	 * @return bool
-	 */
-	public static function onBeforePageDisplay( $out, $skin ) {
-		$out->addModules( 'ext.Drafts' );
 		return true;
 	}
 

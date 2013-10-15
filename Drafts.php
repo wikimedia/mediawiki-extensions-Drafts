@@ -120,7 +120,5 @@ $wgResourceModules[ 'ext.Drafts' ] = array(
 	),
 );
 
-$wgHooks['BeforePageDisplay'][] = 'DraftHooks::onBeforePageDisplay';
-
 // Register database operations
 $wgHooks['LoadExtensionSchemaUpdates'][] = 'DraftHooks::schema';
