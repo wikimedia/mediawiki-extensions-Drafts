@@ -38,9 +38,6 @@ $wgExtensionCredits['other'][] = array(
 // Shortcut to this extension directory
 $dir = __DIR__ . '/';
 
-# Bump the version number every time you change any of the .css/.js files
-$wgDraftsStyleVersion = 3;
-
 // Seconds of inactivity after change before autosaving
 // Use the value 0 to disable autosave
 $egDraftsAutoSaveWait = 120;
