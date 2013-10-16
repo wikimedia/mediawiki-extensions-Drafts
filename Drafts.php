@@ -109,7 +109,6 @@ $wgResourceModules[ 'ext.Drafts' ] = array(
 	'remoteExtPath' => 'Drafts',
 	'dependencies'  => array(
 		'mediawiki.legacy.wikibits',
-		'mediaWiki.config',
 		'mediawiki.jqueryMsg',
 	),
 	'messages' => array(
