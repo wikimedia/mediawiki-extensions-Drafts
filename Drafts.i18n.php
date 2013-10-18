@@ -747,6 +747,7 @@ $messages['eu'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Ebraminio
  * @author Huji
  * @author Mjbmr
  * @author Reza1615
@@ -766,7 +767,7 @@ $messages['fa'] = array(
 	'drafts-view-notice' => 'شما $1 برای این صفحه دارید.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|پیش‌نویس|پیش‌نویس}}',
 	'drafts-view-warn' => 'با خارج شدن از این صفحه شما تمام تغییرات ذخیره نشده در این صفحه را ازدست می‌دهید.
-آیا می‌خواهید ادامه دهید؟ْ',
+آیا می‌خواهید ادامه دهید؟ْ', # Fuzzy
 	'drafts-save' => 'ذخیره کردن این متن به عنوان پیش‌نویس',
 	'drafts-save-save' => 'ذخیره کردن پیش‌نویس',
 	'drafts-save-saved' => 'ذخیره شد',
@@ -774,7 +775,7 @@ $messages['fa'] = array(
 	'drafts-save-error' => 'خطا در ذخیره کردن پیش‌نویس',
 	'drafts-enable' => 'فعال کردن ویژگی ذخیرهٔ پیش‌نویس در فرم ویرایش',
 	'prefs-extension-drafts' => 'پیش‌نویس‌ها',
-	'tooltip-drafts-save' => 'ذخیره به عنوان پیش‌نویس',
+	'tooltip-drafts-save' => 'ذخیره به‌عنوان پیش‌نویس',
 );
 
 /** Finnish (suomi)
