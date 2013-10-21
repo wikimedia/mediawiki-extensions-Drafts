@@ -446,6 +446,7 @@ $messages['ce'] = array(
 	'drafts-view-article' => 'АгӀо',
 	'drafts-view-warn' => 'ХӀара агӀо дӀаьгӀча хьан Ӏалашбина боцу берриг хийцамаш дӀабоьра бу.
 Лаьий хьуна кхочушдан?', # Fuzzy
+	'drafts-save-saving' => 'Ӏалашяр',
 );
 
 /** Czech (česky)
@@ -768,7 +769,7 @@ $messages['fa'] = array(
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|پیش‌نویس|پیش‌نویس}}',
 	'drafts-view-warn' => 'با خارج شدن از این صفحه شما تمام تغییرات ذخیره نشده در این صفحه را ازدست می‌دهید.
 آیا می‌خواهید ادامه دهید؟ْ', # Fuzzy
-	'drafts-save' => 'ذخیره کردن این متن به عنوان پیش‌نویس',
+	'drafts-save' => 'ذخیره‌کردن این متن به‌عنوان پیش‌نویس',
 	'drafts-save-save' => 'ذخیره کردن پیش‌نویس',
 	'drafts-save-saved' => 'ذخیره شد',
 	'drafts-save-saving' => 'ذخیره‌سازی',
