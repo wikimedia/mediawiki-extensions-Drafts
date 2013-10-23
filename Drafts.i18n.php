@@ -444,6 +444,7 @@ Voleu continuar?",
  */
 $messages['ce'] = array(
 	'drafts-view-article' => 'АгӀо',
+	'drafts-view-discard' => 'Кхоссар',
 	'drafts-view-warn' => 'ХӀара агӀо дӀаьгӀча хьан Ӏалашбина боцу берриг хийцамаш дӀабоьра бу.
 Лаьий хьуна кхочушдан?', # Fuzzy
 	'drafts-save-saving' => 'Ӏалашяр',
@@ -1126,8 +1127,7 @@ Le versiones provisori non usate essera automaticamente abandonate post {{PLURAL
 	'drafts-view-nonesaved' => 'Tu non ha alcun version provisori salveguardate al momento.',
 	'drafts-view-notice' => 'Tu ha $1 pro iste pagina.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|version|versiones}} provisori',
-	'drafts-view-warn' => 'Si tu quita iste pagina, tu perdera tote le modificationes non salveguardate de iste pagina.
-Continuar?',
+	'drafts-view-warn' => 'Es tu secur de voler quitar iste pagina? Facer isto causara le perdita de tote le modificationes non salveguardate in iste pagina.',
 	'drafts-save' => 'Salveguardar isto como version provisori',
 	'drafts-save-save' => 'Salveguardar version provisori',
 	'drafts-save-saved' => 'Salveguardate',
