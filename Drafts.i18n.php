@@ -2398,6 +2398,7 @@ $messages['vep'] = array(
 );
 
 /** Vietnamese (Tiếng Việt)
+ * @author Baonguyen21022003
  * @author Minh Nguyen
  * @author Vinhtantran
  */
@@ -2414,8 +2415,7 @@ Các bản thảo không được sử dụng sẽ được tự động bỏ đ
 	'drafts-view-nonesaved' => 'Bạn không có bất kỳ bản thảo lưu trữ nào vào lúc này.',
 	'drafts-view-notice' => 'Bạn có $1 cho trang này.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|bản thảo|bản thảo}}',
-	'drafts-view-warn' => 'Nếu tắt trang này bạn sẽ mất toàn bộ các thay đổi chưa lưu đối với trang.
-Bạn có muốn tiếp tục?',
+	'drafts-view-warn' => 'Bạn có muốn tiếp tục điều hướng ra khỏi trang này? Bằng cách đó, bạn sẽ mất tất cả các dữ liệu đang thay đổi chưa được lưu vào trang này.',
 	'drafts-save' => 'Lưu bản này làm bản thảo',
 	'drafts-save-save' => 'Lưu bản thảo',
 	'drafts-save-saved' => 'Đã lưu',
