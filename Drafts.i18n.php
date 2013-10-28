@@ -1724,12 +1724,13 @@ Los borrolhons inutilizats seràn suprimits automaticament aprèp $1 {{PLURAL:$1
 	'drafts-view-nonesaved' => 'Avètz pas de borrolhon salvat actualament.',
 	'drafts-view-notice' => 'Avètz $1 per aquesta pagina.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|borrolhon|borrolhons}}',
-	'drafts-view-warn' => "En navigant en defòra d'aquesta pagina i perdretz totes los cambiaments pas salvats.",
+	'drafts-view-warn' => "En navigant en defòra d'aquesta pagina i perdretz totes los cambiaments pas salvats.", # Fuzzy
 	'drafts-save' => 'Salvatz aquò coma borrolhon',
 	'drafts-save-save' => 'Salvar lo borrolhon',
 	'drafts-save-saved' => 'Salvat',
 	'drafts-save-saving' => 'Salvament en cors',
 	'drafts-save-error' => 'Error de salvament del borrolhon',
+	'prefs-extension-drafts' => 'Borrolhons',
 	'tooltip-drafts-save' => 'Salvar coma borrolhon',
 );
 
@@ -2415,7 +2416,7 @@ Các bản thảo không được sử dụng sẽ được tự động bỏ đ
 	'drafts-view-nonesaved' => 'Bạn không có bất kỳ bản thảo lưu trữ nào vào lúc này.',
 	'drafts-view-notice' => 'Bạn có $1 cho trang này.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|bản thảo|bản thảo}}',
-	'drafts-view-warn' => 'Bạn có muốn tiếp tục điều hướng ra khỏi trang này? Bằng cách đó, bạn sẽ mất tất cả các dữ liệu đang thay đổi chưa được lưu vào trang này.',
+	'drafts-view-warn' => 'Bạn có muốn tiếp tục rời bỏ trang này và mất tất cả các thay đổi chưa được lưu vào trang này?',
 	'drafts-save' => 'Lưu bản này làm bản thảo',
 	'drafts-save-save' => 'Lưu bản thảo',
 	'drafts-save-saved' => 'Đã lưu',
