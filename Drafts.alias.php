@@ -54,7 +54,7 @@ $specialPageAliases['bxr'] = array(
 	'Drafts' => array( 'Ноорог' ),
 );
 
-/** Czech (česky) */
+/** Czech (čeština) */
 $specialPageAliases['cs'] = array(
 	'Drafts' => array( 'Koncepty' ),
 );
