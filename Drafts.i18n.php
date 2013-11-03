@@ -1723,7 +1723,7 @@ Los borrolhons inutilizats seràn suprimits automaticament aprèp $1 {{PLURAL:$1
 	'drafts-view-nonesaved' => 'Avètz pas de borrolhon salvat actualament.',
 	'drafts-view-notice' => 'Avètz $1 per aquesta pagina.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|borrolhon|borrolhons}}',
-	'drafts-view-warn' => "En navigant en defòra d'aquesta pagina i perdretz totes los cambiaments pas salvats.", # Fuzzy
+	'drafts-view-warn' => "Volètz contunhar de navegar en defòra d'aquesta pagina ? En fasent aquò perdretz totas las modificacions pas enregistradas d'aquesta pagina.",
 	'drafts-save' => 'Salvatz aquò coma borrolhon',
 	'drafts-save-save' => 'Salvar lo borrolhon',
 	'drafts-save-saved' => 'Salvat',
