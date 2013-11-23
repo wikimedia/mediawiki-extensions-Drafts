@@ -670,6 +670,7 @@ Neuzataj malnetoj estos forĵetitaj post {{PLURAL:$1|$1 tago|$1 tagoj}} aŭtomat
  * @author Armando-Martin
  * @author Crazymadlover
  * @author Dferg
+ * @author Ihojose
  * @author Imre
  * @author MarcoAurelio
  * @author Remember the dot
@@ -687,8 +688,7 @@ Los borradores no usados serán descartados despues de {{PLURAL:$1|$1 día|$1 d�
 	'drafts-view-nonesaved' => 'No tiene ningún borrador grabado en este momento.',
 	'drafts-view-notice' => 'usted tiene $1 para esta página.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|borrador|borradores}}',
-	'drafts-view-warn' => 'Por navigar fuera de esta página, usted perderá todos cambios no guardados a esta página.
-¿Quiere continuar?',
+	'drafts-view-warn' => '¿Quieres continuar navegando fuera de esta página? Al hacerlo, se perderán todos los cambios no guardados en ella.',
 	'drafts-save' => 'Guardar esto como un borrador',
 	'drafts-save-save' => 'Grabar borrador',
 	'drafts-save-saved' => 'Grabado',
