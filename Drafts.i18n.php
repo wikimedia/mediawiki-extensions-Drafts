@@ -961,7 +961,7 @@ $messages['gu'] = array(
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|મુસદ્દો|મુસદ્દા}}',
 	'drafts-view-warn' => 'આ પાના પરથી બીજે જતા તમે સાચવ્યા વિનાના બધાજ ફેરફારો ગુમાવશો.
 
-તમે આગળ વધવા માંગો છો?',
+તમે આગળ વધવા માંગો છો ?',
 	'drafts-save' => 'આને મુસદ્દા તરીકે સાચવો',
 	'drafts-save-save' => 'મુસદ્દો સાચવો',
 	'drafts-save-saved' => 'સાચવ્યું',
@@ -2142,6 +2142,7 @@ $messages['sr-el'] = array(
  * @author Boivie
  * @author Jopparn
  * @author Najami
+ * @author WikiPhoenix
  */
 $messages['sv'] = array(
 	'drafts' => 'Utkast',
@@ -2156,8 +2157,7 @@ Oanvända utkast kommer automatiskt att försvinna efter {{PLURAL:$1|$1 dag|$1 d
 	'drafts-view-nonesaved' => 'Du har inga utkast sparade just nu.',
 	'drafts-view-notice' => 'Du har $1 för denna sida.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|utkast|utkast}}',
-	'drafts-view-warn' => 'Genom att navigera bort från denna sida kommer du förlora alla osparade ändringar för denna sida.
-Vill du fortsätta?',
+	'drafts-view-warn' => 'Vill du fortsätta navigera bort från denna sida? Då kommer du förlora alla osparade ändringar för denna sida.',
 	'drafts-save' => 'Spara detta som ett utkast',
 	'drafts-save-save' => 'Spara utkast',
 	'drafts-save-saved' => 'Sparad',
