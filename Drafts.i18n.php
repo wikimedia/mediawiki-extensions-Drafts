@@ -545,6 +545,7 @@ Möchten Sie dennoch fortfahren?',
 /** Zazaki (Zazaki)
  * @author Aspar
  * @author Erdemaslancan
+ * @author Marmase
  * @author Mirzali
  * @author Xoser
  */
@@ -562,7 +563,7 @@ numuneyê ke nêşuxuliyeni badê $1 {{PLURAL:$1|roci|roci}} bı otomatik esteri
 	'drafts-view-notice' => 'Ser ena pel de $1 teneyê tu esto.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|draft|draftan}}',
 	'drafts-view-warn' => 'Eka ti ena pele qefinene, vurnayîşê tu ke ti qeyd nikerd înan pêran beno vin.
-Ti wazeno dewam bikero?',
+Ti wazeno dewam bikero?', # Fuzzy
 	'drafts-save' => 'Eney taslax deye qeyd bike',
 	'drafts-save-save' => 'Draft qeyd ke',
 	'drafts-save-saved' => 'Stariya',
@@ -570,7 +571,7 @@ Ti wazeno dewam bikero?',
 	'drafts-save-error' => 'Qeyd kerdişî de yew ğelet biyo',
 	'drafts-enable' => 'Zey timar kerden hunerê  taslax qeyd kerdış aktiv ke',
 	'prefs-extension-drafts' => 'Taslaxi',
-	'tooltip-drafts-save' => 'Ze yew draft qeyd bike',
+	'tooltip-drafts-save' => 'Taslağ deyne nışanyayış',
 );
 
 /** Lower Sorbian (dolnoserbski)
@@ -1867,8 +1868,7 @@ Rascunhos não usados serão descartados automaticamente após {{PLURAL:$1|1 dia
 	'drafts-view-nonesaved' => 'Você não tem neste momento quaisquer rascunhos gravados.',
 	'drafts-view-notice' => 'Você tem $1 para esta página.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|rascunho|rascunhos}}',
-	'drafts-view-warn' => 'Se navegar para fora desta página, perderá todas as alterações não salvas desta página.
-Deseja continuar?',
+	'drafts-view-warn' => 'Você deseja sair desta página? Ao fazê-lo, perderá todas as alterações não salvas nesta página.',
 	'drafts-save' => 'Salvar isto como rascunho',
 	'drafts-save-save' => 'Salvar rascunho',
 	'drafts-save-saved' => 'Gravado',
