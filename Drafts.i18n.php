@@ -134,7 +134,7 @@ $messages['ar'] = array(
 	'drafts-view-notice' => 'أنت لديك $1 لهذه الصفحة.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|مسودة|مسودة}}',
 	'drafts-view-warn' => 'بواسطة الإبحار عن هذه الصفحة ستفقد كل التغييرات غير المحفوظة لهذه الصفحة.
-هل تريد الاستمرار؟',
+هل تريد الاستمرار؟', # Fuzzy
 	'drafts-save' => 'يحفظ هذه كمسودة',
 	'drafts-save-save' => 'احفظ المسودة',
 	'drafts-save-saved' => 'محفوظة',
@@ -170,7 +170,7 @@ $messages['arz'] = array(
 	'drafts-view-notice' => 'أنت لديك $1 لهذه الصفحة.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|مسودة|مسودة}}',
 	'drafts-view-warn' => 'بواسطة الإبحار عن هذه الصفحة ستفقد كل التغييرات غير المحفوظة لهذه الصفحة.
-هل تريد الاستمرار؟',
+هل تريد الاستمرار؟', # Fuzzy
 	'drafts-save' => 'حفظ هذه كمسودة',
 	'drafts-save-save' => 'حفظ المسودة',
 	'drafts-save-saved' => 'محفوظة',
@@ -210,7 +210,7 @@ Los borradores que nun s'usen en pasando {{PLURAL:$1|un día|$1 díes}} descarta
 	'drafts-view-notice' => 'Tien $1 pa esta páxina.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|borrador|borradores}}',
 	'drafts-view-warn' => 'Si dexa esta páxina perderá tolos cambios que nun tenga guardaos.
-¿Quier siguir?',
+¿Quier siguir?', # Fuzzy
 	'drafts-save' => 'Guardar esto como borrador',
 	'drafts-save-save' => 'Guardar borrador',
 	'drafts-save-saved' => 'Guardada',
@@ -269,7 +269,7 @@ $messages['ba'] = array(
 	'drafts-view-notice' => 'Һеҙҙең был бит өсөн $1 бар.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|ҡаралама}}',
 	'drafts-view-warn' => 'Был биттән китһәгеҙ, һеҙ биттәге бөтә һаҡланмаған үҙгәртеүҙәрҙе юғалтасаҡһығыҙ.
-Дауам итергә теләйһегеҙме?',
+Дауам итергә теләйһегеҙме?', # Fuzzy
 	'drafts-save' => 'Ҡаралама рәүешендә һаҡларға',
 	'drafts-save-save' => 'Ҡараламаны һаҡларға',
 	'drafts-save-saved' => 'Һаҡланған',
@@ -299,7 +299,7 @@ $messages['be-tarask'] = array(
 	'drafts-view-notice' => 'Вы маеце $1 для гэтай старонкі.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|чарнавік|чарнавікі|чарнавікоў}}',
 	'drafts-view-warn' => 'Закрыцьцё гэтай старонкі прывядзе да страты ўсіх незахаваных зьменаў.
-Вы жадаеце працягваць?',
+Вы жадаеце працягваць?', # Fuzzy
 	'drafts-save' => 'Захаваць гэта як чарнавік',
 	'drafts-save-save' => 'Захаваць чарнавік',
 	'drafts-save-saved' => 'Захаваны',
@@ -375,7 +375,7 @@ Ar brouilhedoù nann-implijet a vo distaolet emgefre goude $1 devez{{PLURAL:$1||
 	'drafts-view-notice' => '$1 ho peus evit ar bajenn-mañ.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|brouilhed|brouilhed}}',
 	'drafts-view-warn' => "Ma'z it da verdeiñ er maez eus ar bajenn-mañ e kollot an holl gemmoù dienroll degaset d'ar bajenn-mañ.
-Ha kenderc'hel a fell deoc'h ober ?",
+Ha kenderc'hel a fell deoc'h ober ?", # Fuzzy
 	'drafts-save' => 'Enrollañ an dra-mañ evel brouilhed',
 	'drafts-save-save' => 'Enrollañ ar brouilhed',
 	'drafts-save-saved' => 'Enrollet',
@@ -402,7 +402,7 @@ Nekorišteni nacrti će biti uklonjeni odavde automatski nakon {{PLURAL:$1|$1 da
 	'drafts-view-notice' => 'Imate $1 za ovu stranicu.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|skicu|skice|skica}}',
 	'drafts-view-warn' => 'Ako napustite ovu stranicu izgubit ćete sve nespremljene izmjene na stranici.
-Da li želite da nastavite?',
+Da li želite da nastavite?', # Fuzzy
 	'drafts-save' => 'Spremi ovo kao skicu',
 	'drafts-save-save' => 'Sačuvaj skicu',
 	'drafts-save-saved' => 'Spremljeno',
@@ -430,7 +430,7 @@ Els esborranys sense utilitzar seran descartats automàticament als {{PLURAL:$1|
 	'drafts-view-notice' => 'Teniu $1 per aquesta pàgina.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|esborrany|esborranys}}',
 	'drafts-view-warn' => "Si sortiu d'aquesta pàgina perdreu tots els canvis no desats de la mateixa.
-Voleu continuar?",
+Voleu continuar?", # Fuzzy
 	'drafts-save' => 'Desar-ho com un esborrany',
 	'drafts-save-save' => 'Desa un esborrany',
 	'drafts-save-saved' => 'Desat',
@@ -450,7 +450,7 @@ $messages['ce'] = array(
 	'drafts-save-saving' => 'Ӏалашяр',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Chmee2
  * @author Danny B.
  * @author Matěj Grabovský
@@ -469,7 +469,7 @@ Nepoužité koncepty budou po {{plural:$1|$1 dni|$1 dnech}} automaticky smazány
 	'drafts-view-nonesaved' => 'Momentálně nemáte uloženy žádné koncepty.',
 	'drafts-view-notice' => 'Máte $1 této stránky',
 	'drafts-view-notice-link' => '$1 {{plural:$1|koncept|koncepty|konceptů}}',
-	'drafts-view-warn' => 'Pokud odejdete z této stránky, ztratíte všechny neuložené změny této stránky. Chcete pokračovat?',
+	'drafts-view-warn' => 'Pokud odejdete z této stránky, ztratíte všechny neuložené změny této stránky. Chcete pokračovat?', # Fuzzy
 	'drafts-save' => 'Uložit tuto verzi jako koncept',
 	'drafts-save-save' => 'Uložit koncept',
 	'drafts-save-saved' => 'Uložené',
@@ -539,7 +539,7 @@ $messages['de-formal'] = array(
 	'drafts-view-nonesaved' => 'Sie haben bisher noch keine zwischengespeicherten Versionen erstellt.',
 	'drafts-view-notice' => 'Sie haben $1 für diese Seite.',
 	'drafts-view-warn' => 'Wenn Sie diese Seite verlasseb, gehen alle nichtgespeicherten Änderungen verloren.
-Möchten Sie dennoch fortfahren?',
+Möchten Sie dennoch fortfahren?', # Fuzzy
 );
 
 /** Zazaki (Zazaki)
@@ -562,8 +562,7 @@ numuneyê ke nêşuxuliyeni badê $1 {{PLURAL:$1|roci|roci}} bı otomatik esteri
 	'drafts-view-nonesaved' => 'Ti hama nika yew draft qeyd nikerd.',
 	'drafts-view-notice' => 'Ser ena pel de $1 teneyê tu esto.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|draft|draftan}}',
-	'drafts-view-warn' => 'Eka ti ena pele qefinene, vurnayîşê tu ke ti qeyd nikerd înan pêran beno vin.
-Ti wazeno dewam bikero?', # Fuzzy
+	'drafts-view-warn' => 'Eka ti ena pele qefinene, vurnayîşê tu ke ti qeyd nikerd înan pêran beno vin.Ti wazeno dewam bikero?',
 	'drafts-save' => 'Eney taslax deye qeyd bike',
 	'drafts-save-save' => 'Draft qeyd ke',
 	'drafts-save-saved' => 'Stariya',
@@ -591,7 +590,7 @@ Njewužywane naćerjenja zachyśiju se awtomatiski pó {{PLURAL:$1|$ dnju|$1 dnj
 	'drafts-view-notice' => 'Maš $1 za toś ten bok.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|nacerjenje|nacerjeni|nacerjenja|nacerjenjow}}',
 	'drafts-view-warn' => 'Gaž spušćaš toś ten bok, zgubijoš wše njeskłaźone změny na toś tom boku.
-Coš weto pókšacowaś?',
+Coš weto pókšacowaś?', # Fuzzy
 	'drafts-save' => 'To ako nacerjenje składowaś',
 	'drafts-save-save' => 'Nacerjenje składowaś',
 	'drafts-save-saved' => 'Skłaźony',
@@ -628,7 +627,7 @@ $messages['el'] = array(
 	'drafts-view-notice' => 'Έχετε $1 για αυτή τη σελίδα.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|πρόχειρο|πρόχειρα}}',
 	'drafts-view-warn' => 'Με την περιήγησή σας μακριά από αυτή τη σελίδα θα χάσετε όλες τις αποθήκευτες αλλαγές σε αυτή τη σελίδα.
-Θέλετε να συνεχίσετε;',
+Θέλετε να συνεχίσετε;', # Fuzzy
 	'drafts-save' => 'Αποθήκευση αυτού ως προχείρου',
 	'drafts-save-save' => 'Αποθήκευση προχείρου',
 	'drafts-save-saved' => 'Αποθηκεύτηκε',
@@ -656,7 +655,7 @@ Neuzataj malnetoj estos forĵetitaj post {{PLURAL:$1|$1 tago|$1 tagoj}} aŭtomat
 	'drafts-view-notice' => 'Vi havas $1n por ĉi tiun paĝon.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|malneto|malnetoj}}',
 	'drafts-view-warn' => 'Se vi navigus for de ĉi tiu paĝo, vi perdus ĉiun nekonservitajn ŝanĝojn al ĉi tiu paĝo.
-Ĉu vi volas fari tiel?',
+Ĉu vi volas fari tiel?', # Fuzzy
 	'drafts-save' => 'Konservi ĉi tiun kiel malneton',
 	'drafts-save-save' => 'Konservi malneton',
 	'drafts-save-saved' => 'Konservita',
@@ -718,7 +717,7 @@ Kasutamata mustandid vistakse {{PLURAL:$1|ühe päeava|$1 päeva}} möödudes au
 	'drafts-view-notice' => 'Sul on selle lehekülje jaoks $1.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|mustand|mustandit}}',
 	'drafts-view-warn' => 'Kui sellelt leheküljelt lahkud, jääd ilma kõigist sellel leheküljel tehtud salvestamata muudatustest.
-Kas soovid jätkata?',
+Kas soovid jätkata?', # Fuzzy
 	'drafts-save' => 'Salvesta see mustandina',
 	'drafts-save-save' => 'Salvesta mustand',
 	'drafts-save-saved' => 'Salvestatud',
@@ -802,7 +801,7 @@ Luonnokset, joita ei käytetä hävitetään {{PLURAL:$1|$1 päivän|$1 päivän
 	'drafts-view-notice' => 'Sinulla on $1 tälle sivulle.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|luonnos|luonnosta}}',
 	'drafts-view-warn' => 'Jos siirryt pois tältä sivulta, kadotat kaikki tallentamattomat muutokset.
-Haluatko jatkaa?',
+Haluatko jatkaa?', # Fuzzy
 	'drafts-save' => 'Tallenna nykyinen teksti luonnoksena',
 	'drafts-save-save' => 'Tallenna luonnos',
 	'drafts-save-saved' => 'Tallennettu',
@@ -862,7 +861,7 @@ Los brolyons inutilisâs seront suprimâs ôtomaticament aprés $1 jorn{{PLURAL:
 	'drafts-view-notice' => 'Vos avéd $1 por ceta pâge.',
 	'drafts-view-notice-link' => '$1 brolyon{{PLURAL:$1||s}}',
 	'drafts-view-warn' => 'En naveguent en defôr de ceta pâge, vos pèrdréd tôs los changements pas encartâs de ceta pâge.
-Voléd-vos continuar ?',
+Voléd-vos continuar ?', # Fuzzy
 	'drafts-save' => 'Encartar cen coment brolyon',
 	'drafts-save-save' => 'Encartar lo brolyon',
 	'drafts-save-saved' => 'Encartâ',
@@ -931,7 +930,7 @@ Entwirf, wu nit verwändet wäre, wäre automatisch no {{PLURAL:$1|$1 Tag|$1 Tä
 	'drafts-view-notice' => 'Du hesch $1 fir die Syte.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|Version im Zwischespycher|Versione im Zwischespycher}}',
 	'drafts-view-warn' => 'Wänn Du die Syte verlosch, no gehn alli Änderige verlore, wu nit gspycheret sin.
-Mechtsch einewäg wytergoh?',
+Mechtsch einewäg wytergoh?', # Fuzzy
 	'drafts-save' => 'Die Version zwischespychere',
 	'drafts-save-save' => 'Zwischespychere',
 	'drafts-save-saved' => 'Gspycheret',
@@ -997,7 +996,7 @@ $messages['he'] = array(
 	'drafts-view-notice' => 'יש לכם $1 לדף זה.',
 	'drafts-view-notice-link' => '{{PLURAL:$1|טיוטה אחת|$1 טיוטות}}',
 	'drafts-view-warn' => 'אם תנווטו אל מחוץ לדף, תאבדו את כל השינויים שלא נשמרו לדף זה.
-האם ברצונכם להמשיך?',
+האם ברצונכם להמשיך?', # Fuzzy
 	'drafts-save' => 'שמירת דף זה כטיוטה',
 	'drafts-save-save' => 'שמירת טיוטה',
 	'drafts-save-saved' => 'נשמרה',
@@ -1033,7 +1032,7 @@ Neuporabljeni nacrti će biti automatski odbačeni nakon {{PLURAL:$1|jednog dana
 	'drafts-view-notice' => 'Imate $1 za ovu stranicu.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|nacrt|nacrta|nacrta}}',
 	'drafts-view-warn' => 'Odlaskom s ove stranice, izgubit ćete sve nespremljene promjene na ovoj stranici.
-Želite li nastaviti?',
+Želite li nastaviti?', # Fuzzy
 	'drafts-save' => 'Spremi kao skicu',
 	'drafts-save-save' => 'Spremi skicu',
 	'drafts-save-saved' => 'Snimljeno',
@@ -1058,7 +1057,7 @@ Njewužiwane naćiski so po {{PLURAL:$1|$1 dnju|$1 dnjomaj|$1 dnjach|$1 dnjach}}
 	'drafts-view-nonesaved' => 'Njejsy dotal žane naćiski składował.',
 	'drafts-view-notice' => 'Maš $1 za tutu stronu.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|naćisk|naćiskaj|naćiski|naćiskow}}',
-	'drafts-view-warn' => 'Hdyž stronu wopušćiš, zhubiš wšě njeskładowane změny tuteje strony. Chceš najebać toho pokročować?',
+	'drafts-view-warn' => 'Hdyž stronu wopušćiš, zhubiš wšě njeskładowane změny tuteje strony. Chceš najebać toho pokročować?', # Fuzzy
 	'drafts-save' => 'To jako naćisk składować',
 	'drafts-save-save' => 'Naćisk składować',
 	'drafts-save-saved' => 'Składowany',
@@ -1090,7 +1089,7 @@ A fel nem használt piszkozatok {{PLURAL:$1|egy nap|$1 nap}} után automatikusan
 	'drafts-view-notice' => 'Jelenleg $1 van ehhez a laphoz.',
 	'drafts-view-notice-link' => '{{PLURAL:$1|egy|$1}} piszkozatod',
 	'drafts-view-warn' => 'Ha elmész az oldalról, az összes nem mentett változtatás elvész.
-Biztosan folytatod?',
+Biztosan folytatod?', # Fuzzy
 	'drafts-save' => 'Mentés piszkozatként',
 	'drafts-save-save' => 'Mentés piszkozatként',
 	'drafts-save-saved' => 'Elmentve',
@@ -1108,7 +1107,7 @@ $messages['hu-formal'] = array(
 	'drafts-view-nonesaved' => 'Jelenleg nincs egyetlen elmentett piszkozata sem.',
 	'drafts-view-notice-link' => '{{PLURAL:$1|egy|$1}} piszkozata',
 	'drafts-view-warn' => 'Ha elmegy az oldalról, az összes mentetlen változtatás elvész.
-Biztosan folytatja?',
+Biztosan folytatja?', # Fuzzy
 );
 
 /** Interlingua (interlingua)
@@ -1159,7 +1158,7 @@ Tulisan rancangan yang tidak digunakan akan dibuang secara otomatis setelah {{PL
 	'drafts-view-notice' => 'Anda memiliki $1 untuk halaman ini.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1||}}tulisan rancangan',
 	'drafts-view-warn' => 'Jika Anda meninggalkan halaman ini Anda akan kehilangan semua perubahan yang belum tersimpan.
-Apakah Anda ingin meninggalkan halaman ini?',
+Apakah Anda ingin meninggalkan halaman ini?', # Fuzzy
 	'drafts-save' => 'Simpan halaman ini sebagai tulisan rancangan',
 	'drafts-save-save' => 'Simpan tulisan rancangan',
 	'drafts-save-saved' => 'Tersimpan',
@@ -1195,7 +1194,7 @@ $messages['is'] = array(
 	'drafts-view-notice' => 'Þú hefur $1 fyrir þessa síðu.',
 	'drafts-view-notice-link' => '{{PLURAL:$1|eitt uppkast|$1 uppköst}}',
 	'drafts-view-warn' => 'Með því að fara frá þessari síðu tapar þú öllum óvistuðum breytingum á síðunni.
-Viltu halda áfram?',
+Viltu halda áfram?', # Fuzzy
 	'drafts-save' => 'Vista sem uppkast',
 	'drafts-save-save' => 'Vista uppkast',
 	'drafts-save-saved' => 'Vistað',
@@ -1284,7 +1283,7 @@ $messages['ka'] = array(
 	'drafts-view-notice' => 'თქვენ გაქვთ  $1 ამ გვერდისთვის.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|შეუმოწმებელი ვერსია|შეუმოწმებელი ვერსიები}}',
 	'drafts-view-warn' => 'ამ გვერდის დატოვებისას თქვენ კარგავთ ყველა შეუნახავ ცვლილებას.
-გაგრძელება?',
+გაგრძელება?', # Fuzzy
 	'drafts-save' => 'შეინახეთ როგორც შავი ფურცელი',
 	'drafts-save-save' => 'შეინახეთ შავი ფურცელი',
 	'drafts-save-saved' => 'შენახულია',
@@ -1375,7 +1374,7 @@ unjenotz Enwörf automattesch fott jeschmesse.',
 	'drafts-view-notice' => 'Do häß $1 för heh di Sigg.',
 	'drafts-view-notice-link' => '{{PLURAL:$1|eine Entworf|$1 Äntwörf|keine Entworf}}',
 	'drafts-view-warn' => 'Wann De heh vun dä Sigg fott jeihß, dann sen all Ding Ennjabe fott, di De noch nit avjespeicht häß.
-Wellß De wigger maaache?',
+Wellß De wigger maaache?', # Fuzzy
 	'drafts-save' => 'Wat mer heh süht als_ennen Entworf avspeichere',
 	'drafts-save-save' => 'Entworf avspeichere',
 	'drafts-save-saved' => 'Avjespeichert',
@@ -1440,7 +1439,7 @@ Ongebroekte drafts zulle automatisch waere verwiederd nao {{PLURAL:$1|$1 daag|$1
 	'drafts-view-notice' => 'De mós $1 veur dees pazjena.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|draft|drafts}}',
 	'drafts-view-warn' => 'Door ven dees paasj weg te gaon, verluus se als verwieziginge die se nag neet neet höbs opgeslage.
-Wilse doorgaon?',
+Wilse doorgaon?', # Fuzzy
 	'drafts-save' => "Slaon es 'ne draft",
 	'drafts-save-save' => 'Opslaon',
 	'drafts-save-saved' => 'Opgeslaon',
@@ -1529,7 +1528,7 @@ $messages['ml'] = array(
 	'drafts-view-notice' => 'താങ്കൾക്ക് ഈ താളിൽ $1 ഉണ്ട്.',
 	'drafts-view-notice-link' => '{{PLURAL:$1|ഒരു കരട്|$1 കരട്}}',
 	'drafts-view-warn' => 'ഈ താളിൽ നിന്നും പോയാൽ താളിലെ സേവ് ചെയ്യാത്ത എല്ലാ മാറ്റങ്ങളും നഷ്ടമാകുന്നതാണ്.
-താങ്കൾക്ക് തുടരേണ്ടതുണ്ടോ?',
+താങ്കൾക്ക് തുടരേണ്ടതുണ്ടോ?', # Fuzzy
 	'drafts-save' => 'ഇതൊരു കരട് ആയി സേവ് ചെയ്യുക',
 	'drafts-save-save' => 'കരട് സേവ് ചെയ്യുക',
 	'drafts-save-saved' => 'സേവ് ചെയ്തിരിക്കുന്നു',
@@ -1562,7 +1561,7 @@ $messages['ms'] = array(
 	'drafts-view-nonesaved' => 'Anda tidak mempunyai draf.',
 	'drafts-view-notice' => 'Anda mempunyai $1 untuk laman ini.',
 	'drafts-view-notice-link' => '$1 draf',
-	'drafts-view-warn' => 'Anda akan kehilangan semua perubahan pada laman ini yang belum disimpan. Betul anda mahu keluar dari laman ini?',
+	'drafts-view-warn' => 'Anda akan kehilangan semua perubahan pada laman ini yang belum disimpan. Betul anda mahu keluar dari laman ini?', # Fuzzy
 	'drafts-save' => 'Simpan suntingan ini sebagai draf',
 	'drafts-save-save' => 'Simpan draf',
 	'drafts-save-saved' => 'Disimpan',
@@ -1605,7 +1604,7 @@ Ubrukte utkast vil slettes automatisk etter {{PLURAL:$1|én dag|$1 dager}}.',
 	'drafts-view-notice' => 'Du har $1 for denne siden.',
 	'drafts-view-notice-link' => '{{PLURAL:$1|ett utkast|$1 utkast}}',
 	'drafts-view-warn' => 'Ved å navigere vekk fra denne siden vil du miste alle ulagrede endringer til denne siden.
-Vil du fortsette?',
+Vil du fortsette?', # Fuzzy
 	'drafts-save' => 'Lagre dette som et utkast',
 	'drafts-save-save' => 'Lagre utkast',
 	'drafts-save-saved' => 'Lagret',
@@ -1631,7 +1630,7 @@ Nich bruukt twischenspiekerte Versionen warrt na {{PLURAL:$1|$1 Dag|$1 Daag}} au
 	'drafts-view-notice' => 'Du hest $1 för disse Sied.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|twischenspiekerte Version|twischenspiekerte Versionen}}',
 	'drafts-view-warn' => 'Wenn du nu vun disse Sied weggeist, gaht all nich spiekerte Ännern verloren.
-Wullt du dat liekers doon?',
+Wullt du dat liekers doon?', # Fuzzy
 	'drafts-save' => 'Twischenspiekern',
 	'drafts-save-save' => 'Twischenspiekern',
 	'drafts-save-saved' => 'Spiekert',
@@ -1675,7 +1674,7 @@ $messages['nl-informal'] = array(
 	'drafts-view-nonesaved' => 'Je hebt geen opgeslagen werkversies.',
 	'drafts-view-notice' => 'Je moet $1 voor deze pagina.',
 	'drafts-view-warn' => 'Door van deze pagina weg te navigeren verlies je alle wijzigingen die je nog niet hebt opgeslagen.
-Wil je doorgaan?',
+Wil je doorgaan?', # Fuzzy
 );
 
 /** Norwegian Nynorsk (norsk nynorsk)
@@ -1697,7 +1696,7 @@ Unytta utkast vil verta vraka av seg sjølv etter {{PLURAL:$1|éin dag|$1 dagar}
 	'drafts-view-notice' => 'Du har $1 for denne sida.',
 	'drafts-view-notice-link' => '{{PLURAL:$1|eitt utkast|$1 utkast}}',
 	'drafts-view-warn' => 'Ved å navigera vekk frå denne sida vil du missa alle endringane på sida som ikkje er lagra.
-Vil du halda fram?',
+Vil du halda fram?', # Fuzzy
 	'drafts-save' => 'Lagra dette som eit utkast',
 	'drafts-save-save' => 'Lagra utkast',
 	'drafts-save-saved' => 'Lagra',
@@ -1763,7 +1762,7 @@ Nieużywane brudnopisy zostaną automatycznie usunięte po $1 {{PLURAL:$1|dniu|d
 	'drafts-view-notice' => 'Masz obecnie $1 tej strony.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|brudnopis|brudnopisy|brudnopisów}}',
 	'drafts-view-warn' => 'Opuszczenie tej strony spowoduje utratę wszystkich niezapisanych zmian w jej treści.
-Czy chcesz kontynuować?',
+Czy chcesz kontynuować?', # Fuzzy
 	'drafts-save' => 'Zapisuje jako brudnopis strony',
 	'drafts-save-save' => 'Zapisz brudnopis',
 	'drafts-save-saved' => 'Zapisany',
@@ -1792,7 +1791,7 @@ Jë sbòss pa dovrà a saran scartà automaticament d'apress {{PLURAL:$1|$1 di|$
 	'drafts-view-notice' => "It l'ha $1 për sta pàgina-sì.",
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|sbòss|sbòss}}',
 	'drafts-view-warn' => 'An navigand anans da sta pàgina-sì it përdras tùit ij cambi pa salvà a sta pàgina-sì.
-It veus-to continué?',
+It veus-to continué?', # Fuzzy
 	'drafts-save' => 'Salva sòn-sì com në sbòss',
 	'drafts-save-save' => 'Salva sbòss',
 	'drafts-save-saved' => 'Salvà',
@@ -1840,7 +1839,7 @@ Rascunhos não usados serão descartados automaticamente após {{PLURAL:$1|$1 di
 	'drafts-view-notice' => 'Tem $1 para esta página.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|rascunho|rascunhos}}',
 	'drafts-view-warn' => 'Se navegar para fora desta página, perderá todas as alterações por gravar desta página.
-Pretende continuar?',
+Pretende continuar?', # Fuzzy
 	'drafts-save' => 'Gravar isto como rascunho',
 	'drafts-save-save' => 'Gravar rascunho',
 	'drafts-save-saved' => 'Gravado',
@@ -1898,7 +1897,7 @@ Schițele nefolosite vor fi șterse automat după {{PLURAL:$1|$1 zi|$1 zile}}.',
 	'drafts-view-notice' => 'Aveți $1 pentru această pagină.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|schiță|schițe}}',
 	'drafts-view-warn' => 'Dacă părăsiți această pagină veți pierde toate modificările nesalvate aduse paginii.
-Doriți să continuați?',
+Doriți să continuați?', # Fuzzy
 	'drafts-save' => 'Salvează aceasta ca o schiță',
 	'drafts-save-save' => 'Salvează schiță',
 	'drafts-save-saved' => 'Salvat',
@@ -1926,7 +1925,7 @@ Le bozze non ausate avènene scettate apprisse {{PLURAL:$1|$1 sciurne}} automati
 	'drafts-view-nonesaved' => 'Non ge tène totte le pruggette salvate jndre stù momende.',
 	'drafts-view-notice' => 'Tu tène $1 pè quèste pàgene.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|pruggette|pruggette}}',
-	'drafts-view-warn' => 'Naviganne lundane da sta pàgene tu pirde tutte le cangiaminde non reggistrate sus a sta pàgene. Vuè ccu condinue?',
+	'drafts-view-warn' => 'Naviganne lundane da sta pàgene tu pirde tutte le cangiaminde non reggistrate sus a sta pàgene. Vuè ccu condinue?', # Fuzzy
 	'drafts-save' => 'Salve quiste cumme bozze',
 	'drafts-save-save' => "Salve 'a bozze",
 	'drafts-save-saved' => 'Reggistrate',
@@ -1981,7 +1980,7 @@ $messages['rue'] = array(
 	'drafts-view-nonesaved' => 'Моментално не маєте уложены жадны концепты',
 	'drafts-view-notice' => 'Маєте $1 той сторінкы.',
 	'drafts-view-notice-link' => '$1 {{plural:$1|концепт|концепты|концептів}}',
-	'drafts-view-warn' => 'Кідь одыйдете з той сторінкы, стратите вшыткы уложены зміны той сторінкы. Хочете продовжыти?',
+	'drafts-view-warn' => 'Кідь одыйдете з той сторінкы, стратите вшыткы уложены зміны той сторінкы. Хочете продовжыти?', # Fuzzy
 	'drafts-save' => 'Уложыти тоту верзію як концепт',
 	'drafts-save-save' => 'Уложыти концепт',
 	'drafts-save-saved' => 'Уложене',
@@ -2007,7 +2006,7 @@ $messages['sah'] = array(
 	'drafts-view-notice' => 'Эйиэхэ сирэй $1 турар.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|черновик|черновиктар}}',
 	'drafts-view-warn' => 'Бу сирэйтэн бардаххына бигэргэтиллибэтэх уларытыыларгын сүтэриэҥ.
-Салгыыгын дуо?',
+Салгыыгын дуо?', # Fuzzy
 	'drafts-save' => 'Маны черновик быһыытынан хааллар',
 	'drafts-save-save' => 'Черновигы кэлин туттарга хааллар',
 	'drafts-save-saved' => 'Хаалларылынна',
@@ -2062,7 +2061,7 @@ Nepoužité návrhy sa po {{PLURAL:$1|$1 dni|$1 dňoch}} automaticky zahodia.',
 	'drafts-view-nonesaved' => 'Momentálne nemáte uložené žiadne návrhy.',
 	'drafts-view-notice' => 'Máte $1 tejto stránky.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|návrh|návrhy|návrhov}}',
-	'drafts-view-warn' => 'Ak odídete z tejto stránky, stratíte všetky neuložené zmeny tejto stránky. Chcete pokračovať?',
+	'drafts-view-warn' => 'Ak odídete z tejto stránky, stratíte všetky neuložené zmeny tejto stránky. Chcete pokračovať?', # Fuzzy
 	'drafts-save' => 'Uložiť túto verziu ako návrh',
 	'drafts-save-save' => 'Uložiť návrh',
 	'drafts-save-saved' => 'Uložené',
@@ -2088,7 +2087,7 @@ Neuporabljeni osnutki bodo samodejno zavrženi po $1 {{PLURAL:$1|dnevu|dneh}}.',
 	'drafts-view-notice' => 'Imate $1 za to stran.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|osnutek|osnutka|osnutke|osnutkov}}',
 	'drafts-view-warn' => 'Z odhodom iz te strani boste izgubili vse neshranjene spremembe na tej strani.
-Ali želite nadaljevati?',
+Ali želite nadaljevati?', # Fuzzy
 	'drafts-save' => 'Shrani kot osnutek',
 	'drafts-save-save' => 'Shrani osnutek',
 	'drafts-save-saved' => 'Shranjeno',
@@ -2204,7 +2203,7 @@ $messages['te'] = array(
 	'drafts-view-notice' => 'ఈ పుటకి మీకు $1.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|చిత్తుప్రతి ఉంది|చిత్తుప్రతులు ఉన్నాయి}}',
 	'drafts-view-warn' => 'మీ పేజీని వదిలివెళ్ళడం ద్వారా ఈ పేజీలోని భద్రపరచని అన్ని మార్పులనీ కోల్పోతారు.
-అయినా మీరు కొనసాగాలనుకుంటున్నరా?',
+అయినా మీరు కొనసాగాలనుకుంటున్నరా?', # Fuzzy
 	'drafts-save' => 'దీన్ని చిత్తుప్రతిగా భద్రపరచు',
 	'drafts-save-save' => 'చిత్తుప్రతిని భద్రపరచు',
 	'drafts-save-saved' => 'భద్రమయ్యింది',
@@ -2246,7 +2245,7 @@ Ulanylmaýan garalamalar $1 {{PLURAL:$1|gün|gün}} geçensoň awtomatik öçür
 	'drafts-view-notice' => 'Bu sahypa üçin $1 bar.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|garalamaňyz|garalamaňyz}}',
 	'drafts-view-warn' => 'Bu sahypadan gitseňiz, sahypadaky ähli ýazdyrylmadyk üýtgeşmeleri ýitirersiňiz.
-Dowam etmek isleýärsiňizmi?',
+Dowam etmek isleýärsiňizmi?', # Fuzzy
 	'drafts-save' => 'Muny garalama hökmünde ýazdyr',
 	'drafts-save-save' => 'Garalamany ýazdyr',
 	'drafts-save-saved' => 'Ýazdyryldy',
@@ -2272,7 +2271,7 @@ Kusang itatapon na ang hindi nagagamit na mga balangkas pagkaraan ng {{PLURAL:$1
 	'drafts-view-notice' => 'Mayroon kang $1 para sa pahinang ito.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|balangkas|mga balangkas}}',
 	'drafts-view-warn' => 'Sa pamamagitan ng paglalayag papalayo mula sa pahinang ito, mawawala ang lahat ng hindi nakasagip na mga pagbabago mo para sa pahinang ito.
-Nais mo bang magpatuloy?',
+Nais mo bang magpatuloy?', # Fuzzy
 	'drafts-save' => 'Sagipin ito bilang isang balangkas',
 	'drafts-save-save' => 'Sagipin ang balangkas',
 	'drafts-save-saved' => 'Nasagip na',
@@ -2308,7 +2307,7 @@ Kullanılmayan taslaklar $1 {{PLURAL:$1|gün|gün}} sonra otomatik olarak silini
 	'drafts-view-notice' => 'Bu sayfa için $1 var.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|taslağınız|taslağınız}}',
 	'drafts-view-warn' => 'Bu sayfadan ayrılarak, sayfadaki tüm kaydedilmemiş değişiklikleri kaybedeceksiniz.
-Devam etmek istiyor musunuz?',
+Devam etmek istiyor musunuz?', # Fuzzy
 	'drafts-save' => 'Bunu taslak olarak kaydet',
 	'drafts-save-save' => 'Taslağı kaydet',
 	'drafts-save-saved' => 'Kaydedildi',
@@ -2379,7 +2378,7 @@ Le bozze mia doparà le vegnarà scancelà automaticamente dopo {{PLURAL:$1|$1 z
 	'drafts-view-notice' => 'Ti gà $1 de sta pàxena',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|bozza|bozze}}',
 	'drafts-view-warn' => "'Ndando fora de sta pàxena te perdarè tute quante le modìfeghe che no ti gà salvà.
-Vuto continuar?",
+Vuto continuar?", # Fuzzy
 	'drafts-save' => 'Salva come bozza',
 	'drafts-save-save' => 'Salva bozza',
 	'drafts-save-saved' => 'Salvà',
@@ -2494,7 +2493,7 @@ $messages['zh-hant'] = array(
 	'drafts-view-notice' => '您有$1供此頁。',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|草稿|草稿}}',
 	'drafts-view-warn' => '如果你離開這頁，你將會失去你的更改。
-你想繼續嗎？',
+你想繼續嗎？', # Fuzzy
 	'drafts-save' => '把此頁面以草稿形式儲存',
 	'drafts-save-save' => '儲存草稿',
 	'drafts-save-saved' => '已儲存',
