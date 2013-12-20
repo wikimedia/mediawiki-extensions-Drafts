@@ -87,7 +87,7 @@ $wgHooks['GetPreferences'][] = 'DraftHooks::onGetPreferences';
 $wgHooks['EditFilter'][] = 'DraftHooks::onEditFilter';
 
 // Register article save hook
-$wgHooks['ArticleSaveComplete'][] = 'DraftHooks::onArticleSaveComplete';
+$wgHooks['PageContentSaveComplete'][] = 'DraftHooks::onPageContentSaveComplete';
 
 // Updates namespaces and titles of drafts to new locations after moves
 $wgHooks['SpecialMovepageAfterMove'][] = 'DraftHooks::onSpecialMovepageAfterMove';
