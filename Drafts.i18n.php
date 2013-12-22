@@ -469,7 +469,7 @@ Nepoužité koncepty budou po {{plural:$1|$1 dni|$1 dnech}} automaticky smazány
 	'drafts-view-nonesaved' => 'Momentálně nemáte uloženy žádné koncepty.',
 	'drafts-view-notice' => 'Máte $1 této stránky',
 	'drafts-view-notice-link' => '$1 {{plural:$1|koncept|koncepty|konceptů}}',
-	'drafts-view-warn' => 'Pokud odejdete z této stránky, ztratíte všechny neuložené změny této stránky. Chcete pokračovat?', # Fuzzy
+	'drafts-view-warn' => 'Pokud odejdete z této stránky, ztratíte všechny neuložené změny. Chcete pokračovat?',
 	'drafts-save' => 'Uložit tuto verzi jako koncept',
 	'drafts-save-save' => 'Uložit koncept',
 	'drafts-save-saved' => 'Uložené',
