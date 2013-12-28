@@ -1335,7 +1335,7 @@ $messages['ko'] = array(
 	'drafts' => '초안 목록',
 	'drafts-desc' => '서버에 문서를 [[Special:Drafts|초안]] 판을 저장하는 기능을 추가합니다',
 	'drafts-view' => '초안 보기',
-	'drafts-view-summary' => '이 특수 문서는 모든 존재하는 초안를 보여 주고 있습니다.
+	'drafts-view-summary' => '이 특수 문서는 모든 존재하는 초안를 보여줍니다.
 사용되지 않는 초안는 {{PLURAL:$1|$1일}} 후에 자동적으로 폐기됩니다.',
 	'drafts-view-article' => '문서',
 	'drafts-view-existing' => '기존 초안 목록',
