@@ -180,7 +180,7 @@ class DraftHooks {
 	 * EditPageBeforeEditButtons hook
 	 * Add draft saving controls
 	 */
-	public static function onEditPageBeforeEditButtons( EditPage $editpage, $buttons, &$tabindex ) {
+	public static function onEditPageBeforeEditButtons( EditPage $editpage, &$buttons, &$tabindex ) {
 		global $egDraftsAutoSaveWait, $egDraftsAutoSaveTimeout, $egDraftsAutoSaveInputBased;
 
 		$context = $editpage->getArticle()->getContext();
