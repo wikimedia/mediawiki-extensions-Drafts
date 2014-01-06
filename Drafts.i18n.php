@@ -1939,6 +1939,7 @@ Le bozze non ausate avènene scettate apprisse {{PLURAL:$1|$1 sciurne}} automati
 /** Russian (русский)
  * @author Ferrer
  * @author KPu3uC B Poccuu
+ * @author Lockal
  * @author Okras
  * @author Александр Сигачёв
  */
@@ -1947,14 +1948,14 @@ $messages['ru'] = array(
 	'drafts-desc' => 'Добавляет возможность сохранять [[Special:Drafts|черновики]] страниц на сервере',
 	'drafts-view' => 'ПросмотрЧерновика',
 	'drafts-view-summary' => 'На этой служебной странице приведён список всех черновиков.
-Неиспользуемые черновики автоматически удаляются через $1 {{PLURAL:$1|день|дней|дня}}.', # Fuzzy
+Неиспользуемые черновики автоматически удаляются через $1 {{PLURAL:$1|день|дней|дня}}.',
 	'drafts-view-article' => 'Страница',
 	'drafts-view-existing' => 'Существующие черновики',
 	'drafts-view-saved' => 'Сохранено',
 	'drafts-view-discard' => 'Сбросить',
 	'drafts-view-nonesaved' => 'В настоящее время у вас нет сохранённых черновиков.',
 	'drafts-view-notice' => 'У вас $1 этой страницы.',
-	'drafts-view-notice-link' => '$1 {{PLURAL:$1|черновик|черновиков|черновика}}', # Fuzzy
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|черновик|черновиков|черновика}}',
 	'drafts-view-warn' => 'Вы действительно желаете уйти с этой страницы?
 Так вы потеряете все несохранённые изменения на этой странице.',
 	'drafts-save' => 'Сохранить это как черновик',
