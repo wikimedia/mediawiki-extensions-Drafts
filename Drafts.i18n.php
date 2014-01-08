@@ -209,8 +209,7 @@ Los borradores que nun s'usen en pasando {{PLURAL:$1|un día|$1 díes}} descarta
 	'drafts-view-nonesaved' => 'Nesti momentu nun tien dengún borrador guardáu.',
 	'drafts-view-notice' => 'Tien $1 pa esta páxina.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|borrador|borradores}}',
-	'drafts-view-warn' => 'Si dexa esta páxina perderá tolos cambios que nun tenga guardaos.
-¿Quier siguir?', # Fuzzy
+	'drafts-view-warn' => "¿Quier siguir la navegación fuera d'esta páxina? Al facelo, perderá tolos cambios nesta páxina que nun tenga guardaos.",
 	'drafts-save' => 'Guardar esto como borrador',
 	'drafts-save-save' => 'Guardar borrador',
 	'drafts-save-saved' => 'Guardada',
@@ -770,7 +769,7 @@ $messages['fa'] = array(
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|پیش‌نویس|پیش‌نویس}}',
 	'drafts-view-warn' => 'آیا می‌خواهید از این صفحه بروید؟ با چنین کاری، تمام تغییرات ذخیره‌نشده به این صفحه از دست خواهد رفت.',
 	'drafts-save' => 'ذخیره‌کردن این متن به‌عنوان پیش‌نویس',
-	'drafts-save-save' => 'ذخیره کردن پیش‌نویس',
+	'drafts-save-save' => 'ذخیره‌کردن پیش‌نویس',
 	'drafts-save-saved' => 'ذخیره شد',
 	'drafts-save-saving' => 'ذخیره‌سازی',
 	'drafts-save-error' => 'خطا در ذخیره کردن پیش‌نویس',
