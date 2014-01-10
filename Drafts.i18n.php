@@ -1823,6 +1823,7 @@ $messages['ps'] = array(
  * @author Cainamarques
  * @author Hamilton Abreu
  * @author Malafaya
+ * @author Vitorvicentevalente
  */
 $messages['pt'] = array(
 	'drafts' => 'Rascunhos',
@@ -1837,13 +1838,13 @@ Rascunhos não usados serão descartados automaticamente após {{PLURAL:$1|$1 di
 	'drafts-view-nonesaved' => 'Não tem neste momento quaisquer rascunhos gravados.',
 	'drafts-view-notice' => 'Tem $1 para esta página.',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|rascunho|rascunhos}}',
-	'drafts-view-warn' => 'Se navegar para fora desta página, perderá todas as alterações por gravar desta página.
-Pretende continuar?', # Fuzzy
-	'drafts-save' => 'Gravar isto como rascunho',
+	'drafts-view-warn' => 'Tem a certeza que pretende sair desta página? Ao fazê-lo, perderá todas as alterações não guardadas nesta página.',
+	'drafts-save' => 'Gravar como rascunho',
 	'drafts-save-save' => 'Gravar rascunho',
 	'drafts-save-saved' => 'Gravado',
 	'drafts-save-saving' => 'A gravar',
 	'drafts-save-error' => 'Erro a gravar rascunho',
+	'drafts-enable' => 'Activar o recurso que permite gravar um rascunho na funcionalidade de edição',
 	'prefs-extension-drafts' => 'Rascunhos',
 	'tooltip-drafts-save' => 'Gravar como rascunho',
 );
