@@ -1191,7 +1191,7 @@ $messages['is'] = array(
 	'drafts-view-discard' => 'Eyða',
 	'drafts-view-nonesaved' => 'Þú hefur ekki nein uppköst vistuð akkúrat núna.',
 	'drafts-view-notice' => 'Þú hefur $1 fyrir þessa síðu.',
-	'drafts-view-notice-link' => '{{PLURAL:$1|eitt uppkast|$1 uppköst}}',
+	'drafts-view-notice-link' => '$1 {{PLURAL:$1|uppkast|uppköst}}',
 	'drafts-view-warn' => 'Með því að fara frá þessari síðu tapar þú öllum óvistuðum breytingum á síðunni.
 Viltu halda áfram?', # Fuzzy
 	'drafts-save' => 'Vista sem uppkast',
