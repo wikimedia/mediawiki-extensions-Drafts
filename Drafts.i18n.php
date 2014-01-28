@@ -1587,6 +1587,7 @@ $messages['myv'] = array(
 );
 
 /** Norwegian Bokmål (norsk bokmål)
+ * @author Event
  * @author Laaknor
  */
 $messages['nb'] = array(
@@ -1602,13 +1603,14 @@ Ubrukte utkast vil slettes automatisk etter {{PLURAL:$1|én dag|$1 dager}}.',
 	'drafts-view-nonesaved' => 'Du har ingen utkast lagret på nåværende tidspunkt',
 	'drafts-view-notice' => 'Du har $1 for denne siden.',
 	'drafts-view-notice-link' => '{{PLURAL:$1|ett utkast|$1 utkast}}',
-	'drafts-view-warn' => 'Ved å navigere vekk fra denne siden vil du miste alle ulagrede endringer til denne siden.
-Vil du fortsette?', # Fuzzy
+	'drafts-view-warn' => 'Hvis du holder fast på å navigere bort fra denne siden, vil du miste alle ulagrede endringer av denne siden.',
 	'drafts-save' => 'Lagre dette som et utkast',
 	'drafts-save-save' => 'Lagre utkast',
 	'drafts-save-saved' => 'Lagret',
 	'drafts-save-saving' => 'Lagrer',
 	'drafts-save-error' => 'Feil ved lagring av utkast',
+	'drafts-enable' => 'Aktiviser funksjonalitet for å kunne lagre utkast fra redigeringsboksen',
+	'prefs-extension-drafts' => 'Utkast',
 	'tooltip-drafts-save' => 'Lagre som et utkast',
 );
 
