@@ -2478,6 +2478,7 @@ $messages['zh-hans'] = array(
  * @author Gzdavidwong
  * @author Horacewai2
  * @author Liangent
+ * @author Liuxinyu970226
  * @author Mark85296341
  * @author Waihorace
  * @author Wrightbus
@@ -2495,12 +2496,13 @@ $messages['zh-hant'] = array(
 	'drafts-view-nonesaved' => '您還沒有任何已保存的草稿。',
 	'drafts-view-notice' => '您有$1供此頁。',
 	'drafts-view-notice-link' => '$1 {{PLURAL:$1|草稿|草稿}}',
-	'drafts-view-warn' => '如果你離開這頁，你將會失去你的更改。
-你想繼續嗎？', # Fuzzy
+	'drafts-view-warn' => '您真的要繼續離開此頁面？如果離開，您將失去所有未保存更改。',
 	'drafts-save' => '把此頁面以草稿形式儲存',
 	'drafts-save-save' => '儲存草稿',
 	'drafts-save-saved' => '已儲存',
 	'drafts-save-saving' => '儲存中',
 	'drafts-save-error' => '儲存草稿時發生錯誤',
+	'drafts-enable' => '於編輯表單中啟用保存草稿功能',
+	'prefs-extension-drafts' => '草稿',
 	'tooltip-drafts-save' => '以草稿形式儲存',
 );
