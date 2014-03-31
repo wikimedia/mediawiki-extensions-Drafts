@@ -1,0 +1,31 @@
+{
+    "@metadata": {
+        "authors": [
+            "BeginaFelicysym",
+            "Derbeth",
+            "Holek",
+            "Leinad",
+            "Sp5uhe"
+        ]
+    },
+    "drafts": "Brudnopisy stron",
+    "drafts-desc": "Dodaje możliwość zapisywania [[Special:Drafts|brudnopisów stron]] na serwerze",
+    "drafts-view": "Zobacz brudnopis",
+    "drafts-view-summary": "Ta strona specjalna prezentuje listę wszystkich brudnopisów stron.\nNieużywane brudnopisy zostaną automatycznie usunięte po $1 {{PLURAL:$1|dniu|dniach}}.",
+    "drafts-view-article": "Strona",
+    "drafts-view-existing": "Brudnopisy",
+    "drafts-view-saved": "Zapisane",
+    "drafts-view-discard": "Usuń",
+    "drafts-view-nonesaved": "Nie masz obecnie zapisanych żadnych brudnopisów stron.",
+    "drafts-view-notice": "Masz obecnie $1 tej strony.",
+    "drafts-view-notice-link": "$1 {{PLURAL:$1|brudnopis|brudnopisy|brudnopisów}}",
+    "drafts-view-warn": "Opuszczenie tej strony spowoduje utratę wszystkich niezapisanych zmian w jej treści.\nCzy chcesz kontynuować?",
+    "drafts-save": "Zapisuje jako brudnopis strony",
+    "drafts-save-save": "Zapisz brudnopis",
+    "drafts-save-saved": "Zapisany",
+    "drafts-save-saving": "Zapisywanie",
+    "drafts-save-error": "Błąd zapisywania brudnopisu strony",
+    "drafts-enable": "Włącz funkcję zapisu brudnopisu na formularzu edycji",
+    "prefs-extension-drafts": "Brudnopisy stron",
+    "tooltip-drafts-save": "Zapisz jako brudnopis strony"
+}

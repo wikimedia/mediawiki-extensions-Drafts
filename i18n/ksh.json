@@ -1,0 +1,27 @@
+{
+    "@metadata": {
+        "authors": [
+            "Purodha"
+        ]
+    },
+    "drafts": "Äntwörf",
+    "drafts-desc": "Deit de Müjjeleschkeit dobei, en [[Special:Drafts|Entworf]] fun en Sigg om Server affzelääje.",
+    "drafts-view": "Äntworf zeije",
+    "drafts-view-summary": "Hee die Söndersigg hät en Leß met alle Entwörf, die mer han.\nNoh {{PLURAL:$1|einem Daach|$1 Dääsch|nullkommanix}} wäde de\nunjenotz Enwörf automattesch fott jeschmesse.",
+    "drafts-view-article": "Sigg",
+    "drafts-view-existing": "Jespeicherte Äntwörf",
+    "drafts-view-saved": "Jespeichert",
+    "drafts-view-discard": "Schmiiß fott!",
+    "drafts-view-nonesaved": "Do häß jrad kein Äntwörf jespeichert.",
+    "drafts-view-notice": "Do häß $1 för heh di Sigg.",
+    "drafts-view-notice-link": "{{PLURAL:$1|eine Entworf|$1 Äntwörf|keine Entworf}}",
+    "drafts-view-warn": "Wann De heh vun dä Sigg fott jeihß, dann sen all Ding Ennjabe fott, di De noch nit avjespeicht häß.\nWellß De wigger maaache?",
+    "drafts-save": "Wat mer heh süht als_ennen Entworf avspeichere",
+    "drafts-save-save": "Entworf avspeichere",
+    "drafts-save-saved": "Avjespeichert",
+    "drafts-save-saving": "Am Avspeichere",
+    "drafts-save-error": "Bemm Entworf Speichere es jet donevve jejange, dat hät nit jeflupp.",
+    "drafts-enable": "Ennschallde, dat me ene Äntworv em beim Beärbeide faßhallde kann",
+    "prefs-extension-drafts": "Äntwörf",
+    "tooltip-drafts-save": "Als ene Entworf avspeichere"
+}

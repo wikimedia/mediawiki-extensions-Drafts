@@ -1,0 +1,10 @@
+{
+    "@metadata": {
+        "authors": [
+            "Dani"
+        ]
+    },
+    "drafts-view-nonesaved": "Jelenleg nincs egyetlen elmentett piszkozata sem.",
+    "drafts-view-notice-link": "{{PLURAL:$1|egy|$1}} piszkozata",
+    "drafts-view-warn": "Ha elmegy az oldalról, az összes mentetlen változtatás elvész.\nBiztosan folytatja?"
+}

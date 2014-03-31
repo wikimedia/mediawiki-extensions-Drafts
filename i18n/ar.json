@@ -1,0 +1,26 @@
+{
+    "@metadata": {
+        "authors": [
+            "Meno25",
+            "OsamaK"
+        ]
+    },
+    "drafts": "مسودات",
+    "drafts-desc": "يضيف القدرة على حفظ نسخ [[Special:Drafts|مسودة]] لصفحة على الخادم",
+    "drafts-view": "عرض المسودة",
+    "drafts-view-summary": "هذه الصفحة الخاصة تعرض قائمة بكل المسودات الموجودة.\nالمسودات غير المستخدمة سيتم التغاضي عنها بعد {{PLURAL:$1|$1 يوم|$1 يوم}} تلقائيا.",
+    "drafts-view-article": "الصفحة",
+    "drafts-view-existing": "المسودات الموجودة",
+    "drafts-view-saved": "محفوظة",
+    "drafts-view-discard": "تجاهل",
+    "drafts-view-nonesaved": "أنت ليس لديك أي مسودات محفوظة في هذا الوقت.",
+    "drafts-view-notice": "أنت لديك $1 لهذه الصفحة.",
+    "drafts-view-notice-link": "$1 {{PLURAL:$1|مسودة|مسودة}}",
+    "drafts-view-warn": "بواسطة الإبحار عن هذه الصفحة ستفقد كل التغييرات غير المحفوظة لهذه الصفحة.\nهل تريد الاستمرار؟",
+    "drafts-save": "يحفظ هذه كمسودة",
+    "drafts-save-save": "احفظ المسودة",
+    "drafts-save-saved": "محفوظة",
+    "drafts-save-saving": "حفظ",
+    "drafts-save-error": "خطأ أثناء حفظ المسودة",
+    "tooltip-drafts-save": "حفظ كمسودة"
+}

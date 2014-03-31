@@ -14,7 +14,6 @@
  * @author Trevor Parscal <tparscal@wikimedia.org>
  * @author enhanced by Petr Bena <benapetr@gmail.com>
  * @license GPL v2
- * @version 0.1.0
  */
 
 // Check environment
@@ -29,7 +28,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'Drafts',
-	'version' => '0.2',
+	'version' => '0.3.0',
 	'author' => 'Trevor Parscal',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:Drafts',
 	'descriptionmsg' => 'drafts-desc',
@@ -69,6 +68,7 @@ $wgAPIModules['savedrafts'] = 'ApiSaveDrafts';
 
 
 // Internationalization
+$wgMessagesDirs['Drafts'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['Drafts'] = $dir . 'Drafts.i18n.php';
 $wgExtensionMessagesFiles['DraftsAlias'] = $dir . 'Drafts.alias.php';
 
