@@ -1,25 +1,25 @@
 {
-    "@metadata": {
-        "authors": [
-            "CERminator"
-        ]
-    },
-    "drafts": "Skice",
-    "drafts-desc": "Dodaje mogućnost spremanja [[Special:Drafts|draft]] verzija stranice na server",
-    "drafts-view": "Pogledaj skicu",
-    "drafts-view-summary": "Ova posebna stranica prikazuje spisak svih postojećih nacrta.\nNekorišteni nacrti će biti uklonjeni odavde automatski nakon {{PLURAL:$1|$1 dan|$1 dana|$1 dana}}.",
-    "drafts-view-article": "Stranica",
-    "drafts-view-existing": "Postojeće skice",
-    "drafts-view-saved": "Spremljeno",
-    "drafts-view-discard": "Odustani",
-    "drafts-view-nonesaved": "Trenutno nemate spremljen nijedan draft.",
-    "drafts-view-notice": "Imate $1 za ovu stranicu.",
-    "drafts-view-notice-link": "$1 {{PLURAL:$1|skicu|skice|skica}}",
-    "drafts-view-warn": "Ako napustite ovu stranicu izgubit ćete sve nespremljene izmjene na stranici.\nDa li želite da nastavite?",
-    "drafts-save": "Spremi ovo kao skicu",
-    "drafts-save-save": "Sačuvaj skicu",
-    "drafts-save-saved": "Spremljeno",
-    "drafts-save-saving": "spremam",
-    "drafts-save-error": "Greška pri spremanju skice",
-    "tooltip-drafts-save": "Spremi kao skicu"
+	"@metadata": {
+		"authors": [
+			"CERminator"
+		]
+	},
+	"drafts": "Skice",
+	"drafts-desc": "Dodaje mogućnost spremanja [[Special:Drafts|draft]] verzija stranice na server",
+	"drafts-view": "Pogledaj skicu",
+	"drafts-view-summary": "Ova posebna stranica prikazuje spisak svih postojećih nacrta.\nNekorišteni nacrti će biti uklonjeni odavde automatski nakon {{PLURAL:$1|$1 dan|$1 dana|$1 dana}}.",
+	"drafts-view-article": "Stranica",
+	"drafts-view-existing": "Postojeće skice",
+	"drafts-view-saved": "Spremljeno",
+	"drafts-view-discard": "Odustani",
+	"drafts-view-nonesaved": "Trenutno nemate spremljen nijedan draft.",
+	"drafts-view-notice": "Imate $1 za ovu stranicu.",
+	"drafts-view-notice-link": "$1 {{PLURAL:$1|skicu|skice|skica}}",
+	"drafts-view-warn": "Ako napustite ovu stranicu izgubit ćete sve nespremljene izmjene na stranici.\nDa li želite da nastavite?",
+	"drafts-save": "Spremi ovo kao skicu",
+	"drafts-save-save": "Sačuvaj skicu",
+	"drafts-save-saved": "Spremljeno",
+	"drafts-save-saving": "spremam",
+	"drafts-save-error": "Greška pri spremanju skice",
+	"tooltip-drafts-save": "Spremi kao skicu"
 }

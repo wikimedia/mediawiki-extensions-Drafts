@@ -1,26 +1,26 @@
 {
-    "@metadata": {
-        "authors": [
-            "Joseph",
-            "Stultiwikia"
-        ]
-    },
-    "drafts": "Taslaklar",
-    "drafts-desc": "Bir sayfanın [[Special:Drafts|taslak]] sürümünü sunucuya kaydetme özelliğini ekler",
-    "drafts-view": "TaslağıGör",
-    "drafts-view-summary": "Bu özel sayfa tüm mevcut taslakların bir listesini gösterir.\nKullanılmayan taslaklar $1 {{PLURAL:$1|gün|gün}} sonra otomatik olarak silinir.",
-    "drafts-view-article": "Madde",
-    "drafts-view-existing": "Mevcut taslaklar",
-    "drafts-view-saved": "Kaydedildi",
-    "drafts-view-discard": "Sil",
-    "drafts-view-nonesaved": "Şu anda kayıtlı hiçbir taslağınız yok.",
-    "drafts-view-notice": "Bu sayfa için $1 var.",
-    "drafts-view-notice-link": "$1 {{PLURAL:$1|taslağınız|taslağınız}}",
-    "drafts-view-warn": "Bu sayfadan ayrılarak, sayfadaki tüm kaydedilmemiş değişiklikleri kaybedeceksiniz.\nDevam etmek istiyor musunuz?",
-    "drafts-save": "Bunu taslak olarak kaydet",
-    "drafts-save-save": "Taslağı kaydet",
-    "drafts-save-saved": "Kaydedildi",
-    "drafts-save-saving": "Kaydediliyor",
-    "drafts-save-error": "Taslağı kaydederken hata",
-    "tooltip-drafts-save": "Taslak olarak kaydet"
+	"@metadata": {
+		"authors": [
+			"Joseph",
+			"Stultiwikia"
+		]
+	},
+	"drafts": "Taslaklar",
+	"drafts-desc": "Bir sayfanın [[Special:Drafts|taslak]] sürümünü sunucuya kaydetme özelliğini ekler",
+	"drafts-view": "TaslağıGör",
+	"drafts-view-summary": "Bu özel sayfa tüm mevcut taslakların bir listesini gösterir.\nKullanılmayan taslaklar $1 {{PLURAL:$1|gün|gün}} sonra otomatik olarak silinir.",
+	"drafts-view-article": "Madde",
+	"drafts-view-existing": "Mevcut taslaklar",
+	"drafts-view-saved": "Kaydedildi",
+	"drafts-view-discard": "Sil",
+	"drafts-view-nonesaved": "Şu anda kayıtlı hiçbir taslağınız yok.",
+	"drafts-view-notice": "Bu sayfa için $1 var.",
+	"drafts-view-notice-link": "$1 {{PLURAL:$1|taslağınız|taslağınız}}",
+	"drafts-view-warn": "Bu sayfadan ayrılarak, sayfadaki tüm kaydedilmemiş değişiklikleri kaybedeceksiniz.\nDevam etmek istiyor musunuz?",
+	"drafts-save": "Bunu taslak olarak kaydet",
+	"drafts-save-save": "Taslağı kaydet",
+	"drafts-save-saved": "Kaydedildi",
+	"drafts-save-saving": "Kaydediliyor",
+	"drafts-save-error": "Taslağı kaydederken hata",
+	"tooltip-drafts-save": "Taslak olarak kaydet"
 }

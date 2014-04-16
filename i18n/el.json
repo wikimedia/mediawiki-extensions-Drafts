@@ -1,29 +1,29 @@
 {
-    "@metadata": {
-        "authors": [
-            "Dead3y3",
-            "Geraki",
-            "Omnipaedista",
-            "ZaDiak"
-        ]
-    },
-    "drafts": "Drafts",
-    "drafts-desc": "Προσθέτει την ικανότητα για αποθήκευση [[Special:Drafts|πρόχειρων]] εκδόσεων μιας σελίδας στον εξυπηρετητή",
-    "drafts-view": "ΕμφάνισηΠροχείρου",
-    "drafts-view-summary": "Αυτή η ειδική σελίδα εμφανίζει έναν κατάλογο όλων των υπάρχοντων προχείρων.\nΑχρησιμοποίητα πρόχειρα θα απορρίπτονται μετά από {{PLURAL:$1|$1 ημέρα|$1 ημέρες}} αυτόματα.",
-    "drafts-view-article": "Σελίδα",
-    "drafts-view-existing": "Υπάρχοντα πρόχειρα",
-    "drafts-view-saved": "Αποθηκευμένα",
-    "drafts-view-discard": "Απόρριψη",
-    "drafts-view-nonesaved": "Δεν έχετε κανένα πρόχειρο αποθηκευμένο αυτή τη στιγμή.",
-    "drafts-view-notice": "Έχετε $1 για αυτή τη σελίδα.",
-    "drafts-view-notice-link": "$1 {{PLURAL:$1|πρόχειρο|πρόχειρα}}",
-    "drafts-view-warn": "Με την περιήγησή σας μακριά από αυτή τη σελίδα θα χάσετε όλες τις αποθήκευτες αλλαγές σε αυτή τη σελίδα.\nΘέλετε να συνεχίσετε;",
-    "drafts-save": "Αποθήκευση αυτού ως προχείρου",
-    "drafts-save-save": "Αποθήκευση προχείρου",
-    "drafts-save-saved": "Αποθηκεύτηκε",
-    "drafts-save-saving": "Αποθηκεύεται",
-    "drafts-save-error": "Σφάλμα στην αποθήκευση του προχείρου",
-    "prefs-extension-drafts": "Προσχέδια",
-    "tooltip-drafts-save": "Αποθήκευση ως ένα πρόχειρο"
+	"@metadata": {
+		"authors": [
+			"Dead3y3",
+			"Geraki",
+			"Omnipaedista",
+			"ZaDiak"
+		]
+	},
+	"drafts": "Drafts",
+	"drafts-desc": "Προσθέτει την ικανότητα για αποθήκευση [[Special:Drafts|πρόχειρων]] εκδόσεων μιας σελίδας στον εξυπηρετητή",
+	"drafts-view": "ΕμφάνισηΠροχείρου",
+	"drafts-view-summary": "Αυτή η ειδική σελίδα εμφανίζει έναν κατάλογο όλων των υπάρχοντων προχείρων.\nΑχρησιμοποίητα πρόχειρα θα απορρίπτονται μετά από {{PLURAL:$1|$1 ημέρα|$1 ημέρες}} αυτόματα.",
+	"drafts-view-article": "Σελίδα",
+	"drafts-view-existing": "Υπάρχοντα πρόχειρα",
+	"drafts-view-saved": "Αποθηκευμένα",
+	"drafts-view-discard": "Απόρριψη",
+	"drafts-view-nonesaved": "Δεν έχετε κανένα πρόχειρο αποθηκευμένο αυτή τη στιγμή.",
+	"drafts-view-notice": "Έχετε $1 για αυτή τη σελίδα.",
+	"drafts-view-notice-link": "$1 {{PLURAL:$1|πρόχειρο|πρόχειρα}}",
+	"drafts-view-warn": "Με την περιήγησή σας μακριά από αυτή τη σελίδα θα χάσετε όλες τις αποθήκευτες αλλαγές σε αυτή τη σελίδα.\nΘέλετε να συνεχίσετε;",
+	"drafts-save": "Αποθήκευση αυτού ως προχείρου",
+	"drafts-save-save": "Αποθήκευση προχείρου",
+	"drafts-save-saved": "Αποθηκεύτηκε",
+	"drafts-save-saving": "Αποθηκεύεται",
+	"drafts-save-error": "Σφάλμα στην αποθήκευση του προχείρου",
+	"prefs-extension-drafts": "Προσχέδια",
+	"tooltip-drafts-save": "Αποθήκευση ως ένα πρόχειρο"
 }

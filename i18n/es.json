@@ -1,33 +1,33 @@
 {
-    "@metadata": {
-        "authors": [
-            "Armando-Martin",
-            "Crazymadlover",
-            "Dferg",
-            "Ihojose",
-            "Imre",
-            "MarcoAurelio",
-            "Remember the dot"
-        ]
-    },
-    "drafts": "Borradores",
-    "drafts-desc": "Agregar la habilidad de grabar versiones [[Special:Drafts|borrador]] de esta página en el servidor",
-    "drafts-view": "Ver borrador",
-    "drafts-view-summary": "Esta página especial muestra una lista de todos los borradores existentes.\nLos borradores no usados serán descartados despues de {{PLURAL:$1|$1 día|$1 días}} automáticamente.",
-    "drafts-view-article": "Página",
-    "drafts-view-existing": "Borradores existentes",
-    "drafts-view-saved": "Grabar",
-    "drafts-view-discard": "Descartar",
-    "drafts-view-nonesaved": "No tiene ningún borrador grabado en este momento.",
-    "drafts-view-notice": "usted tiene $1 para esta página.",
-    "drafts-view-notice-link": "$1 {{PLURAL:$1|borrador|borradores}}",
-    "drafts-view-warn": "¿Quieres continuar navegando fuera de esta página? Al hacerlo, se perderán todos los cambios no guardados en ella.",
-    "drafts-save": "Guardar esto como un borrador",
-    "drafts-save-save": "Grabar borrador",
-    "drafts-save-saved": "Grabado",
-    "drafts-save-saving": "Grabando",
-    "drafts-save-error": "Error grabando borrador",
-    "drafts-enable": "Activar función para guardar un borrador en forma de edición",
-    "prefs-extension-drafts": "Borradores",
-    "tooltip-drafts-save": "Guardar como un borrador"
+	"@metadata": {
+		"authors": [
+			"Armando-Martin",
+			"Crazymadlover",
+			"Dferg",
+			"Ihojose",
+			"Imre",
+			"MarcoAurelio",
+			"Remember the dot"
+		]
+	},
+	"drafts": "Borradores",
+	"drafts-desc": "Agregar la habilidad de grabar versiones [[Special:Drafts|borrador]] de esta página en el servidor",
+	"drafts-view": "Ver borrador",
+	"drafts-view-summary": "Esta página especial muestra una lista de todos los borradores existentes.\nLos borradores no usados serán descartados despues de {{PLURAL:$1|$1 día|$1 días}} automáticamente.",
+	"drafts-view-article": "Página",
+	"drafts-view-existing": "Borradores existentes",
+	"drafts-view-saved": "Grabar",
+	"drafts-view-discard": "Descartar",
+	"drafts-view-nonesaved": "No tiene ningún borrador grabado en este momento.",
+	"drafts-view-notice": "usted tiene $1 para esta página.",
+	"drafts-view-notice-link": "$1 {{PLURAL:$1|borrador|borradores}}",
+	"drafts-view-warn": "¿Quieres continuar navegando fuera de esta página? Al hacerlo, se perderán todos los cambios no guardados en ella.",
+	"drafts-save": "Guardar esto como un borrador",
+	"drafts-save-save": "Grabar borrador",
+	"drafts-save-saved": "Grabado",
+	"drafts-save-saving": "Grabando",
+	"drafts-save-error": "Error grabando borrador",
+	"drafts-enable": "Activar función para guardar un borrador en forma de edición",
+	"prefs-extension-drafts": "Borradores",
+	"tooltip-drafts-save": "Guardar como un borrador"
 }

@@ -1,30 +1,30 @@
 {
-    "@metadata": {
-        "authors": [
-            "Cainamarques",
-            "Hamilton Abreu",
-            "Malafaya",
-            "Vitorvicentevalente"
-        ]
-    },
-    "drafts": "Rascunhos",
-    "drafts-desc": "Adiciona a possibilidade de gravar versões [[Special:Drafts|rascunho]] de uma página no servidor",
-    "drafts-view": "Ver Rascunho",
-    "drafts-view-summary": "Esta página especial mostra uma lista de todos os rascunhos existentes.\nRascunhos não usados serão descartados automaticamente após {{PLURAL:$1|$1 dia|$1 dias}}.",
-    "drafts-view-article": "Página",
-    "drafts-view-existing": "Rascunhos existentes",
-    "drafts-view-saved": "Gravado",
-    "drafts-view-discard": "Descartar",
-    "drafts-view-nonesaved": "Não tem neste momento quaisquer rascunhos gravados.",
-    "drafts-view-notice": "Tem $1 para esta página.",
-    "drafts-view-notice-link": "$1 {{PLURAL:$1|rascunho|rascunhos}}",
-    "drafts-view-warn": "Tem a certeza que pretende sair desta página? Ao fazê-lo, perderá todas as alterações não guardadas nesta página.",
-    "drafts-save": "Gravar como rascunho",
-    "drafts-save-save": "Gravar rascunho",
-    "drafts-save-saved": "Gravado",
-    "drafts-save-saving": "A gravar",
-    "drafts-save-error": "Erro a gravar rascunho",
-    "drafts-enable": "Activar o recurso que permite gravar um rascunho na funcionalidade de edição",
-    "prefs-extension-drafts": "Rascunhos",
-    "tooltip-drafts-save": "Gravar como rascunho"
+	"@metadata": {
+		"authors": [
+			"Cainamarques",
+			"Hamilton Abreu",
+			"Malafaya",
+			"Vitorvicentevalente"
+		]
+	},
+	"drafts": "Rascunhos",
+	"drafts-desc": "Adiciona a possibilidade de gravar versões [[Special:Drafts|rascunho]] de uma página no servidor",
+	"drafts-view": "Ver Rascunho",
+	"drafts-view-summary": "Esta página especial mostra uma lista de todos os rascunhos existentes.\nRascunhos não usados serão descartados automaticamente após {{PLURAL:$1|$1 dia|$1 dias}}.",
+	"drafts-view-article": "Página",
+	"drafts-view-existing": "Rascunhos existentes",
+	"drafts-view-saved": "Gravado",
+	"drafts-view-discard": "Descartar",
+	"drafts-view-nonesaved": "Não tem neste momento quaisquer rascunhos gravados.",
+	"drafts-view-notice": "Tem $1 para esta página.",
+	"drafts-view-notice-link": "$1 {{PLURAL:$1|rascunho|rascunhos}}",
+	"drafts-view-warn": "Tem a certeza que pretende sair desta página? Ao fazê-lo, perderá todas as alterações não guardadas nesta página.",
+	"drafts-save": "Gravar como rascunho",
+	"drafts-save-save": "Gravar rascunho",
+	"drafts-save-saved": "Gravado",
+	"drafts-save-saving": "A gravar",
+	"drafts-save-error": "Erro a gravar rascunho",
+	"drafts-enable": "Activar o recurso que permite gravar um rascunho na funcionalidade de edição",
+	"prefs-extension-drafts": "Rascunhos",
+	"tooltip-drafts-save": "Gravar como rascunho"
 }

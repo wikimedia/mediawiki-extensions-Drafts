@@ -1,28 +1,28 @@
 {
-    "@metadata": {
-        "authors": [
-            "Cainamarques",
-            "Eduardo.mps",
-            "Luckas"
-        ]
-    },
-    "drafts": "Rascunhos",
-    "drafts-desc": "Adiciona a possibilidade de salvar versões [[Special:Drafts|rascunho]] de uma página no servidor",
-    "drafts-view": "Ver Rascunho",
-    "drafts-view-summary": "Esta página especial mostra uma lista de todos os rascunhos existentes.\nRascunhos não usados serão descartados automaticamente após {{PLURAL:$1|1 dia|$1 dias}}.",
-    "drafts-view-article": "Página",
-    "drafts-view-existing": "Rascunhos existentes",
-    "drafts-view-saved": "Gravado",
-    "drafts-view-discard": "Descartar",
-    "drafts-view-nonesaved": "Você não tem neste momento quaisquer rascunhos gravados.",
-    "drafts-view-notice": "Você tem $1 para esta página.",
-    "drafts-view-notice-link": "$1 {{PLURAL:$1|rascunho|rascunhos}}",
-    "drafts-view-warn": "Você deseja sair desta página? Ao fazê-lo, perderá todas as alterações não salvas nesta página.",
-    "drafts-save": "Salvar isto como rascunho",
-    "drafts-save-save": "Salvar rascunho",
-    "drafts-save-saved": "Gravado",
-    "drafts-save-saving": "Gravando",
-    "drafts-save-error": "Erro ao salvar rascunho",
-    "prefs-extension-drafts": "Rascunhos",
-    "tooltip-drafts-save": "Salvar como rascunho"
+	"@metadata": {
+		"authors": [
+			"Cainamarques",
+			"Eduardo.mps",
+			"Luckas"
+		]
+	},
+	"drafts": "Rascunhos",
+	"drafts-desc": "Adiciona a possibilidade de salvar versões [[Special:Drafts|rascunho]] de uma página no servidor",
+	"drafts-view": "Ver Rascunho",
+	"drafts-view-summary": "Esta página especial mostra uma lista de todos os rascunhos existentes.\nRascunhos não usados serão descartados automaticamente após {{PLURAL:$1|1 dia|$1 dias}}.",
+	"drafts-view-article": "Página",
+	"drafts-view-existing": "Rascunhos existentes",
+	"drafts-view-saved": "Gravado",
+	"drafts-view-discard": "Descartar",
+	"drafts-view-nonesaved": "Você não tem neste momento quaisquer rascunhos gravados.",
+	"drafts-view-notice": "Você tem $1 para esta página.",
+	"drafts-view-notice-link": "$1 {{PLURAL:$1|rascunho|rascunhos}}",
+	"drafts-view-warn": "Você deseja sair desta página? Ao fazê-lo, perderá todas as alterações não salvas nesta página.",
+	"drafts-save": "Salvar isto como rascunho",
+	"drafts-save-save": "Salvar rascunho",
+	"drafts-save-saved": "Gravado",
+	"drafts-save-saving": "Gravando",
+	"drafts-save-error": "Erro ao salvar rascunho",
+	"prefs-extension-drafts": "Rascunhos",
+	"tooltip-drafts-save": "Salvar como rascunho"
 }

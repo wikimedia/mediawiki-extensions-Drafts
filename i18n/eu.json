@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "An13sa",
-            "Kobazulo"
-        ]
-    },
-    "drafts": "Zirriborroak",
-    "drafts-view-article": "Orrialdea",
-    "drafts-view-existing": "Dauden zirriborroak",
-    "drafts-view-saved": "Gordeta",
-    "drafts-view-discard": "Baztertu",
-    "drafts-view-nonesaved": "Une honetan ez duzu gordetako zirriborrorik.",
-    "drafts-view-notice": "Orrialde honetarako $1 duzu.",
-    "drafts-view-notice-link": "{{PLURAL:$1|Zirriborro $1|$1 zirriborro}}",
-    "drafts-save": "Gorde hau zirriborro bezala",
-    "drafts-save-save": "Zirriborroa gorde",
-    "drafts-save-saved": "Gordeta",
-    "drafts-save-saving": "Gordetzen",
-    "drafts-save-error": "Akatsa zirriborroa gordetzean",
-    "tooltip-drafts-save": "Zirriborroa bezala gorde"
+	"@metadata": {
+		"authors": [
+			"An13sa",
+			"Kobazulo"
+		]
+	},
+	"drafts": "Zirriborroak",
+	"drafts-view-article": "Orrialdea",
+	"drafts-view-existing": "Dauden zirriborroak",
+	"drafts-view-saved": "Gordeta",
+	"drafts-view-discard": "Baztertu",
+	"drafts-view-nonesaved": "Une honetan ez duzu gordetako zirriborrorik.",
+	"drafts-view-notice": "Orrialde honetarako $1 duzu.",
+	"drafts-view-notice-link": "{{PLURAL:$1|Zirriborro $1|$1 zirriborro}}",
+	"drafts-save": "Gorde hau zirriborro bezala",
+	"drafts-save-save": "Zirriborroa gorde",
+	"drafts-save-saved": "Gordeta",
+	"drafts-save-saving": "Gordetzen",
+	"drafts-save-error": "Akatsa zirriborroa gordetzean",
+	"tooltip-drafts-save": "Zirriborroa bezala gorde"
 }

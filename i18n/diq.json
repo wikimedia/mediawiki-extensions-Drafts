@@ -1,31 +1,31 @@
 {
-    "@metadata": {
-        "authors": [
-            "Aspar",
-            "Erdemaslancan",
-            "Marmase",
-            "Mirzali",
-            "Xoser"
-        ]
-    },
-    "drafts": "Taslaxi",
-    "drafts-desc": "Xacetê versiyonê [[Special:Drafts|draft]] yew peleyî qeyd kerdişî de keno",
-    "drafts-view": "TaslaxBıvin",
-    "drafts-view-summary": "no pelo xususi listeya numuneyi ya mewcudi ramocneno.\nnumuneyê ke nêşuxuliyeni badê $1 {{PLURAL:$1|roci|roci}} bı otomatik esteriyeni.",
-    "drafts-view-article": "Pele",
-    "drafts-view-existing": "Draftan ke esto",
-    "drafts-view-saved": "Stariya",
-    "drafts-view-discard": "Îptal biker",
-    "drafts-view-nonesaved": "Ti hama nika yew draft qeyd nikerd.",
-    "drafts-view-notice": "Ser ena pel de $1 teneyê tu esto.",
-    "drafts-view-notice-link": "$1 {{PLURAL:$1|draft|draftan}}",
-    "drafts-view-warn": "Eka ti ena pele qefinene, vurnayîşê tu ke ti qeyd nikerd înan pêran beno vin.Ti wazeno dewam bikero?",
-    "drafts-save": "Eney taslax deye qeyd bike",
-    "drafts-save-save": "Draft qeyd ke",
-    "drafts-save-saved": "Stariya",
-    "drafts-save-saving": "Starêno",
-    "drafts-save-error": "Qeyd kerdişî de yew ğelet biyo",
-    "drafts-enable": "Zey timar kerden hunerê  taslax qeyd kerdış aktiv ke",
-    "prefs-extension-drafts": "Taslaxi",
-    "tooltip-drafts-save": "Taslağ deyne nışanyayış"
+	"@metadata": {
+		"authors": [
+			"Aspar",
+			"Erdemaslancan",
+			"Marmase",
+			"Mirzali",
+			"Xoser"
+		]
+	},
+	"drafts": "Taslaxi",
+	"drafts-desc": "Xacetê versiyonê [[Special:Drafts|draft]] yew peleyî qeyd kerdişî de keno",
+	"drafts-view": "TaslaxBıvin",
+	"drafts-view-summary": "no pelo xususi listeya numuneyi ya mewcudi ramocneno.\nnumuneyê ke nêşuxuliyeni badê $1 {{PLURAL:$1|roci|roci}} bı otomatik esteriyeni.",
+	"drafts-view-article": "Pele",
+	"drafts-view-existing": "Draftan ke esto",
+	"drafts-view-saved": "Stariya",
+	"drafts-view-discard": "Îptal biker",
+	"drafts-view-nonesaved": "Ti hama nika yew draft qeyd nikerd.",
+	"drafts-view-notice": "Ser ena pel de $1 teneyê tu esto.",
+	"drafts-view-notice-link": "$1 {{PLURAL:$1|draft|draftan}}",
+	"drafts-view-warn": "Eka ti ena pele qefinene, vurnayîşê tu ke ti qeyd nikerd înan pêran beno vin.Ti wazeno dewam bikero?",
+	"drafts-save": "Eney taslax deye qeyd bike",
+	"drafts-save-save": "Draft qeyd ke",
+	"drafts-save-saved": "Stariya",
+	"drafts-save-saving": "Starêno",
+	"drafts-save-error": "Qeyd kerdişî de yew ğelet biyo",
+	"drafts-enable": "Zey timar kerden hunerê  taslax qeyd kerdış aktiv ke",
+	"prefs-extension-drafts": "Taslaxi",
+	"tooltip-drafts-save": "Taslağ deyne nışanyayış"
 }

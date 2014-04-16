@@ -1,31 +1,31 @@
 {
-    "@metadata": {
-        "authors": [
-            "Ferrer",
-            "KPu3uC B Poccuu",
-            "Lockal",
-            "Okras",
-            "Александр Сигачёв"
-        ]
-    },
-    "drafts": "Черновики",
-    "drafts-desc": "Добавляет возможность сохранять [[Special:Drafts|черновики]] страниц на сервере",
-    "drafts-view": "ПросмотрЧерновика",
-    "drafts-view-summary": "На этой служебной странице приведён список всех черновиков.\nНеиспользуемые черновики автоматически удаляются через $1 {{PLURAL:$1|день|дней|дня}}.",
-    "drafts-view-article": "Страница",
-    "drafts-view-existing": "Существующие черновики",
-    "drafts-view-saved": "Сохранено",
-    "drafts-view-discard": "Сбросить",
-    "drafts-view-nonesaved": "В настоящее время у вас нет сохранённых черновиков.",
-    "drafts-view-notice": "У вас $1 этой страницы.",
-    "drafts-view-notice-link": "$1 {{PLURAL:$1|черновик|черновиков|черновика}}",
-    "drafts-view-warn": "Вы действительно желаете уйти с этой страницы?\nТак вы потеряете все несохранённые изменения на этой странице.",
-    "drafts-save": "Сохранить это как черновик",
-    "drafts-save-save": "Сохранить черновик",
-    "drafts-save-saved": "Сохранено",
-    "drafts-save-saving": "Сохранение",
-    "drafts-save-error": "Ошибка сохранения черновика",
-    "drafts-enable": "Включить функцию для сохранения черновика в форме редактирования",
-    "prefs-extension-drafts": "Черновики",
-    "tooltip-drafts-save": "Сохранить как черновик"
+	"@metadata": {
+		"authors": [
+			"Ferrer",
+			"KPu3uC B Poccuu",
+			"Lockal",
+			"Okras",
+			"Александр Сигачёв"
+		]
+	},
+	"drafts": "Черновики",
+	"drafts-desc": "Добавляет возможность сохранять [[Special:Drafts|черновики]] страниц на сервере",
+	"drafts-view": "ПросмотрЧерновика",
+	"drafts-view-summary": "На этой служебной странице приведён список всех черновиков.\nНеиспользуемые черновики автоматически удаляются через $1 {{PLURAL:$1|день|дней|дня}}.",
+	"drafts-view-article": "Страница",
+	"drafts-view-existing": "Существующие черновики",
+	"drafts-view-saved": "Сохранено",
+	"drafts-view-discard": "Сбросить",
+	"drafts-view-nonesaved": "В настоящее время у вас нет сохранённых черновиков.",
+	"drafts-view-notice": "У вас $1 этой страницы.",
+	"drafts-view-notice-link": "$1 {{PLURAL:$1|черновик|черновиков|черновика}}",
+	"drafts-view-warn": "Вы действительно желаете уйти с этой страницы?\nТак вы потеряете все несохранённые изменения на этой странице.",
+	"drafts-save": "Сохранить это как черновик",
+	"drafts-save-save": "Сохранить черновик",
+	"drafts-save-saved": "Сохранено",
+	"drafts-save-saving": "Сохранение",
+	"drafts-save-error": "Ошибка сохранения черновика",
+	"drafts-enable": "Включить функцию для сохранения черновика в форме редактирования",
+	"prefs-extension-drafts": "Черновики",
+	"tooltip-drafts-save": "Сохранить как черновик"
 }
