@@ -279,6 +279,11 @@ $specialPageAliases['tr'] = array(
 	'Drafts' => array( 'Taslaklar' ),
 );
 
+/** Ukrainian (українська) */
+$specialPageAliases['uk'] = array(
+	'Drafts' => array( 'Чернетки' ),
+);
+
 /** vèneto (vèneto) */
 $specialPageAliases['vec'] = array(
 	'Drafts' => array( 'Bozze' ),
