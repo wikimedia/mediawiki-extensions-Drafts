@@ -14,7 +14,7 @@
 	"drafts-view-article": "문서",
 	"drafts-view-existing": "기존 초안 목록",
 	"drafts-view-saved": "저장된 시간",
-	"drafts-view-discard": "삭제",
+	"drafts-view-discard": "버리기",
 	"drafts-view-nonesaved": "이 시간에 저장된 초안이 없습니다.",
 	"drafts-view-notice": "이 문서에 $1(이)가 있습니다.",
 	"drafts-view-notice-link": "{{PLURAL:$1|초안}} $1개",
