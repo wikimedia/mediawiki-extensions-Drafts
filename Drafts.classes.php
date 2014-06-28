@@ -208,7 +208,7 @@ abstract class Drafts {
 			 */
 			foreach ( $drafts as $draft ) {
 				// Get article title text
-				$htmlTitle = $draft->getTitle()->getEscapedText();
+				$htmlTitle = htmlspecialchars( $draft->getTitle()->getPrefixedText() );
 				// Build Article Load link
 				$urlLoad = $draft->getTitle()->getFullURL(
 					'action=edit&draft=' . urlencode( $draft->getID() )
