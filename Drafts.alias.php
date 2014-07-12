@@ -119,6 +119,11 @@ $specialPageAliases['gu'] = array(
 	'Drafts' => array( 'મુસદ્દો' ),
 );
 
+/** Hebrew (עברית) */
+$specialPageAliases['he'] = array(
+	'Drafts' => array( 'טיוטות' ),
+);
+
 /** Croatian (hrvatski) */
 $specialPageAliases['hr'] = array(
 	'Drafts' => array( 'Nacrti' ),
