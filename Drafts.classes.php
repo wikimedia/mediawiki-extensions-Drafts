@@ -264,9 +264,9 @@ abstract class Drafts {
 				);
 				$html .= Xml::openElement( 'td' );
 				$jsClick = "if( wgDraft.getState() !== 'unchanged' )" .
-					"return confirm('" .
-					Xml::escapeJsString( wfMessage( 'drafts-view-warn' )->escaped() ) .
-					"')";
+					"return confirm(" .
+					Xml::encodeJsVar( wfMessage( 'drafts-view-warn' )->text() ) .
+					")";
 				$html .= Xml::element( 'a',
 					array(
 						'href' => $urlDiscard,

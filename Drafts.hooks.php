@@ -144,9 +144,9 @@ class DraftHooks {
 				$out->addHTML( Drafts::display( $context->getTitle() ) );
 				$out->addHTML( Xml::closeElement( 'div' ) );
 			} else {
-				$jsWarn = "if( !wgAjaxSaveDraft.insync ) return confirm('" .
-					Xml::escapeJsString( $context->msg( 'drafts-view-warn' )->escaped() ) .
-					"')";
+				$jsWarn = "if( !wgAjaxSaveDraft.insync ) return confirm(" .
+					Xml::encodeJsVar( $context->msg( 'drafts-view-warn' )->text() ) .
+					")";
 				$link = Xml::element( 'a',
 					array(
 						'href' => $context->getTitle()->getFullURL( 'action=edit' ),
@@ -214,16 +214,16 @@ class DraftHooks {
 			if ( isset( $attribs['tooltip'] ) ) {
 				$buttonAttribs['title'] = $attribs['title'];
 			}
-			$ajaxButton = Xml::escapeJsString(
-				Xml::element( 'input',
+			$buttons['savedraft'] .= Xml::encodeJsCall(
+				'document.write',
+				array( Xml::element( 'input',
 					array( 'type' => 'submit' ) + $buttonAttribs
 					+ ( $request->getText( 'action' ) !== 'submit' ?
 						array ( 'disabled' => 'disabled' )
 						: array()
 					)
-				)
+				) )
 			);
-			$buttons['savedraft'] .= "document.write( '{$ajaxButton}' );";
 			$buttons['savedraft'] .= Xml::closeElement( 'script' );
 			$buttons['savedraft'] .= Xml::openElement( 'noscript' );
 			$buttons['savedraft'] .= Xml::element( 'input',
