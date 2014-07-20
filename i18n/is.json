@@ -13,7 +13,7 @@
 	"drafts-view-nonesaved": "Þú hefur ekki nein uppköst vistuð akkúrat núna.",
 	"drafts-view-notice": "Þú hefur $1 fyrir þessa síðu.",
 	"drafts-view-notice-link": "$1 {{PLURAL:$1|uppkast|uppköst}}",
-	"drafts-view-warn": "Með því að fara frá þessari síðu tapar þú öllum óvistuðum breytingum á síðunni.\nViltu halda áfram?",
+	"drafts-view-warn": "Viltu halda áfram frá síðunni ? Með því tapar þú óvistuðum breytingum á síðunni.",
 	"drafts-save": "Vista sem uppkast",
 	"drafts-save-save": "Vista uppkast",
 	"drafts-save-saved": "Vistað",
