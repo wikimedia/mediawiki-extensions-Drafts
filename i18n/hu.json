@@ -5,7 +5,8 @@
 			"Dani",
 			"Dj",
 			"Glanthor Reviol",
-			"Gondnok"
+			"Gondnok",
+			"Misibacsi"
 		]
 	},
 	"drafts": "Piszkozatok",
@@ -19,7 +20,7 @@
 	"drafts-view-nonesaved": "Jelenleg nincs egyetlen elmentett piszkozatod sem.",
 	"drafts-view-notice": "Jelenleg $1 van ehhez a laphoz.",
 	"drafts-view-notice-link": "{{PLURAL:$1|egy|$1}} piszkozatod",
-	"drafts-view-warn": "Ha elmész az oldalról, az összes nem mentett változtatás elvész.\nBiztosan folytatod?",
+	"drafts-view-warn": "Ha elmész az oldalról, az összes nem mentett változtatás elvész.",
 	"drafts-save": "Mentés piszkozatként",
 	"drafts-save-save": "Mentés piszkozatként",
 	"drafts-save-saved": "Elmentve",
