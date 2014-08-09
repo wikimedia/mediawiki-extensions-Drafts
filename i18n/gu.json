@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Ashok modhvadia",
-			"Dineshjk"
+			"Dineshjk",
+			"KartikMistry"
 		]
 	},
 	"drafts": "મુસદ્દા",
@@ -22,6 +23,7 @@
 	"drafts-save-saved": "સાચવ્યું",
 	"drafts-save-saving": "સચવાય છે",
 	"drafts-save-error": "મુસદ્દો સાચવવામાં ત્રુટી",
+	"drafts-enable": "ફેરફાર કરતી વખતે ડ્રાફટ બંધારણમાં સંગ્રહ કરવાની લાક્ષણિકતા સક્રિય કરો",
 	"prefs-extension-drafts": "મુસદ્દા",
 	"tooltip-drafts-save": "મુસદ્દા તરીકે સાચવો"
 }
