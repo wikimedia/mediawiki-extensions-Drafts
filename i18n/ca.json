@@ -3,7 +3,8 @@
 		"authors": [
 			"Aleator",
 			"SMP",
-			"Solde"
+			"Solde",
+			"Fitoschido"
 		]
 	},
 	"drafts": "Esborranys",
@@ -21,7 +22,7 @@
 	"drafts-save": "Desar-ho com un esborrany",
 	"drafts-save-save": "Desa un esborrany",
 	"drafts-save-saved": "Desat",
-	"drafts-save-saving": "Desant",
+	"drafts-save-saving": "S’està desant",
 	"drafts-save-error": "Error en desar esborrany",
 	"tooltip-drafts-save": "Desar com a esborrany"
 }
