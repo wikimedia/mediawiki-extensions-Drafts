@@ -87,14 +87,6 @@ class ApiSaveDrafts extends ApiBase {
 		);
 	}
 
-	public function getResultProperties() {
-		return array(
-			'' => array(
-				'id' => 'integer',
-			)
-		);
-	}
-
 	public function mustBePosted() {
 		return true;
 	}
