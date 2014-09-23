@@ -289,7 +289,7 @@ $specialPageAliases['uk'] = array(
 	'Drafts' => array( 'Чернетки' ),
 );
 
-/** vèneto (vèneto) */
+/** Venetian (vèneto) */
 $specialPageAliases['vec'] = array(
 	'Drafts' => array( 'Bozze' ),
 );
