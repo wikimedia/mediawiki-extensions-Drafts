@@ -20,7 +20,7 @@
 	"drafts-view-discard": "舍弃",
 	"drafts-view-nonesaved": "您还没有任何已保存的草稿。",
 	"drafts-view-notice": "您有$1供此页。",
-	"drafts-view-notice-link": "$1 {{PLURAL:$1|草稿}}",
+	"drafts-view-notice-link": "$1份草稿",
 	"drafts-view-warn": "你真的要离开此页面么？如果执意这样做，您将丢失所有未保存的更改。",
 	"drafts-save": "把此页面以草稿形式保存",
 	"drafts-save-save": "保存草稿",
