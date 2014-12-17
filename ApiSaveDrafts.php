@@ -36,6 +36,9 @@ class ApiSaveDrafts extends ApiBase {
 
 	}
 
+	/**
+	 * @deprecated since MediaWiki core 1.25
+	 */
 	public function getDescription() {
 		return 'Save a draft';
 	}

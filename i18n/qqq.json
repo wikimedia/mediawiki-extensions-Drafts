@@ -29,5 +29,16 @@
 	"drafts-enable": "Preferences, if user wants to enable this tool or not, checked means that yes",
 	"prefs-extension-drafts": "{{Identical|Draft}}",
 	"tooltip-drafts-save": "Used as tooltip for the button {{msg-mw|Drafts-save-save}}.",
-	"accesskey-drafts-save": "{{doc-accesskey}}"
+	"accesskey-drafts-save": "{{doc-accesskey}}",
+	"apihelp-savedrafts-description": "{{doc-apihelp-description|savedrafts}}",
+	"apihelp-savedrafts-param-id": "{{doc-apihelp-param|savedrafts|id}}",
+	"apihelp-savedrafts-param-drafttoken": "{{doc-apihelp-param|savedrafts|drafttoken}}",
+	"apihelp-savedrafts-param-title": "{{doc-apihelp-param|savedrafts|title}}",
+	"apihelp-savedrafts-param-section": "{{doc-apihelp-param|savedrafts|section}}",
+	"apihelp-savedrafts-param-starttime": "{{doc-apihelp-param|savedrafts|starttime}}",
+	"apihelp-savedrafts-param-edittime": "{{doc-apihelp-param|savedrafts|edittime}}",
+	"apihelp-savedrafts-param-scrolltop": "{{doc-apihelp-param|savedrafts|scrolltop}}",
+	"apihelp-savedrafts-param-text": "{{doc-apihelp-param|savedrafts|text}}",
+	"apihelp-savedrafts-param-summary": "{{doc-apihelp-param|savedrafts|summary}}",
+	"apihelp-savedrafts-param-minoredit": "{{doc-apihelp-param|savedrafts|minoredit}}"
 }
