@@ -23,5 +23,16 @@
 	"drafts-save-error": "Error salveguardante le version provisori",
 	"drafts-enable": "Activar le function pro salveguardar un version provisori in le formulario de modification",
 	"prefs-extension-drafts": "Versiones provisori",
-	"tooltip-drafts-save": "Salveguardar como version provisori"
+	"tooltip-drafts-save": "Salveguardar como version provisori",
+	"apihelp-savedrafts-description": "Salveguardar un version provisori.",
+	"apihelp-savedrafts-param-id": "Le ID del version provisori.",
+	"apihelp-savedrafts-param-drafttoken": "Indicio de version provisori.",
+	"apihelp-savedrafts-param-title": "Titulo provisori.",
+	"apihelp-savedrafts-param-section": "Indice del section del pagina in modification.",
+	"apihelp-savedrafts-param-starttime": "Hora de initio del version provisori.",
+	"apihelp-savedrafts-param-edittime": "Hora de modification del version provisori.",
+	"apihelp-savedrafts-param-scrolltop": "Le scrollTop del quadro de texto.",
+	"apihelp-savedrafts-param-text": "Texto provisori.",
+	"apihelp-savedrafts-param-summary": "Summario provisori.",
+	"apihelp-savedrafts-param-minoredit": "Valor boolean indicante si le version provisori es un modification minor."
 }
