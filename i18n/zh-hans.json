@@ -29,5 +29,11 @@
 	"drafts-save-error": "保存草稿时发生错误",
 	"drafts-enable": "启用保存编辑表单为草稿的功能",
 	"prefs-extension-drafts": "草稿",
-	"tooltip-drafts-save": "保存为草稿"
+	"tooltip-drafts-save": "保存为草稿",
+	"apihelp-savedrafts-description": "保存一段草稿。",
+	"apihelp-savedrafts-param-id": "草稿的ID。",
+	"apihelp-savedrafts-param-drafttoken": "草稿令牌。",
+	"apihelp-savedrafts-param-title": "草稿标题。",
+	"apihelp-savedrafts-param-text": "草稿文本。",
+	"apihelp-savedrafts-param-summary": "草稿摘要。"
 }

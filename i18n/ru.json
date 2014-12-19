@@ -27,5 +27,9 @@
 	"drafts-save-error": "Ошибка сохранения черновика",
 	"drafts-enable": "Включить функцию для сохранения черновика в форме редактирования",
 	"prefs-extension-drafts": "Черновики",
-	"tooltip-drafts-save": "Сохранить как черновик"
+	"tooltip-drafts-save": "Сохранить как черновик",
+	"apihelp-savedrafts-description": "Сохранить черновик.",
+	"apihelp-savedrafts-param-id": "ID черновика.",
+	"apihelp-savedrafts-param-title": "Заголовок черновика.",
+	"apihelp-savedrafts-param-text": "Текст черновика."
 }

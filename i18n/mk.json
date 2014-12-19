@@ -4,7 +4,7 @@
 			"Bjankuloski06"
 		]
 	},
-	"drafts": "Недопишани",
+	"drafts": "Недовршени",
 	"drafts-desc": "Додава можност за зачувување на [[Special:Drafts|работни верзии]] на страниците на опслужувачот",
 	"drafts-view": "ПрегледНаРаботнаВерзија",
 	"drafts-view-summary": "Оваа службена страница ги наведува сите постоечки работни верзии.\nНеискористените работни верзии ќе бидат автоматски исфрлени по {{PLURAL:$1|еден ден|$1 дена}}.",
@@ -21,7 +21,18 @@
 	"drafts-save-saved": "Зачувано",
 	"drafts-save-saving": "Зачувување",
 	"drafts-save-error": "Грешка при зачувувањето на работната верзија",
-	"drafts-enable": "Овозможете ја функцијата за да го зачувате недопишаното во образецот за уредување",
-	"prefs-extension-drafts": "Недопишани",
-	"tooltip-drafts-save": "Зачувај како работна верзија"
+	"drafts-enable": "Овозможете ја функцијата за да го зачувате недовршеното во образецот за уредување",
+	"prefs-extension-drafts": "Недовршени",
+	"tooltip-drafts-save": "Зачувај како недовршена",
+	"apihelp-savedrafts-description": "Зачувај недовршена.",
+	"apihelp-savedrafts-param-id": "Назнака на недовршената.",
+	"apihelp-savedrafts-param-drafttoken": "Шифра на недовршената.",
+	"apihelp-savedrafts-param-title": "Наслов на недовршената.",
+	"apihelp-savedrafts-param-section": "Индекс на поднасловот на сраницата што се уредува.",
+	"apihelp-savedrafts-param-starttime": "Време на почнувањето на недовршената.",
+	"apihelp-savedrafts-param-edittime": "Време на уредувањето на недовршената.",
+	"apihelp-savedrafts-param-scrolltop": "scrollTop на полето со текст.",
+	"apihelp-savedrafts-param-text": "Текст на недовршената.",
+	"apihelp-savedrafts-param-summary": "Опис на недовршената.",
+	"apihelp-savedrafts-param-minoredit": "Булов показател дали недовршената е ситно уредување."
 }
