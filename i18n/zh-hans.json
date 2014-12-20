@@ -34,6 +34,7 @@
 	"apihelp-savedrafts-param-id": "草稿的ID。",
 	"apihelp-savedrafts-param-drafttoken": "草稿令牌。",
 	"apihelp-savedrafts-param-title": "草稿标题。",
+	"apihelp-savedrafts-param-scrolltop": "文本框的scrollTop。",
 	"apihelp-savedrafts-param-text": "草稿文本。",
 	"apihelp-savedrafts-param-summary": "草稿摘要。"
 }

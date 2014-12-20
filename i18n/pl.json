@@ -5,7 +5,8 @@
 			"Derbeth",
 			"Holek",
 			"Leinad",
-			"Sp5uhe"
+			"Sp5uhe",
+			"Chrumps"
 		]
 	},
 	"drafts": "Brudnopisy stron",
@@ -27,5 +28,8 @@
 	"drafts-save-error": "Błąd zapisywania brudnopisu strony",
 	"drafts-enable": "Włącz funkcję zapisu brudnopisu na formularzu edycji",
 	"prefs-extension-drafts": "Brudnopisy stron",
-	"tooltip-drafts-save": "Zapisz jako brudnopis strony"
+	"tooltip-drafts-save": "Zapisz jako brudnopis strony",
+	"apihelp-savedrafts-description": "Zapisz wersję roboczą.",
+	"apihelp-savedrafts-param-title": "Tytuł w wersji roboczej.",
+	"apihelp-savedrafts-param-text": "Tekst w wersji roboczej."
 }
