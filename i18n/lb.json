@@ -28,6 +28,7 @@
 	"apihelp-savedrafts-description": "E Brouillon späicheren.",
 	"apihelp-savedrafts-param-id": "D'Nummer (ID) vum Brouillon.",
 	"apihelp-savedrafts-param-title": "Titel vum Brouillon.",
+	"apihelp-savedrafts-param-starttime": "D'Ufankszäit vum Brouillon.",
 	"apihelp-savedrafts-param-text": "Text vum Brouillon.",
 	"apihelp-savedrafts-param-summary": "Resumé vum Brouillon."
 }

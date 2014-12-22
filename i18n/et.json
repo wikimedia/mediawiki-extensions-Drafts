@@ -16,7 +16,7 @@
 	"drafts-view-nonesaved": "Hetkel pole sul ühtegi salvestatud mustandit.",
 	"drafts-view-notice": "Sul on selle lehekülje jaoks $1.",
 	"drafts-view-notice-link": "$1 {{PLURAL:$1|mustand|mustandit}}",
-	"drafts-view-warn": "Kui sellelt leheküljelt lahkud, jääd ilma kõigist sellel leheküljel tehtud salvestamata muudatustest.\nKas soovid jätkata?",
+	"drafts-view-warn": "Kas tahad sellelt leheküljelt lahkuda? Kui seda teed, lähevad kõik salvestamata muudatused kaotsi.",
 	"drafts-save": "Salvesta see mustandina",
 	"drafts-save-save": "Salvesta mustand",
 	"drafts-save-saved": "Salvestatud",

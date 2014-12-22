@@ -26,5 +26,6 @@
 	"drafts-save-error": "Erro a gravar rascunho",
 	"drafts-enable": "Activar o recurso que permite gravar um rascunho na funcionalidade de edição",
 	"prefs-extension-drafts": "Rascunhos",
-	"tooltip-drafts-save": "Gravar como rascunho"
+	"tooltip-drafts-save": "Gravar como rascunho",
+	"apihelp-savedrafts-param-title": "Título do rascunho."
 }
