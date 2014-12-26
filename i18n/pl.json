@@ -31,5 +31,6 @@
 	"tooltip-drafts-save": "Zapisz jako brudnopis strony",
 	"apihelp-savedrafts-description": "Zapisz wersję roboczą.",
 	"apihelp-savedrafts-param-title": "Tytuł w wersji roboczej.",
+	"apihelp-savedrafts-param-section": "Indeks sekcji edytowanej strony.",
 	"apihelp-savedrafts-param-text": "Tekst w wersji roboczej."
 }
