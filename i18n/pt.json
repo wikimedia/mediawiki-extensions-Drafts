@@ -27,5 +27,6 @@
 	"drafts-enable": "Activar o recurso que permite gravar um rascunho na funcionalidade de edição",
 	"prefs-extension-drafts": "Rascunhos",
 	"tooltip-drafts-save": "Gravar como rascunho",
-	"apihelp-savedrafts-param-title": "Título do rascunho."
+	"apihelp-savedrafts-param-title": "Título do rascunho.",
+	"apihelp-savedrafts-param-text": "Texto de rascunho."
 }
