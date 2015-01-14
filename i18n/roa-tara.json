@@ -24,5 +24,11 @@
 	"drafts-save-error": "Errore de salvatagge d'u pruggette",
 	"drafts-enable": "Abbilite 'a funzionalità pe reggistrà 'na bozze jndr'à 'u module de cangiamende",
 	"prefs-extension-drafts": "Bozze",
-	"tooltip-drafts-save": "Salve cumme bozze"
+	"tooltip-drafts-save": "Salve cumme bozze",
+	"apihelp-savedrafts-description": "Reggistre 'na bozze.",
+	"apihelp-savedrafts-param-id": "L'ID d'a bozze.",
+	"apihelp-savedrafts-param-drafttoken": "Gettone d'a bozze.",
+	"apihelp-savedrafts-param-title": "Titole d'a bozze.",
+	"apihelp-savedrafts-param-text": "Teste d'a bozze.",
+	"apihelp-savedrafts-param-summary": "Riepiloghe d'a bozze."
 }
