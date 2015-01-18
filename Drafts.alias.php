@@ -289,6 +289,11 @@ $specialPageAliases['uk'] = array(
 	'Drafts' => array( 'Чернетки' ),
 );
 
+/** Urdu (اردو) */
+$specialPageAliases['ur'] = array(
+	'Drafts' => array( 'نمونہ' ),
+);
+
 /** Venetian (vèneto) */
 $specialPageAliases['vec'] = array(
 	'Drafts' => array( 'Bozze' ),
