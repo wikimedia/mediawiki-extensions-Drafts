@@ -36,6 +36,7 @@
 	"apihelp-savedrafts-param-title": "Titel des Entwurfs.",
 	"apihelp-savedrafts-param-starttime": "Die Startzeit des Entwurfs.",
 	"apihelp-savedrafts-param-edittime": "Die Bearbeitungszeit des Entwurfs.",
+	"apihelp-savedrafts-param-scrolltop": "Das scrollTop des Textkastens.",
 	"apihelp-savedrafts-param-text": "Text des Entwurfs.",
 	"apihelp-savedrafts-param-summary": "Zusammenfassung des Entwurfs."
 }
