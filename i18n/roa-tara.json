@@ -29,6 +29,11 @@
 	"apihelp-savedrafts-param-id": "L'ID d'a bozze.",
 	"apihelp-savedrafts-param-drafttoken": "Gettone d'a bozze.",
 	"apihelp-savedrafts-param-title": "Titole d'a bozze.",
+	"apihelp-savedrafts-param-section": "Indice d'a sezione d'a pàgene ca ste avène cangiate.",
+	"apihelp-savedrafts-param-starttime": "L'orarie de inizie d'a bozze.",
+	"apihelp-savedrafts-param-edittime": "L'orarie de fine d'a bozze.",
+	"apihelp-savedrafts-param-scrolltop": "'U scrollTop d'a buatte d'u teste.",
 	"apihelp-savedrafts-param-text": "Teste d'a bozze.",
-	"apihelp-savedrafts-param-summary": "Riepiloghe d'a bozze."
+	"apihelp-savedrafts-param-summary": "Riepiloghe d'a bozze.",
+	"apihelp-savedrafts-param-minoredit": "'A rappresendazione booleane ce 'a bozze jè 'nu cangiamende stuèdeche."
 }
