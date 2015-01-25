@@ -22,5 +22,12 @@
 	"drafts-save-saving": "Salvament en cors",
 	"drafts-save-error": "Error de salvament del borrolhon",
 	"prefs-extension-drafts": "Borrolhons",
-	"tooltip-drafts-save": "Salvar coma borrolhon"
+	"tooltip-drafts-save": "Salvar coma borrolhon",
+	"apihelp-savedrafts-description": "Enregistrar un borrolhon",
+	"apihelp-savedrafts-param-id": "L’ID del borrolhon.",
+	"apihelp-savedrafts-param-drafttoken": "Geton de borrolhon.",
+	"apihelp-savedrafts-param-title": "Títol del borrolhon.",
+	"apihelp-savedrafts-param-starttime": "L’orodatatge de començament del borrolhon.",
+	"apihelp-savedrafts-param-text": "Tèxte del borrolhon.",
+	"apihelp-savedrafts-param-summary": "Resumit del borrolhon."
 }
