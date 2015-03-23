@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Toliño"
+			"Toliño",
+			"Banjo"
 		]
 	},
 	"drafts": "Borrador",
@@ -23,5 +24,10 @@
 	"drafts-save-error": "Produciuse un erro ao gardar o borrador",
 	"drafts-enable": "Activar a función para gardar un borrador no formulario de edición",
 	"prefs-extension-drafts": "Borradores",
-	"tooltip-drafts-save": "Gardar como un borrador"
+	"tooltip-drafts-save": "Gardar como un borrador",
+	"apihelp-savedrafts-description": "Gardar un borrador.",
+	"apihelp-savedrafts-param-id": "O Identificador do borrador.",
+	"apihelp-savedrafts-param-title": "Título do borrador.",
+	"apihelp-savedrafts-param-text": "Texto do borrador.",
+	"apihelp-savedrafts-param-summary": "Resumo do borrador."
 }
