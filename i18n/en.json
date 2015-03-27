@@ -35,5 +35,5 @@
     "apihelp-savedrafts-param-scrolltop": "The scrollTop of the text box.",
     "apihelp-savedrafts-param-text": "Draft text.",
     "apihelp-savedrafts-param-summary": "Draft summary.",
-    "apihelp-savedrafts-param-minoredit": "Boolean representing weather the draft is a minor edit."
+    "apihelp-savedrafts-param-minoredit": "Boolean representing whether the draft is a minor edit."
 }
