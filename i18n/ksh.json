@@ -26,7 +26,11 @@
 	"tooltip-drafts-save": "Als ene Entworf avspeichere",
 	"apihelp-savedrafts-description": "Donn ene Äntworf faßhallde.",
 	"apihelp-savedrafts-param-id": "Däm Äntworf sing Kännong.",
+	"apihelp-savedrafts-param-drafttoken": "Däm Äntworf sing !!FUZY!! token.",
 	"apihelp-savedrafts-param-title": "Däm Äntworf sing Övverschreff.",
+	"apihelp-savedrafts-param-starttime": "De Zigg, woh met däm Äntworf bejonne wohd.",
+	"apihelp-savedrafts-param-edittime": "De Zigg, woh dä Äntworf jeänndert wohd.",
 	"apihelp-savedrafts-param-text": "Däm Äntworf singe Ennhald.",
-	"apihelp-savedrafts-param-summary": "Däm Äntworf sing Zersammefaßong."
+	"apihelp-savedrafts-param-summary": "Däm Äntworf sing Zersammefaßong.",
+	"apihelp-savedrafts-param-minoredit": "Ene schallder, dä sähd ov dä Äntworv en klein Mini-Änderong sinn sull."
 }
