@@ -7,7 +7,8 @@
 			"Ihojose",
 			"Imre",
 			"MarcoAurelio",
-			"Remember the dot"
+			"Remember the dot",
+			"Fitoschido"
 		]
 	},
 	"drafts": "Borradores",
@@ -29,5 +30,9 @@
 	"drafts-save-error": "Error grabando borrador",
 	"drafts-enable": "Activar función para guardar un borrador en forma de edición",
 	"prefs-extension-drafts": "Borradores",
-	"tooltip-drafts-save": "Guardar como un borrador"
+	"tooltip-drafts-save": "Guardar como un borrador",
+	"apihelp-savedrafts-description": "Guardar un borrador.",
+	"apihelp-savedrafts-param-id": "El identificador del borrador.",
+	"apihelp-savedrafts-param-drafttoken": "Ficha del borrador.",
+	"apihelp-savedrafts-param-title": "Título del borrador."
 }
