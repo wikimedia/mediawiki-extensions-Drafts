@@ -34,6 +34,11 @@ $specialPageAliases['as'] = array(
 	'Drafts' => array( 'খচৰা' ),
 );
 
+/** Western Balochi (بلوچی رخشانی) */
+$specialPageAliases['bgn'] = array(
+	'Drafts' => array( 'پیش_نویس_ئان' ),
+);
+
 /** Banjar (Bahasa Banjar) */
 $specialPageAliases['bjn'] = array(
 	'Drafts' => array( 'Drap' ),
