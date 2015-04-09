@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Toliño",
-			"Banjo"
+			"Banjo",
+			"Elisardojm"
 		]
 	},
 	"drafts": "Borrador",
@@ -27,7 +28,11 @@
 	"tooltip-drafts-save": "Gardar como un borrador",
 	"apihelp-savedrafts-description": "Gardar un borrador.",
 	"apihelp-savedrafts-param-id": "O Identificador do borrador.",
+	"apihelp-savedrafts-param-drafttoken": "Identificador do borrador.",
 	"apihelp-savedrafts-param-title": "Título do borrador.",
+	"apihelp-savedrafts-param-section": "Índice da sección da páxina que está sendo editada.",
+	"apihelp-savedrafts-param-starttime": "Selo de tempo do borrador.",
+	"apihelp-savedrafts-param-edittime": "Selo de tempo de modificación do borrador.",
 	"apihelp-savedrafts-param-text": "Texto do borrador.",
 	"apihelp-savedrafts-param-summary": "Resumo do borrador."
 }
