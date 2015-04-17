@@ -34,5 +34,6 @@
 	"apihelp-savedrafts-param-starttime": "Selo de tempo do borrador.",
 	"apihelp-savedrafts-param-edittime": "Selo de tempo de modificación do borrador.",
 	"apihelp-savedrafts-param-text": "Texto do borrador.",
-	"apihelp-savedrafts-param-summary": "Resumo do borrador."
+	"apihelp-savedrafts-param-summary": "Resumo do borrador.",
+	"apihelp-savedrafts-param-minoredit": "Booleano indicando que o borrador é unha edición menor."
 }
