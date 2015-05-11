@@ -34,9 +34,11 @@
 	"apihelp-savedrafts-param-id": "Die Kennung des Entwurfs.",
 	"apihelp-savedrafts-param-drafttoken": "Token des Entwurfs.",
 	"apihelp-savedrafts-param-title": "Titel des Entwurfs.",
+	"apihelp-savedrafts-param-section": "Index des Abschnitts der bearbeiteten Seite.",
 	"apihelp-savedrafts-param-starttime": "Die Startzeit des Entwurfs.",
 	"apihelp-savedrafts-param-edittime": "Die Bearbeitungszeit des Entwurfs.",
 	"apihelp-savedrafts-param-scrolltop": "Das scrollTop des Textkastens.",
 	"apihelp-savedrafts-param-text": "Text des Entwurfs.",
-	"apihelp-savedrafts-param-summary": "Zusammenfassung des Entwurfs."
+	"apihelp-savedrafts-param-summary": "Zusammenfassung des Entwurfs.",
+	"apihelp-savedrafts-param-minoredit": "Boolesche Darstellung, ob der Entwurf eine kleine Bearbeitung ist."
 }
