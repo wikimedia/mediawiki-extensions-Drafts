@@ -24,7 +24,7 @@ $specialPageAliases['ar'] = array(
 	'Drafts' => array( 'مسودات' ),
 );
 
-/** Egyptian Spoken Arabic (مصرى) */
+/** Egyptian Arabic (مصرى) */
 $specialPageAliases['arz'] = array(
 	'Drafts' => array( 'مسودات' ),
 );
@@ -109,7 +109,7 @@ $specialPageAliases['fr'] = array(
 	'Drafts' => array( 'Brouillons' ),
 );
 
-/** Franco-Provençal (arpetan) */
+/** Arpitan (arpetan) */
 $specialPageAliases['frp'] = array(
 	'Drafts' => array( 'Brolyons' ),
 );
