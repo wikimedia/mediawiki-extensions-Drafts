@@ -68,4 +68,8 @@ class SpecialDrafts extends SpecialPage {
 			$out->addHTML( Drafts::display() );
 		}
 	}
+
+	protected function getGroupName() {
+		return 'pagetools';
+	}
 }

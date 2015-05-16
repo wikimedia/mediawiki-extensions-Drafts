@@ -74,7 +74,6 @@ $wgExtensionMessagesFiles['DraftsAlias'] = $dir . 'Drafts.alias.php';
 
 // Register the Drafts special page
 $wgSpecialPages['Drafts'] = 'SpecialDrafts';
-$wgSpecialPageGroups['Drafts'] = 'pagetools';
 $wgAutoloadClasses['SpecialDrafts'] = $dir . 'SpecialDrafts.php';
 
 // Values for options
