@@ -8,7 +8,8 @@
 			"Imre",
 			"MarcoAurelio",
 			"Remember the dot",
-			"Fitoschido"
+			"Fitoschido",
+			"Ryo567"
 		]
 	},
 	"drafts": "Borradores",
@@ -34,5 +35,10 @@
 	"apihelp-savedrafts-description": "Guardar un borrador.",
 	"apihelp-savedrafts-param-id": "El identificador del borrador.",
 	"apihelp-savedrafts-param-drafttoken": "Ficha del borrador.",
-	"apihelp-savedrafts-param-title": "Título del borrador."
+	"apihelp-savedrafts-param-title": "Título del borrador.",
+	"apihelp-savedrafts-param-section": "Índice de la sección de la página que se está editando.",
+	"apihelp-savedrafts-param-starttime": "Hora de inicio del borrador.",
+	"apihelp-savedrafts-param-edittime": "Hora de edición del borrador.",
+	"apihelp-savedrafts-param-text": "Texto del borrador.",
+	"apihelp-savedrafts-param-summary": "Resumen del borrador."
 }
