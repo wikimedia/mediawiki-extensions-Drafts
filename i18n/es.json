@@ -9,7 +9,8 @@
 			"MarcoAurelio",
 			"Remember the dot",
 			"Fitoschido",
-			"Ryo567"
+			"Ryo567",
+			"Csbotero"
 		]
 	},
 	"drafts": "Borradores",
@@ -40,5 +41,6 @@
 	"apihelp-savedrafts-param-starttime": "Hora de inicio del borrador.",
 	"apihelp-savedrafts-param-edittime": "Hora de edición del borrador.",
 	"apihelp-savedrafts-param-text": "Texto del borrador.",
-	"apihelp-savedrafts-param-summary": "Resumen del borrador."
+	"apihelp-savedrafts-param-summary": "Resumen del borrador.",
+	"apihelp-savedrafts-param-minoredit": "Muestra booleana que representa si el borrador es una edición menor."
 }

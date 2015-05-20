@@ -3,7 +3,8 @@
 		"authors": [
 			"Beta16",
 			"BrokenArrow",
-			"Darth Kule"
+			"Darth Kule",
+			"Gianfranco"
 		]
 	},
 	"drafts": "Bozze",
@@ -25,5 +26,16 @@
 	"drafts-save-error": "Errore nel salvataggio della bozza",
 	"drafts-enable": "Abilita la funzione per salvare una bozza nel modulo di modifica",
 	"prefs-extension-drafts": "Bozze",
-	"tooltip-drafts-save": "Salva come bozza"
+	"tooltip-drafts-save": "Salva come bozza",
+	"apihelp-savedrafts-description": "Salva una bozza.",
+	"apihelp-savedrafts-param-id": "L'ID della bozza.",
+	"apihelp-savedrafts-param-drafttoken": "Token della bozza",
+	"apihelp-savedrafts-param-title": "Titolo della bozza.",
+	"apihelp-savedrafts-param-section": "Indice della sezione della pagina che si sta modificando.",
+	"apihelp-savedrafts-param-starttime": "L'ora di inizio della bozza.",
+	"apihelp-savedrafts-param-edittime": "Il tempo di modifica della bozza.",
+	"apihelp-savedrafts-param-scrolltop": "Lo scrollTop della casella di testo.",
+	"apihelp-savedrafts-param-text": "Testo della bozza.",
+	"apihelp-savedrafts-param-summary": "Riassunto della bozza.",
+	"apihelp-savedrafts-param-minoredit": "Booleano che specifica se la bozza è una modifica minore."
 }
