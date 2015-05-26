@@ -4,7 +4,8 @@
 			"AS",
 			"Ahonc",
 			"Andriykopanytsia",
-			"Base"
+			"Base",
+			"Ата"
 		]
 	},
 	"drafts": "Чернетки",
@@ -26,5 +27,16 @@
 	"drafts-save-error": "Помилка збереження чернетки",
 	"drafts-enable": "Увімкнути функцію зберігання чернетки у формі редагування",
 	"prefs-extension-drafts": "Чернетки",
-	"tooltip-drafts-save": "Зберегти як чернетку"
+	"tooltip-drafts-save": "Зберегти як чернетку",
+	"apihelp-savedrafts-description": "Зберегти чернетку.",
+	"apihelp-savedrafts-param-id": "ID чернетки.",
+	"apihelp-savedrafts-param-drafttoken": "Токен чернетки.",
+	"apihelp-savedrafts-param-title": "Назва чернетки.",
+	"apihelp-savedrafts-param-section": "Індекс розділу сторінки, який редагується.",
+	"apihelp-savedrafts-param-starttime": "Час початку чернетки.",
+	"apihelp-savedrafts-param-edittime": "Час редагування чернетки.",
+	"apihelp-savedrafts-param-scrolltop": "ScrollTop текстового поля.",
+	"apihelp-savedrafts-param-text": "Текст чернетки.",
+	"apihelp-savedrafts-param-summary": "Опис чернетки.",
+	"apihelp-savedrafts-param-minoredit": "Логічна позначка, є чернетка малим редагуванням чи ні."
 }
