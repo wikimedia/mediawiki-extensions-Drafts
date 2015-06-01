@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Siebrand",
-			"Tvdm"
+			"Tvdm",
+			"Esketti"
 		]
 	},
 	"drafts": "Werkversies",
@@ -24,5 +25,16 @@
 	"drafts-save-error": "Fout bij het opslaan van de werkversie",
 	"drafts-enable": "Mogelijkheid om concepten op te slaan inschakelen",
 	"prefs-extension-drafts": "Werkversies",
-	"tooltip-drafts-save": "Als werkversie opslaan"
+	"tooltip-drafts-save": "Als werkversie opslaan",
+	"apihelp-savedrafts-description": "Opslaan van een ontwerp.",
+	"apihelp-savedrafts-param-id": "De ID van het ontwerp.",
+	"apihelp-savedrafts-param-drafttoken": "Ontwerp-token.",
+	"apihelp-savedrafts-param-title": "Ontwerp-titel.",
+	"apihelp-savedrafts-param-section": "Index van de sectie van de pagina die bewerkt wordt.",
+	"apihelp-savedrafts-param-starttime": "De starttijd van het ontwerp.",
+	"apihelp-savedrafts-param-edittime": "Het bewerken van het ontwerp.",
+	"apihelp-savedrafts-param-scrolltop": "De scrollTop van het tekstvak.",
+	"apihelp-savedrafts-param-text": "Ontwerp van tekst.",
+	"apihelp-savedrafts-param-summary": "Ontwerp voor een overzicht.",
+	"apihelp-savedrafts-param-minoredit": "Boolean vertegenwoordigen of het ontwerp is a minor edit."
 }
