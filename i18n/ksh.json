@@ -7,7 +7,7 @@
 	"drafts": "Äntwörf",
 	"drafts-desc": "Deit de Müjjeleschkeit dobei, ene [[Special:Drafts|Entworf]] fun en Sigg om ẞööver affzelähje.",
 	"drafts-view": "Äntworf zeije",
-	"drafts-view-summary": "Hee die Söndersigg hät en Leß met alle Entwörf, die mer han.\nNoh {{PLURAL:$1|einem Daach|$1 Dääsch|nullkommanix}} wäde de\nunjenotz Enwörf automattesch fott jeschmesse.",
+	"drafts-view-summary": "Heh di {{int:specialpage}} hädd en Leß met alle Entwörf, di mer han. \nNoh {{PLURAL:$1|einem Daach|$1 Dääsch|nullkommanix}} wähde de\nonjenötz Äntwörf automattesch fott jeschmeße.",
 	"drafts-view-article": "Sigg",
 	"drafts-view-existing": "Jespeicherte Äntwörf",
 	"drafts-view-saved": "Jespeichert",
