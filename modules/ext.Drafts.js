@@ -62,7 +62,8 @@ function Draft() {
 	/**
 	 * Sends draft data to server to be saved
 	 */
-	this.save = function() {
+	this.save = function( event ) {
+		event.preventDefault();
 		// Checks if a save is already taking place
 		if (state === 'saving') {
 			// Exits function immediately
@@ -143,20 +144,12 @@ function Draft() {
 		// Check to see that the form and controls exist
 		if ( form && form.wpDraftSave ) {
 			// Handle manual draft saving through clicking the save draft button
-			addHandler( form.wpDraftSave, 'click', self.save );
+			$j( form.wpDraftSave ).on( 'click', self.save );
 			// Handle keeping track of state by watching for changes to fields
-			addHandler( form.wpTextbox1, 'keypress', self.change );
-			addHandler( form.wpTextbox1, 'keyup', self.change );
-			addHandler( form.wpTextbox1, 'keydown', self.change );
-			addHandler( form.wpTextbox1, 'paste', self.change );
-			addHandler( form.wpTextbox1, 'cut', self.change );
-			addHandler( form.wpSummary, 'keypress', self.change );
-			addHandler( form.wpSummary, 'keyup', self.change );
-			addHandler( form.wpSummary, 'keydown', self.change );
-			addHandler( form.wpSummary, 'paste', self.change );
-			addHandler( form.wpSummary, 'cut', self.change );
+			$j( form.wpTextbox1 ).on( 'keypress keyup keydown paste cut', self.change );
+			$j( form.wpSummary ).on( 'keypress keyup keydown paste cut', self.change );
 			if ( form.wpMinoredit ) {
-				addHandler( form.wpMinoredit, 'change', self.change );
+				$j( form.wpMinoredit ).on( 'change', self.change );
 			}
 			// Gets configured specific values
 			configuration = {
