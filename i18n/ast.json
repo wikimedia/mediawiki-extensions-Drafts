@@ -23,5 +23,16 @@
 	"drafts-save-error": "Error al guardar el borrador",
 	"drafts-enable": "Activar la función pa guardar un borrador nel formulariu d'edición",
 	"prefs-extension-drafts": "Borradores",
-	"tooltip-drafts-save": "Guardar como borrador"
+	"tooltip-drafts-save": "Guardar como borrador",
+	"apihelp-savedrafts-description": "Guardar un borrador.",
+	"apihelp-savedrafts-param-id": "La ID del borrador.",
+	"apihelp-savedrafts-param-drafttoken": "Pase del borrador.",
+	"apihelp-savedrafts-param-title": "Títulu del borrador.",
+	"apihelp-savedrafts-param-section": "Índiz de la seición de la páxina que ta editándose.",
+	"apihelp-savedrafts-param-starttime": "La hora de principiu del borrador.",
+	"apihelp-savedrafts-param-edittime": "El tiempu d'edición del borrador.",
+	"apihelp-savedrafts-param-scrolltop": "El scrollTop del cuadru de testu.",
+	"apihelp-savedrafts-param-text": "Testu del borrador.",
+	"apihelp-savedrafts-param-summary": "Resume del borrador.",
+	"apihelp-savedrafts-param-minoredit": "Marca lóxica pa indicar si'l borrador ye una edición menor."
 }
