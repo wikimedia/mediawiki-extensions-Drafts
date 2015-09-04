@@ -5,7 +5,8 @@
 			"Fryed-peach",
 			"Hosiryuhosi",
 			"Shirayuki",
-			"Rxy"
+			"Rxy",
+			"Otokoume"
 		]
 	},
 	"drafts": "下書き",
@@ -27,5 +28,16 @@
 	"drafts-save-error": "下書きの保存に失敗",
 	"drafts-enable": "編集フォームで下書きを保存する機能を有効にする",
 	"prefs-extension-drafts": "下書き",
-	"tooltip-drafts-save": "下書きとして保存する"
+	"tooltip-drafts-save": "下書きとして保存する",
+	"apihelp-savedrafts-description": "下書きを保存します。",
+	"apihelp-savedrafts-param-id": "下書きの ID",
+	"apihelp-savedrafts-param-drafttoken": "下書きのトークン",
+	"apihelp-savedrafts-param-title": "下書きのタイトル",
+	"apihelp-savedrafts-param-section": "編集しているページの節のインデントです。",
+	"apihelp-savedrafts-param-starttime": "下書きの開始時刻",
+	"apihelp-savedrafts-param-edittime": "下書きの編集時間",
+	"apihelp-savedrafts-param-scrolltop": "テキストボックスの scrollTop",
+	"apihelp-savedrafts-param-text": "下書きテキスト",
+	"apihelp-savedrafts-param-summary": "下書きの概要",
+	"apihelp-savedrafts-param-minoredit": "ブールは、下書きが細部の編集であるかどうかを表します。"
 }
