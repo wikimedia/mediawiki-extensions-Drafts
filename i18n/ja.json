@@ -6,7 +6,8 @@
 			"Hosiryuhosi",
 			"Shirayuki",
 			"Rxy",
-			"Otokoume"
+			"Otokoume",
+			"2nd-player"
 		]
 	},
 	"drafts": "下書き",
@@ -39,5 +40,5 @@
 	"apihelp-savedrafts-param-scrolltop": "テキストボックスの scrollTop",
 	"apihelp-savedrafts-param-text": "下書きテキスト",
 	"apihelp-savedrafts-param-summary": "下書きの概要",
-	"apihelp-savedrafts-param-minoredit": "ブールは、下書きが細部の編集であるかどうかを表します。"
+	"apihelp-savedrafts-param-minoredit": "下書きが細部の編集であるかどうかを表すブール値。"
 }
