@@ -31,5 +31,11 @@
 	"apihelp-savedrafts-description": "초안 저장.",
 	"apihelp-savedrafts-param-id": "초안의 ID",
 	"apihelp-savedrafts-param-drafttoken": "초안 토큰",
-	"apihelp-savedrafts-param-title": "초안 제목"
+	"apihelp-savedrafts-param-title": "초안 제목",
+	"apihelp-savedrafts-param-section": "편집되는 문서의 문단 색인.",
+	"apihelp-savedrafts-param-starttime": "초안의 시작 시간.",
+	"apihelp-savedrafts-param-edittime": "초안의 끝 시간.",
+	"apihelp-savedrafts-param-text": "초안 본문",
+	"apihelp-savedrafts-param-summary": "초안 요약",
+	"apihelp-savedrafts-param-minoredit": "초안 편집이 사소한 편집인지를 표시하는 불린."
 }
