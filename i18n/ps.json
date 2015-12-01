@@ -4,9 +4,9 @@
 			"Ahmed-Najib-Biabani-Ibrahimkhel"
 		]
 	},
-	"drafts": "ګارليکونه",
+	"drafts": "گارليکونه",
 	"drafts-view-article": "مخ",
-	"drafts-view-existing": "شته ګارليکونه",
+	"drafts-view-existing": "شته گارليکونه",
 	"drafts-view-saved": "خوندي شو",
 	"drafts-view-notice": "د دې مخ لپاره تاسې $1 لرۍ.",
 	"drafts-view-notice-link": "$1 {{PLURAL:$1|گارليک|گارليکونه}}",
@@ -14,6 +14,6 @@
 	"drafts-save-save": "گارليک خوندي کول",
 	"drafts-save-saved": "خوندي شو",
 	"drafts-save-saving": "خوندي کېدنې کې دی...",
-	"prefs-extension-drafts": "ګارليکونه",
+	"prefs-extension-drafts": "گارليکونه",
 	"tooltip-drafts-save": "د يوه گارليک په توگه خوندي کول"
 }
