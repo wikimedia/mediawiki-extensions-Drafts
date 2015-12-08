@@ -591,7 +591,7 @@ class Draft {
 		global $wgUser;
 		// Gets database connection
 		$dbw = wfGetDB( DB_MASTER );
-		$dbw->begin();
+		$dbw->startAtomic( __METHOD__ );
 		// Builds insert/update information
 		$data = array(
 			'draft_token' => (string) $this->getToken(),
@@ -643,7 +643,7 @@ class Draft {
 			}
 		}
 		// Commits any processed changes
-		$dbw->commit();
+		$dbw->endAtomic( __METHOD__ );
 		// Returns success
 		return true;
 	}
