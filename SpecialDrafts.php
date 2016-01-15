@@ -11,6 +11,10 @@ class SpecialDrafts extends SpecialPage {
 		parent::__construct( 'Drafts' );
 	}
 
+	public function doesWrites() {
+		return true;
+	}
+
 	/**
 	 * Executes special page rendering and data processing
 	 *
