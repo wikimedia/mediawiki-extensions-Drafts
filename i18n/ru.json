@@ -32,5 +32,6 @@
 	"apihelp-savedrafts-param-id": "ID черновика.",
 	"apihelp-savedrafts-param-title": "Заголовок черновика.",
 	"apihelp-savedrafts-param-text": "Текст черновика.",
-	"apihelp-savedrafts-param-summary": "Описание черновика."
+	"apihelp-savedrafts-param-summary": "Описание черновика.",
+	"apihelp-savedrafts-param-minoredit": "Логическое значение, указывающее, что черновик является малой правкой."
 }
