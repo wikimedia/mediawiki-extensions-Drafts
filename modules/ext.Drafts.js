@@ -1,5 +1,9 @@
 /* JavaScript for Drafts extension */
 
+/*jshint -W066 */
+
+var wgDraft;
+
 function Draft() {
 
 	/* Private Members */
@@ -29,23 +33,23 @@ function Draft() {
 			switch ( state ) {
 				case 'unchanged':
 					form.wpDraftSave.disabled = true;
-					form.wpDraftSave.value = mw.message( 'drafts-save-save' ).text();
+					form.wpDraftSave.value = mediaWiki.message( 'drafts-save-save' ).text();
 					break;
 				case 'changed':
 					form.wpDraftSave.disabled = false;
-					form.wpDraftSave.value = mw.message( 'drafts-save-save' ).text();
+					form.wpDraftSave.value = mediaWiki.message( 'drafts-save-save' ).text();
 					break;
 				case 'saved':
 					form.wpDraftSave.disabled = true;
-					form.wpDraftSave.value = mw.message( 'drafts-save-saved' ).text();
+					form.wpDraftSave.value = mediaWiki.message( 'drafts-save-saved' ).text();
 					break;
 				case 'saving':
 					form.wpDraftSave.disabled = true;
-					form.wpDraftSave.value = mw.message( 'drafts-save-saving' ).text();
+					form.wpDraftSave.value = mediaWiki.message( 'drafts-save-saving' ).text();
 					break;
 				case 'error':
 					form.wpDraftSave.disabled = true;
-					form.wpDraftSave.value = mw.message( 'drafts-save-error' ).text();
+					form.wpDraftSave.value = mediaWiki.message( 'drafts-save-error' ).text();
 					break;
 				default: break;
 			}
@@ -90,12 +94,12 @@ function Draft() {
 		}
 
 		// Performs asynchronous save on server
-		var api = new mw.Api();
+		var api = new mediaWiki.Api();
 		api.post(params).done( self.respond ).fail( self.respond );
 
 		// Re-allow request if it is not done in 10 seconds
 		self.timeoutID = window.setTimeout(
-			"wgDraft.setState( 'changed' )", 10000
+			"wgDraft.setState( 'changed' );", 10000
 		);
 		// Ensure timer is cleared in case we saved manually before it expired
 		clearTimeout( timer );
@@ -116,7 +120,7 @@ function Draft() {
 			if ( configuration.autoSaveWait && configuration.autoSaveWait > 0 ) {
 				// Sets timer to save automatically after a period of time
 				timer = setTimeout(
-					'wgDraft.save()', configuration.autoSaveWait * 1000
+					'wgDraft.save();', configuration.autoSaveWait * 1000
 				);
 			}
 			return;
@@ -130,7 +134,7 @@ function Draft() {
 		if ( configuration.autoSaveWait && configuration.autoSaveWait > 0 ) {
 			// Sets timer to save automatically after a period of time
 			timer = setTimeout(
-				'wgDraft.save()', configuration.autoSaveWait * 1000
+				'wgDraft.save();', configuration.autoSaveWait * 1000
 			);
 		}
 	};
@@ -144,18 +148,18 @@ function Draft() {
 		// Check to see that the form and controls exist
 		if ( form && form.wpDraftSave ) {
 			// Handle manual draft saving through clicking the save draft button
-			$j( form.wpDraftSave ).on( 'click', self.save );
+			jQuery( form.wpDraftSave ).on( 'click', self.save );
 			// Handle keeping track of state by watching for changes to fields
-			$j( form.wpTextbox1 ).on( 'keypress keyup keydown paste cut', self.change );
-			$j( form.wpSummary ).on( 'keypress keyup keydown paste cut', self.change );
+			jQuery( form.wpTextbox1 ).on( 'keypress keyup keydown paste cut', self.change );
+			jQuery( form.wpSummary ).on( 'keypress keyup keydown paste cut', self.change );
 			if ( form.wpMinoredit ) {
-				$j( form.wpMinoredit ).on( 'change', self.change );
+				jQuery( form.wpMinoredit ).on( 'change', self.change );
 			}
 			// Gets configured specific values
 			configuration = {
-				autoSaveWait: mw.config.get( 'wgDraftAutoSaveWait' ),
-				autoSaveTimeout: mw.config.get( 'wgDraftAutoSaveTimeout' ),
-				autoSaveBasedOnInput: mw.config.get( 'wgDraftAutoSaveInputBased' )
+				autoSaveWait: mediaWiki.config.get( 'wgDraftAutoSaveWait' ),
+				autoSaveTimeout: mediaWiki.config.get( 'wgDraftAutoSaveTimeout' ),
+				autoSaveBasedOnInput: mediaWiki.config.get( 'wgDraftAutoSaveInputBased' )
 			};
 		}
 	};
@@ -179,5 +183,5 @@ function Draft() {
 	};
 }
 
-var wgDraft = new Draft();
+wgDraft = new Draft();
 wgDraft.initialize();
