@@ -84,12 +84,6 @@ class ApiSaveDrafts extends ApiBase {
 		);
 	}
 
-	public function getPossibleErrors() {
-		return array(
-			array( 'notloggedin'),
-		);
-	}
-
 	public function mustBePosted() {
 		return true;
 	}
