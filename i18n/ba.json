@@ -27,5 +27,9 @@
 	"prefs-extension-drafts": "Ҡараламалар",
 	"tooltip-drafts-save": "Ҡаралама рәүешендә һаҡларға",
 	"apihelp-savedrafts-description": "Ҡараламаны һаҡларға",
-	"apihelp-savedrafts-param-id": "Ҡараламаның ID- һы"
+	"apihelp-savedrafts-param-id": "Ҡараламаның ID- һы",
+	"apihelp-savedrafts-param-title": "Ҡараламаның атамаһы",
+	"apihelp-savedrafts-param-text": "Ҡараламаның тексы",
+	"apihelp-savedrafts-param-summary": "Ҡараламаны һүрәтләү",
+	"apihelp-savedrafts-param-minoredit": "Ҡаралама бәләкәй төҙәтеү булыуын күрһәтеүсе логик мәғәнә."
 }
