@@ -6,7 +6,8 @@
 			"Mjbmr",
 			"Reza1615",
 			"Wayiran",
-			"Alirezaaa"
+			"Alirezaaa",
+			"AzorAhai"
 		]
 	},
 	"drafts": "پیش‌نویس‌ها",
@@ -28,5 +29,6 @@
 	"drafts-save-error": "خطا در ذخیره کردن پیش‌نویس",
 	"drafts-enable": "فعال کردن ویژگی ذخیرهٔ پیش‌نویس در فرم ویرایش",
 	"prefs-extension-drafts": "پیش‌نویس‌ها",
-	"tooltip-drafts-save": "ذخیره به عنوان پیش‌نویس"
+	"tooltip-drafts-save": "ذخیره به عنوان پیش‌نویس",
+	"apihelp-savedrafts-description": "ذخیره کردن پیش‌نویس"
 }
