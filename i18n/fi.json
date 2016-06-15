@@ -6,7 +6,8 @@
 			"Nedergard",
 			"Nike",
 			"Str4nd",
-			"Vililikku"
+			"Vililikku",
+			"01miki10"
 		]
 	},
 	"drafts": "Luonnokset",
@@ -20,7 +21,7 @@
 	"drafts-view-nonesaved": "Sinulla ei ole yhtään tallennettua luonnosta tällä hetkellä.",
 	"drafts-view-notice": "Sinulla on $1 tälle sivulle.",
 	"drafts-view-notice-link": "$1 {{PLURAL:$1|luonnos|luonnosta}}",
-	"drafts-view-warn": "Jos siirryt pois tältä sivulta, kadotat kaikki tallentamattomat muutokset.\nHaluatko jatkaa?",
+	"drafts-view-warn": "Haluatko jatkaa pois tältä sivulta? Tekemällä niin menetät kaikki tallentamattomat muutokset tälle sivulle.",
 	"drafts-save": "Tallenna nykyinen teksti luonnoksena",
 	"drafts-save-save": "Tallenna luonnos",
 	"drafts-save-saved": "Tallennettu",
@@ -28,5 +29,6 @@
 	"drafts-save-error": "Luonnoksen tallentaminen epäonnistui",
 	"drafts-enable": "Ota käyttöön luonnoksen tallentaminen muokkausmuodossa",
 	"prefs-extension-drafts": "Luonnokset",
-	"tooltip-drafts-save": "Tallenna luonnoksena"
+	"tooltip-drafts-save": "Tallenna luonnoksena",
+	"apihelp-savedrafts-description": "Tallenna luonnos."
 }
