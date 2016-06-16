@@ -21,7 +21,7 @@
 	"drafts-view-nonesaved": "Sinulla ei ole yhtään tallennettua luonnosta tällä hetkellä.",
 	"drafts-view-notice": "Sinulla on $1 tälle sivulle.",
 	"drafts-view-notice-link": "$1 {{PLURAL:$1|luonnos|luonnosta}}",
-	"drafts-view-warn": "Haluatko jatkaa pois tältä sivulta? Tekemällä niin menetät kaikki tallentamattomat muutokset tälle sivulle.",
+	"drafts-view-warn": "Haluatko poistua tältä sivulta? Kaikki tallentamattomat muutokset tälle sivulle menetetään, jos jatkat.",
 	"drafts-save": "Tallenna nykyinen teksti luonnoksena",
 	"drafts-save-save": "Tallenna luonnos",
 	"drafts-save-saved": "Tallennettu",
