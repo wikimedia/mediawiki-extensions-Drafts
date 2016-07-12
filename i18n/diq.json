@@ -5,7 +5,8 @@
 			"Erdemaslancan",
 			"Marmase",
 			"Mirzali",
-			"Xoser"
+			"Xoser",
+			"Kumkumuk"
 		]
 	},
 	"drafts": "Taslaxi",
@@ -27,5 +28,8 @@
 	"drafts-save-error": "Qeyd kerdişî de yew ğelet biyo",
 	"drafts-enable": "Zey timar kerden hunerê  taslax qeyd kerdış aktiv ke",
 	"prefs-extension-drafts": "Taslaxi",
-	"tooltip-drafts-save": "Taslağ deyne nışanyayış"
+	"tooltip-drafts-save": "Taslağ deyne nışanyayış",
+	"apihelp-savedrafts-param-title": "Sereka taslaği",
+	"apihelp-savedrafts-param-text": "Metinê taslaği",
+	"apihelp-savedrafts-param-summary": "Xulasaya taslaği"
 }
