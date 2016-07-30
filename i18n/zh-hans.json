@@ -40,5 +40,5 @@
 	"apihelp-savedrafts-param-scrolltop": "文本框的scrollTop。",
 	"apihelp-savedrafts-param-text": "草稿文本。",
 	"apihelp-savedrafts-param-summary": "草稿摘要。",
-	"apihelp-savedrafts-param-minoredit": "表示草稿是否是小修改的布尔值。"
+	"apihelp-savedrafts-param-minoredit": "表示草稿是否是小编辑的布尔值。"
 }
