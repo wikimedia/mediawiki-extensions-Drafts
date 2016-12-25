@@ -11,7 +11,8 @@
 			"Fitoschido",
 			"Ryo567",
 			"Csbotero",
-			"Macofe"
+			"Macofe",
+			"Dgstranz"
 		]
 	},
 	"drafts": "Borradores",
@@ -41,6 +42,7 @@
 	"apihelp-savedrafts-param-section": "Índice de la sección de la página que se está editando.",
 	"apihelp-savedrafts-param-starttime": "Hora de inicio del borrador.",
 	"apihelp-savedrafts-param-edittime": "Hora de edición del borrador.",
+	"apihelp-savedrafts-param-scrolltop": "El scrollTop del cuadro de texto.",
 	"apihelp-savedrafts-param-text": "Texto del borrador.",
 	"apihelp-savedrafts-param-summary": "Resumen del borrador.",
 	"apihelp-savedrafts-param-minoredit": "Muestra booleana que representa si el borrador es una edición menor."
