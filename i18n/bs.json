@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"CERminator"
+			"CERminator",
+			"Srdjan m"
 		]
 	},
 	"drafts": "Skice",
@@ -15,7 +16,7 @@
 	"drafts-view-nonesaved": "Trenutno nemate spremljen nijedan draft.",
 	"drafts-view-notice": "Imate $1 za ovu stranicu.",
 	"drafts-view-notice-link": "$1 {{PLURAL:$1|skicu|skice|skica}}",
-	"drafts-view-warn": "Ako napustite ovu stranicu izgubit ćete sve nespremljene izmjene na stranici.\nDa li želite da nastavite?",
+	"drafts-view-warn": "Želite li nastaviti s napuštanjem stranice? Ako to uradite, izgubit ćete sve nesačuvane izmjene na stranici.",
 	"drafts-save": "Spremi ovo kao skicu",
 	"drafts-save-save": "Sačuvaj skicu",
 	"drafts-save-saved": "Spremljeno",
