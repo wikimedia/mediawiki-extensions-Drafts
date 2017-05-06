@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"An13sa",
-			"Kobazulo"
+			"Kobazulo",
+			"Subi"
 		]
 	},
 	"drafts": "Zirriborroak",
@@ -18,5 +19,7 @@
 	"drafts-save-saved": "Gordeta",
 	"drafts-save-saving": "Gordetzen",
 	"drafts-save-error": "Akatsa zirriborroa gordetzean",
-	"tooltip-drafts-save": "Zirriborroa bezala gorde"
+	"prefs-extension-drafts": "Zirriborroak",
+	"tooltip-drafts-save": "Zirriborroa bezala gorde",
+	"apihelp-savedrafts-description": "Gorde zirriborroa."
 }
