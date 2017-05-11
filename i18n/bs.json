@@ -12,7 +12,7 @@
 	"drafts-view-article": "Stranica",
 	"drafts-view-existing": "Postojeće skice",
 	"drafts-view-saved": "Spremljeno",
-	"drafts-view-discard": "Odustani",
+	"drafts-view-discard": "Odbaci",
 	"drafts-view-nonesaved": "Trenutno nemate spremljen nijedan draft.",
 	"drafts-view-notice": "Imate $1 za ovu stranicu.",
 	"drafts-view-notice-link": "$1 {{PLURAL:$1|skicu|skice|skica}}",
