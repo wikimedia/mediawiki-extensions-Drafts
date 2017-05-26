@@ -31,6 +31,7 @@
 	"tooltip-drafts-save": "Used as tooltip for the button {{msg-mw|Drafts-save-save}}.",
 	"accesskey-drafts-save": "{{doc-accesskey}}",
 	"apihelp-savedrafts-description": "{{doc-apihelp-description|savedrafts}}",
+	"apihelp-savedrafts-summary": "{{doc-apihelp-summary|savedrafts}}",
 	"apihelp-savedrafts-param-id": "{{doc-apihelp-param|savedrafts|id}}",
 	"apihelp-savedrafts-param-drafttoken": "{{doc-apihelp-param|savedrafts|drafttoken}}",
 	"apihelp-savedrafts-param-title": "{{doc-apihelp-param|savedrafts|title}}",
