@@ -29,6 +29,7 @@
 	"prefs-extension-drafts": "Rascunhos",
 	"tooltip-drafts-save": "Gravar como rascunho",
 	"apihelp-savedrafts-description": "Gravar um rascunho.",
+	"apihelp-savedrafts-summary": "Gravar um rascunho.",
 	"apihelp-savedrafts-param-id": "O identificador do rascunho.",
 	"apihelp-savedrafts-param-drafttoken": "Chave do rascunho.",
 	"apihelp-savedrafts-param-title": "Título do rascunho.",

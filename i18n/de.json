@@ -31,6 +31,7 @@
 	"prefs-extension-drafts": "Entwürfe",
 	"tooltip-drafts-save": "Eine zwischengespeicherte Version erstellen",
 	"apihelp-savedrafts-description": "Speichert einen Entwurf.",
+	"apihelp-savedrafts-summary": "Speichert einen Entwurf.",
 	"apihelp-savedrafts-param-id": "Die Kennung des Entwurfs.",
 	"apihelp-savedrafts-param-drafttoken": "Token des Entwurfs.",
 	"apihelp-savedrafts-param-title": "Titel des Entwurfs.",

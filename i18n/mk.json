@@ -25,6 +25,7 @@
 	"prefs-extension-drafts": "Недовршени",
 	"tooltip-drafts-save": "Зачувај како нацрт",
 	"apihelp-savedrafts-description": "Зачувај нацрт.",
+	"apihelp-savedrafts-summary": "Зачувај нацрт.",
 	"apihelp-savedrafts-param-id": "Назнака на нацртот.",
 	"apihelp-savedrafts-param-drafttoken": "Шифра на нацртот.",
 	"apihelp-savedrafts-param-title": "Наслов на нацртот.",

@@ -28,6 +28,7 @@
 	"prefs-extension-drafts": "Bozze",
 	"tooltip-drafts-save": "Salva come bozza",
 	"apihelp-savedrafts-description": "Salva una bozza.",
+	"apihelp-savedrafts-summary": "Salva una bozza.",
 	"apihelp-savedrafts-param-id": "L'ID della bozza.",
 	"apihelp-savedrafts-param-drafttoken": "Token della bozza",
 	"apihelp-savedrafts-param-title": "Titolo della bozza.",

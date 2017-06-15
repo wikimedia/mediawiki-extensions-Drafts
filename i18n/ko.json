@@ -5,7 +5,8 @@
 			"Klutzy",
 			"Kwj2772",
 			"아라",
-			"Revi"
+			"Revi",
+			"Ykhwong"
 		]
 	},
 	"drafts": "초안 목록",
@@ -29,6 +30,7 @@
 	"prefs-extension-drafts": "초안 목록",
 	"tooltip-drafts-save": "초안으로 저장하기",
 	"apihelp-savedrafts-description": "초안 저장.",
+	"apihelp-savedrafts-summary": "초안을 저장합니다.",
 	"apihelp-savedrafts-param-id": "초안의 ID",
 	"apihelp-savedrafts-param-drafttoken": "초안 토큰",
 	"apihelp-savedrafts-param-title": "초안 제목",
