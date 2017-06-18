@@ -5,7 +5,8 @@
 			"Ahonc",
 			"Andriykopanytsia",
 			"Base",
-			"Ата"
+			"Ата",
+			"Piramidion"
 		]
 	},
 	"drafts": "Чернетки",
@@ -29,6 +30,7 @@
 	"prefs-extension-drafts": "Чернетки",
 	"tooltip-drafts-save": "Зберегти як чернетку",
 	"apihelp-savedrafts-description": "Зберегти чернетку.",
+	"apihelp-savedrafts-summary": "Зберегти чернетку.",
 	"apihelp-savedrafts-param-id": "ID чернетки.",
 	"apihelp-savedrafts-param-drafttoken": "Токен чернетки.",
 	"apihelp-savedrafts-param-title": "Назва чернетки.",
