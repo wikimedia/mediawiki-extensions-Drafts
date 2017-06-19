@@ -4,7 +4,8 @@
 			"Amire80",
 			"Rotemliss",
 			"YaronSh",
-			"Guycn2"
+			"Guycn2",
+			"המקיסט"
 		]
 	},
 	"drafts": "טיוטות",
@@ -28,6 +29,7 @@
 	"prefs-extension-drafts": "טיוטות",
 	"tooltip-drafts-save": "שמירה כטיוטה",
 	"apihelp-savedrafts-description": "שמירת טיוטה.",
+	"apihelp-savedrafts-summary": "שמור טיוטה",
 	"apihelp-savedrafts-param-id": "המזהה של הטיוטה.",
 	"apihelp-savedrafts-param-drafttoken": "האסימון של הטיוטה.",
 	"apihelp-savedrafts-param-title": "הכותרת של הטיוטה.",

@@ -25,6 +25,7 @@
 	"prefs-extension-drafts": "Borradores",
 	"tooltip-drafts-save": "Guardar como borrador",
 	"apihelp-savedrafts-description": "Guardar un borrador.",
+	"apihelp-savedrafts-summary": "Guardar un borrador.",
 	"apihelp-savedrafts-param-id": "La ID del borrador.",
 	"apihelp-savedrafts-param-drafttoken": "Pase del borrador.",
 	"apihelp-savedrafts-param-title": "Títulu del borrador.",
