@@ -5,7 +5,8 @@
 			"KPu3uC B Poccuu",
 			"Lockal",
 			"Okras",
-			"Александр Сигачёв"
+			"Александр Сигачёв",
+			"Facenapalm"
 		]
 	},
 	"drafts": "Черновики",
@@ -29,8 +30,14 @@
 	"prefs-extension-drafts": "Черновики",
 	"tooltip-drafts-save": "Сохранить как черновик",
 	"apihelp-savedrafts-description": "Сохранить черновик.",
+	"apihelp-savedrafts-summary": "Сохранение черновика.",
 	"apihelp-savedrafts-param-id": "ID черновика.",
+	"apihelp-savedrafts-param-drafttoken": "Токен черновика.",
 	"apihelp-savedrafts-param-title": "Заголовок черновика.",
+	"apihelp-savedrafts-param-section": "Номер редактируемого раздела страницы.",
+	"apihelp-savedrafts-param-starttime": "Время начала черновика.",
+	"apihelp-savedrafts-param-edittime": "Время редактирования черновика.",
+	"apihelp-savedrafts-param-scrolltop": "scrollTop окна редактирования.",
 	"apihelp-savedrafts-param-text": "Текст черновика.",
 	"apihelp-savedrafts-param-summary": "Описание черновика.",
 	"apihelp-savedrafts-param-minoredit": "Логическое значение, указывающее, что черновик является малой правкой."
