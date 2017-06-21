@@ -8,7 +8,8 @@
 			"Mark85296341",
 			"Waihorace",
 			"Wrightbus",
-			"LNDDYL"
+			"LNDDYL",
+			"Corainn"
 		]
 	},
 	"drafts": "草稿",
@@ -30,5 +31,6 @@
 	"drafts-save-error": "儲存草稿時發生錯誤",
 	"drafts-enable": "於編輯表單中啟用保存草稿功能",
 	"prefs-extension-drafts": "草稿",
-	"tooltip-drafts-save": "以草稿形式儲存"
+	"tooltip-drafts-save": "以草稿形式儲存",
+	"apihelp-savedrafts-summary": "儲存草稿"
 }
