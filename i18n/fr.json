@@ -6,7 +6,8 @@
 			"Gomoko",
 			"Grondin",
 			"IAlex",
-			"Verdy p"
+			"Verdy p",
+			"Wladek92"
 		]
 	},
 	"drafts": "Brouillons",
@@ -30,6 +31,7 @@
 	"prefs-extension-drafts": "Brouillons",
 	"tooltip-drafts-save": "Enregistrer comme brouillon",
 	"apihelp-savedrafts-description": "Enregistrer un brouillon.",
+	"apihelp-savedrafts-summary": "Enregistrer un brouillon.",
 	"apihelp-savedrafts-param-id": "L’ID du brouillon.",
 	"apihelp-savedrafts-param-drafttoken": "Jeton de brouillon.",
 	"apihelp-savedrafts-param-title": "Titre du brouillon.",
