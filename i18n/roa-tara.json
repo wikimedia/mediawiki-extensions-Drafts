@@ -26,6 +26,7 @@
 	"prefs-extension-drafts": "Bozze",
 	"tooltip-drafts-save": "Salve cumme bozze",
 	"apihelp-savedrafts-description": "Reggistre 'na bozze.",
+	"apihelp-savedrafts-summary": "Reggistre 'na bozze.",
 	"apihelp-savedrafts-param-id": "L'ID d'a bozze.",
 	"apihelp-savedrafts-param-drafttoken": "Gettone d'a bozze.",
 	"apihelp-savedrafts-param-title": "Titole d'a bozze.",
@@ -35,5 +36,5 @@
 	"apihelp-savedrafts-param-scrolltop": "'U scrollTop d'a buatte d'u teste.",
 	"apihelp-savedrafts-param-text": "Teste d'a bozze.",
 	"apihelp-savedrafts-param-summary": "Riepiloghe d'a bozze.",
-	"apihelp-savedrafts-param-minoredit": "'A rappresendazione booleane ce 'a bozze jè 'nu cangiamende stuèdeche."
+	"apihelp-savedrafts-param-minoredit": "Booleane ca dice ce 'a bozze jè 'nu cangiamende stuèdeche."
 }
