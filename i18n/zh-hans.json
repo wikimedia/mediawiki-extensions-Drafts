@@ -7,7 +7,8 @@
 			"Liuxinyu970226",
 			"Shirayuki",
 			"Wmr89502270",
-			"Yfdyh000"
+			"Yfdyh000",
+			"Wmr"
 		]
 	},
 	"drafts": "草稿",
@@ -31,6 +32,7 @@
 	"prefs-extension-drafts": "草稿",
 	"tooltip-drafts-save": "保存为草稿",
 	"apihelp-savedrafts-description": "保存一段草稿。",
+	"apihelp-savedrafts-summary": "保存一段草稿。",
 	"apihelp-savedrafts-param-id": "草稿的ID。",
 	"apihelp-savedrafts-param-drafttoken": "草稿令牌。",
 	"apihelp-savedrafts-param-title": "草稿标题。",
