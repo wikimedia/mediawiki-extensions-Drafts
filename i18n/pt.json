@@ -19,7 +19,7 @@
 	"drafts-view-nonesaved": "Não tem neste momento quaisquer rascunhos gravados.",
 	"drafts-view-notice": "Tem $1 para esta página.",
 	"drafts-view-notice-link": "$1 {{PLURAL:$1|rascunho|rascunhos}}",
-	"drafts-view-warn": "Tem a certeza que pretende sair desta página? Ao fazê-lo, perderá todas as alterações não guardadas nesta página.",
+	"drafts-view-warn": "Tem a certeza de que pretende sair desta página? Ao fazê-lo, perderá todas as alterações não guardadas nesta página.",
 	"drafts-save": "Gravar como rascunho",
 	"drafts-save-save": "Gravar rascunho",
 	"drafts-save-saved": "Gravado",
