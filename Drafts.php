@@ -69,7 +69,6 @@ $wgAPIModules['savedrafts'] = 'ApiSaveDrafts';
 
 // Internationalization
 $wgMessagesDirs['Drafts'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['Drafts'] = $dir . 'Drafts.i18n.php';
 $wgExtensionMessagesFiles['DraftsAlias'] = $dir . 'Drafts.alias.php';
 
 // Register the Drafts special page
