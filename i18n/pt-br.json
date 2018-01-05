@@ -4,7 +4,8 @@
 			"Cainamarques",
 			"Eduardo.mps",
 			"Luckas",
-			"Dianakc"
+			"Dianakc",
+			"Eduardo Addad de Oliveira"
 		]
 	},
 	"drafts": "Rascunhos",
@@ -24,6 +25,19 @@
 	"drafts-save-saved": "Gravado",
 	"drafts-save-saving": "Salvando",
 	"drafts-save-error": "Erro ao salvar rascunho",
+	"drafts-enable": "Ativar a funcionalidade que permite gravar um rascunho no formulário de edição",
 	"prefs-extension-drafts": "Rascunhos",
-	"tooltip-drafts-save": "Salvar como rascunho"
+	"tooltip-drafts-save": "Salvar como rascunho",
+	"apihelp-savedrafts-description": "Salvar rascunho.",
+	"apihelp-savedrafts-summary": "Salvar rascunho.",
+	"apihelp-savedrafts-param-id": "O identificador do rascunho.",
+	"apihelp-savedrafts-param-drafttoken": "Chave do rascunho.",
+	"apihelp-savedrafts-param-title": "Título do rascunho.",
+	"apihelp-savedrafts-param-section": "Índice da seção da página que está a ser editada.",
+	"apihelp-savedrafts-param-starttime": "A hora de início do rascunho.",
+	"apihelp-savedrafts-param-edittime": "A hora de edição do rascunho.",
+	"apihelp-savedrafts-param-scrolltop": "A parte superior da caixa de texto.",
+	"apihelp-savedrafts-param-text": "Texto de rascunho.",
+	"apihelp-savedrafts-param-summary": "Resumo do rascunho.",
+	"apihelp-savedrafts-param-minoredit": "Valor booleano que representa se o rascunho é uma edição menor."
 }
