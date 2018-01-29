@@ -9,7 +9,8 @@
 			"Waihorace",
 			"Wrightbus",
 			"LNDDYL",
-			"Corainn"
+			"Corainn",
+			"Kly"
 		]
 	},
 	"drafts": "草稿",
@@ -32,5 +33,16 @@
 	"drafts-enable": "於編輯表單中啟用保存草稿功能",
 	"prefs-extension-drafts": "草稿",
 	"tooltip-drafts-save": "以草稿形式儲存",
-	"apihelp-savedrafts-summary": "儲存草稿"
+	"apihelp-savedrafts-description": "儲存草稿",
+	"apihelp-savedrafts-summary": "儲存草稿",
+	"apihelp-savedrafts-param-id": "草稿 ID",
+	"apihelp-savedrafts-param-drafttoken": "草稿令牌。",
+	"apihelp-savedrafts-param-title": "草稿標題。",
+	"apihelp-savedrafts-param-section": "要編輯的頁面段落索引。",
+	"apihelp-savedrafts-param-starttime": "草稿起始時間。",
+	"apihelp-savedrafts-param-edittime": "草稿結束時間。",
+	"apihelp-savedrafts-param-scrolltop": "文字框 scrollTop。",
+	"apihelp-savedrafts-param-text": "草稿文字。",
+	"apihelp-savedrafts-param-summary": "草稿摘要。",
+	"apihelp-savedrafts-param-minoredit": "表示草稿內容是否為小修改的布林值。"
 }
