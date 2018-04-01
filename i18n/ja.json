@@ -7,7 +7,8 @@
 			"Shirayuki",
 			"Rxy",
 			"Otokoume",
-			"2nd-player"
+			"2nd-player",
+			"Yusuke1109"
 		]
 	},
 	"drafts": "下書き",
@@ -31,6 +32,7 @@
 	"prefs-extension-drafts": "下書き",
 	"tooltip-drafts-save": "下書きとして保存する",
 	"apihelp-savedrafts-description": "下書きを保存します。",
+	"apihelp-savedrafts-summary": "下書きを保存します。",
 	"apihelp-savedrafts-param-id": "下書きの ID",
 	"apihelp-savedrafts-param-drafttoken": "下書きのトークン",
 	"apihelp-savedrafts-param-title": "下書きのタイトル",
