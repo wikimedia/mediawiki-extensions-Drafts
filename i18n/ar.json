@@ -23,5 +23,19 @@
 	"drafts-save-saved": "محفوظة",
 	"drafts-save-saving": "حفظ",
 	"drafts-save-error": "خطأ أثناء حفظ المسودة",
-	"tooltip-drafts-save": "حفظ كمسودة"
+	"drafts-enable": "تمكين ميزة لحفظ مسودة في نموذج تحرير",
+	"prefs-extension-drafts": "مسودات",
+	"tooltip-drafts-save": "حفظ كمسودة",
+	"apihelp-savedrafts-description": "حفظ مسودة.",
+	"apihelp-savedrafts-summary": "حفظ مسودة.",
+	"apihelp-savedrafts-param-id": "معرف المسودة.",
+	"apihelp-savedrafts-param-drafttoken": "الرمز المميز للمسودة.",
+	"apihelp-savedrafts-param-title": "عنوان المسودة.",
+	"apihelp-savedrafts-param-section": "فهرس قسم الصفحة جارٍ تعديله.",
+	"apihelp-savedrafts-param-starttime": "وقت بدء المسودة.",
+	"apihelp-savedrafts-param-edittime": "وقت تحرير المسودة.",
+	"apihelp-savedrafts-param-scrolltop": "scrollTop صندوق النص.",
+	"apihelp-savedrafts-param-text": "نص المسودة.",
+	"apihelp-savedrafts-param-summary": "ملخص المسودة.",
+	"apihelp-savedrafts-param-minoredit": "بوليان يمثل ما إذا كان المسودة تعديلا طفيفا."
 }
