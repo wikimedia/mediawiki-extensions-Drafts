@@ -31,7 +31,7 @@ class ApiSaveDrafts extends ApiBase {
 		$this->getResult()->addValue(
 			null,
 			$this->getModuleName(),
-			array( 'id' => $draft->getID() )
+			[ 'id' => $draft->getID() ]
 		);
 
 	}
@@ -44,44 +44,44 @@ class ApiSaveDrafts extends ApiBase {
 	}
 
 	public function getAllowedParams() {
-		return array(
-			'id' => array(
+		return [
+			'id' => [
 				ApiBase::PARAM_TYPE => 'integer',
-			),
-			'drafttoken' => array(
+			],
+			'drafttoken' => [
 				ApiBase::PARAM_TYPE => 'string',
 				ApiBase::PARAM_REQUIRED => true,
-			),
-			'title' => array(
+			],
+			'title' => [
 				ApiBase::PARAM_TYPE => 'string',
 				ApiBase::PARAM_REQUIRED => true,
-			),
-			'section' => array(
+			],
+			'section' => [
 				ApiBase::PARAM_TYPE => 'integer',
-			),
-			'starttime' => array(
+			],
+			'starttime' => [
 				ApiBase::PARAM_REQUIRED => true,
-			),
-			'edittime' => array(
+			],
+			'edittime' => [
 				ApiBase::PARAM_REQUIRED => true,
-			),
-			'scrolltop' => array(
+			],
+			'scrolltop' => [
 				ApiBase::PARAM_TYPE => 'integer',
 				ApiBase::PARAM_REQUIRED => true,
-			),
-			'text' => array(
+			],
+			'text' => [
 				ApiBase::PARAM_TYPE => 'string',
 				ApiBase::PARAM_REQUIRED => true,
-			),
-			'summary' => array(
+			],
+			'summary' => [
 				ApiBase::PARAM_TYPE => 'string',
-			),
-			'minoredit' => array(
+			],
+			'minoredit' => [
 				ApiBase::PARAM_TYPE => 'boolean',
 				ApiBase::PARAM_REQUIRED => true,
-			),
+			],
 			'token' => null,
-		);
+		];
 	}
 
 	public function mustBePosted() {

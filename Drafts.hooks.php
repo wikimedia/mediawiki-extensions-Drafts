@@ -22,11 +22,11 @@ class DraftHooks {
 	 * @return bool
 	 */
 	public static function onGetPreferences( User $user, array &$preferences ) {
-		$preferences['extensionDrafts_enable'] = array(
+		$preferences['extensionDrafts_enable'] = [
 			'type' => 'toggle',
 			'label-message' => 'drafts-enable',
 			'section' => 'editing/extension-drafts'
-		);
+		];
 		return true;
 	}
 
@@ -35,11 +35,11 @@ class DraftHooks {
 	 * @return bool
 	 */
 	public static function schema( $updater = null ) {
-		$updater->addExtensionUpdate( array( 'addTable', 'drafts',
-			__DIR__ . '/Drafts.sql', true ) );
+		$updater->addExtensionUpdate( [ 'addTable', 'drafts',
+			__DIR__ . '/Drafts.sql', true ] );
 		if ( $updater->getDb()->getType() != 'sqlite' ) {
-			$updater->addExtensionUpdate( array( 'modifyField', 'drafts', 'draft_token',
-				__DIR__ . '/patch-draft_token.sql', true ) );
+			$updater->addExtensionUpdate( [ 'modifyField', 'drafts', 'draft_token',
+				__DIR__ . '/patch-draft_token.sql', true ] );
 		}
 		return true;
 	}
@@ -136,7 +136,7 @@ class DraftHooks {
 		if ( $numDrafts  > 0 ) {
 			if ( $request->getText( 'action' ) !== 'submit' ) {
 				$out->addHTML( Xml::openElement(
-					'div', array( 'id' => 'drafts-list-box' ) )
+					'div', [ 'id' => 'drafts-list-box' ] )
 				);
 				$out->addHTML( Xml::element(
 					'h3', null, $context->msg( 'drafts-view-existing' )->text() )
@@ -148,10 +148,10 @@ class DraftHooks {
 					Xml::encodeJsVar( $context->msg( 'drafts-view-warn' )->text() ) .
 					")";
 				$link = Xml::element( 'a',
-					array(
+					[
 						'href' => $context->getTitle()->getFullURL( 'action=edit' ),
 						'onclick' => $jsWarn
-					),
+					],
 					$context->msg( 'drafts-view-notice-link' )->numParams( $numDrafts )->text()
 				);
 				$out->addHTML( $context->msg( 'drafts-view-notice' )->rawParams( $link )->escaped() );
@@ -196,18 +196,18 @@ class DraftHooks {
 
 			// Build XML
 			$buttons['savedraft'] = Xml::openElement( 'script',
-				array(
+				[
 					'type' => 'text/javascript',
 					'language' => 'javascript'
-				)
+				]
 			);
-			$buttonAttribs = array(
+			$buttonAttribs = [
 				'id' => 'wpDraftSave',
 				'name' => 'wpDraftSave',
 				'class' => 'mw-ui-button',
 				'tabindex' => ++$tabindex,
 				'value' => $context->msg( 'drafts-save-save' )->text(),
-			);
+			];
 			$attribs = Linker::tooltipAndAccesskeyAttribs( 'drafts-save' );
 			if ( isset( $attribs['accesskey'] ) ) {
 				$buttonAttribs['accesskey'] = $attribs['accesskey'];
@@ -217,40 +217,40 @@ class DraftHooks {
 			}
 			$buttons['savedraft'] .= Xml::encodeJsCall(
 				'document.write',
-				array( Xml::element( 'input',
-					array( 'type' => 'submit' ) + $buttonAttribs
+				[ Xml::element( 'input',
+					[ 'type' => 'submit' ] + $buttonAttribs
 					+ ( $request->getText( 'action' ) !== 'submit' ?
-						array ( 'disabled' => 'disabled' )
-						: array()
+						[ 'disabled' => 'disabled' ]
+						: []
 					)
-				) )
+				) ]
 			);
 			$buttons['savedraft'] .= Xml::closeElement( 'script' );
 			$buttons['savedraft'] .= Xml::openElement( 'noscript' );
 			$buttons['savedraft'] .= Xml::element( 'input',
-				array( 'type' => 'submit' ) + $buttonAttribs
+				[ 'type' => 'submit' ] + $buttonAttribs
 			);
 			$buttons['savedraft'] .= Xml::closeElement( 'noscript' );
 			$buttons['savedraft'] .= Xml::element( 'input',
-				array(
+				[
 					'type' => 'hidden',
 					'name' => 'wpDraftToken',
 					'value' => MWCryptRand::generateHex( 32 )
-				)
+				]
 			);
 			$buttons['savedraft'] .= Xml::element( 'input',
-				array(
+				[
 					'type' => 'hidden',
 					'name' => 'wpDraftID',
 					'value' => $request->getInt( 'draft', '' )
-				)
+				]
 			);
 			$buttons['savedraft'] .= Xml::element( 'input',
-				array(
+				[
 					'type' => 'hidden',
 					'name' => 'wpDraftTitle',
 					'value' => $context->getTitle()->getPrefixedText()
-				)
+				]
 			);
 		}
 		// Continue

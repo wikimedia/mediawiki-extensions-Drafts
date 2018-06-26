@@ -25,14 +25,14 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 /* Configuration */
 
 // Credits
-$wgExtensionCredits['other'][] = array(
+$wgExtensionCredits['other'][] = [
 	'path' => __FILE__,
 	'name' => 'Drafts',
 	'version' => '0.3.0',
 	'author' => 'Trevor Parscal',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:Drafts',
 	'descriptionmsg' => 'drafts-desc',
-);
+];
 
 // Shortcut to this extension directory
 $dir = __DIR__ . '/';
@@ -97,22 +97,22 @@ $wgHooks['EditPageBeforeEditButtons'][] = 'DraftHooks::onEditPageBeforeEditButto
 $wgHooks['EditPage::showEditForm:initial'][] = 'DraftHooks::loadForm';
 
 // Register JS / CSS
-$wgResourceModules[ 'ext.Drafts' ] = array(
+$wgResourceModules[ 'ext.Drafts' ] = [
 	'scripts'       => 'modules/ext.Drafts.js',
 	'styles'        => 'modules/ext.Drafts.css',
 	'localBasePath' => $dir,
 	'remoteExtPath' => 'Drafts',
-	'dependencies'  => array(
+	'dependencies'  => [
 		'mediawiki.legacy.wikibits',
 		'mediawiki.jqueryMsg',
-	),
-	'messages' => array(
+	],
+	'messages' => [
 		'drafts-save-save',
 		'drafts-save-saved',
 		'drafts-save-saving',
 		'drafts-save-error',
-	),
-);
+	],
+];
 
 // Register database operations
 $wgHooks['LoadExtensionSchemaUpdates'][] = 'DraftHooks::schema';

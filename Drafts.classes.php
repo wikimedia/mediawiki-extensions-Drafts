@@ -31,11 +31,11 @@ abstract class Drafts {
 		// Get database connection
 		$dbr = wfGetDB( DB_SLAVE );
 		// Builds where clause
-		$where = array(
+		$where = [
 			'draft_savetime > ' . $dbr->addQuotes(
 				$dbr->timestamp( self::getDraftAgeCutoff() )
 			)
-		);
+		];
 		// Checks if a specific title was given
 		if ( $title !== null ) {
 			// Get page id from title
@@ -76,12 +76,12 @@ abstract class Drafts {
 			$dbw = wfGetDB( DB_MASTER );
 			// Removes expired drafts from database
 			$dbw->delete( 'drafts',
-				array(
+				[
 					'draft_savetime < ' .
 						$dbw->addQuotes(
 							$dbw->timestamp( self::getDraftAgeCutoff() )
 						)
-				),
+				],
 				__METHOD__
 			);
 		}
@@ -98,13 +98,13 @@ abstract class Drafts {
 		$dbw = wfGetDB( DB_MASTER );
 		// Updates title and namespace of drafts upon moving
 		$dbw->update( 'drafts',
-			array(
+			[
 				'draft_namespace' => $newTitle->getNamespace(),
 				'draft_title' => $newTitle->getDBkey()
-			),
-			array(
+			],
+			[
 				'draft_page' => $newTitle->getArticleID()
-			),
+			],
 			__METHOD__
 		);
 	}
@@ -123,11 +123,11 @@ abstract class Drafts {
 		// Gets database connection
 		$dbw = wfGetDB( DB_MASTER );
 		// Builds where clause
-		$where = array(
+		$where = [
 			'draft_savetime > ' . $dbw->addQuotes(
 				$dbw->timestamp( self::getDraftAgeCutoff() )
 			)
-		);
+		];
 		// Checks if specific title was given
 		if ( $title !== null ) {
 			// Get page id from title
@@ -152,7 +152,7 @@ abstract class Drafts {
 		}
 		// Gets matching drafts from database
 		$result = $dbw->select( 'drafts', '*', $where, __METHOD__ );
-		$drafts = array();
+		$drafts = [];
 		if ( $result ) {
 			// Creates an array of matching drafts
 			foreach( $result as $row ) {
@@ -182,18 +182,18 @@ abstract class Drafts {
 
 			// Build XML
 			$html .= Xml::openElement( 'table',
-				array(
+				[
 					'cellpadding' => 5,
 					'cellspacing' => 0,
 					'width' => '100%',
 					'border' => 0,
 					'id' => 'drafts-list-table'
-				)
+				]
 			);
 
 			$html .= Xml::openElement( 'tr' );
 			$html .= Xml::element( 'th',
-				array( 'width' => '75%', 'nowrap' => 'nowrap' ),
+				[ 'width' => '75%', 'nowrap' => 'nowrap' ],
 				wfMessage( 'drafts-view-article' )->text()
 			);
 			$html .=  Xml::element( 'th',
@@ -247,14 +247,14 @@ abstract class Drafts {
 				$html .= Xml::openElement( 'tr' );
 				$html .= Xml::openElement( 'td' );
 				$html .= Xml::element( 'a',
-					array(
+					[
 						'href' => $urlLoad,
 						'style' => 'font-weight:' .
 							(
 								$currentDraft->getID() == $draft->getID() ?
 								'bold' : 'normal'
 							)
-					),
+					],
 					$htmlTitle
 				);
 				$html .= Xml::closeElement( 'td' );
@@ -268,10 +268,10 @@ abstract class Drafts {
 					Xml::encodeJsVar( wfMessage( 'drafts-view-warn' )->text() ) .
 					")";
 				$html .= Xml::element( 'a',
-					array(
+					[
 						'href' => $urlDiscard,
 						'onclick' => $jsClick
-					),
+					],
 					wfMessage( 'drafts-view-discard' )->text()
 					);
 				$html .= Xml::closeElement( 'td' );
@@ -555,11 +555,11 @@ class Draft {
 		$dbw = wfGetDB( DB_MASTER );
 		// Gets drafts for this article and user from database
 		$row = $dbw->selectRow( 'drafts',
-			array( '*' ),
-			array(
+			[ '*' ],
+			[
 				'draft_id' => (int) $this->id,
 				'draft_user' => (int) $wgUser->getID()
-			),
+			],
 			__METHOD__
 		);
 		// Checks if query returned any results
@@ -593,7 +593,7 @@ class Draft {
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->startAtomic( __METHOD__ );
 		// Builds insert/update information
-		$data = array(
+		$data = [
 			'draft_token' => (string) $this->getToken(),
 			'draft_user' => (int) $wgUser->getID(),
 			'draft_namespace' => (int) $this->title->getNamespace(),
@@ -608,27 +608,27 @@ class Draft {
 			'draft_text' => (string) $this->text,
 			'draft_summary' => (string) $this->summary,
 			'draft_minoredit' => (int) $this->minoredit
-		);
+		];
 		// Checks if draft already exists
 		if ( $this->exists === true ) {
 			// Updates draft information
 			$dbw->update( 'drafts',
 				$data,
-				array(
+				[
 					'draft_id' => (int) $this->id,
 					'draft_user' => (int) $wgUser->getID()
-				),
+				],
 				__METHOD__
 			);
 		} else {
 			// Gets a draft token exists for the current user and article
 			$existingRow = $dbw->selectField( 'drafts', 'draft_token',
-				array(
+				[
 					'draft_user' => $data['draft_user'],
 					'draft_namespace' => $data['draft_namespace'],
 					'draft_title' => $data['draft_title'],
 					'draft_token' => $data['draft_token']
-				),
+				],
 				__METHOD__
 			);
 			// Checks if token existed, meaning it has been used already for
@@ -660,10 +660,10 @@ class Draft {
 		$dbw = wfGetDB( DB_MASTER );
 		// Deletes draft from database verifying propper user to avoid hacking!
 		$dbw->delete( 'drafts',
-			array(
+			[
 				'draft_id' => $this->id,
 				'draft_user' =>  $user->getID()
-			),
+			],
 			__METHOD__
 		);
 		// Updates state

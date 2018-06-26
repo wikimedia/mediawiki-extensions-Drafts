@@ -64,10 +64,10 @@ class SpecialDrafts extends SpecialPage {
 			// Add a summary
 			$out->wrapWikiMsg(
 				'<div class="mw-drafts-summary">$1</div>',
-				array(
+				[
 					'drafts-view-summary',
 					$this->getLanguage()->formatNum( $egDraftsLifeSpan )
-				)
+				]
 			);
 			$out->addHTML( Drafts::display() );
 		}
