@@ -25,8 +25,8 @@ function Draft() {
 	 * Sets the state of the draft
 	 * @param {String} newState
 	 */
-	this.setState = function(newState) {
-		if (state !== newState) {
+	this.setState = function( newState ) {
+		if ( state !== newState ) {
 			// Stores state information
 			state = newState;
 			// Updates UI elements
@@ -69,7 +69,7 @@ function Draft() {
 	this.save = function( event ) {
 		event.preventDefault();
 		// Checks if a save is already taking place
-		if (state === 'saving') {
+		if ( state === 'saving' ) {
 			// Exits function immediately
 			return;
 		}

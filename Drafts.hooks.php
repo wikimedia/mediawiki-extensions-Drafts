@@ -133,7 +133,7 @@ class DraftHooks {
 
 		$numDrafts = Drafts::num( $context->getTitle() );
 		// Show list of drafts
-		if ( $numDrafts  > 0 ) {
+		if ( $numDrafts > 0 ) {
 			if ( $request->getText( 'action' ) !== 'submit' ) {
 				$out->addHTML( Xml::openElement(
 					'div', [ 'id' => 'drafts-list-box' ] )

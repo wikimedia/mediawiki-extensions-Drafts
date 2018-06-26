@@ -18,7 +18,7 @@ class SpecialDrafts extends SpecialPage {
 	/**
 	 * Executes special page rendering and data processing
 	 *
-	 * @param $sub Mixed: MediaWiki supplied sub-page path
+	 * @param string|null $sub MediaWiki supplied sub-page path
 	 * @throws PermissionsError
 	 */
 	public function execute( $sub ) {
@@ -30,10 +30,12 @@ class SpecialDrafts extends SpecialPage {
 
 		// Begin output
 		$this->setHeaders();
+
 		// Make sure the user is logged in
 		if ( !$user->isLoggedIn() ) {
 			throw new PermissionsError( 'read' );
 		}
+
 		// Handle discarding
 		$draft = Draft::newFromID( $request->getIntOrNull( 'discard' ) );
 		if ( $draft->exists() ) {
@@ -42,7 +44,7 @@ class SpecialDrafts extends SpecialPage {
 			// Redirect to the article editor or view if returnto was set
 			$section = $request->getIntOrNull( 'section' );
 			$urlSection = $section !== null ? "&section={$section}" : '';
-			switch( $request->getText( 'returnto' ) ) {
+			switch ( $request->getText( 'returnto' ) ) {
 				case 'edit':
 					$title = Title::newFromDBKey( $draft->getTitle() );
 					$out->redirect(
@@ -57,6 +59,7 @@ class SpecialDrafts extends SpecialPage {
 					break;
 			}
 		}
+
 		$count = Drafts::num();
 		if ( $count === 0 ) {
 			$out->addWikiMsg( 'drafts-view-nonesaved' );

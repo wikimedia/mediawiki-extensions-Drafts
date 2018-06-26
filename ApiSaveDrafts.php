@@ -8,7 +8,6 @@
  */
 class ApiSaveDrafts extends ApiBase {
 	public function execute() {
-
 		if ( $this->getUser()->isAnon() ) {
 			$this->dieUsage( 'You must be logged in to save drafts.', 'notloggedin' );
 		}
@@ -33,7 +32,6 @@ class ApiSaveDrafts extends ApiBase {
 			$this->getModuleName(),
 			[ 'id' => $draft->getID() ]
 		);
-
 	}
 
 	/**
@@ -87,7 +85,6 @@ class ApiSaveDrafts extends ApiBase {
 	public function mustBePosted() {
 		return true;
 	}
-
 
 	public function needsToken() {
 		return 'csrf';

@@ -34,9 +34,6 @@ $wgExtensionCredits['other'][] = [
 	'descriptionmsg' => 'drafts-desc',
 ];
 
-// Shortcut to this extension directory
-$dir = __DIR__ . '/';
-
 // Seconds of inactivity after change before autosaving
 // Use the value 0 to disable autosave
 $egDraftsAutoSaveWait = 120;
@@ -58,22 +55,21 @@ $egDraftsLifeSpan = 30;
 $egDraftsCleanRatio = 1000;
 
 // Save and View components
-$wgAutoloadClasses['Drafts'] = $dir . 'Drafts.classes.php';
-$wgAutoloadClasses['Draft'] = $dir . 'Drafts.classes.php';
-$wgAutoloadClasses['DraftHooks'] = $dir . 'Drafts.hooks.php';
+$wgAutoloadClasses['Drafts'] = __DIR__ . '/Drafts.classes.php';
+$wgAutoloadClasses['Draft'] = __DIR__ . '/Drafts.classes.php';
+$wgAutoloadClasses['DraftHooks'] = __DIR__ . '/Drafts.hooks.php';
 
 // API module
-$wgAutoloadClasses['ApiSaveDrafts'] = "$dir/ApiSaveDrafts.php";
+$wgAutoloadClasses['ApiSaveDrafts'] = __DIR__ . '/ApiSaveDrafts.php';
 $wgAPIModules['savedrafts'] = 'ApiSaveDrafts';
-
 
 // Internationalization
 $wgMessagesDirs['Drafts'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['DraftsAlias'] = $dir . 'Drafts.alias.php';
+$wgExtensionMessagesFiles['DraftsAlias'] = __DIR__ . '/Drafts.alias.php';
 
 // Register the Drafts special page
 $wgSpecialPages['Drafts'] = 'SpecialDrafts';
-$wgAutoloadClasses['SpecialDrafts'] = $dir . 'SpecialDrafts.php';
+$wgAutoloadClasses['SpecialDrafts'] = __DIR__ . '/SpecialDrafts.php';
 
 // Values for options
 $wgHooks['UserGetDefaultOptions'][] = 'DraftHooks::onUserGetDefaultOptions';
@@ -97,10 +93,10 @@ $wgHooks['EditPageBeforeEditButtons'][] = 'DraftHooks::onEditPageBeforeEditButto
 $wgHooks['EditPage::showEditForm:initial'][] = 'DraftHooks::loadForm';
 
 // Register JS / CSS
-$wgResourceModules[ 'ext.Drafts' ] = [
+$wgResourceModules['ext.Drafts'] = [
 	'scripts'       => 'modules/ext.Drafts.js',
 	'styles'        => 'modules/ext.Drafts.css',
-	'localBasePath' => $dir,
+	'localBasePath' => __DIR__,
 	'remoteExtPath' => 'Drafts',
 	'dependencies'  => [
 		'mediawiki.legacy.wikibits',
