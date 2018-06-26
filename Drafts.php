@@ -55,8 +55,8 @@ $egDraftsLifeSpan = 30;
 $egDraftsCleanRatio = 1000;
 
 // Save and View components
-$wgAutoloadClasses['Drafts'] = __DIR__ . '/Drafts.classes.php';
-$wgAutoloadClasses['Draft'] = __DIR__ . '/Drafts.classes.php';
+$wgAutoloadClasses['Drafts'] = __DIR__ . '/Drafts.class.php';
+$wgAutoloadClasses['Draft'] = __DIR__ . '/Draft.class.php';
 $wgAutoloadClasses['DraftHooks'] = __DIR__ . '/Drafts.hooks.php';
 
 // API module
