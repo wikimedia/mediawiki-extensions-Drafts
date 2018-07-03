@@ -199,7 +199,7 @@ class DraftHooks {
 			if ( isset( $attribs['accesskey'] ) ) {
 				$buttonAttribs['accesskey'] = $attribs['accesskey'];
 			}
-			if ( isset( $attribs['tooltip'] ) ) {
+			if ( isset( $attribs['title'] ) ) {
 				$buttonAttribs['title'] = $attribs['title'];
 			}
 			$buttons['savedraft'] .= Xml::encodeJsCall(
