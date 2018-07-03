@@ -36,10 +36,10 @@ class DraftHooks {
 	 */
 	public static function schema( $updater = null ) {
 		$updater->addExtensionUpdate( [ 'addTable', 'drafts',
-			__DIR__ . '/Drafts.sql', true ] );
+			__DIR__ . '/sql/Drafts.sql', true ] );
 		if ( $updater->getDb()->getType() != 'sqlite' ) {
 			$updater->addExtensionUpdate( [ 'modifyField', 'drafts', 'draft_token',
-				__DIR__ . '/patch-draft_token.sql', true ] );
+				__DIR__ . '/sql/patch-draft_token.sql', true ] );
 		}
 		return true;
 	}
