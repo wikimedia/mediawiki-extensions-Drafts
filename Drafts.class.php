@@ -30,7 +30,7 @@ abstract class Drafts {
 		global $wgUser;
 
 		// Get database connection
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 
 		// Builds where clause
 		$where = [
