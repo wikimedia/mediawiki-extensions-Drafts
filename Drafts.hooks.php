@@ -31,11 +31,10 @@ class DraftHooks {
 	 * @param DatabaseUpdater $updater
 	 */
 	public static function schema( $updater ) {
-		$updater->addExtensionUpdate( [ 'addTable', 'drafts',
-			__DIR__ . '/sql/Drafts.sql', true ] );
+		$updater->addExtensionTable( 'drafts', __DIR__ . '/sql/Drafts.sql' );
 		if ( $updater->getDb()->getType() != 'sqlite' ) {
-			$updater->addExtensionUpdate( [ 'modifyField', 'drafts', 'draft_token',
-				__DIR__ . '/sql/patch-draft_token.sql', true ] );
+			$updater->modifyExtensionField( 'drafts', 'draft_token',
+				__DIR__ . '/sql/patch-draft_token.sql' );
 		}
 	}
 
