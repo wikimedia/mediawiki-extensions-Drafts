@@ -8,18 +8,15 @@
 
 class DraftHooks {
 	/**
-	 * @param $defaultOptions array
-	 * @return bool
+	 * @param array $defaultOptions
 	 */
 	public static function onUserGetDefaultOptions( &$defaultOptions ) {
 		$defaultOptions['extensionDrafts_enable'] = true;
-		return true;
 	}
 
 	/**
-	 * @param $user User
-	 * @param $preferences array
-	 * @return bool
+	 * @param User $user
+	 * @param array $preferences
 	 */
 	public static function onGetPreferences( User $user, array &$preferences ) {
 		$preferences['extensionDrafts_enable'] = [
@@ -31,17 +28,15 @@ class DraftHooks {
 	}
 
 	/**
-	 * @param $updater DatabaseUpdater
-	 * @return bool
+	 * @param DatabaseUpdater $updater
 	 */
-	public static function schema( $updater = null ) {
+	public static function schema( $updater ) {
 		$updater->addExtensionUpdate( [ 'addTable', 'drafts',
 			__DIR__ . '/sql/Drafts.sql', true ] );
 		if ( $updater->getDb()->getType() != 'sqlite' ) {
 			$updater->addExtensionUpdate( [ 'modifyField', 'drafts', 'draft_token',
 				__DIR__ . '/sql/patch-draft_token.sql', true ] );
 		}
-		return true;
 	}
 
 	/**
@@ -50,8 +45,6 @@ class DraftHooks {
 	public static function onSpecialMovepageAfterMove( $mp, $ot, $nt ) {
 		// Update all drafts of old article to new article for all users
 		Drafts::move( $ot, $nt );
-		// Continue
-		return true;
 	}
 
 	/**
@@ -68,8 +61,6 @@ class DraftHooks {
 			// Discard the draft
 			$draft->discard( $user );
 		}
-		// Continue
-		return true;
 	}
 
 	/**
@@ -157,8 +148,6 @@ class DraftHooks {
 				$out->addHTML( $context->msg( 'drafts-view-notice' )->rawParams( $link )->escaped() );
 			}
 		}
-		// Continue
-		return true;
 	}
 
 	/**
@@ -172,8 +161,6 @@ class DraftHooks {
 			// Modify the error so it's clear we want to remain in edit mode
 			$error = ' ';
 		}
-		// Continue
-		return true;
 	}
 
 	/**
@@ -253,15 +240,12 @@ class DraftHooks {
 				]
 			);
 		}
-		// Continue
-		return true;
 	}
 
 	/**
 	 * Hook for ResourceLoaderGetConfigVars
 	 *
 	 * @param array $vars
-	 * @return bool
 	 */
 	public static function onResourceLoaderGetConfigVars( &$vars ) {
 		global $egDraftsAutoSaveWait, $egDraftsAutoSaveTimeout,
@@ -269,7 +253,6 @@ class DraftHooks {
 		$vars['wgDraftAutoSaveWait'] = $egDraftsAutoSaveWait;
 		$vars['wgDraftAutoSaveTimeout'] = $egDraftsAutoSaveTimeout;
 		$vars['wgDraftAutoSaveInputBased'] = $egDraftsAutoSaveInputBased;
-		return true;
 	}
 
 }
