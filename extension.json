@@ -9,6 +9,9 @@
 	"descriptionmsg": "drafts-desc",
 	"license-name": "GPL-2.0-or-later",
 	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
 	"config_prefix": "eg",
 	"config": {
 		"DraftsAutoSaveWait": {
