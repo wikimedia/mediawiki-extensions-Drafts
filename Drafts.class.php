@@ -118,15 +118,15 @@ abstract class Drafts {
 	/**
 	 * Gets a list of existing drafts for a specific user
 	 *
-	 * @param Title $title [optional] Title of article, defaults to all articles
-	 * @param int $userID [optional] ID of user, defaults to current user
+	 * @param Title|null $title [optional] Title of article, defaults to all articles
+	 * @param int|null $userID [optional] ID of user, defaults to current user
 	 * @return array|null List of drafts or null
 	 */
 	public static function get( $title = null, $userID = null ) {
 		global $wgUser;
 
 		// Removes expired drafts for a more accurate list
-		Drafts::clean();
+		self::clean();
 
 		// Gets database connection
 		$dbw = wfGetDB( DB_MASTER );
@@ -180,8 +180,8 @@ abstract class Drafts {
 	/**
 	 * Outputs a table of existing drafts
 	 *
-	 * @param Title $title [optional] Title of article, defaults to all articles
-	 * @param int $userID [optional] ID of user, defaults to current user
+	 * @param Title|null $title [optional] Title of article, defaults to all articles
+	 * @param int|null $userID [optional] ID of user, defaults to current user
 	 * @return string HTML to be shown to the user
 	 */
 	public static function display( $title = null, $userID = null ) {
@@ -190,7 +190,7 @@ abstract class Drafts {
 		// Gets draftID
 		$currentDraft = Draft::newFromID( $wgRequest->getIntOrNull( 'draft' ) );
 		// Output HTML for list of drafts
-		$drafts = Drafts::get( $title, $userID );
+		$drafts = self::get( $title, $userID );
 		if ( count( $drafts ) > 0 ) {
 			$html = '';
 
@@ -210,7 +210,7 @@ abstract class Drafts {
 				[ 'width' => '75%', 'nowrap' => 'nowrap' ],
 				wfMessage( 'drafts-view-article' )->text()
 			);
-			$html .=  Xml::element( 'th',
+			$html .= Xml::element( 'th',
 				null,
 				wfMessage( 'drafts-view-saved' )->text()
 			);

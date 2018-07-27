@@ -246,7 +246,7 @@ class Draft {
 
 	/**
 	 * Generic constructor
-	 * @param int $id [optional] ID to use
+	 * @param int|null $id [optional] ID to use
 	 * @param bool $autoload [optional] Whether to load from database
 	 */
 	public function __construct( $id = null, $autoload = true ) {
@@ -371,7 +371,7 @@ class Draft {
 
 	/**
 	 * Deletes draft row from database
-	 * @param int $user [optional] User ID, defaults to current user ID
+	 * @param int|null $user [optional] User ID, defaults to current user ID
 	 */
 	public function discard( $user = null ) {
 		global $wgUser;

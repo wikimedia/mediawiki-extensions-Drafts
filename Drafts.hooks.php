@@ -91,8 +91,7 @@ class DraftHooks {
 			// Save draft on non-save submission
 			if ( $request->getVal( 'action' ) == 'submit' &&
 				$user->matchEditToken( $request->getText( 'wpEditToken' ) ) &&
-				is_null( $request->getText( 'wpDraftTitle' ) ) )
-			{
+				is_null( $request->getText( 'wpDraftTitle' ) ) ) {
 				// If the draft wasn't specified in the url, try using a
 				// form-submitted one
 				if ( !$draft->exists() ) {
@@ -248,7 +247,7 @@ class DraftHooks {
 	 */
 	public static function onResourceLoaderGetConfigVars( &$vars ) {
 		global $egDraftsAutoSaveWait, $egDraftsAutoSaveTimeout,
-		       $egDraftsAutoSaveInputBased;
+			   $egDraftsAutoSaveInputBased;
 		$vars['wgDraftAutoSaveWait'] = $egDraftsAutoSaveWait;
 		$vars['wgDraftAutoSaveTimeout'] = $egDraftsAutoSaveTimeout;
 		$vars['wgDraftAutoSaveInputBased'] = $egDraftsAutoSaveInputBased;
