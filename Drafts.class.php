@@ -49,9 +49,10 @@ abstract class Drafts {
 				$where['draft_page'] = $pageId;
 			} else {
 				// Adds new page information to conditions
-				$where['draft_page'] = 0; // page not created yet
 				$where['draft_namespace'] = $title->getNamespace();
 				$where['draft_title'] = $title->getDBkey();
+				// page not created yet
+				$where['draft_page'] = 0;
 			}
 		}
 
@@ -185,7 +186,7 @@ abstract class Drafts {
 	 * @return string HTML to be shown to the user
 	 */
 	public static function display( $title = null, $userID = null ) {
-		global $wgRequest, $wgUser, $wgLang;
+		global $wgRequest, $wgUser;
 
 		// Gets draftID
 		$currentDraft = Draft::newFromID( $wgRequest->getIntOrNull( 'draft' ) );
