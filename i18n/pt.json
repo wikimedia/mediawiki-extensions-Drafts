@@ -39,5 +39,5 @@
 	"apihelp-savedrafts-param-scrolltop": "A parte superior da caixa de texto.",
 	"apihelp-savedrafts-param-text": "Texto de rascunho.",
 	"apihelp-savedrafts-param-summary": "Resumo do rascunho.",
-	"apihelp-savedrafts-param-minoredit": "Valor booleano que representa se o rascunho é uma edição menor."
+	"apihelp-savedrafts-param-minoredit": "Valor booliano que representa se o rascunho é uma edição menor."
 }
