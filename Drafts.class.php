@@ -192,7 +192,7 @@ abstract class Drafts {
 		$currentDraft = Draft::newFromID( $wgRequest->getIntOrNull( 'draft' ) );
 		// Output HTML for list of drafts
 		$drafts = self::get( $title, $userID );
-		if ( count( $drafts ) > 0 ) {
+		if ( $drafts !== null ) {
 			$html = '';
 
 			// Build XML
