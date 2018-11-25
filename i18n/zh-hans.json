@@ -8,13 +8,14 @@
 			"Shirayuki",
 			"Wmr89502270",
 			"Yfdyh000",
-			"Wmr"
+			"Wmr",
+			"Angrydog001"
 		]
 	},
 	"drafts": "草稿",
 	"drafts-desc": "增加在服务器上保存页面[[Special:Drafts|草案]]版本的能力",
 	"drafts-view": "查看草稿",
-	"drafts-view-summary": "此特殊页显示一个列表中的所有现有的草稿。\n未使用的草稿以后就会在{{PLURAL：$1|$1天|$1天}}自动被删除。",
+	"drafts-view-summary": "此特殊页面显示一个列表中的所有现有的草稿。\n未使用的草稿以后就会在{{PLURAL:$1|$1天|$1天}}自动被删除。",
 	"drafts-view-article": "页面",
 	"drafts-view-existing": "现有草稿",
 	"drafts-view-saved": "已保存",
