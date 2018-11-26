@@ -177,60 +177,36 @@ class DraftHooks {
 			$request = $context->getRequest();
 			$context->getOutput()->addModules( 'ext.Drafts' );
 
-			// Build XML
-			$buttons['savedraft'] = Xml::openElement( 'script',
+			$buttons['savedraft'] = new OOUI\ButtonInputWidget(
 				[
-					'type' => 'text/javascript',
-					'language' => 'javascript'
+					'name' => 'wpDraftSave',
+					'tabIndex' => ++$tabindex,
+					'id' => 'wpDraftWidget',
+					'inputId' => 'wpDraftSave',
+					'useInputTag' => true,
+					'flags' => [ 'progressive' ],
+					'label' => $context->msg( 'drafts-save-save' )->text(),
+					'infusable' => true,
+					'type' => 'submit',
+					'title' => Linker::titleAttrib( 'drafts-save' ),
+					'accessKey' => Linker::accesskey( 'drafts-save' ),
+					'disabled' => true
 				]
 			);
-			$buttonAttribs = [
-				'id' => 'wpDraftSave',
-				'name' => 'wpDraftSave',
-				'class' => 'mw-ui-button',
-				'tabindex' => ++$tabindex,
-				'value' => $context->msg( 'drafts-save-save' )->text(),
-			];
-			$attribs = Linker::tooltipAndAccesskeyAttribs( 'drafts-save' );
-			if ( isset( $attribs['accesskey'] ) ) {
-				$buttonAttribs['accesskey'] = $attribs['accesskey'];
-			}
-			if ( isset( $attribs['title'] ) ) {
-				$buttonAttribs['title'] = $attribs['title'];
-			}
-			$buttons['savedraft'] .= Xml::encodeJsCall(
-				'document.write',
-				[ Xml::element( 'input',
-					[ 'type' => 'submit' ] + $buttonAttribs
-					+ ( $request->getText( 'action' ) !== 'submit' ?
-						[ 'disabled' => 'disabled' ]
-						: []
-					)
-				) ]
-			);
-			$buttons['savedraft'] .= Xml::closeElement( 'script' );
-			$buttons['savedraft'] .= Xml::openElement( 'noscript' );
-			$buttons['savedraft'] .= Xml::element( 'input',
-				[ 'type' => 'submit' ] + $buttonAttribs
-			);
-			$buttons['savedraft'] .= Xml::closeElement( 'noscript' );
-			$buttons['savedraft'] .= Xml::element( 'input',
+			$buttons['savedraft'] .= new OOUI\HiddenInputWidget(
 				[
-					'type' => 'hidden',
 					'name' => 'wpDraftToken',
 					'value' => MWCryptRand::generateHex( 32 )
 				]
 			);
-			$buttons['savedraft'] .= Xml::element( 'input',
+			$buttons['savedraft'] .= new OOUI\HiddenInputWidget(
 				[
-					'type' => 'hidden',
 					'name' => 'wpDraftID',
 					'value' => $request->getInt( 'draft', '' )
 				]
 			);
-			$buttons['savedraft'] .= Xml::element( 'input',
+			$buttons['savedraft'] .= new OOUI\HiddenInputWidget(
 				[
-					'type' => 'hidden',
 					'name' => 'wpDraftTitle',
 					'value' => $context->getTitle()->getPrefixedText()
 				]

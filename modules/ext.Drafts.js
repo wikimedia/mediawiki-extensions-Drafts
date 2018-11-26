@@ -30,26 +30,27 @@ function Draft() {
 			// Stores state information
 			state = newState;
 			// Updates UI elements
+			var button = OO.ui.ButtonWidget.static.infuse( $( '#wpDraftWidget' ) );
 			switch ( state ) {
 				case 'unchanged':
-					form.wpDraftSave.disabled = true;
-					form.wpDraftSave.value = mediaWiki.message( 'drafts-save-save' ).text();
+					button.setDisabled( true );
+					button.setLabel( mediaWiki.message( 'drafts-save-save' ).text() );
 					break;
 				case 'changed':
-					form.wpDraftSave.disabled = false;
-					form.wpDraftSave.value = mediaWiki.message( 'drafts-save-save' ).text();
+					button.setDisabled( false );
+					button.setLabel( mediaWiki.message( 'drafts-save-save' ).text() );
 					break;
 				case 'saved':
-					form.wpDraftSave.disabled = true;
-					form.wpDraftSave.value = mediaWiki.message( 'drafts-save-saved' ).text();
+					button.setDisabled( true );
+					button.setLabel( mediaWiki.message( 'drafts-save-saved' ).text() );
 					break;
 				case 'saving':
-					form.wpDraftSave.disabled = true;
-					form.wpDraftSave.value = mediaWiki.message( 'drafts-save-saving' ).text();
+					button.setDisabled( true );
+					button.setLabel( mediaWiki.message( 'drafts-save-saving' ).text() );
 					break;
 				case 'error':
-					form.wpDraftSave.disabled = true;
-					form.wpDraftSave.value = mediaWiki.message( 'drafts-save-error' ).text();
+					button.setDisabled( true );
+					button.setLabel( mediaWiki.message( 'drafts-save-error' ).text() );
 					break;
 				default: break;
 			}

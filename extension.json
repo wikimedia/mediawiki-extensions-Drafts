@@ -71,8 +71,10 @@
 			"scripts": "modules/ext.Drafts.js",
 			"styles": "modules/ext.Drafts.css",
 			"dependencies": [
+				"mediawiki.jqueryMsg",
 				"mediawiki.legacy.wikibits",
-				"mediawiki.jqueryMsg"
+				"oojs-ui-core",
+				"oojs-ui-widgets"
 			],
 			"messages": [
 				"drafts-save-save",
