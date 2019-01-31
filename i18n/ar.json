@@ -19,7 +19,7 @@
 	"drafts-view-notice-link": "$1 {{PLURAL:$1|مسودة|مسودة}}",
 	"drafts-view-warn": "هل تريد الاستمرار في التنقل بعيدًا عن هذه الصفحة؟ بذلك، ستفقد كافة التغييرات التي لم يتم حفظها في هذه الصفحة.",
 	"drafts-save": "يحفظ هذه كمسودة",
-	"drafts-save-save": "احفظ المسودة",
+	"drafts-save-save": "حفظ المسودة",
 	"drafts-save-saved": "محفوظة",
 	"drafts-save-saving": "حفظ",
 	"drafts-save-error": "خطأ أثناء حفظ المسودة",

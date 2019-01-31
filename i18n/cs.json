@@ -4,7 +4,8 @@
 			"Chmee2",
 			"Danny B.",
 			"Matěj Grabovský",
-			"Mormegil"
+			"Mormegil",
+			"Patriccck"
 		]
 	},
 	"drafts": "Koncepty",
@@ -26,5 +27,17 @@
 	"drafts-save-error": "Chyba při ukládání konceptu",
 	"drafts-enable": "Zapnout funkci pro ukládání konceptů z editačního okna",
 	"prefs-extension-drafts": "Návrhy",
-	"tooltip-drafts-save": "Uložit jako koncept"
+	"tooltip-drafts-save": "Uložit jako koncept",
+	"apihelp-savedrafts-description": "Uložit koncept.",
+	"apihelp-savedrafts-summary": "Uložit koncept.",
+	"apihelp-savedrafts-param-id": "ID konceptu.",
+	"apihelp-savedrafts-param-drafttoken": "Token konceptu.",
+	"apihelp-savedrafts-param-title": "Název konceptu.",
+	"apihelp-savedrafts-param-section": "Index části editované stránky.",
+	"apihelp-savedrafts-param-starttime": "Čas založení konceptu.",
+	"apihelp-savedrafts-param-edittime": "Editační čas konceptu.",
+	"apihelp-savedrafts-param-scrolltop": "ScrollTop textového pole.",
+	"apihelp-savedrafts-param-text": "Text konceptu.",
+	"apihelp-savedrafts-param-summary": "Shrnutí konceptu.",
+	"apihelp-savedrafts-param-minoredit": "Boolean rozhoduje, zda je koncept malá editace."
 }
