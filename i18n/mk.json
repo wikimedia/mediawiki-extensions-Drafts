@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bjankuloski06"
+			"Bjankuloski06",
+			"Vlad5250"
 		]
 	},
 	"drafts": "Недовршени",
@@ -29,7 +30,7 @@
 	"apihelp-savedrafts-param-id": "Назнака на нацртот.",
 	"apihelp-savedrafts-param-drafttoken": "Шифра на нацртот.",
 	"apihelp-savedrafts-param-title": "Наслов на нацртот.",
-	"apihelp-savedrafts-param-section": "Индекс на поднасловот на сраницата што се уредува.",
+	"apihelp-savedrafts-param-section": "Индекс на поднасловот на страницата што се уредува.",
 	"apihelp-savedrafts-param-starttime": "Време на почнувањето на нацртот.",
 	"apihelp-savedrafts-param-edittime": "Време на уредувањето на нацртот.",
 	"apihelp-savedrafts-param-scrolltop": "scrollTop на полето со текст.",
