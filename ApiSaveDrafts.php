@@ -9,7 +9,10 @@
 class ApiSaveDrafts extends ApiBase {
 	public function execute() {
 		if ( $this->getUser()->isAnon() ) {
-			$this->dieUsage( 'You must be logged in to save drafts.', 'notloggedin' );
+			$this->dieWithError(
+				'apierror-mustbeloggedin-save-drafts',
+				'notloggedin'
+			);
 		}
 
 		$params = $this->extractRequestParams();

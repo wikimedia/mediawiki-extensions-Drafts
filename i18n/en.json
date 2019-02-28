@@ -25,6 +25,7 @@
 	"prefs-extension-drafts": "Drafts",
 	"tooltip-drafts-save": "Save as a draft",
 	"accesskey-drafts-save": "g",
+	"apierror-mustbeloggedin-save-drafts": "You must be logged in to save drafts.",
 	"apihelp-savedrafts-description": "Save a draft.",
 	"apihelp-savedrafts-summary": "Save a draft.",
 	"apihelp-savedrafts-param-id": "The ID of the draft.",
