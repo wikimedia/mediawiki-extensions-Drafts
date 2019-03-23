@@ -25,6 +25,7 @@
 	"drafts-enable": "Abbilite 'a funzionalità pe reggistrà 'na bozze jndr'à 'u module de cangiamende",
 	"prefs-extension-drafts": "Bozze",
 	"tooltip-drafts-save": "Salve cumme bozze",
+	"apierror-mustbeloggedin-save-drafts": "Tu a trasé pe reggistrà le bozze.",
 	"apihelp-savedrafts-description": "Reggistre 'na bozze.",
 	"apihelp-savedrafts-summary": "Reggistre 'na bozze.",
 	"apihelp-savedrafts-param-id": "L'ID d'a bozze.",

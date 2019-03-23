@@ -25,6 +25,7 @@
 	"drafts-enable": "Овозможете ја функцијата за да зачувате нацрт во образецот за уредување",
 	"prefs-extension-drafts": "Недовршени",
 	"tooltip-drafts-save": "Зачувај како нацрт",
+	"apierror-mustbeloggedin-save-drafts": "Мора да сте најавени за да зачувувате работни верзии.",
 	"apihelp-savedrafts-description": "Зачувај нацрт.",
 	"apihelp-savedrafts-summary": "Зачувај нацрт.",
 	"apihelp-savedrafts-param-id": "Назнака на нацртот.",

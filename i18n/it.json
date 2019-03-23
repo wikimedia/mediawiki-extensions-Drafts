@@ -27,6 +27,7 @@
 	"drafts-enable": "Abilita la funzione per salvare una bozza nel modulo di modifica",
 	"prefs-extension-drafts": "Bozze",
 	"tooltip-drafts-save": "Salva come bozza",
+	"apierror-mustbeloggedin-save-drafts": "Devi aver effettuato l'accesso per salvare le bozze.",
 	"apihelp-savedrafts-description": "Salva una bozza.",
 	"apihelp-savedrafts-summary": "Salva una bozza.",
 	"apihelp-savedrafts-param-id": "L'ID della bozza.",

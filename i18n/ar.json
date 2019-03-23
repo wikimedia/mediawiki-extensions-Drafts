@@ -26,6 +26,7 @@
 	"drafts-enable": "تمكين ميزة لحفظ مسودة في نموذج تحرير",
 	"prefs-extension-drafts": "مسودات",
 	"tooltip-drafts-save": "حفظ كمسودة",
+	"apierror-mustbeloggedin-save-drafts": "يجب تسجيل الدخول لحفظ المسودات.",
 	"apihelp-savedrafts-description": "حفظ مسودة.",
 	"apihelp-savedrafts-summary": "حفظ مسودة.",
 	"apihelp-savedrafts-param-id": "معرف المسودة.",

@@ -30,6 +30,7 @@
 	"drafts-enable": "Activer la fonctionnalité pour enregistrer un brouillon dans le formulaire de modification",
 	"prefs-extension-drafts": "Brouillons",
 	"tooltip-drafts-save": "Enregistrer comme brouillon",
+	"apierror-mustbeloggedin-save-drafts": "Vous devez être connecté pour enregistrer les brouillons.",
 	"apihelp-savedrafts-description": "Enregistrer un brouillon.",
 	"apihelp-savedrafts-summary": "Enregistrer un brouillon.",
 	"apihelp-savedrafts-param-id": "L’ID du brouillon.",
