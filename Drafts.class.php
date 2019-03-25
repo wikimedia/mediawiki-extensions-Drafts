@@ -24,7 +24,7 @@ abstract class Drafts {
 	 *
 	 * @param Title|null $title [optional] Title of article, defaults to all articles
 	 * @param int|null $userID [optional] ID of user, defaults to current user
-	 * @return Number of drafts which match condition parameters
+	 * @return int Number of drafts which match condition parameters
 	 */
 	public static function num( $title = null, $userID = null ) {
 		global $wgUser;

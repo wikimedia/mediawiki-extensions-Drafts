@@ -202,7 +202,7 @@ class DraftHooks {
 			$buttons['savedraft'] .= new OOUI\HiddenInputWidget(
 				[
 					'name' => 'wpDraftID',
-					'value' => $request->getInt( 'draft', '' )
+					'value' => $request->getInt( 'draft' )
 				]
 			);
 			$buttons['savedraft'] .= new OOUI\HiddenInputWidget(
