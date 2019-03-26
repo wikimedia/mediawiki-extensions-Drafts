@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"DCLXVI",
-			"Turin"
+			"Turin",
+			"StanProg"
 		]
 	},
 	"drafts": "Чернови",
@@ -17,8 +18,8 @@
 	"drafts-view-notice-link": "$1 {{PLURAL:$1|чернова|чернови}}",
 	"drafts-save": "Съхраняване на съдържанието като чернова",
 	"drafts-save-save": "Съхраняване като чернова",
-	"drafts-save-saved": "Запазено",
-	"drafts-save-saving": "Запазване",
+	"drafts-save-saved": "Съхранено",
+	"drafts-save-saving": "Съхраняване",
 	"drafts-save-error": "Възникна грешка при съхраняване на черновата",
 	"tooltip-drafts-save": "Съхраняване като чернова"
 }
