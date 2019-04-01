@@ -28,6 +28,7 @@
 	"drafts-enable": "Ativar a funcionalidade que permite gravar um rascunho no formulário de edição",
 	"prefs-extension-drafts": "Rascunhos",
 	"tooltip-drafts-save": "Gravar como rascunho",
+	"apierror-mustbeloggedin-save-drafts": "Para gravar rascunhos tem de ter uma sessão iniciada.",
 	"apihelp-savedrafts-description": "Gravar um rascunho.",
 	"apihelp-savedrafts-summary": "Gravar um rascunho.",
 	"apihelp-savedrafts-param-id": "O identificador do rascunho.",
