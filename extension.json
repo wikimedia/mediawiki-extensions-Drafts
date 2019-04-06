@@ -46,11 +46,11 @@
 		}
 	},
 	"AutoloadClasses": {
-		"ApiSaveDrafts": "ApiSaveDrafts.php",
-		"Drafts": "Drafts.class.php",
-		"Draft": "Draft.class.php",
-		"DraftHooks": "Drafts.hooks.php",
-		"SpecialDrafts": "SpecialDrafts.php"
+		"ApiSaveDrafts": "includes/api/ApiSaveDrafts.php",
+		"Drafts": "includes/Drafts.php",
+		"Draft": "includes/Draft.php",
+		"DraftHooks": "includes/DraftHooks.php",
+		"SpecialDrafts": "includes/specials/SpecialDrafts.php"
 	},
 	"APIModules": {
 		"savedrafts": "ApiSaveDrafts"
