@@ -6,7 +6,8 @@
 			"Holek",
 			"Leinad",
 			"Sp5uhe",
-			"Chrumps"
+			"Chrumps",
+			"Railfail536"
 		]
 	},
 	"drafts": "Brudnopisy stron",
@@ -20,7 +21,7 @@
 	"drafts-view-nonesaved": "Nie masz obecnie zapisanych żadnych brudnopisów stron.",
 	"drafts-view-notice": "Masz obecnie $1 tej strony.",
 	"drafts-view-notice-link": "$1 {{PLURAL:$1|brudnopis|brudnopisy|brudnopisów}}",
-	"drafts-view-warn": "Opuszczenie tej strony spowoduje utratę wszystkich niezapisanych zmian w jej treści.\nCzy chcesz kontynuować?",
+	"drafts-view-warn": "Czy na pewno chcesz opuścić tę stronę? Robiąc to utracisz wszystkie niezapisane zmiany w jej treści.",
 	"drafts-save": "Zapisuje jako brudnopis strony",
 	"drafts-save-save": "Zapisz brudnopis",
 	"drafts-save-saved": "Zapisany",
