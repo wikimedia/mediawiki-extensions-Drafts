@@ -29,6 +29,7 @@
 	"drafts-enable": "Увімкнути функцію зберігання чернетки у формі редагування",
 	"prefs-extension-drafts": "Чернетки",
 	"tooltip-drafts-save": "Зберегти як чернетку",
+	"apierror-mustbeloggedin-save-drafts": "Ви маєте увійти в систему, щоб зберігати чернетки.",
 	"apihelp-savedrafts-description": "Зберегти чернетку.",
 	"apihelp-savedrafts-summary": "Зберегти чернетку.",
 	"apihelp-savedrafts-param-id": "ID чернетки.",
