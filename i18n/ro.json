@@ -4,7 +4,8 @@
 			"Firilacroco",
 			"KlaudiuMihaila",
 			"Minisarm",
-			"Stelistcristi"
+			"Stelistcristi",
+			"Andrei Stroe"
 		]
 	},
 	"drafts": "Schițe",
@@ -18,7 +19,7 @@
 	"drafts-view-nonesaved": "Nu aveți vreo schiță salvată în acest moment.",
 	"drafts-view-notice": "Aveți $1 pentru această pagină.",
 	"drafts-view-notice-link": "$1 {{PLURAL:$1|schiță|schițe}}",
-	"drafts-view-warn": "Dacă părăsiți această pagină veți pierde toate modificările nesalvate aduse paginii.\nDoriți să continuați?",
+	"drafts-view-warn": "Doriți să continuați navigarea spre altă pagină? Făcând aceasta, puteți pierde toate modificările nesalvate aduse paginii.",
 	"drafts-save": "Salvează aceasta ca o schiță",
 	"drafts-save-save": "Salvează schiță",
 	"drafts-save-saved": "Salvat",
