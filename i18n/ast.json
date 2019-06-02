@@ -24,6 +24,7 @@
 	"drafts-enable": "Activar la función pa guardar un borrador nel formulariu d'edición",
 	"prefs-extension-drafts": "Borradores",
 	"tooltip-drafts-save": "Guardar como borrador",
+	"apierror-mustbeloggedin-save-drafts": "Tienes d'aniciar sesión pa guardar borradores.",
 	"apihelp-savedrafts-description": "Guardar un borrador.",
 	"apihelp-savedrafts-summary": "Guardar un borrador.",
 	"apihelp-savedrafts-param-id": "La ID del borrador.",
