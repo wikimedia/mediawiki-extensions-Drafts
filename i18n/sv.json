@@ -4,7 +4,8 @@
 			"Boivie",
 			"Jopparn",
 			"Najami",
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Mjälten"
 		]
 	},
 	"drafts": "Utkast",
@@ -28,5 +29,6 @@
 	"prefs-extension-drafts": "Utkast",
 	"tooltip-drafts-save": "Spara som ett utkast",
 	"apierror-mustbeloggedin-save-drafts": "Du måste vara inloggad för att spara skisser.",
-	"apihelp-savedrafts-summary": "Spara ett utkast."
+	"apihelp-savedrafts-summary": "Spara ett utkast.",
+	"apihelp-savedrafts-param-text": "Utkaststext"
 }
