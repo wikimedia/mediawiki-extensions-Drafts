@@ -8,7 +8,8 @@
 			"Rxy",
 			"Otokoume",
 			"2nd-player",
-			"Yusuke1109"
+			"Yusuke1109",
+			"Afaz"
 		]
 	},
 	"drafts": "下書き",
@@ -31,6 +32,7 @@
 	"drafts-enable": "編集フォームで下書きを保存する機能を有効にする",
 	"prefs-extension-drafts": "下書き",
 	"tooltip-drafts-save": "下書きとして保存する",
+	"apierror-mustbeloggedin-save-drafts": "下書きを保存するにはログインしてください",
 	"apihelp-savedrafts-description": "下書きを保存します。",
 	"apihelp-savedrafts-summary": "下書きを保存します。",
 	"apihelp-savedrafts-param-id": "下書きの ID",
