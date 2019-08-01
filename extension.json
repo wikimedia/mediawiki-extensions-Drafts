@@ -72,7 +72,6 @@
 			"styles": "modules/ext.Drafts.css",
 			"dependencies": [
 				"mediawiki.jqueryMsg",
-				"mediawiki.legacy.wikibits",
 				"oojs-ui-core",
 				"oojs-ui-widgets"
 			],
