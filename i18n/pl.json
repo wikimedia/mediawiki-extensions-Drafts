@@ -30,9 +30,15 @@
 	"drafts-enable": "Włącz funkcję zapisu brudnopisu na formularzu edycji",
 	"prefs-extension-drafts": "Brudnopisy stron",
 	"tooltip-drafts-save": "Zapisz jako brudnopis strony",
+	"apierror-mustbeloggedin-save-drafts": "Musisz być zalogowany, aby zapisywać szkice.",
 	"apihelp-savedrafts-description": "Zapisz wersję roboczą.",
 	"apihelp-savedrafts-summary": "Zapisz wersję roboczą.",
+	"apihelp-savedrafts-param-id": "Identyfikator szkicu.",
+	"apihelp-savedrafts-param-drafttoken": "Token szkicu.",
 	"apihelp-savedrafts-param-title": "Tytuł w wersji roboczej.",
 	"apihelp-savedrafts-param-section": "Indeks sekcji edytowanej strony.",
-	"apihelp-savedrafts-param-text": "Tekst w wersji roboczej."
+	"apihelp-savedrafts-param-starttime": "Czas początkowy szkicu.",
+	"apihelp-savedrafts-param-edittime": "Czas edycji szkicu.",
+	"apihelp-savedrafts-param-text": "Tekst w wersji roboczej.",
+	"apihelp-savedrafts-param-minoredit": "Wartość logiczna decydująca, czy szkic jest drobną edycją."
 }
