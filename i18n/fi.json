@@ -32,5 +32,6 @@
 	"prefs-extension-drafts": "Luonnokset",
 	"tooltip-drafts-save": "Tallenna luonnoksena",
 	"apihelp-savedrafts-description": "Tallenna luonnos.",
-	"apihelp-savedrafts-summary": "Tallenna luonnos."
+	"apihelp-savedrafts-summary": "Tallenna luonnos.",
+	"apihelp-savedrafts-param-drafttoken": "Luonnospoletti."
 }
