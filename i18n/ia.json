@@ -27,7 +27,7 @@
 	"apihelp-savedrafts-description": "Salveguardar un version provisori.",
 	"apihelp-savedrafts-summary": "Salveguardar un version provisori.",
 	"apihelp-savedrafts-param-id": "Le ID del version provisori.",
-	"apihelp-savedrafts-param-drafttoken": "Indicio de version provisori.",
+	"apihelp-savedrafts-param-drafttoken": "Token de version provisori.",
 	"apihelp-savedrafts-param-title": "Titulo provisori.",
 	"apihelp-savedrafts-param-section": "Indice del section del pagina in modification.",
 	"apihelp-savedrafts-param-starttime": "Hora de initio del version provisori.",
