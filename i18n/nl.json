@@ -27,6 +27,7 @@
 	"drafts-enable": "Mogelijkheid om concepten op te slaan inschakelen",
 	"prefs-extension-drafts": "Werkversies",
 	"tooltip-drafts-save": "Als werkversie opslaan",
+	"apierror-mustbeloggedin-save-drafts": "U moet aangemeld zijn om werkversies op te kunen slaan.",
 	"apihelp-savedrafts-description": "Een werkversie opslaan.",
 	"apihelp-savedrafts-summary": "Een werkversie opslaan.",
 	"apihelp-savedrafts-param-id": "De ID van de werkversie.",
