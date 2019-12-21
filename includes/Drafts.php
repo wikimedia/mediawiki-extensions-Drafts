@@ -16,7 +16,7 @@ abstract class Drafts {
 			// Drafts stay forever
 			return 0;
 		}
-		return wfTimestamp( TS_UNIX ) - ( $egDraftsLifeSpan * 60 * 60 * 24 );
+		return (int)wfTimestamp( TS_UNIX ) - ( $egDraftsLifeSpan * 60 * 60 * 24 );
 	}
 
 	/**

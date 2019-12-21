@@ -110,7 +110,7 @@ class DraftHooks {
 				$draft->setScrollTop( $request->getInt( 'wpScrolltop' ) );
 				$draft->setText( $request->getText( 'wpTextbox1' ) );
 				$draft->setSummary( $request->getText( 'wpSummary' ) );
-				$draft->setMinorEdit( $request->getInt( 'wpMinoredit', 0 ) );
+				$draft->setMinorEdit( $request->getBool( 'wpMinoredit' ) );
 				// Save draft
 				$draft->save();
 				// Use the new draft id
