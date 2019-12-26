@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Joseph",
-			"Stultiwikia"
+			"Stultiwikia",
+			"BaRaN6161 TURK"
 		]
 	},
 	"drafts": "Taslaklar",
@@ -16,11 +17,26 @@
 	"drafts-view-nonesaved": "Şu anda kayıtlı hiçbir taslağınız yok.",
 	"drafts-view-notice": "Bu sayfa için $1 var.",
 	"drafts-view-notice-link": "$1 {{PLURAL:$1|taslağınız|taslağınız}}",
-	"drafts-view-warn": "Bu sayfadan ayrılarak, sayfadaki tüm kaydedilmemiş değişiklikleri kaybedeceksiniz.\nDevam etmek istiyor musunuz?",
+	"drafts-view-warn": "Bu sayfadan uzaklaşmaya devam etmek istiyor musunuz? Böylece, bu sayfadaki kaydedilmemiş tüm değişiklikleri kaybedersiniz.",
 	"drafts-save": "Bunu taslak olarak kaydet",
 	"drafts-save-save": "Taslağı kaydet",
 	"drafts-save-saved": "Kaydedildi",
 	"drafts-save-saving": "Kaydediliyor",
 	"drafts-save-error": "Taslağı kaydederken hata",
-	"tooltip-drafts-save": "Taslak olarak kaydet"
+	"drafts-enable": "Bir taslağı düzenleme formunda kaydetme özelliğini etkinleştir",
+	"prefs-extension-drafts": "taslaklar",
+	"tooltip-drafts-save": "Taslak olarak kaydet",
+	"apierror-mustbeloggedin-save-drafts": "Taslakları kaydetmek için giriş yapmalısınız.",
+	"apihelp-savedrafts-description": "Bir taslağı kaydedin.",
+	"apihelp-savedrafts-summary": "Bir taslağı kaydedin.",
+	"apihelp-savedrafts-param-id": "Taslağın kimliği.",
+	"apihelp-savedrafts-param-drafttoken": "Taslak belirteç.",
+	"apihelp-savedrafts-param-title": "Taslak başlık.",
+	"apihelp-savedrafts-param-section": "Sayfanın düzenlenmekte olan bölümünün dizini.",
+	"apihelp-savedrafts-param-starttime": "Taslağın başlangıç zamanı.",
+	"apihelp-savedrafts-param-edittime": "Taslağın düzenleme zamanı.",
+	"apihelp-savedrafts-param-scrolltop": "Metin kutusunun scrollTop'u.",
+	"apihelp-savedrafts-param-text": "Taslak metin.",
+	"apihelp-savedrafts-param-summary": "Taslak özeti.",
+	"apihelp-savedrafts-param-minoredit": "Taslağın küçük bir düzenleme olup olmadığını gösteren Boole."
 }
