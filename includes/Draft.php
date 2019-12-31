@@ -263,12 +263,12 @@ class Draft {
 	 * Selects draft row from database and populates object properties
 	 */
 	private function load() {
-		global $wgUser;
 		// Checks if the ID of the draft was set
 		if ( $this->id === null ) {
 			// Exists immediately
 			return;
 		}
+		$userId = (int)RequestContext::getMain()->getUser()->getId();
 		// Gets database connection
 		$dbw = wfGetDB( DB_MASTER );
 		// Gets drafts for this article and user from database
@@ -277,7 +277,7 @@ class Draft {
 			[ '*' ],
 			[
 				'draft_id' => (int)$this->id,
-				'draft_user' => (int)$wgUser->getId()
+				'draft_user' => $userId
 			],
 			__METHOD__
 		);
@@ -307,14 +307,14 @@ class Draft {
 	 * Inserts or updates draft row in database
 	 */
 	public function save() {
-		global $wgUser;
+		$userId = RequestContext::getMain()->getUser()->getId();
 		// Gets database connection
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->startAtomic( __METHOD__ );
 		// Builds insert/update information
 		$data = [
 			'draft_token' => (string)$this->getToken(),
-			'draft_user' => (int)$wgUser->getId(),
+			'draft_user' => $userId,
 			'draft_namespace' => (int)$this->title->getNamespace(),
 			'draft_title' => (string)$this->title->getDBkey(),
 			'draft_page' => (int)$this->title->getArticleID(),
@@ -335,7 +335,7 @@ class Draft {
 				$data,
 				[
 					'draft_id' => (int)$this->id,
-					'draft_user' => (int)$wgUser->getId()
+					'draft_user' => (int)$userId
 				],
 				__METHOD__
 			);
@@ -374,9 +374,8 @@ class Draft {
 	 * @param int|null $user [optional] User ID, defaults to current user ID
 	 */
 	public function discard( $user = null ) {
-		global $wgUser;
-		// Uses $wgUser as a fallback
-		$user = $user === null ? $wgUser : $user;
+		// Uses RequestContext user as a fallback
+		$user = $user === null ? RequestContext::getMain()->getUser() : $user;
 		// Gets database connection
 		$dbw = wfGetDB( DB_MASTER );
 		// Deletes draft from database verifying propper user to avoid hacking!

@@ -27,8 +27,6 @@ abstract class Drafts {
 	 * @return int Number of drafts which match condition parameters
 	 */
 	public static function num( $title = null, $userID = null ) {
-		global $wgUser;
-
 		// Get database connection
 		$dbr = wfGetDB( DB_REPLICA );
 
@@ -62,7 +60,7 @@ abstract class Drafts {
 			$where['draft_user'] = $userID;
 		} else {
 			// Adds current user as condition
-			$where['draft_user'] = $wgUser->getId();
+			$where['draft_user'] = (int)RequestContext::getMain()->getUser()->getId();
 		}
 
 		// Get a list of matching drafts
@@ -124,8 +122,6 @@ abstract class Drafts {
 	 * @return array|null List of drafts or null
 	 */
 	public static function get( $title = null, $userID = null ) {
-		global $wgUser;
-
 		// Removes expired drafts for a more accurate list
 		self::clean();
 
@@ -160,7 +156,7 @@ abstract class Drafts {
 			$where['draft_user'] = $userID;
 		} else {
 			// Adds current user to conditions
-			$where['draft_user'] = $wgUser->getId();
+			$where['draft_user'] = (int)RequestContext::getMain()->getUser()->getId();
 		}
 
 		// Gets matching drafts from database
@@ -186,7 +182,7 @@ abstract class Drafts {
 	 * @return string HTML to be shown to the user
 	 */
 	public static function display( $title = null, $userID = null ) {
-		global $wgRequest, $wgUser;
+		global $wgRequest;
 
 		// Gets draftID
 		$currentDraft = Draft::newFromID( $wgRequest->getIntOrNull( 'draft' ) );
@@ -194,6 +190,7 @@ abstract class Drafts {
 		$drafts = self::get( $title, $userID );
 		if ( $drafts !== null ) {
 			$html = '';
+			$editToken = RequestContext::getMain()->getUser()->getEditToken();
 
 			// Build XML
 			$html .= Xml::openElement( 'table',
@@ -232,7 +229,7 @@ abstract class Drafts {
 				$urlDiscard = SpecialPage::getTitleFor( 'Drafts' )->getFullURL(
 					sprintf( 'discard=%s&token=%s',
 						urlencode( $draft->getID() ),
-						urlencode( $wgUser->getEditToken() )
+						urlencode( $editToken )
 					)
 				);
 				// If in edit mode, return to editor
