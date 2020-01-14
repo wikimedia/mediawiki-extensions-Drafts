@@ -91,7 +91,7 @@ class DraftHooks {
 			// Save draft on non-save submission
 			if ( $request->getVal( 'action' ) == 'submit' &&
 				$user->matchEditToken( $request->getText( 'wpEditToken' ) ) &&
-				is_null( $request->getText( 'wpDraftTitle' ) ) ) {
+				$request->getText( 'wpDraftTitle' ) === null ) {
 				// If the draft wasn't specified in the url, try using a
 				// form-submitted one
 				if ( !$draft->exists() ) {
