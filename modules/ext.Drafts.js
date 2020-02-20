@@ -1,7 +1,5 @@
 /* JavaScript for Drafts extension */
 
-/*jshint -W066 */
-
 var wgDraft;
 
 function Draft() {
@@ -23,9 +21,9 @@ function Draft() {
 
 	/**
 	 * Sets the state of the draft
-	 * @param {String} newState
+	 * @param {string} newState
 	 */
-	this.setState = function( newState ) {
+	this.setState = function ( newState ) {
 		if ( state !== newState ) {
 			// Stores state information
 			state = newState;
@@ -60,14 +58,14 @@ function Draft() {
 	/**
 	 * Gets the state of the draft
 	 */
-	this.getState = function() {
+	this.getState = function () {
 		return state;
 	};
 
 	/**
 	 * Sends draft data to server to be saved
 	 */
-	this.save = function( event ) {
+	this.save = function ( event ) {
 		event.preventDefault();
 		// Checks if a save is already taking place
 		if ( state === 'saving' ) {
@@ -96,7 +94,7 @@ function Draft() {
 
 		// Performs asynchronous save on server
 		var api = new mediaWiki.Api();
-		api.post(params).done( self.respond ).fail( self.respond );
+		api.post( params ).done( self.respond ).fail( self.respond );
 
 		// Re-allow request if it is not done in 10 seconds
 		self.timeoutID = window.setTimeout(
@@ -110,7 +108,7 @@ function Draft() {
 	/**
 	 * Updates the user interface to represent being out of sync with the server
 	 */
-	this.change = function() {
+	this.change = function () {
 		// Sets state to changed
 		self.setState( 'changed' );
 		// Checks if timer is pending and if we want to wait for user input
@@ -143,7 +141,7 @@ function Draft() {
 	/**
 	 * Initializes the user interface
 	 */
-	this.initialize = function() {
+	this.initialize = function () {
 		// Cache edit form reference
 		form = document.editform;
 		// Check to see that the form and controls exist
@@ -169,7 +167,7 @@ function Draft() {
 	 * Responds to the server after a save request has been handled
 	 * @param {Object} data
 	 */
-	this.respond = function( data ) {
+	this.respond = function ( data ) {
 		// Checks that an error did not occur
 		if ( data.savedrafts && data.savedrafts.id ) {
 			// Changes state to saved

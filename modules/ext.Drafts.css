@@ -9,13 +9,15 @@
 
 #drafts-list-table {
 	margin-left: -5px;
-	margin-right:-5px;
+	margin-right: -5px;
 }
 
-#drafts-list-table td, #drafts-list-table th {
+#drafts-list-table td,
+#drafts-list-table th {
 	text-align: left;
 }
 
-.rtl #drafts-list-table td, .rtl #drafts-list-table th {
+.rtl #drafts-list-table td,
+.rtl #drafts-list-table th {
 	text-align: right;
 }
