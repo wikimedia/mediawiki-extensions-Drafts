@@ -5,7 +5,8 @@
 			"Danny B.",
 			"Matěj Grabovský",
 			"Mormegil",
-			"Patriccck"
+			"Patriccck",
+			"Jaroslav Cerny"
 		]
 	},
 	"drafts": "Koncepty",
@@ -28,6 +29,7 @@
 	"drafts-enable": "Zapnout funkci pro ukládání konceptů z editačního okna",
 	"prefs-extension-drafts": "Návrhy",
 	"tooltip-drafts-save": "Uložit jako koncept",
+	"apierror-mustbeloggedin-save-drafts": "Pro ukládání konceptů musíte být přihlášen(a).",
 	"apihelp-savedrafts-description": "Uložit koncept.",
 	"apihelp-savedrafts-summary": "Uložit koncept.",
 	"apihelp-savedrafts-param-id": "ID konceptu.",
