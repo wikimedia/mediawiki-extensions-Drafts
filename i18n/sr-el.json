@@ -1,5 +1,7 @@
 {
-	"@metadata": [],
+	"@metadata": {
+		"authors": []
+	},
 	"drafts": "Nacrti",
 	"drafts-view-article": "Strana",
 	"drafts-view-existing": "Postojeći nacrti",
