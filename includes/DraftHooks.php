@@ -8,7 +8,7 @@
 
 class DraftHooks {
 	/**
-	 * @param array $defaultOptions
+	 * @param array &$defaultOptions
 	 */
 	public static function onUserGetDefaultOptions( &$defaultOptions ) {
 		$defaultOptions['extensionDrafts_enable'] = true;
@@ -16,7 +16,7 @@ class DraftHooks {
 
 	/**
 	 * @param User $user
-	 * @param array $preferences
+	 * @param array &$preferences
 	 */
 	public static function onGetPreferences( User $user, array &$preferences ) {
 		$preferences['extensionDrafts_enable'] = [
@@ -217,7 +217,7 @@ class DraftHooks {
 	/**
 	 * Hook for ResourceLoaderGetConfigVars
 	 *
-	 * @param array $vars
+	 * @param array &$vars
 	 */
 	public static function onResourceLoaderGetConfigVars( &$vars ) {
 		global $egDraftsAutoSaveWait, $egDraftsAutoSaveTimeout,
