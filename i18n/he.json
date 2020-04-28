@@ -4,6 +4,7 @@
 			"Amire80",
 			"Guycn2",
 			"Rotemliss",
+			"Steeve815",
 			"YaronSh",
 			"המקיסט"
 		]
@@ -28,6 +29,7 @@
 	"drafts-enable": "הפעלה האפשרות לשמור טיוטה בטופס העריכה",
 	"prefs-extension-drafts": "טיוטות",
 	"tooltip-drafts-save": "שמירה כטיוטה",
+	"apierror-mustbeloggedin-save-drafts": "יש להיכנס לחשבון כדי לשמור טיוטות.",
 	"apihelp-savedrafts-description": "שמירת טיוטה.",
 	"apihelp-savedrafts-summary": "שמור טיוטה",
 	"apihelp-savedrafts-param-id": "המזהה של הטיוטה.",
