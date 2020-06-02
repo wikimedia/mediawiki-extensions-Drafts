@@ -258,7 +258,7 @@ abstract class Drafts {
 				// Build XML
 				$html .= Xml::openElement( 'tr' );
 				$html .= Xml::openElement( 'td' );
-				$html .= Xml::element( 'a',
+				$html .= Xml::tags( 'a',
 					[
 						'href' => $urlLoad,
 						'style' => 'font-weight:' .

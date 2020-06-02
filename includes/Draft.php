@@ -123,7 +123,7 @@ class Draft {
 	}
 
 	/**
-	 * @return string Section of the article of draft
+	 * @return int Section of the article of draft
 	 */
 	public function getSection() {
 		return $this->section;
