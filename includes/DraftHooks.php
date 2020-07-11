@@ -17,6 +17,7 @@ class DraftHooks {
 	/**
 	 * @param User $user
 	 * @param array &$preferences
+	 * @return bool
 	 */
 	public static function onGetPreferences( User $user, array &$preferences ) {
 		$preferences['extensionDrafts_enable'] = [
@@ -40,6 +41,9 @@ class DraftHooks {
 
 	/**
 	 * SpecialMovepageAfterMove hook
+	 * @param MovePageForm $mp
+	 * @param Title $ot
+	 * @param Title $nt
 	 */
 	public static function onSpecialMovepageAfterMove( $mp, $ot, $nt ) {
 		// Update all drafts of old article to new article for all users
@@ -49,6 +53,17 @@ class DraftHooks {
 	/**
 	 * PageContentSaveComplete hook
 	 *
+	 * @param WikiPage $article
+	 * @param User $user
+	 * @param Content $content
+	 * @param string $summary
+	 * @param bool $isMinor
+	 * @param null $isWatch
+	 * @param null $section
+	 * @param int $flags
+	 * @param Revision $revision
+	 * @param Status $status
+	 * @param int|bool $baseRevId
 	 */
 	public static function onPageContentSaveComplete( WikiPage $article, $user, $content, $summary, $isMinor,
 		$isWatch, $section, $flags, $revision, $status, $baseRevId
@@ -65,6 +80,8 @@ class DraftHooks {
 	/**
 	 * EditPage::showEditForm:initial hook
 	 * Load draft...
+	 * @param EditPage $editpage
+	 * @return bool
 	 */
 	public static function loadForm( EditPage $editpage ) {
 		$context = $editpage->getArticle()->getContext();
@@ -152,6 +169,10 @@ class DraftHooks {
 	 * EditFilter hook
 	 * Intercept the saving of an article to detect if the submission was from
 	 * the non-javascript save draft button
+	 * @param EditPage $editor
+	 * @param string $text
+	 * @param string $section
+	 * @param string $error
 	 */
 	public static function onEditFilter( EditPage $editor, $text, $section, $error ) {
 		// Don't save if the save draft button caused the submit
@@ -164,13 +185,16 @@ class DraftHooks {
 	/**
 	 * EditPageBeforeEditButtons hook
 	 * Add draft saving controls
+	 * @param EditPage $editpage
+	 * @param array &$buttons
+	 * @param int &$tabindex
 	 */
 	public static function onEditPageBeforeEditButtons( EditPage $editpage, &$buttons, &$tabindex ) {
 		$context = $editpage->getArticle()->getContext();
 		$user = $context->getUser();
 
 		if ( !$user->getOption( 'extensionDrafts_enable', 'true' ) ) {
-			return true;
+			return;
 		}
 		// Check permissions
 		if ( $user->isAllowed( 'edit' ) && $user->isLoggedIn() ) {

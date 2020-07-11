@@ -13,7 +13,7 @@
  *
  * @author Trevor Parscal <tparscal@wikimedia.org>
  * @author enhanced by Petr Bena <benapetr@gmail.com>
- * @license GPL v2
+ * @license GPL-2.0-or-later
  */
 
 if ( function_exists( 'wfLoadExtension' ) ) {
