@@ -172,9 +172,9 @@ class DraftHooks {
 	 * @param EditPage $editor
 	 * @param string $text
 	 * @param string $section
-	 * @param string $error
+	 * @param string &$error
 	 */
-	public static function onEditFilter( EditPage $editor, $text, $section, $error ) {
+	public static function onEditFilter( EditPage $editor, $text, $section, &$error ) {
 		// Don't save if the save draft button caused the submit
 		if ( $editor->getArticle()->getContext()->getRequest()->getText( 'wpDraftSave' ) !== '' ) {
 			// Modify the error so it's clear we want to remain in edit mode
