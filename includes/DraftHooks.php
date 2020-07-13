@@ -6,6 +6,8 @@
  * @ingroup Extensions
  */
 
+use MediaWiki\User\UserIdentity;
+
 class DraftHooks {
 	/**
 	 * @param array &$defaultOptions
@@ -51,29 +53,18 @@ class DraftHooks {
 	}
 
 	/**
-	 * PageContentSaveComplete hook
+	 * PageSaveComplete hook
 	 *
-	 * @param WikiPage $article
-	 * @param User $user
-	 * @param Content $content
-	 * @param string $summary
-	 * @param bool $isMinor
-	 * @param null $isWatch
-	 * @param null $section
-	 * @param int $flags
-	 * @param Revision $revision
-	 * @param Status $status
-	 * @param int|bool $baseRevId
+	 * @param WikiPage $wikiPage
+	 * @param UserIdentity $user
 	 */
-	public static function onPageContentSaveComplete( WikiPage $article, $user, $content, $summary, $isMinor,
-		$isWatch, $section, $flags, $revision, $status, $baseRevId
-	) {
+	public static function onPageSaveComplete( WikiPage $wikiPage, UserIdentity $user ) {
 		global $wgRequest;
 		// Check if the save occurred from a draft
 		$draft = Draft::newFromID( $wgRequest->getIntOrNull( 'wpDraftID' ) );
 		if ( $draft->exists() ) {
 			// Discard the draft
-			$draft->discard( $user );
+			$draft->discard( User::newFromIdentity( $user ) );
 		}
 	}
 
