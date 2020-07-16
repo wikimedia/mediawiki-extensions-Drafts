@@ -10,7 +10,7 @@
 	"drafts-desc": "Bir sayfanın [[Special:Drafts|taslak]] sürümünü sunucuya kaydetme özelliğini ekler",
 	"drafts-view": "TaslağıGör",
 	"drafts-view-summary": "Bu özel sayfa tüm mevcut taslakların bir listesini gösterir.\nKullanılmayan taslaklar $1 {{PLURAL:$1|gün|gün}} sonra otomatik olarak silinir.",
-	"drafts-view-article": "Madde",
+	"drafts-view-article": "Sayfa",
 	"drafts-view-existing": "Mevcut taslaklar",
 	"drafts-view-saved": "Kaydedildi",
 	"drafts-view-discard": "Sil",
