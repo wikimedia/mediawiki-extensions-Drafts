@@ -21,6 +21,7 @@ function Draft() {
 
 	/**
 	 * Sets the state of the draft
+	 *
 	 * @param {string} newState
 	 */
 	this.setState = function ( newState ) {
@@ -64,6 +65,8 @@ function Draft() {
 
 	/**
 	 * Sends draft data to server to be saved
+	 *
+	 * @param event
 	 */
 	this.save = function ( event ) {
 		event.preventDefault();
@@ -165,6 +168,7 @@ function Draft() {
 
 	/**
 	 * Responds to the server after a save request has been handled
+	 *
 	 * @param {Object} data
 	 */
 	this.respond = function ( data ) {
