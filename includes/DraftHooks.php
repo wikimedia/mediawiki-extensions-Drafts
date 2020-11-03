@@ -141,13 +141,10 @@ class DraftHooks {
 				$out->addHTML( Drafts::display( $context->getTitle() ) );
 				$out->addHTML( Xml::closeElement( 'div' ) );
 			} else {
-				$jsWarn = "if( !wgAjaxSaveDraft.insync ) return confirm(" .
-					Xml::encodeJsVar( $context->msg( 'drafts-view-warn' )->text() ) .
-					")";
 				$link = Xml::element( 'a',
 					[
 						'href' => $context->getTitle()->getFullURL( 'action=edit' ),
-						'onclick' => $jsWarn
+						'class' => 'mw-discard-draft-link'
 					],
 					$context->msg( 'drafts-view-notice-link' )->numParams( $numDrafts )->text()
 				);

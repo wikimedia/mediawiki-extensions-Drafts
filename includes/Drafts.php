@@ -275,17 +275,13 @@ abstract class Drafts {
 					MWTimestamp::getInstance( $draft->getSaveTime() )->getHumanTimestamp()
 				);
 				$html .= Xml::openElement( 'td' );
-				$jsClick = "if( wgDraft.getState() !== 'unchanged' )" .
-					"return confirm(" .
-					Xml::encodeJsVar( wfMessage( 'drafts-view-warn' )->text() ) .
-					")";
 				$html .= Xml::element( 'a',
 					[
 						'href' => $urlDiscard,
-						'onclick' => $jsClick
+						'class' => 'mw-discard-draft-link'
 					],
 					wfMessage( 'drafts-view-discard' )->text()
-					);
+				);
 				$html .= Xml::closeElement( 'td' );
 				$html .= Xml::closeElement( 'tr' );
 			}
