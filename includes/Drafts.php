@@ -8,7 +8,7 @@
 
 abstract class Drafts {
 	/**
-	 * @return int|Mixed
+	 * @return int
 	 */
 	private static function getDraftAgeCutoff() {
 		global $egDraftsLifeSpan;
@@ -22,8 +22,8 @@ abstract class Drafts {
 	/**
 	 * Counts the number of existing drafts for a specific user
 	 *
-	 * @param Title|null $title [optional] Title of article, defaults to all articles
-	 * @param int|null $userID [optional] ID of user, defaults to current user
+	 * @param Title|null $title Title of article, defaults to all articles
+	 * @param int|null $userID ID of user, defaults to current user
 	 * @return int Number of drafts which match condition parameters
 	 */
 	public static function num( $title = null, $userID = null ) {
@@ -117,9 +117,9 @@ abstract class Drafts {
 	/**
 	 * Gets a list of existing drafts for a specific user
 	 *
-	 * @param Title|null $title [optional] Title of article, defaults to all articles
-	 * @param int|null $userID [optional] ID of user, defaults to current user
-	 * @return array|null List of drafts or null
+	 * @param Title|null $title Title of article, defaults to all articles
+	 * @param int|null $userID ID of user, defaults to current user
+	 * @return Draft[]|null
 	 */
 	public static function get( $title = null, $userID = null ) {
 		// Removes expired drafts for a more accurate list
@@ -177,8 +177,8 @@ abstract class Drafts {
 	/**
 	 * Outputs a table of existing drafts
 	 *
-	 * @param Title|null $title [optional] Title of article, defaults to all articles
-	 * @param int|null $userID [optional] ID of user, defaults to current user
+	 * @param Title|null $title Title of article, defaults to all articles
+	 * @param int|null $userID ID of user, defaults to current user
 	 * @return string HTML to be shown to the user
 	 */
 	public static function display( $title = null, $userID = null ) {
@@ -223,12 +223,12 @@ abstract class Drafts {
 				$htmlTitle = htmlspecialchars( $draft->getTitle()->getPrefixedText() );
 				// Build Article Load link
 				$urlLoad = $draft->getTitle()->getFullURL(
-					'action=edit&draft=' . urlencode( $draft->getID() )
+					'action=edit&draft=' . urlencode( (string)$draft->getID() )
 				);
 				// Build discard link
 				$urlDiscard = SpecialPage::getTitleFor( 'Drafts' )->getFullURL(
 					sprintf( 'discard=%s&token=%s',
-						urlencode( $draft->getID() ),
+						urlencode( (string)$draft->getID() ),
 						urlencode( $editToken )
 					)
 				);
@@ -251,9 +251,9 @@ abstract class Drafts {
 						);
 					}
 					// Modify article link and title
-					$urlLoad .= '&section=' . urlencode( $draft->getSection() );
+					$urlLoad .= '&section=' . urlencode( (string)$draft->getSection() );
 					$urlDiscard .= '&section=' .
-						urlencode( $draft->getSection() );
+						urlencode( (string)$draft->getSection() );
 				}
 				// Build XML
 				$html .= Xml::openElement( 'tr' );

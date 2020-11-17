@@ -6,33 +6,40 @@
  * @ingroup Extensions
  */
 class Draft {
-	/* Members */
+	/** @var bool */
 	private $exists = false;
+	/** @var int */
 	private $id;
+	/** @var string */
 	private $token;
+	/** @var int */
 	private $userID;
 
-	/**
-	 * @var Title
-	 */
+	/** @var Title */
 	private $title;
+	/** @var int */
 	private $section;
+	/** @var string */
 	private $starttime;
+	/** @var string */
 	private $edittime;
+	/** @var string */
 	private $savetime;
+	/** @var int */
 	private $scrolltop;
+	/** @var string */
 	private $text;
+	/** @var string */
 	private $summary;
+	/** @var bool */
 	private $minoredit;
-
-	/* Static Functions */
 
 	/**
 	 * Creates a new Draft object from a draft ID
 	 *
 	 * @param int $id ID of draft
-	 * @param bool $autoload [optional] Whether to load draft information
-	 * @return Draft object
+	 * @param bool $autoload Whether to load draft information
+	 * @return Draft
 	 */
 	public static function newFromID( $id, $autoload = true ) {
 		return new Draft( $id, $autoload );
@@ -41,8 +48,8 @@ class Draft {
 	/**
 	 * Creates a new Draft object from a database row
 	 *
-	 * @param Object $row Database row object to create Draft object with
-	 * @return Draft object
+	 * @param stdClass $row Database row object to create Draft object with
+	 * @return Draft
 	 */
 	public static function newFromRow( $row ) {
 		$draft = new Draft( $row->draft_id, false );
@@ -60,8 +67,6 @@ class Draft {
 		$draft->setMinorEdit( $row->draft_minoredit );
 		return $draft;
 	}
-
-	/* Properties */
 
 	/**
 	 * @return bool Whether draft exists in database
