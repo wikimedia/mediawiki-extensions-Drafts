@@ -79,7 +79,8 @@
 				"drafts-save-save",
 				"drafts-save-saved",
 				"drafts-save-saving",
-				"drafts-save-error"
+				"drafts-save-error",
+				"drafts-view-warn"
 			]
 		}
 	},

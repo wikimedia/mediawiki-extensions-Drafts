@@ -58,6 +58,8 @@ function Draft() {
 
 	/**
 	 * Gets the state of the draft
+	 *
+	 * @return {String} 'unchanged', 'changed', 'saved', 'saving' or 'error'
 	 */
 	this.getState = function () {
 		return state;
@@ -66,7 +68,7 @@ function Draft() {
 	/**
 	 * Sends draft data to server to be saved
 	 *
-	 * @param event
+	 * @param {Event} event
 	 */
 	this.save = function ( event ) {
 		event.preventDefault();
@@ -150,13 +152,24 @@ function Draft() {
 		// Check to see that the form and controls exist
 		if ( form && form.wpDraftSave ) {
 			// Handle manual draft saving through clicking the save draft button
-			jQuery( form.wpDraftSave ).on( 'click', self.save );
+			jQuery( form.wpDraftSave ).on( 'click', function ( event ) {
+				self.save( event );
+			} );
 			// Handle keeping track of state by watching for changes to fields
 			jQuery( form.wpTextbox1 ).on( 'keypress keyup keydown paste cut', self.change );
 			jQuery( form.wpSummary ).on( 'keypress keyup keydown paste cut', self.change );
 			if ( form.wpMinoredit ) {
 				jQuery( form.wpMinoredit ).on( 'change', self.change );
 			}
+			// Handle clicks on "Discard" links in the table above the editor when there
+			// are saved drafts for a page
+			jQuery( '.mw-discard-draft-link' ).on( 'click', function ( event ) {
+				// *Always* prevent default action, which is to follow the link
+				// eslint-disable-next-line no-alert
+				if ( !confirm( mediaWiki.msg( 'drafts-view-warn' ) ) ) {
+					event.preventDefault();
+				}
+			} );
 			// Gets configured specific values
 			configuration = {
 				autoSaveWait: mediaWiki.config.get( 'wgDraftAutoSaveWait' ),
@@ -187,4 +200,5 @@ function Draft() {
 }
 
 wgDraft = new Draft();
+window.wgDraft = wgDraft; // Expose this due to the various setTimeout() calls
 wgDraft.initialize();

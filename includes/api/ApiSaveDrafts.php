@@ -58,7 +58,7 @@ class ApiSaveDrafts extends ApiBase {
 				ApiBase::PARAM_REQUIRED => true,
 			],
 			'section' => [
-				ApiBase::PARAM_TYPE => 'integer',
+				ApiBase::PARAM_TYPE => null,
 			],
 			'starttime' => [
 				ApiBase::PARAM_REQUIRED => true,
