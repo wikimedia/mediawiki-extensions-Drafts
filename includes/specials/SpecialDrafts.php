@@ -32,9 +32,7 @@ class SpecialDrafts extends SpecialPage {
 		$this->setHeaders();
 
 		// Make sure the user is logged in
-		if ( !$user->isLoggedIn() ) {
-			throw new PermissionsError( 'read' );
-		}
+		$this->requireLogin();
 
 		// Handle discarding
 		$draft = Draft::newFromID( $request->getIntOrNull( 'discard' ) );
