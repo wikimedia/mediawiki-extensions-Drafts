@@ -59,7 +59,7 @@ function Draft() {
 	/**
 	 * Gets the state of the draft
 	 *
-	 * @return {String} 'unchanged', 'changed', 'saved', 'saving' or 'error'
+	 * @return {string} 'unchanged', 'changed', 'saved', 'saving' or 'error'
 	 */
 	this.getState = function () {
 		return state;
