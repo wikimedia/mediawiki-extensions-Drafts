@@ -321,8 +321,8 @@ class Draft {
 		$data = [
 			'draft_token' => (string)$this->getToken(),
 			'draft_user' => $userId,
-			'draft_namespace' => (int)$this->title->getNamespace(),
-			'draft_title' => (string)$this->title->getDBkey(),
+			'draft_namespace' => $this->title->getNamespace(),
+			'draft_title' => $this->title->getDBkey(),
 			'draft_page' => (int)$this->title->getArticleID(),
 			'draft_section' => $this->section == '' ? null : (int)$this->section,
 			'draft_starttime' => $dbw->timestamp( $this->starttime ),
