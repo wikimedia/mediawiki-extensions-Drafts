@@ -14,7 +14,7 @@
 	"drafts-view-discard": "Baztertu",
 	"drafts-view-nonesaved": "Une honetan ez duzu gordetako zirriborrorik.",
 	"drafts-view-notice": "Orrialde honetarako $1 duzu.",
-	"drafts-view-notice-link": "{{PLURAL:$1|Zirriborro $1|$1 zirriborro}}",
+	"drafts-view-notice-link": "{{PLURAL:$1|Zirriborro bat|$1 zirriborro}}",
 	"drafts-save": "Gorde hau zirriborrotzat",
 	"drafts-save-save": "Zirriborroa gorde",
 	"drafts-save-saved": "Gordeta",
