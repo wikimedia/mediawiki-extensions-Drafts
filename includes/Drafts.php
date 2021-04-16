@@ -60,7 +60,7 @@ abstract class Drafts {
 			$where['draft_user'] = $userID;
 		} else {
 			// Adds current user as condition
-			$where['draft_user'] = (int)RequestContext::getMain()->getUser()->getId();
+			$where['draft_user'] = RequestContext::getMain()->getUser()->getId();
 		}
 
 		// Get a list of matching drafts
@@ -156,7 +156,7 @@ abstract class Drafts {
 			$where['draft_user'] = $userID;
 		} else {
 			// Adds current user to conditions
-			$where['draft_user'] = (int)RequestContext::getMain()->getUser()->getId();
+			$where['draft_user'] = RequestContext::getMain()->getUser()->getId();
 		}
 
 		// Gets matching drafts from database

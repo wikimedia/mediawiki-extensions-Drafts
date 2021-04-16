@@ -273,7 +273,7 @@ class Draft {
 			// Exists immediately
 			return;
 		}
-		$userId = (int)RequestContext::getMain()->getUser()->getId();
+		$userId = RequestContext::getMain()->getUser()->getId();
 		// Gets database connection
 		$dbw = wfGetDB( DB_MASTER );
 		// Gets drafts for this article and user from database
@@ -341,7 +341,7 @@ class Draft {
 				$data,
 				[
 					'draft_id' => (int)$this->id,
-					'draft_user' => (int)$userId
+					'draft_user' => $userId
 				],
 				__METHOD__
 			);
