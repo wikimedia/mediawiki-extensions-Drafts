@@ -84,7 +84,7 @@ class DraftHooks {
 
 		// Check permissions
 		$request = $context->getRequest();
-		if ( $user->isAllowed( 'edit' ) && $user->isLoggedIn() ) {
+		if ( $user->isAllowed( 'edit' ) && $user->isRegistered() ) {
 			// Get draft
 			$draft = Draft::newFromID( $request->getIntOrNull( 'draft' ) );
 			// Load form values
@@ -185,7 +185,7 @@ class DraftHooks {
 			return;
 		}
 		// Check permissions
-		if ( $user->isAllowed( 'edit' ) && $user->isLoggedIn() ) {
+		if ( $user->isAllowed( 'edit' ) && $user->isRegistered() ) {
 			$request = $context->getRequest();
 			$context->getOutput()->addModules( 'ext.Drafts' );
 
