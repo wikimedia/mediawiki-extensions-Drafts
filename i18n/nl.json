@@ -3,6 +3,7 @@
 		"authors": [
 			"Esketti",
 			"Mainframe98",
+			"McDutchie",
 			"Siebrand",
 			"Tvdm"
 		]
@@ -34,8 +35,8 @@
 	"apihelp-savedrafts-param-drafttoken": "Werkversie-token.",
 	"apihelp-savedrafts-param-title": "Werkversie titel.",
 	"apihelp-savedrafts-param-section": "Index van de sectie van de pagina die bewerkt wordt.",
-	"apihelp-savedrafts-param-starttime": "De starttijd van het ontwerp.",
-	"apihelp-savedrafts-param-edittime": "Het bewerken van het ontwerp.",
+	"apihelp-savedrafts-param-starttime": "De begintijd van het concept.",
+	"apihelp-savedrafts-param-edittime": "De bewerkingstijd van het concept.",
 	"apihelp-savedrafts-param-scrolltop": "De scrollTop van het tekstvak.",
 	"apihelp-savedrafts-param-text": "Werkversie tekst.",
 	"apihelp-savedrafts-param-summary": "Werkversie bewerkingssamenvatting.",
