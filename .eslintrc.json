@@ -10,7 +10,6 @@
 		"no-implicit-globals": "off",
 		"no-jquery/no-global-selector": "off",
 		"no-undef": "off",
-		"one-var": "off",
 		"vars-on-top": "off",
 		"valid-jsdoc": "off"
 	}
