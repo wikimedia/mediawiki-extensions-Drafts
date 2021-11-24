@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"SpeedyGonsales"
+			"SpeedyGonsales",
+			"Ponor"
 		]
 	},
 	"drafts": "Nacrti",
@@ -20,6 +21,6 @@
 	"drafts-save-save": "Spremi skicu",
 	"drafts-save-saved": "Snimljeno",
 	"drafts-save-saving": "Snimam",
-	"drafts-save-error": "Pogrješka pri spremanju skice",
+	"drafts-save-error": "Pogreška pri spremanju nacrta",
 	"tooltip-drafts-save": "Spremi kao skicu"
 }
