@@ -24,6 +24,7 @@
 	"drafts-enable": "Activar le function pro salveguardar un version provisori in le formulario de modification",
 	"prefs-extension-drafts": "Versiones provisori",
 	"tooltip-drafts-save": "Salveguardar como version provisori",
+	"apierror-mustbeloggedin-save-drafts": "Tu debe aperir session pro salveguardar versiones provisori.",
 	"apihelp-savedrafts-description": "Salveguardar un version provisori.",
 	"apihelp-savedrafts-summary": "Salveguardar un version provisori.",
 	"apihelp-savedrafts-param-id": "Le ID del version provisori.",

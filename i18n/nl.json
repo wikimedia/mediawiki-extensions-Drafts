@@ -4,7 +4,8 @@
 			"Esketti",
 			"Mainframe98",
 			"Siebrand",
-			"Tvdm"
+			"Tvdm",
+			"McDutchie"
 		]
 	},
 	"drafts": "Werkversies",
@@ -18,7 +19,7 @@
 	"drafts-view-nonesaved": "U hebt geen opgeslagen werkversies.",
 	"drafts-view-notice": "U moet $1 voor deze pagina.",
 	"drafts-view-notice-link": "$1 {{PLURAL:$1|werkversie|werkversies}}",
-	"drafts-view-warn": "Wilt u deze pagina verlaten? Door dat te doen, gaan alle wijzigingen verloren die aan deze pagina hebt gemaakt die nog niet zijn opgeslagen.",
+	"drafts-view-warn": "Wilt u deze pagina verlaten? Daardoor gaan alle niet-opgeslagen wijzigingen verloren die u aan deze pagina hebt aangebracht.",
 	"drafts-save": "Opslaan als werkversie",
 	"drafts-save-save": "Werkversie opslaan",
 	"drafts-save-saved": "Opgeslagen",
@@ -34,8 +35,8 @@
 	"apihelp-savedrafts-param-drafttoken": "Werkversie-token.",
 	"apihelp-savedrafts-param-title": "Werkversie titel.",
 	"apihelp-savedrafts-param-section": "Index van de sectie van de pagina die bewerkt wordt.",
-	"apihelp-savedrafts-param-starttime": "De starttijd van het ontwerp.",
-	"apihelp-savedrafts-param-edittime": "Het bewerken van het ontwerp.",
+	"apihelp-savedrafts-param-starttime": "De begintijd van het concept.",
+	"apihelp-savedrafts-param-edittime": "De bewerkingstijd van het concept.",
 	"apihelp-savedrafts-param-scrolltop": "De scrollTop van het tekstvak.",
 	"apihelp-savedrafts-param-text": "Werkversie tekst.",
 	"apihelp-savedrafts-param-summary": "Werkversie bewerkingssamenvatting.",

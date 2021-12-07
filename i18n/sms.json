@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yupik"
+		]
+	},
+	"drafts": "Hämmaz",
+	"drafts-view-article": "Seidd",
+	"drafts-view-saved": "Ruõkkum",
+	"drafts-save": "Ruõkk tän teeʹkst hämmsen",
+	"drafts-save-save": "Ruõkk hämmaz",
+	"drafts-save-saved": "Ruõkkum",
+	"prefs-extension-drafts": "Hämmaz",
+	"tooltip-drafts-save": "Ruõkk hämmsen",
+	"apihelp-savedrafts-description": "Ruõkk hämmaz.",
+	"apihelp-savedrafts-summary": "Ruõkk hämmaz."
+}
