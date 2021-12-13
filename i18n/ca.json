@@ -4,7 +4,8 @@
 			"Aleator",
 			"Fitoschido",
 			"SMP",
-			"Solde"
+			"Solde",
+			"Mguix"
 		]
 	},
 	"drafts": "Esborranys",
@@ -18,7 +19,7 @@
 	"drafts-view-nonesaved": "En aquests moments no teniu cap esborrany desat.",
 	"drafts-view-notice": "Teniu $1 per aquesta pàgina.",
 	"drafts-view-notice-link": "$1 {{PLURAL:$1|esborrany|esborranys}}",
-	"drafts-view-warn": "Si sortiu d'aquesta pàgina perdreu tots els canvis no desats de la mateixa.\nVoleu continuar?",
+	"drafts-view-warn": "Voleu continuar navegant fora d'aquesta pàgina? En fer-ho, perdreu tots els canvis no guardats d'aquesta pàgina.",
 	"drafts-save": "Desar-ho com un esborrany",
 	"drafts-save-save": "Desa un esborrany",
 	"drafts-save-saved": "Desat",
