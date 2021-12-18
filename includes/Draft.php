@@ -1,4 +1,7 @@
 <?php
+
+use MediaWiki\User\UserIdentity;
+
 /**
  * Class representing a single draft.
  *
@@ -377,7 +380,7 @@ class Draft {
 
 	/**
 	 * Deletes draft row from database
-	 * @param User|null $user User object, defaults to current user
+	 * @param UserIdentity|null $user User object, defaults to current user
 	 */
 	public function discard( $user = null ) {
 		// Uses RequestContext user as a fallback
