@@ -37,5 +37,11 @@
 	"apihelp-savedrafts-param-scrolltop": "The scrollTop of the text box.",
 	"apihelp-savedrafts-param-text": "Draft text.",
 	"apihelp-savedrafts-param-summary": "Draft summary.",
-	"apihelp-savedrafts-param-minoredit": "Boolean representing whether the draft is a minor edit."
+	"apihelp-savedrafts-param-minoredit": "Boolean representing whether the draft is a minor edit.",
+	"apierror-mustbeloggedin-load-drafts": "You must be logged in to load drafts.",
+	"apierror-must-be-draft-owner": "You can't load other users' drafts.",
+	"apierror-no-such-draft": "There is no draft by the given draft ID.",
+	"apihelp-loaddrafts-description": "Load a previously saved draft.",
+	"apihelp-loaddrafts-summary": "Load a previously saved draft.",
+	"apihelp-loaddrafts-param-id": "The ID of the draft."
 }

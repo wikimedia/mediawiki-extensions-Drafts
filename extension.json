@@ -1,6 +1,6 @@
 {
 	"name": "Drafts",
-	"version": "0.3.6",
+	"version": "0.3.7",
 	"author": [
 		"Trevor Parscal",
 		"Petr Bena"
@@ -46,6 +46,7 @@
 		}
 	},
 	"AutoloadClasses": {
+		"ApiLoadDrafts": "includes/api/ApiLoadDrafts.php",
 		"ApiSaveDrafts": "includes/api/ApiSaveDrafts.php",
 		"Drafts": "includes/Drafts.php",
 		"Draft": "includes/Draft.php",
@@ -53,6 +54,7 @@
 		"SpecialDrafts": "includes/specials/SpecialDrafts.php"
 	},
 	"APIModules": {
+		"loaddrafts": "ApiLoadDrafts",
 		"savedrafts": "ApiSaveDrafts"
 	},
 	"SpecialPages": {
