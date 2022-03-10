@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Amire80",
+			"Dee",
 			"Guycn2",
 			"Rotemliss",
 			"Steeve815",
@@ -17,8 +18,8 @@
 	"drafts-view-existing": "טיוטות קיימות",
 	"drafts-view-saved": "שמורה",
 	"drafts-view-discard": "מחיקה",
-	"drafts-view-nonesaved": "אין לכם טיוטות שמורות לעת עתה.",
-	"drafts-view-notice": "יש לכם $1 לדף זה.",
+	"drafts-view-nonesaved": "אין לך טיוטות שמורות לעת עתה.",
+	"drafts-view-notice": "יש לך $1 לדף זה.",
 	"drafts-view-notice-link": "{{PLURAL:$1|טיוטה אחת|$1 טיוטות}}",
 	"drafts-view-warn": "אם תנווטו אל מחוץ לדף, תאבדו את כל השינויים שלא נשמרו לדף זה.\nהאם ברצונכם להמשיך?",
 	"drafts-save": "שמירת דף זה כטיוטה",
