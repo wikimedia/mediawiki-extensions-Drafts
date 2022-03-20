@@ -296,6 +296,7 @@ class Draft {
 		}
 		// Synchronizes data
 		$this->token = $row->draft_token;
+		$this->userID = (int)$row->draft_user;
 		$this->title = Title::makeTitle(
 			$row->draft_namespace, $row->draft_title
 		);
