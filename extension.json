@@ -95,6 +95,7 @@
 		"GetPreferences": "DraftHooks::onGetPreferences",
 		"EditFilter": "DraftHooks::onEditFilter",
 		"PageSaveComplete": "DraftHooks::onPageSaveComplete",
+		"ArticleUndelete": "DraftHooks::onArticleUndelete",
 		"SpecialMovepageAfterMove": "DraftHooks::onSpecialMovepageAfterMove",
 		"EditPageBeforeEditButtons": "DraftHooks::onEditPageBeforeEditButtons",
 		"EditPage::showEditForm:initial": "DraftHooks::loadForm",

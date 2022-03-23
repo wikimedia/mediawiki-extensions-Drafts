@@ -34,11 +34,13 @@ class DraftHooks {
 	 * @param DatabaseUpdater $updater
 	 */
 	public static function schema( $updater ) {
-		$updater->addExtensionTable( 'drafts', dirname( __DIR__ ) . '/sql/Drafts.sql' );
-		if ( $updater->getDb()->getType() != 'sqlite' ) {
+		$sqlDir = __DIR__ . '/../sql';
+		$updater->addExtensionTable( 'drafts', $sqlDir . '/Drafts.sql' );
+		if ( $updater->getDB()->getType() !== 'sqlite' ) {
 			$updater->modifyExtensionField( 'drafts', 'draft_token',
-				dirname( __DIR__ ) . '/sql/patch-draft_token.sql' );
+				$sqlDir . '/patch-draft_token.sql' );
 		}
+		$updater->addExtensionIndex( 'drafts', 'draft_title', $sqlDir . '/patch-titlensindex.sql' );
 	}
 
 	/**
@@ -53,19 +55,35 @@ class DraftHooks {
 	}
 
 	/**
-	 * PageSaveComplete hook
+	 * PageSaveComplete hook - does two things:
+	 * 1) If the save occurred from a draft, discards the draft
+	 * 2) Updates DB entries in the drafts table on page creation (T21837)
 	 *
 	 * @param WikiPage $wikiPage
 	 * @param UserIdentity $user
 	 */
 	public static function onPageSaveComplete( WikiPage $wikiPage, UserIdentity $user ) {
 		global $wgRequest;
+
 		// Check if the save occurred from a draft
 		$draft = Draft::newFromID( $wgRequest->getIntOrNull( 'wpDraftID' ) );
 		if ( $draft->exists() ) {
 			// Discard the draft
 			$draft->discard( $user );
 		}
+
+		// When a page is created, associate the page ID with any drafts that might exist
+		$title = $wikiPage->getTitle();
+		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw->update(
+			'drafts',
+			[ 'draft_page' => $title->getArticleID() ],
+			[
+				'draft_namespace' => $title->getNamespace(),
+				'draft_title' => $title->getDBkey()
+			],
+			__METHOD__
+		);
 	}
 
 	/**
@@ -239,4 +257,34 @@ class DraftHooks {
 		$vars['wgDraftAutoSaveInputBased'] = $egDraftsAutoSaveInputBased;
 	}
 
+	/**
+	 * ArticleUndelete hook
+	 *
+	 * If an article is undeleted, update the page ID we have stored internally
+	 *
+	 * @see https://phabricator.wikimedia.org/T21734
+	 *
+	 * @param Title $title
+	 * @param bool $create
+	 * @return bool
+	 */
+	public static function onArticleUndelete( $title, $create ) {
+		if ( !$create ) {
+			// Only for restored pages
+			return true;
+		}
+
+		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw->update(
+			'drafts',
+			[ 'draft_page' => $title->getArticleID() ],
+			[
+				'draft_namespace' => $title->getNamespace(),
+				'draft_title' => $title->getDBkey()
+			],
+			__METHOD__
+		);
+
+		return true;
+	}
 }
