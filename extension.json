@@ -96,6 +96,7 @@
 		"SpecialMovepageAfterMove": "DraftHooks::onSpecialMovepageAfterMove",
 		"EditPageBeforeEditButtons": "DraftHooks::onEditPageBeforeEditButtons",
 		"EditPage::showEditForm:initial": "DraftHooks::loadForm",
+		"ResourceLoaderGetConfigVars": "DraftHooks::onResourceLoaderGetConfigVars",
 		"LoadExtensionSchemaUpdates": "DraftHooks::schema"
 	},
 	"manifest_version": 2
