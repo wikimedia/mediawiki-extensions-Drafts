@@ -9,7 +9,8 @@
 			"Shirayuki",
 			"Wmr",
 			"Wmr89502270",
-			"Yfdyh000"
+			"Yfdyh000",
+			"StarrySky"
 		]
 	},
 	"drafts": "草稿",
@@ -32,6 +33,7 @@
 	"drafts-enable": "启用保存编辑表单为草稿的功能",
 	"prefs-extension-drafts": "草稿",
 	"tooltip-drafts-save": "保存为草稿",
+	"apierror-mustbeloggedin-save-drafts": "您必须登录以保存草稿",
 	"apihelp-savedrafts-description": "保存一段草稿。",
 	"apihelp-savedrafts-summary": "保存一段草稿。",
 	"apihelp-savedrafts-param-id": "草稿的ID。",
