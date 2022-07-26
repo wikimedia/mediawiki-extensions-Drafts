@@ -8,7 +8,8 @@
 			"Mjbmr",
 			"Reza1615",
 			"Sunfyre",
-			"Wayiran"
+			"Wayiran",
+			"Jeeputer"
 		]
 	},
 	"drafts": "پیش‌نویس‌ها",
@@ -31,5 +32,7 @@
 	"drafts-enable": "فعال کردن ویژگی ذخیرهٔ پیش‌نویس در فرم ویرایش",
 	"prefs-extension-drafts": "پیش‌نویس‌ها",
 	"tooltip-drafts-save": "ذخیره به عنوان پیش‌نویس",
-	"apihelp-savedrafts-description": "ذخیره کردن پیش‌نویس"
+	"apihelp-savedrafts-description": "ذخیره کردن پیش‌نویس",
+	"apihelp-savedrafts-param-text": "متن پیش‌نویس.",
+	"apihelp-savedrafts-param-summary": "خلاصهٔ پیش‌نویس."
 }
