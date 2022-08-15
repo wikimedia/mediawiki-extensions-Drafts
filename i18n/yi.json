@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Pacha Tchernof",
 			"פוילישער"
 		]
 	},
-	"drafts-view-article": "בלאַט"
+	"drafts-view-article": "בלאַט",
+	"drafts-view-saved": "אויפֿגעהיטן",
+	"drafts-save-saved": "אויפֿגעהיטן"
 }
