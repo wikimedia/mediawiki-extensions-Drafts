@@ -6,6 +6,7 @@
  * @ingroup Extensions
  */
 
+use MediaWiki\MediaWikiServices;
 use MediaWiki\User\UserIdentity;
 
 class DraftHooks {
@@ -76,9 +77,10 @@ class DraftHooks {
 	 */
 	public static function loadForm( EditPage $editpage ) {
 		$context = $editpage->getArticle()->getContext();
+		$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
 		$user = $context->getUser();
 
-		if ( !$user->getOption( 'extensionDrafts_enable', 'true' ) ) {
+		if ( !$userOptionsManager->getOption( $user, 'extensionDrafts_enable', 'true' ) ) {
 			return true;
 		}
 
@@ -179,9 +181,10 @@ class DraftHooks {
 	 */
 	public static function onEditPageBeforeEditButtons( EditPage $editpage, &$buttons, &$tabindex ) {
 		$context = $editpage->getArticle()->getContext();
+		$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
 		$user = $context->getUser();
 
-		if ( !$user->getOption( 'extensionDrafts_enable', 'true' ) ) {
+		if ( !$userOptionsManager->getOption( $user, 'extensionDrafts_enable', 'true' ) ) {
 			return;
 		}
 		// Check permissions
