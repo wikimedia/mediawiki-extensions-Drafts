@@ -234,8 +234,8 @@ abstract class Drafts {
 				);
 				// If in edit mode, return to editor
 				if (
-					$wgRequest->getText( 'action' ) == 'edit' ||
-					$wgRequest->getText( 'action' ) == 'submit'
+					$wgRequest->getRawVal( 'action' ) === 'edit' ||
+					$wgRequest->getRawVal( 'action' ) === 'submit'
 				) {
 					$urlDiscard .= '&returnto=' . urlencode( 'edit' );
 				}
