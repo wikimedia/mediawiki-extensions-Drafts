@@ -99,9 +99,9 @@ class DraftHooks {
 			}
 
 			// Save draft on non-save submission
-			if ( $request->getVal( 'action' ) == 'submit' &&
+			if ( $request->getRawVal( 'action' ) === 'submit' &&
 				$user->matchEditToken( $request->getText( 'wpEditToken' ) ) &&
-				$request->getText( 'wpDraftTitle' ) === null ) {
+				$request->getRawVal( 'wpDraftTitle' ) === null ) {
 				// If the draft wasn't specified in the url, try using a
 				// form-submitted one
 				if ( !$draft->exists() ) {
@@ -133,7 +133,7 @@ class DraftHooks {
 		$numDrafts = Drafts::num( $context->getTitle() );
 		// Show list of drafts
 		if ( $numDrafts > 0 ) {
-			if ( $request->getText( 'action' ) !== 'submit' ) {
+			if ( $request->getRawVal( 'action' ) !== 'submit' ) {
 				$out->addHTML( Xml::openElement(
 					'div', [ 'id' => 'drafts-list-box' ] )
 				);
