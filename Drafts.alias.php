@@ -268,7 +268,7 @@ $specialPageAliases['sk'] = [
 	'Drafts' => [ 'Rozpísané' ],
 ];
 
-/** Serbian (Cyrillic script) (српски (ћирилица)‎) */
+/** Serbian (Cyrillic script) (српски (ћирилица)) */
 $specialPageAliases['sr-ec'] = [
 	'Drafts' => [ 'Нацрти' ],
 ];
@@ -308,12 +308,12 @@ $specialPageAliases['vi'] = [
 	'Drafts' => [ 'Bản_nháp' ],
 ];
 
-/** Simplified Chinese (中文（简体）‎) */
+/** Simplified Chinese (中文（简体）) */
 $specialPageAliases['zh-hans'] = [
 	'Drafts' => [ '草稿' ],
 ];
 
-/** Traditional Chinese (中文（繁體）‎) */
+/** Traditional Chinese (中文（繁體）) */
 $specialPageAliases['zh-hant'] = [
 	'Drafts' => [ '草稿' ],
 ];
