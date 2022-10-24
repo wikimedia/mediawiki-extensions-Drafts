@@ -190,7 +190,10 @@ abstract class Drafts {
 		$drafts = self::get( $title, $userID );
 		if ( $drafts !== null ) {
 			$html = '';
-			$editToken = RequestContext::getMain()->getUser()->getEditToken();
+			$context = RequestContext::getMain();
+			$user = $context->getUser();
+			$lang = $context->getLanguage();
+			$editToken = $user->getEditToken();
 
 			// Build XML
 			$html .= Xml::openElement( 'table',
@@ -272,7 +275,7 @@ abstract class Drafts {
 				$html .= Xml::closeElement( 'td' );
 				$html .= Xml::element( 'td',
 					null,
-					MWTimestamp::getInstance( $draft->getSaveTime() )->getHumanTimestamp()
+					$lang->getHumanTimestamp( MWTimestamp::getInstance( $draft->getSaveTime() ), null, $user )
 				);
 				$html .= Xml::openElement( 'td' );
 				$html .= Xml::element( 'a',
