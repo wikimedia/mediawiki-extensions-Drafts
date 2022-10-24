@@ -39,6 +39,8 @@
 	"apihelp-savedrafts-param-section": "אינדקס של הפסקה הנערכת בדף.",
 	"apihelp-savedrafts-param-starttime": "זמן ההתחלה של הטיוטה.",
 	"apihelp-savedrafts-param-edittime": "זמן העריכה של הטיוטה.",
+	"apihelp-savedrafts-param-scrolltop": "ה־scrollTop של תיבת הטקסט.",
 	"apihelp-savedrafts-param-text": "הטקסט של הטיוטה.",
-	"apihelp-savedrafts-param-summary": "התקציר של הטיוטה."
+	"apihelp-savedrafts-param-summary": "התקציר של הטיוטה.",
+	"apihelp-savedrafts-param-minoredit": "ערך בוליאני שמייצג אם הטיוטה היא עריכה משנית."
 }
