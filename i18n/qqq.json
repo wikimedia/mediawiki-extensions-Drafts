@@ -42,5 +42,11 @@
 	"apihelp-savedrafts-param-scrolltop": "{{doc-apihelp-param|savedrafts|scrolltop}}",
 	"apihelp-savedrafts-param-text": "{{doc-apihelp-param|savedrafts|text}}",
 	"apihelp-savedrafts-param-summary": "{{doc-apihelp-param|savedrafts|summary}}",
-	"apihelp-savedrafts-param-minoredit": "{{doc-apihelp-param|savedrafts|minoredit}}"
+	"apihelp-savedrafts-param-minoredit": "{{doc-apihelp-param|savedrafts|minoredit}}",
+	"apierror-mustbeloggedin-load-drafts": "{{doc-apierror}}",
+	"apierror-must-be-draft-owner": "{{doc-apierror}}",
+	"apierror-no-such-draft": "{{doc-apierror}}",
+	"apihelp-loaddrafts-description": "{{doc-apihelp-description|loaddrafts}}",
+	"apihelp-loaddrafts-summary": "{{doc-apihelp-summary|loaddrafts}}",
+	"apihelp-loaddrafts-param-id": "{{doc-apihelp-param|loaddrafts|id}}"
 }

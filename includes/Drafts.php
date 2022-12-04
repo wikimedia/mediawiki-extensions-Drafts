@@ -264,10 +264,12 @@ abstract class Drafts {
 				$html .= Xml::tags( 'a',
 					[
 						'href' => $urlLoad,
+						'class' => 'mw-draft-load-link',
+						'data-draft-id' => $draft->getID(),
 						'style' => 'font-weight:' .
 							(
 								$currentDraft->getID() == $draft->getID() ?
-								'bold' : 'normal'
+									'bold' : 'normal'
 							)
 					],
 					$htmlTitle

@@ -161,6 +161,26 @@ function Draft() {
 			if ( form.wpMinoredit ) {
 				jQuery( form.wpMinoredit ).on( 'change', self.change );
 			}
+			// Handle clicks on the individual draft links in the list of drafts
+			jQuery( '.mw-draft-load-link' ).on( 'click', function ( event ) {
+				// Don't follow the link target, that's only for users w/o JS
+				event.preventDefault();
+				// Fetch draft information from the server, including but certainly
+				// not limited to just its text
+				( new mediaWiki.Api() ).postWithEditToken( {
+					action: 'loaddrafts',
+					id: jQuery( this ).data( 'draft-id' ),
+					formatversion: 2
+				} ).done( function ( response ) {
+					var draftData = response.loaddrafts;
+					jQuery( form.wpTextbox1 ).val( draftData.text );
+					jQuery( form.wpSummary ).val( draftData.summary );
+					jQuery( form.wpScrolltop ).val( draftData.scrolltop );
+					if ( draftData.minoredit ) {
+						jQuery( form.wpMinoredit ).prop( 'checked', draftData.minoredit );
+					}
+				} );
+			} );
 			// Handle clicks on "Discard" links in the table above the editor when there
 			// are saved drafts for a page
 			jQuery( '.mw-discard-draft-link' ).on( 'click', function ( event ) {
