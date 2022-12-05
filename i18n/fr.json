@@ -42,5 +42,11 @@
 	"apihelp-savedrafts-param-scrolltop": "La position de défilement vertical (« scrollTop ») vers le haut de la zone de texte.",
 	"apihelp-savedrafts-param-text": "Texte du brouillon.",
 	"apihelp-savedrafts-param-summary": "Résumé du brouillon.",
-	"apihelp-savedrafts-param-minoredit": "Booléen indiquant si le brouillon est une modification mineure."
+	"apihelp-savedrafts-param-minoredit": "Booléen indiquant si le brouillon est une modification mineure.",
+	"apierror-mustbeloggedin-load-drafts": "Vous devez être connecté pour charger les brouillons.",
+	"apierror-must-be-draft-owner": "Vous ne pouvez pas charger les brouillons des autres utilisateurs.",
+	"apierror-no-such-draft": "Il n’y a pas de brouillon avec l’ID fourni.",
+	"apihelp-loaddrafts-description": "Charger un brouillon précédemment enregistré.",
+	"apihelp-loaddrafts-summary": "Charger un brouillon précédemment enregistré.",
+	"apihelp-loaddrafts-param-id": "L’ID du brouillon."
 }

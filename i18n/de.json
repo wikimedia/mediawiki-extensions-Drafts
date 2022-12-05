@@ -42,5 +42,11 @@
 	"apihelp-savedrafts-param-scrolltop": "Das scrollTop des Textkastens.",
 	"apihelp-savedrafts-param-text": "Text des Entwurfs.",
 	"apihelp-savedrafts-param-summary": "Zusammenfassung des Entwurfs.",
-	"apihelp-savedrafts-param-minoredit": "Boolesche Darstellung, ob der Entwurf eine kleine Bearbeitung ist."
+	"apihelp-savedrafts-param-minoredit": "Boolesche Darstellung, ob der Entwurf eine kleine Bearbeitung ist.",
+	"apierror-mustbeloggedin-load-drafts": "Du musst angemeldet sein, um Entwürfe zu laden.",
+	"apierror-must-be-draft-owner": "Du kannst die Entwürfe anderer Benutzer nicht laden.",
+	"apierror-no-such-draft": "Es gibt keinen Entwurf mit der angegebenen Entwurfs-ID.",
+	"apihelp-loaddrafts-description": "Laden eines zuvor gespeicherten Entwurfes.",
+	"apihelp-loaddrafts-summary": "Laden eines zuvor gespeicherten Entwurfes.",
+	"apihelp-loaddrafts-param-id": "Die ID des Entwurfs."
 }
