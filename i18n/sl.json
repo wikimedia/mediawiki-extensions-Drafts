@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Dbc334"
+			"Dbc334",
+			"Eleassar"
 		]
 	},
 	"drafts": "Osnutki",
@@ -23,5 +24,11 @@
 	"drafts-save-error": "Napaka pri shranjevanju osnutka",
 	"drafts-enable": "Omogoči zmožnost shranjevanje osnutka v urejevalnem obrazcu",
 	"prefs-extension-drafts": "Osnutki",
-	"tooltip-drafts-save": "Shrani kot osnutek"
+	"tooltip-drafts-save": "Shrani kot osnutek",
+	"apierror-mustbeloggedin-load-drafts": "Za nalaganje osnutkov morate biti prijavljeni.",
+	"apierror-must-be-draft-owner": "Osnutkov drugih uporabnikov ne morete naložiti.",
+	"apierror-no-such-draft": "Ni osnutka z navedenim ID osnutka.",
+	"apihelp-loaddrafts-description": "Naloži predhodno shranjen osnutek.",
+	"apihelp-loaddrafts-summary": "Naloži predhodno shranjen osnutek.",
+	"apihelp-loaddrafts-param-id": "ID osnutka."
 }

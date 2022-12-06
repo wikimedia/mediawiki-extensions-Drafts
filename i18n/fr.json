@@ -43,10 +43,10 @@
 	"apihelp-savedrafts-param-text": "Texte du brouillon.",
 	"apihelp-savedrafts-param-summary": "Résumé du brouillon.",
 	"apihelp-savedrafts-param-minoredit": "Booléen indiquant si le brouillon est une modification mineure.",
-	"apierror-mustbeloggedin-load-drafts": "Vous devez être connecté pour charger les brouillons.",
-	"apierror-must-be-draft-owner": "Vous ne pouvez pas charger les brouillons des autres utilisateurs.",
-	"apierror-no-such-draft": "Il n’y a pas de brouillon avec l’ID fourni.",
+	"apierror-mustbeloggedin-load-drafts": "Vous devez être connecté pour charger des brouillons.",
+	"apierror-must-be-draft-owner": "Vous ne pouvez charger aucun brouillon des autres utilisateurs.",
+	"apierror-no-such-draft": "Il n’y a aucun brouillon avec l’identifiant fourni.",
 	"apihelp-loaddrafts-description": "Charger un brouillon précédemment enregistré.",
 	"apihelp-loaddrafts-summary": "Charger un brouillon précédemment enregistré.",
-	"apihelp-loaddrafts-param-id": "L’ID du brouillon."
+	"apihelp-loaddrafts-param-id": "L’identifiant du brouillon."
 }

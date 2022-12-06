@@ -39,5 +39,9 @@
 	"apihelp-savedrafts-param-scrolltop": "Lo scrollTop della casella di testo.",
 	"apihelp-savedrafts-param-text": "Testo della bozza.",
 	"apihelp-savedrafts-param-summary": "Riassunto della bozza.",
-	"apihelp-savedrafts-param-minoredit": "Booleano che specifica se la bozza è una modifica minore."
+	"apihelp-savedrafts-param-minoredit": "Booleano che specifica se la bozza è una modifica minore.",
+	"apierror-mustbeloggedin-load-drafts": "Devi aver effettuato l'accesso per caricare le bozze.",
+	"apihelp-loaddrafts-description": "Carica una bozza salvata in precedenza.",
+	"apihelp-loaddrafts-summary": "Carica una bozza salvata in precedenza.",
+	"apihelp-loaddrafts-param-id": "L'ID della bozza."
 }

@@ -36,5 +36,11 @@
 	"apihelp-savedrafts-param-scrolltop": "Le scrollTop del quadro de texto.",
 	"apihelp-savedrafts-param-text": "Texto provisori.",
 	"apihelp-savedrafts-param-summary": "Summario provisori.",
-	"apihelp-savedrafts-param-minoredit": "Valor boolean indicante si le version provisori es un modification minor."
+	"apihelp-savedrafts-param-minoredit": "Valor boolean indicante si le version provisori es un modification minor.",
+	"apierror-mustbeloggedin-load-drafts": "Tu debe aperir session pro cargar versiones provisori.",
+	"apierror-must-be-draft-owner": "Tu non pote cargar versiones provisori de altere usatores.",
+	"apierror-no-such-draft": "Il non ha un version provisori con le ID fornite.",
+	"apihelp-loaddrafts-description": "Cargar un version provisori ja salveguardate.",
+	"apihelp-loaddrafts-summary": "Cargar un version provisori ja salveguardate.",
+	"apihelp-loaddrafts-param-id": "Le ID del version provisori."
 }

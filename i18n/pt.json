@@ -40,5 +40,11 @@
 	"apihelp-savedrafts-param-scrolltop": "A parte superior da caixa de texto.",
 	"apihelp-savedrafts-param-text": "Texto de rascunho.",
 	"apihelp-savedrafts-param-summary": "Resumo do rascunho.",
-	"apihelp-savedrafts-param-minoredit": "Valor booliano que representa se o rascunho é uma edição menor."
+	"apihelp-savedrafts-param-minoredit": "Valor booliano que representa se o rascunho é uma edição menor.",
+	"apierror-mustbeloggedin-load-drafts": "Tem de ter uma sessão iniciada para carregar rascunhos.",
+	"apierror-must-be-draft-owner": "Não pode carregar rascunhos de outros utilizadores.",
+	"apierror-no-such-draft": "Não há rascunho com o identificador de rascunho fornecido.",
+	"apihelp-loaddrafts-description": "Carregar um rascunho gravado anteriormente.",
+	"apihelp-loaddrafts-summary": "Carregar um rascunho gravado anteriormente.",
+	"apihelp-loaddrafts-param-id": "O identificador do rascunho."
 }

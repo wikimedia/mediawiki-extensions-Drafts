@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Къарачайлы"
+		]
+	},
+	"apierror-mustbeloggedin-load-drafts": "Къараламаланы джюклер ючюн, системагъа кирирге керексиз.",
+	"apierror-must-be-draft-owner": "Башха хайырланыучуланы къараламаларын джюклеяллыкъ тюлсюз.",
+	"apierror-no-such-draft": "Къараламаны бу идентитфикатору бла къаралама джокъду.",
+	"apihelp-loaddrafts-description": "Алгъаракъ сакъланнган къараламаны джюклегиз.",
+	"apihelp-loaddrafts-summary": "Алгъаракъ сакъланнган къараламаны джюклегиз",
+	"apihelp-loaddrafts-param-id": "Къараламаны идентификатору."
+}
