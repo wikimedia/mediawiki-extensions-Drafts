@@ -3,7 +3,8 @@
 		"authors": [
 			"Anakmalaysia",
 			"Aviator",
-			"Izzudin"
+			"Izzudin",
+			"Tofeiku"
 		]
 	},
 	"drafts": "Draf",
@@ -25,5 +26,6 @@
 	"drafts-save-error": "Ralat ketika menyimpan draf",
 	"drafts-enable": "Hidupkan ciri menyimpan draf dalam bentuk sunting",
 	"prefs-extension-drafts": "Draf",
-	"tooltip-drafts-save": "Simpan sebagai draf"
+	"tooltip-drafts-save": "Simpan sebagai draf",
+	"apihelp-loaddrafts-param-id": "ID draf."
 }
