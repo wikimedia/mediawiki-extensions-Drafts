@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Milicevic01",
 			"Rancher",
 			"Михајло Анђелковић"
 		]
@@ -18,5 +19,6 @@
 	"drafts-save-saving": "Чување",
 	"drafts-save-error": "Грешка приликом снимања нацрта",
 	"prefs-extension-drafts": "Нацрти",
-	"tooltip-drafts-save": "Сними као нацрт"
+	"tooltip-drafts-save": "Сними као нацрт",
+	"apierror-mustbeloggedin-load-drafts": "Морате бити пријављени да бисте учитали нацрте."
 }

@@ -9,7 +9,8 @@
 			"Otokoume",
 			"Rxy",
 			"Shirayuki",
-			"Yusuke1109"
+			"Yusuke1109",
+			"バレロン"
 		]
 	},
 	"drafts": "下書き",
@@ -44,5 +45,7 @@
 	"apihelp-savedrafts-param-scrolltop": "テキストボックスの scrollTop",
 	"apihelp-savedrafts-param-text": "下書きテキスト",
 	"apihelp-savedrafts-param-summary": "下書きの概要",
-	"apihelp-savedrafts-param-minoredit": "下書きが細部の編集であるかどうかを表すブール値。"
+	"apihelp-savedrafts-param-minoredit": "下書きが細部の編集であるかどうかを表すブール値。",
+	"apihelp-loaddrafts-description": "保存済みの下書きを読み込む",
+	"apihelp-loaddrafts-param-id": "下書きのID"
 }

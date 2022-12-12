@@ -42,5 +42,11 @@
 	"apihelp-savedrafts-param-scrolltop": "ה־scrollTop של תיבת הטקסט.",
 	"apihelp-savedrafts-param-text": "הטקסט של הטיוטה.",
 	"apihelp-savedrafts-param-summary": "התקציר של הטיוטה.",
-	"apihelp-savedrafts-param-minoredit": "ערך בוליאני שמייצג אם הטיוטה היא עריכה משנית."
+	"apihelp-savedrafts-param-minoredit": "ערך בוליאני שמייצג אם הטיוטה היא עריכה משנית.",
+	"apierror-mustbeloggedin-load-drafts": "יש להיכנס לחשבון כדי לטעון טיוטות.",
+	"apierror-must-be-draft-owner": "אין לך הרשאה לטעון טיוטות של משתמשים אחרים.",
+	"apierror-no-such-draft": "אין טיוטה עם מזהה הטיוטה הנתון.",
+	"apihelp-loaddrafts-description": "טעינת טיוטה שנשמרה בעבר.",
+	"apihelp-loaddrafts-summary": "טעינת טיוטה שנשמרה בעבר.",
+	"apihelp-loaddrafts-param-id": "המזהה של הטיוטה."
 }
