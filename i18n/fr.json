@@ -48,5 +48,5 @@
 	"apierror-no-such-draft": "Il n’y a aucun brouillon avec l’identifiant fourni.",
 	"apihelp-loaddrafts-description": "Charger un brouillon précédemment enregistré.",
 	"apihelp-loaddrafts-summary": "Charger un brouillon précédemment enregistré.",
-	"apihelp-loaddrafts-param-id": "Identifiant du brouillon."
+	"apihelp-loaddrafts-param-id": "L’identifiant du brouillon."
 }
