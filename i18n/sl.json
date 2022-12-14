@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Dbc334"
+			"Dbc334",
+			"Eleassar"
 		]
 	},
 	"drafts": "Osnutki",
-	"drafts-desc": "Doda zmožnost shranjevanja različic [[Special:Drafts|osnutkov]] strani na strežniku",
+	"drafts-desc": "Doda zmožnost shranjevanja [[Special:Drafts|osnutkov]] strani v strežniku",
 	"drafts-view": "Ogled osnutka",
 	"drafts-view-summary": "Ta posebna stran prikazuje seznam vseh obstoječih osnutkov.\nNeuporabljeni osnutki bodo samodejno zavrženi po $1 {{PLURAL:$1|dnevu|dneh}}.",
 	"drafts-view-article": "Stran",
@@ -23,5 +24,18 @@
 	"drafts-save-error": "Napaka pri shranjevanju osnutka",
 	"drafts-enable": "Omogoči zmožnost shranjevanje osnutka v urejevalnem obrazcu",
 	"prefs-extension-drafts": "Osnutki",
-	"tooltip-drafts-save": "Shrani kot osnutek"
+	"tooltip-drafts-save": "Shrani kot osnutek",
+	"apierror-mustbeloggedin-save-drafts": "Za shranjevanje osnutkov morate biti prijavljeni.",
+	"apihelp-savedrafts-description": "Shrani osnutek.",
+	"apihelp-savedrafts-summary": "Shrani osnutek.",
+	"apihelp-savedrafts-param-id": "ID osnutka.",
+	"apihelp-savedrafts-param-drafttoken": "Žeton osnutka.",
+	"apihelp-savedrafts-param-title": "Naslov osnutka.",
+	"apihelp-savedrafts-param-section": "Indeks razdelka strani, ki se ureja.",
+	"apihelp-savedrafts-param-starttime": "Začetni čas osnutka.",
+	"apihelp-savedrafts-param-edittime": "Čas urejanja osnutka.",
+	"apihelp-savedrafts-param-scrolltop": "Položaj navpičnega pomikanja (»scrollTop«) proti vrhu besedilnega polja.",
+	"apihelp-savedrafts-param-text": "Osnutek besedila.",
+	"apihelp-savedrafts-param-summary": "Povzetek besedila.",
+	"apihelp-savedrafts-param-minoredit": "Boolean, ki določa, ali je osnutek manjše urejanje."
 }
