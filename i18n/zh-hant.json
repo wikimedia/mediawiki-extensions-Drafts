@@ -10,7 +10,8 @@
 			"Liuxinyu970226",
 			"Mark85296341",
 			"Waihorace",
-			"Wrightbus"
+			"Wrightbus",
+			"捍粵者"
 		]
 	},
 	"drafts": "草稿",
@@ -45,5 +46,11 @@
 	"apihelp-savedrafts-param-scrolltop": "文字框 scrollTop。",
 	"apihelp-savedrafts-param-text": "草稿文字。",
 	"apihelp-savedrafts-param-summary": "草稿摘要。",
-	"apihelp-savedrafts-param-minoredit": "表示草稿內容是否為小修改的布林值。"
+	"apihelp-savedrafts-param-minoredit": "表示草稿內容是否為小修改的布林值。",
+	"apierror-mustbeloggedin-load-drafts": "您必須登入以載入草稿。",
+	"apierror-must-be-draft-owner": "不可載入其他用戶的草稿",
+	"apierror-no-such-draft": "沒有此編號的草稿",
+	"apihelp-loaddrafts-description": "載入之前儲存的草稿。",
+	"apihelp-loaddrafts-summary": "載入之前儲存的草稿。",
+	"apihelp-loaddrafts-param-id": "草稿編號"
 }

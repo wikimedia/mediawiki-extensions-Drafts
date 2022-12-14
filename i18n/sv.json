@@ -30,5 +30,11 @@
 	"tooltip-drafts-save": "Spara som ett utkast",
 	"apierror-mustbeloggedin-save-drafts": "Du måste vara inloggad för att spara skisser.",
 	"apihelp-savedrafts-summary": "Spara ett utkast.",
-	"apihelp-savedrafts-param-text": "Utkaststext"
+	"apihelp-savedrafts-param-text": "Utkaststext",
+	"apierror-mustbeloggedin-load-drafts": "Du måste vara inloggad för att läsa in utkast.",
+	"apierror-must-be-draft-owner": "Du kan inte läsa in andra användares utkast.",
+	"apierror-no-such-draft": "Det finns inget utkast med angivet utkast-ID.",
+	"apihelp-loaddrafts-description": "Läs in ett tidigare sparat utkast.",
+	"apihelp-loaddrafts-summary": "Läs in ett tidigare sparat utkast.",
+	"apihelp-loaddrafts-param-id": "ID för utkastet."
 }
