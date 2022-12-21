@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Agam Riyandana",
 			"Bennylin",
 			"Daud I.F. Argana",
 			"Farras",
@@ -41,5 +42,9 @@
 	"apihelp-savedrafts-param-scrolltop": "scrollTop dari kotak teks.",
 	"apihelp-savedrafts-param-text": "Teks draf.",
 	"apihelp-savedrafts-param-summary": "Ringkasan draf.",
-	"apihelp-savedrafts-param-minoredit": "Boolean yang menunjukkan apakah drafnya merupakan sebuah suntingan kecil."
+	"apihelp-savedrafts-param-minoredit": "Boolean yang menunjukkan apakah drafnya merupakan sebuah suntingan kecil.",
+	"apierror-mustbeloggedin-load-drafts": "Anda harus masuk untuk memuat draf.",
+	"apierror-no-such-draft": "Tidak ada draf oleh draf ID yang diberikan.",
+	"apihelp-loaddrafts-description": "Muat draf yang disimpan sebelumnya.",
+	"apihelp-loaddrafts-summary": "Muat draf yang disimpan sebelumnya."
 }
