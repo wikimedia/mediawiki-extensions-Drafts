@@ -37,5 +37,5 @@
 	"apihelp-savedrafts-param-scrolltop": "Položaj navpičnega pomikanja (»scrollTop«) proti vrhu besedilnega polja.",
 	"apihelp-savedrafts-param-text": "Osnutek besedila.",
 	"apihelp-savedrafts-param-summary": "Povzetek besedila.",
-	"apihelp-savedrafts-param-minoredit": "Boolean, ki določa, ali je osnutek manjše urejanje."
+	"apihelp-savedrafts-param-minoredit": "Bool, ki določa, ali je osnutek manjše urejanje."
 }
