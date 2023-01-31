@@ -31,7 +31,7 @@
 	"apihelp-savedrafts-param-id": "Назнака на нацртот.",
 	"apihelp-savedrafts-param-drafttoken": "Шифра на нацртот.",
 	"apihelp-savedrafts-param-title": "Наслов на нацртот.",
-	"apihelp-savedrafts-param-section": "Показател на поднасловот на страницата што се уредува.",
+	"apihelp-savedrafts-param-section": "Показател на одделот на страницата што се уредува.",
 	"apihelp-savedrafts-param-starttime": "Време на почнувањето на нацртот.",
 	"apihelp-savedrafts-param-edittime": "Време на уредувањето на нацртот.",
 	"apihelp-savedrafts-param-scrolltop": "scrollTop на полето со текст.",
