@@ -1,17 +1,38 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eitvys200"
+			"Eitvys200",
+			"Nokeoo"
 		]
 	},
 	"drafts": "Ruošiniai",
+	"drafts-desc": "Prideda galimybę serveryje išsaugoti puslapio [[Special:Drafts|juodraščio]] versijas",
+	"drafts-view": "ŽiūrėtiJuodraštį",
+	"drafts-view-summary": "Šiame specialiame puslapyje rodomas visų esamų juodraščių sąrašas.\nNenaudojami juodraščiai bus išmesti po {{PLURAL:$1|$1 dienos|$1 dienų}} automatiškai.",
 	"drafts-view-article": "Puslapis",
+	"drafts-view-existing": "Egzistuojantys juodraščiai",
 	"drafts-view-saved": "Išsaugota",
 	"drafts-view-discard": "Ištrinti",
+	"drafts-view-nonesaved": "Šiuo metu neturite išsaugotų juodraščių.",
+	"drafts-view-notice": "Turite $1 šiam puslapiui.",
+	"drafts-view-notice-link": "$1 {{PLURAL:$1|juodraštį|juodraščius}}",
+	"drafts-view-warn": "Ar norite išeiti iš šio puslapio? Tai darydami prarasite visus neišsaugotus šio puslapio pakeitimus.",
 	"drafts-save": "Išsaugoti šį kaip ruošinį",
 	"drafts-save-save": "Išsaugoti ruošinį",
 	"drafts-save-saved": "Išsaugota",
 	"drafts-save-saving": "Išsaugomas",
 	"drafts-save-error": "Klaida įrašant projektą",
-	"prefs-extension-drafts": "Ruošiniai"
+	"prefs-extension-drafts": "Ruošiniai",
+	"tooltip-drafts-save": "Išsaugoti kaip juodraštį",
+	"apierror-mustbeloggedin-save-drafts": "Norėdami išsaugoti juodraščius, turite būti prisijungę.",
+	"apihelp-savedrafts-description": "Išsaugoti juodraštį.",
+	"apihelp-savedrafts-summary": "Išsaugoti juodraštį.",
+	"apihelp-savedrafts-param-id": "Juodraščio ID.",
+	"apihelp-savedrafts-param-drafttoken": "Juodraščio raktas.",
+	"apihelp-savedrafts-param-title": "Juodraščio pavadinimas.",
+	"apihelp-savedrafts-param-section": "Redaguojamo puslapio skyriaus indeksas.",
+	"apihelp-savedrafts-param-starttime": "Juodraščio pradžios laikas.",
+	"apihelp-savedrafts-param-edittime": "Juodraščio redagavimo laikas.",
+	"apihelp-savedrafts-param-text": "Juodraščio tekstas.",
+	"apihelp-savedrafts-param-summary": "Juodraščio santrauka."
 }
