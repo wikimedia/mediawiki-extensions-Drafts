@@ -3,7 +3,8 @@
 		"authors": [
 			"Meno25",
 			"OsamaK",
-			"ديفيد"
+			"ديفيد",
+			"Alshamiri1"
 		]
 	},
 	"drafts": "مسودات",
@@ -38,5 +39,11 @@
 	"apihelp-savedrafts-param-scrolltop": "scrollTop صندوق النص.",
 	"apihelp-savedrafts-param-text": "نص المسودة.",
 	"apihelp-savedrafts-param-summary": "ملخص المسودة.",
-	"apihelp-savedrafts-param-minoredit": "بوليان يمثل ما إذا كان المسودة تعديلا طفيفا."
+	"apihelp-savedrafts-param-minoredit": "بوليان يمثل ما إذا كان المسودة تعديلا طفيفا.",
+	"apierror-mustbeloggedin-load-drafts": "يجب عليك تسجيل الدخول لتحميل المسودات.",
+	"apierror-must-be-draft-owner": "لا يمكنك تحميل مسودات المستخدمين الآخرين.",
+	"apierror-no-such-draft": "لا توجد مسودة بمعرف المسودة المحدد.",
+	"apihelp-loaddrafts-description": "قم بتحميل مسودة محفوظة مسبقًا.",
+	"apihelp-loaddrafts-summary": "قم بتحميل مسودة محفوظة مسبقًا.",
+	"apihelp-loaddrafts-param-id": "معرف المسودة."
 }
