@@ -26,7 +26,6 @@
 	"tooltip-drafts-save": "Save as a draft",
 	"accesskey-drafts-save": "g",
 	"apierror-mustbeloggedin-save-drafts": "You must be logged in to save drafts.",
-	"apihelp-savedrafts-description": "Save a draft.",
 	"apihelp-savedrafts-summary": "Save a draft.",
 	"apihelp-savedrafts-param-id": "The ID of the draft.",
 	"apihelp-savedrafts-param-drafttoken": "Draft token.",
@@ -41,7 +40,6 @@
 	"apierror-mustbeloggedin-load-drafts": "You must be logged in to load drafts.",
 	"apierror-must-be-draft-owner": "You can't load other users' drafts.",
 	"apierror-no-such-draft": "There is no draft by the given draft ID.",
-	"apihelp-loaddrafts-description": "Load a previously saved draft.",
 	"apihelp-loaddrafts-summary": "Load a previously saved draft.",
 	"apihelp-loaddrafts-param-id": "The ID of the draft."
 }

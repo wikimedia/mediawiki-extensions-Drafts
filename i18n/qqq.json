@@ -31,7 +31,6 @@
 	"tooltip-drafts-save": "Used as tooltip for the button {{msg-mw|Drafts-save-save}}.",
 	"accesskey-drafts-save": "{{doc-accesskey}}",
 	"apierror-mustbeloggedin-save-drafts": "{{doc-apierror}}",
-	"apihelp-savedrafts-description": "{{doc-apihelp-description|savedrafts}}",
 	"apihelp-savedrafts-summary": "{{doc-apihelp-summary|savedrafts}}",
 	"apihelp-savedrafts-param-id": "{{doc-apihelp-param|savedrafts|id}}",
 	"apihelp-savedrafts-param-drafttoken": "{{doc-apihelp-param|savedrafts|drafttoken}}",
@@ -46,7 +45,6 @@
 	"apierror-mustbeloggedin-load-drafts": "{{doc-apierror}}",
 	"apierror-must-be-draft-owner": "{{doc-apierror}}",
 	"apierror-no-such-draft": "{{doc-apierror}}",
-	"apihelp-loaddrafts-description": "{{doc-apihelp-description|loaddrafts}}",
 	"apihelp-loaddrafts-summary": "{{doc-apihelp-summary|loaddrafts}}",
 	"apihelp-loaddrafts-param-id": "{{doc-apihelp-param|loaddrafts|id}}"
 }
