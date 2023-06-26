@@ -34,7 +34,6 @@
 	"apierror-mustbeloggedin-load-drafts": "Du måste vara inloggad för att läsa in utkast.",
 	"apierror-must-be-draft-owner": "Du kan inte läsa in andra användares utkast.",
 	"apierror-no-such-draft": "Det finns inget utkast med angivet utkast-ID.",
-	"apihelp-loaddrafts-description": "Läs in ett tidigare sparat utkast.",
 	"apihelp-loaddrafts-summary": "Läs in ett tidigare sparat utkast.",
 	"apihelp-loaddrafts-param-id": "ID för utkastet."
 }

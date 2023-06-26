@@ -30,7 +30,6 @@
 	"apierror-mustbeloggedin-load-drafts": "Bạn phải đăng nhập để tải bản nháp.",
 	"apierror-must-be-draft-owner": "Bạn không thể tải bản nháp của người dùng khác.",
 	"apierror-no-such-draft": "Không có bản nháp nào theo ID bản nháp đã cho.",
-	"apihelp-loaddrafts-description": "Tải bản nháp đã lưu trước đó.",
 	"apihelp-loaddrafts-summary": "Tải bản nháp đã lưu trước đó.",
 	"apihelp-loaddrafts-param-id": "ID của bản nháp."
 }

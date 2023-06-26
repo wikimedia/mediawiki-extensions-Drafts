@@ -28,7 +28,6 @@
 	"prefs-extension-drafts": "مسودات",
 	"tooltip-drafts-save": "حفظ كمسودة",
 	"apierror-mustbeloggedin-save-drafts": "يجب تسجيل الدخول لحفظ المسودات.",
-	"apihelp-savedrafts-description": "حفظ مسودة.",
 	"apihelp-savedrafts-summary": "حفظ مسودة.",
 	"apihelp-savedrafts-param-id": "معرف المسودة.",
 	"apihelp-savedrafts-param-drafttoken": "الرمز المميز للمسودة.",
@@ -43,7 +42,6 @@
 	"apierror-mustbeloggedin-load-drafts": "يجب عليك تسجيل الدخول لتحميل المسودات.",
 	"apierror-must-be-draft-owner": "لا يمكنك تحميل مسودات المستخدمين الآخرين.",
 	"apierror-no-such-draft": "لا توجد مسودة بمعرف المسودة المحدد.",
-	"apihelp-loaddrafts-description": "قم بتحميل مسودة محفوظة مسبقًا.",
 	"apihelp-loaddrafts-summary": "قم بتحميل مسودة محفوظة مسبقًا.",
 	"apihelp-loaddrafts-param-id": "معرف المسودة."
 }

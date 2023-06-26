@@ -27,7 +27,6 @@
 	"prefs-extension-drafts": "Borradores",
 	"tooltip-drafts-save": "Gardar como un borrador",
 	"apierror-mustbeloggedin-save-drafts": "Debe acceder ó sistema para gardar borradores.",
-	"apihelp-savedrafts-description": "Gardar un borrador.",
 	"apihelp-savedrafts-summary": "Gardar un borrador.",
 	"apihelp-savedrafts-param-id": "O Identificador do borrador.",
 	"apihelp-savedrafts-param-drafttoken": "Identificador do borrador.",

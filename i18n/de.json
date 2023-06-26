@@ -31,7 +31,6 @@
 	"prefs-extension-drafts": "Entwürfe",
 	"tooltip-drafts-save": "Eine zwischengespeicherte Version erstellen",
 	"apierror-mustbeloggedin-save-drafts": "Du musst angemeldet sein, um Entwürfe zu speichern.",
-	"apihelp-savedrafts-description": "Speichert einen Entwurf.",
 	"apihelp-savedrafts-summary": "Speichert einen Entwurf.",
 	"apihelp-savedrafts-param-id": "Die Kennung des Entwurfs.",
 	"apihelp-savedrafts-param-drafttoken": "Token des Entwurfs.",
@@ -46,7 +45,6 @@
 	"apierror-mustbeloggedin-load-drafts": "Du musst angemeldet sein, um Entwürfe zu laden.",
 	"apierror-must-be-draft-owner": "Du kannst die Entwürfe anderer Benutzer nicht laden.",
 	"apierror-no-such-draft": "Es gibt keinen Entwurf mit der angegebenen Entwurfs-ID.",
-	"apihelp-loaddrafts-description": "Laden eines zuvor gespeicherten Entwurfes.",
 	"apihelp-loaddrafts-summary": "Laden eines zuvor gespeicherten Entwurfes.",
 	"apihelp-loaddrafts-param-id": "Die ID des Entwurfs."
 }

@@ -16,7 +16,6 @@
 	"drafts-save-error": "مسودہ کے محفوظ ہونے میں خرابی",
 	"prefs-extension-drafts": "مسودات",
 	"tooltip-drafts-save": "بطو مسودہ محفوظ",
-	"apihelp-savedrafts-description": "مسودہ محفوظ۔",
 	"apihelp-savedrafts-param-id": "مسودہ کی آئی ڈی۔",
 	"apihelp-savedrafts-param-drafttoken": "مسودہ ٹوکن۔",
 	"apihelp-savedrafts-param-title": "عنوان مسودہ",

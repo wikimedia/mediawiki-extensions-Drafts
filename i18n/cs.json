@@ -31,7 +31,6 @@
 	"prefs-extension-drafts": "Návrhy",
 	"tooltip-drafts-save": "Uložit jako koncept",
 	"apierror-mustbeloggedin-save-drafts": "Pro ukládání konceptů musíte být přihlášen(a).",
-	"apihelp-savedrafts-description": "Uložit koncept.",
 	"apihelp-savedrafts-summary": "Uložit koncept.",
 	"apihelp-savedrafts-param-id": "ID konceptu.",
 	"apihelp-savedrafts-param-drafttoken": "Token konceptu.",

@@ -26,7 +26,6 @@
 	"drafts-enable": "সম্পাদনা ফর্মে খসড়া সংরক্ষণের বৈশিষ্ট্য সক্রিয় করুন",
 	"prefs-extension-drafts": "খসড়া",
 	"tooltip-drafts-save": "খসড়া হিসেবে সংরক্ষণ করো",
-	"apihelp-savedrafts-description": "খসড়া সংরক্ষণ।",
 	"apihelp-savedrafts-param-text": "খসড়ার লেখা।",
 	"apihelp-savedrafts-param-summary": "খসড়ার সারাংশ।"
 }

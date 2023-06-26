@@ -28,7 +28,6 @@
 	"prefs-extension-drafts": "Bozze",
 	"tooltip-drafts-save": "Salva come bozza",
 	"apierror-mustbeloggedin-save-drafts": "Devi aver effettuato l'accesso per salvare le bozze.",
-	"apihelp-savedrafts-description": "Salva una bozza.",
 	"apihelp-savedrafts-summary": "Salva una bozza.",
 	"apihelp-savedrafts-param-id": "L'ID della bozza.",
 	"apihelp-savedrafts-param-drafttoken": "Token della bozza",
@@ -41,7 +40,6 @@
 	"apihelp-savedrafts-param-summary": "Riassunto della bozza.",
 	"apihelp-savedrafts-param-minoredit": "Booleano che specifica se la bozza è una modifica minore.",
 	"apierror-mustbeloggedin-load-drafts": "Devi aver effettuato l'accesso per caricare le bozze.",
-	"apihelp-loaddrafts-description": "Carica una bozza salvata in precedenza.",
 	"apihelp-loaddrafts-summary": "Carica una bozza salvata in precedenza.",
 	"apihelp-loaddrafts-param-id": "L'ID della bozza."
 }

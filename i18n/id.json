@@ -31,7 +31,6 @@
 	"prefs-extension-drafts": "Draf",
 	"tooltip-drafts-save": "Simpan sebagai tulisan rancangan",
 	"apierror-mustbeloggedin-save-drafts": "Anda harus masuk log untuk menyimpan draf.",
-	"apihelp-savedrafts-description": "Menyimpan sebuah draf.",
 	"apihelp-savedrafts-summary": "Menyimpan sebuah draf.",
 	"apihelp-savedrafts-param-id": "ID dari draf.",
 	"apihelp-savedrafts-param-drafttoken": "Token draf.",
@@ -46,7 +45,6 @@
 	"apierror-mustbeloggedin-load-drafts": "Anda harus masuk untuk memuat draf.",
 	"apierror-must-be-draft-owner": "Anda tidak dapat memuat draf pengguna lain.",
 	"apierror-no-such-draft": "Tidak ada draf oleh draf ID yang diberikan.",
-	"apihelp-loaddrafts-description": "Muat draf yang disimpan sebelumnya.",
 	"apihelp-loaddrafts-summary": "Muat draf yang disimpan sebelumnya.",
 	"apihelp-loaddrafts-param-id": "ID dari draf."
 }

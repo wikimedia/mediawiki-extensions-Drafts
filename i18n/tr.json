@@ -28,7 +28,6 @@
 	"prefs-extension-drafts": "Taslaklar",
 	"tooltip-drafts-save": "Taslak olarak kaydet",
 	"apierror-mustbeloggedin-save-drafts": "Taslakları kaydetmek için oturum açmalısınız.",
-	"apihelp-savedrafts-description": "Bir taslağı kaydedin.",
 	"apihelp-savedrafts-summary": "Bir taslağı kaydedin.",
 	"apihelp-savedrafts-param-id": "Taslağın kimliği.",
 	"apihelp-savedrafts-param-drafttoken": "Taslak anahtarı.",

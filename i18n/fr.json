@@ -31,7 +31,6 @@
 	"prefs-extension-drafts": "Brouillons",
 	"tooltip-drafts-save": "Enregistrer comme brouillon",
 	"apierror-mustbeloggedin-save-drafts": "Vous devez être connecté pour enregistrer des brouillons.",
-	"apihelp-savedrafts-description": "Enregistrer un brouillon.",
 	"apihelp-savedrafts-summary": "Enregistrer un brouillon.",
 	"apihelp-savedrafts-param-id": "L’identifiant du brouillon.",
 	"apihelp-savedrafts-param-drafttoken": "Jeton du brouillon.",
@@ -46,7 +45,6 @@
 	"apierror-mustbeloggedin-load-drafts": "Vous devez être connecté pour charger des brouillons.",
 	"apierror-must-be-draft-owner": "Vous ne pouvez charger aucun brouillon des autres utilisateurs.",
 	"apierror-no-such-draft": "Il n’y a aucun brouillon avec l’identifiant fourni.",
-	"apihelp-loaddrafts-description": "Charger un brouillon précédemment enregistré.",
 	"apihelp-loaddrafts-summary": "Charger un brouillon précédemment enregistré.",
 	"apihelp-loaddrafts-param-id": "L’identifiant du brouillon."
 }

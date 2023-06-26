@@ -35,7 +35,6 @@
 	"prefs-extension-drafts": "草稿",
 	"tooltip-drafts-save": "保存为草稿",
 	"apierror-mustbeloggedin-save-drafts": "您必须登录以保存草稿",
-	"apihelp-savedrafts-description": "保存一段草稿。",
 	"apihelp-savedrafts-summary": "保存一段草稿。",
 	"apihelp-savedrafts-param-id": "草稿的ID。",
 	"apihelp-savedrafts-param-drafttoken": "草稿令牌。",
@@ -50,7 +49,6 @@
 	"apierror-mustbeloggedin-load-drafts": "您必须登录以加载草稿",
 	"apierror-must-be-draft-owner": "您不能加载其他用户的草稿。",
 	"apierror-no-such-draft": "没有你的草稿。",
-	"apihelp-loaddrafts-description": "加载以前保存的草稿。",
 	"apihelp-loaddrafts-summary": "加载以前保存的草稿。",
 	"apihelp-loaddrafts-param-id": "草稿的ID。"
 }

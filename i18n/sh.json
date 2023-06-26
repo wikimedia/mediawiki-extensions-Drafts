@@ -25,7 +25,6 @@
 	"prefs-extension-drafts": "Nacrti",
 	"tooltip-drafts-save": "Sačuvaj kao nacrt",
 	"apierror-mustbeloggedin-save-drafts": "Morate biti prijavljeni da biste čuvali radne verzije.",
-	"apihelp-savedrafts-description": "Sačuvaj nacrt.",
 	"apihelp-savedrafts-summary": "Sačuvaj nacrt.",
 	"apihelp-savedrafts-param-id": "Naznaka nacrta.",
 	"apihelp-savedrafts-param-drafttoken": "Token nacrta.",

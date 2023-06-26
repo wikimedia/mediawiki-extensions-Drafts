@@ -26,7 +26,6 @@
 	"drafts-enable": "Ҡараламаны һаҡлау өсөн мөхәррирләү формаһындағы функцияны ҡабыҙырға",
 	"prefs-extension-drafts": "Ҡараламалар",
 	"tooltip-drafts-save": "Ҡаралама рәүешендә һаҡларға",
-	"apihelp-savedrafts-description": "Ҡараламаны һаҡларға",
 	"apihelp-savedrafts-param-id": "Ҡараламаның ID- һы",
 	"apihelp-savedrafts-param-title": "Ҡараламаның атамаһы",
 	"apihelp-savedrafts-param-text": "Ҡараламаның тексы",

@@ -25,7 +25,6 @@
 	"prefs-extension-drafts": "Versiones provisori",
 	"tooltip-drafts-save": "Salveguardar como version provisori",
 	"apierror-mustbeloggedin-save-drafts": "Tu debe aperir session pro salveguardar versiones provisori.",
-	"apihelp-savedrafts-description": "Salveguardar un version provisori.",
 	"apihelp-savedrafts-summary": "Salveguardar un version provisori.",
 	"apihelp-savedrafts-param-id": "Le ID del version provisori.",
 	"apihelp-savedrafts-param-drafttoken": "Token de version provisori.",
@@ -40,7 +39,6 @@
 	"apierror-mustbeloggedin-load-drafts": "Tu debe aperir session pro cargar versiones provisori.",
 	"apierror-must-be-draft-owner": "Tu non pote cargar versiones provisori de altere usatores.",
 	"apierror-no-such-draft": "Il non ha un version provisori con le ID fornite.",
-	"apihelp-loaddrafts-description": "Cargar un version provisori ja salveguardate.",
 	"apihelp-loaddrafts-summary": "Cargar un version provisori ja salveguardate.",
 	"apihelp-loaddrafts-param-id": "Le ID del version provisori."
 }

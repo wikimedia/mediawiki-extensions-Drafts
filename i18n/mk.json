@@ -26,7 +26,6 @@
 	"prefs-extension-drafts": "Недовршени",
 	"tooltip-drafts-save": "Зачувај како нацрт",
 	"apierror-mustbeloggedin-save-drafts": "Мора да сте најавени за да зачувувате нацрти.",
-	"apihelp-savedrafts-description": "Зачувај нацрт.",
 	"apihelp-savedrafts-summary": "Зачувај нацрт.",
 	"apihelp-savedrafts-param-id": "Назнака на нацртот.",
 	"apihelp-savedrafts-param-drafttoken": "Шифра на нацртот.",
@@ -41,7 +40,6 @@
 	"apierror-mustbeloggedin-load-drafts": "Мора да сте најавени за да вчитувате нацрти.",
 	"apierror-must-be-draft-owner": "Не можете да вчитувате нацрти на други корисници.",
 	"apierror-no-such-draft": "Нема нацрт со укажаната назнака.",
-	"apihelp-loaddrafts-description": "Вчитај претходно зачуван нацрт.",
 	"apihelp-loaddrafts-summary": "Вчитај претходно зачувај нацрт.",
 	"apihelp-loaddrafts-param-id": "Назнака на нацртот."
 }

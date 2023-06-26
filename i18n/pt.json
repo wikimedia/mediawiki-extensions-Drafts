@@ -29,7 +29,6 @@
 	"prefs-extension-drafts": "Rascunhos",
 	"tooltip-drafts-save": "Gravar como rascunho",
 	"apierror-mustbeloggedin-save-drafts": "Para gravar rascunhos tem de ter uma sessão iniciada.",
-	"apihelp-savedrafts-description": "Gravar um rascunho.",
 	"apihelp-savedrafts-summary": "Gravar um rascunho.",
 	"apihelp-savedrafts-param-id": "O identificador do rascunho.",
 	"apihelp-savedrafts-param-drafttoken": "Chave do rascunho.",
@@ -44,7 +43,6 @@
 	"apierror-mustbeloggedin-load-drafts": "Tem de ter uma sessão iniciada para carregar rascunhos.",
 	"apierror-must-be-draft-owner": "Não pode carregar rascunhos de outros utilizadores.",
 	"apierror-no-such-draft": "Não há rascunho com o identificador de rascunho fornecido.",
-	"apihelp-loaddrafts-description": "Carregar um rascunho gravado anteriormente.",
 	"apihelp-loaddrafts-summary": "Carregar um rascunho gravado anteriormente.",
 	"apihelp-loaddrafts-param-id": "O identificador do rascunho."
 }

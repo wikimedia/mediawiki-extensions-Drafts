@@ -31,7 +31,6 @@
 	"prefs-extension-drafts": "טיוטות",
 	"tooltip-drafts-save": "שמירה כטיוטה",
 	"apierror-mustbeloggedin-save-drafts": "יש להיכנס לחשבון כדי לשמור טיוטות.",
-	"apihelp-savedrafts-description": "שמירת טיוטה.",
 	"apihelp-savedrafts-summary": "שמור טיוטה",
 	"apihelp-savedrafts-param-id": "המזהה של הטיוטה.",
 	"apihelp-savedrafts-param-drafttoken": "האסימון של הטיוטה.",
@@ -46,7 +45,6 @@
 	"apierror-mustbeloggedin-load-drafts": "יש להיכנס לחשבון כדי לטעון טיוטות.",
 	"apierror-must-be-draft-owner": "אין לך הרשאה לטעון טיוטות של משתמשים אחרים.",
 	"apierror-no-such-draft": "אין טיוטה עם מזהה הטיוטה הנתון.",
-	"apihelp-loaddrafts-description": "טעינת טיוטה שנשמרה בעבר.",
 	"apihelp-loaddrafts-summary": "טעינת טיוטה שנשמרה בעבר.",
 	"apihelp-loaddrafts-param-id": "המזהה של הטיוטה."
 }

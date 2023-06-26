@@ -21,6 +21,5 @@
 	"drafts-save-saving": "Gordetzen",
 	"drafts-save-error": "Akatsa zirriborroa gordetzean",
 	"prefs-extension-drafts": "Zirriborroak",
-	"tooltip-drafts-save": "Gorde zirriborrotzat",
-	"apihelp-savedrafts-description": "Gorde zirriborroa."
+	"tooltip-drafts-save": "Gorde zirriborrotzat"
 }

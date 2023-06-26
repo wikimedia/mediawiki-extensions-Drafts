@@ -26,7 +26,6 @@
 	"drafts-enable": "Funktioun aktivéiere fir eng Virbereedung am Ännerungsformulaire ze späicheren",
 	"prefs-extension-drafts": "Virbereedungen",
 	"tooltip-drafts-save": "Als Brouillon späicheren",
-	"apihelp-savedrafts-description": "E Brouillon späicheren.",
 	"apihelp-savedrafts-summary": "E Brouillon späicheren.",
 	"apihelp-savedrafts-param-id": "D'Nummer (ID) vum Brouillon.",
 	"apihelp-savedrafts-param-title": "Titel vum Brouillon.",

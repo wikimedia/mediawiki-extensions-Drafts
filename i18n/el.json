@@ -29,7 +29,6 @@
 	"drafts-save-error": "Σφάλμα στην αποθήκευση του προχείρου",
 	"prefs-extension-drafts": "Προσχέδια",
 	"tooltip-drafts-save": "Αποθήκευση ως ένα πρόχειρο",
-	"apihelp-savedrafts-description": "Αποθήκευση ενός προχείρου.",
 	"apihelp-savedrafts-summary": "Αποθήκευση ενός προχείρου.",
 	"apihelp-savedrafts-param-id": "Το αναγνωριστικό του προχείρου.",
 	"apihelp-savedrafts-param-title": "Τίτλος του προχείρου.",

@@ -34,7 +34,6 @@
 	"prefs-extension-drafts": "下書き",
 	"tooltip-drafts-save": "下書きとして保存する",
 	"apierror-mustbeloggedin-save-drafts": "下書きを保存するにはログインしてください",
-	"apihelp-savedrafts-description": "下書きを保存します。",
 	"apihelp-savedrafts-summary": "下書きを保存します。",
 	"apihelp-savedrafts-param-id": "下書きの ID",
 	"apihelp-savedrafts-param-drafttoken": "下書きのトークン",
@@ -46,6 +45,5 @@
 	"apihelp-savedrafts-param-text": "下書きテキスト",
 	"apihelp-savedrafts-param-summary": "下書きの概要",
 	"apihelp-savedrafts-param-minoredit": "下書きが細部の編集であるかどうかを表すブール値。",
-	"apihelp-loaddrafts-description": "保存済みの下書きを読み込む",
 	"apihelp-loaddrafts-param-id": "下書きのID"
 }

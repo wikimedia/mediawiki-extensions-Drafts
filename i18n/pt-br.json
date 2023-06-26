@@ -30,7 +30,6 @@
 	"prefs-extension-drafts": "Rascunhos",
 	"tooltip-drafts-save": "Salvar como rascunho",
 	"apierror-mustbeloggedin-save-drafts": "Você precisa entrar para salvar rascunhos.",
-	"apihelp-savedrafts-description": "Salvar rascunho.",
 	"apihelp-savedrafts-summary": "Salvar rascunho.",
 	"apihelp-savedrafts-param-id": "O identificador do rascunho.",
 	"apihelp-savedrafts-param-drafttoken": "Chave do rascunho.",
@@ -43,7 +42,6 @@
 	"apihelp-savedrafts-param-summary": "Resumo do rascunho.",
 	"apihelp-savedrafts-param-minoredit": "Valor booleano que representa se o rascunho é uma edição menor.",
 	"apierror-no-such-draft": "Não há rascunho com o identificador de rascunho fornecido.",
-	"apihelp-loaddrafts-description": "Carregar um rascunho gravado anteriormente.",
 	"apihelp-loaddrafts-summary": "Carregar um rascunho salvado anteriormente.",
 	"apihelp-loaddrafts-param-id": "O identificador do rascunho."
 }

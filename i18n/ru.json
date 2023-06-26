@@ -31,7 +31,6 @@
 	"prefs-extension-drafts": "Черновики",
 	"tooltip-drafts-save": "Сохранить как черновик",
 	"apierror-mustbeloggedin-save-drafts": "Вы должны войти в систему, чтобы иметь возможность сохранять черновики.",
-	"apihelp-savedrafts-description": "Сохранить черновик.",
 	"apihelp-savedrafts-summary": "Сохранение черновика.",
 	"apihelp-savedrafts-param-id": "ID черновика.",
 	"apihelp-savedrafts-param-drafttoken": "Токен черновика.",

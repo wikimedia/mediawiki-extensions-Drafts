@@ -23,7 +23,6 @@
 	"drafts-save-error": "Error de salvament del borrolhon",
 	"prefs-extension-drafts": "Borrolhons",
 	"tooltip-drafts-save": "Salvar coma borrolhon",
-	"apihelp-savedrafts-description": "Enregistrar un borrolhon",
 	"apihelp-savedrafts-param-id": "L’ID del borrolhon.",
 	"apihelp-savedrafts-param-drafttoken": "Geton de borrolhon.",
 	"apihelp-savedrafts-param-title": "Títol del borrolhon.",

@@ -31,7 +31,6 @@
 	"prefs-extension-drafts": "초안 목록",
 	"tooltip-drafts-save": "초안으로 저장하기",
 	"apierror-mustbeloggedin-save-drafts": "초안을 저장하려면 로그인해야 합니다.",
-	"apihelp-savedrafts-description": "초안 저장.",
 	"apihelp-savedrafts-summary": "초안을 저장합니다.",
 	"apihelp-savedrafts-param-id": "초안의 ID",
 	"apihelp-savedrafts-param-drafttoken": "초안 토큰",

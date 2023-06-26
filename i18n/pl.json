@@ -32,7 +32,6 @@
 	"prefs-extension-drafts": "Brudnopisy stron",
 	"tooltip-drafts-save": "Zapisz jako brudnopis strony",
 	"apierror-mustbeloggedin-save-drafts": "Musisz być zalogowany, aby zapisywać szkice.",
-	"apihelp-savedrafts-description": "Zapisz wersję roboczą.",
 	"apihelp-savedrafts-summary": "Zapisz wersję roboczą.",
 	"apihelp-savedrafts-param-id": "Identyfikator szkicu.",
 	"apihelp-savedrafts-param-drafttoken": "Token szkicu.",

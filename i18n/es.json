@@ -36,7 +36,6 @@
 	"drafts-enable": "Activar función para guardar un borrador en forma de edición",
 	"prefs-extension-drafts": "Borradores",
 	"tooltip-drafts-save": "Guardar como un borrador",
-	"apihelp-savedrafts-description": "Guardar un borrador.",
 	"apihelp-savedrafts-summary": "Guardar un borrador.",
 	"apihelp-savedrafts-param-id": "El identificador del borrador.",
 	"apihelp-savedrafts-param-drafttoken": "Ficha del borrador.",
