@@ -1,0 +1,39 @@
+{
+	"@metadata": {
+		"authors": [
+			"Winston Sung"
+		]
+	},
+	"drafts": "Nacrti",
+	"drafts-desc": "Dodaje mogućnost sačuvanja [[Special:Drafts|radnih verzija]] stranice na server",
+	"drafts-view": "PregledRadneVerzije",
+	"drafts-view-summary": "Ova posebna stranica navodi sve postojeće radne verzije.\nNeuporabljene radne verzije će biti automatski odbačeni nakon {{PLURAL:$1|jednog dana|$1 dana}}.",
+	"drafts-view-article": "Stranica",
+	"drafts-view-existing": "Postojeće radne verzije",
+	"drafts-view-saved": "Sačuvano",
+	"drafts-view-discard": "Odbaci",
+	"drafts-view-nonesaved": "Trenutno nemate sačuvanih radnih verzija.",
+	"drafts-view-notice": "Imate $1 za ovu stranicu.",
+	"drafts-view-notice-link": "$1 {{PLURAL:$1|radna verzija|radne verzije|radnih verzija}}",
+	"drafts-view-warn": "Ako se otrgnete s ove stranice izgubit ćete sve nesačuvane promjene.\nŽelite li nastaviti?",
+	"drafts-save": "Sačuvaj ovo kao radnu verziju",
+	"drafts-save-save": "Sačuvaj rad. verz.",
+	"drafts-save-saved": "Sačuvano",
+	"drafts-save-saving": "Čuvam",
+	"drafts-save-error": "Greška prilikom čuvanja radne verzije",
+	"drafts-enable": "Omogućite funkciju čuvanja nacrta u obrazac za uređivanje",
+	"prefs-extension-drafts": "Nacrti",
+	"tooltip-drafts-save": "Sačuvaj kao nacrt",
+	"apierror-mustbeloggedin-save-drafts": "Morate biti prijavljeni da biste čuvali radne verzije.",
+	"apihelp-savedrafts-summary": "Sačuvaj nacrt.",
+	"apihelp-savedrafts-param-id": "Naznaka nacrta.",
+	"apihelp-savedrafts-param-drafttoken": "Token nacrta.",
+	"apihelp-savedrafts-param-title": "Naslov nacrta.",
+	"apihelp-savedrafts-param-section": "Indeks podnaslova stranice što se uređuje.",
+	"apihelp-savedrafts-param-starttime": "Vrijeme pokretanja nacrta.",
+	"apihelp-savedrafts-param-edittime": "Vrijeme uređivanja nacrta.",
+	"apihelp-savedrafts-param-scrolltop": "scrollTop okvira s tekstom.",
+	"apihelp-savedrafts-param-text": "Tekst nacrta.",
+	"apihelp-savedrafts-param-summary": "Opis nacrta.",
+	"apihelp-savedrafts-param-minoredit": "Boolean pokazatelj za to je li nacrt manja izmjena."
+}
