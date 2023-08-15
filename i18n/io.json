@@ -1,12 +1,17 @@
 {
 	"@metadata": {
 		"authors": [
-			"Malafaya"
+			"Malafaya",
+			"Joao Xavier"
 		]
 	},
 	"drafts": "Kladi",
 	"drafts-view-article": "Pagino",
 	"drafts-view-saved": "Registragita",
 	"drafts-view-notice": "Vu havas $1 por ca pagino.",
-	"drafts-view-notice-link": "$1 {{PLURAL:$1|klado|kladi}}"
+	"drafts-view-notice-link": "$1 {{PLURAL:$1|klado|kladi}}",
+	"drafts-save-save": "Konservar esbosuro",
+	"drafts-save-saved": "Konservita",
+	"drafts-save-saving": "Konservanta",
+	"drafts-save-error": "Eroro konservanta esbosuro"
 }
