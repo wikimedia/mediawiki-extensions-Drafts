@@ -112,14 +112,38 @@ class DraftHooks {
 				// Override initial values in the form with draft data
 				$editpage->textbox1 = $draft->getText();
 				$editpage->summary = $draft->getSummary();
-				$editpage->scrolltop = $draft->getScrollTop();
-				$editpage->minoredit = $draft->getMinorEdit() ? true : false;
+
+				// $editpage->scrolltop = $draft->getScrollTop();
+				// $editpage->minoredit = $draft->getMinorEdit() ? true : false;
+
+				// EditPage::$scrolltop & EditPage::$minoredit made private in MW 1.38 :-(
+				$request->setVal( 'wpScrolltop', $draft->getScrollTop() );
+				$request->setVal( 'wpMinoredit', $draft->getMinorEdit() ? true : false );
+			}
+
+			$draftTitle = $request->getRawVal( 'wpDraftTitle' );
+			// Try harder.
+			if ( $draftTitle === null ) {
+				$draftTitle = $request->getRawVal( 'title' );
+			}
+
+			// OK, now would be a *great* time to panic!
+			if ( !$draftTitle ) {
+				throw new MWException(
+					"Can't get a Title, neither from 'wpDraftTitle' nor from 'title'!"
+				);
 			}
 
 			// Save draft on non-save submission
-			if ( $request->getRawVal( 'action' ) === 'submit' &&
+			// (I guess this means the "Show changes" button? And also preview, apparently.)
+			if (
+				$request->getRawVal( 'action' ) === 'submit' &&
 				$user->matchEditToken( $request->getText( 'wpEditToken' ) ) &&
-				$request->getRawVal( 'wpDraftTitle' ) === null ) {
+				( $request->getRawVal( 'wpPreview' ) || $request->getRawVal( 'wpDiff' ) ) &&
+				// We NEED a Title object, it is NOT optional, because Draft#save uses it
+				// as if it were a valid Title, so...it's gotta be one, then.
+				$draftTitle
+			) {
 				// If the draft wasn't specified in the url, try using a
 				// form-submitted one
 				if ( !$draft->exists() ) {
@@ -128,9 +152,8 @@ class DraftHooks {
 					);
 				}
 				// Load draft with info
-				$draft->setTitle( Title::newFromText(
-						$request->getText( 'wpDraftTitle' ) )
-				);
+				// @todo FIXME: newFromText() *can* still return null and make Draft#save barf!
+				$draft->setTitle( Title::newFromText( $draftTitle ) );
 				$draft->setSection( $request->getInt( 'wpSection' ) );
 				$draft->setStartTime( $request->getText( 'wpStarttime' ) );
 				$draft->setEditTime( $request->getText( 'wpEdittime' ) );
