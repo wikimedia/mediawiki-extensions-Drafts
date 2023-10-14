@@ -68,17 +68,23 @@ function Draft() {
 	/**
 	 * Sends draft data to server to be saved
 	 *
-	 * @param {Event} event
+	 * @param {Event|null} event Only set when the "Save draft" button is clicked; not set when
+	 *   this method is called by the auto-save handlers
 	 */
 	this.save = function ( event ) {
-		event.preventDefault();
+		if ( event !== undefined ) {
+			event.preventDefault();
+		}
+
 		// Checks if a save is already taking place
 		if ( state === 'saving' ) {
 			// Exits function immediately
 			return;
 		}
+
 		// Sets state to saving
 		self.setState( 'saving' );
+
 		var params = {
 			action: 'savedrafts',
 			drafttoken: form.wpDraftToken.value,
