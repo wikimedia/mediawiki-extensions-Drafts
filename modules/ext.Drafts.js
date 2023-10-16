@@ -162,8 +162,8 @@ function Draft() {
 				self.save( event );
 			} );
 			// Handle keeping track of state by watching for changes to fields
-			jQuery( form.wpTextbox1 ).on( 'keypress keyup keydown paste cut', self.change );
-			jQuery( form.wpSummary ).on( 'keypress keyup keydown paste cut', self.change );
+			jQuery( form.wpTextbox1 ).on( 'drop keypress keyup keydown paste cut', self.change );
+			jQuery( form.wpSummary ).on( 'drop keypress keyup keydown paste cut', self.change );
 			if ( form.wpMinoredit ) {
 				jQuery( form.wpMinoredit ).on( 'change', self.change );
 			}
