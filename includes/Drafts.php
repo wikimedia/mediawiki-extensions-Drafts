@@ -185,7 +185,7 @@ abstract class Drafts {
 		global $wgRequest;
 
 		// Gets draftID
-		$currentDraft = Draft::newFromID( $wgRequest->getIntOrNull( 'draft' ) );
+		$currentDraft = Draft::newFromID( $wgRequest->getInt( 'draft', 0 ) );
 		// Output HTML for list of drafts
 		$drafts = self::get( $title, $userID );
 		if ( $drafts !== null ) {

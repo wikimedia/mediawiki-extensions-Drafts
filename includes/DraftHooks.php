@@ -67,7 +67,7 @@ class DraftHooks {
 		global $wgRequest;
 
 		// Check if the save occurred from a draft
-		$draft = Draft::newFromID( $wgRequest->getIntOrNull( 'wpDraftID' ) );
+		$draft = Draft::newFromID( $wgRequest->getInt( 'wpDraftID', 0 ) );
 		if ( $draft->exists() ) {
 			// Discard the draft
 			$draft->discard( $user );
@@ -106,7 +106,7 @@ class DraftHooks {
 		$request = $context->getRequest();
 		if ( $user->isAllowed( 'edit' ) && $user->isRegistered() ) {
 			// Get draft
-			$draft = Draft::newFromID( $request->getIntOrNull( 'draft' ) );
+			$draft = Draft::newFromID( $request->getInt( 'draft', 0 ) );
 			// Load form values
 			if ( $draft->exists() ) {
 				// Override initial values in the form with draft data
@@ -139,16 +139,13 @@ class DraftHooks {
 			if (
 				$request->getRawVal( 'action' ) === 'submit' &&
 				$user->matchEditToken( $request->getText( 'wpEditToken' ) ) &&
-				( $request->getRawVal( 'wpPreview' ) || $request->getRawVal( 'wpDiff' ) ) &&
-				// We NEED a Title object, it is NOT optional, because Draft#save uses it
-				// as if it were a valid Title, so...it's gotta be one, then.
-				$draftTitle
+				( $request->getRawVal( 'wpPreview' ) || $request->getRawVal( 'wpDiff' ) )
 			) {
 				// If the draft wasn't specified in the url, try using a
 				// form-submitted one
 				if ( !$draft->exists() ) {
 					$draft = Draft::newFromID(
-						$request->getIntOrNull( 'wpDraftID' )
+						$request->getInt( 'wpDraftID', 0 )
 					);
 				}
 				// Load draft with info

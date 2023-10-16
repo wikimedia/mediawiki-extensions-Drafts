@@ -35,7 +35,7 @@ class SpecialDrafts extends SpecialPage {
 		$this->requireLogin();
 
 		// Handle discarding
-		$draft = Draft::newFromID( $request->getIntOrNull( 'discard' ) );
+		$draft = Draft::newFromID( $request->getInt( 'discard', 0 ) );
 		if ( $draft->exists() ) {
 			// Discard draft
 			$draft->discard();
