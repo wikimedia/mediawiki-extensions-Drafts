@@ -141,6 +141,7 @@ class DraftHooks {
 				$user->matchEditToken( $request->getText( 'wpEditToken' ) ) &&
 				( $request->getRawVal( 'wpPreview' ) || $request->getRawVal( 'wpDiff' ) )
 			) {
+				$text = $request->getText( 'wpTextbox1' );
 				// If the draft wasn't specified in the url, try using a
 				// form-submitted one
 				if ( !$draft->exists() ) {
@@ -156,13 +157,15 @@ class DraftHooks {
 				$draft->setEditTime( $request->getText( 'wpEdittime' ) );
 				$draft->setSaveTime( wfTimestampNow() );
 				$draft->setScrollTop( $request->getInt( 'wpScrolltop' ) );
-				$draft->setText( $request->getText( 'wpTextbox1' ) );
+				$draft->setText( $text );
 				$draft->setSummary( $request->getText( 'wpSummary' ) );
 				$draft->setMinorEdit( $request->getBool( 'wpMinoredit' ) );
-				// Save draft
-				$draft->save();
-				// Use the new draft id
-				$request->setVal( 'draft', $draft->getID() );
+				// Save draft (but only if it makes sense -- T21737)
+				if ( !empty( $text ) ) {
+					$draft->save();
+					// Use the new draft id
+					$request->setVal( 'draft', $draft->getID() );
+				}
 			}
 		}
 
