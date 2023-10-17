@@ -11,6 +11,9 @@ use MediaWiki\User\UserIdentity;
 
 class DraftHooks {
 	/**
+	 * Enable the Drafts preference by default for new user accounts (as well as
+	 * old ones that haven't explicitly disabled Drafts).
+	 *
 	 * @param array &$defaultOptions
 	 */
 	public static function onUserGetDefaultOptions( &$defaultOptions ) {
@@ -18,9 +21,10 @@ class DraftHooks {
 	}
 
 	/**
+	 * Register the preference to enable/disable Drafts on a per-user basis.
+	 *
 	 * @param User $user
 	 * @param array &$preferences
-	 * @return bool
 	 */
 	public static function onGetPreferences( User $user, array &$preferences ) {
 		$preferences['extensionDrafts_enable'] = [
@@ -28,10 +32,12 @@ class DraftHooks {
 			'label-message' => 'drafts-enable',
 			'section' => 'editing/extension-drafts'
 		];
-		return true;
 	}
 
 	/**
+	 * Apply the database schema updates when the sysadmin re-runs
+	 * MediaWiki's core updater script, maintenance/update.php.
+	 *
 	 * @param DatabaseUpdater $updater
 	 */
 	public static function schema( $updater ) {
@@ -46,6 +52,7 @@ class DraftHooks {
 
 	/**
 	 * SpecialMovepageAfterMove hook
+	 *
 	 * @param MovePageForm $mp
 	 * @param Title $ot
 	 * @param Title $nt
@@ -90,8 +97,9 @@ class DraftHooks {
 	/**
 	 * EditPage::showEditForm:initial hook
 	 * Load draft...
+	 *
 	 * @param EditPage $editpage
-	 * @return bool
+	 * @return void
 	 */
 	public static function loadForm( EditPage $editpage ) {
 		$context = $editpage->getArticle()->getContext();
@@ -99,7 +107,7 @@ class DraftHooks {
 		$user = $context->getUser();
 
 		if ( !$userOptionsManager->getOption( $user, 'extensionDrafts_enable', 'true' ) ) {
-			return true;
+			return;
 		}
 
 		// Check permissions
@@ -199,7 +207,8 @@ class DraftHooks {
 	/**
 	 * EditFilter hook
 	 * Intercept the saving of an article to detect if the submission was from
-	 * the non-javascript save draft button
+	 * the non-JavaScript save draft button
+	 *
 	 * @param EditPage $editor
 	 * @param string $text
 	 * @param string $section
@@ -216,6 +225,7 @@ class DraftHooks {
 	/**
 	 * EditPageBeforeEditButtons hook
 	 * Add draft saving controls
+	 *
 	 * @param EditPage $editpage
 	 * @param array &$buttons
 	 * @param int &$tabindex
@@ -228,6 +238,7 @@ class DraftHooks {
 		if ( !$userOptionsManager->getOption( $user, 'extensionDrafts_enable', 'true' ) ) {
 			return;
 		}
+
 		// Check permissions
 		if ( $user->isAllowed( 'edit' ) && $user->isRegistered() ) {
 			$request = $context->getRequest();
@@ -289,15 +300,16 @@ class DraftHooks {
 	 * If an article is undeleted, update the page ID we have stored internally
 	 *
 	 * @see https://phabricator.wikimedia.org/T21734
+	 * @todo FIXME: switch to the PageUndeleteComplete hook for MW 1.40+
 	 *
 	 * @param Title $title
 	 * @param bool $create
-	 * @return bool
+	 * @return void
 	 */
 	public static function onArticleUndelete( $title, $create ) {
 		if ( !$create ) {
 			// Only for restored pages
-			return true;
+			return;
 		}
 
 		$dbw = wfGetDB( DB_PRIMARY );
@@ -310,7 +322,5 @@ class DraftHooks {
 			],
 			__METHOD__
 		);
-
-		return true;
 	}
 }
