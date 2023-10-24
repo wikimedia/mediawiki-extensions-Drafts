@@ -39,5 +39,10 @@
 	"apihelp-savedrafts-param-scrolltop": "De scrollTop van het tekstvak.",
 	"apihelp-savedrafts-param-text": "Werkversie tekst.",
 	"apihelp-savedrafts-param-summary": "Werkversie bewerkingssamenvatting.",
-	"apihelp-savedrafts-param-minoredit": "Booleaanse waarde die aantoont of de werkversie een kleine bewerking is."
+	"apihelp-savedrafts-param-minoredit": "Booleaanse waarde die aantoont of de werkversie een kleine bewerking is.",
+	"apierror-mustbeloggedin-load-drafts": "Om concepten te laden moet u aangemeld zijn.",
+	"apierror-must-be-draft-owner": "U kunt geen concepten van andere gebruikers laden.",
+	"apierror-no-such-draft": "Er is geen concept met de opgegeven concept-ID.",
+	"apihelp-loaddrafts-summary": "Een eerder opgeslagen concept laden.",
+	"apihelp-loaddrafts-param-id": "De ID van het concept."
 }
