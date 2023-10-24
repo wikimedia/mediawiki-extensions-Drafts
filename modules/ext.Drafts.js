@@ -122,17 +122,20 @@ function Draft() {
 	this.change = function () {
 		// Sets state to changed
 		self.setState( 'changed' );
+
 		// Checks if timer is pending and if we want to wait for user input
 		if ( !configuration.autoSaveBasedOnInput ) {
 			if ( timer ) {
 				return;
 			}
+
 			if ( configuration.autoSaveWait && configuration.autoSaveWait > 0 ) {
 				// Sets timer to save automatically after a period of time
 				timer = setTimeout(
 					'wgDraft.save();', configuration.autoSaveWait * 1000
 				);
 			}
+
 			return;
 		}
 
@@ -140,6 +143,7 @@ function Draft() {
 			// Clears pending timer
 			clearTimeout( timer );
 		}
+
 		// Checks if auto-save wait time was set, and that it's greater than 0
 		if ( configuration.autoSaveWait && configuration.autoSaveWait > 0 ) {
 			// Sets timer to save automatically after a period of time
@@ -155,18 +159,21 @@ function Draft() {
 	this.initialize = function () {
 		// Cache edit form reference
 		form = document.editform;
+
 		// Check to see that the form and controls exist
 		if ( form && form.wpDraftSave ) {
 			// Handle manual draft saving through clicking the save draft button
 			jQuery( form.wpDraftSave ).on( 'click', function ( event ) {
 				self.save( event );
 			} );
+
 			// Handle keeping track of state by watching for changes to fields
-			jQuery( form.wpTextbox1 ).on( 'drop keypress keyup keydown paste cut', self.change );
-			jQuery( form.wpSummary ).on( 'drop keypress keyup keydown paste cut', self.change );
+			jQuery( form.wpTextbox1 ).on( 'input', self.change );
+			jQuery( form.wpSummary ).on( 'input', self.change );
 			if ( form.wpMinoredit ) {
 				jQuery( form.wpMinoredit ).on( 'change', self.change );
 			}
+
 			// Handle clicks on the individual draft links in the list of drafts
 			jQuery( '.mw-draft-load-link' ).on( 'click', function ( event ) {
 				// Don't follow the link target, that's only for users w/o JS
@@ -187,6 +194,7 @@ function Draft() {
 					}
 				} );
 			} );
+
 			// Handle clicks on "Discard" links in the table above the editor when there
 			// are saved drafts for a page
 			jQuery( '.mw-discard-draft-link' ).on( 'click', function ( event ) {
