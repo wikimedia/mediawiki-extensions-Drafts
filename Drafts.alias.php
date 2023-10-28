@@ -273,6 +273,11 @@ $specialPageAliases['sr-ec'] = [
 	'Drafts' => [ 'Нацрти' ],
 ];
 
+/** Serbian (Latin script) (srpski (latinica)) */
+$specialPageAliases['sr-el'] = [
+	'Drafts' => [ 'Nacrti' ],
+];
+
 /** Swedish (svenska) */
 $specialPageAliases['sv'] = [
 	'Drafts' => [ 'Utkast' ],
