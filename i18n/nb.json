@@ -37,5 +37,10 @@
 	"apihelp-savedrafts-param-scrolltop": "scrollTop-en til tekstboksen.",
 	"apihelp-savedrafts-param-text": "Kladdtekst.",
 	"apihelp-savedrafts-param-summary": "Kladdsammendrag.",
-	"apihelp-savedrafts-param-minoredit": "Boolean som reperesenterer hvorvidt kladden er en mindre endring."
+	"apihelp-savedrafts-param-minoredit": "Boolean som reperesenterer hvorvidt kladden er en mindre endring.",
+	"apierror-mustbeloggedin-load-drafts": "Du må være logget inn for å laste utkast.",
+	"apierror-must-be-draft-owner": "Du kan ikke laste andre brukeres utkast.",
+	"apierror-no-such-draft": "Det er ikke noe utkast med den gitte utkast-ID-en.",
+	"apihelp-loaddrafts-summary": "Last et tidligere lagret utkast.",
+	"apihelp-loaddrafts-param-id": "ID-en til utkastet."
 }
