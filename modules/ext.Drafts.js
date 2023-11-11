@@ -167,6 +167,9 @@ function Draft() {
 			// button when appropriate.
 			OO.ui.ButtonWidget.static.infuse( $( '#wpDraftWidget' ) ).setDisabled( true );
 
+			// Flip this as well.
+			jQuery( form.wpDraftJSEnabled ).val( true );
+
 			// Handle manual draft saving through clicking the save draft button
 			jQuery( form.wpDraftSave ).on( 'click', function ( event ) {
 				self.save( event );
