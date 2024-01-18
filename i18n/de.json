@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"ChrisiPK",
+			"Filzstift",
 			"Kghbln",
 			"Metalhead64",
 			"Pill",
@@ -41,7 +42,7 @@
 	"apihelp-savedrafts-param-scrolltop": "Das scrollTop des Textkastens.",
 	"apihelp-savedrafts-param-text": "Text des Entwurfs.",
 	"apihelp-savedrafts-param-summary": "Zusammenfassung des Entwurfs.",
-	"apihelp-savedrafts-param-minoredit": "Boolesche Darstellung, ob der Entwurf eine kleine Bearbeitung ist.",
+	"apihelp-savedrafts-param-minoredit": "Boolesche Darstellung, ob der Entwurf als „kleine Änderung“ einzustufen ist.",
 	"apierror-mustbeloggedin-load-drafts": "Du musst angemeldet sein, um Entwürfe zu laden.",
 	"apierror-must-be-draft-owner": "Du kannst die Entwürfe anderer Benutzer nicht laden.",
 	"apierror-no-such-draft": "Es gibt keinen Entwurf mit der angegebenen Entwurfs-ID.",
