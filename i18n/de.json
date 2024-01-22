@@ -7,7 +7,8 @@
 			"Pill",
 			"Purodha",
 			"Umherirrender",
-			"W (aka Wuzur)"
+			"W (aka Wuzur)",
+			"Filzstift"
 		]
 	},
 	"drafts": "Zwischengespeicherte Versionen",
@@ -42,5 +43,5 @@
 	"apihelp-savedrafts-param-scrolltop": "Das scrollTop des Textkastens.",
 	"apihelp-savedrafts-param-text": "Text des Entwurfs.",
 	"apihelp-savedrafts-param-summary": "Zusammenfassung des Entwurfs.",
-	"apihelp-savedrafts-param-minoredit": "Boolesche Darstellung, ob der Entwurf eine kleine Bearbeitung ist."
+	"apihelp-savedrafts-param-minoredit": "Boolesche Darstellung, ob der Entwurf als „kleine Änderung“ einzustufen ist."
 }
