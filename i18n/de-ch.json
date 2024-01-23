@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Filzstift"
+		]
+	},
+	"apihelp-savedrafts-param-minoredit": "Boolesche Darstellung, ob der Entwurf als «kleine Änderung» einzustufen ist."
+}
