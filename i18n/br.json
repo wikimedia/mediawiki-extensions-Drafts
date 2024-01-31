@@ -3,11 +3,12 @@
 		"authors": [
 			"Fohanno",
 			"Fulup",
-			"Y-M D"
+			"Y-M D",
+			"Huñvreüs"
 		]
 	},
 	"drafts": "Brouilhedoù",
-	"drafts-desc": "Aotreañ a ra da enrollañ ur stumm [[Special:Drafts|brouilhed]] eus ur bajenn war ar servijer",
+	"drafts-desc": "Aotren a ra da enrollañ stummoù [[Special:Drafts|brouilhed]] eus ur bajenn war ar servijer",
 	"drafts-view": "Gwelet ar brouilhed",
 	"drafts-view-summary": "Ar bajenn ispisial-mañ a zo ur roll eus an holl brouilhedoù a zo.\nAr brouilhedoù nann-implijet a vo distaolet emgefre goude $1 devez{{PLURAL:$1||}}.",
 	"drafts-view-article": "Pajenn",
@@ -17,7 +18,7 @@
 	"drafts-view-nonesaved": "N'hoc'h eus tamm brouilhoñs ebet enrollet er mare-mañ.",
 	"drafts-view-notice": "$1 ho peus evit ar bajenn-mañ.",
 	"drafts-view-notice-link": "$1 {{PLURAL:$1|brouilhed|brouilhed}}",
-	"drafts-view-warn": "Ma'z it da verdeiñ er maez eus ar bajenn-mañ e kollot an holl gemmoù dienroll degaset d'ar bajenn-mañ.\nHa kenderc'hel a fell deoc'h ober ?",
+	"drafts-view-warn": "Ha kenderc'hel a fell deoc'h merdeiñ er maez eus ar bajenn-mañ? En un ober e kollot an holl gemmoù dienroll degaset d'ar bajenn-mañ.",
 	"drafts-save": "Enrollañ an dra-mañ evel brouilhed",
 	"drafts-save-save": "Enrollañ ar brouilhed",
 	"drafts-save-saved": "Enrollet",
