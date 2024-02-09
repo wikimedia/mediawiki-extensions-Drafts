@@ -169,7 +169,7 @@ class DraftHooks {
 				$draft->setSummary( $request->getText( 'wpSummary' ) );
 				$draft->setMinorEdit( $request->getBool( 'wpMinoredit' ) );
 				// Save draft (but only if it makes sense -- T21737)
-				if ( !empty( $text ) ) {
+				if ( $text ) {
 					$draft->save();
 					// Use the new draft id
 					$request->setVal( 'draft', $draft->getID() );
