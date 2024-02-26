@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Snævar"
+			"Snævar",
+			"Stefán Örvar Sigmundsson"
 		]
 	},
 	"drafts-view": "Skoða uppkast",
-	"drafts-view-summary": "Þessi kerfisíða sínir lista yfir öll uppköst.\nÓnotuðum uppköstum verður eytt sjálfkrafa eftir {{PLURAL:$1|$1 dag|$1 daga}}.",
+	"drafts-view-summary": "Þessi kerfisíða sýnir lista yfir öll fyrirliggjandi uppköst.\nÓnotuðum uppköstum verður eytt eftir {{PLURAL:$1|$1 dag|$1 daga}} sjáfkrafa.",
 	"drafts-view-article": "Síða",
-	"drafts-view-existing": "Uppköst sem til eru fyrir",
+	"drafts-view-existing": "Fyrirliggjand uppköst",
 	"drafts-view-saved": "Vistað",
 	"drafts-view-discard": "Eyða",
 	"drafts-view-nonesaved": "Þú hefur ekki nein uppköst vistuð akkúrat núna.",
