@@ -20,7 +20,7 @@
 	"drafts-save-saved": "Vistað",
 	"drafts-save-saving": "Vista",
 	"drafts-save-error": "Villa við vistun uppkasts",
-	"drafts-enable": "Virkja möguleika til þess að vista uppköst í breytingarham",
+	"drafts-enable": "Virkja eiginleikann til að vista drög í breytingaformi",
 	"prefs-extension-drafts": "Uppköst",
 	"tooltip-drafts-save": "Vista sem uppkast"
 }
