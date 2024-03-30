@@ -162,6 +162,11 @@ function Draft() {
 
 		// Check to see that the form and controls exist
 		if ( form && form.wpDraftSave ) {
+			// Disable the button by default since it's enabled by default to maintain
+			// compatibiliy with no-JS users; setState() will eventually enable the
+			// button when appropriate.
+			OO.ui.ButtonWidget.static.infuse( $( '#wpDraftWidget' ) ).setDisabled( true );
+
 			// Handle manual draft saving through clicking the save draft button
 			jQuery( form.wpDraftSave ).on( 'click', function ( event ) {
 				self.save( event );

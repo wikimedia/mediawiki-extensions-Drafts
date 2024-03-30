@@ -257,7 +257,9 @@ class DraftHooks {
 					'type' => 'submit',
 					'title' => Linker::titleAttrib( 'drafts-save' ),
 					'accessKey' => Linker::accesskey( 'drafts-save' ),
-					'disabled' => true
+					// Do NOT change this to true! This HAS to be false
+					// so that no-JS users can save drafts manually.
+					'disabled' => false
 				]
 			);
 			$buttons['savedraft'] .= new OOUI\HiddenInputWidget(
