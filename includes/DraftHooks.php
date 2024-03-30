@@ -205,6 +205,68 @@ class DraftHooks {
 	}
 
 	/**
+	 * This is attached to the MediaWiki 'EditPage::attemptSave:after' hook.
+	 * This method handles clicks on the "Save draft" button when the user has
+	 * JavaScript disabled.
+	 *
+	 * @todo FIXME: The guts of this method kinda duplicate the loadForm() method's
+	 * internals, but such is life.
+	 *
+	 * @param EditPage $editPage
+	 * @param Status $status
+	 * @param array $resultDetails
+	 */
+	// phpcs:ignore MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
+	public static function onEditPage__attemptSave_after( $editPage, $status, $resultDetails ) {
+		$article = $editPage->getArticle();
+		$ctx = $article->getContext();
+		$user = $ctx->getUser();
+		$request = $ctx->getRequest();
+
+		if ( !$user->isRegistered() ) {
+			return;
+		}
+
+		// This is a no-JS endpoint, no need to do anything here for users w/
+		// JS enabled.
+		if ( $request->getBool( 'wpDraftJSEnabled' ) ) {
+			return;
+		}
+
+		// We could check if the user preference is enabled for the user but that's
+		// not strictly needed IMHO isnce this is basically an internal endpoint
+		// that's normally accessible only if the user has JS disabled and they
+		// hit the "Save Draft" button, and said button is shown only if they have the
+		// preference option enabled, sooooo...
+
+		$draftTitle = $request->getRawVal( 'wpDraftTitle' );
+		// Try harder.
+		if ( $draftTitle === null ) {
+			$draftTitle = $request->getRawVal( 'title' );
+		}
+
+		$text = $request->getText( 'wpTextbox1' );
+
+		$draft = Draft::newFromID( $request->getInt( 'wpDraftID', 0 ) );
+		$draft->setToken( $request->getRawVal( 'wpDraftToken' ) );
+		// @todo FIXME: newFromText() *can* still return null and make Draft#save barf!
+		$draft->setTitle( Title::newFromText( $draftTitle ) );
+		$draft->setSection( $request->getInt( 'wpSection' ) );
+		$draft->setStartTime( $request->getText( 'wpStarttime' ) );
+		$draft->setEditTime( $request->getText( 'wpEdittime' ) );
+		$draft->setSaveTime( wfTimestampNow() );
+		$draft->setScrollTop( $request->getInt( 'wpScrolltop' ) );
+		$draft->setText( $text );
+		$draft->setSummary( $request->getText( 'wpSummary' ) );
+		$draft->setMinorEdit( $request->getBool( 'wpMinoredit' ) );
+
+		// Save draft (but only if it makes sense -- T21737)
+		if ( !empty( $text ) ) {
+			$draft->save();
+		}
+	}
+
+	/**
 	 * EditFilter hook
 	 * Intercept the saving of an article to detect if the submission was from
 	 * the non-JavaScript save draft button
@@ -278,6 +340,15 @@ class DraftHooks {
 				[
 					'name' => 'wpDraftTitle',
 					'value' => $context->getTitle()->getPrefixedText()
+				]
+			);
+			// Will be used by the onEditPage__attemptSave_after hook handler to
+			// avoid unnecessary processing. The main JS file flips this to true
+			// for people who have JS enabled.
+			$buttons['savedraft'] .= new OOUI\HiddenInputWidget(
+				[
+					'name' => 'wpDraftJSEnabled',
+					'value' => false
 				]
 			);
 		}

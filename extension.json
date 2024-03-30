@@ -99,6 +99,7 @@
 		"SpecialMovepageAfterMove": "DraftHooks::onSpecialMovepageAfterMove",
 		"EditPageBeforeEditButtons": "DraftHooks::onEditPageBeforeEditButtons",
 		"EditPage::showEditForm:initial": "DraftHooks::loadForm",
+		"EditPage::attemptSave:after": "DraftHooks::onEditPage__attemptSave_after",
 		"ResourceLoaderGetConfigVars": "DraftHooks::onResourceLoaderGetConfigVars",
 		"LoadExtensionSchemaUpdates": "DraftHooks::schema"
 	},
