@@ -10,7 +10,9 @@
 			"StarrySky",
 			"Wmr",
 			"Wmr89502270",
-			"Yfdyh000"
+			"Yfdyh000",
+			"Lantianjialiang",
+			"LittlePaw365"
 		]
 	},
 	"drafts": "草稿",
@@ -41,7 +43,7 @@
 	"apihelp-savedrafts-param-title": "草稿标题。",
 	"apihelp-savedrafts-param-section": "要编辑的页面章节的索引。",
 	"apihelp-savedrafts-param-starttime": "草稿的开始时间。",
-	"apihelp-savedrafts-param-edittime": "草稿的结束时间。",
+	"apihelp-savedrafts-param-edittime": "草稿的编辑时间。",
 	"apihelp-savedrafts-param-scrolltop": "文本框的scrollTop。",
 	"apihelp-savedrafts-param-text": "草稿文本。",
 	"apihelp-savedrafts-param-summary": "草稿摘要。",
