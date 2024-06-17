@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cabal"
+		]
+	},
+	"drafts-view-notice-link": "$1 {{PLURAL:$1|ਖਰੜਾ|ਖਰੜੇ}}",
+	"drafts-save": "ਇਸ ਨੂੰ ਖਰੜੇ ਵਜੋਂ ਸੰਭਾਲੋ",
+	"drafts-save-save": "ਖਰੜਾ ਸੰਭਾਲੋ",
+	"drafts-save-error": "ਖਰੜਾ ਸੰਭਾਲਣ ਦੌਰਾਨ ਗਲਤੀ",
+	"apihelp-savedrafts-summary": "ਇੱਕ ਖਰੜਾ ਸੰਭਾਲੋ",
+	"apihelp-savedrafts-param-id": "ਖਰੜੇ ਦੀ ਸ਼ਨਾਖ਼ਤ (ID)।",
+	"apihelp-savedrafts-param-title": "ਖਰੜਾ ਦਾ ਸਿਰਲੇਖ।",
+	"apihelp-savedrafts-param-starttime": "ਖਰੜੇ ਦਾ ਸ਼ੁਰੂ ਹੋਣ ਦਾ ਸਮਾਂ।",
+	"apihelp-savedrafts-param-edittime": "ਖਰੜੇ ਦਾ ਸੰਪਾਦਨ ਸਮਾਂ।",
+	"apihelp-savedrafts-param-text": "ਲਿਖਤ ਦਾ ਖਰੜਾ।",
+	"apihelp-savedrafts-param-summary": "ਖਰੜੇ ਦਾ ਸੰਖੇਪ।"
+}
