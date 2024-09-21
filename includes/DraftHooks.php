@@ -261,7 +261,7 @@ class DraftHooks {
 		$draft->setMinorEdit( $request->getBool( 'wpMinoredit' ) );
 
 		// Save draft (but only if it makes sense -- T21737)
-		if ( !empty( $text ) ) {
+		if ( $text !== '' ) {
 			$draft->save();
 		}
 	}
