@@ -6,6 +6,8 @@
  * @ingroup Extensions
  */
 
+use MediaWiki\MediaWikiServices;
+
 abstract class Drafts {
 	/**
 	 * @return int
@@ -28,7 +30,7 @@ abstract class Drafts {
 	 */
 	public static function num( $title = null, $userID = null ) {
 		// Get database connection
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 
 		// Builds where clause
 		$where = [
@@ -77,7 +79,7 @@ abstract class Drafts {
 		// Only perform this action a fraction of the time
 		if ( rand( 0, $egDraftsCleanRatio ) == 0 ) {
 			// Get database connection
-			$dbw = wfGetDB( DB_PRIMARY );
+			$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 			// Removes expired drafts from database
 			$dbw->delete( 'drafts',
 				[
@@ -99,7 +101,7 @@ abstract class Drafts {
 	 */
 	public static function move( $oldTitle, $newTitle ) {
 		// Get database connection
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		// Updates title and namespace of drafts upon moving
 		$dbw->update(
 			'drafts',
@@ -126,7 +128,7 @@ abstract class Drafts {
 		self::clean();
 
 		// Gets database connection
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 
 		// Builds where clause
 		$where = [

@@ -82,7 +82,7 @@ class DraftHooks {
 
 		// When a page is created, associate the page ID with any drafts that might exist
 		$title = $wikiPage->getTitle();
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		$dbw->update(
 			'drafts',
 			[ 'draft_page' => $title->getArticleID() ],
@@ -385,7 +385,7 @@ class DraftHooks {
 			return;
 		}
 
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		$dbw->update(
 			'drafts',
 			[ 'draft_page' => $title->getArticleID() ],
