@@ -1,5 +1,6 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
 use MediaWiki\User\UserIdentity;
 
 /**
@@ -278,7 +279,7 @@ class Draft {
 		}
 		$userId = RequestContext::getMain()->getUser()->getId();
 		// Gets database connection
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		// Gets drafts for this article and user from database
 		$row = $dbw->selectRow(
 			'drafts',
@@ -319,7 +320,7 @@ class Draft {
 	public function save() {
 		$userId = RequestContext::getMain()->getUser()->getId();
 		// Gets database connection
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		$dbw->startAtomic( __METHOD__ );
 		// Builds insert/update information
 		$data = [
@@ -387,7 +388,7 @@ class Draft {
 		// Uses RequestContext user as a fallback
 		$user = $user === null ? RequestContext::getMain()->getUser() : $user;
 		// Gets database connection
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		// Deletes draft from database verifying propper user to avoid hacking!
 		$dbw->delete(
 			'drafts',
