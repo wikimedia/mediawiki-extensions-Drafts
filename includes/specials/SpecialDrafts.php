@@ -74,6 +74,7 @@ class SpecialDrafts extends SpecialPage {
 		}
 	}
 
+	/** @inheritDoc */
 	protected function getGroupName() {
 		return 'pagetools';
 	}
