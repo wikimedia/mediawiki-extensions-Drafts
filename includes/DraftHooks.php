@@ -248,7 +248,7 @@ class DraftHooks {
 		$text = $request->getText( 'wpTextbox1' );
 
 		$draft = Draft::newFromID( $request->getInt( 'wpDraftID', 0 ) );
-		$draft->setToken( $request->getRawVal( 'wpDraftToken' ) );
+		$draft->setToken( $request->getRawVal( 'wpDraftToken' ) ?? '' );
 		// @todo FIXME: newFromText() *can* still return null and make Draft#save barf!
 		$draft->setTitle( Title::newFromText( $draftTitle ) );
 		$draft->setSection( $request->getInt( 'wpSection' ) );
