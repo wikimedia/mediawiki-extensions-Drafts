@@ -15,7 +15,7 @@
 	"apihelp-savedrafts-param-edittime": "ਖਰੜੇ ਦਾ ਸੰਪਾਦਨ ਸਮਾਂ।",
 	"apihelp-savedrafts-param-text": "ਲਿਖਤ ਦਾ ਖਰੜਾ।",
 	"apihelp-savedrafts-param-summary": "ਖਰੜੇ ਦਾ ਸੰਖੇਪ।",
-	"apierror-no-such-draft": "ਦਿੱਤੇ ਗਏ ਖਰੜਾ-ਸ਼ਨਾਖ਼ਤ(draft ID) ਦੁਆਰਾ ਕੋਈ ਖਰੜਾ ਨਹੀਂ ਹੈ।",
+	"apierror-no-such-draft": "ਦਿੱਤੇ ਗਏ ਖਰੜਾ-ਸ਼ਨਾਖ਼ਤ(draft ID) ਵੱਲੋਂ ਕੋਈ ਖਰੜਾ ਨਹੀਂ ਹੈ।",
 	"apihelp-loaddrafts-summary": "ਪਹਿਲਾਂ ਸੰਭਾਲਿਆ ਖਰੜਾ ਲਦੋ।",
 	"apihelp-loaddrafts-param-id": "ਖਰੜੇ ਦੀ ਸ਼ਨਾਖ਼ਤ (ID)।"
 }
