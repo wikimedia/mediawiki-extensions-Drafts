@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Seipinne"
+			"Seipinne",
+			"Yupik"
 		]
 	},
-	"drafts-view-article": "Sijđo"
+	"drafts-view-article": "Sijđo",
+	"drafts-view-saved": "Vyerkkejum",
+	"drafts-save-saved": "Vyerkkejum"
 }
