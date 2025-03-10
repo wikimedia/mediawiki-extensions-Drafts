@@ -6,18 +6,18 @@
 			"Toliño"
 		]
 	},
-	"drafts": "Borrador",
+	"drafts": "Borradores",
 	"drafts-desc": "Engade a habilidade de gardar, no servidor, versións [[Special:Drafts|borrador]] dunha páxina",
 	"drafts-view": "Ver o borrador",
-	"drafts-view-summary": "Esta páxina especial amosa unha lista de todos os borradores existentes.\nOs borradores non usuados serán descartados automaticamente tras {{PLURAL:$1|un día|$1 días}}.",
+	"drafts-view-summary": "Esta páxina especial amosa unha lista de todos os borradores existentes.\nOs borradores non usados serán descartados automaticamente tras {{PLURAL:$1|un día|$1 días}}.",
 	"drafts-view-article": "Páxina",
 	"drafts-view-existing": "Borradores existentes",
 	"drafts-view-saved": "Gardado",
 	"drafts-view-discard": "Desbotar",
-	"drafts-view-nonesaved": "Nestes intres non ten gardado ningún borrador.",
-	"drafts-view-notice": "Ten $1 para esta páxina.",
+	"drafts-view-nonesaved": "Nestes intres non tes gardado ningún borrador.",
+	"drafts-view-notice": "Tes $1 para esta páxina.",
 	"drafts-view-notice-link": "$1 {{PLURAL:$1|borrador|borradores}}",
-	"drafts-view-warn": "Quere deixar esta páxina e navegar por outras? Ao facelo, perderá todos os cambios que non foron gardados.",
+	"drafts-view-warn": "Queres deixar esta páxina e navegar por outras? Ao facelo, perderás todos os cambios sen gardar.",
 	"drafts-save": "Gardar isto como un borrador",
 	"drafts-save-save": "Gardar o borrador",
 	"drafts-save-saved": "Gardado",
@@ -26,10 +26,10 @@
 	"drafts-enable": "Activar a función para gardar un borrador no formulario de edición",
 	"prefs-extension-drafts": "Borradores",
 	"tooltip-drafts-save": "Gardar como un borrador",
-	"apierror-mustbeloggedin-save-drafts": "Debe acceder ó sistema para gardar borradores.",
+	"apierror-mustbeloggedin-save-drafts": "Debes acceder ó sistema para gardar borradores.",
 	"apihelp-savedrafts-description": "Gardar un borrador.",
 	"apihelp-savedrafts-summary": "Gardar un borrador.",
-	"apihelp-savedrafts-param-id": "O Identificador do borrador.",
+	"apihelp-savedrafts-param-id": "O identificador do borrador.",
 	"apihelp-savedrafts-param-drafttoken": "Identificador do borrador.",
 	"apihelp-savedrafts-param-title": "Título do borrador.",
 	"apihelp-savedrafts-param-section": "Índice da sección da páxina que está sendo editada.",
@@ -38,5 +38,5 @@
 	"apihelp-savedrafts-param-scrolltop": "A parte superior da caixa de texto.",
 	"apihelp-savedrafts-param-text": "Texto do borrador.",
 	"apihelp-savedrafts-param-summary": "Resumo do borrador.",
-	"apihelp-savedrafts-param-minoredit": "Booleano indicando que o borrador é unha edición menor."
+	"apihelp-savedrafts-param-minoredit": "Booleano que indica se o borrador é unha edición pequena."
 }
