@@ -1,13 +1,13 @@
 /* JavaScript for Drafts extension */
 
-var wgDraft;
+let wgDraft;
 
 function Draft() {
 
 	/* Private Members */
 
 	// Reference to object's self
-	var self = this,
+	let self = this,
 		// Configuration settings
 		configuration = null,
 		// State of the draft as it pertains to asynchronous saving
@@ -29,7 +29,7 @@ function Draft() {
 			// Stores state information
 			state = newState;
 			// Updates UI elements
-			var button = OO.ui.ButtonWidget.static.infuse( $( '#wpDraftWidget' ) );
+			const button = OO.ui.ButtonWidget.static.infuse( $( '#wpDraftWidget' ) );
 			switch ( state ) {
 				case 'unchanged':
 					button.setDisabled( true );
@@ -85,7 +85,7 @@ function Draft() {
 		// Sets state to saving
 		self.setState( 'saving' );
 
-		var params = {
+		const params = {
 			action: 'savedrafts',
 			drafttoken: form.wpDraftToken.value,
 			token: form.wpEditToken.value,
@@ -104,7 +104,7 @@ function Draft() {
 		}
 
 		// Performs asynchronous save on server
-		var api = new mediaWiki.Api();
+		const api = new mediaWiki.Api();
 		api.post( params ).done( self.respond ).fail( self.respond );
 
 		// Re-allow request if it is not done in 10 seconds
@@ -171,7 +171,7 @@ function Draft() {
 			jQuery( form.wpDraftJSEnabled ).val( true );
 
 			// Handle manual draft saving through clicking the save draft button
-			jQuery( form.wpDraftSave ).on( 'click', function ( event ) {
+			jQuery( form.wpDraftSave ).on( 'click', ( event ) => {
 				self.save( event );
 			} );
 
@@ -192,8 +192,8 @@ function Draft() {
 					action: 'loaddrafts',
 					id: jQuery( this ).data( 'draft-id' ),
 					formatversion: 2
-				} ).done( function ( response ) {
-					var draftData = response.loaddrafts;
+				} ).done( ( response ) => {
+					const draftData = response.loaddrafts;
 					jQuery( form.wpTextbox1 ).val( draftData.text );
 					jQuery( form.wpSummary ).val( draftData.summary );
 					jQuery( form.wpScrolltop ).val( draftData.scrolltop );
@@ -205,7 +205,7 @@ function Draft() {
 
 			// Handle clicks on "Discard" links in the table above the editor when there
 			// are saved drafts for a page
-			jQuery( '.mw-discard-draft-link' ).on( 'click', function ( event ) {
+			jQuery( '.mw-discard-draft-link' ).on( 'click', ( event ) => {
 				// *Always* prevent default action, which is to follow the link
 				// eslint-disable-next-line no-alert
 				if ( !confirm( mediaWiki.msg( 'drafts-view-warn' ) ) ) {
