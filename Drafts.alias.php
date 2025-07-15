@@ -313,6 +313,11 @@ $specialPageAliases['vi'] = [
 	'Drafts' => [ 'Bản_nháp' ],
 ];
 
+/** Chinese (中文) */
+$specialPageAliases['zh'] = [
+	'Drafts' => [ 'Drafts' ],
+];
+
 /** Simplified Chinese (中文（简体）) */
 $specialPageAliases['zh-hans'] = [
 	'Drafts' => [ '草稿' ],
