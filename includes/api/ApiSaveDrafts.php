@@ -6,6 +6,9 @@
  * @ingroup API
  * @author Kunal Mehta
  */
+
+use MediaWiki\Title\Title;
+
 class ApiSaveDrafts extends ApiBase {
 	public function execute() {
 		if ( $this->getUser()->isAnon() ) {

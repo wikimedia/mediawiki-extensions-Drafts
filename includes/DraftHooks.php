@@ -6,7 +6,10 @@
  * @ingroup Extensions
  */
 
+use MediaWiki\EditPage\EditPage;
+use MediaWiki\Linker\Linker;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 use MediaWiki\User\UserIdentity;
 
 class DraftHooks {

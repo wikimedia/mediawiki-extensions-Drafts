@@ -6,6 +6,8 @@
  * @ingroup Extensions
  */
 
+use MediaWiki\Title\Title;
+
 class SpecialDrafts extends SpecialPage {
 	public function __construct() {
 		parent::__construct( 'Drafts' );
