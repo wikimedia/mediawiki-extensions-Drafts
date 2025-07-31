@@ -371,24 +371,41 @@ class DraftHooks {
 	}
 
 	/**
-	 * ArticleUndelete hook
+	 * PageUndeleteComplete hook
 	 *
 	 * If an article is undeleted, update the page ID we have stored internally
 	 *
 	 * @see https://phabricator.wikimedia.org/T21734
-	 * @todo FIXME: switch to the PageUndeleteComplete hook for MW 1.40+
 	 *
-	 * @param Title $title
-	 * @param bool $create
+	 * @param MediaWiki\Page\ProperPageIdentity $page
+	 * @param MediaWiki\Permissions\Authority $restorer
+	 * @param string $reason Undeletion reason
+	 * @param MediaWiki\Revision\RevisionRecord $restoredRev
+	 * @param ManualLogEntry $logEntry
+	 * @param int $restoredRevisionCount
+	 * @param bool $created
+	 * @param array $restoredPageIds
 	 * @return void
 	 */
-	public static function onArticleUndelete( $title, $create ) {
-		if ( !$create ) {
+	public static function onPageUndeleteComplete(
+		MediaWiki\Page\ProperPageIdentity $page,
+		MediaWiki\Permissions\Authority $restorer,
+		string $reason,
+		MediaWiki\Revision\RevisionRecord $restoredRev,
+		ManualLogEntry $logEntry,
+		int $restoredRevisionCount,
+		bool $created,
+		array $restoredPageIds
+	) {
+		if ( !$created ) {
 			// Only for restored pages
 			return;
 		}
 
-		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
+		$services = MediaWikiServices::getInstance();
+		$title = $services->getTitleFactory()->newFromPageIdentity( $page );
+
+		$dbw = $services->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		$dbw->update(
 			'drafts',
 			[ 'draft_page' => $title->getArticleID() ],
