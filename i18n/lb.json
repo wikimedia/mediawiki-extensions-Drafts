@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"GilPe",
 			"Robby",
 			"Soued031",
 			"Volvox"
@@ -31,5 +32,5 @@
 	"apihelp-savedrafts-param-title": "Titel vum Brouillon.",
 	"apihelp-savedrafts-param-starttime": "D'Ufankszäit vum Brouillon.",
 	"apihelp-savedrafts-param-text": "Text vum Brouillon.",
-	"apihelp-savedrafts-param-summary": "Resumé vum Brouillon."
+	"apihelp-savedrafts-param-summary": "Resümmee vum Brouillon."
 }
