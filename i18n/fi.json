@@ -4,6 +4,7 @@
 			"01miki10",
 			"Beluga",
 			"Crt",
+			"Jack Phoenix",
 			"Nedergard",
 			"Nike",
 			"Silvonen",
@@ -31,6 +32,7 @@
 	"drafts-enable": "Ota käyttöön luonnoksen tallentaminen muokkausmuodossa",
 	"prefs-extension-drafts": "Luonnokset",
 	"tooltip-drafts-save": "Tallenna luonnoksena",
+	"apierror-mustbeloggedin-save-drafts": "Sinun tulee olla kirjautuneena sisään tallentaaksesi luonnoksia.",
 	"apihelp-savedrafts-summary": "Tallenna luonnos.",
 	"apihelp-savedrafts-param-drafttoken": "Luonnospoletti."
 }
