@@ -8,7 +8,8 @@
 			"Nike",
 			"Silvonen",
 			"Str4nd",
-			"Vililikku"
+			"Vililikku",
+			"Jack Phoenix"
 		]
 	},
 	"drafts": "Luonnokset",
@@ -31,6 +32,7 @@
 	"drafts-enable": "Ota käyttöön luonnoksen tallentaminen muokkausmuodossa",
 	"prefs-extension-drafts": "Luonnokset",
 	"tooltip-drafts-save": "Tallenna luonnoksena",
+	"apierror-mustbeloggedin-save-drafts": "Sinun tulee olla kirjautuneena sisään tallentaaksesi luonnoksia.",
 	"apihelp-savedrafts-description": "Tallenna luonnos.",
 	"apihelp-savedrafts-summary": "Tallenna luonnos.",
 	"apihelp-savedrafts-param-drafttoken": "Luonnospoletti."
