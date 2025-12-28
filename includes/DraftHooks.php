@@ -7,6 +7,7 @@
  */
 
 use MediaWiki\EditPage\EditPage;
+use MediaWiki\Html\Html;
 use MediaWiki\Linker\Linker;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
@@ -186,16 +187,16 @@ class DraftHooks {
 		// Show list of drafts
 		if ( $numDrafts > 0 ) {
 			if ( $request->getRawVal( 'action' ) !== 'submit' ) {
-				$out->addHTML( Xml::openElement(
+				$out->addHTML( Html::openElement(
 					'div', [ 'id' => 'drafts-list-box' ] )
 				);
-				$out->addHTML( Xml::element(
-					'h3', null, $context->msg( 'drafts-view-existing' )->text() )
+				$out->addHTML( Html::element(
+					'h3', [], $context->msg( 'drafts-view-existing' )->text() )
 				);
 				$out->addHTML( Drafts::display( $context->getTitle() ) );
-				$out->addHTML( Xml::closeElement( 'div' ) );
+				$out->addHTML( Html::closeElement( 'div' ) );
 			} else {
-				$link = Xml::element( 'a',
+				$link = Html::element( 'a',
 					[
 						'href' => $context->getTitle()->getFullURL( 'action=edit' ),
 						'class' => 'mw-discard-draft-link'

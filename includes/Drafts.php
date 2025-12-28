@@ -6,6 +6,7 @@
  * @ingroup Extensions
  */
 
+use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 
@@ -199,7 +200,7 @@ abstract class Drafts {
 			$editToken = $user->getEditToken();
 
 			// Build XML
-			$html .= Xml::openElement( 'table',
+			$html .= Html::openElement( 'table',
 				[
 					'cellpadding' => 5,
 					'cellspacing' => 0,
@@ -209,17 +210,17 @@ abstract class Drafts {
 				]
 			);
 
-			$html .= Xml::openElement( 'tr' );
-			$html .= Xml::element( 'th',
+			$html .= Html::openElement( 'tr' );
+			$html .= Html::element( 'th',
 				[ 'width' => '75%', 'nowrap' => 'nowrap' ],
 				wfMessage( 'drafts-view-article' )->text()
 			);
-			$html .= Xml::element( 'th',
-				null,
+			$html .= Html::element( 'th',
+				[],
 				wfMessage( 'drafts-view-saved' )->text()
 			);
-			$html .= Xml::element( 'th' );
-			$html .= Xml::closeElement( 'tr' );
+			$html .= Html::element( 'th' );
+			$html .= Html::closeElement( 'tr' );
 			// Add existing drafts for this page and user
 			/**
 			 * @var $draft Draft
@@ -262,9 +263,9 @@ abstract class Drafts {
 						urlencode( (string)$draft->getSection() );
 				}
 				// Build XML
-				$html .= Xml::openElement( 'tr' );
-				$html .= Xml::openElement( 'td' );
-				$html .= Xml::tags( 'a',
+				$html .= Html::openElement( 'tr' );
+				$html .= Html::openElement( 'td' );
+				$html .= Html::rawElement( 'a',
 					[
 						'href' => $urlLoad,
 						'class' => 'mw-draft-load-link',
@@ -277,23 +278,23 @@ abstract class Drafts {
 					],
 					$htmlTitle
 				);
-				$html .= Xml::closeElement( 'td' );
-				$html .= Xml::element( 'td',
-					null,
+				$html .= Html::closeElement( 'td' );
+				$html .= Html::element( 'td',
+					[],
 					$lang->getHumanTimestamp( MWTimestamp::getInstance( $draft->getSaveTime() ), null, $user )
 				);
-				$html .= Xml::openElement( 'td' );
-				$html .= Xml::element( 'a',
+				$html .= Html::openElement( 'td' );
+				$html .= Html::element( 'a',
 					[
 						'href' => $urlDiscard,
 						'class' => 'mw-discard-draft-link'
 					],
 					wfMessage( 'drafts-view-discard' )->text()
 				);
-				$html .= Xml::closeElement( 'td' );
-				$html .= Xml::closeElement( 'tr' );
+				$html .= Html::closeElement( 'td' );
+				$html .= Html::closeElement( 'tr' );
 			}
-			$html .= Xml::closeElement( 'table' );
+			$html .= Html::closeElement( 'table' );
 			// Return html
 			return $html;
 		}
