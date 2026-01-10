@@ -90,18 +90,23 @@
 		"localBasePath": "",
 		"remoteExtPath": "Drafts"
 	},
+	"HookHandlers": {
+		"main": {
+			"class": "DraftHooks"
+		}
+	},
 	"Hooks": {
-		"UserGetDefaultOptions": "DraftHooks::onUserGetDefaultOptions",
-		"GetPreferences": "DraftHooks::onGetPreferences",
-		"EditFilter": "DraftHooks::onEditFilter",
-		"PageSaveComplete": "DraftHooks::onPageSaveComplete",
-		"PageUndeleteComplete": "DraftHooks::onPageUndeleteComplete",
-		"SpecialMovepageAfterMove": "DraftHooks::onSpecialMovepageAfterMove",
-		"EditPageBeforeEditButtons": "DraftHooks::onEditPageBeforeEditButtons",
-		"EditPage::showEditForm:initial": "DraftHooks::loadForm",
-		"EditPage::attemptSave:after": "DraftHooks::onEditPage__attemptSave_after",
-		"ResourceLoaderGetConfigVars": "DraftHooks::onResourceLoaderGetConfigVars",
-		"LoadExtensionSchemaUpdates": "DraftHooks::schema"
+		"UserGetDefaultOptions": "main",
+		"GetPreferences": "main",
+		"EditFilter": "main",
+		"PageSaveComplete": "main",
+		"PageUndeleteComplete": "main",
+		"SpecialMovepageAfterMove": "main",
+		"EditPageBeforeEditButtons": "main",
+		"EditPage::showEditForm:initial": "main",
+		"EditPage::attemptSave:after": "main",
+		"ResourceLoaderGetConfigVars": "main",
+		"LoadExtensionSchemaUpdates": "main"
 	},
 	"manifest_version": 2
 }

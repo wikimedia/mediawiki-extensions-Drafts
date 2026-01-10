@@ -43,7 +43,7 @@ class ApiLoadDrafts extends ApiBase {
 			$this->getModuleName(),
 			[
 				// Need more than just the draft text to mimic the behavior
-				// of DraftHooks#loadForm
+				// of DraftHooks#onEditPage__showEditForm_initial
 				'text' => $draft->getText(),
 				'summary' => $draft->getSummary(),
 				'scrolltop' => $draft->getScrollTop(),
