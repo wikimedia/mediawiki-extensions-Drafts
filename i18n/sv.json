@@ -5,7 +5,8 @@
 			"Jopparn",
 			"Mjälten",
 			"Najami",
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Stefan2255"
 		]
 	},
 	"drafts": "Utkast",
@@ -30,7 +31,15 @@
 	"tooltip-drafts-save": "Spara som ett utkast",
 	"apierror-mustbeloggedin-save-drafts": "Du måste vara inloggad för att spara skisser.",
 	"apihelp-savedrafts-summary": "Spara ett utkast.",
+	"apihelp-savedrafts-param-id": "ID för utkastet.",
+	"apihelp-savedrafts-param-drafttoken": "Utkaststoken.",
+	"apihelp-savedrafts-param-title": "Utkast titel.",
+	"apihelp-savedrafts-param-section": "Index för sektionen på sidan som redigeras.",
+	"apihelp-savedrafts-param-starttime": "Starttiden för utkastet.",
+	"apihelp-savedrafts-param-edittime": "Redigeringstid för utkastet.",
 	"apihelp-savedrafts-param-text": "Utkaststext",
+	"apihelp-savedrafts-param-summary": "Utkast till sammanfattning.",
+	"apihelp-savedrafts-param-minoredit": "Booleskt värde som representerar om utkastet är en mindre redigering.",
 	"apierror-mustbeloggedin-load-drafts": "Du måste vara inloggad för att läsa in utkast.",
 	"apierror-must-be-draft-owner": "Du kan inte läsa in andra användares utkast.",
 	"apierror-no-such-draft": "Det finns inget utkast med angivet utkast-ID.",
