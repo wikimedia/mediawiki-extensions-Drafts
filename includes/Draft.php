@@ -22,7 +22,7 @@ class Draft {
 
 	/** @var Title */
 	private $title;
-	/** @var int */
+	/** @var int|null */
 	private $section;
 	/** @var string */
 	private $starttime;
@@ -133,7 +133,7 @@ class Draft {
 	}
 
 	/**
-	 * @return int Section of the article of draft
+	 * @return int|null Section of the article of draft
 	 */
 	public function getSection() {
 		return $this->section;
@@ -141,7 +141,7 @@ class Draft {
 
 	/**
 	 * Sets section of the article of draft
-	 * @param int $section
+	 * @param int|null $section
 	 */
 	public function setSection( $section ) {
 		$this->section = $section;
@@ -330,7 +330,7 @@ class Draft {
 			'draft_namespace' => $this->title->getNamespace(),
 			'draft_title' => $this->title->getDBkey(),
 			'draft_page' => (int)$this->title->getArticleID(),
-			'draft_section' => $this->section == '' ? null : (int)$this->section,
+			'draft_section' => $this->section,
 			'draft_starttime' => $dbw->timestamp( $this->starttime ),
 			'draft_edittime' => $dbw->timestamp( $this->edittime ),
 			'draft_savetime' => $dbw->timestamp( $this->savetime ),
