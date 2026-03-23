@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Aca",
 			"Winston Sung"
 		]
 	},
@@ -20,13 +21,13 @@
 	"drafts-save-save": "Sačuvaj rad. verz.",
 	"drafts-save-saved": "Sačuvano",
 	"drafts-save-saving": "Čuvam",
-	"drafts-save-error": "Greška prilikom čuvanja radne verzije",
+	"drafts-save-error": "Greška pri čuvanju nacrta",
 	"drafts-enable": "Omogućite funkciju čuvanja nacrta u obrazac za uređivanje",
 	"prefs-extension-drafts": "Nacrti",
 	"tooltip-drafts-save": "Sačuvaj kao nacrt",
 	"apierror-mustbeloggedin-save-drafts": "Morate biti prijavljeni da biste čuvali radne verzije.",
 	"apihelp-savedrafts-summary": "Sačuvaj nacrt.",
-	"apihelp-savedrafts-param-id": "Naznaka nacrta.",
+	"apihelp-savedrafts-param-id": "ID nacrta.",
 	"apihelp-savedrafts-param-drafttoken": "Token nacrta.",
 	"apihelp-savedrafts-param-title": "Naslov nacrta.",
 	"apihelp-savedrafts-param-section": "Indeks podnaslova stranice što se uređuje.",
