@@ -6,6 +6,7 @@
 			"Andriykopanytsia",
 			"Base",
 			"Piramidion",
+			"Repakr",
 			"Ата"
 		]
 	},
@@ -40,5 +41,6 @@
 	"apihelp-savedrafts-param-scrolltop": "ScrollTop текстового поля.",
 	"apihelp-savedrafts-param-text": "Текст чернетки.",
 	"apihelp-savedrafts-param-summary": "Опис чернетки.",
-	"apihelp-savedrafts-param-minoredit": "Логічна позначка, є чернетка малим редагуванням чи ні."
+	"apihelp-savedrafts-param-minoredit": "Логічна позначка, є чернетка малим редагуванням чи ні.",
+	"apihelp-loaddrafts-param-id": "ID чернетки."
 }
