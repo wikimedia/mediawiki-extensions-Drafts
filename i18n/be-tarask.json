@@ -4,7 +4,8 @@
 			"EugeneZelenko",
 			"Jim-by",
 			"Red Winged Duck",
-			"Wizardist"
+			"Wizardist",
+			"Ucukor"
 		]
 	},
 	"drafts": "Чарнавікі",
@@ -12,7 +13,7 @@
 	"drafts-view": "Прагляд чарнавіка",
 	"drafts-view-summary": "Гэтая спэцыяльная старонка паказвае сьпіс усіх існуючых чарнавікоў.\nЧарнавікі, якія не выкарыстоўваюцца, будуць аўтаматычна выдаляцца праз {{PLURAL:$1|дзень|дні|дзён}}.",
 	"drafts-view-article": "Старонка",
-	"drafts-view-existing": "Існуючыя чарнавікі",
+	"drafts-view-existing": "Існыя чарнавікі",
 	"drafts-view-saved": "Захаваны",
 	"drafts-view-discard": "Выдаліць",
 	"drafts-view-nonesaved": "Цяпер у Вас няма захаваных чарнавікоў.",
