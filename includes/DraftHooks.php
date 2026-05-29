@@ -12,7 +12,6 @@ use MediaWiki\EditPage\EditPage;
 use MediaWiki\Html\Html;
 use MediaWiki\Linker\Linker;
 use MediaWiki\Logging\ManualLogEntry;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Page\ProperPageIdentity;
 use MediaWiki\Page\WikiPage;
@@ -21,14 +20,16 @@ use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\Specials\SpecialMovePage;
 use MediaWiki\Storage\EditResult;
 use MediaWiki\Title\Title;
+use MediaWiki\Title\TitleFactory;
+use MediaWiki\User\Options\UserOptionsManager;
 use MediaWiki\User\UserIdentity;
+use Wikimedia\Rdbms\IConnectionProvider;
 
 class DraftHooks implements
 	\MediaWiki\Hook\EditPageBeforeEditButtonsHook,
 	\MediaWiki\Hook\EditPage__attemptSave_afterHook,
 	\MediaWiki\Hook\EditPage__showEditForm_initialHook,
 	\MediaWiki\Hook\SpecialMovepageAfterMoveHook,
-	\MediaWiki\Installer\Hook\LoadExtensionSchemaUpdatesHook,
 	\MediaWiki\Page\Hook\PageUndeleteCompleteHook,
 	\MediaWiki\Preferences\Hook\GetPreferencesHook,
 	\MediaWiki\ResourceLoader\Hook\ResourceLoaderGetConfigVarsHook,
@@ -36,6 +37,13 @@ class DraftHooks implements
 	\MediaWiki\Storage\Hook\PageSaveCompleteHook,
 	\MediaWiki\User\Hook\UserGetDefaultOptionsHook
 {
+	public function __construct(
+		private readonly IConnectionProvider $dbProvider,
+		private readonly TitleFactory $titleFactory,
+		private readonly UserOptionsManager $userOptionsManager,
+	) {
+	}
+
 	/**
 	 * Enable the Drafts preference by default for new user accounts (as well as
 	 * old ones that haven't explicitly disabled Drafts).
@@ -58,22 +66,6 @@ class DraftHooks implements
 			'label-message' => 'drafts-enable',
 			'section' => 'editing/extension-drafts'
 		];
-	}
-
-	/**
-	 * Apply the database schema updates when the sysadmin re-runs
-	 * MediaWiki's core updater script, maintenance/update.php.
-	 *
-	 * @param DatabaseUpdater $updater
-	 */
-	public function onLoadExtensionSchemaUpdates( $updater ) {
-		$sqlDir = __DIR__ . '/../sql';
-		$updater->addExtensionTable( 'drafts', $sqlDir . '/Drafts.sql' );
-		if ( $updater->getDB()->getType() !== 'sqlite' ) {
-			$updater->modifyExtensionField( 'drafts', 'draft_token',
-				$sqlDir . '/patch-draft_token.sql' );
-		}
-		$updater->addExtensionIndex( 'drafts', 'draft_title', $sqlDir . '/patch-titlensindex.sql' );
 	}
 
 	/**
@@ -120,7 +112,7 @@ class DraftHooks implements
 
 		// When a page is created, associate the page ID with any drafts that might exist
 		$title = $wikiPage->getTitle();
-		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
+		$dbw = $this->dbProvider->getPrimaryDatabase();
 		$dbw->update(
 			'drafts',
 			[ 'draft_page' => $title->getArticleID() ],
@@ -142,10 +134,9 @@ class DraftHooks implements
 	 */
 	public function onEditPage__showEditForm_initial( $editpage, $out ) {
 		$context = $editpage->getArticle()->getContext();
-		$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
 		$user = $context->getUser();
 
-		if ( !$userOptionsManager->getOption( $user, 'extensionDrafts_enable', 'true' ) ) {
+		if ( !$this->userOptionsManager->getOption( $user, 'extensionDrafts_enable', 'true' ) ) {
 			return;
 		}
 
@@ -336,10 +327,9 @@ class DraftHooks implements
 	 */
 	public function onEditPageBeforeEditButtons( $editpage, &$buttons, &$tabindex ) {
 		$context = $editpage->getArticle()->getContext();
-		$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
 		$user = $context->getUser();
 
-		if ( !$userOptionsManager->getOption( $user, 'extensionDrafts_enable', 'true' ) ) {
+		if ( !$this->userOptionsManager->getOption( $user, 'extensionDrafts_enable', 'true' ) ) {
 			return;
 		}
 
@@ -443,10 +433,9 @@ class DraftHooks implements
 			return;
 		}
 
-		$services = MediaWikiServices::getInstance();
-		$title = $services->getTitleFactory()->newFromPageIdentity( $page );
+		$title = $this->titleFactory->newFromPageIdentity( $page );
 
-		$dbw = $services->getDBLoadBalancer()->getConnection( DB_PRIMARY );
+		$dbw = $this->dbProvider->getPrimaryDatabase();
 		$dbw->update(
 			'drafts',
 			[ 'draft_page' => $title->getArticleID() ],

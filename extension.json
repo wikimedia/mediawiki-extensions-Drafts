@@ -51,6 +51,7 @@
 		"Drafts": "includes/Drafts.php",
 		"Draft": "includes/Draft.php",
 		"DraftHooks": "includes/DraftHooks.php",
+		"SchemaHooks": "includes/SchemaHooks.php",
 		"SpecialDrafts": "includes/specials/SpecialDrafts.php"
 	},
 	"APIModules": {
@@ -92,7 +93,15 @@
 	},
 	"HookHandlers": {
 		"main": {
-			"class": "DraftHooks"
+			"class": "DraftHooks",
+			"services": [
+				"ConnectionProvider",
+				"TitleFactory",
+				"UserOptionsManager"
+			]
+		},
+		"schema": {
+			"class": "SchemaHooks"
 		}
 	},
 	"Hooks": {
@@ -106,7 +115,7 @@
 		"EditPage::showEditForm:initial": "main",
 		"EditPage::attemptSave:after": "main",
 		"ResourceLoaderGetConfigVars": "main",
-		"LoadExtensionSchemaUpdates": "main"
+		"LoadExtensionSchemaUpdates": "schema"
 	},
 	"manifest_version": 2
 }
