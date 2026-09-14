@@ -7,6 +7,7 @@
  */
 
 use MediaWiki\Config\Config;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\EditPage\EditPage;
 use MediaWiki\Html\Html;
 use MediaWiki\Linker\Linker;
@@ -23,7 +24,6 @@ use MediaWiki\Title\Title;
 use MediaWiki\User\UserIdentity;
 
 class DraftHooks implements
-	\MediaWiki\Hook\EditFilterHook,
 	\MediaWiki\Hook\EditPageBeforeEditButtonsHook,
 	\MediaWiki\Hook\EditPage__attemptSave_afterHook,
 	\MediaWiki\Hook\EditPage__showEditForm_initialHook,
@@ -32,6 +32,7 @@ class DraftHooks implements
 	\MediaWiki\Page\Hook\PageUndeleteCompleteHook,
 	\MediaWiki\Preferences\Hook\GetPreferencesHook,
 	\MediaWiki\ResourceLoader\Hook\ResourceLoaderGetConfigVarsHook,
+	\MediaWiki\Storage\Hook\MultiContentSaveHook,
 	\MediaWiki\Storage\Hook\PageSaveCompleteHook,
 	\MediaWiki\User\Hook\UserGetDefaultOptionsHook
 {
@@ -272,7 +273,7 @@ class DraftHooks implements
 		}
 
 		// We could check if the user preference is enabled for the user but that's
-		// not strictly needed IMHO isnce this is basically an internal endpoint
+		// not strictly needed IMHO since this is basically an internal endpoint
 		// that's normally accessible only if the user has JS disabled and they
 		// hit the "Save Draft" button, and said button is shown only if they have the
 		// preference option enabled, sooooo...
@@ -305,21 +306,23 @@ class DraftHooks implements
 	}
 
 	/**
-	 * EditFilter hook
+	 * MultiContentSave hook
 	 * Intercept the saving of an article to detect if the submission was from
 	 * the non-JavaScript save draft button
 	 *
-	 * @param EditPage $editor
-	 * @param string $text
-	 * @param string $section
-	 * @param string &$error
-	 * @param string $summary
+	 * @param MediaWiki\Revision\RenderedRevision $renderedRevision
+	 * @param MediaWiki\User\UserIdentity $user
+	 * @param MediaWiki\CommentStore\CommentStoreComment $summary User-supplied edit summary
+	 * @param int $flags Edit bit flags, like EDIT_BOT, if any
+	 * @param MediaWiki\Status\Status $status Status object we'll be manipulating to prevent saving
+	 * @return bool|void False if the "Save draft" button was clicked
 	 */
-	public function onEditFilter( $editor, $text, $section, &$error, $summary ) {
-		// Don't save if the save draft button caused the submit
-		if ( $editor->getArticle()->getContext()->getRequest()->getText( 'wpDraftSave' ) !== '' ) {
+	public function onMultiContentSave( $renderedRevision, $user, $summary, $flags, $status ) {
+		// Don't save if the "save draft" button caused the submit
+		if ( RequestContext::getMain()->getRequest()->getText( 'wpDraftSave' ) !== '' ) {
 			// Modify the error so it's clear we want to remain in edit mode
-			$error = ' ';
+			$status->fatal( 'drafts-save-saved-no-js' );
+			return false;
 		}
 	}
 

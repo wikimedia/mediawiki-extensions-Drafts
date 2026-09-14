@@ -23,6 +23,7 @@
 	"drafts-view-warn": "Used as confirmation message which is shown by JavaScript <code>confirm()</code> function.",
 	"drafts-save": "Tooltip of {{msg-mw|Drafts-save-save}} button",
 	"drafts-save-save": "Button shown near \"Show changes\" under editing form of a page.\n\nThe tooltip for the button is {{msg-mw|Tooltip-drafts-save}}.\n{{Related|Drafts-save}}\n{{Identical|Save draft}}",
+	"drafts-save-saved-no-js": "'''Success''' message shown above the edit form (as a dramatic \"error\"-esque message due to MediaWiki core limitations, despite not being an error message but rather the polar opposite of it) when a user who has JavaScript disabled has clicked on the \"Save draft\" ({{msg-mw|drafts-save-save}}) button to save their unpublished changes.",
 	"drafts-save-saved": "Used as button text which indicates that the draft has been saved.\n{{Related|Drafts-save}}\n{{Identical|Saved}}",
 	"drafts-save-saving": "Message indicating that the draft is in the process of being saved.\n{{Related|Drafts-save}}\n{{Identical|Saving}}",
 	"drafts-save-error": "Used as button text which indicates failed to save draft.\n{{Related|Drafts-save}}",

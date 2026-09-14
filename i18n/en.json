@@ -19,6 +19,7 @@
 	"drafts-save": "Save this as a draft",
 	"drafts-save-save": "Save draft",
 	"drafts-save-saved": "Saved",
+	"drafts-save-saved-no-js": "The draft was saved.\nYou can now continue editing the draft if you wish, or you can navigate away from this page without losing your drafted changes.",
 	"drafts-save-saving": "Saving",
 	"drafts-save-error": "Error saving draft",
 	"drafts-enable": "Enable feature to save a draft in edit form",
