@@ -21,6 +21,7 @@
 	"drafts-save": "Gardar isto como un borrador",
 	"drafts-save-save": "Gardar o borrador",
 	"drafts-save-saved": "Gardado",
+	"drafts-save-saved-no-js": "Gardouse o borrador.\nAgora podes continuar editando o borrador se o desexas ou podes saír desta páxina sen perder os cambios que xa tiñas no borrador.",
 	"drafts-save-saving": "Gardando",
 	"drafts-save-error": "Produciuse un erro ao gardar o borrador",
 	"drafts-enable": "Activar a función para gardar un borrador no formulario de edición",

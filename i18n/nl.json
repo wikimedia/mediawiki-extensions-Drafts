@@ -23,6 +23,7 @@
 	"drafts-save": "Opslaan als werkversie",
 	"drafts-save-save": "Werkversie opslaan",
 	"drafts-save-saved": "Opgeslagen",
+	"drafts-save-saved-no-js": "Het concept is opgeslagen.\n\nU kunt het concept nu verder bewerken als u dat wilt, of u kunt deze pagina verlaten zonder uw wijzigingen te verliezen.",
 	"drafts-save-saving": "Bezig met opslaan",
 	"drafts-save-error": "Fout bij het opslaan van de werkversie",
 	"drafts-enable": "Mogelijkheid om concepten op te slaan inschakelen",
