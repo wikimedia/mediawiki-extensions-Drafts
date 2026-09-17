@@ -1,19 +1,45 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"باران"
 		]
 	},
 	"drafts": "گارليکونه",
+	"drafts-desc": "د پالنگر مخ کې د [[Special:Drafts|گارليک]] بل‌بڼو د خوندي‌کولو وړتيا ورگډوي",
+	"drafts-view": "گارليک‌کتل",
+	"drafts-view-summary": "دا ځانگړی مخ د ټولو شته گارليکونو لړليک ښيي.\nناکارول شوي گارليکونه به {{PLURAL:$1|ورځ|ورځې}} وروسته په خپلکاري ډوله له منځه يوړل شي.",
 	"drafts-view-article": "مخ",
 	"drafts-view-existing": "شته گارليکونه",
 	"drafts-view-saved": "خوندي شو",
-	"drafts-view-notice": "د دې مخ لپاره تاسې $1 لرۍ.",
+	"drafts-view-discard": "له منځه وړل",
+	"drafts-view-nonesaved": "تاسو دا مهال هېڅ گارليک نه دی خوندي کړی.",
+	"drafts-view-notice": "د دې مخ لپاره تاسې $1 لرئ.",
 	"drafts-view-notice-link": "$1 {{PLURAL:$1|گارليک|گارليکونه}}",
+	"drafts-view-warn": "ايا تاسو غواړئ چې د دې مخ څخه لرې تگ ته دوام ورکړئ؟ د دې کولو سره؛ تاسو به په دې مخ کې ټول ناخوندي شوي بدلونونه له لاسه ورکړئ.",
 	"drafts-save": "د يوه گارليک په توگه خوندي کول",
 	"drafts-save-save": "گارليک خوندي کول",
 	"drafts-save-saved": "خوندي شو",
 	"drafts-save-saving": "خوندي کېدنې کې دی...",
+	"drafts-save-error": "د گارليک خوندي‌کولو کې تېروتنه",
+	"drafts-enable": "د گارليک د سمولو په بڼه خوندي کولو لپاره ځانگړنه چارنول",
 	"prefs-extension-drafts": "گارليکونه",
-	"tooltip-drafts-save": "د يوه گارليک په توگه خوندي کول"
+	"tooltip-drafts-save": "د يوه گارليک په توگه خوندي کول",
+	"apierror-mustbeloggedin-save-drafts": "د گارليک خوندي‌کولو لپاره تاسو بايد ننوځئ",
+	"apihelp-savedrafts-summary": "يو گارليک خوندي کړئ.",
+	"apihelp-savedrafts-param-id": "د گارليک پېژند.",
+	"apihelp-savedrafts-param-drafttoken": "د گارليک نښه.",
+	"apihelp-savedrafts-param-title": "د گارليک سرليک.",
+	"apihelp-savedrafts-param-section": "د مخ د هغه برخې ليکلړ چې سمېږي.",
+	"apihelp-savedrafts-param-starttime": "د گارليک د پيل وخت.",
+	"apihelp-savedrafts-param-edittime": "د گارليک د سمون وخت.",
+	"apihelp-savedrafts-param-scrolltop": "د ليک بکس په سر کې سکرول",
+	"apihelp-savedrafts-param-text": "د گارليک ليک.",
+	"apihelp-savedrafts-param-summary": "د گارليک لنډيز.",
+	"apihelp-savedrafts-param-minoredit": "بولين دا څرگندوي چې ايا گارليک يو کوچنی سمون دی.",
+	"apierror-mustbeloggedin-load-drafts": "د گارليک بارولو لپاره تاسو بايد ننوځئ.",
+	"apierror-must-be-draft-owner": "تاسو د نورو کارنانو گارليکونه نشئ بارولی.",
+	"apierror-no-such-draft": "ورکړل شوي گارليک پېژند سره هېڅ گارليک نشته.",
+	"apihelp-loaddrafts-summary": "مخکې خوندي شوی گارليک بار کړئ.",
+	"apihelp-loaddrafts-param-id": "د گارليک پېژند."
 }
