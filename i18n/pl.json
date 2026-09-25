@@ -8,7 +8,8 @@
 			"Leinad",
 			"Rail",
 			"Railfail536",
-			"Sp5uhe"
+			"Sp5uhe",
+			"PanWor"
 		]
 	},
 	"drafts": "Brudnopisy stron",
@@ -31,7 +32,7 @@
 	"drafts-enable": "Włącz funkcję zapisu brudnopisu na formularzu edycji",
 	"prefs-extension-drafts": "Brudnopisy stron",
 	"tooltip-drafts-save": "Zapisz jako brudnopis strony",
-	"apierror-mustbeloggedin-save-drafts": "Musisz być zalogowany, aby zapisywać szkice.",
+	"apierror-mustbeloggedin-save-drafts": "Musisz się zalogować, aby zapisywać szkice.",
 	"apihelp-savedrafts-summary": "Zapisz wersję roboczą.",
 	"apihelp-savedrafts-param-id": "Identyfikator szkicu.",
 	"apihelp-savedrafts-param-drafttoken": "Token szkicu.",
