@@ -10,7 +10,8 @@
 			"Mjbmr",
 			"Reza1615",
 			"Sunfyre",
-			"Wayiran"
+			"Wayiran",
+			"LProfo"
 		]
 	},
 	"drafts": "پیش‌نویس‌ها",
@@ -32,7 +33,7 @@
 	"drafts-save-error": "خطا در ذخیره کردن پیش‌نویس",
 	"drafts-enable": "فعال کردن ویژگی ذخیرهٔ پیش‌نویس در فرم ویرایش",
 	"prefs-extension-drafts": "پیش‌نویس‌ها",
-	"tooltip-drafts-save": "ذخیره به عنوان پیش‌نویس",
+	"tooltip-drafts-save": "ذخیره به‌عنوان پیش‌نویس",
 	"apihelp-savedrafts-param-text": "متن پیش‌نویس.",
 	"apihelp-savedrafts-param-summary": "خلاصهٔ پیش‌نویس."
 }
